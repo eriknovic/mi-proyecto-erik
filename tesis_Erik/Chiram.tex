@@ -1,0 +1,91 @@
+\documentclass[12pt,titlepage,letterpaper]{book}
+\usepackage{titlesec}
+\usepackage{anysize}
+\usepackage{graphicx}
+\usepackage[nottoc]{tocbibind}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{color,soul}
+%\usepackage[algo2e,boxed, linesnumbered,dotocloa]{algorithm2e}
+\usepackage[lined, boxed, linesnumbered, dotocloa]{algorithm2e}
+\usepackage{amsfonts}
+\usepackage{url}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\newcommand{\pref}{\ref}
+
+\definecolor{black}{rgb}{0,0,0}
+\setulcolor{black}
+
+
+\begin{document}
+%\maketitle
+\input{caratula}
+\thispagestyle{empty}
+\newpage
+
+
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+\titleformat{\chapter}[display] % cambiamos el formato de los capítulos
+{\bfseries\Huge} % por defecto se usarán caracteres de tamaño \Huge en negrita
+{% contenido de la etiqueta
+ \titlerule % línea horizontal
+ \filleft % texto alineado a la derecha
+ \Large\chaptertitlename\ % "Capítulo" o "Apéndice" en tamaño \Large en lugar de \Huge
+ \Large\thechapter} % número de capítulo en tamaño \Large
+{0mm} % espacio mínimo entre etiqueta y cuerpo
+{\filleft} % texto del cuerpo alineado a la derecha
+[\vspace{0.5mm} \bigrule] % después del cuerpo, dejar espacio vertical y trazar línea horizontal gruesa
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo
+\fancyhead[RE]{\rightmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección
+\fancyhead[RO,LE]{\thepage} % Números de página en las esquinas de los encabezados
+
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre
+
+\renewcommand{\headrulewidth}{0.6pt} % Ancho de la línea horizontal bajo el encabezado
+\renewcommand{\footrulewidth}{0.6pt} % Ancho de la línea horizontal sobre el pie (que en este ejemplo está vacío)
+\setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
+
+%\marginsize{3cm}{2cm}{2.5cm}{2.5cm}% Margenes de la pagina
+
+\def\listfigurename{Lista de Figuras}
+\def\listtablename{Lista de Tablas}
+\def\contentsname{Contenido}
+\def\bibname{Referencias}
+
+\pagenumbering{roman}
+
+\input{resumen}
+\input{agradecimientos}
+
+\tableofcontents
+
+\listoftables
+\listoffigures
+\input{acronimos}
+
+%CapÌtulos de la tesis
+\input{introduccion}
+\pagenumbering{arabic}
+
+\input{problematica}
+\input{semanticas}
+\input{estado}
+\input{sir}
+\input{prototipo}
+\input{evaluacion}
+\input{conclusiones}
+
+% *************** Bibliography ***************
+%\input{referencias}
+\bibliographystyle{unsrt}
+{\small\bibliography{bibliografia}}
+
+\end{document}
