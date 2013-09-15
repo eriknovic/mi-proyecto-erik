@@ -13,21 +13,21 @@
 \usepackage[spanish]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{alltt}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{mdwmath}
+\usepackage{verbatim}
+\usepackage{ragged2e}
+\usepackage[titletoc, toc, page]{appendix}
 
 \usepackage{longtable}
 \usepackage{booktabs}
-\newcommand{\pref}{\ref}
+%\newcommand{\pref}{\ref}
 
 \definecolor{black}{rgb}{0,0,0}
 \setulcolor{black}
-
-
-\begin{document}
-%\maketitle
-\input{caratula}
-\thispagestyle{empty}
-\newpage
-
 
 \newcommand{\bigrule}{\titlerule[0.5mm]}
 \titleformat{\chapter}[display] % cambiamos el formato de los cap’tulos
@@ -52,29 +52,37 @@
 \renewcommand{\headrulewidth}{0.6pt} % Ancho de la l’nea horizontal bajo el encabezado
 \renewcommand{\footrulewidth}{0.6pt} % Ancho de la l’nea horizontal sobre el pie (que en este ejemplo est‡ vac’o)
 \setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
-
 %\marginsize{3cm}{2cm}{2.5cm}{2.5cm}% Margenes de la pagina
 
-\def\listfigurename{Lista de Figuras}
-\def\listtablename{Lista de Tablas}
-\def\contentsname{Contenido}
-\def\bibname{Referencias}
+%\def\listfigurename{Lista de Figuras}
+%\def\listtablename{Lista de Tablas}
+%\def\contentsname{Contenido}
+%\def\bibname{Referencias}
 
+
+\begin{document}
+%\maketitle
 \pagenumbering{roman}
+\input{caratula}
+\thispagestyle{empty}
+\newpage
 
 \input{resumen}
 \input{agradecimientos}
 
 \tableofcontents
-
 \listoftables
 \listoffigures
-\input{acronimos}
 
+\input{acronimos}
+\addcontentsline{toc}{chapter}{Acrónimos}
+\thispagestyle{empty}
+\cleardoublepage
+
+\justifying
+\pagenumbering{arabic}
 %Capítulos de la tesis
 \input{introduccion}
-\pagenumbering{arabic}
-
 \input{problematica}
 \input{semanticas}
 \input{estado}
@@ -82,6 +90,11 @@
 \input{prototipo}
 \input{evaluacion}
 \input{conclusiones}
+
+% *************** Apendix ***************
+\begin{appendices}
+\input{CodInterfaz}
+\end{appendices}
 
 % *************** Bibliography ***************
 %\input{referencias}
