@@ -1,0 +1,377 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  12 SEP 2013 01:49
+entering extended mode
+**bare_conf.tex
+(C:\Users\Gatito\Documents\LEdProjects\IEEE\bare_conf.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
+lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
+m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
+i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
+ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
+ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+(C:\Users\Gatito\Documents\LEdProjects\IEEE\IEEEtran.cls
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip44
+\f@ncyO@elh=\skip45
+\f@ncyO@erh=\skip46
+\f@ncyO@olh=\skip47
+\f@ncyO@orh=\skip48
+\f@ncyO@elf=\skip49
+\f@ncyO@erf=\skip50
+\f@ncyO@olf=\skip51
+\f@ncyO@orf=\skip52
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen119
+\extrarowheight=\dimen120
+\NC@list=\toks18
+\extratabsurround=\skip53
+\backup@length=\skip54
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mdwtools\mdwmath.sty"
+Package: mdwmath 1996/04/11 1.1 Nice mathematical things
+\sq@sqrt=\count92
+LaTeX Info: Redefining \sqrt on input line 84.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(C:\Users\Gatito\Documents\LEdProjects\IEEE\bare_conf.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 366.
+LaTeX Font Info:    ... okay on input line 366.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen122
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen123
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks20
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 457.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 457.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 457.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 457.
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
+[][][]\OT1/ptm/m/n/8 L. Feigen-baum, ``Se-man-tic Web vs. Se-man-tic Tech-nolo-
+gies,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
+\OT1/ptm/m/n/8 Avail-able: $http : / / www . cambridgesemantics . com / semanti
+c-[]university /$
+ []
+
+
+LaTeX Warning: Reference `sec:arch' on page 1 undefined on input line 470.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<Arquitectura.pdf, id=9, 624.3325pt x 467.7475pt>
+File: Arquitectura.pdf Graphic file (type pdf)
+ <use Arquitectura.pdf>
+Package pdftex.def Info: Arquitectura.pdf used on input line 571.
+(pdftex.def)             Requested size: 231.25662pt x 158.99635pt.
+
+[2 <C:/Users/Gatito/Documents/LEdProjects/IEEE/Arquitectura.pdf>]
+<Clases.pdf, id=25, 699.61375pt x 338.26375pt>
+File: Clases.pdf Graphic file (type pdf)
+ <use Clases.pdf>
+Package pdftex.def Info: Clases.pdf used on input line 596.
+(pdftex.def)             Requested size: 252.93895pt x 130.09pt.
+
+<Propiedades.pdf, id=26, 353.32pt x 173.64874pt>
+File: Propiedades.pdf Graphic file (type pdf)
+ <use Propiedades.pdf>
+Package pdftex.def Info: Propiedades.pdf used on input line 604.
+(pdftex.def)             Requested size: 216.81339pt x 101.18002pt.
+
+<DomainyRange.pdf, id=27, 623.32875pt x 328.22626pt>
+File: DomainyRange.pdf Graphic file (type pdf)
+ <use DomainyRange.pdf>
+Package pdftex.def Info: DomainyRange.pdf used on input line 614.
+(pdftex.def)             Requested size: 252.94499pt x 133.19633pt.
+
+Underfull \hbox (badness 3536) in paragraph at lines 622--622
+[][][]\OT1/ptm/m/n/8 W3C,``RDF Vo-cab-u-lary De-scrip-tion Lan-guage 1.0: RDF S
+chema,''
+ []
+
+<Odaryt4sir.pdf, id=28, 597.23125pt x 297.11pt>
+File: Odaryt4sir.pdf Graphic file (type pdf)
+ <use Odaryt4sir.pdf>
+Package pdftex.def Info: Odaryt4sir.pdf used on input line 629.
+(pdftex.def)             Requested size: 216.80745pt x 86.72185pt.
+ [3 <C:/Users/Gatito/Documents/LEdProjects/IEEE/Clases.pdf> <C:/Users/Gatito/Do
+cuments/LEdProjects/IEEE/Propiedades.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Documents/LEdProjects/IEEE/Propi
+edades.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <C:/Users/Gatito/Documents/LEdProjects/IEEE/DomainyRange.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Documents/LEdProjects/IEEE/Domai
+nyRange.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] <RecDigi.pdf, id=54, 545.03625pt x 542.025pt>
+File: RecDigi.pdf Graphic file (type pdf)
+ <use RecDigi.pdf>
+Package pdftex.def Info: RecDigi.pdf used on input line 640.
+(pdftex.def)             Requested size: 195.12877pt x 194.0454pt.
+
+<cardinal.pdf, id=55, 460.72125pt x 408.52625pt>
+File: cardinal.pdf Graphic file (type pdf)
+ <use cardinal.pdf>
+Package pdftex.def Info: cardinal.pdf used on input line 648.
+(pdftex.def)             Requested size: 180.6718pt x 144.5385pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+[][][]\OT1/ptm/m/n/8 W3C,``SPARQL 1.1 Overview,'' Avail-able: $http : / / www .
+ w3 . org / TR /$
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 660.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 664.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 664.
+ [4 <C:/Users/Gatito/Documents/LEdProjects/IEEE/Odaryt4sir.pdf> <C:/Users/Gatit
+o/Documents/LEdProjects/IEEE/RecDigi.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Documents/LEdProjects/IEEE/RecDi
+gi.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <C:/Users/Gatito/Documents/LEdProjects/IEEE/cardinal.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Documents/LEdProjects/IEEE/cardi
+nal.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+>] <Interfaz.pdf, id=123, 672.5125pt x 387.4475pt>
+File: Interfaz.pdf Graphic file (type pdf)
+ <use Interfaz.pdf>
+Package pdftex.def Info: Interfaz.pdf used on input line 686.
+(pdftex.def)             Requested size: 252.94066pt x 158.99638pt.
+ [5 <C:/Users/Gatito/Documents/LEdProjects/IEEE/Interfaz.pdf>]
+(C:\Users\Gatito\Documents\LEdProjects\IEEE\bare_conf.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+[6]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[7
+
+] (C:\Users\Gatito\Documents\LEdProjects\IEEE\bare_conf.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2412 strings out of 493944
+ 36218 string characters out of 3148281
+ 104771 words of memory out of 3000000
+ 5668 multiletter control sequences out of 15000+200000
+ 44071 words of font info for 81 fonts, out of 3000000 for 9000
+ 844 hyphenation exceptions out of 8191
+ 27i,11n,43p,1318b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courie
+r/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (7 pages, 497253 bytes).
+PDF statistics:
+ 174 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
