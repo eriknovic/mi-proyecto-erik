@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 SEP 2013 22:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 SEP 2013 21:58
 entering extended mode
 **Chiram.tex
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -235,74 +235,134 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks27
+\extratabsurround=\skip71
+\backup@length=\skip72
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen126
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mdwtools\mdwmath.sty"
+Package: mdwmath 1996/04/11 1.1 Nice mathematical things
+\sq@sqrt=\count97
+LaTeX Info: Redefining \sqrt on input line 84.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read1
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip73
+\RaggedLeftLeftskip=\skip74
+\RaggedRightLeftskip=\skip75
+\CenteringRightskip=\skip76
+\RaggedLeftRightskip=\skip77
+\RaggedRightRightskip=\skip78
+\CenteringParfillskip=\skip79
+\RaggedLeftParfillskip=\skip80
+\RaggedRightParfillskip=\skip81
+\JustifyingParfillskip=\skip82
+\CenteringParindent=\skip83
+\RaggedLeftParindent=\skip84
+\RaggedRightParindent=\skip85
+\JustifyingParindent=\skip86
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count98
+\c@@ppsavesec=\count99
+\c@@ppsaveapp=\count100
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip71
-\LTright=\skip72
-\LTpre=\skip73
-\LTpost=\skip74
-\LTchunksize=\count97
-\LTcapwidth=\dimen124
+\LTleft=\skip87
+\LTright=\skip88
+\LTpre=\skip89
+\LTpost=\skip90
+\LTchunksize=\count101
+\LTcapwidth=\dimen127
 \LT@head=\box37
 \LT@firsthead=\box38
 \LT@foot=\box39
 \LT@lastfoot=\box40
-\LT@cols=\count98
-\LT@rows=\count99
-\c@LT@tables=\count100
-\c@LT@chunks=\count101
-\LT@p@ftn=\toks27
+\LT@cols=\count102
+\LT@rows=\count103
+\c@LT@tables=\count104
+\c@LT@chunks=\count105
+\LT@p@ftn=\toks30
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen125
-\lightrulewidth=\dimen126
-\cmidrulewidth=\dimen127
-\belowrulesep=\dimen128
-\belowbottomsep=\dimen129
-\aboverulesep=\dimen130
-\abovetopsep=\dimen131
-\cmidrulesep=\dimen132
-\cmidrulekern=\dimen133
-\defaultaddspace=\dimen134
-\@cmidla=\count102
-\@cmidlb=\count103
-\@aboverulesep=\dimen135
-\@belowrulesep=\dimen136
-\@thisruleclass=\count104
-\@lastruleclass=\count105
-\@thisrulewidth=\dimen137
+\heavyrulewidth=\dimen128
+\lightrulewidth=\dimen129
+\cmidrulewidth=\dimen130
+\belowrulesep=\dimen131
+\belowbottomsep=\dimen132
+\aboverulesep=\dimen133
+\abovetopsep=\dimen134
+\cmidrulesep=\dimen135
+\cmidrulekern=\dimen136
+\defaultaddspace=\dimen137
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen138
+\@belowrulesep=\dimen139
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen140
 )
-Package color Info: Redefining color black on input line 21.
+Package color Info: Redefining color black on input line 29.
 
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen138
+\scratchcounter=\count110
+\scratchdimen=\dimen141
 \scratchbox=\box41
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen139
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks29
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\caratula.tex
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen142
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks32
+) ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 63.
+
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
 File: uam.pdf Graphic file (type pdf)
  <use uam.pdf>
@@ -311,17 +371,17 @@ Package pdftex.def Info: uam.pdf used on input line 5.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Documents
-/LEdProjects/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Documents\LEdProjects\t
-esis_Erik\resumen.tex [1
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
+oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
+k\resumen.tex
+[3
 
-] [2] [3])
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\agradecimientos.tex [4])
-[5
+] [4] [5]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
+[6]) [7
 
-] [6
+] [8
 
-] (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.toc
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -331,33 +391,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [7])
+) [9])
 \tf@toc=\write3
- [8]
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.lot)
+ [10]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.lot)
 \tf@lot=\write4
- [9
+ [11
 
-] [10
+] [12
 
 ]
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.lof)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.lof)
 \tf@lof=\write5
 
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\acronimos.tex [11] [12
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
 
-])
-(C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\introduccion.tex [13]
-[14
+]) [15]
+[16
+
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
+Cap\'{\i }tulo 1.
+[1
 
 ]
-Cap\'{\i }tulo 1.
-[15]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 28.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 [][]\T1/cmr/m/n/10 L. Fei-gen-baum, Se-man-tic Web vs. Se-man-tic Tech-no-lo-g
 ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .
  []
@@ -365,21 +426,21 @@ ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-[17] [18]) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\problematica.tex
-[1] [2
+ [2]
+[3] [4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex
+[5] [6
 
 ]
 Cap\'{\i }tulo 2.
-[3]) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\semanticas.tex [4]
+[7]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [8]
 Cap\'{\i }tulo 3.
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\estado.tex [5
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [9
 
-] [6
+] [10
 
 ]
 Cap\'{\i }tulo 4.
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\sir.tex [7] [8
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [11] [12
 
 ]
 Cap\'{\i }tulo 5.
@@ -389,51 +450,58 @@ Overfull \hbox (0.423pt too wide) in paragraph at lines 4--4
 o-
  []
 
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\prototipo.tex [9] [10
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [13] [14
 
 ]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\evaluacion.tex [11]
-[12
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [15] [16
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\conclusiones.tex [13]
-[14
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [17] [18
 
 ]
 Cap\'{\i }tulo 8.
-) (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.bbl [15] [16
+) [19] [20
 
-])
-[17] (C:\Users\Gatito\Documents\LEdProjects\tesis_Erik\Chiram.aux) ) 
+] [21
+
+] [22]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\CodInterfaz.tex
+Ap\'{e}ndice A.
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.bbl [23
+
+] [24
+
+]) [25]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.aux) ) 
 Here is how much of TeX's memory you used:
- 4626 strings out of 493944
- 61694 string characters out of 3148281
- 143811 words of memory out of 3000000
- 7788 multiletter control sequences out of 15000+200000
- 22884 words of font info for 58 fonts, out of 3000000 for 9000
+ 5016 strings out of 493944
+ 67610 string characters out of 3148281
+ 150049 words of memory out of 3000000
+ 8146 multiletter control sequences out of 15000+200000
+ 23656 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,12n,43p,1816b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program
- Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super
-/sfcc1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
-m-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
-fti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Chiram.pdf (37 pages, 372969 bytes).
+ 31i,12n,43p,1816b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super
+/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
+m-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
+fti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on Chiram.pdf (41 pages, 377664 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
