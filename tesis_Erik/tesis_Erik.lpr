@@ -13,16 +13,16 @@ Bookmark#9=0
 CaretPos.X=0
 CaretPos.Y=0
 CharSet=def
-FileName=Chiram.tex
+FileName=agradecimientos.tex
 FoldedLines=
-IsMainFile=yes
-Opened=yes
+IsMainFile=no
+Opened=no
 ScrollPos.X=0
-ScrollPos.Y=1
+ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=0
+TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
@@ -38,51 +38,23 @@ Bookmark#6=0
 Bookmark#7=0
 Bookmark#8=0
 Bookmark#9=0
-CaretPos.X=6
-CaretPos.Y=1
-CharSet=def
-FileName=semanticas.tex
-FoldedLines=
-IsMainFile=no
-Opened=no
-ScrollPos.X=0
-ScrollPos.Y=0
-SearchListCount=0
-ShowSyntax=yes
-SpellChecking=yes
-TabOrder=-1
-UseThesaurus=yes
-WrapLine=yes
-
-[Files\11]
-ActiveFilters=
-Bookmark#0=0
-Bookmark#1=0
-Bookmark#2=0
-Bookmark#3=0
-Bookmark#4=0
-Bookmark#5=0
-Bookmark#6=0
-Bookmark#7=0
-Bookmark#8=0
-Bookmark#9=0
-CaretPos.X=944
-CaretPos.Y=2
+CaretPos.X=0
+CaretPos.Y=0
 CharSet=def
 FileName=problematica.tex
 FoldedLines=
 IsMainFile=no
 Opened=yes
 ScrollPos.X=0
-ScrollPos.Y=0
+ScrollPos.Y=30
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
-TabOrder=1
+TabOrder=0
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\12]
+[Files\11]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -110,7 +82,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\13]
+[Files\12]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -138,7 +110,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\1]
+[Files\13]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -153,9 +125,9 @@ Bookmark#9=0
 CaretPos.X=0
 CaretPos.Y=0
 CharSet=def
-FileName=agradecimientos.tex
+FileName=tesis_Erik.tex
 FoldedLines=
-IsMainFile=no
+IsMainFile=yes
 Opened=no
 ScrollPos.X=0
 ScrollPos.Y=0
@@ -166,7 +138,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\2]
+[Files\1]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -194,7 +166,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\3]
+[Files\2]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -222,7 +194,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\4]
+[Files\3]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -250,7 +222,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\5]
+[Files\4]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -278,7 +250,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\6]
+[Files\5]
 ActiveFilters=
 Bookmark#0=85
 Bookmark#1=0
@@ -306,7 +278,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\7]
+[Files\6]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -334,7 +306,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\8]
+[Files\7]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -362,7 +334,7 @@ TabOrder=-1
 UseThesaurus=yes
 WrapLine=yes
 
-[Files\9]
+[Files\8]
 ActiveFilters=
 Bookmark#0=0
 Bookmark#1=0
@@ -383,6 +355,34 @@ IsMainFile=no
 Opened=no
 ScrollPos.X=0
 ScrollPos.Y=507
+SearchListCount=0
+ShowSyntax=yes
+SpellChecking=yes
+TabOrder=-1
+UseThesaurus=yes
+WrapLine=yes
+
+[Files\9]
+ActiveFilters=
+Bookmark#0=0
+Bookmark#1=0
+Bookmark#2=0
+Bookmark#3=0
+Bookmark#4=0
+Bookmark#5=0
+Bookmark#6=0
+Bookmark#7=0
+Bookmark#8=0
+Bookmark#9=0
+CaretPos.X=6
+CaretPos.Y=1
+CharSet=def
+FileName=semanticas.tex
+FoldedLines=
+IsMainFile=no
+Opened=no
+ScrollPos.X=0
+ScrollPos.Y=0
 SearchListCount=0
 ShowSyntax=yes
 SpellChecking=yes
@@ -446,7 +446,7 @@ Zoom=9
 
 [Project\DVI]
 FileName=1
-FirstPage=4
+FirstPage=3
 Magnifier=5
 Page=0
 PaperHeight=297

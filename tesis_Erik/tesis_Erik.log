@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 SEP 2013 21:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 SEP 2013 23:59
 entering extended mode
-**Chiram.tex
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.tex
+**tesis_Erik.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -332,7 +332,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 29.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.aux)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -381,7 +381,7 @@ k\resumen.tex
 
 ] [8
 
-] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.toc
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -394,14 +394,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [9])
 \tf@toc=\write3
  [10]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.lot)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lot)
 \tf@lot=\write4
  [11
 
 ] [12
 
 ]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.lof)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof)
 \tf@lof=\write5
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
@@ -469,37 +469,37 @@ Cap\'{\i }tulo 8.
 ] [22]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\CodInterfaz.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.bbl [23
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [23
 
 ] [24
 
-]) [25]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\Chiram.aux) ) 
+])
+[25] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux) ) 
 Here is how much of TeX's memory you used:
  5016 strings out of 493944
- 67610 string characters out of 3148281
+ 67682 string characters out of 3148281
  150049 words of memory out of 3000000
  8146 multiletter control sequences out of 15000+200000
  23656 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,12n,43p,1816b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super
-/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
-m-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
-fti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on Chiram.pdf (41 pages, 377664 bytes).
+ 31i,12n,43p,1820b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program
+ Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super
+/sfcc1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
+m-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
+fti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on tesis_Erik.pdf (41 pages, 377664 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
