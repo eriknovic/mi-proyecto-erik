@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 SEP 2013 23:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  15 SEP 2013 22:32
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -420,7 +420,7 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
 [][]\T1/cmr/m/n/10 L. Fei-gen-baum, Se-man-tic Web vs. Se-man-tic Tech-no-lo-g
-ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .
+ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .$
  []
 
 
@@ -466,8 +466,7 @@ Cap\'{\i }tulo 8.
 
 ] [21
 
-] [22]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\CodInterfaz.tex
+] [22] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
 ) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [23
 
@@ -477,12 +476,12 @@ Ap\'{e}ndice A.
 [25] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux) ) 
 Here is how much of TeX's memory you used:
  5016 strings out of 493944
- 67682 string characters out of 3148281
+ 67670 string characters out of 3148281
  150049 words of memory out of 3000000
  8146 multiletter control sequences out of 15000+200000
  23656 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,12n,43p,1820b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,12n,43p,1764b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program
  Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX 2.9/
@@ -499,7 +498,7 @@ nts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 m-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
 fti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (41 pages, 377664 bytes).
+Output written on tesis_Erik.pdf (41 pages, 377690 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
