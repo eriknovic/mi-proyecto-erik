@@ -3,16 +3,17 @@
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {xiii}}
 \contentsline {chapter}{Acr\'onimos}{\es@scroman {xv}}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
-\contentsline {section}{\numberline {1.1}Problema a tratar}{1}
-\contentsline {section}{\numberline {1.2}Motivaci\'on tecnolog\IeC {\'\i }as sem\'anticas}{3}
-\contentsline {section}{\numberline {1.3}Caso de estudio}{4}
-\contentsline {section}{\numberline {1.4}Objetivos y contribuciones}{4}
-\contentsline {section}{\numberline {1.5}Estructura del documento}{5}
+\contentsline {section}{\numberline {1.1}Problema a Tratar}{1}
+\contentsline {section}{\numberline {1.2}Motivaci\'on Tecnolog\IeC {\'\i }as Sem\'anticas}{3}
+\contentsline {section}{\numberline {1.3}Caso de Estudio (General)}{4}
+\contentsline {section}{\numberline {1.4}Objetivos y Contribuciones}{4}
+\contentsline {section}{\numberline {1.5}Estructura del Documento}{5}
 \contentsline {chapter}{\numberline {2}Descripci\'on del problema}{7}
-\contentsline {section}{\numberline {2.1}Caso de estudio}{7}
-\contentsline {section}{\numberline {2.2}Fuentes de conocimiento}{8}
-\contentsline {section}{\numberline {2.3}Memoria Corporativa}{9}
-\contentsline {section}{\numberline {2.4}Casos de uso}{9}
+\contentsline {section}{\numberline {2.1}Caso de Estudio}{7}
+\contentsline {section}{\numberline {2.2}Fuentes de Conocimiento}{8}
+\contentsline {section}{\numberline {2.3}Memoria Corporativa}{8}
+\contentsline {section}{\numberline {2.4}Memoria Corporativa}{10}
+\contentsline {section}{\numberline {2.5}Casos de uso}{10}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{11}
 \contentsline {section}{\numberline {3.1}Definiciones y descripciones}{11}
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{11}

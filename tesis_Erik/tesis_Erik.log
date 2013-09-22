@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  18 SEP 2013 23:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  21 SEP 2013 23:35
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -443,11 +443,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .$
  []
 
-[3] [4]
-
-LaTeX Warning: Reference `cap:concl' on page 5 undefined on input line 66.
-
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [5] [6
+[3] [4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex
+[5] [6
 
 ]
 Cap\'{\i }tulo 2.
@@ -455,11 +452,14 @@ Cap\'{\i }tulo 2.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [9] [10
 
-]
+LaTeX Warning: Reference `Ontoinra2002' on page 8 undefined on input line 26.
+
+[8] [9]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [10]
 Cap\'{\i }tulo 3.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [11] [12
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [11
+
+] [12
 
 ]
 Cap\'{\i }tulo 4.
@@ -468,7 +468,7 @@ Cap\'{\i }tulo 4.
 ]
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (0.423pt too wide) in paragraph at lines 4--4
+Overfull \hbox (0.423pt too wide) in paragraph at lines 7--7
  |[]\T1/cmr/bx/n/17.28 Representación del co-no-ci-mien-to de los re-cur-sos (m
 o-
  []
@@ -502,10 +502,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5491 strings out of 493944
- 74229 string characters out of 3148281
- 158751 words of memory out of 3000000
- 8607 multiletter control sequences out of 15000+200000
+ 5498 strings out of 493944
+ 74297 string characters out of 3148281
+ 158785 words of memory out of 3000000
+ 8614 multiletter control sequences out of 15000+200000
  23656 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,12n,43p,1974b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -525,7 +525,7 @@ ype1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
 er/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc12
 00.pfb>
-Output written on tesis_Erik.pdf (43 pages, 387799 bytes).
+Output written on tesis_Erik.pdf (43 pages, 391379 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

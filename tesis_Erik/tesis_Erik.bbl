@@ -37,4 +37,9 @@ S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
 \newblock In {\em Computer and Network Technology (ICCNT), 2010 Second
   International Conference on}, pages 591--594, 2010.
 
+\bibitem{Corpmem98}
+Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
+\newblock {Methods and Tools for Corporate Knowledge Management}.
+\newblock Technical Report RR-3485, INRIA, September 1998.
+
 \end{thebibliography}
