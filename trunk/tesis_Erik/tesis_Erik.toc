@@ -12,8 +12,9 @@
 \contentsline {section}{\numberline {2.1}Caso de Estudio}{7}
 \contentsline {section}{\numberline {2.2}Fuentes de Conocimiento}{8}
 \contentsline {section}{\numberline {2.3}Memoria Corporativa}{8}
-\contentsline {section}{\numberline {2.4}Memoria Corporativa}{10}
-\contentsline {section}{\numberline {2.5}Casos de uso}{11}
+\contentsline {section}{\numberline {2.4}Administraci\'on de una Memoria Corporativa}{10}
+\contentsline {section}{\numberline {2.5}Memoria Corporativa}{11}
+\contentsline {section}{\numberline {2.6}Casos de uso}{11}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{13}
 \contentsline {section}{\numberline {3.1}Definiciones y descripciones}{13}
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{13}
@@ -26,7 +27,7 @@
 \contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{17}
 \contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento de los recursos (modelo de datos)}{17}
 \contentsline {section}{\numberline {5.2}Explotaci\'on del conocimiento en el modelo (axiomas)}{17}
-\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on (consulta) del conocimiento de los recursos}{17}
+\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on (consulta) del conocimiento de los recursos}{18}
 \contentsline {chapter}{\numberline {6}Prototipo}{19}
 \contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{21}
 \contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{21}
