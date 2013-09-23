@@ -13,8 +13,9 @@
 \contentsline {section}{\numberline {2.2}Fuentes de Conocimiento}{8}
 \contentsline {section}{\numberline {2.3}Memoria Corporativa}{8}
 \contentsline {section}{\numberline {2.4}Administraci\'on de una Memoria Corporativa}{10}
-\contentsline {section}{\numberline {2.5}Memoria Corporativa}{11}
-\contentsline {section}{\numberline {2.6}Casos de uso}{11}
+\contentsline {subsection}{\numberline {2.4.1}Administraci\'on por Fragmentos}{11}
+\contentsline {section}{\numberline {2.5}Memoria Corporativa}{12}
+\contentsline {section}{\numberline {2.6}Casos de uso}{12}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{13}
 \contentsline {section}{\numberline {3.1}Definiciones y descripciones}{13}
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{13}
