@@ -14,27 +14,34 @@
 \contentsline {section}{\numberline {2.3}Memoria Corporativa}{8}
 \contentsline {section}{\numberline {2.4}Administraci\'on de una Memoria Corporativa}{10}
 \contentsline {subsection}{\numberline {2.4.1}Administraci\'on por Fragmentos}{11}
-\contentsline {section}{\numberline {2.5}Memoria Corporativa}{12}
-\contentsline {section}{\numberline {2.6}Casos de uso}{12}
-\contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{13}
-\contentsline {section}{\numberline {3.1}Definiciones y descripciones}{13}
-\contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{13}
-\contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{13}
-\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{13}
-\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{13}
-\contentsline {chapter}{\numberline {4}Estado del arte}{15}
-\contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{15}
-\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{15}
-\contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{17}
-\contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento de los recursos (modelo de datos)}{17}
-\contentsline {section}{\numberline {5.2}Explotaci\'on del conocimiento en el modelo (axiomas)}{17}
-\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on (consulta) del conocimiento de los recursos}{18}
-\contentsline {chapter}{\numberline {6}Prototipo}{19}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{21}
-\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{21}
-\contentsline {section}{\numberline {7.2}Experimentaci\'on}{21}
-\contentsline {section}{\numberline {7.3}Resultados}{21}
-\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{23}
-\contentsline {chapter}{Appendices}{25}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{27}
-\contentsline {chapter}{Bibliograf\'{\i }a}{29}
+\contentsline {subsection}{\numberline {2.4.2}Naturaleza de una Memoria Corporativa}{12}
+\contentsline {subsubsection}{Diversidad en formato}{12}
+\contentsline {subsubsection}{Diversidad en Contenido}{12}
+\contentsline {subsubsection}{Diversidad en la Estructura}{13}
+\contentsline {subsubsection}{Significado de la Informaci\'on}{13}
+\contentsline {section}{\numberline {2.5}Integraci\'on del Conocimiento}{13}
+\contentsline {subsection}{\numberline {2.5.1}Casos de uso}{14}
+\contentsline {subsubsection}{Cartograf\IeC {\'\i }a de Competencias}{14}
+\contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{15}
+\contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{17}
+\contentsline {section}{\numberline {3.1}Definiciones y descripciones}{17}
+\contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{17}
+\contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{17}
+\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{17}
+\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{17}
+\contentsline {chapter}{\numberline {4}Estado del arte}{19}
+\contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{19}
+\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{19}
+\contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{21}
+\contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento de los recursos (modelo de datos)}{21}
+\contentsline {section}{\numberline {5.2}Explotaci\'on del conocimiento en el modelo (axiomas)}{21}
+\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on (consulta) del conocimiento de los recursos}{22}
+\contentsline {chapter}{\numberline {6}Prototipo}{23}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{25}
+\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{25}
+\contentsline {section}{\numberline {7.2}Experimentaci\'on}{25}
+\contentsline {section}{\numberline {7.3}Resultados}{25}
+\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{27}
+\contentsline {chapter}{Appendices}{29}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{31}
+\contentsline {chapter}{Bibliograf\'{\i }a}{33}
