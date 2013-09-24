@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  23 SEP 2013 02:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  24 SEP 2013 03:09
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -463,16 +463,16 @@ LaTeX Warning: Reference `Ontoinra2002' on page 8 undefined on input line 26.
 
 LaTeX Warning: Reference `sec:cou' on page 10 undefined on input line 54.
 
-[10] [11]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex
-[12]
-Cap\'{\i }tulo 3.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [13
+[10] [11] [12] [13] [14])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [15] [16
 
-] [14
+]
+Cap\'{\i }tulo 3.
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [17] [18
 
 ]
 Cap\'{\i }tulo 4.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [15] [16
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [19] [20
 
 ]
 Cap\'{\i }tulo 5.
@@ -485,40 +485,43 @@ o-
 ) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
- [17]
-[18]
+ [21]
+[22]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [19
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [23
 
-] [20
+] [24
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [21] [22
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [25] [26
 
 ]
 Cap\'{\i }tulo 8.
-) [23] [24
+) [27] [28
 
-] [25
+] [29
 
-] [26] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [30] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [27
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [31
 
-] [28
+] [32
 
 ])
-[29] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+[33] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5514 strings out of 493944
- 74502 string characters out of 3148281
- 158825 words of memory out of 3000000
- 8629 multiletter control sequences out of 15000+200000
+ 5525 strings out of 493944
+ 74660 string characters out of 3148281
+ 158838 words of memory out of 3000000
+ 8640 multiletter control sequences out of 15000+200000
  24431 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,12n,43p,1955b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -539,9 +542,9 @@ ic/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
 er/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti12
 00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (45 pages, 429010 bytes).
+Output written on tesis_Erik.pdf (49 pages, 441505 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
