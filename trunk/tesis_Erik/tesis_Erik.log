@@ -1,18 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  24 SEP 2013 18:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  25 SEP 2013 01:43
 entering extended mode
 **tesis_Erik.tex
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
+lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
+m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
+i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
+ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
+ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
@@ -349,7 +348,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 30.
 
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
@@ -379,7 +378,7 @@ LaTeX Font Info:    ... okay on input line 64.
 ) ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 64.
 
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\caratula.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
 File: uam.pdf Graphic file (type pdf)
  <use uam.pdf>
@@ -388,17 +387,17 @@ Package pdftex.def Info: uam.pdf used on input line 5.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ARTE/Desktop/Tes
-isErikSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_E
-rik\resumen.tex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
+oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
+k\resumen.tex
 [3
 
-] [4] [5]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\agradecimientos.tex [
-6]) [7
+] [4] [5]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
+[6]) [7
 
 ] [8
 
-] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.toc
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -411,22 +410,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [9])
 \tf@toc=\write4
  [10]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lot)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lot)
 \tf@lot=\write5
  [11
 
 ] [12
 
 ]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lof)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof)
 \tf@lof=\write6
 
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\acronimos.tex [13] [14
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
 
-])
-[15] [16
+]) [15]
+[16
 
-] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\introduccion.tex
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
 Cap\'{\i }tulo 1.
 [1
 
@@ -444,7 +443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .$
  []
 
-[3] [4]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\problematica.tex
+[3] [4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex
 [5] [6
 
 ]
@@ -460,16 +459,23 @@ LaTeX Warning: Reference `Ontoinra2002' on page 8 undefined on input line 26.
 
 LaTeX Warning: Reference `sec:cou' on page 10 undefined on input line 54.
 
-[10] [11] [12] [13] [14])
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\semanticas.tex [15] [16
+[10] [11] [12] [13] <CasosUso.pdf, id=116, 501.875pt x 228.855pt>
+File: CasosUso.pdf Graphic file (type pdf)
+
+<use CasosUso.pdf>
+Package pdftex.def Info: CasosUso.pdf used on input line 115.
+(pdftex.def)             Requested size: 283.22162pt x 129.15663pt.
+ [14 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUso.pdf>]) (C:\Users\Ga
+tito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [15]
+[16
 
 ]
 Cap\'{\i }tulo 3.
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\estado.tex [17] [18
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [17] [18
 
 ]
 Cap\'{\i }tulo 4.
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\sir.tex [19] [20
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [19] [20
 
 ]
 Cap\'{\i }tulo 5.
@@ -479,19 +485,19 @@ Overfull \hbox (0.423pt too wide) in paragraph at lines 16--16
 o-
  []
 
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\prototipo.tex
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
  [21]
 [22]
 Cap\'{\i }tulo 6.
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\evaluacion.tex [23
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [23
 
 ] [24
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\conclusiones.tex [25] [26
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [25] [26
 
 ]
 Cap\'{\i }tulo 8.
@@ -499,24 +505,23 @@ Cap\'{\i }tulo 8.
 
 ] [29
 
-] [30]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\appendA.tex
+] [30] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.bbl [31
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [31
 
 ] [32
 
 ])
-[33] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux)
+[33] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5524 strings out of 493921
- 74693 string characters out of 3147330
- 158863 words of memory out of 3000000
- 8650 multiletter control sequences out of 15000+200000
+ 5532 strings out of 493944
+ 74764 string characters out of 3148281
+ 158871 words of memory out of 3000000
+ 8646 multiletter control sequences out of 15000+200000
  24431 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,12n,43p,1955b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -536,9 +541,9 @@ ype1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
 er/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
 00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (49 pages, 428058 bytes).
+Output written on tesis_Erik.pdf (49 pages, 455070 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
+ 242 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
