@@ -23,6 +23,7 @@
 \contentsline {section}{\numberline {2.6}Casos de uso}{14}
 \contentsline {subsection}{\numberline {2.6.1}Cartograf\IeC {\'\i }a de Competencias}{14}
 \contentsline {subsection}{\numberline {2.6.2}B\'usqueda de Recursos Digitales}{15}
+\contentsline {section}{\numberline {2.7}Hip\'otesis}{15}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{17}
 \contentsline {section}{\numberline {3.1}Definiciones y descripciones}{17}
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos (RDF)}{17}
