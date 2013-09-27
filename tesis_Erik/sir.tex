@@ -13,11 +13,37 @@ Como advierte en (Nonaka, 1991; Van Engers, Mathies, Leget y Dekker, 1995), la c
 
 En particular, permiten hacer el proceso de integración (búsqueda y recuperación) de información significativa de los recursos en una memoria corporativa. Para lograr esta integración, se deben efectuar las siguientes actividades: \textit{1) modelar el conocimiento de los recursos en un formato estándar, 2) explotar el conocimiento implícito de los recursos y describir el vocabulario (conceptos y relaciones) de la memoria}, y \textit{3) buscar y recuperar la información sobre los recursos, para responder una pregunta dada.}
 
+Pero cada miembro de la organización son importantes ciertos recursos. Para recuperar solamente los documentos que responden su pregunta. Los recursos deben integrarse de manera inteligente. Esta integración se basa en el contenido de los recursos. De esta manera, la integración de los recursos es a partir de los conceptos, estándares y metodologías de la Web Semántica
+
 \section{Representación del conocimiento de los recursos (modelo de datos)}
-Algún texto...
+se debe caracterizar y dotar de semántica a los recursos de la memoria corporativa. Donde por caracterizar en este contexto es la abstracción de ciertas características que posee un recurso, estas características que permiten determinar un recurso se denominan metadatos. Y estos metadatos use obtienen a partir del entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento  etc.) o basados en el contenido (keywords, fecha de nacimiento, teléfono, abstract,  dirección, referencias, etc.) del mismo.
+
+Por otro al referirse a semántica en los recursos quiere decir ?información que permite  entender el significado de las palabras asociadas a un recurso?. Es decir a partir de un conjunto de metadatos y de relaciones entre los mismos se puede entender sin ambigüedad el significado de cierta propiedad asociada a un recurso.
+
+para introducir semántica a los recursos es necesario primero contar con una caracterización de los recursos, para que a partir de los metadatos generados se puedan hacer asociaciones (relación y jerárquicas).
+
+La finalidad de las descripciones es que solamente los procesos automáticos, solo accedan a las anotaciones, las usen y regresen los enlaces al recurso dentro de la memoria corporativa. 
+
+Si bien los miembros son libres de expresar sus anotaciones, se puede tener problemas de ambigüedad, como la homonimia (palabras que se escriben igual pero tienen distinto significado) y la sinonimia (palabras que se escriben diferentes pero que tienen el mismo significado).
+
+En el modelo de la web semántica las anotaciones son almacenadas por separado del contenido.
+
+Delimitar alcance y objetivos.
+En está etapa se debe realizar la descripción del problema, es decir, la integración semántica de los recursos de una memoria corporativa. También se hace un estado del arte de las herramientas para la edición de descripciones semánticas, edición de ontologías y avaluación de los razonadores. 
+Identificar los casos de uso del sistema.
+A partir de las necesidades de los miembros del dominio de Redes y Telecomunicaciones, se elaboran los respectivos diagramas de casos de uso (UML). Posteriormente se diseñan las consultas correspondientes a los casos de uso identificados.
+
+Realizar las descripciones semánticas de los recursos
+Después de recopilar los recursos de la memoria corporativa, para cada uno de éstos se deben elaborar las descripciones semánticas en el lenguaje estándar XML/RDF. Pero, para facilitar la generación de estás descripciones se emplea la herramienta MnM [5], 
+
 
 \section{Explotación del conocimiento en el modelo (axiomas)}
-Más texto...
+También estos sistemas deben soportar los cambios realizados en la Ontología, ya sea incorporando nuevas clases o modificando las existentes. De tal forma que se garantice la coherencia entre ontologías y anotaciones.
+
+Como el conocimiento evoluciona a lo largo del tiempo, los recursos pertenecientes a la memoria corporativa también sufren cambios, es decir, pueden ser modificados o eliminados.  Entonces se requiere mantener actualizadas las anotaciones para que estas sean consistentes con respecto a los recursos. De esta manera cuando los recursos sean usados por los procesos automáticos presenten estos cambios. 
+
+Modelar la ontología de dominio (RyT)
+Empleando la herramienta de edición Protégé [4], se debe enriquecer la ontología existente (ODARyT) agregando y modificando algunas ramas, ó construyendo una nueva ontología que se pueda vincular con la ontología ODARYT. Al terminar de editar la ontología se proponen restricciones para la misma.
 
 \section{Búsqueda y recuperación (consulta) del conocimiento de los recursos}
-Más texto...
+la acción de búsqueda también se necesita de un motor de búsqueda, pero no cualquier motor de búsqueda sino uno que integre un razonador el cual permita hacer inferencias a partir de la ontología y de está manera realiza la búsqueda en la Memoria de anotaciones, este motor de búsqueda se denomina Motor de Búsqueda Semántico (MBS). Finalmente el MBS entrega los enlaces a los recursos que satisfacen la consulta del usuario. 
