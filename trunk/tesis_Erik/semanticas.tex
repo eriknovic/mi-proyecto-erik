@@ -1,20 +1,115 @@
 \chapter{Tecnologías Semánticas}
 \label{cap:ets}
 
-(TS\label{sym:TS})
-La ontología es un nuevo objeto de IA, que recientemente llegó a la madurez y una potente herramienta de modelado conceptual del conocimiento. Proporciona una base coherente para construir, y una referencia común para alinearse con, en forma de un vocabulario conceptual consensuado, en el que se puede construir descripciones y comunicación del informe acts. This presenta el objeto que se llama "una ontología" y un estado de la técnica de técnicas de ingeniería para ontologías
+Definición de tecnologías semánticas
 
-\section{Definiciones y descripciones}
-Algún texto...
+Semántica
+
+Problemas comunes en no utiliza semántica
+2	Búsqueda basada en la semántica
+El enfoque tradicional tiene una limitante en la recuperación de resultados relevantes para los usuarios, es por esta razón que es necesario emplear métodos o herramientas provenientes de la Web Semántica (extensión de la web tradicional). Donde ?la información escrita en lenguaje natural  cuenta con un significado bien definido, permitiendo que las  computadoras y las personas trabajen en colaboración facilitando la interacción entre ambos elementos (computadora y usuario)? \cite{OntoTecRrpKnw}.
+
+Los motores de búsqueda rastrean automáticamente gran parte del contenido de la web copiando páginas web e indexando su contenido completo, por lo que normalmente encuentran un número inabarcable de resultados para cualquier búsqueda que no sea demasiado rebuscada, e incorporan distintos y cada vez más sofisticados procedimientos para decidir en qué orden sirven esta información. Los motores de búsqueda están concebidos para dedicarse a eso, no a buscar en información estructurada. Por otra parte, y esto tiene aún más importancia, sus procedimientos no encuentran las páginas dinámicas generadas a partir de la consulta de información, así que no permiten penetrar en la web oculta que tales páginas configuran.
+
+Las búsquedas en la Web, en definitiva, dan habitualmente como resultado un enorme número de ocurrencias en muchos casos irrelevantes, que requieren un costoso filtrado manual por parte del usuario. Los motores de búsqueda pueden tener problemas, pero la mayor parte de la frustración que provoca la búsqueda de información en la red viene de los propios datos. Las razones son tres: los datos no están bien catalogados (no tienen metadatos o éstos son sospechosos), no contienen información semántica legible por la máquina, o bien su calidad (su pertinencia desde el punto de vista del usuario) es ínfima.
+
+En primera instancia, se debe consultar el término ?semántica?, definido por el diccionario de la Real Academia Española como ``El estudio del significado de los signos lingüísticos y de sus combinaciones, desde un punto de vista sincrónico o diacrónico''.
+
+La Web semántica es un área prolifera, situada en la confluencia de la inteligencia artificial y las tecnologías Web, que propone nuevas técnicas y paradigmas para representación de la información y el conocimiento, facilitar tanto el localizar como el compartir, integrar y recuperar recursos [2].
+
+La Web Semántica, basada en conjunto datos procesables por las máquinas, integrará un conjunto tecnologías diseñadas para posibilitar una nueva visión la web, permitirá el razonamiento automático, la gestión conocimiento, la mejora del comercio electrónico y la búsqueda de información de manera eficaz y precisa.
+
+Web semántica aboga por clasificar, dotar de estructura y anotar los recursos con semántica explícita procesable  por máquinas. Actualmente la Web se asemeja a un grafo formado por nodos del mismo tipo, y arcos (hiperenlaces) igualmente indiferenciados [4]. La Web semántica ha sido estructurada por niveles, estableciendo una jerarquía de abstracción y dependencias entre los distintos niveles.
+
+¿Para que tener un integrador semántico de los recursos? Si existen buscadores como Google, Bing o Yahoo. Para responder está pregunta se emplea el siguiente ejemplo al buscar ?Profesores con conocimientos en radios cognitivos?, los resultados que arrojan cualquiera de los motores de búsqueda antes citados; no hay algún recurso del tipo persona (profesor) con conocimientos en radios cognitivos. Por el contrario se tienen distintos resultados asociados a distintos contextos (Química, Comunicaciones, Medio de comunicación, Anatomía, o Geometría), porque la palabra radio tiene múltiples significados (homonimia). De está manera al emplear un sistema de interacción semántica de los recursos de una memoria corporativa, los resultados serán los adecuados como los esbozado en la siguiente figura.
+
+1.2	Web Semántica
+?Es una Web dotada de mayor significado (semántica) en la que cualquier usuario en Internet podrá encontrar respuestas a sus preguntas de forma más rápida y sencilla gracias a una información mejor definida? [2].
+?La Web Semántica ayuda a resolver problemas importantes, de esta manera las personas delegan tareas a los procesos automáticos y estos son capaces de procesar el contenido de los recursos, razonar sobre éste, combinarlo y realizar deducciones lógicas para resolver problemas automáticamente, como la integración los recursos? [2].
+Existen tres elementos de la web semántica que permiten tener bien definido el significado de los datos. Estos elementos son ontología, descripción semántica y lenguaje de consulta.
+
+
+\section{Ontología}
+\label{sec:onto} 
+Qué es una ontología
+
+Describir por qué es importante
+
+Cuales son sus características
+1) Describir conocimiento y 2) Explotar el conocimiento con fines de búsqueda de información.
+
+Las ontologías representan el conocimiento contenido en los sitios de internet, definiendo formalmente los diferentes dominios mediante clasificaciones de conceptos y sus relaciones asociadas, a la vez que proporcionan mecanismos lógicos para poder realizar deducciones sobre este conocimiento.
+
+En la web semántica, se necesita que el conocimiento esté representado de forma que sea legible por los computadores, esté consensuado, y sea reutilizable, las ontologías proporcionan la vía para representar este conocimiento. El éxito de la Web semántica, según sus impulsores, se materializará en parte por la disposición a compartir ontologías que muestren comunidades y grupos en la web.
+
+La palabra Ontología ha sido tomada de la filosofía, y se define como una explicación sistemática de la existencia. En el campo de la Inteligencia Artificial, (para Neches y colegas) una Ontología define los términos básicos y las relaciones comprendidas en el vocabulario de un área temática así como las reglas para combinar términos y relaciones que permita definir extensiones del vocabulario. De acuerdo con esta definición, una ontología no sólo incluye los términos definidos explícitamente en ella, sino también aquellos términos que pueden ser deducidos a través de reglas. La definición de Gruber [6] es ``una Ontología es una especificación explicita de una conceptualización'' se convierte en la definición más referenciada en la literatura. Borst modifica sutilmente la definición de Gruber diciendo que: ``Las Ontologías son  definidas como una especificación formal de una conceptualización compartida''.
+
+Estas dos definiciones han sido explicadas por Studer y colegas: ``Conceptualización se refiere a un modelo abstracto de algún fenómeno en el mundo identificando los conceptos relevantes de dicho fenómeno. Explicita significa que los tipos de conceptos usados y las restricciones que sobre ellos se dan estén definidos explícitamente. Formal se refiere al hecho que una ontología debería ser comprensible por la maquina. Compartida se refiere a la idea de que una ontología captura un conocimiento consensuado, esto es, la ontología no es privada para algún individuo, debe ser aceptada por un grupo''.
+
+Es un conjunto de conceptos, propiedades, relaciones y restricciones entre los conceptos para un área de conocimiento (vocabulario conceptual); una ontología de dominio sirve para que las personas y procesos automáticos entiendan los conceptos y relaciones, además estos procesos a partir de la ontología hacen inferencias para generar nuevo conocimiento. Con base en los conceptos se pueden definir las características de los recursos, en donde estás características se denominan metadatos; estos pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URI  etc.) ó al contenido del mismo (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.). La siguiente figura muestra algunos de los metadatos que podemos asociar a una persona (concepto).
+
+Una ontología se define como ?un conjunto de conceptos pertenecientes a un dominio particular?. En donde estos conceptos están bien definidos, están jerarquizados, tienen relaciones y restricciones con otros conceptos. Para describir las ontologías, los lenguajes estándar son el OWL (Lenguaje de Ontologías Web) y el RDF(S) (Esquema del Marco de Descripción de Recursos). Donde el lenguaje más expresivo y que añade más vocabulario es OWL.
+
+Es un conjunto de conceptos, propiedades, relaciones y restricciones entre los conceptos para un área de conocimiento (Vocabulario conceptual). Otra definición más formal de ontología es ?una red conceptual que incluye un conjunto completo de conceptos y nociones para describir un dominio específico, en donde los conceptos están vinculados entre sí por relaciones taxonómicas y por la semántica? [A survey of semantic web standards to representing knowledge in problem solving situations]. 
 
 \section{Marco de Descripción de Recursos (RDF)}
-Más texto...
+Qué es RDF
+RDF es un modelo estándar para el intercambio de datos en la Web. RDF tiene características que facilitan la combinación de datos incluso si los esquemas subyacentes son diferentes, y específicamente apoya la evolución de esquemas en el tiempo sin necesidad de que todos los consumidores de datos a ser cambiados.
+
+Todo recurso tiene un URI
+
+Que es triple
+RDF extiende a la estructura de enlace de la Web para utilizar a URIs para nombrar la relación entre las cosas, así como los dos extremos de la conexión (lo que se conoce normalmente como "triple"). El uso de este modelo simple, que permite que los datos estructurados y semiestructurados ser mezclado, expuestos y compartidos a través de diferentes aplicaciones.
+
+Esta estructura de vinculación forma un un grafo dirigido y etiquetado, donde los bordes representan el llamado enlace entre dos recursos. Este punto de vista gráfico es el modelo mental más fácil posible para RDF y se utiliza a menudo en las explicaciones fáciles de entender.
+
+Algo más factible sería tratar de catalogar la información de forma descentralizada, añadiendo cada vez que se incorpora un documento a la red, datos sobre los datos: Metadatos.
+
+Estos tres tipos conceptos forman parte de una sentencia (tripleta) en el modelo RDF y a continuación se describen estos [11] [12].
+o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
+o	Predicado: Es una característica, atributo o relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
+o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
+
+La finalidad de las descripciones semánticas es que tanto personas como procesos automáticos entiendan el significado de los recursos y de esta manera los usuarios o procesos automáticos mejoren su referencia y su recuperación.
+
+una descripción semántica representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
+
+Estas descripciones semánticas tienen un identificador único de recurso (URI).
+
+La sintaxis de RDF se compone de una de una sentencia ó tripleta (sujeto, predicado y objeto) [5] que expresa el significado de las cosas. Los elementos de la tripleta son los siguientes:
+o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
+o	Predicado: Es una característica, atributo ó relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
+o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
+La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista
 
 \section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
-Más texto...
+Muchos motores de búsqueda, por ejemplo, ahora examinar las páginas Web para tipos particulares de metadatos, un tipo de información que describe otra información. Un tipo de metadatos se puede especificar a un motor de búsqueda que una serie de números es un número de teléfono o dirección física, mientras que otro tipo puede marcar un bloque de texto como una opinión de usuario de una empresa o producto.
+
+Son ?un conjunto de órdenes, operadores y estructuras que, organizadas según unas normas lógicas, permiten la consulta de fuentes y recursos de información electrónica? [6]. Pero no cualquier lenguaje se puede emplear, es necesario uno que permita interrogar las descripciones semánticas y encontrar aquellos recursos que satisfagan la consulta del usuario. El lenguaje de consulta basado en la sintaxis RDF y propuesto por la W3C y la WS es SPARQL. 
+Las consultas SPARQL se basan en patrones ?triple? en un grafo RDF, estos ?triple? son parecidos a las tripletas RDF, con la diferencia que alguno de los elementos sujeto u objeto son variables. De está manera al emplear un motor SPAQRL, este debe regresar los recursos que correspondan a ese patrón. Pero no solamente SPARQL regresa un recurso, también permite:
+o	Recuperar los recursos empleando las URI.
+o	Recupera conjunciones y disyunciones de un grafo RDF.
+o	Capacidad de conjuntar partes de grafos.
+
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
-Más texto...
+Las interpretaciones de las frases que no tienen sentido pueden ser filtrados mediante inferencia, que a veces se utiliza para clasificar las posibilidades de diferentes interpretaciones también. Fórmulas para la comprensión del lenguaje pueden ser creados usando modelos, en los que las variables matemáticas son asignados a diferentes elementos lingüísticos. Las letras P y Q se utilizan a menudo con la teoría de la prueba, en el que las fórmulas se pueden derivar de otros con la ayuda de reglas de inferencia. Informática palabras en una oración a veces ayuda a obtener significados o encontrar otras alternativas.
+
+El propósito de la semántica computacional es representar las ambigüedades o frases que pueden tener diferentes significados, de manera superficial. También implica palabras de procesamiento que dependen de contexto debe entenderse. El objetivo es por lo general para interpretar un significado automáticamente, así como para relacionar el método de hacerlo, para otros procesos computacionales para llevarse a cabo de manera más eficiente.
+
+Si bien una ontología permite definir un vocabulario común entre personas y procesos, también se puede explotar está para generar nuevo conocimiento mediante el uso de procesos que hacen inferencia. En donde la tarea de inferir nuevo conocimiento a partir de sentencias ó reglas se le denomina razonamiento, entonces un programa razonador es aquel que permite hacer inferencias y generar conocimiento, mediante el uso de un motor de inferencia (IE) y un conjunto de reglas (axiomas). El motor de inferencia  puede ser descrito como una forma de máquina de estados finitos con un ciclo que consta de tres estados: coinciden las reglas, selección de reglas y ejecutar reglas. En el primer estado el motor encuentra todas las reglas que satisfacen con el contenido actual de datos almacenados. El segundo estado aplica alguna estrategia para determinar que reglas realmente va ejecutar y el tercer estado ejecuta estas reglas
+
+La tarea de inferir nuevo conocimiento a partir de sentencias ó reglas se le denomina razonamiento, entonces un programa razonador es aquel que permite hacer inferencias y generar conocimiento, mediante el uso de un motor de inferencia (IE) y un conjunto de reglas (axiomas).
+
+En donde inferir en la Web Semántica significa que los procesos automáticos generen nuevas relaciones basadas en los datos y la información adicional en forma de un vocabulario, por ejemplo, un conjunto de reglas. Donde las Reglas definen un mecanismo general para el descubrimiento y generación de nuevas relaciones basadas en las existentes.
 
 \section{Ventajas de las tecnologías Semánticas}
-Más texto...
+Interoperabilidad y adaptación al conocimiento
+El enfoque relacional de las Bases de Datos tiene un esquema relacional e instancias, éstos se pueden traducir a elementos de una Ontología; las tablas serían clases, las relaciones entre tablas son propiedades de los objetos, una tupla sería un individuo, y los atributos serían propiedades de los datos. Con base en estas correspondencias se puede modelar una sencilla Ontología. Sin embargo, para enriquecer una Ontología es necesario considerar la utilidad de la misma (casos de uso) de tal forma que se requiere: introducir relaciones (pertinentes), proponer restricciones (lógica de primer orden) a los conceptos, definir los conceptos, e inclusive interrogar al propio esquema conceptual. Algo que por el momento el enfoque relacional no tiene. Otra diferencia es que el enfoque relacional tiene el esquema conceptual y los datos juntos (monolito), mientras que en la Web Semántica, los datos y el esquema pueden estar separados. Lo anterior resulta importante porque al tener separados a éstos, se pueden construir esquema e instancias de forma colaborativa; una actividad de la misión de la WS. (Hay que cambiar esta idea por: al tener separados el TBox y ABox, porque si evoluciona el conocimiento, podríamos cambiar algunos axiomas del TBox y así obtener los resultados deseados o una mejor adaptación al conocimiento).
+
+Colaboración entre usuarios, de tal manera que el conocimiento de distintos miembros o trabajadores contribuya a la reutilización de los documentos y a la mejora en las anotaciones. De esta manera los usuarios pueden contribuir al aumento de las anotaciones sobre sus documentos, así como auxiliar a los demás miembros para generar o modificar las anotaciones relacionadas a sus recursos, para tener una amplia y mejor memoria de anotaciones. En este ambiente colaborativo los miembros deben ser capaces de ver que anotación se está empleando para que en ese momento no se trabaje sobre esa, ya que si llega a suceder las anotaciones pueden ser inconsistentes.
+
+4.       Ortiz, M., Institute of Information Systems, V.U. of T.: Introducción a las Lógicas Descriptivas. (2009).
+9.   	Studer, R. et al.: Knowledge engineering: Principles and methods. Data & Knowledge ngineering. 25, 1-2, 161?197 (1998).
+10.   	Krötzsch, M. et al.: A Description Logic Primer. CoRR. abs/1201.4, 1?16 (2012).
+11.   	M. Horridge et al.: A Practical Guide To Building OWL Ontologies Using The Protégé-OWL Plugin and COODE Tools Edition 1.3. The University Of Manchester Stanford University. (2011).
