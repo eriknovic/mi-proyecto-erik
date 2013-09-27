@@ -6,6 +6,16 @@ Definición de tecnologías semánticas
 Semántica
 
 Problemas comunes en no utiliza semántica
+
+La integración tiene varios requisitos indispensables que se enuncian a continuación: 1) Debe permitir consultas específicas de los recursos a partir de sus metadatos. 2) Acceso a todos los recursos. 3) Capacidad de hacer búsquedas complejas. 4) Adaptarse al conocimiento cambiante. 5) Debe ser fácil de extender. 6) Ser accesible a través de la red. 7) Facilidad de mantener. 8) Emplear tecnologías, mecanismos y lenguajes  estándar. 
+
+Muchas tecnologías de Recuperación de Información (RI) son adecuadas para construir nuestro sistema. Sin embargo, no todas estas tecnologías satisfacen los requisitos que se establecieron al sistema. Un mecanismo para construir bases de conocimiento, son las tecnologías semánticas.  Las tecnologías semánticas son una combinación de aplicaciones y especificaciones formales/estándares \footnote{M. Bergman, ``Glossary of Semantic Technology Terms,'' Available:  \url{http://www.mkbergman.com/1017/glossary-of-semantic-technology-terms/}}. En donde, estas tecnologías se basan en la siguiente idea.  ``El significado de datos y contenidos se almacenan por separado, con la finalidad de tener fluidez en búsquedas y operaciones de los sistemas'' . Estas tecnologías semánticas permiten agregar una \textit{capa de abstracción} sobre las distintas fuentes de información. Esta capa tiene la finalidad de que tanto personas como aplicaciones entiendan, compartan y procesen eficientemente datos y especificaciones [2]. Nosotros para desarrollar nuestro sistema, optamos por las tecnologías semánticas, porque estas tecnologías proporcionan varios beneficios en la Representación del Conocimiento (KM). A grandes rasgos, estos beneficios son: captar la visión de contextos particulares, adaptarse a la naturaleza cambiante del conocimiento,  integración de distintas fuentes de información, implementación a menor costo, etc. [2][3]A continuación, se discuten detalladamente los beneficios de las tecnologías semánticas.
+
+La primera tecnología es el Motor de Búsqueda. Esta tecnología es común para los usuarios que navegan en Internet. Porque los usuarios obtienen varios resultados que pueden responder rápidamente su consulta. Un Motor de Búsqueda es un sistema de recuperación de la información que a partir de las palabras clave, realiza una búsqueda documental en la Web. Aquellos documentos que contengan las palabras clave, el Motor los regresará en un listado como respuestas al usuario. La importancia de un Motor es realizar una búsqueda distribuida. Esto quiere decir, los documentos tienen que ser accesibles vía Web, mediante enlaces URL (Localizador Único de Recurso).
+Nosotros desechamos la tecnología de un motor de búsqueda por varias razones. La principal razón son los resultados inesperados. Generalmente, un usuario al hacer una consulta obtiene muchos resultados que no son los esperados. En el peor caso, ningún resultado responde la pregunta del usuario. Este problema sucede por el funcionamiento basado en las palabras clave y los algoritmos de ranking [5]. Si un motor encuentra documentos con al menos una palabra clave o con las palabras clave muy separadas, entonces estos documentos figurarán en los resultados. Al someter estos documentos a un algoritmo de ranking que no utiliza criterios objetivos, éstos pueden quedar mal clasificados. En consecuencia, el usuario revisara muchos documentos web hasta que encuentre uno que responda su pregunta. 
+Otras razones de no emplear esta tecnología, son los problemas contextuales de las palabras (polisemia y sinonimia). La polisemia se da cuando dos o más palabras que se escriben y suenan igual, tienen distinto significado. Por ejemplo, si se hace una pregunta con la palabra ?radio? los resultados de la búsqueda serán sobre distintos contextos (geometría, anatomía, química y telecomunicaciones). Por otro lado, la sinonimia sucede cuando palabras que se escriben de distinta manera, tienen el mismo significado. Por ejemplo, si en una consulta se emplea la palabra ?computadora?, se espera que entre los resultados puedan aparecer documentos con las palabras computador, pc, ordenador o host. Finalmente, podemos decir que empleando este enfoque, los Motores de Búsqueda no hacen uso de lenguajes de consulta expresivos y precisos.
+
+
 2	Búsqueda basada en la semántica
 El enfoque tradicional tiene una limitante en la recuperación de resultados relevantes para los usuarios, es por esta razón que es necesario emplear métodos o herramientas provenientes de la Web Semántica (extensión de la web tradicional). Donde ?la información escrita en lenguaje natural  cuenta con un significado bien definido, permitiendo que las  computadoras y las personas trabajen en colaboración facilitando la interacción entre ambos elementos (computadora y usuario)? \cite{OntoTecRrpKnw}.
 
@@ -42,7 +52,7 @@ Las ontologías representan el conocimiento contenido en los sitios de internet, 
 
 En la web semántica, se necesita que el conocimiento esté representado de forma que sea legible por los computadores, esté consensuado, y sea reutilizable, las ontologías proporcionan la vía para representar este conocimiento. El éxito de la Web semántica, según sus impulsores, se materializará en parte por la disposición a compartir ontologías que muestren comunidades y grupos en la web.
 
-La palabra Ontología ha sido tomada de la filosofía, y se define como una explicación sistemática de la existencia. En el campo de la Inteligencia Artificial, (para Neches y colegas) una Ontología define los términos básicos y las relaciones comprendidas en el vocabulario de un área temática así como las reglas para combinar términos y relaciones que permita definir extensiones del vocabulario. De acuerdo con esta definición, una ontología no sólo incluye los términos definidos explícitamente en ella, sino también aquellos términos que pueden ser deducidos a través de reglas. La definición de Gruber [6] es ``una Ontología es una especificación explicita de una conceptualización'' se convierte en la definición más referenciada en la literatura. Borst modifica sutilmente la definición de Gruber diciendo que: ``Las Ontologías son  definidas como una especificación formal de una conceptualización compartida''.
+La palabra Ontología ha sido tomada de la filosofía, y se define como una explicación sistemática de la existencia. En el campo de la Inteligencia Artificial, (para Neches y colegas) una Ontología define los términos básicos y las relaciones comprendidas en el vocabulario de un área temática así como las reglas para combinar términos y relaciones que permita definir extensiones del vocabulario. De acuerdo con esta definición, una ontología no sólo incluye los términos definidos explícitamente en ella, sino también aquellos términos que pueden ser deducidos a través de reglas. La definición de Gruber \cite{Gruber} es ``una Ontología es una especificación explicita de una conceptualización'' se convierte en la definición más referenciada en la literatura. Borst modifica sutilmente la definición de Gruber diciendo que: ``Las Ontologías son  definidas como una especificación formal de una conceptualización compartida''.
 
 Estas dos definiciones han sido explicadas por Studer y colegas: ``Conceptualización se refiere a un modelo abstracto de algún fenómeno en el mundo identificando los conceptos relevantes de dicho fenómeno. Explicita significa que los tipos de conceptos usados y las restricciones que sobre ellos se dan estén definidos explícitamente. Formal se refiere al hecho que una ontología debería ser comprensible por la maquina. Compartida se refiere a la idea de que una ontología captura un conocimiento consensuado, esto es, la ontología no es privada para algún individuo, debe ser aceptada por un grupo''.
 
@@ -50,7 +60,9 @@ Es un conjunto de conceptos, propiedades, relaciones y restricciones entre los c
 
 Una ontología se define como ?un conjunto de conceptos pertenecientes a un dominio particular?. En donde estos conceptos están bien definidos, están jerarquizados, tienen relaciones y restricciones con otros conceptos. Para describir las ontologías, los lenguajes estándar son el OWL (Lenguaje de Ontologías Web) y el RDF(S) (Esquema del Marco de Descripción de Recursos). Donde el lenguaje más expresivo y que añade más vocabulario es OWL.
 
-Es un conjunto de conceptos, propiedades, relaciones y restricciones entre los conceptos para un área de conocimiento (Vocabulario conceptual). Otra definición más formal de ontología es ?una red conceptual que incluye un conjunto completo de conceptos y nociones para describir un dominio específico, en donde los conceptos están vinculados entre sí por relaciones taxonómicas y por la semántica? [A survey of semantic web standards to representing knowledge in problem solving situations]. 
+Es un conjunto de conceptos, propiedades, relaciones y restricciones entre los conceptos para un área de conocimiento (Vocabulario conceptual). Otra definición más formal de ontología es ?una red conceptual que incluye un conjunto completo de conceptos y nociones para describir un dominio específico, en donde los conceptos están vinculados entre sí por relaciones taxonómicas y por la semántica? [A survey of semantic web standards to representing knowledge in problem solving situations].
+
+El concepto de ontología nació en la filosofía, pero su definición fue adaptada para las tecnologías de la información y con el paso de los años ésta ha ido evolucionando. Una ontología es modelo de datos y lógico que representa un conjunto de conceptos y relaciones de los mismos para un determinado dominio [2]. Las ontologías son formales, explicitas, expresivas y compartidas [6], con la finalidad de explotar el conocimiento implícito y explícito.
 
 \section{Marco de Descripción de Recursos (RDF)}
 Qué es RDF
@@ -74,13 +86,49 @@ La finalidad de las descripciones semánticas es que tanto personas como procesos
 
 una descripción semántica representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
 
+El Marco de Descripción de Recursos (RDF). Este modelo de datos RDF permite transformar literalmente cualquier cosa a una forma canónica RDF (estándar). La unidad básica de RDF son las aserciones. La estructura básica de una aserción es como la de una oración sencilla, es decir, un sujeto, predicado y un objeto. De esta manera, opciones sencillas como ?Juan come pizza? permiten la construcción de vocabularios complejos [4]. RDF es el modelo de datos que permite representar el conocimiento de un dominio particular. Los dominios son grandes y poseen una gran cantidad de cosas.
+
+Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
+
 Estas descripciones semánticas tienen un identificador único de recurso (URI).
 
 La sintaxis de RDF se compone de una de una sentencia ó tripleta (sujeto, predicado y objeto) [5] que expresa el significado de las cosas. Los elementos de la tripleta son los siguientes:
 o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
 o	Predicado: Es una característica, atributo ó relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
 o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
-La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista
+La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista.
+
+Este ABox también se denomina información extensional o explicita de la base de conocimiento. 
+
+?	Clase: es una colección de objetos que comparten características comunes. Las clases en una otología también se conocen como conceptos, colecciones o tipos de cosas.
+Persona a Class
+Hombre a Class
+Mujer a Class
+?	Individuo: es un objeto concreto de una clase, como personas, animales, y otros objetos abstractos. Los individuos también se conocen como instancias o miembros.
+Erik a Hombre
+Scarlett a Mujer
+Juan a Persona
+?	Propiedad Objeto: es una relación entre instancias. 
+Erik tienePadre Juan
+Erik tieneHerman Scarlett
+Scarlett tiene.pariente Juan
+?	Propiedad Dato: es la relación entre un individuo y un valor  de dato.
+Juan tieneEmail ?juan@example.com?^^string
+Erik nombreCompleto ?Erik Alarcón?^^string
+Scarlett tieneEdad ?18?^^integer
+
+El modelo de datos RDF permite representar a los recursos en una ontología, con la finalidad de que los procesos automáticos interpreten adecuadamente el significado de cada recurso. Esta representación se hace a partir de los metadatos de los recursos. En donde, un metadatos proporciona información sobre algún aspecto o característica de un recurso. Por ejemplo, nombre del recurso, extensión, autor, temas clave, fecha de creación, idioma, etc.  
+El modelo RDF establece que cada metadato sea representado en forma de una aserción (triple) [4]. El triple es una afirmación de la forma: sujeto, predicado y objeto. El sujeto es el nombre del recurso (individuo), el predicado es el nombre de una relación y el objeto es el nombre de un individuo o valor. Por ejemplo, Pablo vive-en ?Antonio Caso No. 34 cp 12323?, Pablo conoce-a Pedro, Pablo tiene-género masculino, Pedro habla español, etc. 
+El conjunto de aserciones de un individuo, se conoce como descripción semántica. Las descripciones semánticas poseen tres tipos de aserciones. Estos tres tipos son los siguientes: 1) asignación del nombre del recurso a una determinada clase, 2) relación del nombre del recurso con otro individuo, mediante una Propiedad Objeto y 3) una relación que vincula al nombre del recurso con un valor, mediante una Propiedad Dato. Un ejemplo de una descripción semántica, en donde aparecen los tres tipos de aserciones, es el siguiente:
+Erik rdf:type Hombre
+Erik nombreCompleto ?Erik Alarcón?^^string
+Erik tieneEdad ?18?^^integer
+Erik tienePadre Juan
+Erik estudiaEn UAM
+Erik tieneHabilidadEn WebSemántica
+Erik tieneEmail ?cbi2@xanum.uam?^^string
+Existen muchas sintaxis para representar los triples o aserciones. El W3C establece como estándar el RDF/XML1 y obviamente al modelo de datos RDF [10] para representar a los recursos. Finalmente, un dato interesante es el siguiente. El conjunto de descripciones semánticas de los recursos es un subconjunto del ABox. 
+
 
 \section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
 Muchos motores de búsqueda, por ejemplo, ahora examinar las páginas Web para tipos particulares de metadatos, un tipo de información que describe otra información. Un tipo de metadatos se puede especificar a un motor de búsqueda que una serie de números es un número de teléfono o dirección física, mientras que otro tipo puede marcar un bloque de texto como una opinión de usuario de una empresa o producto.
@@ -90,6 +138,21 @@ Las consultas SPARQL se basan en patrones ?triple? en un grafo RDF, estos ?tripl
 o	Recuperar los recursos empleando las URI.
 o	Recupera conjunciones y disyunciones de un grafo RDF.
 o	Capacidad de conjuntar partes de grafos.
+
+Una ontología es una fuente valiosa de información de los recursos y del conocimiento implícito de estos. Entonces para recuperar la información de una ontología, se emplean lenguajes de consulta especializados. El lenguaje SPARQL5 es el estándar propuesto por el W3C para consultar triples. SPARQL funciona a partir de patrones. Estos patrones son similares a los triples, pero a diferencia de estos últimos, en un patrón el sujeto, predicado y objeto puede ser una variable. De esta manera, SPARQL empareja el patrón con todas las triples de la ontología. Aquellas triples concordantes, SPARQL recuperará el valor o valores asociados con la variable o variables.
+Un ejemplo básico de consulta es  ?busca a quiénes tengan habilidad en Web Semántica?. La expresión asociada a esta consulta en lenguaje SPARQL es: 
+	SELECT ?x 						WHERE {?x tieneHabilidadEn WebSemántica.}
+Analizando esta consulta,  la cláusula SELECT identifica las variables que deben aparecer en los resultados de la consulta. Mientras la cláusula WHERE proporciona el patrón que debe concordar con las triples del ABox. Específicamente, la variable ?x contendrá los individuos que tienen como Predicado (tieneHabilidadEn) y como Objeto (WebSemántica).  Una solución de esta consulta es el individuo ?Erik?.
+SPARQL también permite ampliar y restringir las consultas sobre las afirmaciones, así como también emplear elementos del componente terminológico (TBox). Los siguientes ejemplos muestran las restricciones que se pueden hacer en una consulta:
+?	?Encontrar el correo de todas las mujeres?.
+SELECT ?mail					WHERE{							?y rdf:type Mujer.						?y tieneEmail ?mail.				}
+?	?Encontrar las personas que estudian en la UAM y son mayores de 18 años?.
+SELECT ?x						WHERE {							?x tieneEdad ?age.						FILTER (?age > 18)					?x estudiaEn UAM.				}
+?	?Encontrar las personas que son casadas?.
+SELECT ?name					WHERE{							{?name tieneEsposa ?x.}					UNION							{?name esEsposaDe ?x.}			}
+Más detalles de consultas complejas en SPARQL, revisar el documento SPARQL5 Lenguaje de consulta para RDF.
+
+Todas las aserciones del Abox deben ser almacenadas de forma permanente, con la finalidad de hacer futuras consultas sobre estos triples. El triplestore es el mecanismo que nos permite gestionar (almacenamiento y búsqueda) los triples. Un triplestore robusto de permitir el almacenamiento nativo de triples, carga y procesamiento del grafo RDF en memoria, consultar los valores de los triples y hacer inferencias a partir de los axiomas. 
 
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
@@ -103,6 +166,45 @@ La tarea de inferir nuevo conocimiento a partir de sentencias ó reglas se le den
 
 En donde inferir en la Web Semántica significa que los procesos automáticos generen nuevas relaciones basadas en los datos y la información adicional en forma de un vocabulario, por ejemplo, un conjunto de reglas. Donde las Reglas definen un mecanismo general para el descubrimiento y generación de nuevas relaciones basadas en las existentes.
 
+El TBox proporciona reglas o axiomas para proporcionar el conocimiento implico. A continuación se listan varios de estos axiomas.
+?	Jerarquía de clases y propiedades, cosiste en agrupar jerárquicamente y sistemáticamente las diferentes clases y propiedades en grupos estables. La operación básica es ?subclase? y consiste en ligar un concepto/relación particular con un concepto/relación general.
+Persona rdfs:subClassOf Thing
+Mujer rdfs:subClassOf Persona 
+tienePadre rdfs:subProprertyOf tieneParinete
+?	Dominio y Rango de una Propiedad Objeto, son las clases que intervienen en una relación. En donde el primer componente de una Propiedad es el Dominio y el segundo el Rango.
+tieneEsposa rdfs:Domain Hombre
+tieneEsposa rdfs:Range Mujer
+?	Dominio y Rango de una Propiedad Dato, son las clases y tipos de valores que intervienen en una relación. Para más detalles de estos tipos de valores consultar el RDF Primer 2.
+nombreCompleto rdfs:Domain Persona
+nombreCompleto rdfs:Range xsd:string
+?	Características de las Propiedades Objeto, existen muchas relaciones en el mundo real, como transitividad, funcionalidad, simetría, inversa, y otras. Entonces, aquellas propiedades que tengan el comportamiento de las relaciones antes descritas, se debe especificar que son de este tipo.  Afortunadamente, existen axiomas que permiten hacer esto. Para más detalles de estas características consultar el tutorial ?Una Guía para construir Ontologías OWL? [9].
+nombreCompleto rdf:type owl:FunctionalProperty
+tienehijo rdf:type owl:AsymmetricProperty
+tienePariente rdf:type owl:TransitiveProperty
+?	Restricción existencial, se emplea para asegurar que al menos un individuo que se obtiene por una propiedad, pertenece a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen una madre que es mujer? es:
+tieneMadre some Mujer
+?	Restricción universal, se emplea para asegurar que todos los individuos que se obtienen por una propiedad, pertenecen a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen solo parientes humanos? es:
+tienePariente only Humano
+?	Restricción cardinal, se emplea para asegurar que como máximo, mínimo o exactamente ?n? individuos que se obtienen por una propiedad, pertenezcan a la clase especificada. Por ejemplo, el axioma para decir ?todos tienen mínimo dos parientes mujeres? es:
+tienePariente min 2 Mujer 
+?	Operadores lógicos, se emplean para construir axiomas más complejos. Los operadores básicos son And, Or, Not. En este ejemplo, el axioma  para decir que ?Todas las personas son hombres o mujeres?, es.
+Persona rdfs:subClassOf (Hombre or Mujer)
+2RDF Primer, disponible en: http://www.w3.org/TR/rdf-primer/, 2004
+3OWL 2 Web Ontology Language Primer, disponible en: http://www.w3.org/TR/owl2-primer/, 2012.
+4RDF Vocabulary Description Language, disponible en: http://www.w3.org/TR/rdf-schema/, 2004
+5SPARQL Query Language for RDF, disponible en: http://www.w3.org/TR/rdf-sparql-query/, 2008
+Existen muchos lenguajes para construir una ontología. Sin embargó no todos estos lenguajes son estándares o soportan algunos de los axiomas antes descritos. El World Wide Consortium propone como estándares al Lenguaje Web Ontológico (OWL3) y al Marco de Descripción de Recursos (RDF4). Ambos lenguajes permiten definir clases y varios axiomas, pero el más limitado en expresividad es RDF. Aunque el lenguaje OWL se basa en el RDF. Por tal motivo, si se quiere una ontología apegada a lenguajes estándares y actualizados, la opción a elegir es OWL.
+
+
+El otro componente denominado componente terminológico (TBox), sirve para ?describir los conceptos en términos de otros y las relaciones que hay entre los mismos?
+
+Como bien se ha dicho, una ontología proporciona un formalismo y expresividad para representar el conocimiento. El TBox proporciona los axiomas para representar el conocimiento implícito de un dominio. Pero, para aprovechar este conocimiento implícito se requiere una aplicación. Este programa se denomina razonador. Un razonador es una pieza de software que permite deducir datos y asociaciones a partir de los axiomas6. Estos razonadores infieren sobre la jerarquía de las clases, las relaciones entre clases y las instancias. Los razonadores también son conocidos como razonadores semánticos, motor de inferencias o motor de reglas. 
+Los beneficios de emplear los razonadores se describen a continuación.
+?	En la fase de construcción de un modelo de ontología. El razonador verifica la consistencia del modelo. El objetivo de verificar la consistencia es identificar contradicciones o detalles en el modelo.
+?	Un razonador en combinación con SPARQL permite mejorar la calidad de los resultados de las cónsulas, ya que se aprovecha el conocimiento implícito del TBox.
+Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta. Por los dos axiomas de jerarquía. 
+Muchos razonadores existentes están disponibles en la Web. Pero, varios de éstos ya están integrados o son fáciles de integrar con los entornos de desarrollo integrado (IDE). Los razonadores más comunes son Pellet7 y FACT++8, que poseen una licencia open source AGPL version 3 license y LGPL respectivamente.
+
 \section{Ventajas de las tecnologías Semánticas}
 Interoperabilidad y adaptación al conocimiento
 El enfoque relacional de las Bases de Datos tiene un esquema relacional e instancias, éstos se pueden traducir a elementos de una Ontología; las tablas serían clases, las relaciones entre tablas son propiedades de los objetos, una tupla sería un individuo, y los atributos serían propiedades de los datos. Con base en estas correspondencias se puede modelar una sencilla Ontología. Sin embargo, para enriquecer una Ontología es necesario considerar la utilidad de la misma (casos de uso) de tal forma que se requiere: introducir relaciones (pertinentes), proponer restricciones (lógica de primer orden) a los conceptos, definir los conceptos, e inclusive interrogar al propio esquema conceptual. Algo que por el momento el enfoque relacional no tiene. Otra diferencia es que el enfoque relacional tiene el esquema conceptual y los datos juntos (monolito), mientras que en la Web Semántica, los datos y el esquema pueden estar separados. Lo anterior resulta importante porque al tener separados a éstos, se pueden construir esquema e instancias de forma colaborativa; una actividad de la misión de la WS. (Hay que cambiar esta idea por: al tener separados el TBox y ABox, porque si evoluciona el conocimiento, podríamos cambiar algunos axiomas del TBox y así obtener los resultados deseados o una mejor adaptación al conocimiento).
@@ -113,3 +215,9 @@ Colaboración entre usuarios, de tal manera que el conocimiento de distintos miem
 9.   	Studer, R. et al.: Knowledge engineering: Principles and methods. Data & Knowledge ngineering. 25, 1-2, 161?197 (1998).
 10.   	Krötzsch, M. et al.: A Description Logic Primer. CoRR. abs/1201.4, 1?16 (2012).
 11.   	M. Horridge et al.: A Practical Guide To Building OWL Ontologies Using The Protégé-OWL Plugin and COODE Tools Edition 1.3. The University Of Manchester Stanford University. (2011).
+
+Los objetos, ideas, conceptos están en constante cambio. Estos cambios modifican sutilmente la estructura del conocimiento. Algo que en el pasado es verdadero, se vuelve falso en el presente. Esto significa que el conocimiento se adapta y evoluciona [4]. Por tanto, herramientas para la gestión del conocimiento, deben adaptar su lógica a esta naturaleza cambiante [4]. Herramientas como Gestores de Bases de Datos (GBD) no son adaptativas al conocimiento cambiante (sistemas cerrados). Porque los GBD son mecanismos apegados a un esquema estático que es rígido. Por lo tanto, cuando existen cambios en el conocimiento, este esquema debe ser modificado, así como también algunas relaciones en la BD. Esta operación es costosa (tiempo, dinero y recursos humanos) y cada vez que evolucione el conocimiento se debe efectuar nuevamente. Las aplicaciones y sistemas adaptables a la ?naturaleza cambiante del conocimiento? deben emplear el paradigma de suposición de un mundo abierto (OWA). Este paradigma establece las siguientes premisas [4]: 1) la falta de una aserción no implica que sea falso o verdadero, 2) la falta de conocimiento no significa falsedad, 3) todo está permitido, hasta que se establece que está prohibido, 4) Esquema es extensible y 5) la información imperfecta se puede combinar.
+
+El conocimiento es amplio y no está en centralizado. También los usuarios no están en una misma ubicación, estos siempre están en constante movimiento. Por tal motivo, se necesita una arquitectura que considere esta naturaleza distribuida del conocimiento y de los usuarios. Esta arquitectura debe permitir el acceso uniforme a los recursos [4]. La Web es una arquitectura que proporciona el acceso e intercambio de información. Específicamente, la Web ofrece los siguientes beneficios [4]: 1) toda la información es accesible a través de Identificador Único de Recursos (URI), 2) toda la información de la Web puede ser integrada, 3) muchas tecnologías Web están disponibles para su uso y son de código abierto y 4) la Web es escalable, robusta y sustentable. En la Web, hay una amplia variedad de datos. Los datos pueden ser de diferentes formas, como estructurados, semi-estructurados, y no estructurados. En donde, datos estructurados son información que se apega a un modelo de datos, datos semi-estructurados son información contenida entre etiquetas u otros lenguajes de marcado, y datos no estructurados es información orientada al texto [4]. A su vez estos datos se guardan en distintos tipos de archivos, como texto plano, HTML, XML, formas codificadas, o binarios. Por tal razón, es necesario modelar la información (sin importar la forma y formato) en un formato estándar.
+
+Las tecnologías semánticas son flexibles y permiten la interoperabilidad con otros sistemas [3][4]. Un ejemplo de esta interoperabilidad es el siguiente. Los Gestores de Bases de Datos son sistemas cerrados, pero una organización puede depender exclusivamente de estos. Si se remplaza de  golpe este sistema, entonces se puede desencadenar varios riesgos a la organización. Una estrategia importante e interesante es aprovechar a estos gestores. Un gestor debe verse como una fuente de datos estructurados. Si se introduce una capa de interoperabilidad sobre estos datos, entonces esta capa transforma los datos a la forma canónica RDF. Una gran ventaja de tener un modelo de datos flexible y estándar, es el desarrollo de aplicaciones genéricas. Estas aplicaciones genéricas tendrán como objetivos: una facilidad de uso y una mejor integración de los usuarios. Por lo tanto, personas expertas en el dominio serán los principales constructores del grafo de conocimiento [4]. Esta actividad, reducirá costos monetarios, personales y temporales, además la información del grafo será más confiable.
