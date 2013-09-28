@@ -29,3 +29,5 @@ Si se emplea una aplicación web no es necesario instalar algún software extra,
 
 Por otro lado al usar una aplicación basada en Java, es necesario tener Java Development Kit (JDK) que es independiente de la plataforma, para tener un entorno amigable al usuario.
 
+Finalmente, los usuarios necesitan una interfaz de usuario, para la consulta de información de las tripletas. Nosotros proponemos una interfaz amigable que sea accesible vía Web. De esta manera, los usuarios no instalan ningún componente y simplemente acceden a la página Web del sistema.
+La interfaz al ser accesible vía Web, requiere ser instalada en un servidor Web. Para tomar la decisión sobre qué servidor es el apropiado para la interfaz. Nosotros debemos tomar en cuenta, el lenguaje de implementación del triplestore. Si el lenguaje es PHP9, entonces, podemos emplear un servidor HTTP Apache10. En otro caso, si el lenguaje es Java11 y permite implementar Servlet, entonces el servidor es Apache Tomcat12. 
