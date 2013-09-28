@@ -3,6 +3,10 @@
 
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
 
+Nuestra Memoria Corporativa se constituye de un conjunto de recursos que contextualmente se relacionan. Estos recursos físicamente son accesibles para cada usuario que es responsable de los mismos. Sin embargo, actualmente no hay un mecanismo que permita integrar la información sobre estos recursos, con la finalidad de hacer búsquedas precisas de los mismos. Nosotros proponemos como solución un sistema. Este sistema aprovechando la base de conocimientos, busca y recupera los recursos que satisfacen la consultad de un usuario.
+
+nosotros empleamos las tecnologías semánticas. Porque son útiles, estándares y flexibles para la integración de la información y la representación del conocimiento.
+
 Las reglas para la descripción multinivel son las siguientes: 
 ? Descripción de lo general a lo particular 
 ? Información pertinente para cada nivel de descripción 
@@ -51,6 +55,11 @@ Actividad	Paso
 a.	Protégé. URL: http://protege.stanford.edu/
 
 
+El objetivo de este sistema es encontrar, indicar y entregar información de los recursos que respondan la consulta de un profesor. Este sistema debe tener varios requisitos indispensables. Estos requisitos a continuación se enuncian: 1) debe permitir consultas específicas de los recursos a partir de sus metadatos, 2) acceso a todos los recursos, 3) capacidad de hacer búsquedas complejas, 4) adaptarse al conocimiento cambiante, 5) debe ser fácil de extender, 6) ser accesible a través de la red, 7) debe ser fácil de mantener, 8) emplear tecnologías, mecanismos y lenguajes  estándar, y finalmente 9) proporcionar seguridad de acceso a los recursos.
+
+
+La siguiente sección es la más interesante, debido a que aquí describimos y justificamos las decisiones que tomamos para construir nuestro modelo de ontología. Nosotros dividimos el trabajo en dos etapas, una etapa para identificar los elementos de la ontología y otra etapa para escribir esta ontología en el lenguaje estándar OWL. La primera etapa denominada Análisis y Diseño de la ontología, consiste en identificar y capturar las clases, propiedades, restricciones e individuos en un formato estándar (sintaxis OWL RDF). De esta forma, los diseñadores entenderán y corregirán pertinentemente la ontología.
+
 \section{Representación del conocimiento de los recursos (modelo de datos)}
 se debe caracterizar y dotar de semántica a los recursos de la memoria corporativa. Donde por caracterizar en este contexto es la abstracción de ciertas características que posee un recurso, estas características que permiten determinar un recurso se denominan metadatos. Y estos metadatos use obtienen a partir del entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento  etc.) o basados en el contenido (keywords, fecha de nacimiento, teléfono, abstract,  dirección, referencias, etc.) del mismo.
 
@@ -72,7 +81,34 @@ A partir de las necesidades de los miembros del dominio de Redes y Telecomunicac
 Realizar las descripciones semánticas de los recursos
 Después de recopilar los recursos de la memoria corporativa, para cada uno de éstos se deben elaborar las descripciones semánticas en el lenguaje estándar XML/RDF. Pero, para facilitar la generación de estás descripciones se emplea la herramienta MnM [5], 
 
-La ontología del sistema ha sido dividida en tres sub-ontologías. Una sub-ontología corresponde con el caso de uso ?cartera de competencias?. Esta sub-ontología modela a las personas, con base en sus conocimientos y a sus relaciones personales. La segunda sub-ontología corresponde a los ?documentos digitales?. Esta sub-ontología modela a los recursos digitales y las relaciones que tienen entre estos. Específicamente las relaciones importantes son temas de investigación del área de Redes y Telecomunicaciones. Finalmente, la tercera sub-ontología representa varios temas del área de Redes y Telecomunicaciones. Estos temas se encuentran jerarquizados en las cuatro principales líneas de investigación del posgrado del área (Sistemas Distribuidos, Redes y Servicios de Telecomunicaciones, Sistemas de Comunicación Digital y Web Semántica).
+Representando un grafo RDF
+? Se inicia con algunas definiciones de constantes y luego crea una
+modelo o modelo vacío, utilizando el método ModelFactory
+createDefaultModel () para crear un modelo basado en memoria.
+? Jena contiene otras implementaciones de la interfaz de modelo, por ejemplo,
+uno que utiliza una base de datos relacional: este tipo de modelos son
+También disponible en ModelFactory.
+? El recurso John Smith, se crea y una propiedad agregada a
+ella. La propiedad es proporcionada por una tarjeta digital clase "constante", que
+contiene objetos que representan a todas las definiciones de la VCARD
+esquema.
+? Jena ofrece clases constantes para otros esquemas bien conocidos,
+tales como RDF ??y RDF esquema sí mismos, Dublin Core y
+DAML.
+
+Escribe el resultado de Tutorial03 en RDF / XML
+XML: model.write(System.out, "RDF/XMLABBREV"); 
+? N-Triple: model.write(System.out, "N-TRIPLE");
+
+Jena permite al programador especificar, de manera abierta, significativa
+forma en que los conceptos y relaciones que caracterizan colectivamente
+un dominio.
+? P. ej vino tinto, variedades de uva, añadas, bodegas de vino ---
+clases de dominio
+? P. ej bodegas de elaboración de vinos, los vinos tienen un año de la producción -
+relaciones de dominio de vino
+
+
 
 \section{Explotación del conocimiento en el modelo (axiomas)}
 También estos sistemas deben soportar los cambios realizados en la Ontología, ya sea incorporando nuevas clases o modificando las existentes. De tal forma que se garantice la coherencia entre ontologías y anotaciones.
@@ -189,6 +225,65 @@ F.	Construcción del modelo de ontología Persona
 La segunda etapa Construcción y pruebas del modelo. Esta etapa consiste en transformar los elementos en sintaxis OWL RDF a un archivo OWL. Para hacer esta actividad, nosotros empleamos la herramienta protégé. Porque su interfaz es sencilla y amigable con el usuario. Esta herramienta permite a los usuarios agregar Clases, Propiedades Objeto, Propiedades Dato, crear jerarquía de Clases y Propiedades, establecer el Dominio, Rango y características de las Propiedades, establecer restricciones existenciales, universales y cardinales, crear instancias de las clases, así como también hacer afirmaciones. 
 La herramienta protégé11 integra un API para hacer consultas en SPARQL y un API razonador para hacer inferencias. La API SPARQL, nos permitió interrogar las afirmaciones de prueba. De esta manera, nosotros pudimos verificar y recuperar los valores (instancia o literal) de nuestras instancias. Por otro lado la API razonador, la empleamos para dos tareas importantes. La primera tarea es verificar que el modelo es consistente. El funcionamiento de esta operación es la siguiente. Si nuestra ontología tenía un error y poníamos en marcha el razonador. La interfaz protégé marcaba en color rojo la Clase o Propiedad que era inconsistente. La segunda tarea del razonador es hacer inferencia a partir de los axiomas de nuestra ontología. Por ejemplo, recordemos que las clases Estudiante, Profesor y Empleado tienen como superclase Persona. Estas subclases también tienen individuos, pero la superclase no tiene individuos. Si nosotros ponemos en marcha el razonador. Entonces, el razonador interpretara el axioma (rdfs:subClassOf) e inferirá que los individuos de las dos subclases  son individuos  de la clase Persona. De esta manera, mucha información que está implícita en los axiomas, el razonador la hace explicita para las personas y los procesos automáticos.
 
+La ontología del sistema ha sido dividida en tres sub-ontologías. Una sub-ontología corresponde con el caso de uso ?cartera de competencias?. Esta sub-ontología modela a las personas, con base en sus conocimientos y a sus relaciones personales. La segunda sub-ontología corresponde a los ?documentos digitales?. Esta sub-ontología modela a los recursos digitales y las relaciones que tienen entre estos. Específicamente las relaciones importantes son temas de investigación del área de Redes y Telecomunicaciones. Finalmente, la tercera sub-ontología representa varios temas del área de Redes y Telecomunicaciones. Estos temas se encuentran jerarquizados en las cuatro principales líneas de investigación del posgrado del área (Sistemas Distribuidos, Redes y Servicios de Telecomunicaciones, Sistemas de Comunicación Digital y Web Semántica).
+
+Jena proporciona tres operaciones para manipular
+modelos:
+? Unión - Unión (modelo):. Crea un nuevo modelo que contiene todas las
+los datos contenidos en este modelo, junto con todos los que en
+otro modelo dado.
+? Se puede combinar datos de diferentes fuentes de datos
+? Intersección - intersección (modelo):. Crear un nuevo modelo
+que contiene todas las declaraciones que se encuentran en ambos este modelo
+y otra
+? Diferencia - diferencia (modelo):. Crear un nuevo modelo
+que contiene todos los datos contenidos en este modelo que no se encuentran en
+otra.
+
+Un requisito de la etapa de análisis y diseño es tener los casos de uso. Porque sin éstos se podría ensuciar la ontología con elementos innecesarios. Recordemos que en este proyecto, nosotros tenemos dos casos de uso, cartografía de competencia y búsqueda de recursos digitales. Al analizar estos dos casos de uso, identificamos tres grupos principales de cosas: personas, recursos digitales y vocabulario del área de Redes y Telecomunicaciones. Si bien, podemos construir una mega ontología que capture el conocimiento de estos grupos. Nosotros elegimos representar la conceptualización de cada grupo en su respectiva otología, siguiendo el principio de modularidad de las ontologías. La primera ontología que se obtuvo fue el vocabulario del área de Redes y Telecomunicaciones (ODARyT), debido a que esta ontología se heredó del Proyecto de la Ma. Ana B. Ríos Alvarado. La finalidad este vocabulario es proporcionar a personas y recursos digitales los temas del área de RyT. Por ejemplo, ?las personas tienen habilidades en Web Semántica? y ?los documentos que tratan sobre el Estado Global?, donde Web Semántica y Estado Global son conceptos del Área de Redes y Telecomunicaciones. 
+Esta ontología ODARyT está conformada por los conceptos importantes del área de redes y telecomunicaciones, así como también la definición explicita de estos conceptos. Las relaciones que actualmente tiene la ontología son axiomas de Herencia de clases. Esta herencia o jerarquía de clases en la primera etapa organiza los conceptos en cuatro líneas de investigación (Sistemas Distribuidos, Redes y Servicios de Telecomunicaciones, Sistemas de Comunicación Digital y Web Semántica). Las siguientes etapas de jerarquía de los conceptos, dependen de los temas de interés que hay en cada línea de investigación. Por ejemplo, el concepto ?Peer to Peer?, tiene la siguiente jerarquía:
+PeertoPeer rdfs:subClassOf ModeloArquitectura
+ModeloArquitectura rdf:subClassOf SistemasDistribuidos
+SistemasDistribuidos rdfs:subClassOf AreaRyT
+Actualmente, esta ontología no posee Propiedades Objeto, Propiedades Dato, instancias y afirmaciones (ABox). Sin embargo, esta ontología si representa un TBox funcional.
+
 
 \section{Búsqueda y recuperación (consulta) del conocimiento de los recursos}
 la acción de búsqueda también se necesita de un motor de búsqueda, pero no cualquier motor de búsqueda sino uno que integre un razonador el cual permita hacer inferencias a partir de la ontología y de está manera realiza la búsqueda en la Memoria de anotaciones, este motor de búsqueda se denomina Motor de Búsqueda Semántico (MBS). Finalmente el MBS entrega los enlaces a los recursos que satisfacen la consulta del usuario. 
+
+
+Navegando un modelo
+? acuerdo con Acceso a la información celebrada en un modelo
+? Dada la URI de un recurso, el objeto de recurso
+se puede recuperar desde un modelo utilizando
+Método Model.getResource (String uri).
+? Este método está definido para devolver un objeto de recursos si
+existe uno en el modelo, o de otro modo para crear un
+uno nuevo.
+? Por ejemplo:
+? / / Recuperar el recurso vcard John Smith del modelo
+Recursos vcard = model.getResource (johnSmithURI);
+10/21/2010 26
+Tutorial06-Navegación por una
+modelo
+? Acceso a las propiedades de un recurso
+? Resource.getProperty (Propiedad p)
+? Este método devuelve toda la declaración.
+? Luego, utilizando getObject () para obtener el valor de la
+propiedad.
+? Ejemplo
+? / / Recuperar el valor de la N propert
+= Nombre de recurso (Resource) vcard.getProperty (VCARD.N)
+. getObject ();
+
+Consultar un modelo
+? Aquí introduce alguna consulta limitada primitiva
+? model.listStatements (): las listas de todas las declaraciones en un modelo, no
+recomendada en los modelos grandes
+? model.listStatements Selector (s): devuelve un iterador sobre toda la
+declaraciones de la modelo seleccionada por s.
+? model.listSubjects (): devuelve un iterador sobre todos los recursos que
+son sujetos de las declaraciones
+? model.listSubjectsWithProperty (Property p, RDFNode o): devuelve
+un iterador sobre todos los recursos que tienen la propiedad p de
+valor o.

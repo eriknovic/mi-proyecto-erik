@@ -78,6 +78,28 @@ El trabajo principal incluye el modelado semántico basado en ontologías, la inte
 
 %%%C:\Users\ARTE\Dropbox\Gestión Semántica\Actividades 13I\feedback\CMED_8_FEB_Integracion Semántica de los recursos.docx
 
+Las tecnologías semánticas son variadas tanto en tipo (servlets, APIs, entornos web, IDEs) como en alcance (almacenamiento, edición, entornos de desarrollo, razonamiento, conversores, lenguajes de consulta). Nosotros para implementar nuestro sistema, empleamos un conjunto estas herramientas. La elección de estas herramientas se hizo mediante una investigación de las características de las mismas. Dado el número de herramientas, la investigación se acoto por el alcance de la herramienta. A continuación, se describen algunas herramientas que exploramos, así como la herramienta elegida y la justificación de por qué se  eligió. 
+
+%%%%%%%%%%%%%%
+¿Qué herramientas necesitamos?
+la lista de cosas que necesitamos
+Estado del arte de herramientas
+Por cada cosa, habrá que poner qué herramientas existen
+Cuál elegimos y por qué
+1. Editor de ontologías.
+para las TBoxes de las ontologías
+2. Editor de descripciones semánticas
+para las ABoxes
+necesita un "anotador"? existe? cuales hay ? hay que hacerlo? etc
+más bien, nos fuimos por esta alternativa, puesto que las personas que nos van a ayudar (nos ayudaron?) con eso no necesariamente manejaban Protégé
+3. Triplestore con cierto soporte de razonamiento
+ventajas tiene qué es un triplestore? cuales hay ?
+para las consultas muchas veces, los triplestores soportan cierto grado de razonamiento
+como Jena mismo esa es una pregunta que habrá que investigarse
+Sesame RDF, Stardog, Apache Jena, Virtuoso
+Un razonador para que nos serviría en el proyecto?  lo necesitamos realmente? que ganamos que perdemos?
+%%%%%%%%%%%%%%
+
 A partir de la arquitectura del sistema SIR y de las tecnologías semánticas. Nosotros hicimos un análisis de las herramientas semánticas, para facilitar la construcción y desarrollo de este sistema SIR. Las tecnologías semánticas son variadas tanto en tipo (servlets, APIs, entornos web, IDEs) como en alcance (almacenamiento, edición, entornos de desarrollo, razonamiento, conversores, lenguajes de consulta). Dado el gran número de herramientas, la investigación se acoto por el alcance de la herramienta. A continuación, se describen algunas herramientas que exploramos, así como la herramienta elegida y la justificación de por qué se  eligió.
 
 En un estudio sobre las herramientas para el manejo y la manipulación de ontologías [12] se analizaron Prolog Server Pages y Prosper, se evaluó el paquete RAP, que integra numerosas características, entre ellas se distinguen,  un motor de consulta en SPARQL [13], un servidor en RDF, y métodos específicos de vocabulario que permite la manipulación de modelos RDF.
@@ -139,6 +161,10 @@ Muchas de las herramientas antes descritas, tienen el objetivo de generar descri
 A partir de las anteriores limitantes, nosotros optamos por combinar formularios (Google Form13) y scripts para construir las descripciones semánticas. El objetivo de los formularios es captar/almacenar los metadatos de los recursos. Mientras, los scripts mapean estos metadatos a descripciones semánticas de los recursos. El funcionamiento detallado de formularios y scripts es el siguiente. Los diseñadores a partir de las Propiedades Objeto y Dato construyen un conjunto de formularios. Los formularios terminados se envían a un grupo de personas. Estas personas capturan los metadatos significativos de los recursos y los envían a un servidor. Estos metadatos se almacenen en una hoja de cálculo. Después de almacenar los metadatos de varios recursos, la hoja de cálculo se descarga como texto plano separado por comas (csv). Cada fila del archivo csv, se traduce en un conjunto de aserciones de un recurso. Estas aserciones se almacenan en un archivo canónico RDF (descripción semántica). Finalmente, para cada fila de cada archivo csv se generan un conjunto de descripciones semánticas.
 
 C.	Triplestore
+
+Triplestore
+Todas las aserciones del ABox y axiomas del TBox deben ser almacenadas de forma permanente, con la finalidad de hacer futuras consultas sobre estos triples. El triplestore es el mecanismo que nos permite gestionar (almacenamiento y búsqueda) los triples. Un triplestore robusto de permitir el almacenamiento nativo de triples, carga y procesamiento del grafo RDF en memoria, consultar los valores de los triples y hacer inferencias a partir de los axiomas. 
+
 Un triplestore es un framework para el almacenamiento y consulta de tripletas RDF. Este triplestore se considera un Sistema Gestor de Base de Datos para datos modelados en RDF. Típicamente, un triplestore emplea el estándar SPARQL como mecanismo para la consulta de datos. Algunos triplestore proporcionan la capacidad de inferir. Esta inferencia se hace a partir de los axiomas de un TBox. Con la  finalidad de que los resultados de las consultas en SPARQL sean más amplios [20].
 1)	Apache Jena
 ?Esta herramienta es un framework para el desarrollo de aplicaciones Web Semánticas. Jena proporciona un conjunto de herramientas y librerías de Java, para el desarrollo de aplicaciones semánticas, herramientas y servlet. Este framework incluye los siguientes componentes. 1) Una API para la lectura, procesamiento y escritura de datos RDF en los formatos XMl, N-triples y turtle. 2) Una API para el manejo de ontologías OWL y RDFS. 3) Un motor de inferencia basado en reglas, para el razonamiento  de axiomas OWL y RDFS. 4) Store para el almacenamiento eficiente de triples RDF en el disco. 5) Un motor de consultas SPARQL. Finalmente 6) Servidores que permiten la publicación de datos RDF en otras aplicaciones? [21].
@@ -150,7 +176,5 @@ Un triplestore es un framework para el almacenamiento y consulta de tripletas RD
 ?OWLIM es una familia de repositorios semánticos, también conocidos como sistemas de gestión de bases de datos RDF. Estos repositorios tienen las siguientes características: 1) Motores RDF nativos que se han implementado en Java, 2) alto desempeño a través de Jena y Sesame, 3) soporte robusto para la semántica de RDFS,  OWL 2 RL y OWL 2 QL, 4) mejor escalabilidad, carga y rendimiento de consultas multiusuario, finalmente 5) uso de inferencia no trivial? [24].
 5)	Sesame
 ?Este es un marco estándar de facto para el procesamiento de datos RDF. Este procesamiento tiene las siguientes actividades: analizar, almacenar, inferir y consulta sobre estos datos con SPARQL. Sesame incluye una API que puede ser conectada a una variedad de sistemas de almacenamiento (bases de datos relacionales en memoria, sistemas de archivos, indizadores de palabras clave, etc). Esta herramienta utiliza una API para el acceso local/remoto a los repositorios RDF. Finalmente, Sesame soporta los principales formatos RDF, como RDF/XML, Turtle, N-Triples, Trig y Trix? [25].
-
-
 
 % TABLA ONTOLOGIAS en: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 10\doc auxiliar.docx
