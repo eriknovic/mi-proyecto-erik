@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  26 SEP 2013 00:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  29 SEP 2013 00:44
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -440,11 +440,26 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 10000) in paragraph at lines 28--28
 [][]\T1/cmr/m/n/10 L. Fei-gen-baum, Se-man-tic Web vs. Se-man-tic Tech-no-lo-g
-ies, Disponible:$\T1/cmtt/m/n/10 http : / / www .$
+ies, Dis-po-ni-ble en: $\T1/cmtt/m/n/10 http : / / www .$
  []
 
-[3] [4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex
-[5] [6
+[3] [4]
+
+LaTeX Warning: Reference `cap:soa' on page 5 undefined on input line 66.
+
+
+LaTeX Warning: Reference `cap:sir' on page 5 undefined on input line 66.
+
+
+LaTeX Warning: Reference `cap:piu' on page 5 undefined on input line 66.
+
+
+LaTeX Warning: Reference `cap:exp' on page 5 undefined on input line 66.
+
+
+LaTeX Warning: Reference `cap:concl' on page 5 undefined on input line 66.
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [5] [6
 
 ]
 Cap\'{\i }tulo 2.
@@ -466,81 +481,68 @@ Package pdftex.def Info: CasosUso.pdf used on input line 115.
 rs\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex
 [16]
 Cap\'{\i }tulo 3.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [17
-
-] [18
+[17
 
 ]
-Cap\'{\i }tulo 4.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [19] [20
-
-]
-Cap\'{\i }tulo 5.
-
-Overfull \hbox (0.423pt too wide) in paragraph at lines 16--16
- |[]\T1/cmr/bx/n/17.28 Representación del co-no-ci-mien-to de los re-cur-sos (m
-o-
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[][]\T1/cmr/m/n/10 L. Fei-gen-baum, "Se-man-tic Web vs. Se-man-tic Technologies
+,.[]vailable: $\T1/cmtt/m/n/10 http : / / www .$
  []
 
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex
-Underfull \vbox (badness 4328) has occurred while \output is active []
+[18]) [19] [20
 
- [21]
-[22]
-Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [23
+] [21
+
+] [22]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+Ap\'{e}ndice A.
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [23
 
 ] [24
 
 ]
-Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [25] [26
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
 
-]
-Cap\'{\i }tulo 8.
-) [27] [28
-
-] [29
-
-] [30] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
-Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [31
-
-] [32
-
-])
-[33] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+) [25]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5535 strings out of 493944
- 74788 string characters out of 3148281
- 158895 words of memory out of 3000000
- 8649 multiletter control sequences out of 15000+200000
- 24431 words of font info for 60 fonts, out of 3000000 for 9000
+ 5545 strings out of 493944
+ 74597 string characters out of 3148281
+ 158877 words of memory out of 3000000
+ 8670 multiletter control sequences out of 15000+200000
+ 25454 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,12n,43p,1955b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
-uper/sfcc1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc
-1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
-00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (49 pages, 457916 bytes).
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfc
+c1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
+per/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
+095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on tesis_Erik.pdf (41 pages, 467527 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 224 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
