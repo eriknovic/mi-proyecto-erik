@@ -7,6 +7,7 @@ Los resultados que proporciona un MBSK, pueden ser variados en cuanto a responde
 Existen varias razones del \textit{por qué} los resultados no son pertinentes en una búsqueda con un MBSK, como: \textit{ocurrencia de palabras en un documentos, el ranking de los resultados, los algoritmos de indexación, la visión de un documento como un conjunto de palabras, el significado de la información en los documentos, por mencionar algunas}.
 
 Nosotros bajo el contexto gestión de memoria corporativa, analizamos y seleccionamos tres razones que se deben considerar para la búsqueda de información (integración). 1) Los recursos no son sólo cadenas de caracteres, sino \textbf{\textit{información y conocimientos significativos que deben representarse adecuadamente}}. 2) Un proceso automático no \textbf{\textit{entienda el contexto, significado y la rica diversidad de los signos lingüísticos}}. 3) La información en los recursos debe tener un \textbf{\textit{significado bien definido para que sea interpretado}} por las personas y procesos automáticos, con el fin de evitar ambigüedades, como la \textit{homonimia y la sinonimia}.
+
 \section{Semántica y Tecnologías}
 \label{sec:semytec}
 La \textbf{\textit{semántica}} es un subcampo de la lingüística que determina la relación entre palabras y el significado de estas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado\footnote{L. Metz, ``What Is the Role of Semantics in Language?,'' Disponible en: \url{http://www.wisegeek.com/what-is-the-role-of-semantics-in-language.htm}}.
@@ -23,35 +24,358 @@ Las herramientas, metodologías y estándares para construir esta capa, se describ
 
 \section{Ontología}
 \label{sec:onto}
+En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. El concepto de ontología surge en la filosofía, pero a lo largo del tiempo, este concepto se introdujo en la computación y las tecnologías de la información (TI). Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{una ontologías es }
 
-que es una ontología
+%%%que es una ontología
 
-para que sirve
+una ontología define los términos con que para representar el conocimiento.
 
-que nos permite representa
+``Una Ontología es una especificación formal y explícita de una conceptualización compartida'' [9].
 
-cuales elementos son  importantes
+Una ontología es una una especificación formal (descripción) de los conceptos y las relaciones entre estos para que sean interpretados sin ambigüedad por las personas y procesos automáticos en un dominio dado.
 
-Cuales son sus características
+Una especificación de un vocabulario de representación para un dominio compartido del discurso - definiciones de clases, relaciones, funciones y otros objetos - se llama una ontología.
+ 
+El concepto de ontología nació en la filosofía, pero su definición fue adaptada para las tecnologías de la información y con el paso de los años ésta fue evolucionando. Nosotros adoptamos la siguiente definición ?Una ontología es una especificación formal y explícita de una conceptualización compartida? que fue escrita por Tom Gruber
 
-cómo funciona
+(para Neches y colegas) una Ontología define los términos básicos y las relaciones comprendidas en el vocabulario de un área temática así como las reglas para combinar términos y relaciones que permita definir extensiones del vocabulario.
 
-por que cosas esta contenida abox y tbox
+La definición de Gruber \cite{Gruber} es ``una Ontología es una especificación explicita de una conceptualización''
 
-por qué es importante
+por Studer y colegas: ``Conceptualización se refiere a un modelo abstracto de algún fenómeno en el mundo identificando los conceptos relevantes de dicho fenómeno. Explicita significa que los tipos de conceptos usados y las restricciones que sobre ellos se dan estén definidos explícitamente. Formal se refiere al hecho que una ontología debería ser comprensible por la maquina. Compartida se refiere a la idea de que una ontología captura un conocimiento consensuado, esto es, la ontología no es privada para algún individuo, debe ser aceptada por un grupo''.
+
+Una conceptualización es una vista simplificada abstracto del mundo que queremos representar con algún propósito. 
+
+ Las ontologías son formales, explicitas, expresivas y compartidas [6], con la finalidad de explotar el conocimiento implícito y explícito.
+
+%%%para que sirve
+Una ontología permite construir un \textit{vocabulario conceptual} formal y consensuado para un dominio dado. En este vocabulario se pueden construir descripciones y se comunican hechos.
+
+Este conjunto de objetos, y las relaciones entre ellos descriptibles, se reflejan en el vocabulario de representación con que un programa basado en el conocimiento representa el conocimiento.
+
+Las ontologías se diseñan con la finalidad de compartir el conocimiento con los procesos automáticos.
+
+Para apoyar el intercambio y la reutilización de conocimiento representado formalmente
+
+Es útil para definir el vocabulario común en el que se representa el conocimiento compartido.
+
+Una ontología de dominio sirve para que las personas y procesos automáticos entiendan los conceptos y relaciones.
+
+Existen programas que a partir de los axiomas y las descripciones explícitas en la ontología, hacen inferencias para hacer explícito el conocimiento implícito.
+
+Una ontología común define el vocabulario con que consultas y afirmaciones son intercambiadas entre los agentes.
+
+Una ontología define el vocabulario utilizado para componer expresiones complejas tales como los utilizados para describir las limitaciones de recursos en un problema de planificación. A partir de un número finito, vocabulario bien definido se puede componer un gran número de frases coherentes.
+
+%%%qué deben brindar estas ontologías
+Pero para que esto sea posible, las DLs deben cumplir
+algunos requisitos importantes
+brindar un lenguaje formal que permita representar adecuadamente estructuras de informaci´on,
+dar un significado bien definido a esta informaci´on, para poder utilizarla correctamente,
+permitirnos consultar esta informaci´on de acuerdo a las necesidades de diferentes usuarios y aplicaciones, y
+responder a nuestras consultas por medio de razonadores autom´aticos
+
+%%%que nos permite representar
+Una ontología de una determinada área investigación o disciplina, permite encontrar información sobre temas especializados, para los grupos de investigación. De esta manera, estas personas en vez de dedicar mucho tiempo en la búsqueda, realizan sus actividades de investigación.
+
+La ventaja de una ontología es que se trata de una explícita, descripción de primera clase
+, se puede publicar y reutilizar para diferentes
+propósitos.
+? Una bodega puede utiliza la ontología de vinos para enlazar programa de producción
+para el sistema de la
+? Un programa de recomendación de vino puede utilizar la ontología vino
+recomendar vinos para los diferentes menús.
+
+%cuales elementos son  importantes
+En tal ontología, las definiciones asocian los nombres de las entidades en el universo de discurso (por ejemplo, clases, relaciones, funciones, u otros objetos) con texto legible que describe lo que los nombres tienen el propósito de indicar, y axiomas formales que restringen la interpretación y el uso de estos términos bien formados.
+
+Por lo tanto, podemos describir la ontología de un programa definiendo un conjunto de términos de representación. En tal ontología, las definiciones asocian los nombres de las entidades en el universo de discurso (por ejemplo, clases, relaciones, funciones, u otros objetos) con texto legible que describe lo que los nombres tienen el propósito de indicar, y axiomas formales que restringen la interpretación y el uso de estos términos bien formados.
+
+Conceptos: son interpretadas como conjuntos que contienen objetos, donde estos objetos comparten ciertas características.
+Roles: son relaciones entre los objetos.
+Individuos: son nombres de objetos específicos de algún concepto.
+Estos elementos también están presentes en las Ontologías, pero con otro nombre: Clases, Propiedades e Individuos.
+
+Estos conjuntos son el vocabulario que vamos a utilizar para describir nuestro dominio. Recordemos que
+los conceptos representan conjuntos de objetos, mientras que los roles representan relaciones binarias entre
+objetos, y los individuos son nombres de objetos espec´?ficos
+
+? Las clases (en una jerarquía de clases): OntClass tiene listSuperClasses ()
+método
+? Propiedades (en una jerarquía de propiedades):
+? individuos
+
+?	Clase: es una colección de objetos que comparten características comunes. Las clases en una otología también se conocen como conceptos, colecciones o tipos de cosas.
+Persona a Class
+Hombre a Class
+Mujer a Class
+?	Individuo: es un objeto concreto de una clase, como personas, animales, y otros objetos abstractos. Los individuos también se conocen como instancias o miembros.
+Erik a Hombre
+Scarlett a Mujer
+Juan a Persona
+?	Propiedad Objeto: es una relación entre instancias.
+Erik tienePadre Juan
+Erik tieneHerman Scarlett
+Scarlett tiene.pariente Juan
+?	Propiedad Dato: es la relación entre un individuo y un valor  de dato.
+Juan tieneEmail ?juan@example.com?^^string
+Erik nombreCompleto ?Erik Alarcón?^^string
+Scarlett tieneEdad ?18?^^integer
+
+ Cada programa debe comprometerse a la semántica de los términos en la ontología común, incluyendo los axiomas sobre las propiedades de los objetos y cómo se relacionan.
+ 
+Conceptos, tambi´en llamados clases, que describen un conjunto de objetos que comparten ciertas
+caracter´?sticas.
+Roles, que describen relaciones binarias entre los elementos de ´estas clases.
+Individuos, que son ?nombres? de instancias especificas de alg´un concepto.
+
+%%Cuales son sus características
+La formalidad de las ontologías se toma de las Lógicas Descriptivas (DL). Estas Lógicas descriptivas son ?lenguajes formales para representar el conocimiento de una área de investigación? [6] [7] y están equipadas con lógica de primer orden, así como también  de una semántica formal [6]. Esta semántica formal permite a humanos y computadoras interpretar sin ambigüedad el conocimiento expresado en las  ontologías. Esta semántica formal también hace posible inferir información implícita en las ontologías [6].
+
+Para modelar una Ontología se emplea el formalismo de las Lógicas Descriptivas (DL). En donde las DL son ?lenguajes formales para representar el conocimiento? [4,10] y están equipadas con lógica de primer orden, así como una semántica formal [10].
+Esta semántica formal permite que humanos y computadoras puedan interpretar sin ambigüedad el conocimiento expresado en las  Ontologías, también la semántica formal hace posible inferir información implícita en las Ontologías
+
+%%cómo funciona
+Una ontología no describe completamente el estado total del mundo, sino que emplean axiomas que capturan el conocimiento parcial de una situación que se describe [10].
+
+el compromiso de una ontología común es una garantía la consistencia, pero no completa, en lo que respecta a las preguntas y afirmaciones utilizando el vocabulario definido en la ontología. 
+
+Estos axiomas se organizan en el componente asertivo (Abox) y el componente terminológico (Tbox).
+El Tbox ?describe los conceptos en términos de otros y permite restringir la manera en la que las instancias de éstos se relacionan entre sí? [4].
+El Abox ?esta compuesto por afirmaciones acerca de los conceptos y roles específicos de los que los individuos son instancia? [4].
+
+Es importante observar que los datos contenidos en A, en general, no definen un modelo por s´? solos.
+Las aserciones en A necesitan ser compatibles con las restricciones en T para que K sea satifacible y ´estan
+contenidas en todos los modelos, pero no los determinan.
+
+
+En general, hay muchas formas de ?completar? las aserciones
+del ABox de manera que todos los axiomas en T se satisfagan, y todas ellas resultan en modelos de K
+
+%%por que cosas esta contenida abox y tbox
+Las bases de conocimiento generalmente tienen dos partes:
+
+ABOX: Este componete esta compuesto por aserciones, que afirman que un individuo o un par de individuos es
+una instancia de un concepto o rol. Son un conjuntos de hechos verdaderos, que describen parcialmente el
+dominio
+
+TBOX: En general, para describir un dominio adecuadamente, nos interesa definir unos conceptos en t´erminos
+de otros y restringir la manera en la que las instancias de estos conceptos se relacionan entre s´?. Esto se hace
+a trav´es de ciertos axiomas que restringen a todos los elementos del dominio.
+
+Un componente terminol´ogico, llamado TBox, que describe los conceptos y roles relevantes y las relaciones entre ellos. Este componente se puede considerar como informaci´on intencional. Volviendo a
+nuestro ejemplo, en este componente podemos especificar que todos los cursos son impartidos por un
+profesor y son atendidos por estudiantes, y que cada profesor esta asociado a una facultad y puede
+impartir varios cursos.
+
+Un componente asertivo, llamado ABox, donde se pueden hacer afirmaciones acerca de los conceptos y
+roles especificos de los que los individuos son instancia. Se le puede considerar informaci´on extensional.
+Por ejemplo, podemos afirmar que el curso Base de Datos est´a asociado a la facultad Ciencias de la
+Computaci´on o que el el estudiante con clave 103378 atiende el curso Matem´aticas Discretas
+
+La información intencional es el componente terminológico (TBox). Este TBox sirve para ?describir los conceptos en términos de otros y restringir las relaciones que hay entre los mismos? [6]. Mientras, la información extensional, denominada componente asertivo (ABox) ?es un conjunto de afirmaciones acerca de las instancias y propiedades específicas de estos individuos? [6].
+El TBox es un conjunto de restricciones de integridad de una ontología, este componente se constituye por varios axiomas.
 
 En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
 \section{Marco de Descripción de Recursos (RDF)}
 abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
 
+Las tecnologías semánticas proponen al marco de trabajo RDF (Resource Description Framework\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}})
 
-\section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
+%%%que es RDF
+RDF es un modelo estándar para el intercambio de datos en la Web. RDF tiene características que facilitan la combinación de datos incluso si los esquemas subyacentes son diferentes, y específicamente apoya la evolución de esquemas en el tiempo sin necesidad de que todos los consumidores de datos a ser cambiados.
 
+El Marco de Descripción de Recursos (RDF). Este modelo de datos RDF permite transformar literalmente cualquier cosa a una forma canónica RDF (estándar).
+
+%%%para que sirve
+para la representación del conocimiento de los recursos en un formato estándar \cite{SurvSemWeb2012}.
+
+%%como se representan los recursos
+El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: 
+http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica
+
+%%%Qué se debe representar de los reursos 
+Este marco RDF permite representar el conocimiento sobre los recursos, en particular, los hechos o afirmaciones de estos.
+
+Estos afirmaciones se hacen a partir del conocimiento que es significativo de los recursos como: sus características o relaciones que puede tener con otros recursos
+
+representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo.
+
+representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
+
+En la descripción de los recursos se emplea lógica de predicados, es decir, cada hecho o afirmación se escribe con un sujeto-verbo-objeto
+
+%%%qué es un triple
+Las propiedades de los recursos y sus respectivos valores se llevan a un formato estándar, que en este marco se denomina triple \cite{SurvSemWeb2012}. El conjunto de todos los triples RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Un triple se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso.
+
+RDF extiende a la estructura de enlace de la Web para utilizar a URIs para nombrar la relación entre las cosas, así como los dos extremos de la conexión (lo que se conoce normalmente como "triple").
+
+Estos tres tipos conceptos forman parte de una sentencia (tripleta) en el modelo RDF y a continuación se describen estos [11] [12].
+o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
+o	Predicado: Es una característica, atributo o relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
+o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
+
+La unidad básica de RDF son las aserciones. La estructura básica de una aserción es como la de una oración sencilla, es decir, un sujeto, predicado y un objeto. De esta manera, opciones sencillas como ?Juan come pizza? permiten la construcción de vocabularios complejos [4]. RDF es el modelo de datos que permite representar el conocimiento de un dominio particular.
+
+La sintaxis de RDF se compone de una de una sentencia ó tripleta (sujeto, predicado y objeto) [5] que expresa el significado de las cosas. Los elementos de la tripleta son los siguientes:
+o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
+o	Predicado: Es una característica, atributo ó relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
+o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
+La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista.
+
+El triple es una afirmación de la forma: sujeto, predicado y objeto. El sujeto es el nombre del recurso (individuo), el predicado es el nombre de una relación y el objeto es el nombre de un individuo o valor.
+
+El modelo de metadatos RDF se basa en la idea de hacer declaraciones acerca de los recursos en forma de expresiones-predicado-objeto, llamado triples en terminología RDF. El tema denota el recurso, y el predicado denota rasgos o aspectos del recurso y expresa una relación entre el sujeto y el objeto.
+
+%%%recursos los podemos asociar a una determinada agrupación o clase
+Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece a una clase se utiliza el triple:sirp:recurso rdf:type sirp:Clase
+
+%%%cómo podemos reducir el tamaño de un triple
+
+Para reducir el tamaño del identificador (URI) de los recursos y las propiedades, se sustituye la secuencia de caracteres desde "http://www" hasta el símbolo "#" por un prefijo. En nuestro caso de estudio, el prefijo ?sirp? se traduce como ?http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#?. Por ejemplo, la propiedad ?tiene título? se escribe ?sirp:tiene-titulo?. En las tecnologías semánticas, existen otros prefijos asignados para otros vocabularios, como: ?rdf?, ?xsd?, ?rdfs? y ?owl?.
+
+%%%construir grafos de conocimiento
+
+Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
+
+%%%sintaxis para escribir los triples
+Existen muchas sintaxis para representar los triples o aserciones. El W3C establece como estándar el RDF/XML1 y obviamente al modelo de datos RDF [10] para representar a los recursos. Finalmente, un dato interesante es el siguiente.
+
+%%%abox
+El conjunto de descripciones o hechos explícitos de los recursos es el componente asertivo (ABox).
+Informalmente, podemos ver al ABox como una descripci´on parcial de la realidad: los hechos en el ABox
+son ciertos, pero puede haber otras instancias de los conceptos y roles no mencionadas en A
 
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 
+Hemos descrito cómo el marco RDF permite representar o modelar el conocimiento explícito de los recursos (modelo de datos).
+Este modelo de datos se puede enriquecer con la introducción de axiomas \cite{DesLog}, que permiten completar, extender, renovar y adaptar el conocimiento de los recursos.
 
+%%%ejemplos de axiomas en clases
+Las funcionalidades y ejemplos de estos axiomas se pueden encontrar en la literatura \cite{Markus2012DLprimer}, \cite{protegeManual}.
+
+Axiomas describen las relaciones entre los conceptos.
+Por ejemplo, el hecho de que todas las madres son los padres se expresa por la inclusión concepto
+Mother ? Parent
+
+en cuyo caso se dice que el concepto de Madre es subsumida por el Padre concepto. Tal conocimiento puede ser usado para inferir nuevos hechos sobre los individuos. Por ejemplo, (1) y (5) junto implicar que Julia es un padre.
+
+Concepto de equivalencia afirma que dos conceptos tienen los mismos casos, como en
+Person ? Human. (6)
+
+Mientras sinónimos son un claro ejemplo de los conceptos equivalentes, en la práctica se utiliza más a menudo el concepto de equivalencia para dar un nombre a las expresiones complejas
+
+Por otra parte, este tipo de expresiones conceptuales adicionales se pueden combinar con la equivalencia e inclusión para describir situaciones más complejas, como la disyunción de los conceptos, que afirma que dos conceptos no comparten todas las instancias
+
+%%%axiomas en propiedades
+Axiomas Rbox se refieren a propiedades de roles. En cuanto a los conceptos, DL apoyan el axioma de inclusión y el axioma de equivalencia. Por ejemplo, la inclusión
+parentOf ? ancestorOf (7)
+
+establece que parentOf es un subrol de ancestorOf, es decir, cada par de individuos relacionados por parentOf también está relacionada por ancestorOf. Por lo tanto (2) y (7) juntos implica que Julia es un antepasado de Juan.
+
+Por otra parte, con el fin de tener coherencia durante el razonamiento, su uso está limitado por restricciones estructurales adicionales que especifican si o no una colección de axiomas se puede utilizar juntos en una ontología ontología. Nadie puede ser a la vez un padre y un hijo de la misma persona, por lo que los dos papeles parentOf y childOf son disjuntos. En DL podemos escribir papeles disjuntos como sigue: disjunto (parentOf, childOf). (9)
+
+Subsunci´on (subsumption) respecto a K:
+Se dice que el concepto C1 es subsumido por el concepto C2(o, equivalentemente, que C2 subsume a C1) si todas las instancias de C1 son instancias de C2 en todos los modelos I de K, es decir, la extensi´on de C1 est´a necesariamente contenida en la extensi´on de C2.
+
+Equivalencia de conceptos (concept equivalence) respecto a K: Se dice que C1 y C2 son equivalentes si C1 subsume a C2 y C2 subsume a C1, es decir, si C1 y C2 tienen la misma extensi´on en todos los modelos I de K.
+
+?	Jerarquía de clases y propiedades, cosiste en agrupar jerárquicamente y sistemáticamente las diferentes clases y propiedades en grupos estables. La operación básica es ?subclase? y consiste en ligar un concepto/relación particular con un concepto/relación general.
+Persona rdfs:subClassOf Thing
+Mujer rdfs:subClassOf Persona
+tienePadre rdfs:subProprertyOf tieneParinete
+?	Dominio y Rango de una Propiedad Objeto, son las clases que intervienen en una relación. En donde el primer componente de una Propiedad es el Dominio y el segundo el Rango.
+tieneEsposa rdfs:Domain Hombre
+tieneEsposa rdfs:Range Mujer
+?	Dominio y Rango de una Propiedad Dato, son las clases y tipos de valores que intervienen en una relación. Para más detalles de estos tipos de valores consultar el RDF Primer 2.
+nombreCompleto rdfs:Domain Persona
+nombreCompleto rdfs:Range xsd:string
+?	Características de las Propiedades Objeto, existen muchas relaciones en el mundo real, como transitividad, funcionalidad, simetría, inversa, y otras. Entonces, aquellas propiedades que tengan el comportamiento de las relaciones antes descritas, se debe especificar que son de este tipo.  Afortunadamente, existen axiomas que permiten hacer esto. Para más detalles de estas características consultar el tutorial ?Una Guía para construir Ontologías OWL? [9].
+nombreCompleto rdf:type owl:FunctionalProperty
+tienehijo rdf:type owl:AsymmetricProperty
+tienePariente rdf:type owl:TransitiveProperty
+?	Restricción existencial, se emplea para asegurar que al menos un individuo que se obtiene por una propiedad, pertenece a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen una madre que es mujer? es:
+tieneMadre some Mujer
+?	Restricción universal, se emplea para asegurar que todos los individuos que se obtienen por una propiedad, pertenecen a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen solo parientes humanos? es:
+tienePariente only Humano
+?	Restricción cardinal, se emplea para asegurar que como máximo, mínimo o exactamente ?n? individuos que se obtienen por una propiedad, pertenezcan a la clase especificada. Por ejemplo, el axioma para decir ?todos tienen mínimo dos parientes mujeres? es:
+tienePariente min 2 Mujer
+
+Estos axiomas restringen a todos los elementos del área de interés. El siguiente listado describe los axiomas que pueden existir en una ontología.
+?	Herencia de clases y propiedades, cosiste en agrupar jerárquicamente y sistemáticamente las diferentes clases y propiedades en grupos estables. La operación básica es ?subclase? y consiste en ligar un concepto/relación particular con un concepto/relación general.
+Persona rdfs:subClassOf Thing
+Mujer rdfs:subClassOf Persona
+Mujer rdfs:subClassOf Persona
+tienePadre rdfs:subProprertyOf tieneParinete
+
+%%%Axiomas con propiedades
+Otros axiomas Rbox incluyen características de los roles como reflexividad, simetría y transitividad de roles. 
+
+Roles transitivos (transitive roles) que nos permiten seleccionar algunos nombres de roles, que tienen
+que ser interpretados como relaciones transitivas.
+
+Jerarqu´?as de roles H (role hierarchies), que son un conjunto de axiomas de la forma R ? S, declarando que la extensi´on del rol R est´a contenida en la extensi´on del rol S.
+
+?	Dominio y Rango de una Propiedad Objeto, son las clases que intervienen en una relación. En donde el primer componente de una Propiedad es el Dominio y el segundo el Rango.
+tieneEsposa rdfs:Domain Hombre
+tieneEsposa rdfs:Range Mujer
+?	Dominio y Rango de una Propiedad Dato, son las clases y tipos de literales que intervienen en una relación. Para más detalles de las Literales consultar el RDF Primer 1.
+nombreCompleto rdfs:Domain Persona
+nombreCompleto rdfs:Range xsd:string
+
+%%%Lenguajes para escribir axiomas
+Los lenguajes OWL. Algunas de las DLs m´as conocidas son las que se relacionan con la familia de
+lenguages llamados Web Ontology Languages (OWL), propuestos como est´andard por el W3C para definir
+ontolog´?as en la red.
+
+Existen muchos lenguajes para construir una ontología. Sin embargó no todos estos lenguajes son estándares o soportan algunos de los axiomas antes descritos. El World Wide Consortium propone como estándares al Lenguaje Web Ontológico (OWL2) y al Marco de Descripción de Recursos (RDF4). Ambos lenguajes permiten definir clases y varios axiomas, pero el más limitado en expresividad es RDF. Aunque el lenguaje OWL se basa en el RDF. Por tal motivo, si se quiere una ontología apegada a lenguajes estándares y actualizados, la opción a elegir es OWL.
+
+%%%que es Razonador
+En esta primer etapa (representación del conocimiento explícito), una ontología permite definir un vocabulario explícito. La segunda etapa es introducir axiomas que permitan hacer enriquecer el conocimiento (implícito) sobre los recursos. Ahora bien, este conocimiento se puede explotar para hacer explícito el conocimiento implícito mediante el uso de procesos que hacen inferencia.
+
+La tarea de inferir conocimiento a partir de sentencias ó reglas se le denomina razonamiento, entonces un programa razonador es aquel que permite hacer inferencias y generar conocimiento, mediante el uso de un motor de inferencia (IE) y un conjunto de reglas (axiomas).
+
+El proceso de inferencia consiste en que los procesos automáticos generen aserciones explícitas basadas en las otras aserciones y los axiomas.
+
+El TBox proporciona los axiomas para representar el conocimiento implícito de un dominio. Pero, para aprovechar este conocimiento implícito se requiere una aplicación. Este programa se denomina razonador. Un razonador es una pieza de software que permite deducir datos y asociaciones a partir de los axiomas6. Estos razonadores infieren sobre la jerarquía de las clases, las relaciones entre clases y las instancias. Los razonadores también son conocidos como razonadores semánticos, motor de inferencias o motor de reglas.
+
+Los beneficios de emplear los razonadores se describen a continuación.
+?	En la fase de construcción de un modelo de ontología. El razonador verifica la consistencia del modelo. El objetivo de verificar la consistencia es identificar contradicciones o detalles en el modelo.
+?	Un razonador en combinación con SPARQL permite mejorar la calidad de los resultados de las cónsulas, ya que se aprovecha el conocimiento implícito del TBox.
+
+Los razonadores son aplicaciones que derivan nuevos datos y asociaciones a partir de la información existente3. Específicamente, los razonadores en el enfoque semántico generan nuevas relaciones a partir de la información implícita en las ontologías. Esta información implícita es la que está contenida en el TBox. Por ejemplo, 1) en la jerarquía de conceptos y relaciones, 2) en las características de las Propiedades Objeto y sobre todo 3) en todos los axiomas. El beneficio de usar un razonador, es mejorar la calidad de integración de los datos en la Web [11].
+En la fase de construcción de un modelo de ontología. Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
+
+
+\section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
+Ahora enfocamos el uso de las bases de conocimiento, es decir, en las consultas que
+podemos hacer y los m´etodos para resolverlas. En particular, tratamos de responder tres preguntas:
+1. ¿Qu´e tipo de preguntas podemos hacer a una base de conocimiento?
+2. ¿C´omo se puede dar respuesta a estas preguntas?
+3. ¿Qu´e tan dif´?cil, computacionalmente hablando, es responder estas preguntas?
+
+%%% necesidad de consultar información
+Las ontologías son fuentes de conocimiento en forma de triples, para buscar y recuperar (integración) la información de éstas, es necesario tres cosas: 1) una pregunta en lenguaje natural, 2) una consulta basada en triples y 3) un motor de consulta.
+
+En el primer punto, mediante el análisis de los casos de uso, se identifican y escriben en lenguaje natural las principales preguntas que pueden hacer los usuarios al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales, pero para ejemplificar la consulta de información, se muestra una de éstas: (1)... ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+
+En el segundo punto, las tecnologías semánticas establecen al lenguaje SPARQL\footnote{W3C,"SPARQL 1.1 Overview," Available: \url{http://www.w3.org/TR/sparql11-overview/}} \cite{Perez2009} como la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las \textit{variables resultado} y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
+
+SELECT ?title ?path
+WHERE
+{?x rdf:type sird:Document;
+   sird:has-topic redes:Peer_to_Peer_System;
+   sird:has-title ?title;
+   sird:has-filePath ?path.}
+
+%%% motor de consulta
+Un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con Java.
+
+%%%motor + razonador
+Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
+
+Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
