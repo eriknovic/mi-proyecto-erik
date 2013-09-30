@@ -24,48 +24,19 @@ Las herramientas, metodologías y estándares para construir esta capa, se describ
 
 \section{Ontología}
 \label{sec:onto}
-En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. El concepto de ontología surge en la filosofía, pero a lo largo del tiempo, este concepto se introdujo en la computación y las tecnologías de la información (TI). Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{una ontologías es }
+En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. El concepto de ontología surge en la filosofía, pero a lo largo del tiempo, se ha introducido en la computación y las tecnologías de la información (TI). Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
 
+\begin{itemize}
+\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de las clases, relaciones y otros objetos relevantes en dicho fenómeno}.
+\item \textit{\textbf{Explicita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
+\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben estar en un lenguaje para que sean comprensible por los procesos automáticos}.
+\item \textit{\textbf{Compartida} se refiere a que la conceptualizaciónn debe ser consensuada y aceptada por el grupo de personas}.
+\end{itemize}
+
+Los principales objetivos del uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos, interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos automáticos, intercambien y reutilicen el conocimiento}. \textit{6) La inferencia de información a partir de un programa especializado y los hechos en una ontología}.
 %%%que es una ontología
 
-una ontología define los términos con que para representar el conocimiento.
-
-``Una Ontología es una especificación formal y explícita de una conceptualización compartida'' [9].
-
-Una ontología es una una especificación formal (descripción) de los conceptos y las relaciones entre estos para que sean interpretados sin ambigüedad por las personas y procesos automáticos en un dominio dado.
-
-Una especificación de un vocabulario de representación para un dominio compartido del discurso - definiciones de clases, relaciones, funciones y otros objetos - se llama una ontología.
- 
-El concepto de ontología nació en la filosofía, pero su definición fue adaptada para las tecnologías de la información y con el paso de los años ésta fue evolucionando. Nosotros adoptamos la siguiente definición ?Una ontología es una especificación formal y explícita de una conceptualización compartida? que fue escrita por Tom Gruber
-
-(para Neches y colegas) una Ontología define los términos básicos y las relaciones comprendidas en el vocabulario de un área temática así como las reglas para combinar términos y relaciones que permita definir extensiones del vocabulario.
-
-La definición de Gruber \cite{Gruber} es ``una Ontología es una especificación explicita de una conceptualización''
-
-por Studer y colegas: ``Conceptualización se refiere a un modelo abstracto de algún fenómeno en el mundo identificando los conceptos relevantes de dicho fenómeno. Explicita significa que los tipos de conceptos usados y las restricciones que sobre ellos se dan estén definidos explícitamente. Formal se refiere al hecho que una ontología debería ser comprensible por la maquina. Compartida se refiere a la idea de que una ontología captura un conocimiento consensuado, esto es, la ontología no es privada para algún individuo, debe ser aceptada por un grupo''.
-
-Una conceptualización es una vista simplificada abstracto del mundo que queremos representar con algún propósito. 
-
- Las ontologías son formales, explicitas, expresivas y compartidas [6], con la finalidad de explotar el conocimiento implícito y explícito.
-
 %%%para que sirve
-Una ontología permite construir un \textit{vocabulario conceptual} formal y consensuado para un dominio dado. En este vocabulario se pueden construir descripciones y se comunican hechos.
-
-Este conjunto de objetos, y las relaciones entre ellos descriptibles, se reflejan en el vocabulario de representación con que un programa basado en el conocimiento representa el conocimiento.
-
-Las ontologías se diseñan con la finalidad de compartir el conocimiento con los procesos automáticos.
-
-Para apoyar el intercambio y la reutilización de conocimiento representado formalmente
-
-Es útil para definir el vocabulario común en el que se representa el conocimiento compartido.
-
-Una ontología de dominio sirve para que las personas y procesos automáticos entiendan los conceptos y relaciones.
-
-Existen programas que a partir de los axiomas y las descripciones explícitas en la ontología, hacen inferencias para hacer explícito el conocimiento implícito.
-
-Una ontología común define el vocabulario con que consultas y afirmaciones son intercambiadas entre los agentes.
-
-Una ontología define el vocabulario utilizado para componer expresiones complejas tales como los utilizados para describir las limitaciones de recursos en un problema de planificación. A partir de un número finito, vocabulario bien definido se puede componer un gran número de frases coherentes.
 
 %%%qué deben brindar estas ontologías
 Pero para que esto sea posible, las DLs deben cumplir
@@ -192,15 +163,15 @@ El Marco de Descripción de Recursos (RDF). Este modelo de datos RDF permite tran
 para la representación del conocimiento de los recursos en un formato estándar \cite{SurvSemWeb2012}.
 
 %%como se representan los recursos
-El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: 
-http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica
+%El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: 
+%http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica
 
 %%%Qué se debe representar de los reursos 
 Este marco RDF permite representar el conocimiento sobre los recursos, en particular, los hechos o afirmaciones de estos.
 
 Estos afirmaciones se hacen a partir del conocimiento que es significativo de los recursos como: sus características o relaciones que puede tener con otros recursos
 
-representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo.
+%representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo.
 
 representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
 
@@ -233,7 +204,7 @@ Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece
 
 %%%cómo podemos reducir el tamaño de un triple
 
-Para reducir el tamaño del identificador (URI) de los recursos y las propiedades, se sustituye la secuencia de caracteres desde "http://www" hasta el símbolo "#" por un prefijo. En nuestro caso de estudio, el prefijo ?sirp? se traduce como ?http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#?. Por ejemplo, la propiedad ?tiene título? se escribe ?sirp:tiene-titulo?. En las tecnologías semánticas, existen otros prefijos asignados para otros vocabularios, como: ?rdf?, ?xsd?, ?rdfs? y ?owl?.
+%Para reducir el tamaño del identificador (URI) de los recursos y las propiedades, se sustituye la secuencia de caracteres desde "http://www" hasta el símbolo "#" por un prefijo. En nuestro caso de estudio, el prefijo ?sirp? se traduce como ?http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#?. Por ejemplo, la propiedad ?tiene título? se escribe ?sirp:tiene-titulo?. En las tecnologías semánticas, existen otros prefijos asignados para otros vocabularios, como: ?rdf?, ?xsd?, ?rdfs? y ?owl?.
 
 %%%construir grafos de conocimiento
 
@@ -363,19 +334,19 @@ En el primer punto, mediante el análisis de los casos de uso, se identifican y e
 
 En el segundo punto, las tecnologías semánticas establecen al lenguaje SPARQL\footnote{W3C,"SPARQL 1.1 Overview," Available: \url{http://www.w3.org/TR/sparql11-overview/}} \cite{Perez2009} como la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las \textit{variables resultado} y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
 
-SELECT ?title ?path
-WHERE
-{?x rdf:type sird:Document;
-   sird:has-topic redes:Peer_to_Peer_System;
-   sird:has-title ?title;
-   sird:has-filePath ?path.}
+%SELECT ?title ?path
+%WHERE
+%{?x rdf:type sird:Document;
+%   sird:has-topic redes:Peer_to_Peer_System;
+%   sird:has-title ?title;
+%   sird:has-filePath ?path.}
 
 %%% motor de consulta
 Un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con Java.
 
 %%%motor + razonador
-Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
+%Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
 
-Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
+%Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
