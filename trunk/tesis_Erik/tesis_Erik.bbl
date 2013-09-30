@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Ontoinra2002}
 L.~Gandon, Fabien.
@@ -47,5 +47,48 @@ Torcoroma~Velásquez Pérez, Andrés~Puentes Velásquez, and Jaime~Guzmán
   Luna.
 \newblock Ontologias: una tecnica de representacion de conocimiento.
 \newblock {\em Avances en Sistemas e Informática}, 8(2), 2011.
+
+\bibitem{Gruber}
+Thomas~R. Gruber.
+\newblock A translation approach to portable ontology specifications.
+\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
+
+\bibitem{Staab}
+Nicola Guarino, Daniel Oberle, and Steffen Staab.
+\newblock What is an ontology?
+\newblock In Steffen Staab and Rudi Studer, editors, {\em Handbook on
+  Ontologies}, International Handbooks on Information Systems, pages 1--17.
+  Springer Berlin Heidelberg, 2009.
+
+\bibitem{SurvSemWeb2012}
+S.~Bouzid, C.~Cauvet, and J.~Pinaton.
+\newblock A survey of semantic web standards to representing knowledge in
+  problem solving situations.
+\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
+  International Conference on}, pages 121--125, 2012.
+
+\bibitem{Markus2012DLprimer}
+Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
+\newblock A description logic primer.
+\newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
+
+\bibitem{DesLog}
+Franz Baader, Ian Horrocks, and Ulrike Sattler.
+\newblock {D}escription {L}ogics.
+\newblock In Frank {van Harmelen}, Vladimir Lifschitz, and Bruce Porter,
+  editors, {\em Handbook of Knowledge Representation}, chapter~3, pages
+  135--180. Elsevier, 2008.
+
+\bibitem{protegeManual}
+Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
+  Wroe.
+\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
+  Plugin and CO-ODE Tools Edition 1.0}.
+\newblock August 2004.
+
+\bibitem{Perez2009}
+Jorge P{\'e}rez, Marcelo Arenas, and Claudio Gutierrez.
+\newblock Semantics and complexity of sparql.
+\newblock {\em ACM Trans. Database Syst.}, 34(3):16:1--16:45, September 2009.
 
 \end{thebibliography}
