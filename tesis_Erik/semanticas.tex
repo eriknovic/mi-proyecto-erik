@@ -33,7 +33,7 @@ En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología
 \item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
 \end{itemize}
 
-La \textbf{\textit{finalidad de una ontología}} de área investigación es \textit{encontrar información sobre temas especializados, para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor realicen sus actividades de investigación.
+La finalidad de una \textbf{\textit{ontología de un área investigación}} es \textit{permitir encontrar información pertinente sobre temas especializados para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor pasen más tiempo en realizar sus actividades de investigación.
 
 Los principales objetivos en el uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos}. \textit{6) La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología}. \textit{6) Personas y procesos consulten información mediante motores de búsqueda y razonadores}
 
@@ -73,7 +73,22 @@ Una ontología generalmente tiene dos partes \cite{Magdalena}:
 \section{Marco de Descripción de Recursos (RDF)}
 Las tecnologías semánticas proponen al \textit{marco de descripción de recursos} (RDF\lable{sym:rdf}) \footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}}) para expresar el conocimiento e información sobre los recursos en un formato estándar \cite{SurvSemWeb2012}. De esta manera, la información al estar en formato estándar, puede ser intercambiada entre aplicaciones.
 
+aparece RDF con un modelo de datos más flexible basados en triples (sujeto + predicado + objeto) y cuyos elementos están identificados con URIs lo que permite el acceso a su semántica y a la interpretación de los datos.
+
+RDF es un modelo estándar para el intercambio de datos en la Web. Se permite describir recursos semánticamente web con el fin de mejorar su referenciamiento y su recuperación por los usuarios o por las aplicaciones.
+
+RDF fue creado con el fin de crear un formato que permitiera alcanzar la compatibilidad entre los diversos sistemas de metadatos, suministrando para ello una arquitectura genérica de metainformación.
+
+El objetivo general de RDF es definir un mecanismo para describir recursos que no cree ninguna asunción sobre un dominio de aplicación particular, ni defina (a priori) la semántica de algún dominio de aplicación.
+
+La definición del mecanismo debe ser neutral con respecto al dominio, sin embargo el mecanismo debe ser adecuado para describir información sobre cualquier dominio. La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web.
+
+En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.
+
+
 La finalidad del RDF es tener un solvente universal para representar cualquier cosa al formato estándar RDF. Las dos ideas básicas del marco RDF es: 1) identificar cada cosa (objeto, clase, idea u objeto abstracto) mediante un identificador único de recursos (URI\label{sym:uri}) y 2) describir los recursos en términos de propiedades de objeto y propiedades de datos.
+
+De hecho, RDF permite describir los recursos o cualquier sujeto direccionable con URI (Uniform Resource Identifier) ??de los metadatos. Los metadatos son a menudo muy básico y tienen un bajo abstracción semántica
 
 %%%que es RDF
 
@@ -97,6 +112,13 @@ representa las características significativas de un recurso. Estas característic
 En la descripción de los recursos se emplea lógica de predicados, es decir, cada hecho o afirmación se escribe con un sujeto-verbo-objeto
 
 %%%qué es un triple
+La sintaxis de RDF se compone de un triplete de afirmaciones: sujeto, predicado y objeto [9]. El tema representa el recurso de describir, el predicado es un tipo de propiedad en relación con el recurso y el objeto es el valor de la propiedad, tales como datos u otros recursos (Figura 1).
+
+El modelo RDF se compone de tres conceptos principales: ? Recursos: Todas las cosas descriptas por expresiones RDF se denominan recursos. Los recursos, representan cualquier entidad (lugares, personas, objetos) del mundo real y están identificados por un URI (Universal Resource Identificator). Un recurso puede ser una página Web, una parte de una página Web; p. ej. un elemento HTML o XML específico dentro del documento fuente, o un objeto que no sea directamente accesible vía Web, p. ej. un libro impreso.
+? Propiedades: Una propiedad es un aspecto específico, característica, atributo, o relación utilizado para describir un recurso. Cada propiedad tiene un significado específico, define sus valores permitidos, los tipos de recursos que puede describir, y sus relaciones con otras propiedades. Las características de las propiedades se definen con RDFS (RDF Schema ) que explicaré más adelante.
+? Sentencias (declaraciones, enunciados): Un recurso específico junto con una propiedad denominada, más el valor de dicha propiedad para ese recurso es una sentencia RDF. Estas tres partes individuales de una sentencia se denominan, respectivamente, sujeto, predicado y objeto. Una propiedad es a su vez un recurso. El objeto es el valor asignado a dicha propiedad, y puede ser una cadena simple de caracteres (string), u otro recurso, es decir, un recurso especificado por un URI.
+Las sentencias constituyen la construcción básica que establece el modelo de datos RDF. Es decir, el significado de los datos se expresa mediante un conjunto de sentencias RDF que formalmente son representadas por tri-uplas (sujeto, predicado, objeto). Otra forma de representar las declaraciones (sentencias) RDF es a través de un grafo rotulado como se muestra en la Fig. 3.
+
 Las propiedades de los recursos y sus respectivos valores se llevan a un formato estándar, que en este marco se denomina triple \cite{SurvSemWeb2012}. El conjunto de todos los triples RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Un triple se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso.
 
 RDF extiende a la estructura de enlace de la Web para utilizar a URIs para nombrar la relación entre las cosas, así como los dos extremos de la conexión (lo que se conoce normalmente como "triple").
@@ -127,6 +149,8 @@ Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece
 
 %%%construir grafos de conocimiento
 
+La estructura general de RDF forma un gráfico estructurado con los nodos y aristas que representan el triplete. El sujeto es el nodo de origen, el objeto es el nodo objetivo y el predicado es la etiqueta de la arista.
+
 Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
 
 %%%sintaxis para escribir los triples
@@ -141,6 +165,9 @@ son ciertos, pero puede haber otras instancias de los conceptos y roles no menci
 En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
+Axiomas especifican las características de las clases y propiedades
+
+%Este documento es muy bueno, tiene todo lo que necesitas para RDF, RDFS y OWL. TFC: XML y Web Semántica
 
 Hemos descrito cómo el marco RDF permite representar o modelar el conocimiento explícito de los recursos (modelo de datos).
 Este modelo de datos se puede enriquecer con la introducción de axiomas \cite{DesLog}, que permiten completar, extender, renovar y adaptar el conocimiento de los recursos.
