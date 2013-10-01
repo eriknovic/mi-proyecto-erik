@@ -14,7 +14,7 @@ La \textbf{\textit{semántica}} es un subcampo de la lingüística que determina la
 
 El nivel más sencillo en la semántica es la \textbf{\textit{denotación}} de una palabra que se refiere a indicar el significado literal de las palabras. Por ejemplo, la palabra computadora en la RAE se define como ``\textit{máquina electrónica, analógica o digital, dotada de una memoria de gran capacidad y de métodos de tratamiento de la información, capaz de resolver problemas matemáticos y lógicos mediante la utilización automática de programas informáticos}''.
 
-Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre estos}\footnote{L. Feigenbaum, "Semantic Web vs. Semantic Technologies,"  Available: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
+Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre estos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Available: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
 
 La categoría para la integración de la información (búsqueda) es la segunda (\textit{técnicas para describir formalmente el conocimiento}), porque al describir formalmente la información y el conocimiento en los recursos, se crea una \textbf{\textit{capa de conocimiento}} en los recursos. La finalidad de esta capa es que los procesos automáticos puedan \textit{acceder, procesar, razonar, combinar, reutilizar y compartir la información y su significado} \cite{OntoTecRrpKnw}. De esta manera, se podrá mejorar la búsqueda de información, ya que se evitan problemas de ambigüedad y las personas obtendrán resultados más significativos de acuerdo al contexto del dominio dado.
 
@@ -29,149 +29,68 @@ En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología
 \begin{itemize}
 \item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de las clases, relaciones y otros objetos relevantes en dicho fenómeno}.
 \item \textit{\textbf{Explicita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
-\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben estar en un lenguaje para que sean comprensible por los procesos automáticos}.
-\item \textit{\textbf{Compartida} se refiere a que la conceptualizaciónn debe ser consensuada y aceptada por el grupo de personas}.
+\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sean comprensible por los procesos automáticos}.
+\item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
 \end{itemize}
 
-Los principales objetivos del uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos, interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos automáticos, intercambien y reutilicen el conocimiento}. \textit{6) La inferencia de información a partir de un programa especializado y los hechos en una ontología}.
+La \textbf{\textit{finalidad de una ontología}} de área investigación es \textit{encontrar información sobre temas especializados, para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor realicen sus actividades de investigación.
+
+Los principales objetivos en el uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos}. \textit{6) La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología}. \textit{6) Personas y procesos consulten información mediante motores de búsqueda y razonadores}
+
+Una ontología tiene tres elementos clave \cite{Markus2012DLprimer}, \cite{protegeManual}:
+\begin{itemize}
+\item[$-$] Clase (Class) representa una colección de objetos que comparten características comunes. 
+\item[$-$] Individuo (Individual) es el nombre de un objeto específico que pertenece a alguna clase. 
+\item[$-$] Propiedad (Property) describe relaciones binarias entre los objetos.
+\begin{itemize}
+\item Propiedad de Objeto (Object Property) son relaciones entre objetos.
+\item Propiedad de Dato (Data Property) son relaciones entre un objeto y una literal (cadena, entero).
+\end{itemize}
+\end{itemize}
+
+Una ontología generalmente tiene dos partes \cite{Magdalena}:
+\begin{itemize}
+\item Un componente asertivo (ABox\label{sym:abox}) compuesto por aserciones (hechos verdaderos) que afirman que los individuos son instancias de una clase o propiedad. Por ejemplo, puede afirmarse que: \textit{el curso \textbf{Temas Selectos de Bases de Datos} pertenece al plan de estudios de la \textbf{Licenciatura en Computación}, el alumno \textbf{Jorge Aparicio} está cursando \textbf{Temas Selectos de Bases de Datos} o el \textbf{Laboratorio de Análisis y Rendimiento de Teleservicios} está en la \textbf{Universidad Autónoma Metropolitana Unidad Iztapalapa}}.
+\item Un componente terminológico (TBox\label{sym:tbox}) compuesto por axiomas que describen las clases y propiedades relevantes, y restringen la manera en que las instancias de éstos se relacionan entre sí. Por ejemplo, se puede especificar que: \textit{todo \textbf{alumno} está inscrito a un \textbf{curso} y pertenece a una \textbf{universidad}, toda \textbf{universidad} es una \textbf{institución educativa} o todo \textbf{estudiante de universidad} pertenece a la \textbf{comunidad universitaria}}.
+\end{itemize}
+
 %%%que es una ontología
 
 %%%para que sirve
 
 %%%qué deben brindar estas ontologías
-Pero para que esto sea posible, las DLs deben cumplir
-algunos requisitos importantes
-brindar un lenguaje formal que permita representar adecuadamente estructuras de informaci´on,
-dar un significado bien definido a esta informaci´on, para poder utilizarla correctamente,
-permitirnos consultar esta informaci´on de acuerdo a las necesidades de diferentes usuarios y aplicaciones, y
-responder a nuestras consultas por medio de razonadores autom´aticos
 
 %%%que nos permite representar
-Una ontología de una determinada área investigación o disciplina, permite encontrar información sobre temas especializados, para los grupos de investigación. De esta manera, estas personas en vez de dedicar mucho tiempo en la búsqueda, realizan sus actividades de investigación.
-
-La ventaja de una ontología es que se trata de una explícita, descripción de primera clase
-, se puede publicar y reutilizar para diferentes
-propósitos.
-? Una bodega puede utiliza la ontología de vinos para enlazar programa de producción
-para el sistema de la
-? Un programa de recomendación de vino puede utilizar la ontología vino
-recomendar vinos para los diferentes menús.
 
 %cuales elementos son  importantes
-En tal ontología, las definiciones asocian los nombres de las entidades en el universo de discurso (por ejemplo, clases, relaciones, funciones, u otros objetos) con texto legible que describe lo que los nombres tienen el propósito de indicar, y axiomas formales que restringen la interpretación y el uso de estos términos bien formados.
-
-Por lo tanto, podemos describir la ontología de un programa definiendo un conjunto de términos de representación. En tal ontología, las definiciones asocian los nombres de las entidades en el universo de discurso (por ejemplo, clases, relaciones, funciones, u otros objetos) con texto legible que describe lo que los nombres tienen el propósito de indicar, y axiomas formales que restringen la interpretación y el uso de estos términos bien formados.
-
-Conceptos: son interpretadas como conjuntos que contienen objetos, donde estos objetos comparten ciertas características.
-Roles: son relaciones entre los objetos.
-Individuos: son nombres de objetos específicos de algún concepto.
-Estos elementos también están presentes en las Ontologías, pero con otro nombre: Clases, Propiedades e Individuos.
-
-Estos conjuntos son el vocabulario que vamos a utilizar para describir nuestro dominio. Recordemos que
-los conceptos representan conjuntos de objetos, mientras que los roles representan relaciones binarias entre
-objetos, y los individuos son nombres de objetos espec´?ficos
-
-? Las clases (en una jerarquía de clases): OntClass tiene listSuperClasses ()
-método
-? Propiedades (en una jerarquía de propiedades):
-? individuos
-
-?	Clase: es una colección de objetos que comparten características comunes. Las clases en una otología también se conocen como conceptos, colecciones o tipos de cosas.
-Persona a Class
-Hombre a Class
-Mujer a Class
-?	Individuo: es un objeto concreto de una clase, como personas, animales, y otros objetos abstractos. Los individuos también se conocen como instancias o miembros.
-Erik a Hombre
-Scarlett a Mujer
-Juan a Persona
-?	Propiedad Objeto: es una relación entre instancias.
-Erik tienePadre Juan
-Erik tieneHerman Scarlett
-Scarlett tiene.pariente Juan
-?	Propiedad Dato: es la relación entre un individuo y un valor  de dato.
-Juan tieneEmail ?juan@example.com?^^string
-Erik nombreCompleto ?Erik Alarcón?^^string
-Scarlett tieneEdad ?18?^^integer
-
- Cada programa debe comprometerse a la semántica de los términos en la ontología común, incluyendo los axiomas sobre las propiedades de los objetos y cómo se relacionan.
- 
-Conceptos, tambi´en llamados clases, que describen un conjunto de objetos que comparten ciertas
-caracter´?sticas.
-Roles, que describen relaciones binarias entre los elementos de ´estas clases.
-Individuos, que son ?nombres? de instancias especificas de alg´un concepto.
 
 %%Cuales son sus características
-La formalidad de las ontologías se toma de las Lógicas Descriptivas (DL). Estas Lógicas descriptivas son ?lenguajes formales para representar el conocimiento de una área de investigación? [6] [7] y están equipadas con lógica de primer orden, así como también  de una semántica formal [6]. Esta semántica formal permite a humanos y computadoras interpretar sin ambigüedad el conocimiento expresado en las  ontologías. Esta semántica formal también hace posible inferir información implícita en las ontologías [6].
-
-Para modelar una Ontología se emplea el formalismo de las Lógicas Descriptivas (DL). En donde las DL son ?lenguajes formales para representar el conocimiento? [4,10] y están equipadas con lógica de primer orden, así como una semántica formal [10].
-Esta semántica formal permite que humanos y computadoras puedan interpretar sin ambigüedad el conocimiento expresado en las  Ontologías, también la semántica formal hace posible inferir información implícita en las Ontologías
 
 %%cómo funciona
-Una ontología no describe completamente el estado total del mundo, sino que emplean axiomas que capturan el conocimiento parcial de una situación que se describe [10].
-
-el compromiso de una ontología común es una garantía la consistencia, pero no completa, en lo que respecta a las preguntas y afirmaciones utilizando el vocabulario definido en la ontología. 
-
-Estos axiomas se organizan en el componente asertivo (Abox) y el componente terminológico (Tbox).
-El Tbox ?describe los conceptos en términos de otros y permite restringir la manera en la que las instancias de éstos se relacionan entre sí? [4].
-El Abox ?esta compuesto por afirmaciones acerca de los conceptos y roles específicos de los que los individuos son instancia? [4].
-
-Es importante observar que los datos contenidos en A, en general, no definen un modelo por s´? solos.
-Las aserciones en A necesitan ser compatibles con las restricciones en T para que K sea satifacible y ´estan
-contenidas en todos los modelos, pero no los determinan.
-
-
-En general, hay muchas formas de ?completar? las aserciones
-del ABox de manera que todos los axiomas en T se satisfagan, y todas ellas resultan en modelos de K
 
 %%por que cosas esta contenida abox y tbox
-Las bases de conocimiento generalmente tienen dos partes:
-
-ABOX: Este componete esta compuesto por aserciones, que afirman que un individuo o un par de individuos es
-una instancia de un concepto o rol. Son un conjuntos de hechos verdaderos, que describen parcialmente el
-dominio
-
-TBOX: En general, para describir un dominio adecuadamente, nos interesa definir unos conceptos en t´erminos
-de otros y restringir la manera en la que las instancias de estos conceptos se relacionan entre s´?. Esto se hace
-a trav´es de ciertos axiomas que restringen a todos los elementos del dominio.
-
-Un componente terminol´ogico, llamado TBox, que describe los conceptos y roles relevantes y las relaciones entre ellos. Este componente se puede considerar como informaci´on intencional. Volviendo a
-nuestro ejemplo, en este componente podemos especificar que todos los cursos son impartidos por un
-profesor y son atendidos por estudiantes, y que cada profesor esta asociado a una facultad y puede
-impartir varios cursos.
-
-Un componente asertivo, llamado ABox, donde se pueden hacer afirmaciones acerca de los conceptos y
-roles especificos de los que los individuos son instancia. Se le puede considerar informaci´on extensional.
-Por ejemplo, podemos afirmar que el curso Base de Datos est´a asociado a la facultad Ciencias de la
-Computaci´on o que el el estudiante con clave 103378 atiende el curso Matem´aticas Discretas
-
-La información intencional es el componente terminológico (TBox). Este TBox sirve para ?describir los conceptos en términos de otros y restringir las relaciones que hay entre los mismos? [6]. Mientras, la información extensional, denominada componente asertivo (ABox) ?es un conjunto de afirmaciones acerca de las instancias y propiedades específicas de estos individuos? [6].
-El TBox es un conjunto de restricciones de integridad de una ontología, este componente se constituye por varios axiomas.
-
-En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
 \section{Marco de Descripción de Recursos (RDF)}
-abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
+Las tecnologías semánticas proponen al \textit{marco de descripción de recursos} (RDF\lable{sym:rdf}) \footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}}) para expresar el conocimiento e información sobre los recursos en un formato estándar \cite{SurvSemWeb2012}. De esta manera, la información al estar en formato estándar, puede ser intercambiada entre aplicaciones.
 
-Las tecnologías semánticas proponen al marco de trabajo RDF (Resource Description Framework\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}})
+La finalidad del RDF es tener un solvente universal para representar cualquier cosa al formato estándar RDF. Las dos ideas básicas del marco RDF es: 1) identificar cada cosa (objeto, clase, idea u objeto abstracto) mediante un identificador único de recursos (URI\label{sym:uri}) y 2) describir los recursos en términos de propiedades de objeto y propiedades de datos.
 
 %%%que es RDF
-RDF es un modelo estándar para el intercambio de datos en la Web. RDF tiene características que facilitan la combinación de datos incluso si los esquemas subyacentes son diferentes, y específicamente apoya la evolución de esquemas en el tiempo sin necesidad de que todos los consumidores de datos a ser cambiados.
-
-El Marco de Descripción de Recursos (RDF). Este modelo de datos RDF permite transformar literalmente cualquier cosa a una forma canónica RDF (estándar).
 
 %%%para que sirve
-para la representación del conocimiento de los recursos en un formato estándar \cite{SurvSemWeb2012}.
 
 %%como se representan los recursos
-%El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: 
-%http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica
+
+El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: \url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica}
+
+abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
 
 %%%Qué se debe representar de los reursos 
 Este marco RDF permite representar el conocimiento sobre los recursos, en particular, los hechos o afirmaciones de estos.
 
 Estos afirmaciones se hacen a partir del conocimiento que es significativo de los recursos como: sus características o relaciones que puede tener con otros recursos
 
-%representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo.
+representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: \url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo}.
 
 representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
 
@@ -218,6 +137,8 @@ El conjunto de descripciones o hechos explícitos de los recursos es el component
 Informalmente, podemos ver al ABox como una descripci´on parcial de la realidad: los hechos en el ABox
 son ciertos, pero puede haber otras instancias de los conceptos y roles no mencionadas en A
 
+
+En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 
