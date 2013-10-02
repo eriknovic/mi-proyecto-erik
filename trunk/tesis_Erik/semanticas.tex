@@ -64,13 +64,13 @@ Una ontología generalmente tiene dos partes \cite{Magdalena}:
 %%por que cosas esta contenida abox y tbox
 
 \section{Marco de Descripción de Recursos (RDF)}
-Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{expresar el conocimiento e información sobre los recursos en un formato estándar} \cite{SurvSemWeb2012}.
+Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información sobre los recursos en un formato estándar} \cite{SurvSemWeb2012}.
 
-El objetivo de este \textit{marco de trabajo} es \cite{PatdigRDF} definir un mecanismo neutro para la descripción de información en cualquier dominio. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) con RDF, es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
+El objetivo de este \textit{marco de trabajo} es \cite{PatdigRDF} definir un mecanismo neutro para la descripción de información en cualquier dominio. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) con RDF, es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información. 
 
-En el maroc RDF, las dos ideas básicas para describir el conocimiento, son: 1) identificar cada cosa (objeto, clase, idea u objeto abstracto) mediante un identificador único de recursos (URI\label{sym:uri}) y 2) describir los recursos en términos de propiedades de objeto y propiedades de datos.
+En el marco RDF se tienen tres conceptos claves: \textit{1) Recurso, 2) Propiedad y 3) Sentencia o tripleta}.
 
-Un URI es "\textit{una cadena compacta de caracteres para identificar un recurso abstracto o físico}" \cite{rfc3986}. La finalidad de un URI establece una manera simple para distinguir un recurso. Ejemplos comunes de URIs son los siguientes:
+Un \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se quiera representar. Todo recursos en rdf debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otro recurso. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. Estas cadenas deben estar codificadas en UTF-8\cite{UTF2279}, es decir, no deben tener caracteres raros como: \textit{letras con acentos, diéresis o la `ñ'}. Ejemplos comunes de URIs son los siguientes:
 
 \begin{itemize}
 \item[$-$] \url{ftp://ftp.mi-ejemplo.com/rfc/rfc2396.txt}
@@ -79,17 +79,112 @@ Un URI es "\textit{una cadena compacta de caracteres para identificar un recurso
 \item[$-$] \url{mailto:alguien@mi-ejemplo.com}
 \end{itemize}
 
-Los recursos teniendo un identificador, deben ser examinados para determinar la información que se va a representar de estos: características, atributos, relaciones, en general, metadatos sobre los recursos (datos de datos). Ejemplos de esta 
+Algunos recursos que son accesibles vía Web, ya poseen un URI, como \textit{documentos digitales, vídeos o páginas web} poseen un URI. Pero, otros recursos como \textit{personas, lugares, organizaciones} se les puede asignar un URI. En la Tabla \ref{tab:rec} lista se presentan los URIs de algunos recursos.
 
-Estos metadatos son la base para describir la información de los recursos en términos de las propiedades.
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\caption{Ejemplos de identificadores (URI) asignados a distintos recursos.}
+\label{tab:rec}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{4.7in}}
+\hline 
+\textbf{Objeto} & \textbf{Recurso(URI)}\\
+\hline
+\hline 
+Juan López & \url{http://www.mi-ejemplo.com/Juan_Lopez} \\
+\hline
+UAM & \url{http://www.uam.mx/}\\
+\hline 
+Kitty & \url{http://www.mi-ejemplo.com/kitty}\\
+\hline 
+Teoría de cuerdas & \url{http://www.mi-ejemplo.com/teoría_de_cuerdas}\\
+\hline 
+Laboratorio ARTE & \url{http://mcyti.izt.uam.mx/index.php/laboratorios/laboratorioredes}\\
+\hline 
+presentación tesis.pdf & \url{http://www.mi-ejemplo.com/mi_presetacion_tesis.pdf}\\
+\hline 
+Búsqueda en la Web & \url{http://www.mi-ejemplo.com/Busqueda_Web}\\
+\hline 
+Libro Matemáticas Discretas & \url{http://www.mi-ejemplo.com/mate_disc}\\
+\hline 
+Persona & \url{http://www.mi-ejemplo.com/Persona}\\
+\hline 
+Libro & \url{http://www.mi-ejemplo.com/Libro}\\
+\hline 
+\end{tabular}
+\end{table}
+
+Una propiedad representa un \textit{aspecto significativo, característica, atributo, relación, y en general, cualquier metadato (datos de datos)} para describir un recursos. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
+
+Una propiedad funciona como verbo y tiene un significado bien definido para expresar sin ambigüedad el metadato. La sintaxis básica para asignar el nombre de una propiedad es: \textbf{\textit{un verbo en tercera persona, tiempo presente y minúsculas}} + guión + \textbf{\textit{nombre del metadato sin espacios donde cada palabra a excepción de la primera está capitalizada}} o una \textbf{\textit{preposición}}.
+
+Las propiedades también tienen un URI, por ello, los nombres de éstas se escriben en URI. En la Tabla \ref{tab:prop} se muestran URIs de algunas propiedades. 
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\caption{Ejemplos de identificadores (URI) asignados a algunas propiedades.}
+\label{tab:prop}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{4.7in}}
+\hline 
+\textbf{Metadato} & \textbf{Propiedad (URI)}\\
+\hline
+\hline 
+Nombre & \url{http://www.mi-ejemplo.com/tiene-nombre}\\
+\hline
+Edad & \url{http://www.mi-ejemplo.com/tiene-edad}\\
+\hline 
+Conocido & \url{http://www.mi-ejemplo.com/conoce-a}\\
+\hline 
+Nivel de estudios & \url{http://www.mi-ejemplo.com/tiene-nivelEstudios}\\
+\hline 
+Resumen & \url{http://www.mi-ejemplo.com/tiene-resumen}\\
+\hline 
+Año de publicación & \url{http://www.mi-ejemplo.com/tiene-anhoPublicacion}\\
+\hline 
+Referencia & \url{http://www.mi-ejemplo.com/refiere-a}\\
+\hline 
+\end{tabular}
+\end{table}
+
+Los URI de recursos y propiedades son cadenas con una longitud larga. Para reducir el tamaño de estos, se sustituye la secuencia de caracteres desde ``\textit{\url{http://}}'' hasta el símbolo ``\textit{\#}'' o ``\textit{\url{/}}'' por un prefijo, que es una cadena corta parecida a un acrónimo. Por ejemplo, el prefijo ``\textit{exp}'' se traduce en el siguiente URI \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades: \textit{Juan Lopez, Teoria de cuerdas, nombre y conocido de} en las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente forma:
+
+\begin{itemize}
+\item exp:Juan\_Lopez
+\item exp:teoria\_de\_cuerdas
+\item exp:tiene-nombre
+\item exp:conoce-a
+\end{itemize}
+
+Una \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) \textbf{\textit{representa la afirmación}} sobre un \textit{recurso} en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (recurso o literal). Las declaraciones representan el conocimiento o información de un recurso. En este contexto, las declaraciones se conocen mejor como tripletas. Éstas emplean lógica de predicados y la sintaxis básica para escribirlas es \cite{SemWebTim}: \textit{sujeto-predicado-objeto}. 
+
+\begin{enumerate}
+\item \textbf{\textit{Sujeto}} es el recurso que se describe.
+\item \textbf{\textit{Predicado}} es la relación o metadato que se describe del recurso.
+\item \textbf{\textit{Objeto}} es otro recurso o literal (cadena o entero) que describe el predicado.
+\end{enumerate}
+
+Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece a una clase se utiliza el triple:sirp:recurso rdf:type sirp:Clase
+
+Una propiedad es a su vez un recurso. El objeto es el valor asignado a dicha propiedad, y puede ser una cadena simple de caracteres (string), u otro recurso, es decir, un recurso especificado por un URI.
+
+Otra forma de representar las declaraciones (sentencias) RDF es a través de un grafo rotulado como se muestra en la Fig. 3.
+
+La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista.
+
+La estructura general de RDF forma un gráfico estructurado con los nodos y aristas que representan el triplete. El sujeto es el nodo de origen, el objeto es el nodo objetivo y el predicado es la etiqueta de la arista.
+
+Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
 
 
-La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web.
+El conjunto de todos los triples RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Un triple se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso.
 
-En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.
+El conjunto de descripciones o hechos explícitos de los recursos es el componente asertivo (ABox).
+Informalmente, podemos ver al ABox como una descripci´on parcial de la realidad: los hechos en el ABox
+son ciertos, pero puede haber otras instancias de los conceptos y roles no mencionadas en A
 
-Los metadatos son a menudo muy básico y tienen un bajo abstracción semántica
 
+Existen muchas sintaxis para representar los triples o aserciones. El W3C establece como estándar el RDF/XML1 y obviamente al modelo de datos RDF [10] para representar a los recursos. Finalmente, un dato interesante es el siguiente.
 
 %%%que es RDF
 
@@ -101,64 +196,19 @@ abstraer- Separar por medio de una operación intelectual las cualidades de un ob
 
 %%%Qué se debe representar de los reursos 
 
-
-Estos afirmaciones se hacen a partir del conocimiento que es significativo de los recursos como: sus características o relaciones que puede tener con otros recursos
-
-representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación también se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad título tiene la siguiente URI: \url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#tiene-titulo}.
-
-representa las características significativas de un recurso. Estas características pueden hacer referencia al entorno de un recurso (autores, nombre y apellidos, título, publicación, tipos de recurso, fecha de creación, fecha de nacimiento, URL  etc.) o al contenido de los mismos (keywords, fecha de nacimiento, teléfono, abstract, dirección, referencias, etc.).
-
-En la descripción de los recursos se emplea lógica de predicados, es decir, cada hecho o afirmación se escribe con un sujeto-verbo-objeto
-
 %%%qué es un triple
-La sintaxis de RDF se compone de un triplete de afirmaciones: sujeto, predicado y objeto [9]. El tema representa el recurso de describir, el predicado es un tipo de propiedad en relación con el recurso y el objeto es el valor de la propiedad, tales como datos u otros recursos (Figura 1).
-
-El modelo RDF se compone de tres conceptos principales: ? Recursos: Todas las cosas descriptas por expresiones RDF se denominan recursos. Los recursos, representan cualquier entidad (lugares, personas, objetos) del mundo real y están identificados por un URI (Universal Resource Identificator). Un recurso puede ser una página Web, una parte de una página Web; p. ej. un elemento HTML o XML específico dentro del documento fuente, o un objeto que no sea directamente accesible vía Web, p. ej. un libro impreso.
-? Propiedades: Una propiedad es un aspecto específico, característica, atributo, o relación utilizado para describir un recurso. Cada propiedad tiene un significado específico, define sus valores permitidos, los tipos de recursos que puede describir, y sus relaciones con otras propiedades. Las características de las propiedades se definen con RDFS (RDF Schema ) que explicaré más adelante.
-? Sentencias (declaraciones, enunciados): Un recurso específico junto con una propiedad denominada, más el valor de dicha propiedad para ese recurso es una sentencia RDF. Estas tres partes individuales de una sentencia se denominan, respectivamente, sujeto, predicado y objeto. Una propiedad es a su vez un recurso. El objeto es el valor asignado a dicha propiedad, y puede ser una cadena simple de caracteres (string), u otro recurso, es decir, un recurso especificado por un URI.
-Las sentencias constituyen la construcción básica que establece el modelo de datos RDF. Es decir, el significado de los datos se expresa mediante un conjunto de sentencias RDF que formalmente son representadas por tri-uplas (sujeto, predicado, objeto). Otra forma de representar las declaraciones (sentencias) RDF es a través de un grafo rotulado como se muestra en la Fig. 3.
-
-Las propiedades de los recursos y sus respectivos valores se llevan a un formato estándar, que en este marco se denomina triple \cite{SurvSemWeb2012}. El conjunto de todos los triples RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Un triple se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso.
-
-RDF extiende a la estructura de enlace de la Web para utilizar a URIs para nombrar la relación entre las cosas, así como los dos extremos de la conexión (lo que se conoce normalmente como "triple").
-
-Estos tres tipos conceptos forman parte de una sentencia (tripleta) en el modelo RDF y a continuación se describen estos [11] [12].
-o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
-o	Predicado: Es una característica, atributo o relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
-o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
-
-La unidad básica de RDF son las aserciones. La estructura básica de una aserción es como la de una oración sencilla, es decir, un sujeto, predicado y un objeto. De esta manera, opciones sencillas como ?Juan come pizza? permiten la construcción de vocabularios complejos [4]. RDF es el modelo de datos que permite representar el conocimiento de un dominio particular.
-
-La sintaxis de RDF se compone de una de una sentencia ó tripleta (sujeto, predicado y objeto) [5] que expresa el significado de las cosas. Los elementos de la tripleta son los siguientes:
-o	Sujeto: Son aquellos recursos que puede ser descritos (documentos, personas, objetos, lugares, etc.)
-o	Predicado: Es una característica, atributo ó relación que se describe de un sujeto (tiene el nombre, nació en, pertenece a, etc.)
-o	Objeto: Es un valor (cadena, entero, fecha) u otro recurso que describe el predicado.
-La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista.
-
-El triple es una afirmación de la forma: sujeto, predicado y objeto. El sujeto es el nombre del recurso (individuo), el predicado es el nombre de una relación y el objeto es el nombre de un individuo o valor.
-
-El modelo de metadatos RDF se basa en la idea de hacer declaraciones acerca de los recursos en forma de expresiones-predicado-objeto, llamado triples en terminología RDF. El tema denota el recurso, y el predicado denota rasgos o aspectos del recurso y expresa una relación entre el sujeto y el objeto.
 
 %%%recursos los podemos asociar a una determinada agrupación o clase
-Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece a una clase se utiliza el triple:sirp:recurso rdf:type sirp:Clase
 
 %%%cómo podemos reducir el tamaño de un triple
 
-%Para reducir el tamaño del identificador (URI) de los recursos y las propiedades, se sustituye la secuencia de caracteres desde "http://www" hasta el símbolo "#" por un prefijo. En nuestro caso de estudio, el prefijo ?sirp? se traduce como ?http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#?. Por ejemplo, la propiedad ?tiene título? se escribe ?sirp:tiene-titulo?. En las tecnologías semánticas, existen otros prefijos asignados para otros vocabularios, como: ?rdf?, ?xsd?, ?rdfs? y ?owl?.
+%Para reducir el tamaño del identificador (URI)
 
 %%%construir grafos de conocimiento
 
-La estructura general de RDF forma un gráfico estructurado con los nodos y aristas que representan el triplete. El sujeto es el nodo de origen, el objeto es el nodo objetivo y el predicado es la etiqueta de la arista.
-
-Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
-
 %%%sintaxis para escribir los triples
-Existen muchas sintaxis para representar los triples o aserciones. El W3C establece como estándar el RDF/XML1 y obviamente al modelo de datos RDF [10] para representar a los recursos. Finalmente, un dato interesante es el siguiente.
 
 %%%abox
-El conjunto de descripciones o hechos explícitos de los recursos es el componente asertivo (ABox).
-Informalmente, podemos ver al ABox como una descripci´on parcial de la realidad: los hechos en el ABox
-son ciertos, pero puede haber otras instancias de los conceptos y roles no mencionadas en A
 
 
 En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
@@ -184,6 +234,8 @@ en cuyo caso se dice que el concepto de Madre es subsumida por el Padre concepto
 
 Concepto de equivalencia afirma que dos conceptos tienen los mismos casos, como en
 Person ? Human. (6)
+
+Cada propiedad tiene un significado específico, define sus valores permitidos, los tipos de recursos que puede describir, y sus relaciones con otras propiedades.
 
 Mientras sinónimos son un claro ejemplo de los conceptos equivalentes, en la práctica se utiliza más a menudo el concepto de equivalencia para dar un nombre a las expresiones complejas
 
@@ -299,3 +351,4 @@ Un motor de consulta SPARQL es el programa que permite responder las consultas d
 %Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
+La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web. En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.
