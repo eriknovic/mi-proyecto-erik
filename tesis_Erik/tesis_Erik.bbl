@@ -43,10 +43,10 @@ Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
 \newblock Technical Report RR-3485, INRIA, September 1998.
 
 \bibitem{OntoTecRrpKnw}
-Torcoroma~Velásquez Pérez, Andrés~Puentes Velásquez, and Jaime~Guzmán
+Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
   Luna.
 \newblock Ontologias: una tecnica de representacion de conocimiento.
-\newblock {\em Avances en Sistemas e Informática}, 8(2), 2011.
+\newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
 
 \bibitem{Gruber}
 Thomas~R. Gruber.
@@ -60,24 +60,10 @@ Nicola Guarino, Daniel Oberle, and Steffen Staab.
   Ontologies}, International Handbooks on Information Systems, pages 1--17.
   Springer Berlin Heidelberg, 2009.
 
-\bibitem{SurvSemWeb2012}
-S.~Bouzid, C.~Cauvet, and J.~Pinaton.
-\newblock A survey of semantic web standards to representing knowledge in
-  problem solving situations.
-\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
-  International Conference on}, pages 121--125, 2012.
-
 \bibitem{Markus2012DLprimer}
 Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
 \newblock A description logic primer.
 \newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
-
-\bibitem{DesLog}
-Franz Baader, Ian Horrocks, and Ulrike Sattler.
-\newblock {D}escription {L}ogics.
-\newblock In Frank {van Harmelen}, Vladimir Lifschitz, and Bruce Porter,
-  editors, {\em Handbook of Knowledge Representation}, chapter~3, pages
-  135--180. Elsevier, 2008.
 
 \bibitem{protegeManual}
 Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
@@ -85,6 +71,45 @@ Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
 \newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
   Plugin and CO-ODE Tools Edition 1.0}.
 \newblock August 2004.
+
+\bibitem{Magdalena}
+Magdalena Ortiz.
+\newblock {Introducci\'on a las L\'ogicas Descriptivas}.
+\newblock Technical report, Vienna University of Technology, 2009.
+
+\bibitem{SurvSemWeb2012}
+S.~Bouzid, C.~Cauvet, and J.~Pinaton.
+\newblock A survey of semantic web standards to representing knowledge in
+  problem solving situations.
+\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
+  International Conference on}, pages 121--125, 2012.
+
+\bibitem{PatdigRDF}
+C\'esar Carreras and Gloria Munilla.
+\newblock {\em Patrimonio digital un nuevo medio al servicio de las
+  instituciones culturales}.
+\newblock Universitat Oberta de Catalunya, 2005.
+
+\bibitem{rfc3986}
+Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
+\newblock Uniform resource identifier ({URI}): Generic syntax.
+\newblock RFC 3986, RFC Editor, January 2005.
+
+\bibitem{UTF2279}
+F.~Yergeau.
+\newblock Utf-8, a transformation format of iso 10646, 1998.
+
+\bibitem{SemWebTim}
+Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
+\newblock The semantic web revisited.
+\newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
+
+\bibitem{DesLog}
+Franz Baader, Ian Horrocks, and Ulrike Sattler.
+\newblock {D}escription {L}ogics.
+\newblock In Frank {van Harmelen}, Vladimir Lifschitz, and Bruce Porter,
+  editors, {\em Handbook of Knowledge Representation}, chapter~3, pages
+  135--180. Elsevier, 2008.
 
 \bibitem{Perez2009}
 Jorge P{\'e}rez, Marcelo Arenas, and Claudio Gutierrez.
