@@ -27,7 +27,7 @@ Las herramientas, metodologías y estándares para construir esta capa, se describ
 En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. El concepto de ontología surge en la filosofía, pero a lo largo del tiempo, se ha introducido en la computación y las tecnologías de la información (TI). Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
 
 \begin{itemize}
-\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de las clases, relaciones y otros objetos relevantes en dicho fenómeno}.
+\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de los conceptos, funciones, relaciones, restricciones y otros objetos relevantes en dicho fenómeno}.
 \item \textit{\textbf{Explicita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
 \item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sean comprensible por los procesos automáticos}.
 \item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
@@ -55,40 +55,41 @@ Una ontología generalmente tiene dos partes \cite{Magdalena}:
 \end{itemize}
 
 %%%que es una ontología
-
 %%%para que sirve
-
 %%%qué deben brindar estas ontologías
-
 %%%que nos permite representar
-
 %cuales elementos son  importantes
-
 %%Cuales son sus características
-
 %%cómo funciona
-
 %%por que cosas esta contenida abox y tbox
 
 \section{Marco de Descripción de Recursos (RDF)}
-Las tecnologías semánticas proponen al \textit{marco de descripción de recursos} (RDF\lable{sym:rdf}) \footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}}) para expresar el conocimiento e información sobre los recursos en un formato estándar \cite{SurvSemWeb2012}. De esta manera, la información al estar en formato estándar, puede ser intercambiada entre aplicaciones.
+Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{expresar el conocimiento e información sobre los recursos en un formato estándar} \cite{SurvSemWeb2012}.
 
-aparece RDF con un modelo de datos más flexible basados en triples (sujeto + predicado + objeto) y cuyos elementos están identificados con URIs lo que permite el acceso a su semántica y a la interpretación de los datos.
+El objetivo de este \textit{marco de trabajo} es \cite{PatdigRDF} definir un mecanismo neutro para la descripción de información en cualquier dominio. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) con RDF, es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
 
-RDF es un modelo estándar para el intercambio de datos en la Web. Se permite describir recursos semánticamente web con el fin de mejorar su referenciamiento y su recuperación por los usuarios o por las aplicaciones.
+En el maroc RDF, las dos ideas básicas para describir el conocimiento, son: 1) identificar cada cosa (objeto, clase, idea u objeto abstracto) mediante un identificador único de recursos (URI\label{sym:uri}) y 2) describir los recursos en términos de propiedades de objeto y propiedades de datos.
 
-RDF fue creado con el fin de crear un formato que permitiera alcanzar la compatibilidad entre los diversos sistemas de metadatos, suministrando para ello una arquitectura genérica de metainformación.
+Un URI es "\textit{una cadena compacta de caracteres para identificar un recurso abstracto o físico}" \cite{rfc3986}. La finalidad de un URI establece una manera simple para distinguir un recurso. Ejemplos comunes de URIs son los siguientes:
 
-El objetivo general de RDF es definir un mecanismo para describir recursos que no cree ninguna asunción sobre un dominio de aplicación particular, ni defina (a priori) la semántica de algún dominio de aplicación.
+\begin{itemize}
+\item[$-$] \url{ftp://ftp.mi-ejemplo.com/rfc/rfc2396.txt}
+\item[$-$] \url{http://www.mi-ejemplo.com/rfc/rfc2396.html}
+\item[$-$] \url{telnet://mi-ejemplo.com}
+\item[$-$] \url{mailto:alguien@mi-ejemplo.com}
+\end{itemize}
 
-La definición del mecanismo debe ser neutral con respecto al dominio, sin embargo el mecanismo debe ser adecuado para describir información sobre cualquier dominio. La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web.
+Los recursos teniendo un identificador, deben ser examinados para determinar la información que se va a representar de estos: características, atributos, relaciones, en general, metadatos sobre los recursos (datos de datos). Ejemplos de esta 
+
+Estos metadatos son la base para describir la información de los recursos en términos de las propiedades.
+
+
+La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web.
 
 En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.
 
+Los metadatos son a menudo muy básico y tienen un bajo abstracción semántica
 
-La finalidad del RDF es tener un solvente universal para representar cualquier cosa al formato estándar RDF. Las dos ideas básicas del marco RDF es: 1) identificar cada cosa (objeto, clase, idea u objeto abstracto) mediante un identificador único de recursos (URI\label{sym:uri}) y 2) describir los recursos en términos de propiedades de objeto y propiedades de datos.
-
-De hecho, RDF permite describir los recursos o cualquier sujeto direccionable con URI (Uniform Resource Identifier) ??de los metadatos. Los metadatos son a menudo muy básico y tienen un bajo abstracción semántica
 
 %%%que es RDF
 
@@ -96,12 +97,10 @@ De hecho, RDF permite describir los recursos o cualquier sujeto direccionable co
 
 %%como se representan los recursos
 
-El primer paso en esta representación es establecer un identificador único (URI) \cite{rfc3986} para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ?Hacia una búsqueda semántica? se le asigna la siguiente URI: \url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}#Hacia_busqueda_semantica}
-
 abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
 
 %%%Qué se debe representar de los reursos 
-Este marco RDF permite representar el conocimiento sobre los recursos, en particular, los hechos o afirmaciones de estos.
+
 
 Estos afirmaciones se hacen a partir del conocimiento que es significativo de los recursos como: sus características o relaciones que puede tener con otros recursos
 
@@ -166,6 +165,8 @@ En esta sección hay que describir de manera general a las tecnologías semánticas
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 Axiomas especifican las características de las clases y propiedades
+
+los axiomas formales, que modelan los enunciados que son siempre ciertos, y representan conocimiento que no puede ser definido formalmente por ninguno de los otros componentes
 
 %Este documento es muy bueno, tiene todo lo que necesitas para RDF, RDFS y OWL. TFC: XML y Web Semántica
 
