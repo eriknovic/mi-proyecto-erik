@@ -70,7 +70,7 @@ El objetivo de este \textit{marco de trabajo} es \cite{PatdigRDF} definir un mec
 
 En el marco RDF se tienen tres conceptos claves: \textit{1) Recurso, 2) Propiedad y 3) Sentencia o tripleta}.
 
-Un \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se quiera representar. Todo recursos en rdf debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otro recurso. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. Estas cadenas deben estar codificadas en UTF-8\cite{UTF2279}, es decir, no deben tener caracteres raros como: \textit{letras con acentos, diéresis o la `ñ'}. Ejemplos comunes de URIs son los siguientes:
+El \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se quiera representar. Todo recursos en rdf debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otro recurso. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. Estas cadenas deben estar codificadas en UTF-8\cite{UTF2279}, es decir, no deben tener caracteres raros como: \textit{letras con acentos, diéresis o la `ñ'}. Ejemplos comunes de URIs son los siguientes:
 
 \begin{itemize}
 \item[$-$] \url{ftp://ftp.mi-ejemplo.com/rfc/rfc2396.txt}
@@ -114,7 +114,7 @@ Libro & \url{http://www.mi-ejemplo.com/Libro}\\
 \end{tabular}
 \end{table}
 
-Una propiedad representa un \textit{aspecto significativo, característica, atributo, relación, y en general, cualquier metadato (datos de datos)} para describir un recursos. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
+La propiedad representa un \textit{aspecto significativo, característica, atributo, relación, y en general, cualquier metadato (datos de datos)} para describir un recursos. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
 
 Una propiedad funciona como verbo y tiene un significado bien definido para expresar sin ambigüedad el metadato. La sintaxis básica para asignar el nombre de una propiedad es: \textbf{\textit{un verbo en tercera persona, tiempo presente y minúsculas}} + guión + \textbf{\textit{nombre del metadato sin espacios donde cada palabra a excepción de la primera está capitalizada}} o una \textbf{\textit{preposición}}.
 
@@ -156,17 +156,19 @@ Los URI de recursos y propiedades son cadenas con una longitud larga. Para reduc
 \item exp:conoce-a
 \end{itemize}
 
-Una \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) \textbf{\textit{representa la afirmación}} sobre un \textit{recurso} en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (recurso o literal). Las declaraciones representan el conocimiento o información de un recurso. En este contexto, las declaraciones se conocen mejor como tripletas. Éstas emplean lógica de predicados y la sintaxis básica para escribirlas es \cite{SemWebTim}: \textit{sujeto-predicado-objeto}. 
+La \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) es una \textbf{\textit{afirmación de un hecho explícito}} para un recurso en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (otro recurso o literal). Estas declaraciones representan el conocimiento o información explícita de los recurso. La sintaxis básica para representar una aserción, es la tripleta \cite{SemWebTim}: \textit{sujeto-predicado-objeto}. 
 
 \begin{enumerate}
 \item \textbf{\textit{Sujeto}} es el recurso que se describe.
 \item \textbf{\textit{Predicado}} es la relación o metadato que se describe del recurso.
-\item \textbf{\textit{Objeto}} es otro recurso o literal (cadena o entero) que describe el predicado.
+\item \textbf{\textit{Objeto}} es otro recurso o una literal (cadena o entero) que describe el predicado.
 \end{enumerate}
 
-Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece a una clase se utiliza el triple:sirp:recurso rdf:type sirp:Clase
+Ejemplos de estas declaraciones escritas como tripletas se presentan en la Figura \ref{fig:sent}.
 
-Una propiedad es a su vez un recurso. El objeto es el valor asignado a dicha propiedad, y puede ser una cadena simple de caracteres (string), u otro recurso, es decir, un recurso especificado por un URI.
+
+El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir los recursos, porque ella nos permite clasificar a los recursos. El triple asociado a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Pedro, Juan, y Pablo son personas, mientras los recursos fido y kitty son mascotas. Las respectivas tripletas de estos se muestran en la Figura \ref{fig:ejmrep}.
+
 
 Otra forma de representar las declaraciones (sentencias) RDF es a través de un grafo rotulado como se muestra en la Fig. 3.
 
