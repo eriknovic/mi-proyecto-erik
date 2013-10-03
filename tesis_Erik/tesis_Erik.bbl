@@ -84,12 +84,6 @@ S.~Bouzid, C.~Cauvet, and J.~Pinaton.
 \newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
   International Conference on}, pages 121--125, 2012.
 
-\bibitem{PatdigRDF}
-C\'esar Carreras and Gloria Munilla.
-\newblock {\em Patrimonio digital un nuevo medio al servicio de las
-  instituciones culturales}.
-\newblock Universitat Oberta de Catalunya, 2005.
-
 \bibitem{rfc3986}
 Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
 \newblock Uniform resource identifier ({URI}): Generic syntax.
@@ -109,16 +103,11 @@ C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
 \newblock Evolutionary and swarm computing for the semantic web.
 \newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
 
-\bibitem{DesLog}
-Franz Baader, Ian Horrocks, and Ulrike Sattler.
-\newblock {D}escription {L}ogics.
-\newblock In Frank {van Harmelen}, Vladimir Lifschitz, and Bruce Porter,
-  editors, {\em Handbook of Knowledge Representation}, chapter~3, pages
-  135--180. Elsevier, 2008.
-
-\bibitem{Perez2009}
-Jorge P{\'e}rez, Marcelo Arenas, and Claudio Gutierrez.
-\newblock Semantics and complexity of sparql.
-\newblock {\em ACM Trans. Database Syst.}, 34(3):16:1--16:45, September 2009.
+\bibitem{SPARQL}
+T.~Fujino and N.~Fukuta.
+\newblock A sparql query rewriting approach on heterogeneous ontologies with
+  mapping reliability.
+\newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
+  International Conference on}, pages 230--235, 2012.
 
 \end{thebibliography}

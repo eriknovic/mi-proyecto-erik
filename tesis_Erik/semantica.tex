@@ -65,9 +65,9 @@ Una ontología generalmente tiene dos partes \cite{Magdalena}:
 
 \section{Marco de Descripción de Recursos (RDF)}
 \label{sec:rdf} 
-Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
+Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información sobre los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información. 
 
-En el marco RDF se tienen tres conceptos claves: \textbf{\textit{1) Recurso, 2) Propiedad y 3) Sentencia}}.
+En el marco RDF se tienen tres conceptos claves: \textit{1) Recurso, 2) Propiedad y 3) Sentencia o tripleta}.
 
 El \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se quiera representar. Todo recursos en rdf debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otros. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. Estas cadenas deben estar codificadas en UTF-8\cite{UTF2279}, es decir, no deben tener caracteres raros como: \textit{letras con acentos, diéresis o la `ñ'}. La Tabla \ref{tab:rec} se ejemplifican los URIs para unos recursos.
 
@@ -81,17 +81,17 @@ El \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, pág
 \textbf{Objeto} & \textbf{Recurso(URI)}\\
 \hline
 \hline 
-Juan López & \url{http://www.mi-ejemplo.com/Juan_Lopez} \\
+Juan López & \url{http://www.mi-ejemplo.com/Juan_Lopez}\\
 \hline
-UAM & \url{http://www.mi-ejemplo.com/UAM}\\
-\hline 
 Kitty & \url{http://www.mi-ejemplo.com/kitty}\\
+\hline 
+Teoría de cuerdas & \url{http://www.mi-ejemplo.com/teoría_de_cuerdas}\\
 \hline 
 Libro Matemáticas Discretas & \url{http://www.mi-ejemplo.com/mate_disc}\\
 \hline 
 Persona & \url{http://www.mi-ejemplo.com/Persona}\\
 \hline 
-Mascota & \url{http://www.mi-ejemplo.com/Mascota}\\
+Mascota & \url{http://www.mi-ejemplo.com/Mascota\\
 \hline 
 \end{tabular}
 \end{table}
@@ -127,7 +127,7 @@ Los URI de recursos y propiedades son cadenas con una longitud larga. Para reduc
 
 \begin{itemize}
 \item exp:Juan\_Lopez
-\item exp:Kitty
+\item exp:teoria\_de\_cuerdas
 \item exp:tiene-nombre
 \item exp:conoce-a
 \end{itemize}
@@ -227,5 +227,119 @@ Un motor de consulta SPARQL es el programa que: 1) interpreta una consulta SPARQ
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 \label{sec:reginf} 
+%En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
+
+Los axiomas o reglas de inferencia son mecanismos que permiten explotar el conocimiento en los recursos. 
+
+Axiomas describen las relaciones entre los conceptos.
+Por ejemplo, el hecho de que todas las madres son los padres se expresa por la inclusión concepto
+Mother ? Parent
+
+en cuyo caso se dice que el concepto de Madre es subsumida por el Padre concepto. Tal conocimiento puede ser usado para inferir nuevos hechos sobre los individuos. Por ejemplo, (1) y (5) junto implicar que Julia es un padre.
+
+ Pero, esta conocimiento también tiene hechos 
+Axiomas especifican las características de las clases y propiedades
+
+los axiomas formales, que modelan los enunciados que son siempre ciertos, y representan conocimiento que no puede ser definido formalmente por ninguno de los otros componentes Gruber (1993)
+
+%Este documento es muy bueno, tiene todo lo que necesitas para RDF, RDFS y OWL. TFC: XML y Web Semántica
+
+%%%ejemplos de axiomas en clases
+Las funcionalidades y ejemplos de estos axiomas se pueden encontrar en la literatura \cite{Markus2012DLprimer}, \cite{protegeManual}.
+
+
+Concepto de equivalencia afirma que dos conceptos tienen los mismos casos, como en
+Person ? Human. (6)
+
+Cada propiedad tiene un significado específico, define sus valores permitidos, los tipos de recursos que puede describir, y sus relaciones con otras propiedades.
+
+Mientras sinónimos son un claro ejemplo de los conceptos equivalentes, en la práctica se utiliza más a menudo el concepto de equivalencia para dar un nombre a las expresiones complejas
+
+Por otra parte, este tipo de expresiones conceptuales adicionales se pueden combinar con la equivalencia e inclusión para describir situaciones más complejas, como la disyunción de los conceptos, que afirma que dos conceptos no comparten todas las instancias
+
+%%%axiomas en propiedades
+Axiomas Rbox se refieren a propiedades de roles. En cuanto a los conceptos, DL apoyan el axioma de inclusión y el axioma de equivalencia. Por ejemplo, la inclusión
+parentOf ? ancestorOf (7)
+
+establece que parentOf es un subrol de ancestorOf, es decir, cada par de individuos relacionados por parentOf también está relacionada por ancestorOf. Por lo tanto (2) y (7) juntos implica que Julia es un antepasado de Juan.
+
+Por otra parte, con el fin de tener coherencia durante el razonamiento, su uso está limitado por restricciones estructurales adicionales que especifican si o no una colección de axiomas se puede utilizar juntos en una ontología ontología. Nadie puede ser a la vez un padre y un hijo de la misma persona, por lo que los dos papeles parentOf y childOf son disjuntos. En DL podemos escribir papeles disjuntos como sigue: disjunto (parentOf, childOf). (9)
+
+Subsunci´on (subsumption) respecto a K:
+Se dice que el concepto C1 es subsumido por el concepto C2(o, equivalentemente, que C2 subsume a C1) si todas las instancias de C1 son instancias de C2 en todos los modelos I de K, es decir, la extensi´on de C1 est´a necesariamente contenida en la extensi´on de C2.
+
+Equivalencia de conceptos (concept equivalence) respecto a K: Se dice que C1 y C2 son equivalentes si C1 subsume a C2 y C2 subsume a C1, es decir, si C1 y C2 tienen la misma extensi´on en todos los modelos I de K.
+
+?	Jerarquía de clases y propiedades, cosiste en agrupar jerárquicamente y sistemáticamente las diferentes clases y propiedades en grupos estables. La operación básica es ?subclase? y consiste en ligar un concepto/relación particular con un concepto/relación general.
+Persona rdfs:subClassOf Thing
+Mujer rdfs:subClassOf Persona
+tienePadre rdfs:subProprertyOf tieneParinete
+?	Dominio y Rango de una Propiedad Objeto, son las clases que intervienen en una relación. En donde el primer componente de una Propiedad es el Dominio y el segundo el Rango.
+tieneEsposa rdfs:Domain Hombre
+tieneEsposa rdfs:Range Mujer
+?	Dominio y Rango de una Propiedad Dato, son las clases y tipos de valores que intervienen en una relación. Para más detalles de estos tipos de valores consultar el RDF Primer 2.
+nombreCompleto rdfs:Domain Persona
+nombreCompleto rdfs:Range xsd:string
+?	Características de las Propiedades Objeto, existen muchas relaciones en el mundo real, como transitividad, funcionalidad, simetría, inversa, y otras. Entonces, aquellas propiedades que tengan el comportamiento de las relaciones antes descritas, se debe especificar que son de este tipo.  Afortunadamente, existen axiomas que permiten hacer esto. Para más detalles de estas características consultar el tutorial ?Una Guía para construir Ontologías OWL? [9].
+nombreCompleto rdf:type owl:FunctionalProperty
+tienehijo rdf:type owl:AsymmetricProperty
+tienePariente rdf:type owl:TransitiveProperty
+?	Restricción existencial, se emplea para asegurar que al menos un individuo que se obtiene por una propiedad, pertenece a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen una madre que es mujer? es:
+tieneMadre some Mujer
+?	Restricción universal, se emplea para asegurar que todos los individuos que se obtienen por una propiedad, pertenecen a la clase especificada. Por ejemplo, el axioma para decir que ?todos tienen solo parientes humanos? es:
+tienePariente only Humano
+?	Restricción cardinal, se emplea para asegurar que como máximo, mínimo o exactamente ?n? individuos que se obtienen por una propiedad, pertenezcan a la clase especificada. Por ejemplo, el axioma para decir ?todos tienen mínimo dos parientes mujeres? es:
+tienePariente min 2 Mujer
+
+Estos axiomas restringen a todos los elementos del área de interés. El siguiente listado describe los axiomas que pueden existir en una ontología.
+?	Herencia de clases y propiedades, cosiste en agrupar jerárquicamente y sistemáticamente las diferentes clases y propiedades en grupos estables. La operación básica es ?subclase? y consiste en ligar un concepto/relación particular con un concepto/relación general.
+Persona rdfs:subClassOf Thing
+Mujer rdfs:subClassOf Persona
+Mujer rdfs:subClassOf Persona
+tienePadre rdfs:subProprertyOf tieneParinete
+
+%%%Axiomas con propiedades
+Otros axiomas Rbox incluyen características de los roles como reflexividad, simetría y transitividad de roles. 
+
+Roles transitivos (transitive roles) que nos permiten seleccionar algunos nombres de roles, que tienen
+que ser interpretados como relaciones transitivas.
+
+Jerarqu´?as de roles H (role hierarchies), que son un conjunto de axiomas de la forma R ? S, declarando que la extensi´on del rol R est´a contenida en la extensi´on del rol S.
+
+?	Dominio y Rango de una Propiedad Objeto, son las clases que intervienen en una relación. En donde el primer componente de una Propiedad es el Dominio y el segundo el Rango.
+tieneEsposa rdfs:Domain Hombre
+tieneEsposa rdfs:Range Mujer
+?	Dominio y Rango de una Propiedad Dato, son las clases y tipos de literales que intervienen en una relación. Para más detalles de las Literales consultar el RDF Primer 1.
+nombreCompleto rdfs:Domain Persona
+nombreCompleto rdfs:Range xsd:string
+
+%%%Lenguajes para escribir axiomas
+Los lenguajes OWL. Algunas de las DLs m´as conocidas son las que se relacionan con la familia de
+lenguages llamados Web Ontology Languages (OWL), propuestos como est´andard por el W3C para definir
+ontolog´?as en la red.
+
+Existen muchos lenguajes para construir una ontología. Sin embargó no todos estos lenguajes son estándares o soportan algunos de los axiomas antes descritos. El World Wide Consortium propone como estándares al Lenguaje Web Ontológico (OWL2) y al Marco de Descripción de Recursos (RDF4). Ambos lenguajes permiten definir clases y varios axiomas, pero el más limitado en expresividad es RDF. Aunque el lenguaje OWL se basa en el RDF. Por tal motivo, si se quiere una ontología apegada a lenguajes estándares y actualizados, la opción a elegir es OWL.
+
+%%%que es Razonador
+En esta primer etapa (representación del conocimiento explícito), una ontología permite definir un vocabulario explícito. La segunda etapa es introducir axiomas que permitan hacer enriquecer el conocimiento (implícito) sobre los recursos. Ahora bien, este conocimiento se puede explotar para hacer explícito el conocimiento implícito mediante el uso de procesos que hacen inferencia.
+
+La tarea de inferir conocimiento a partir de sentencias ó reglas se le denomina razonamiento, entonces un programa razonador es aquel que permite hacer inferencias y generar conocimiento, mediante el uso de un motor de inferencia (IE) y un conjunto de reglas (axiomas).
+
+El proceso de inferencia consiste en que los procesos automáticos generen aserciones explícitas basadas en las otras aserciones y los axiomas.
+
+El TBox proporciona los axiomas para representar el conocimiento implícito de un dominio. Pero, para aprovechar este conocimiento implícito se requiere una aplicación. Este programa se denomina razonador. Un razonador es una pieza de software que permite deducir datos y asociaciones a partir de los axiomas6. Estos razonadores infieren sobre la jerarquía de las clases, las relaciones entre clases y las instancias. Los razonadores también son conocidos como razonadores semánticos, motor de inferencias o motor de reglas.
+
+Los beneficios de emplear los razonadores se describen a continuación.
+?	En la fase de construcción de un modelo de ontología. El razonador verifica la consistencia del modelo. El objetivo de verificar la consistencia es identificar contradicciones o detalles en el modelo.
+?	Un razonador en combinación con SPARQL permite mejorar la calidad de los resultados de las cónsulas, ya que se aprovecha el conocimiento implícito del TBox.
+
+Los razonadores son aplicaciones que derivan nuevos datos y asociaciones a partir de la información existente3. Específicamente, los razonadores en el enfoque semántico generan nuevas relaciones a partir de la información implícita en las ontologías. Esta información implícita es la que está contenida en el TBox. Por ejemplo, 1) en la jerarquía de conceptos y relaciones, 2) en las características de las Propiedades Objeto y sobre todo 3) en todos los axiomas. El beneficio de usar un razonador, es mejorar la calidad de integración de los datos en la Web [11].
+En la fase de construcción de un modelo de ontología. Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
+
+%%%motor + razonador
+%Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
+
+%Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
+La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web. En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.

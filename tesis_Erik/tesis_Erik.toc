@@ -1,5 +1,5 @@
 \select@language {spanish}
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xi}}
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {xi}}
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {xiii}}
 \contentsline {chapter}{Acr\'onimos}{\es@scroman {xv}}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
@@ -28,9 +28,9 @@
 \contentsline {section}{\numberline {3.1}Sem\'antica y Tecnolog\IeC {\'\i }as}{17}
 \contentsline {section}{\numberline {3.2}Ontolog\IeC {\'\i }a}{18}
 \contentsline {section}{\numberline {3.3}Marco de Descripci\'on de Recursos (RDF)}{20}
-\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{24}
-\contentsline {section}{\numberline {3.5}Lenguaje de consulta sobre grafos RDF (SPARQL)}{28}
-\contentsline {section}{\numberline {3.6}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{28}
-\contentsline {chapter}{Appendices}{31}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{33}
-\contentsline {chapter}{Bibliograf\'{\i }a}{35}
+\contentsline {section}{\numberline {3.4}Lenguaje de consulta RDF (SPARQL)}{24}
+\contentsline {section}{\numberline {3.5}Reglas de inferencia (RDF(S)/OWL) y razonadores}{24}
+\contentsline {section}{\numberline {3.6}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{24}
+\contentsline {chapter}{Appendices}{25}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{27}
+\contentsline {chapter}{Bibliograf\'{\i }a}{29}
