@@ -64,6 +64,7 @@ Una ontología generalmente tiene dos partes \cite{Magdalena}:
 %%por que cosas esta contenida abox y tbox
 
 \section{Marco de Descripción de Recursos (RDF)}
+\label{sec:rdf} 
 Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información sobre los recursos en un formato estándar} \cite{SurvSemWeb2012}.
 
 El objetivo de este \textit{marco de trabajo} es \cite{PatdigRDF} definir un mecanismo neutro para la descripción de información en cualquier dominio. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) con RDF, es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información. 
@@ -147,7 +148,7 @@ Referencia & \url{http://www.mi-ejemplo.com/refiere-a}\\
 \end{tabular}
 \end{table}
 
-Los URI de recursos y propiedades son cadenas con una longitud larga. Para reducir el tamaño de estos, se sustituye la secuencia de caracteres desde ``\textit{\url{http://}}'' hasta el símbolo ``\textit{\#}'' o ``\textit{\url{/}}'' por un prefijo, que es una cadena corta parecida a un acrónimo. Por ejemplo, el prefijo ``\textit{exp}'' se traduce en el siguiente URI \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades: \textit{Juan Lopez, Teoria de cuerdas, nombre y conocido de} en las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente forma:
+Los URI de recursos y propiedades son cadenas con una longitud larga. Para reducir el tamaño de estos, se sustituye la secuencia de caracteres desde ``\textit{\url{http://}}'' hasta el símbolo ``\textit{\#}'' o ``\textit{\url{/}}'' por un prefijo, que es una cadena corta parecida a un acrónimo. Por ejemplo, el prefijo ``\textit{exp}'' se traduce en el siguiente URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades: \textit{Juan Lopez, Teoria de cuerdas, nombre y conocido de} en las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente forma:
 
 \begin{itemize}
 \item exp:Juan\_Lopez
@@ -156,7 +157,7 @@ Los URI de recursos y propiedades son cadenas con una longitud larga. Para reduc
 \item exp:conoce-a
 \end{itemize}
 
-La \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) es una \textbf{\textit{afirmación de un hecho explícito}} para un recurso en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (otro recurso o literal). Estas declaraciones representan el conocimiento o información explícita de los recurso. La sintaxis básica para representar una aserción, es la tripleta \cite{SemWebTim}: \textit{sujeto-predicado-objeto}. 
+La \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) es una \textbf{\textit{afirmación de un hecho explícito}} de un recurso, en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (otro recurso o literal). Estas declaraciones representan el conocimiento o información explícita de los recurso. La forma básica para escribir una declaración, es la \textbf{\textit{tripleta}} \cite{SemWebTim}. La notación de una tripleta es: \textit{sujeto-predicado-objeto}. 
 
 \begin{enumerate}
 \item \textbf{\textit{Sujeto}} es el recurso que se describe.
@@ -164,29 +165,51 @@ La \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia) es una \textb
 \item \textbf{\textit{Objeto}} es otro recurso o una literal (cadena o entero) que describe el predicado.
 \end{enumerate}
 
-Ejemplos de estas declaraciones escritas como tripletas se presentan en la Figura \ref{fig:sent}.
+En la Figura \ref{fig:triple} se ejemplifican las tripletas que están asociadas a las siguientes declaraciones: 1) \textit{Juan conoce a Jorge}, 2)\textit{ Juan estudia en la UAM}, 3) \textit{Juan tiene 28 años}, 4) \textit{El libro de matemáticas discretas fue escrito por Jorge}, 5) \textit{El libro de matemáticas discretas tiene 200 páginas} y 6) \textit{El libro de matemáticas discretas se publica en el 2000}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{EjmpTripleta}
+\caption{Ejemplos de tripletas asociadas a las declaraciones para los recursos Juan y libro de matemáticas discretas.}
+\label{fig:triple}
+\end{figure}
+
+El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir y hacer declaraciones sobre los recursos, porque nos permite clasificar a los recursos. El triple asociado a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Jorge, Juan, y Pablo son personas, mientras los recursos fido, kitty, orión son mascotas. Las respectivas tripletas de estos se muestran en la Tabla \ref{tab:asign}.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\caption{Ejemplos triples que emplean la propiedad \textit{rdf:type} para asignar un recurso a una determinada clase.}
+\label{tab:asign}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{3.1in} >{\centering\arraybackslash}m{3.1in}}
+\hline 
+\textbf{Clase persona} & \textbf{Clase mascota}\\
+\hline
+\hline 
+exp:Jorge rdf:type exp:Persona & exp:fido rdf:type exp:Mascota\\
+\hline
+exp:Juan rdf:type exp:Persona & exp:kitty rdf:type exp:Mascota\\
+\hline 
+exp:Pablo rdf:type exp:Persona & exp:orion rdf:type exp:Mascota\\
+\hline 
+\end{tabular}
+\end{table}
+
+Al aumentar la cantidad de declaraciones, se hace difícil la visualización de la información y el conocimiento explícito de los recursos (tripletas). En el marco RDF, las estructura para visualizar el conocimiento es un grafo estructurado y dirigido. Este \textbf{\textit{grafo RDF}} \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar la tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
+
+La Figura \ref{fig:ejmrep} muestra un grefo RDF de ejemplo. En este grafo, los nodos circulares son recursos y los nodos rectangulares son literales, el nodo origen es aquel que en su lado la arista no tiene punta de flecha y el nodo que sí la tiene es el destino.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{GrafoRDF}
+\caption{Ejemplo de un grafo RDF o grafo de conocimientos.}
+\label{fig:ejmrep}
+\end{figure}
 
 
-El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir los recursos, porque ella nos permite clasificar a los recursos. El triple asociado a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Pedro, Juan, y Pablo son personas, mientras los recursos fido y kitty son mascotas. Las respectivas tripletas de estos se muestran en la Figura \ref{fig:ejmrep}.
+En el marco RDF existen distintas sintaxis para expresar los triples o grafo RDF. Estas sintaxis son: N3\footnote{W3C,``Notation3 (N3),'' Disponible en: \url{http://www.w3.org/TeamSubmission/n3/}}, turtle\footnote{W3C,``Turtle,'' Disponible en: \url{http://www.w3.org/TR/2013/CR-turtle-20130219/}}, RDF/XML\footnote{W3C,``RDF/XML Syntax Specification,'' Disponible en: \url{http://www.w3.org/TR/rdf-syntax-grammar/}}, N-triples\footnote{W3C,``N-Triples,'' Disponible en: \url{http://www.w3.org/2001/sw/RDFCore/ntriples/}}. El Consorcio de la Web (W3C\label{sym:wwwc}) establece como sintaxis estándar al RDF/XML.
 
-
-Otra forma de representar las declaraciones (sentencias) RDF es a través de un grafo rotulado como se muestra en la Fig. 3.
-
-La estructura general de RDF es un grafo dirigido, estructurado con nodos y aristas que representan la tripleta. El sujeto es el nodo de origen, el objeto es el nodo de destino y el predicado es la etiqueta de la arista.
-
-La estructura general de RDF forma un gráfico estructurado con los nodos y aristas que representan el triplete. El sujeto es el nodo de origen, el objeto es el nodo objetivo y el predicado es la etiqueta de la arista.
-
-Estas cosas se interconectan con otras, bajo determinada característica. Entonces para visualizar el conocimiento, es necesario emplear una estructura gráfica. Esta estructura grafica permite una mejor comprensión del conocimiento y brinda está serie de ventajas [4]: 1) coherencia al navegar sobre el modelo, 2) Inferir sobre el conocimiento, 3) conexión con información relacionada, 4) Mapeo conceptual, 5) marco de trabajo para eliminar ambigüedad en el contexto y 6) vocabulario conceptual y 7) capacidad de representar/conectar cualquier tipo de información, gracias a los URI.
-
-
-El conjunto de todos los triples RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Un triple se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso.
-
-El conjunto de descripciones o hechos explícitos de los recursos es el componente asertivo (ABox).
-Informalmente, podemos ver al ABox como una descripci´on parcial de la realidad: los hechos en el ABox
-son ciertos, pero puede haber otras instancias de los conceptos y roles no mencionadas en A
-
-
-Existen muchas sintaxis para representar los triples o aserciones. El W3C establece como estándar el RDF/XML1 y obviamente al modelo de datos RDF [10] para representar a los recursos. Finalmente, un dato interesante es el siguiente.
+En una ontología, el conjunto de triples o grafo RDF es el componente asertivo (ABox) \cite{Markus2012DLprimer}. Porque estos representan el conocimiento o información explícita de los recursos.
 
 %%%que es RDF
 
@@ -194,7 +217,7 @@ Existen muchas sintaxis para representar los triples o aserciones. El W3C establ
 
 %%como se representan los recursos
 
-abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
+%abstraer- Separar por medio de una operación intelectual las cualidades de un objeto para considerarlas aisladamente o para considerar el mismo objeto en su pura esencia o noción.
 
 %%%Qué se debe representar de los reursos 
 
@@ -212,13 +235,57 @@ abstraer- Separar por medio de una operación intelectual las cualidades de un ob
 
 %%%abox
 
+\section{Lenguaje de consulta RDF (SPARQL)}
+Un grafo RDF es una fuente de conocimiento explícito sobre los recursos. Para fines de búsqueda y recuperación de la información en un grafo, es necesario, tener un lenguaje de consulta especial.
 
-En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
+Las tecnologías semánticas proponen a \textbf{\textit{SPARQL}} como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}. La idea básica de una consulta SPARQL es emplear un conjunto de \textbf{\textit{patrones tripleta}} para consultar la información contenida en un grafo RDF. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}excepto que el sujeto, predicado y objeto pueden ser una variable.
+
+En una consulta, estos \textit{patrones tripleta} se empareja con el \textit{grafo RDF}. Para aquellos patrones que concuerdan con los triples, se recuperan los valores que coinciden con la posición de las variables. Por ejemplo, 
+
+se recuperan los valores que concuerdan con las variables. 
+
+que alguno de los elementos sujeto u objeto son variables. De está manera al emplear un motor SPAQRL, este debe regresar los recursos que correspondan a ese patrón. Pero no solamente SPARQL regresa un recurso, también permite:
+o	Recuperar los recursos empleando las URI.
+o	Recupera conjunciones y disyunciones de un grafo RDF.
+o	Capacidad de conjuntar partes de grafos.
+
+
+necesarios y opcionales, junto con sus conjunciones y disyunciones y los resultados asociados a las consultas SPARQL pueden ser conjuntos de resultados o gráficos RDF.
+
+
+
+Las consultas SPARQL se basan en patrones ?triple? en un grafo RDF, 
+
+%%% necesidad de consultar información
+
+En el segundo punto, las tecnologías semánticas establecen al lenguaje SPARQL \cite{Perez2009} como la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las \textit{variables resultado} y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
+
+%SELECT ?title ?path
+%WHERE
+%{?x rdf:type sird:Document;
+%   sird:has-topic redes:Peer_to_Peer_System;
+%   sird:has-title ?title;
+%   sird:has-filePath ?path.}
+
+%%% motor de consulta
+Un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con Java.
 
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
+\label{sec:reginf} 
+%En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
+
+Los axiomas o reglas de inferencia son mecanismos para explotar el conocimiento, es decir, permiten 
+
+Axiomas describen las relaciones entre los conceptos.
+Por ejemplo, el hecho de que todas las madres son los padres se expresa por la inclusión concepto
+Mother ? Parent
+
+en cuyo caso se dice que el concepto de Madre es subsumida por el Padre concepto. Tal conocimiento puede ser usado para inferir nuevos hechos sobre los individuos. Por ejemplo, (1) y (5) junto implicar que Julia es un padre.
+
+ Pero, esta conocimiento también tiene hechos 
 Axiomas especifican las características de las clases y propiedades
 
-los axiomas formales, que modelan los enunciados que son siempre ciertos, y representan conocimiento que no puede ser definido formalmente por ninguno de los otros componentes
+los axiomas formales, que modelan los enunciados que son siempre ciertos, y representan conocimiento que no puede ser definido formalmente por ninguno de los otros componentes Gruber (1993)
 
 %Este documento es muy bueno, tiene todo lo que necesitas para RDF, RDFS y OWL. TFC: XML y Web Semántica
 
@@ -228,11 +295,6 @@ Este modelo de datos se puede enriquecer con la introducción de axiomas \cite{De
 %%%ejemplos de axiomas en clases
 Las funcionalidades y ejemplos de estos axiomas se pueden encontrar en la literatura \cite{Markus2012DLprimer}, \cite{protegeManual}.
 
-Axiomas describen las relaciones entre los conceptos.
-Por ejemplo, el hecho de que todas las madres son los padres se expresa por la inclusión concepto
-Mother ? Parent
-
-en cuyo caso se dice que el concepto de Madre es subsumida por el Padre concepto. Tal conocimiento puede ser usado para inferir nuevos hechos sobre los individuos. Por ejemplo, (1) y (5) junto implicar que Julia es un padre.
 
 Concepto de equivalencia afirma que dos conceptos tienen los mismos casos, como en
 Person ? Human. (6)
@@ -321,31 +383,6 @@ Los beneficios de emplear los razonadores se describen a continuación.
 
 Los razonadores son aplicaciones que derivan nuevos datos y asociaciones a partir de la información existente3. Específicamente, los razonadores en el enfoque semántico generan nuevas relaciones a partir de la información implícita en las ontologías. Esta información implícita es la que está contenida en el TBox. Por ejemplo, 1) en la jerarquía de conceptos y relaciones, 2) en las características de las Propiedades Objeto y sobre todo 3) en todos los axiomas. El beneficio de usar un razonador, es mejorar la calidad de integración de los datos en la Web [11].
 En la fase de construcción de un modelo de ontología. Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
-
-
-\section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
-Ahora enfocamos el uso de las bases de conocimiento, es decir, en las consultas que
-podemos hacer y los m´etodos para resolverlas. En particular, tratamos de responder tres preguntas:
-1. ¿Qu´e tipo de preguntas podemos hacer a una base de conocimiento?
-2. ¿C´omo se puede dar respuesta a estas preguntas?
-3. ¿Qu´e tan dif´?cil, computacionalmente hablando, es responder estas preguntas?
-
-%%% necesidad de consultar información
-Las ontologías son fuentes de conocimiento en forma de triples, para buscar y recuperar (integración) la información de éstas, es necesario tres cosas: 1) una pregunta en lenguaje natural, 2) una consulta basada en triples y 3) un motor de consulta.
-
-En el primer punto, mediante el análisis de los casos de uso, se identifican y escriben en lenguaje natural las principales preguntas que pueden hacer los usuarios al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales, pero para ejemplificar la consulta de información, se muestra una de éstas: (1)... ¿Qué documentos sirven para dar un curso de Sistemas P2P?
-
-En el segundo punto, las tecnologías semánticas establecen al lenguaje SPARQL\footnote{W3C,"SPARQL 1.1 Overview," Available: \url{http://www.w3.org/TR/sparql11-overview/}} \cite{Perez2009} como la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las \textit{variables resultado} y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
-
-%SELECT ?title ?path
-%WHERE
-%{?x rdf:type sird:Document;
-%   sird:has-topic redes:Peer_to_Peer_System;
-%   sird:has-title ?title;
-%   sird:has-filePath ?path.}
-
-%%% motor de consulta
-Un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con Java.
 
 %%%motor + razonador
 %Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
