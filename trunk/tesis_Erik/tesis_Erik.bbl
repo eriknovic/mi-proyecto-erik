@@ -104,6 +104,11 @@ Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \newblock The semantic web revisited.
 \newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
 
+\bibitem{SwarmComp}
+C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
+\newblock Evolutionary and swarm computing for the semantic web.
+\newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
+
 \bibitem{DesLog}
 Franz Baader, Ian Horrocks, and Ulrike Sattler.
 \newblock {D}escription {L}ogics.
