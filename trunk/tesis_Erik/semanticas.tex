@@ -211,32 +211,39 @@ Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explíc
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en las ontologías \cite{YunLin}, \cite{protegeManual}.
 
 \begin{itemize}
-\item \textbf{\textit{Subclase}} afirma que una \textit{clase particular} es subsumida por una \textit{clase general}, en este caso, las instancias de la clase particular son instancias de la clase general. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal} y \textbf{Planta} son subclases de la clase \textbf{Ser vivo}}.
-\item \textbf{\textit{Clases equivalente}} afirma que dos clases son sinónimos y deben tener los mismos individuos. Por ejemplo, \textit{toda persona es un humano, esto significa que todos las instancias de la clase Persona deben ser instancias de la clase Humano}.
-\item \textbf{\textit{Clases disjuntas}} afirma que dos clases no tienen instancias en común. Por ejemplo, \textit{ninguna mujer es hombre, esto significa que ninguna instancia de la clase Mujer debe pertenecer a la clase Hombre}.
+\item \textbf{\textit{Subclase}} afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal y Planta} son subclases de la clase \textbf{Ser vivo}}.
+\item \textbf{\textit{Clases equivalente}} afirma que la \textit{clase A} y \textit{clase B} van a representan al mismo conjunto de individuos y el significado de ambas es el mismo, es decir, las dos clases son sinónimas. Por ejemplo, \textit{toda las personas son humanos, esto significa que todos las instancias de la clase \textbf{Persona} deben ser instancias de la clase \textbf{Humano}}.
+\item \textbf{\textit{Clases disjuntas}} afirma que la \textit{clase A} y \textit{clase B} no tienen instancias en común. Por ejemplo, \textit{ninguna mujer es hombre, esto significa que ninguna instancia de la clase \textbf{Mujer} debe pertenecer a la clase \textbf{Hombre}}.
 \end{itemize}
 
-Las funcionalidades de los axiomas \textit{para relacionar definir propiedades en términos de otras}, se listan a continuación.
+Las funcionalidades de los axiomas \textit{para definir propiedades en términos de otras}, se listan a continuación.
 
 \begin{itemize}
-\item \textbf{\textit{Subpropiedad}} afirma que los recursos de una propiedad también se relacionan por otra propiedad. Este axioma permite especificar la jerarquía entre propiedades. Por ejemplo, \textit{todo individuo que emplea la propiedad\textbf{es padre}, también debe tener la propiedad \textbf{es familiar}}.
-\item \textbf{\textit{Propiedad equivalente}} afirma que dos propiedades son sinónimos y que éstas relacionan a los mismos individuos. Por ejemplo, \textit{todos los individuos que \textbf{tienen automóvil}, son los mismo que \textbf{tienen carro}}.
-\item \textbf{\textit{Propiedad inversa}} establece que si una \textit{propiedad X} relaciona al individuo A con el individuo B, entonces otra \textit{propiedad Y} relaciona al individuo B con el individuo A. Por ejemplo, \textit{si Juan \textbf{es padre} de Pedro, entonces el Pedro \textbf{es hijo} de Juan}.
+\item \textbf{\textit{Subpropiedad}} afirma que todos los recursos que se relacionan por la \textit{propiedad X}, también se relacionan por la \textit{propiedad Y}. Este axioma permite especificar la jerarquía entre propiedades. Por ejemplo, \textit{la propiedad \textit{es padre} es un caso particular de la propiedad \textit{es familiar}, de esta manera, si Juan es padre de Pedro, entonces Juan es familiar de Pedro}.
+\item \textbf{\textit{Propiedad equivalente}} afirma que la \textit{propiedad X} y la \textit{propiedad Y} relacionan a los mismos recursos y éstas tienen el mismo significado. Por ejemplo, \textit{las propiedad \textit{tienen automóvil} es sinónimo de la propiedad  \textit{tienen carro}, por ello, si Juan tiene un automóvil tipo sedan, entonces Juan tiene un carro tipo sedan}.
+\item \textbf{\textit{Propiedad inversa}} afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces hay una \textit{propiedad Y} que relaciona al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{la propiedad inversa de \textbf{es abuelo}, es la propiedad \textbf{es nieto}, por ello, si Juan es abuelo de Antonio, entonces Antonio es nieto de Juan}.
 \end{itemize}
 
 Las funcionalidades de los axiomas \textit{para asociar restricciones a las propiedades}, se listan a continuación.
 
 \begin{itemize}
-\item \textbf{\textit{Dominio}} especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que \textbf{tiene padre} es una persona, esto significa que cualquier individuo que emplea esta propiedad pertenece a la clase \textbf{Persona}}.
-\item \textbf{\textit{Rango}} especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo,\textit{ toda persona que \textbf{tiene padre} se vincula con un individuo de la clase Hombre}.
-\item \textbf{\textit{Propiedad transitiva}} establece que si una propiedad relaciona al \textit{individuo A} con el \textit{individuo B} y esta misma propiedad relaciona al \textit{individuo B} con el \textit{individuo C}, entonces debe relacionar a los \textit{individuos A y C}. Por ejemplo, \textit{si Juan tiene parentesco de consanguinidad con Pedro y Pedro tiene parentesco de consanguinidad Arturo, entonces Juan tiene parentesco de consanguinidad Arturo}.
-\item \textbf{\textit{Propiedad simétrica}} establece que una propiedad es su propia propiedad inversa, es decir, si la propiedad relaciona individuo A con el individuo B, entonces, ella misma relaciona al individuo B con el individuo A. Por ejemplo, \textit{Juan es familiar de Pedro, entonces Pedro es familiar de Juan}.
-\item \textbf{\textit{Propiedad reflexiva}} establece que una propiedad relaciona al \textit{individuo A} consigo mismo. Por ejemplo, \textit{Juan se conoce a sí mismo}.
+\item \textbf{\textit{Dominio}} especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que \textit{es madre} es mujer, por ello, si Rocío es madre de Arturo, entonces Rocio es una instancia de la clase \textbf{Mujer}}.
+\item \textbf{\textit{Rango}} especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuela} se vincula con un individuo de la clase \textbf{Mujer}}.
+\item \textbf{\textit{Propiedad transitiva}} afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B} y también ésta relaciona al \textit{individuo B} con el \textit{individuo C}, entonces debe relacionar a los \textit{individuos A y C}. Por ejemplo, \textit{si Juan tiene parentesco de consanguinidad con Pedro y Pedro tiene parentesco de consanguinidad con Arturo, entonces Juan tiene parentesco de consanguinidad con Arturo}.
+\item \textbf{\textit{Propiedad simétrica}} afirma que la \textit{propiedad X} es su propia propiedad inversa, es decir, si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces, esta propiedad debe relacionar al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{si Juan es familiar de Pedro, entonces Pedro es familiar de Juan}.
+\item \textbf{\textit{Propiedad reflexiva}} afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
 \end{itemize}
+
+En una ontología, el componente terminológico (TBox) se forma por el conjunto de axiomas que enriquecen al grafo RDF. Los axiomas se representan en forma de triple y los vocabularios para escribir estos son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas.
+
 
 Los axiomas se representan en forma de triple y los vocabularios para escribir estos son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas.
 
+
+
 En una ontología, el componente terminológico (TBox) se forma por el conjunto de axiomas que enriquecen el grafo RDF. 
+
+El razonamiento es el proceso de inferir conocimiento en una ontología (descripciones y axiomas). Un razonador es un programa que permite inferir y generar triples explícitos en el grafo RDF 
 
 %Leer TFC: XML y Web Semántica y https://docs.google.com/document/d/117iPj__5HAHXICy4kfPyI_BeGezjJradBLZaow2YaPM/edit y C:\Users\ARTE\Dropbox\Tesis Erik UAM\Investigacion\PDF que vas a usar\A Description Logic Primer.pdf
 
