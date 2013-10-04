@@ -42,6 +42,11 @@ Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
 \newblock {Methods and Tools for Corporate Knowledge Management}.
 \newblock Technical Report RR-3485, INRIA, September 1998.
 
+\bibitem{SemLyons}
+John Lyons.
+\newblock {\em Sem\'{a}ntica Ling\"{u}\'\i{}stica: Una Introducci\'on}.
+\newblock Paidos Iberica, 1997.
+
 \bibitem{OntoTecRrpKnw}
 Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
   Luna.
@@ -84,24 +89,20 @@ S.~Bouzid, C.~Cauvet, and J.~Pinaton.
 \newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
   International Conference on}, pages 121--125, 2012.
 
+\bibitem{SwarmComp}
+C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
+\newblock Evolutionary and swarm computing for the semantic web.
+\newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
+
 \bibitem{rfc3986}
 Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
 \newblock Uniform resource identifier ({URI}): Generic syntax.
 \newblock RFC 3986, RFC Editor, January 2005.
 
-\bibitem{UTF2279}
-F.~Yergeau.
-\newblock Utf-8, a transformation format of iso 10646, 1998.
-
 \bibitem{SemWebTim}
 Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \newblock The semantic web revisited.
 \newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
-
-\bibitem{SwarmComp}
-C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
-\newblock Evolutionary and swarm computing for the semantic web.
-\newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
 
 \bibitem{SPARQL}
 T.~Fujino and N.~Fukuta.
