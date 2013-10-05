@@ -239,10 +239,9 @@ En una ontología, el componente terminológico (TBox) está constituido por el con
 En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra2011} es un programa que deduce declaraciones a partir de los axiomas y declaraciones explícitas en la ontología. Este programa también se denominan razonador semántico o motor de inferencias. Un razonador permite realizar dos actividades importantes con una ontología:
 
 \begin{itemize}
-\item Un razonador como \textit{instrumento de validación de coherencia de una ontología}. La validación consiente en deducir información con los axiomas, y encontrar si hay inconsistencias en el modelo. Si existe una inconsistencia el modelo no es coherente, en caso contrario es coherente. Por el contrario si hay inconsistencias, entonces el modelo no es consistente. Por ejemplo, si en la ontología se establece que la clase Hombre y Mujer son disjuntas, además, el recurso Antonio es instancia de estas dos clases, entonces el modelo tiene una inconsistencia y por tanto no es coherente.
-\item Un razonador para \textit{mejorar la búsqueda de la información en una ontología}. Las declaraciones explícitas y un motor SPARQL solamente permiten recuperar información explícita de los recursos. Un motor de búsqueda SPARQL junto con un razonador, permiten integrar mayor información al grafo RDF. Esto es, el razonador deduce triples del cocimiento implícito (axiomas). En el grafo RDF se incrementan el número de triples. De esta manera, el motor consulta más triples y puede recuperar más información.
+\item Un razonador como \textit{instrumento de validación de consistencia de una ontología}. La validación consiste en deducir información con los axiomas y encontrar si hay contradicciones en el modelo. Si no existen contradicciones en el modelo, entonces, éste es consistente. Por el contrario si hay una contradicción, entonces el modelo no es consistente. Por ejemplo, si en la ontología se establece que la clase Hombre y Mujer son disjuntas, y el recurso Antonio es instancia de estas dos clases, entonces el modelo tiene una contradicción, por tanto, el modelo no es consistente.
+\item Un razonador para \textit{mejorar la búsqueda de la información en una ontología}. Las declaraciones explícitas y un motor SPARQL solamente permiten recuperar información explícita de los recursos. Un motor de búsqueda SPARQL junto con un razonador, permiten integrar mayor información al grafo RDF. Esto es, el razonador deduce triples del conocimiento implícito (axiomas). En el grafo RDF se incrementa el número de triples. De esta manera, el motor consulta más triples y puede recuperar más información.
 \end{itemize}
-
 
 %Leer TFC: XML y Web Semántica y https://docs.google.com/document/d/117iPj__5HAHXICy4kfPyI_BeGezjJradBLZaow2YaPM/edit y C:\Users\ARTE\Dropbox\Tesis Erik UAM\Investigacion\PDF que vas a usar\A Description Logic Primer.pdf
 
@@ -260,12 +259,15 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 
 %%%que es Razonador
 
-Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
-
 %%%motor + razonador
 %Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
 
 %Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
-La capacidad que tiene RDF para procesar metadatos facilita la interoperabilidad entre diversas aplicaciones, proporcionando un mecanismo perfecto de intercambio de información a través del Web. En general RDF se enfoca en establecer un mecanismo que permita describir recursos, entendidos estos como objetos, que tengan como principios la multiplataforma (es decir, independencia de software y/o sistema operativo) y la interoperatividad de metadatos (que posibilite fusionar diferentes descripciones de recursos realizadas con distintos conjuntos de metadatos). RDF posee semánticas que generan una base para razonar sobre el significado de una expresión RDF. Además posee un vocabulario extensible, basado en URIs.
+El uso de las tecnologías semánticas tiene distintas ventajas a la hora de representar y explotar el conocimiento, así como la búsqueda de información.
+
+El marco RDF es flexible, ya que permite integrar más declaraciones al modelo. De esta manera, se puede tener un conjunto número de triples.
+
+Independencia de la plataforma: el modelo RDF establece las manera de representar el conocimiento de los recursos con base en los triples. Los triples pueden ser escritos con cualquier editor de texto y sobre cualquier sistema operativo. Entonces no hay dependencia a utilizar una única herramienta o sobre determinado sistema operativo.
+
