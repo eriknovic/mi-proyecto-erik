@@ -234,16 +234,15 @@ Las funcionalidades de los axiomas \textit{para asociar restricciones a las prop
 \item \textbf{\textit{Propiedad reflexiva}} afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
 \end{itemize}
 
-En una ontología, el componente terminológico (TBox) se forma por el conjunto de axiomas que enriquecen al grafo RDF. Los axiomas se representan en forma de triple y los vocabularios para escribir estos son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas.
+En una ontología, el componente terminológico (TBox) está constituido por el conjunto de axiomas que enriquecen el grafo RDF. Estos axiomas se representan en forma de triple y los vocabularios para escribirlos, son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas.
 
+En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra2011} es un programa que deduce declaraciones a partir de los axiomas y declaraciones explícitas en la ontología. Este programa también se denominan razonador semántico o motor de inferencias. Un razonador permite realizar dos actividades importantes con una ontología:
 
-Los axiomas se representan en forma de triple y los vocabularios para escribir estos son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas.
+\begin{itemize}
+\item Un razonador como \textit{instrumento de validación de coherencia de una ontología}. La validación consiente en deducir información con los axiomas, y encontrar si hay inconsistencias en el modelo. Si existe una inconsistencia el modelo no es coherente, en caso contrario es coherente. Por el contrario si hay inconsistencias, entonces el modelo no es consistente. Por ejemplo, si en la ontología se establece que la clase Hombre y Mujer son disjuntas, además, el recurso Antonio es instancia de estas dos clases, entonces el modelo tiene una inconsistencia y por tanto no es coherente.
+\item Un razonador para \textit{mejorar la búsqueda de la información en una ontología}. Las declaraciones explícitas y un motor SPARQL solamente permiten recuperar información explícita de los recursos. Un motor de búsqueda SPARQL junto con un razonador, permiten integrar mayor información al grafo RDF. Esto es, el razonador deduce triples del cocimiento implícito (axiomas). En el grafo RDF se incrementan el número de triples. De esta manera, el motor consulta más triples y puede recuperar más información.
+\end{itemize}
 
-
-
-En una ontología, el componente terminológico (TBox) se forma por el conjunto de axiomas que enriquecen el grafo RDF. 
-
-El razonamiento es el proceso de inferir conocimiento en una ontología (descripciones y axiomas). Un razonador es un programa que permite inferir y generar triples explícitos en el grafo RDF 
 
 %Leer TFC: XML y Web Semántica y https://docs.google.com/document/d/117iPj__5HAHXICy4kfPyI_BeGezjJradBLZaow2YaPM/edit y C:\Users\ARTE\Dropbox\Tesis Erik UAM\Investigacion\PDF que vas a usar\A Description Logic Primer.pdf
 
@@ -261,18 +260,7 @@ El razonamiento es el proceso de inferir conocimiento en una ontología (descripc
 
 %%%que es Razonador
 
-La tarea de inferir conocimiento a partir de las declaraciones y los axiomas se le denomina inferencia. Un razonador es un programa para hacer inferencias en una ontología. La finalidad de la inferencia es generar declaraciones explícitas del conocimiento implícito.
-
-El TBox proporciona los axiomas para representar el conocimiento implícito de un dominio. Pero, para aprovechar este conocimiento implícito se requiere una aplicación. Este programa se denomina razonador. Un razonador es una pieza de software que permite deducir datos y asociaciones a partir de los axiomas6. Estos razonadores infieren sobre la jerarquía de las clases, las relaciones entre clases y las instancias. Los razonadores también son conocidos como razonadores semánticos, motor de inferencias o motor de reglas.
-
-Los beneficios de emplear los razonadores se describen a continuación.
-?	En la fase de construcción de un modelo de ontología. El razonador verifica la consistencia del modelo. El objetivo de verificar la consistencia es identificar contradicciones o detalles en el modelo.
-?	Un razonador en combinación con SPARQL permite mejorar la calidad de los resultados de las cónsulas, ya que se aprovecha el conocimiento implícito del TBox.
-
-Los razonadores son aplicaciones que derivan nuevos datos y asociaciones a partir de la información existente3. Específicamente, los razonadores en el enfoque semántico generan nuevas relaciones a partir de la información implícita en las ontologías. Esta información implícita es la que está contenida en el TBox. Por ejemplo, 1) en la jerarquía de conceptos y relaciones, 2) en las características de las Propiedades Objeto y sobre todo 3) en todos los axiomas. El beneficio de usar un razonador, es mejorar la calidad de integración de los datos en la Web [11].
-
-
-En la fase de construcción de un modelo de ontología. Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
+Un razonador se emplea como mecanismo para verificar la consistencia del modelo. En donde, el objetivo de verificar la consistencia es identificar problemas en el diseño, como contradicciones, redundancia, etc. Las dos actividades comunes al verificar la consistencia en un modelo son: identificar si una clase es subclase de otra clase (herencia) o si un individuo pertenece a una determinada clase (clasificación).
 
 %%%motor + razonador
 %Un razonador permite mejorar las consultas en SPARQL, gracias al conocimiento implícito (axiomas del TBox). Por ejemplo, si se quiere todos los individuos que son persona (?name rdf:type Persona). La respuesta no arrojaría ningún valor, debido a que explícitamente no hay un individúo que sea del tipo Persona. Sin embargo, si se emplea un razonador y se tienen los siguientes axiomas (Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona). Entonces la respuesta de la consulta sería todos los individuos de las clases Hombre y Mujer, debido a que estos individuos son subclases de la clase Persona.
