@@ -202,7 +202,7 @@ En una consulta, estos \textit{patrones tripleta} se empareja con el \textit{gra
 
 Un motor de consulta SPARQL es el programa que: 1) interpreta una consulta SPARQL, compara los patrones con los triples del modelo, 2) compara los patrones con el grafo RDF, y 3) recupera los valores asociados a las variables de la cláusula SELECT. Los resultados que proporciona este, se presentan en forma de tabla.
 
-\section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
+\section{Axiomas y razonador}
 \label{sec:reginf} 
 %En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
@@ -267,7 +267,11 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 \section{Ventajas de las tecnologías Semánticas}
 El uso de las tecnologías semánticas tiene distintas ventajas a la hora de representar y explotar el conocimiento, así como la búsqueda de información.
 
+En la integración de la información, las tecnologías semánticas son los mecanismos que permiten modelar el conocimiento de un determinado dominio, tal como las personas realmente conciben a éste. Con la finalidad de buscar y recuperar la información necesaria para responder las preguntas de las personas.
+
 El marco RDF es flexible, ya que permite integrar más declaraciones al modelo. De esta manera, se puede tener un conjunto número de triples.
+
+Al emplear estándares en los sistemas de anotación semántica se tiene una mejora a la hora de marcar los documentos, además estos estándares permiten la corrección de los documentos que fueron anotados manualmente con la finalidad de tener nuevas anotaciones que sean entendibles por las aplicaciones. Otra ventaja se da, cuando las organizaciones satisfacen las normas se liberan de emplear formatos del propietario.
 
 Independencia de la plataforma: el modelo RDF establece las manera de representar el conocimiento de los recursos con base en los triples. Los triples pueden ser escritos con cualquier editor de texto y sobre cualquier sistema operativo. Entonces no hay dependencia a utilizar una única herramienta o sobre determinado sistema operativo.
 
