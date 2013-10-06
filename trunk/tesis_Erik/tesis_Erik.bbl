@@ -104,6 +104,14 @@ Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \newblock The semantic web revisited.
 \newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
 
+\bibitem{dbpedia_2012}
+Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
+  Hellmann.
+\newblock {DB}pedia and the {L}ive {E}xtraction of {S}tructured {D}ata from
+  {W}ikipedia.
+\newblock {\em Program: electronic library and information systems}, 46:27,
+  2012.
+
 \bibitem{SPARQL}
 T.~Fujino and N.~Fukuta.
 \newblock A sparql query rewriting approach on heterogeneous ontologies with
