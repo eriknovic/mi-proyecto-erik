@@ -1,5 +1,5 @@
 \select@language {spanish}
-\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {xi}}
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xi}}
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {xiii}}
 \contentsline {chapter}{Acr\'onimos}{\es@scroman {xv}}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
@@ -28,8 +28,11 @@
 \contentsline {section}{\numberline {3.1}Ontolog\IeC {\'\i }a}{18}
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos}{19}
 \contentsline {section}{\numberline {3.3}Lenguaje de consulta RDF (SPARQL)}{22}
-\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{23}
-\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{26}
-\contentsline {chapter}{Appendices}{27}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{29}
-\contentsline {chapter}{Bibliograf\'{\i }a}{31}
+\contentsline {section}{\numberline {3.4}Axiomas y razonador}{23}
+\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
+\contentsline {chapter}{\numberline {4}Estado del arte}{27}
+\contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{28}
+\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{28}
+\contentsline {chapter}{Appendices}{31}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{33}
+\contentsline {chapter}{Bibliograf\'{\i }a}{35}
