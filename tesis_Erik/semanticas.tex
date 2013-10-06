@@ -1,17 +1,18 @@
 \chapter{Tecnologías Semánticas}
 \label{cap:ets}
+
+\section{Introducción y definiciones}
+\label{sec:intTS}
 La \textbf{\textit{semántica}} \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de estas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
 
 Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre estos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
 
 La categoría para la integración de la información (búsqueda) es la segunda (\textit{técnicas para describir formalmente el conocimiento}), porque al describir formalmente la información y el conocimiento en los recursos, se crea una \textbf{\textit{capa de conocimiento}} en los recursos. La finalidad de esta capa es que los procesos automáticos puedan \textit{acceder, procesar, razonar, combinar, reutilizar y compartir la información y su significado} \cite{OntoTecRrpKnw}. De esta manera, se podrá mejorar la búsqueda de información, ya que se evitan problemas de ambigüedad y las personas obtendrán resultados más significativos de acuerdo al contexto del dominio dado.
 
-Los \textbf{\textit{beneficios}} de emplear las tecnologías semánticas bajo esta categoría son: \textit{captar la visión de contextos particulares, adaptar la naturaleza cambiante del conocimiento, considerar la naturaleza distribuida del conocimiento y de los usuarios, integrar información y conocimiento de distintos recursos de información, proponer nuevas técnicas y paradigmas para representación de la información y el conocimiento, representar la información en un formato estándar y flexible, eliminar ambigüedades en la representación, inferir sobre el conocimiento implícito, facilitar la localización y recuperación el conocimiento de los recursos de manera eficaz y precisa, desarrollar aplicaciones genéricas, implementar a menor costo} y \textit{proporcionar mayor interacción de las personas expertas en el dominio}.
+%Las herramientas, metodologías y estándares para construir esta capa, se describen en las siguientes secciones de este presente Capítulo \ref{cap:ets}.
 
-Las herramientas, metodologías y estándares para construir esta capa, se describen en las siguientes secciones de este presente Capítulo \ref{cap:ets}.
-
-\section{Ontología}
-\label{sec:onto}
+%\section{Ontología}
+%\label{sec:onto}
 En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
 
 \begin{itemize}
@@ -186,23 +187,22 @@ El conjunto de declaraciones de los recursos en una ontología son el componente 
 %%%sintaxis para escribir los triples
 %%%abox
 
-\section{Lenguaje de consulta RDF (SPARQL)}
-Un grafo RDF es una fuente de conocimiento explícito sobre los recursos. Para fines de búsqueda y recuperación de la información en un grafo, es necesario, tener un lenguaje de consulta especial.
+\section{Lenguaje de consulta sobre grafos RDF (SPARQL)}
+\label{sec:lsparql}
+Las tecnologías semánticas proponen al lenguaje \textbf{\textit{SPARQL}} como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}, para la búsqueda y recuperación de la información en un grafo RDF. 
 
-Las tecnologías semánticas proponen a \textbf{\textit{SPARQL}} como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}. La idea básica de una consulta SPARQL es emplear un conjunto de \textbf{\textit{patrones tripleta}} para consultar la información contenida en un grafo RDF. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}excepto que el sujeto, predicado y objeto pueden ser una variable.
-
-En una consulta, estos \textit{patrones tripleta} se empareja con el \textit{grafo RDF}. Aquellos patrones que concuerdan con los triples, se recuperan los valores que coinciden con \textit{la posición de las variables}. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
+La idea básica de una \textbf{\textit{consulta SPARQL}} es encontrar conjuntos de tripletas en el grafo RDF que coincidan con un \textbf{\textit{patrón tripleta}}. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}excepto que el sujeto, predicado y objeto pueden ser una variable. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.6\textwidth]{FormaSPARQL}
-\caption{Estructura básica de consulta SPARQL.}
+\caption{Estructura básica de una consulta SPARQL.}
 \label{fig:sparql}
 \end{figure}
 
-Un motor de consulta SPARQL es el programa que: 1) interpreta una consulta SPARQL, compara los patrones con los triples del modelo, 2) compara los patrones con el grafo RDF, y 3) recupera los valores asociados a las variables de la cláusula SELECT. Los resultados que proporciona este, se presentan en forma de tabla.
+Un motor de consulta SPARQL a partir de estas consultas básicas, realiza las siguientes operaciones: 1) interpretar una consulta SPARQL, 2) comparar los \textit{patrones tripleta} con el \textit{grafo RDF}, y 3) recuperar los valores asociados a las variables de la cláusula SELECT. Los resultados que proporciona este motor son \textit{conjuntos de datos}.
 
-\section{Axiomas y razonador}
+\section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 \label{sec:reginf} 
 %En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 
@@ -211,7 +211,7 @@ Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explíc
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en las ontologías \cite{YunLin}, \cite{protegeManual}.
 
 \begin{itemize}
-\item \textbf{\textit{Subclase}} afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal y Planta} son subclases de la clase \textbf{Ser vivo}}.
+\item \textbf{\textit{Subclase}} afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal} y \textbf{Planta} son subclases de la clase \textbf{Ser vivo}}.
 \item \textbf{\textit{Clases equivalente}} afirma que la \textit{clase A} y \textit{clase B} van a representan al mismo conjunto de individuos y el significado de ambas es el mismo, es decir, las dos clases son sinónimas. Por ejemplo, \textit{toda las personas son humanos, esto significa que todos las instancias de la clase \textbf{Persona} deben ser instancias de la clase \textbf{Humano}}.
 \item \textbf{\textit{Clases disjuntas}} afirma que la \textit{clase A} y \textit{clase B} no tienen instancias en común. Por ejemplo, \textit{ninguna mujer es hombre, esto significa que ninguna instancia de la clase \textbf{Mujer} debe pertenecer a la clase \textbf{Hombre}}.
 \end{itemize}
@@ -220,15 +220,15 @@ Las funcionalidades de los axiomas \textit{para definir propiedades en términos 
 
 \begin{itemize}
 \item \textbf{\textit{Subpropiedad}} afirma que todos los recursos que se relacionan por la \textit{propiedad X}, también se relacionan por la \textit{propiedad Y}. Este axioma permite especificar la jerarquía entre propiedades. Por ejemplo, \textit{la propiedad \textit{es padre} es un caso particular de la propiedad \textit{es familiar}, de esta manera, si Juan es padre de Pedro, entonces Juan es familiar de Pedro}.
-\item \textbf{\textit{Propiedad equivalente}} afirma que la \textit{propiedad X} y la \textit{propiedad Y} relacionan a los mismos recursos y éstas tienen el mismo significado. Por ejemplo, \textit{las propiedad \textit{tienen automóvil} es sinónimo de la propiedad  \textit{tienen carro}, por ello, si Juan tiene un automóvil tipo sedan, entonces Juan tiene un carro tipo sedan}.
+\item \textbf{\textit{Propiedad equivalente}} afirma que la \textit{propiedad X} y la \textit{propiedad Y} relacionan a los mismos recursos y éstas tienen el mismo significado. Por ejemplo, \textit{las propiedad \textbf{tienen automóvil} es sinónimo de la propiedad  \textbf{tienen carro}, por ello, si Juan tiene un automóvil tipo sedan, entonces Juan tiene un carro tipo sedan}.
 \item \textbf{\textit{Propiedad inversa}} afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces hay una \textit{propiedad Y} que relaciona al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{la propiedad inversa de \textbf{es abuelo}, es la propiedad \textbf{es nieto}, por ello, si Juan es abuelo de Antonio, entonces Antonio es nieto de Juan}.
 \end{itemize}
 
 Las funcionalidades de los axiomas \textit{para asociar restricciones a las propiedades}, se listan a continuación.
 
 \begin{itemize}
-\item \textbf{\textit{Dominio}} especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que \textit{es madre} es mujer, por ello, si Rocío es madre de Arturo, entonces Rocio es una instancia de la clase \textbf{Mujer}}.
-\item \textbf{\textit{Rango}} especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuela} se vincula con un individuo de la clase \textbf{Mujer}}.
+\item \textbf{\textit{Dominio}} especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que emplea la propiedad \textbf{es madre}, debe ser una \textbf{Mujer}, por ello, si Rocío es madre de Arturo, entonces Rocio es una instancia de la clase \textbf{Mujer}}.
+\item \textbf{\textit{Rango}} especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuelo} debe vincularse con un individuo de la clase \textbf{Hombre}}, esto es, si María tiene por abuelo a Ramón, entonces Ramón es una instancia de la clase \textbf{Hombre}.
 \item \textbf{\textit{Propiedad transitiva}} afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B} y también ésta relaciona al \textit{individuo B} con el \textit{individuo C}, entonces debe relacionar a los \textit{individuos A y C}. Por ejemplo, \textit{si Juan tiene parentesco de consanguinidad con Pedro y Pedro tiene parentesco de consanguinidad con Arturo, entonces Juan tiene parentesco de consanguinidad con Arturo}.
 \item \textbf{\textit{Propiedad simétrica}} afirma que la \textit{propiedad X} es su propia propiedad inversa, es decir, si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces, esta propiedad debe relacionar al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{si Juan es familiar de Pedro, entonces Pedro es familiar de Juan}.
 \item \textbf{\textit{Propiedad reflexiva}} afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
@@ -266,6 +266,8 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 
 \section{Ventajas de las tecnologías Semánticas}
 El uso de las tecnologías semánticas tiene distintas ventajas a la hora de representar y explotar el conocimiento, así como la búsqueda de información.
+
+Los \textbf{\textit{beneficios}} de emplear las tecnologías semánticas bajo esta categoría son: \textit{captar la visión de contextos particulares, adaptar la naturaleza cambiante del conocimiento, considerar la naturaleza distribuida del conocimiento y de los usuarios, integrar información y conocimiento de distintos recursos de información, proponer nuevas técnicas y paradigmas para representación de la información y el conocimiento, representar la información en un formato estándar y flexible, eliminar ambigüedades en la representación, inferir sobre el conocimiento implícito, facilitar la localización y recuperación el conocimiento de los recursos de manera eficaz y precisa, desarrollar aplicaciones genéricas, implementar a menor costo} y \textit{proporcionar mayor interacción de las personas expertas en el dominio}.
 
 En la integración de la información, las tecnologías semánticas son los mecanismos que permiten modelar el conocimiento de un determinado dominio, tal como las personas realmente conciben a éste. Con la finalidad de buscar y recuperar la información necesaria para responder las preguntas de las personas.
 

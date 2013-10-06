@@ -12,7 +12,7 @@ La \textbf{\textit{integración de los recursos de información en una memoria cor
 
 La sección \label{sec:eoaisr} describe los trabajos que se estudiaron para la integración de los recursos. Al final de esta sección, se presenta una tabla comparativa de estos trabajos y los criterios que éstos cumplen.
 
-En este \textit{estado del arte} se contempla un estudio de las aplicaciones para la creación, gestión y modificación de un ontología. Las aplicaciones estudiadas, se agrupan de acuerdo a la funcionalidad de éstas.
+En este \textit{estado del arte} se contempla un estudio de las aplicaciones para realizar la \textit{integración semántica de los recursos en una memoria corporativa}. Las aplicaciones estudiadas, se agrupan de acuerdo a las siguientes funcionalidades.
 
 \begin{enumerate}
 \item Escribir los declaraciones en forma de triple y guardarlos en alguna sintaxis estándar.
@@ -20,7 +20,7 @@ En este \textit{estado del arte} se contempla un estudio de las aplicaciones par
 \item Gestión del grafo RDF, es decir: carga del modelo, consulta de información e inferencia.
 \end{enumerate}
 
-En la sección \ref{sec:eoats} se describen las aplicaciones que se estudiaron para representar, aprovechar y consultar la información en una ontología.
+En la sección \ref{sec:eoats}, se describen estas aplicaciones con base en su funcionalidad. Al final de cada agrupación, se da a conocer: \textit{cuál herramienta se eligió para facilitar y efectuar la funcionalidad dada}.
 
 \section{Integración semántica de recursos de información}
 \label{sec:eoaisr}
@@ -60,11 +60,11 @@ La finalidad de estas herramientas es facilitar la generación de descripciones e
 \item Algunas aplicaciones no tienen documentación disponible para solucionar problemas de configuración. Herramientas con este comportamiento son: \textit{Aktive Media, GATE y MnM}.
 \end{itemize}
 
-La opción que eligió para representar el conocimiento explícito en forma de tripletas, es mediante el uso de scripts. Porque estos scripts facilitan y agilizan el proceso de escritura de tripletas en alguna sintaxis estándar. Un script se escribe en algún lenguaje de programación, con la finalidad de tener un mejor control en la información que se quiere representar.
+La opción electa para representar el conocimiento explícito en forma de tripletas, es mediante el uso de scripts. Porque estos scripts facilitan y agilizan el proceso de escritura de tripletas en alguna sintaxis estándar. Un script se escribe en algún lenguaje de programación, con la finalidad de tener un mejor control en la información que se quiere representar.
 
 Aunque estos scripts no poseen una interfaz gráfica para seleccionar la información de los recursos. Estos se puede solucionar mediante el uso de formularios web que capturen la información sobre los recursos. Posteriormente, la información se guarda en algún documento de texto plano, para que los scripts transformen  esta información en triples RDF.\\
 
-Un triplestore es un framework para el almacenamiento y consulta de tripletas RDF. Este triplestore se considera un Sistema Gestor de Base de Datos para datos modelados en RDF. Típicamente, un triplestore emplea el estándar SPARQL como mecanismo para la consulta de datos. Algunos triplestore proporcionan la capacidad de inferir. Esta inferencia se hace a partir de los axiomas de un TBox. Con la  finalidad de que los resultados de las consultas en SPARQL sean más amplios [20].
+Un \textbf{\textit{triplestore}} \cite{dbpedia_2012} es un programa para \textit{el almacenamiento e indexicón de tripletas RDF}, con el fin de permitir la consulta eficiente de información sobre éstas. Muchos triplestores soportan el estándar SPARQL como lenguaje de consulta para consultar el grafo RDF. Algunos de estos triplestores soportan la capacidad de inferir en el grafo RDF a partir de axiomas, mediante la incorporación o importación de un razonador para ello. Los triplestores se idealizan como \textit{sistema gestor de bases de datos para modelos basados en triplestas RDF}.
 
 %%%Fuentes: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 8 y 9\Anotaciones Semánticas.docx
 
