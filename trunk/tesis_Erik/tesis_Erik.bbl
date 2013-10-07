@@ -104,14 +104,6 @@ Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \newblock The semantic web revisited.
 \newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
 
-\bibitem{dbpedia_2012}
-Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
-  Hellmann.
-\newblock {DB}pedia and the {L}ive {E}xtraction of {S}tructured {D}ata from
-  {W}ikipedia.
-\newblock {\em Program: electronic library and information systems}, 46:27,
-  2012.
-
 \bibitem{SPARQL}
 T.~Fujino and N.~Fukuta.
 \newblock A sparql query rewriting approach on heterogeneous ontologies with
@@ -151,5 +143,56 @@ Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
   Yaoyong Li, and Wim Peters.
 \newblock {\em {Text Processing with GATE (Version 6)}}.
 \newblock 2011.
+
+\bibitem{Tode}
+N.~Islam, M.S. Siddiqui, and Z.A. Shaikh.
+\newblock Tode : A dot net based tool for ontology development and editing.
+\newblock In {\em Computer Engineering and Technology (ICCET), 2010 2nd
+  International Conference on}, volume~6, pages V6--229--V6--233, 2010.
+
+\bibitem{protege}
+Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
+\newblock {The Prot\'{e}g\'{e} OWL Plugin: An Open Development Environment for
+  Semantic Web Applications}.
+\newblock In Sheila~.. McIlraith, Dimitris Plexousakis, and r.~a. n.~k. van,
+  Harmelen, editors, {\em The Semantic Web - ISWC 2004}, volume 3298 of {\em
+  Lecture Notes in Computer Science}, chapter~17, pages 229--243. Springer
+  Berlin / Heidelberg, Berlin, Heidelberg, 2004.
+
+\bibitem{dbpedia_2012}
+Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
+  Hellmann.
+\newblock {DB}pedia and the {L}ive {E}xtraction of {S}tructured {D}ata from
+  {W}ikipedia.
+\newblock {\em Program: electronic library and information systems}, 46:27,
+  2012.
+
+\bibitem{McBride}
+B.~McBride.
+\newblock Jena: a semantic web toolkit.
+\newblock {\em Internet Computing, IEEE}, 6(6):55--59, 2002.
+
+\bibitem{stardog}
+Karlis Cerans, Guntis Barzdins, Renars Liepins, Julija Ovcinnikova, Sergejs
+  Rikacovs, and Arturs Sprogis.
+\newblock Graphical schema editing for stardog owl/rdf databases using
+  owlgred/s.
+\newblock In Pavel Klinov and Matthew Horridge, editors, {\em OWLED}, volume
+  849 of {\em CEUR Workshop Proceedings}. CEUR-WS.org, 2012.
+
+\bibitem{Fstore}
+M.~Salvadores, G.~Correndo, T.~Omitola, N.~Gibbins, S.~Harris, and N.~Shadbolt.
+\newblock 4s-reasoner: Rdfs backward chained reasoning support in 4store.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
+  2010 IEEE/WIC/ACM International Conference on}, volume~3, pages 261--264,
+  2010.
+
+\bibitem{Sesame}
+Jeen Broekstra, Arjohn Kampman, and Frank~van Harmelen.
+\newblock Sesame: A generic architecture for storing and querying rdf and rdf
+  schema.
+\newblock In {\em Proceedings of the First International Semantic Web
+  Conference on The Semantic Web}, ISWC '02, pages 54--68, London, UK, UK,
+  2002. Springer-Verlag.
 
 \end{thebibliography}
