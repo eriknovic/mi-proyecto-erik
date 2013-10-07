@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  6 OCT 2013 17:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  7 OCT 2013 01:10
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -538,28 +538,29 @@ LaTeX Warning: Reference `cap:piu' on page 27 undefined on input line 10.
 [27
 
 ]
-Overfull \hbox (8.62636pt too wide) in paragraph at lines 40--41
-[]\T1/cmr/bx/it/12 MnM \T1/cmr/m/n/12 [24] es una he-rra-mien-ta que pro-por-ci
+Overfull \hbox (8.62636pt too wide) in paragraph at lines 41--42
+[]\T1/cmr/bx/it/12 MnM \T1/cmr/m/n/12 [23] es una he-rra-mien-ta que pro-por-ci
 o-na apo-yo au-to-ma-ti-za-do y semi-automatizado
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-) [29] [30
+[29] [30]) [31] [32
 
-] [31
+] [33
 
-] [32] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [34]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [33
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [35
 
-] [34
+] [36
 
 ]
-[35]) [36] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+[37] [38]) [39] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -568,13 +569,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5641 strings out of 493944
- 75847 string characters out of 3148281
- 160202 words of memory out of 3000000
- 8759 multiletter control sequences out of 15000+200000
+ 5664 strings out of 493944
+ 76098 string characters out of 3148281
+ 161237 words of memory out of 3000000
+ 8782 multiletter control sequences out of 15000+200000
  25059 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,13n,43p,1955b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,13n,43p,1955b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
@@ -594,9 +595,9 @@ per/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (52 pages, 677636 bytes).
+Output written on tesis_Erik.pdf (55 pages, 691274 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
+ 307 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
