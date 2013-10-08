@@ -159,6 +159,26 @@ Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
   Lecture Notes in Computer Science}, chapter~17, pages 229--243. Springer
   Berlin / Heidelberg, Berlin, Heidelberg, 2004.
 
+\bibitem{pow}
+S{\"o}ren Auer.
+\newblock Powl - a web based platform for collaborative semantic web
+  development.
+\newblock In {\em Proceeding of 1st Workshop Scripting for the Semantic Web
+  (SFSW'05), Hersonissos, Greece, May 30}. CEUR Workshop Proceedings, May 2005.
+
+\bibitem{OntologyManagement}
+Walter Waterfeld, Moritz Weiten, and Peter Haase.
+\newblock Ontology management infrastructures.
+\newblock In Martin Hepp, Pieter Leenheer, Aldo Moor, and York Sure, editors,
+  {\em Ontology Management}, volume~7 of {\em Computing for Human Experience},
+  pages 59--87. Springer US, 2008.
+
+\bibitem{swoop}
+Aditya Kalyanpur, Bijan Parsia, Evren Sirin, Bernardo~Cuenca Grau, and James
+  Hendler.
+\newblock Swoop: A web ontology editing browser.
+\newblock {\em Web Semant.}, 4(2):144--153, June 2006.
+
 \bibitem{dbpedia_2012}
 Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
   Hellmann.
