@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  7 OCT 2013 23:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  8 OCT 2013 01:37
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -497,33 +497,33 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
  [18]
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 [][]\T1/cmr/m/n/10 W3C,``RDF 1.1 Con-cepts and Abs-tract Syn-tax,'' Dis-po-ni-b
 le en: $\T1/cmtt/m/n/10 http : / / www . w3 . org / TR /$
  []
 
 [19]
-Overfull \hbox (5.69904pt too wide) in paragraph at lines 100--100
+Overfull \hbox (5.69904pt too wide) in paragraph at lines 97--97
  []|\T1/cmr/bx/n/12 Metadato/Relación| 
  []
 
 <EjmpTripleta.pdf, id=142, 587.19376pt x 208.78pt>
 File: EjmpTripleta.pdf Graphic file (type pdf)
  <use EjmpTripleta.pdf>
-Package pdftex.def Info: EjmpTripleta.pdf used on input line 135.
+Package pdftex.def Info: EjmpTripleta.pdf used on input line 132.
 (pdftex.def)             Requested size: 283.22162pt x 100.70065pt.
 
 [20] <GrafoRDF.pdf, id=147, 861.2175pt x 581.17125pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
  <use GrafoRDF.pdf>
-Package pdftex.def Info: GrafoRDF.pdf used on input line 167.
+Package pdftex.def Info: GrafoRDF.pdf used on input line 164.
 (pdftex.def)             Requested size: 377.62642pt x 254.83821pt.
 
 [21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
 <FormaSPARQL.pdf, id=162, 402.50375pt x 221.82875pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
-Package pdftex.def Info: FormaSPARQL.pdf used on input line 201.
+Package pdftex.def Info: FormaSPARQL.pdf used on input line 198.
 (pdftex.def)             Requested size: 283.22162pt x 156.08801pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -537,23 +537,17 @@ LaTeX Warning: Reference `cap:piu' on page 27 undefined on input line 10.
 
 [27
 
-]
-Overfull \hbox (8.62636pt too wide) in paragraph at lines 41--42
-[]\T1/cmr/bx/it/12 MnM \T1/cmr/m/n/12 [23] es una he-rra-mien-ta que pro-por-ci
-o-na apo-yo au-to-ma-ti-za-do y semi-automatizado
- []
-
-[28]
+] [28]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[29] [30]) [31] [32
+[30]) [31] [32
 
 ] [33
 
@@ -574,10 +568,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5664 strings out of 493944
- 76098 string characters out of 3148281
- 161237 words of memory out of 3000000
- 8782 multiletter control sequences out of 15000+200000
+ 5673 strings out of 493944
+ 76221 string characters out of 3148281
+ 161249 words of memory out of 3000000
+ 8791 multiletter control sequences out of 15000+200000
  25059 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,13n,43p,1955b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -600,7 +594,7 @@ per/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (55 pages, 693508 bytes).
+Output written on tesis_Erik.pdf (55 pages, 698379 bytes).
 PDF statistics:
  307 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
