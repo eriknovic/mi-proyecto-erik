@@ -60,9 +60,12 @@
 %\def\contentsname{Contenido}
 %\def\bibname{Referencias}
 
-
 \begin{document}
 %\maketitle
+\def\listtablename{Lista de Tablas}
+\def\listfigurename{Lista de Figuras}
+\def\contentsname{Contenido}
+
 \pagenumbering{roman}
 \input{caratula}
 \thispagestyle{empty}
@@ -74,6 +77,7 @@
 \tableofcontents
 \listoftables
 \listoffigures
+\renewcommand{\tablename}{Tabla}
 
 \input{acronimos}
 \addcontentsline{toc}{chapter}{Acrónimos}
