@@ -1,6 +1,6 @@
 \select@language {spanish}
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xi}}
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {xiii}}
+\contentsline {chapter}{Lista de Tablas}{\es@scroman {xi}}
+\contentsline {chapter}{Lista de Figuras}{\es@scroman {xiii}}
 \contentsline {chapter}{Acr\'onimos}{\es@scroman {xv}}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
 \contentsline {section}{\numberline {1.1}Problema a Tratar}{1}
