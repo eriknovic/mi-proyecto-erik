@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 OCT 2013 18:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 OCT 2013 20:07
 entering extended mode
 **Art_Erik_spa.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\IEEEv6s\Art_Erik_spa.tex
@@ -195,34 +195,6 @@ Package: mdwmath 1996/04/11 1.1 Nice mathematical things
 \sq@sqrt=\count95
 LaTeX Info: Redefining \sqrt on input line 84.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count96
-\Gm@cntv=\count97
-\c@Gm@tempcnt=\count98
-\Gm@bindingoffset=\dimen123
-\Gm@wd@mp=\dimen124
-\Gm@odd@mp=\dimen125
-\Gm@even@mp=\dimen126
-\Gm@layoutwidth=\dimen127
-\Gm@layoutheight=\dimen128
-\Gm@layouthoffset=\dimen129
-\Gm@layoutvoffset=\dimen130
-\Gm@dimlist=\toks20
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
@@ -283,52 +255,18 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
-\scratchdimen=\dimen131
+\scratchcounter=\count96
+\scratchdimen=\dimen123
 \scratchbox=\box27
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count102
-\MPscratchDim=\dimen132
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks22
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen124
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks21
 )
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(49.22314pt, 515.84871pt, 49.22314pt)
-* v-part:(T,H,B)=(54.06006pt, 668.64012pt, 72.2698pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=515.84871pt
-* \textheight=668.64012pt
-* \oddsidemargin=-23.04684pt
-* \evensidemargin=-23.04684pt
-* \topmargin=-48.27742pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=11.0pt
-* \footskip=28.90755pt
-* \marginparwidth=20.0pt
-* \marginparsep=10.0pt
-* \columnsep=18.0pt
-* \skip\footins=9.89993pt plus 4.39993pt minus 2.19997pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumntrue
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 410.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -337,6 +275,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 410.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 410.
+
+Underfull \hbox (badness 2269) in paragraph at lines 410--410
+\T1/ptm/m/n/8 ble: $http : / / www . cambridgesemantics . com / semantic-[]univ
+ersity / semantic-[]web-[]$
+ []
+
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -347,16 +291,22 @@ File: Arquitectura.pdf Graphic file (type pdf)
 Package pdftex.def Info: Arquitectura.pdf used on input line 454.
 (pdftex.def)             Requested size: 238.48926pt x 158.99586pt.
 
+Underfull \hbox (badness 1466) in paragraph at lines 463--465
+\T1/ptm/m/n/10 li-dad que no exis-ta am-bi-güe-dad en-tre és-tos. Por ejem-
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 463--465
+\T1/ptm/m/n/10 plo, al re-cur-so ``\T1/ptm/m/it/10 Ha-cia una bús-que-da se-mán
+-ti-ca\T1/ptm/m/n/10 '' se le
+ []
+
 [2 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Arquitectura.pdf>]
 <Clases.pdf, id=39, 699.61375pt x 338.26375pt>
 File: Clases.pdf Graphic file (type pdf)
  <use Clases.pdf>
 Package pdftex.def Info: Clases.pdf used on input line 481.
 (pdftex.def)             Requested size: 252.93895pt x 122.85876pt.
-
-Overfull \hbox (4.0146pt too wide) in paragraph at lines 481--482
- [][] 
- []
 
 <Propiedades.pdf, id=40, 353.32pt x 173.64874pt>
 File: Propiedades.pdf Graphic file (type pdf)
@@ -370,62 +320,42 @@ File: DomainyRange.pdf Graphic file (type pdf)
 Package pdftex.def Info: DomainyRange.pdf used on input line 498.
 (pdftex.def)             Requested size: 252.95085pt x 108.40514pt.
 
-Overfull \hbox (4.0265pt too wide) in paragraph at lines 498--500
- [][] 
- []
-
 [3 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Clases.pdf> <C:/Users/Gatito/Desk
 top/GoogleSVN/IEEEv6s/Propiedades.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Propie
 dades.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
->] <RecDigi.pdf, id=56, 545.03625pt x 542.025pt>
+> <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/DomainyRange.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Domain
+yRange.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>] <RecDigi.pdf, id=67, 545.03625pt x 542.025pt>
 File: RecDigi.pdf Graphic file (type pdf)
  <use RecDigi.pdf>
 Package pdftex.def Info: RecDigi.pdf used on input line 529.
 (pdftex.def)             Requested size: 195.12343pt x 178.50488pt.
 
-Underfull \hbox (badness 1533) in paragraph at lines 548--548
+Underfull \hbox (badness 3199) in paragraph at lines 548--548
 [][][]\T1/ptm/m/n/8 W3C, ``SPARQL 1.1 Over-view,'' Avai-la-ble: $http : / / www
  . w3 . org / TR /$
  []
 
-[4 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/DomainyRange.pdf> <C:/Users/Gatit
-o/Desktop/GoogleSVN/IEEEv6s/RecDigi.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/RecDig
-i.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 550.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-<Interfaz.pdf, id=89, 672.5125pt x 387.4475pt>
+) [4 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/RecDigi.pdf>]
+<Interfaz.pdf, id=90, 672.5125pt x 387.4475pt>
 File: Interfaz.pdf Graphic file (type pdf)
  <use Interfaz.pdf>
 Package pdftex.def Info: Interfaz.pdf used on input line 571.
 (pdftex.def)             Requested size: 252.94066pt x 158.99638pt.
-
-Overfull \hbox (4.01631pt too wide) in paragraph at lines 571--572
- [][] 
- []
-
-
-Overfull \hbox (3.88564pt too wide) in paragraph at lines 588--614
- [][] 
- []
-
-[5 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Interfaz.pdf>]
-Overfull \hbox (0.64076pt too wide) in paragraph at lines 623--651
- [][] 
- []
-
+ [5 <C:/Users/Gatito/Desktop/GoogleSVN/IEEEv6s/Interfaz.pdf>]
 (C:\Users\Gatito\Desktop\GoogleSVN\IEEEv6s\Art_Erik_spa.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[6]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -441,29 +371,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
-
-] (C:\Users\Gatito\Desktop\GoogleSVN\IEEEv6s\Art_Erik_spa.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[6] (C:\Users\Gatito\Desktop\GoogleSVN\IEEEv6s\Art_Erik_spa.aux) ) 
 Here is how much of TeX's memory you used:
- 3532 strings out of 493944
- 50228 string characters out of 3148281
- 129071 words of memory out of 3000000
- 6759 multiletter control sequences out of 15000+200000
+ 3036 strings out of 493944
+ 42841 string characters out of 3148281
+ 111454 words of memory out of 3000000
+ 6279 multiletter control sequences out of 15000+200000
  118860 words of font info for 119 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  27i,11n,26p,1682b,297s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Art_Erik_spa.pdf (7 pages, 418820 bytes).
+{C:/Program F
+iles/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Art_Erik_spa.pdf (6 pages, 417973 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
