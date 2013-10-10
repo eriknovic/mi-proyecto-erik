@@ -1,0 +1,668 @@
+
+%% bare_conf.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[conference]{IEEEtran}
+%\documentclass[journal]{IEEEtran}
+%\documentclass[conference,letterpaper]{IEEEtran}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+% *** CITATION PACKAGES ***
+%
+\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+%\usepackage[spanish]{babel}
+
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{alltt}
+
+%\renewcommand{\figurename}{Figura}
+\renewcommand{\thesection}{\Roman{section}}
+%\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+%%\renewcommand{\footnoterule}{\vspace*{-3pt}
+%%  \noindent\rule{8.9cm}{0.8pt}\vspace*{2.6pt}}
+
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+\usepackage{multirow}
+
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+%\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+\usepackage[left=1.73cm, right=1.73cm, top=1.9cm, bottom = 2.54cm]{geometry}
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+\usepackage{url}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Uso de Tecnologías Semánticas para la Integración de Recursos de Información en una Memoria Corporativa}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Erik Alarcón-Zamora}
+\IEEEauthorblockA{Departamento de Ingeniería Eléctrica\\
+Universidad Autónoma Metropolitana\\
+Iztapalapa, México\\
+Email: cbi2113802469@xanum.uam.mx}
+\and
+\IEEEauthorblockN{R. Carolina Medina-Ramírez}
+\IEEEauthorblockA{Departamento de Ingeniería Eléctrica\\
+Universidad Autónoma Metropolitana\\
+Iztapalapa, México\\
+Email: cmed@xanum.uam.mx}
+\and
+\IEEEauthorblockN{Héctor Pérez-Urbina}
+\IEEEauthorblockA{Clark \& Parsia, LLC\\
+Washington, USA\\
+Email: hector@clarkparsia.com}}
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3}, 
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+%\pagestyle{plain}
+\maketitle
+\begin{abstract}
+%\boldmath
+En este artículo se presenta un marco de trabajo apoyado en las tecnologías semánticas para la integración de recursos de una memoria corporativa. Se describe la metodología adoptada para la integración de recursos, así como un prototipo que muestra la viabilidad del enfoque semántico.
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+
+\section{Introducción}
+\label{sec:intro}
+Una organización tiene una amplia variedad de recursos de información, por ejemplo, personas, bases de datos, documentos, reportes, presentaciones, vídeos, entre otros. Estos recursos representan el conocimiento de la organización: productos, investigaciones, procesos de producción, soluciones operacionales, flujos de trabajo, objetivos, metas, entre otros. Este conocimiento se denomina memoria corporativa (MC) y se define como "\textit{la representación explícita, consistente y persistente del conocimiento en una organización}" \cite{Corpmem98}. Una memoria es importante para las personas adscritas o interesadas en la organización, porque ésta les permite acceder, compartir, intercambiar y reutilizar el conocimiento. Dada la importancia de una memoria, es necesario una gestión del conocimiento de la misma, para tener las siguientes ventajas: un personal mejor informado, mayor comunicación en la organización, una herramienta para el aprendizaje, una base de conocimiento persistente, un instrumento para búsqueda, recuperación e intercambio de conocimiento, por mencionar algunas.
+
+Las tecnologías semánticas \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de la información}\footnote{Lee Feigenbaum Bio, "Semantic Web vs. Semantic Technologies,"  Available: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-} \url{vs-semantic-technologies}}. Éstas agregan una \textit{capa de abstracción} en las fuentes de información, para que los procesos automáticos puedan acceder, procesar, razonar, combinar, reutilizar y compartir la información. Los beneficios de emplear estas tecnologías son: captar la visión de contextos particulares, adaptarse a la naturaleza cambiante del conocimiento, considerar la naturaleza distribuida del conocimiento y de los usuarios, integrar desde distintas fuentes de información, modelar la información en un formato estándar, utilizar un modelo de datos flexible, eliminar ambigüedades en el modelo, inferir sobre el conocimiento, desarrollar aplicaciones genéricas, implementar a menor costo y mayor interacción de los expertos en el dominio.
+
+%\thispagestyle{plain}
+
+Las tecnologías semánticas permiten representar y gestionar el conocimiento en una memoria corporativa. En particular, permiten hacer el proceso de integración (búsqueda y recuperación) de información significativa de los recursos en una memoria corporativa. Para lograr esta integración, se deben efectuar las siguientes actividades: \textit{1) modelar el conocimiento de los recursos en un formato estándar, 2) explotar el conocimiento implícito de los recursos y describir el vocabulario (conceptos y relaciones) de la memoria}, y \textit{3) buscar y recuperar la información sobre los recursos, para responder una pregunta dada.}
+
+Una memoria corporativa tiene múltiples recursos de información y para limitar éstos a un conjunto manejable, se hace un análisis para detectar los casos de uso prioritarios. Este artículo describe dos casos de uso básicos que se pueden emplear en cualquier memoria corporativa:
+\begin{enumerate}
+    \item \textbf{\textit{Cartografía de Competencias}}: consiste en la búsqueda y recuperación de información significativa de las personas, a partir de las características personales y profesionales de las mismas. Algunas de estas características profesionales son: \textit{competencias profesionales} (capacidad de trabajar en equipo, habilidad de liderazgo, por mencionar algunas), \textit{habilidades lingüísticas} (leer en inglés, escribir en español, hablar en francés), \textit{conocimientos en los temas del dominio de la memoria corporativa} (sistemas operativos, radios cognitivos, por mencionar algunos.), entre otras.
+    \item \textbf{\textit{Búsqueda de Recursos Digitales}}: consiste en la búsqueda y recuperación de información significativa de los documentos y archivos multimedia a partir del contenido de los mismos. Algunos de los parámetros de búsqueda de éstos son: \textit{el autor, la extensión} (pdf, doc, wav, etc.), \textit{los temas que trata el recurso} (sistemas operativos, ontologías, radios cognitivos, por mencionar algunos), entre otros.
+\end{enumerate}
+
+En este artículo, se representa e integra la memoria corporativa del \textit{área de Redes y Telecomunicaciones (RyT) de la Universidad Autónoma Metropolitana (UAM)}. Los recursos de esta memoria representan las investigaciones, colaboraciones, proyectos, cursos y temas de interés de los profesores-investigadores del área RyT.
+
+Este artículo se organiza de la siguiente manera: la sección \ref{sec:isr} presenta nuestra metodología para la integración semántica de recursos en una memoria corporativa. Esta sección se divide en seis subsecciones. La subsección \ref{sec:prop} describe de manera general la metodología y las tres etapas generales de la misma (representación, explotación y consulta del conocimiento de los recursos). La subsección \ref{sec:arq} muestra nuestra arquitectura. La subsección \ref{sec:rep} describe el marco de descripción de recursos (RDF) para representar (modelar) el conocimiento explícito de los recursos. La subsección \ref{sec:expl} describe los axiomas y la manera de explotar el conocimiento implícito de los recursos. La subsección \ref{sec:cons} explica el lenguaje de consulta, para interrogar el conocimiento en el modelo. La subsección \ref{sec:proto} describe la finalidad del prototipo para la integración semántica. En la sección \ref{sec:exp} se describen la pruebas y resultados (desempeño y calidad de las respuestas) que se hicieron al triplestore Jena\footnote{The Apache Software Foundation, ``Apache Jena,'' Available: \url{http://jena.apache.org/}} y a nuestro modelo. Finalmente, las conclusiones sobre la integración semántica y sobre los resultados de la experimentación se presentan en la sección \ref{sec:concl}.
+
+\section{Integración Semántica de Recursos}
+\label{sec:isr}
+%(TS)\cite{SemTecConc}
+La Integración Semántica de Recursos (ISR) \textit{es el proceso de búsqueda y recuperación significativa de información existente en los recursos de información (documentos) que están residentes en algún medio de almacenamiento}. Se basa en el uso de tecnologías semánticas. La finalidad de esta integración es recuperar documentos vinculados que respondan a una pregunta hecha por un usuario. En este artículo, la integración ISR se efectúa en una memoria corporativa (MC), porque esta ISR considera algunas características importantes de una memoria corporativa como: el crecimiento explosivo de recursos, heterogeneidad en formato, contenido y estructura de los recursos, ambigüedades en la información, evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras. Los principales usuarios en la ISR son los expertos y personas que se vinculan al dominio de la MC.
+
+\subsection{Propuesta}
+\label{sec:prop}
+Nuestra propuesta es una metodología para desarrollar la \textit{integración semántica de recursos} (ISR) en una \textit{memoria corporativa} (MC). Esta metodología considera dos casos de uso, sin embargo ésta puede extenderse a otros casos de uso. Esta metodología contempla tres etapas generales:
+\begin{enumerate}
+    \item Representación del conocimiento en los recursos: consiste en modelar el conocimiento explícito de los recursos en un formato estándar.
+    \item Explotación del conocimiento sobre los recursos: consiste en emplear reglas de inferencia para explotar el conocimiento implícito.
+    \item Consulta de información sobre los recursos: consiste en interrogar al modelo de conocimiento a partir de una pregunta de un usuario y responder con información sobre los recursos.
+\end{enumerate}
+
+\subsection{Arquitectura}
+\label{sec:arq}
+%La arquitectura propuesta para la integración semántica es una solución que, por un lado, representa y explota el conocimiento sobre los  recursos de una memoria corporativa en un modelo, y por otro lado, permite la integración (búsqueda y recuperación de información) del modelo de conocimiento. Esta arquitectura es genérica y se puede implementar en cualquier memoria corporativa asociada a un dominio. La Figura \ref{fig:arq} muestra la arquitectura, en la cual varios de los componentes son desarrollados en alguna de las tres etapas de esta ISR.
+
+La arquitectura que presentamos en la Figura \ref{fig:arq}, se diseñó con base en el modelo de tres capas (nivel usuario, nivel negocio, nivel de datos):
+\begin{itemize}
+    \item En el nivel de usuario, se tiene un conjunto de servlets y páginas web estáticas que proporcionan la interfaz visual para que los usuarios hagan sus preguntas y visualicen las respuestas. Las páginas estáticas son un conjunto de formularios para que el usuario escriba la información que desea buscar. Mientras, los servlets en este nivel son los mecanismos para visualizar la información.
+    \item En el nivel de negocios, un servlet transforma la información del formulario a consultas SPARQL e invoca al triplestore. Este último se encarga de hacer las siguientes actividades: 1) solicitar y cargar la ontología 2) hacer inferencia a partir de la ontología y un razonador, y 3) consultar la información en el modelo a partir del motor de búsqueda y la consulta en SPARQL.
+    \item En el nivel de datos (conocimiento), la ontología es la base de conocimiento sobre los recursos; las descripciones son la representación del conocimiento explícito, mientras los axiomas permiten aprovechar el conocimiento implícito.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+%\includegraphics[width=3.2in]{Arquitectura}
+\includegraphics[height=2.2in,width=3.3in]{Arquitectura}
+\caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
+\label{fig:arq}
+\end{figure}
+
+Las herramientas para desarrollar los componentes de la arquitectura, se describen en las subsecciones \ref{sec:rep}, \ref{sec:expl}, \ref{sec:cons} y \ref{sec:proto}.
+
+\subsection{Representación del Conocimiento}
+\label{sec:rep}
+Las tecnologías semánticas proponen al marco de trabajo RDF\footnote{W3C, ``RDF 1.1 Concepts and Abstract Syntax,'' Available: \url{http://www.w3.org/TR/rdf11-concepts/}} (Resource Description Framework) para la representación del conocimiento de los recursos en un formato estándar \cite{SurvSemWeb2012}. El primer paso en esta representación es establecer un identificador único (URI) para cada uno de los recursos en la memoria corporativa, con la finalidad que no exista ambigüedad entre éstos. Por ejemplo, al recurso ``\textit{Hacia una búsqueda semántica}'' se le asigna la siguiente URI:
+\textit{\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#Hacia\_busqueda\_semantica}
+
+El siguiente paso es representar a los recursos mediante sus propiedades (características básicas o metadatos) y los valores asignados a ellas; esta representación se conoce como descripción de los recursos. Cada propiedad (título, autor y lenguaje fuente) tiene un identificador único (URI) como nombre. En la escritura de este nombre, se escribe un verbo en tercera persona y tiempo presente (`tiene', `es', `conoce', entre otros) antes del metadato. Por ejemplo, la propiedad \textit{título} tiene la siguiente URI:  \textit{\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#tiene-titulo}.
+
+Para reducir el tamaño del identificador (URI) de los recursos y las propiedades, se sustituye la secuencia de caracteres desde "\textit{\url{http://www}}" hasta el símbolo "\textit{\#}" por un prefijo. En nuestro caso de estudio, el prefijo \textit{sirp} se traduce en \textit{\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#}. Por ejemplo, la propiedad \textit{título} se escribe \textit{sirp:tiene-titulo}. Existen otros prefijos preestablecidos para otros vocabularios, por ejemplo: \textit{rdf, xsd, rdfs y owl}.
+
+Las propiedades de los recursos y sus respectivos valores se llevan a un formato estándar, que en este marco se denomina terna (triple) \cite{SurvSemWeb2012}. El conjunto de todas las ternas RDF sobre los recursos de un dominio, se denomina componente asertivo (ABox) \cite{Markus2012DLprimer}. Una terna se forma por un sujeto, un predicado y un objeto; el sujeto es el identificador del recurso que se describe, el predicado es el identificador de la propiedad, y el objeto es o bien una Literal (cadena, entero), o bien el identificador de otro recurso. Un ejemplo de terna se muestra a continuación. Los recursos suelen agruparse en clases. Para decir que cierto recurso pertenece a una clase se utiliza la terna: \textbf{sirp:recurso \textit{rdf:type} sirp:Clase}. En la representación del conocimiento, se pueden emplear vocabularios preestablecidos para las características de los recursos, como el dublin core. Sin embargo, este último no proporciona algunos metadatos que se requieren para describir los recursos persona.
+
+Hay diferentes manera de escribir las ternas, desde lo manual escribiendo literales e identificadores en un editor de texto, hasta lo automatizado utilizando herramientas que mapean la información a ternas RDF \cite{Uren:2006} ejemplos de estas herramientas son: GATE\footnote{University of Sheffield, ``GATE,'' Available: \url{http://gate.ac.uk/projects.html}}, RDF123\footnote{Ebiquity, ``RDF123,'' Available: \url{http://ebiquity.umbc.edu/project/html/id/82/RDF123}}, entre otras. La herramienta que elegimos para administrar las ternas RDF, es el triplestore Apache Jena \cite{McBride}, porque proporciona lectura, procesamiento y escritura de ternas en distintos formatos (XML/RDF, N-triples, Turtle), además este triplestore se puede utilizar con el lenguaje de programación \textit{Java}. Un triplestore es un sistema que tiene dos funcionalidades básicas: el almacenamiento y acceso de las ternas RDF. Existen otros triplestore \cite{MuhleisenWT11}, por ejemplo: Stardog\footnote{Clark \& Parsia LLC, ``Stardog,'' Available: \url{http://stardog.com/docs/}},  Sesame\footnote{Aduna, ``Sesame,'' Available: \url{http://www.openrdf.org/about.jsp}}, entre otros.
+
+\subsection{Explotación del Conocimiento}
+\label{sec:expl}
+Hemos descrito cómo el marco RDF permite modelar el conocimiento explícito de los recursos (modelo de datos). Este modelo de datos se enriquece con la introducción de \textit{axiomas} \cite{DesLog}, que permiten completar, extender, renovar y adaptar el conocimiento de los recursos. Para identificar estos axiomas, se analizan las clases/propiedades y se hacen preguntas sobre éstas: qué clases/propiedades se pueden agrupar en otra clase/propiedad respectivamente, qué clases y propiedades son sinónimos, qué clases o clase-literal relaciona una propiedad, la propiedad es una relación simétrica, transitiva, reflexiva, sólo por mencionar algunas preguntas. En nuestro caso de estudio, empleamos los siguientes axiomas:
+
+\textbf{Subclase y Subpropiedad} permiten establecer jerarquías entre las clases (Figura \ref{fig:jcl}) y propiedades (Figura \ref{fig:jpr}) respectivamente.
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=1.7in,width=3.5in]{Clases}
+\caption{Jerarquía de Clases sobre los recursos digitales de la memoria corporativa (RyT) vistas con protégé.}
+\label{fig:jcl}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+%\includegraphics[height=1.7in,width=0.5\textwidth]{Propiedades}
+\includegraphics[height=1.3in,width=3in]{Propiedades}
+%\includegraphics[width=3in]{Propiedades}
+\caption{Jerarquía de Propiedades de los recursos digitales en la memoria corporativa (RyT) vistas con protégé.}
+\label{fig:jpr}
+\end{figure}
+\textbf{Dominio y Rango} permite establecer qué clases o clase-literal, debe relacionar una propiedad (Figura \ref{fig:dyr}).
+\begin{figure}[!htb]
+\centering
+%\includegraphics[height=1.8in,width=0.48\textwidth]{DomainyRange}
+\includegraphics[height=1.5in,width=3.5in]{DomainyRange}
+%\includegraphics[width=3.5in]{DomainyRange}
+\caption{Dominio y Rango de las propiedades de los recursos digitales en la memoria corporativa (RyT) vistos con protégé.}
+\label{fig:dyr}
+\end{figure}
+
+Existen otros axiomas, como son Clases equivalentes, Clases disjuntas, Propiedad Simétrica, sólo por mencionar. Las funcionalidades y ejemplos de éstos se pueden encontrar en la literatura \cite{Markus2012DLprimer}, \cite{protegeManual}.
+
+Los axiomas se representan en forma de ternas y los lenguajes estándar para escribir axiomas son: RDF Schema\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Available: \url{http://www.w3.org/TR/2004/REC-rdf-
+schema-20040210/}} (RDF(S)) y el Web Ontology Language\footnote{W3C, ``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Available: \url{http://www.w3.org/TR/owl2-syntax/}} (OWL). Existen distintas herramientas para escribir los axiomas en forma de terna con el vocabulario adecuado \cite{SurvOnto}, \cite{Buraga2006}, por ejemplo: protégé\footnote{Stanford Center, ``Protégé,'' Available: \url{http://protege.stanford.edu/}}, TopBraid\footnote{TopQuadrant, ``TopBraid Composer,'' Available: \url{http://www.topquadrant.com/products/TB_Composer.html}}, por mencionar algunas. La herramienta que nosotros elegimos es protégé, porque es una plataforma que proporciona un interfaz agradable al usuario \cite{protege}, permitiendo a éste la creación, manipulación y visualización de los axiomas. Además esta herramienta permite guardar los axiomas en diferentes formatos (XML/RDF, Manchester, Turtle, OWL/XML).
+
+El conjunto de axiomas que enriquecen el modelo, se denomina componente terminológico (TBox). El modelo de conocimientos conformado por TBox y ABox, se denomina ontología\cite{Ontoinra2002}. En esta propuesta, los dos casos de uso son independientes, por lo tanto, se decidió que cada uno de éstos tenga su propia ontología. Un objetivo en común para los casos de uso es vincular los recursos con los temas del dominio de la memoria corporativa. Para ello, se propone una tercera ontología que tiene el vocabulario del dominio. En nuestro caso de estudio, la ontología es el vocabulario de Redes y Telecomunicaciones (RyT) que se desarrolló a partir de otra ontología ODARyT \cite{Rios-alvarado_asemantic}. Nuestra ontología vocabulario (ODARyT4sir) está constituida por 303 que están organizados en cuatro ramas principales: \textit{Distributed Systems, Networking and Telecommunication, Digital Communication Systems} y \textit{Semantic Web}.
+
+%La Figura \ref{fig:oda} muestran las cuatro ramas principales de ODARyT4sir.
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=3in]{Odaryt4sir}%%
+%\includegraphics[height=1.2in,width=3in]{Odaryt4sir}
+%\caption{Ontología con el vocabulario de Redes y Telecomunicaciones (ODARyT4sir) vistas con protégé.}
+%\label{fig:oda}
+%\end{figure}
+
+Una ontología tiene ternas sobre el conocimiento explícito (descripciones de recursos) y el conocimiento implícito (axiomas). Es posible explotar el conocimiento implícito en una ontología a través de un razonador, que es un programa para inferir hechos o asociaciones a partir del conocimiento existente (axiomas y propiedades) \cite{InfEng}. Por ejemplo, se tiene un ABox con la siguiente descripción: el recurso "\textit{Hacia una búsqueda semántica}" es un \textit{artículo} y un TBox con el siguiente axioma: \textit{la clase Artículo es subclase de la clase Documento}; empleando un razonador con este ABox y TBox, se infiere la siguiente descripción: el recurso "\textit{Hacia una búsqueda semántica}" es un \textit{documento}. Hay distintos razonadores \cite{InfEng}, \cite{Mishra2011}, por ejemplo: Pellet\footnote{Clark \& Parsia LLC, ``Pellet: OWL 2 Reasoner for Java,'' Available: \url{http://clarkparsia.com/pellet/}}, Fact++\footnote{Dmitry Tsarkov, ``Fact++,'' Available: \url{http://owl.man.ac.uk/factplusplus/}}, por mencionar algunos. En este artículo, se utilizó el razonador que trae por default Jena, porque éste se puede invocar desde Java+Jena, soporta los axiomas de nuestra ontología (RDF(S) y OWL) y no requiere una configuración o compilación previa para utilizarse. Por otro lado, un razonador es una herramienta para validar el modelo de conocimiento, porque permite encontrar contradicciones o ambigüedades. Nosotros verificamos la consistencia de nuestros modelos, mediante un programa en Java y Jena que verificar si el modelo tiene o no contradicciones. En nuestros modelos el programa no encontró contracciones.
+
+Nuestra ontología de \textit{recursos digitales} modela el conocimiento de 1330 recursos digitales. En este modelo, 691 recursos tienen explícitamente la terna de asignación (rdf:type) a una de las nueve clases básicas: Artículo, Reporte Técnico, Página Web, Tesis, Libro, Audio, Vídeo, Imagen y Presentación. Mientras, los otros 639 recursos por inferencia pertenecen a alguna de las clases básicas. La Figura \ref{fig:vrc} muestra la ontología vista como diagrama de Venn; los círculos son las clases de los Recursos Digitales y los puntos son los recursos.
+
+%Mientras, la Figura \ref{fig:crc} muestra la cardinalidad del diagrama de Venn.
+\begin{figure}[!htb]
+\centering
+%\includegraphics[width=2.7in]{RecDigi}
+\includegraphics[height=2.47in,width=2.7in]{RecDigi}
+\caption{Diagrama de Venn de la ontología de recursos digitales.}
+\label{fig:vrc}
+\end{figure}
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=2.5in]{cardinal}%%
+%\includegraphics[height=2in,width=2.5in]{cardinal}
+%\caption{Cardinalidad de recursos digitales.}
+%\label{fig:crc}
+%\end{figure}
+
+\subsection{Consulta de información}
+\label{sec:cons}
+Para hacer búsqueda y recuperación de la información en una ontología, es necesario tres cosas: \textit{1) una pregunta en lenguaje natural, 2) una consulta basada en triples y 3) un motor de consulta}. 
+
+En el primer punto, del análisis de los casos de uso, se identifican y escriben en lenguaje natural las preguntas que los usuarios quieren hacer al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales. Una de estas preguntas es: (1)... ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+
+En el segundo punto, las tecnologías semánticas establecen al lenguaje SPARQL\footnote{W3C, ``SPARQL 1.1 Overview,'' Available: \url{http://www.w3.org/TR/sparql11-overview/}} como especificación para consultar, recuperar y modificar la información de ternas RDF. Este lenguaje se basa en patrones de búsqueda, que son comparados con las ternas del modelo. Un patrón de búsqueda es parecido a una terna, pero a diferencia de ésta, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas: la cláusula SELECT enuncia las \textit{variables resultado} y la cláusula WHERE enuncia los \textit{patrones de comparación}. La consulta SPARQL para la pregunta (1) es: 
+
+\begin{alltt}
+\small
+SELECT ?title ?path
+WHERE
+\{?x rdf:type sird:Document;
+   sird:has-topic redes:Peer_to_Peer_System;
+   sird:has-title ?title;
+   sird:has-filePath ?path.\}
+\end{alltt}
+
+Un \textit{motor de consulta SPARQL} es el programa para responder las consultas de los usuarios. La función básica de éste es: interpreta una consulta SPARQL, compara los patrones con las ternas del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee el motor de consulta (ARQ). Este motor recupera los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con Java.
+
+\subsection{Prototipo (interfaz de usuario)}
+\label{sec:proto}
+La integración semántica de recursos (ISR) utilizando un  triplestore, no es una tarea que cualquier usuario puede hacer, ya que éste debe estar familiarizado con el triplestore, el lenguaje de consulta SPARQL y las ternas RDF. Nosotros proponemos una interfaz para la interacción transparente y amigable del usuario con el triplestore; esta interfaz tiene las siguientes características: \textit{1)permitir a los usuarios, navegar a través de la información básica de los recursos, 2)permitir a los usuarios, hacer búsquedas específicas de los recursos, 3)publicar los resultados de la búsqueda y navegación en un formato visual agradable, 4)mapear la pregunta a la respectiva consulta SPARQL, así como 5) invocar al triplestore (carga, inferencia, búsqueda) y proporcionar a éste la consulta SPARQL}.
+
+Nuestro prototipo de interfaz es una aplicación web que trabaja con el triplestore Jena, este prototipo se implementó con Java y proporciona un conjunto de servlets que están en un servidor Tomcat. El prototipo proporciona las siguientes interfaces visuales: navegación a través de las personas, navegación a través de los documentos, navegación a través de los recursos multimedia, búsqueda avanzada de personas, búsqueda avanzada de documentos, búsqueda avanzada de recursos multimedia, búsqueda avanzada sobre cualquier recurso. La Figura \ref{fig:moq} muestra la interfaz web de \textbf{\textit{navegación a través de las personas}}.
+
+\begin{figure}[!htb]
+\centering
+%\includegraphics[width=3.5in]{Interfaz}
+\includegraphics[height=2.2in,width=3.5in]{Interfaz}
+\caption{Interfaz visual de navegación a través de personas.}
+\label{fig:moq}
+\end{figure}
+
+\section{Experimentación}
+\label{sec:exp}
+En la integración semántica de recursos, se tienen dos criterios de evaluación para el triplestore Jena: \textit{1) desempeño y 2) cantidad de resultados para un modelo con inferencia (ontología con razonador) y sin inferencia (descripciones explícitas)}. Para evaluar el desempeño de Jena, queríamos ver el rendimiento de ésta con la cantidad de datos que esperamos manejar. En la evaluación de resultados, queríamos ver si los resultados devueltos por Jena, son los que responden nuestras preguntas.
+
+La evaluación del desempeño, consiste en tomar el tiempo promedio desde que el modelo se carga hasta la recuperación de los resultados de una consulta. Mientras la evaluación de la calidad de resultados, consiste en comparar la información recuperada de una consulta SPARQL con los recursos que se saben responden la pregunta (un análisis previo). Para hacer esto, se hizo un programa en Java+Jena que repite \textbf{\textit{n}} veces el cálculo del tiempo de procesamiento para un modelo y una consulta dada, además en cada iteración regresa los valores de la consulta. Los tres parámetros de entrada de este programa son: el número de repeticiones, el tipo de modelo \textit{con datos explícitos o con un razonador y una ontología} y la consulta en SPARQL. Mientras los tres parámetros de salida son: el tiempo promedio de procesamiento de la consulta, el número de recursos que responde el motor de búsqueda y las respuestas de la consulta. Nosotros establecimos los siguientes parámetros para el programa: el número de iteraciones \textbf{\textit{n}} se colocó en 20, los modelos son: \textit{1) el ABox de recursos digitales de RyT y 2) la ontología recursos digitales y el vocabulario de RyT, y 3) un conjunto de preguntas básicas, que se enuncian en la Tabla \ref{tab:qln}}. En esta tabla se muestra el número de recursos digitales que responden a cada una de las preguntas.
+
+\renewcommand{\tablename}{Tabla}
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\caption{Preguntas en lenguaje natural y cantidad de recursos que responden a éstas.}
+\label{tab:qln}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{0.4in} >{\arraybackslash}m{2.1in} >{\centering\arraybackslash}m{0.5in}}
+\hline 
+Id. Consulta & Pregunta & No. de Recursos\\
+\hline
+\hline 
+Q1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
+\hline
+Q2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
+\hline 
+Q3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
+\hline 
+Q4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
+\hline 
+Q5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
+\hline 
+Q6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
+\hline 
+Q7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
+\hline 
+Q8 & ¿Qué recursos tienen en su contenido las palabras "linked data"? & 159\\
+\hline 
+Q9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
+\hline 
+Q10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
+\hline 
+\end{tabular}
+\end{table}
+
+Este programa se corrió en una computadora con un procesador Intel Core I7 a 2.3GHz con 8Gb en RAM y 8 núcleos de procesamiento. Esta prueba se ejecutó usando Java 1.7, con el entorno de desarrollo integrado Eclipse y Apache Jena 2.7.4 en Windows 7 (64bits). Nosotros corrimos el programa dos veces para cada pregunta de las lista (Tabla \ref{tab:qln}). En la primera corrida, el modelo es el ABox, mientras en la segunda corrida el modelo es del razonador y la ontología. En nuestro caso de estudio, la ontología de recursos digitales tiene 1330 recursos digitales y las siguientes cantidades de ternas: ABox tiene 20429 y TBox tiene 107. Mientras el vocabulario de RyT (ODARyT4sir) tiene 303 conceptos y en el TBox tiene 1115 ternas. Mediante el proceso de inferencia y combinando ambas ontologías se tiene un total de 38661 ternas. Los resultados de las mediciones del tiempo promedio y la cantidad de respuestas para cada consulta se muestran en la Tabla \ref{tab:tnp}.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\caption{Tiempo promedio de procesamiento y cantidad de recursos que responden una consulta.}
+\label{tab:tnp}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{0.5in} | >{\centering\arraybackslash}m{0.4in} | >{\centering\arraybackslash}m{0.6in} | >{\centering\arraybackslash}m{0.4in} | >{\centering\arraybackslash}m{0.6in} | }
+\hline 
+\multirow{2}{*}{Id. Consulta} & \multicolumn{2}{c|}{Modelo (ABox)} & \multicolumn{2}{c|}{Modelo (Razonador+Ontología)}\\
+\cline{2-5} 
+ & Tiempo promedio (ms) & No. Recursos  & Tiempo promedio (ms) & No. Recursos\\
+\hline 
+\hline
+Q1 & 12 & 1330/1330 & 138 & 1330/1330\\
+\hline
+Q2 & 10 & 0/103 & 194 & 103/103\\
+\hline
+Q3 & 8 & 18/18 & 406 & 18/18\\
+\hline
+Q4 & 28 & 15/31 & 129 & 31/31\\
+\hline
+Q5 & 7 & 66/119 & 157 & 119/119\\
+\hline
+Q6 & 9 & 15/30 & 4016 & 30/30\\
+\hline
+Q7 & 12 & 156/156 & 3520 & 156/156\\
+\hline
+Q8 & 16 & 159/159 & 3472 & 159/159\\
+\hline
+Q9 & 42 & 0/2 & 3451 & 2/2\\
+\hline
+Q10 & 13 & 3/4 & 3312 & 4/4\\
+\hline
+\end{tabular}
+\end{table}
+En la Tabla \ref{tab:tnp}, se muestra la cantidad de recursos que responden una consulta SPARQL y para verificar que la información de la consulta responde la pregunta, se hizo un análisis de los recursos que responden cada una de las preguntas. Después, se compara manualmente la información recuperada de cada consulta SPARQL con las respuestas de la respectiva pregunta.
+
+El desempeño de Jena es bueno (menor a 1 segundo) cuando se interroga al conocimiento explícito, porque el motor de consulta interroga directamente los ternas del ABox. En contraste, Jena consume más tiempo cuando el modelo es resultado de la inferencia, porque un razonador invierte tiempo en el proceso de inferencia. Si bien Jena no tiene un adecuado desempeño mediante el uso de un razonador, en un futuro podemos probar otras herramientas que procesan mayor cantidad de ternas, disminuyan los tiempos de consulta y permitan el uso de un razonador. Ahora bien, para la evaluación de la calidad de los resultados se tiene lo siguiente: si no se emplea un razonador, varios resultados son omitidos durante el proceso de consulta, ya que algunos recursos no poseen cierta información explícita. Pero, cuando se emplea un razonador, no se pierden respuestas para las consultas, porque éste hace evidente el conocimiento implícito.
+
+\section{Conclusiones}
+\label{sec:concl}
+Una memoria corporativa es una fuente de conocimiento para una organización, si este conocimiento se representa adecuadamente, entonces la integración de los recursos tendrá mejores resultados. Nuestra metodología es una solución genérica para la integración semántica de recursos (ISR). Estas tecnologías semánticas nos permitieron: 1) modelar, explotar y consultar al conocimiento sobre los recursos, 2) representar el conocimiento en un formato estándar, 3) utilizar herramientas para desarrollar aplicaciones semánticas, 4) utilizar y compartir varios vocabularios, 5) utilizar aplicaciones para explotar el conocimiento, entre otras ventajas.
+
+En la prueba de desempeño de Jena para el proceso de consulta, el tiempo promedio es menor a un segundo cuando se hace consultas al ABox. Pero, el tiempo se incrementa (1 a 3 segundos) cuando se consulta un modelo por inferencia en una ontología. Aunque el desempeño de Jena es aceptable para el modelo con inferencia, nosotros creemos que mediante operaciones de cómputo paralelo o utilizando otro triplestore, se pueden reducir estos tiempos. En la evaluación de recuperación de la información, si se utiliza un razonador, entonces hay una mayor posibilidad que los resultados de Jena sean los que respondan las preguntas de los usuarios. Por tanto, a pesar de invertir tiempo en la inferencia, se obtienen resultados más satisfactorios para los usuarios.
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,IEEEref}
+\thispagestyle{empty}
+
+% that's all folks
+\end{document}
+
+
