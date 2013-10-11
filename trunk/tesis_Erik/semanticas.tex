@@ -264,13 +264,23 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 %Para hacer claro este último punto, se emplea el siguiente ejemplo. El ABox tiene estos triples {Elena rdf:type Mujer, Erik rdf:type Hombre y Jorge rdf:type Hombre}y el TBox tiene estos axiomas {Hombre rdfs:subClassOf Persona y Mujer rdfs:subClassOf Persona}. Si se quieren todos los individuos qué son persona. El patrón asociado a esta consulta es: ?name rdf:type Persona. Al hacer la consulta SPARQL sin un razonador, la respuesta de SPARQL no arrojaría ningún valor. Porque explícitamente no hay una aserción o triple que establezca a un individuo con la clase Persona. Sin embargo, esta misma consulta con un razonador, arrojara los tres individuos  como respuesta
 
 \section{Ventajas de las tecnologías Semánticas}
+Las tecnologías semánticas proporcionan distintos beneficios en la representación y gestión del conocimiento, como: \textit{la flexibilidad, interoperabilidad y extensibilidad}. Estos beneficios y otros, son descritos a continuación.
+
+Las tecnologías semánticas proponen distintos estándares para la representación, enriquecimiento y consulta del conocimiento en un dominio dado. Ejemplos de estos estándares son: \textit{el marco de trabajo RDF}, \textit{axiomas en vocabularios RDF(S) y OWL}, así como \textit{el lenguaje de consulta SPARQL}. La finalidad de estos estándares es facilitar la manera en que se desarrolla, mantiene y reutiliza el conocimiento en las ontologías. En las tecnologías semánticas, esta facilidad de interpretación y manipulación se conoce como \textit{flexibilidad}.
+
+
+Para empezar, las tecnologías semánticas proponen estándares para representar, enriquecer y consultar la información. Estos estándares facilitan la manera de 
+Al emplear estos estándares es más fácil 
+
+una ontología representa el conocimiento en un formato estándar (tripletas). Esto significa que el conocimiento 
+
 Las tecnologías semánticas son u conjunto de herramientas y estándares para le representación y búsqueda del conocimiento. Estas tecnologías proporcionan varias ventajas al momento de desempeñar estas dos tareas.
 
 Existen varias ventajas en la representación y gestión del conocimiento mediante el uso de las tecnologías semánticas. Estas ventajas se describen a continuación.
 
 Para empezar, el \textit{marco de trabajo} RDF es un \textbf{\textit{solvente universal}} que permite representar cualquier \textit{cosa física o digital} en un formato estándar. Por esta razón, el marco soluciona problemas de heterogeneidad en formato, contenido y estructura de los recursos de información.
 
-En una onotlogía, todos los recursos tienen un \textbf{\textit{identificador único}}. Esto significa que no debe existir problemas de homonimia. Porque aunque un recurso se escriba igual (p.e. el término \textbf{radio}), con base al identificador podemos saber a cuál vocabulario se refiere (Matemáticas, Anatomía, Geometría o Telecomunicaciones).
+En una ontología, todos los recursos tienen un \textbf{\textit{identificador único}}. Esto significa que no debe existir problemas de homonimia. Porque aunque un recurso se escriba igual (p.e. el término \textbf{radio}), con base al identificador podemos saber a cuál vocabulario se refiere (Matemáticas, Anatomía, Geometría o Telecomunicaciones).
 
 El marco RDF es una herramimenta que facilita la creación y edición de una ontología. Porque este marco, permite representar tanto el conocimiento explícito (características y relaciones) como implícito (axiomas) en forma de tripletas. De esta manera, el desarrollo y mantenimiento de las ontologías es flexible.
 
@@ -289,5 +299,6 @@ Independencia de la plataforma: el modelo RDF establece las manera de representa
 
 Un aspecto importante en las TS es la facilidad de extender el conocimiento que modelan las onotologías. Esto es, las ontologías son grafos de conocimiento en un formato estándar, donde la unidad básica es la tripleta. Estos grafos pueden aumentar de tamaño mediante la incorporación de más tripletas, es decir, vinculando los nodos del grafo con nuevos nodos. De esta manera, al aumentar el grafo con más información, se tiene que el conocimiento crece y es extensible.
 
+son los mecanismos para representar, enriquecer y consultar el conocimiento e información en un dominio dado. Estas 
 
 %% ventajas en Survey on Web Ontology Editing Tools y A Survey on Ontology Evaluation Tools
