@@ -30,9 +30,9 @@
 \contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{22}
 \contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{23}
 \contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
-\contentsline {chapter}{\numberline {4}Estado del arte}{27}
-\contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{28}
-\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{28}
-\contentsline {chapter}{Appendices}{33}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{35}
-\contentsline {chapter}{Bibliograf\'{\i }a}{37}
+\contentsline {chapter}{\numberline {4}Estado del arte}{29}
+\contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{30}
+\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{30}
+\contentsline {chapter}{Appendices}{35}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{37}
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}
