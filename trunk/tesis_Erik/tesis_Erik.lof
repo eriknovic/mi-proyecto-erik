@@ -1,10 +1,17 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de casos de uso para la integraci\'on de los recursos de una memoria corporativa.}}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de casos de uso para la integraci\'on de los recursos de una memoria corporativa.}}{13}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplos de tripletas asociadas a las declaraciones para los recursos Juan y libro de matem\'aticas discretas.}}{21}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo de un grafo RDF o grafo de conocimientos.}}{22}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Estructura b\'asica de una consulta SPARQL.}}{23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{28}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{29}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{29}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
