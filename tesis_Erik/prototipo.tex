@@ -1,33 +1,33 @@
 \chapter{Prototipo}
 \label{cap:piu}
-No solo basta con un razonador también se requiere un modulo integrador de la información que transforme las consultas de los usuarios expresadas en lenguaje natural, a lenguaje que sea interpretado por el razonador. Además este integrador es el encargado de regresar los enlaces y los datos del recurso. De esta manera el motor de búsqueda queda de la siguiente manera:
+%%No solo basta con un razonador también se requiere un modulo integrador de la información que transforme las consultas de los usuarios expresadas en lenguaje natural, a lenguaje que sea interpretado por el razonador. Además este integrador es el encargado de regresar los enlaces y los datos del recurso. De esta manera el motor de búsqueda queda de la siguiente manera:
 
-Para llevar acabo está integración de la información es necesario un prototipo que satisfaga más eficientemente las consultas que escribe el usuario. De esta manera es necesario un análisis documental y técnico de los módulos de Anotaciones, Ontología de Dominio y Razonadores. Con la finalidad de tener una propuesta de sistema con las últimas novedades hechas en búsqueda y recuperación de la información basada en la semántica de los recursos.
+%%Para llevar acabo está integración de la información es necesario un prototipo que satisfaga más eficientemente las consultas que escribe el usuario. De esta manera es necesario un análisis documental y técnico de los módulos de Anotaciones, Ontología de Dominio y Razonadores. Con la finalidad de tener una propuesta de sistema con las últimas novedades hechas en búsqueda y recuperación de la información basada en la semántica de los recursos.
 
-se requiere proporcionar interfaces fáciles de usar, para simplificar a los miembros el proceso de generación de anotaciones y colocar en contexto su trabajo.  Un buen enfoque para un sistema de anotaciones es aquel donde se maneja una única interfaz, y es en esta donde los usuarios crean, modifican y comparten sus anotaciones.
+%%se requiere proporcionar interfaces fáciles de usar, para simplificar a los miembros el proceso de generación de anotaciones y colocar en contexto su trabajo.  Un buen enfoque para un sistema de anotaciones es aquel donde se maneja una única interfaz, y es en esta donde los usuarios crean, modifican y comparten sus anotaciones.
 
-La interfaz debe tener ..., para que los usuarios estructuren sus consulta, capturando los valores que desean buscar. En la interfaz debe proporcionar un navegador entre personas, documentos, multimedia, para que los usuarios que no tienen algún conocimiento previo de las personas y recursos digitales, puedan tener una vision general de la información de los recursos.
+%%La interfaz debe tener ..., para que los usuarios estructuren sus consulta, capturando los valores que desean buscar. En la interfaz debe proporcionar un navegador entre personas, documentos, multimedia, para que los usuarios que no tienen algún conocimiento previo de las personas y recursos digitales, puedan tener una vision general de la información de los recursos.
 
-La interfaz debe permitir hacer las siguientes actividades a los usuarios:
-•	Login.
-•	Navegar entre personas.
-o	Filtrar por ocupación.
-o	Mostrar la información más detallada de una persona.
-o	Búsqueda Avanzada de las personas.
-•	Navegar entre documentos.
-o	Filtrar por clase de documento.
-o	Mostrar la información más detallada de un documento.
-o	Búsqueda Avanzada de documentos.
-•	Navegar entre multimedia.
-o	Filtrar por clase multimedia.
-o	Mostrar la información más detallada de un recurso multimedia.
-o	Búsqueda Avanzada de recursos multimedia.
-•	Búsqueda en todos los recursos de información por información semejante.
+%%La interfaz debe permitir hacer las siguientes actividades a los usuarios:
+%%•	Login.
+%%•	Navegar entre personas.
+%%o	Filtrar por ocupación.
+%%o	Mostrar la información más detallada de una persona.
+%%o	Búsqueda Avanzada de las personas.
+%%•	Navegar entre documentos.
+%%o	Filtrar por clase de documento.
+%%o	Mostrar la información más detallada de un documento.
+%%o	Búsqueda Avanzada de documentos.
+%%•	Navegar entre multimedia.
+%%o	Filtrar por clase multimedia.
+%%o	Mostrar la información más detallada de un recurso multimedia.
+%%o	Búsqueda Avanzada de recursos multimedia.
+%%•	Búsqueda en todos los recursos de información por información semejante.
 
-Las distintas aplicaciones que hay pueden ser elaboradas para Windows, Linux, Macs, u otros sistemas operativos, y también se pueden tener distintas versiones del mismo sistema para poder trabajar entre los distintos sistemas operativos. Lo ideal es que sin importar cual sea el sistema operativo el usuario pueda realizar sus anotaciones semánticas, para logara esto se puede emplear una aplicación web o aplicaciones elaboradas en java.
-Si se emplea una aplicación web no es necesario instalar algún software extra, solo basta que el usuario acceda utilizando su navegador web de preferencia y comience el proceso de creación de anotaciones semánticas.
+%%Las distintas aplicaciones que hay pueden ser elaboradas para Windows, Linux, Macs, u otros sistemas operativos, y también se pueden tener distintas versiones del mismo sistema para poder trabajar entre los distintos sistemas operativos. Lo ideal es que sin importar cual sea el sistema operativo el usuario pueda realizar sus anotaciones semánticas, para logara esto se puede emplear una aplicación web o aplicaciones elaboradas en java.
+%%Si se emplea una aplicación web no es necesario instalar algún software extra, solo basta que el usuario acceda utilizando su navegador web de preferencia y comience el proceso de creación de anotaciones semánticas.
 
-Por otro lado al usar una aplicación basada en Java, es necesario tener Java Development Kit (JDK) que es independiente de la plataforma, para tener un entorno amigable al usuario.
+%%Por otro lado al usar una aplicación basada en Java, es necesario tener Java Development Kit (JDK) que es independiente de la plataforma, para tener un entorno amigable al usuario.
 
-Finalmente, los usuarios necesitan una interfaz de usuario, para la consulta de información de las tripletas. Nosotros proponemos una interfaz amigable que sea accesible vía Web. De esta manera, los usuarios no instalan ningún componente y simplemente acceden a la página Web del sistema.
-La interfaz al ser accesible vía Web, requiere ser instalada en un servidor Web. Para tomar la decisión sobre qué servidor es el apropiado para la interfaz. Nosotros debemos tomar en cuenta, el lenguaje de implementación del triplestore. Si el lenguaje es PHP9, entonces, podemos emplear un servidor HTTP Apache10. En otro caso, si el lenguaje es Java11 y permite implementar Servlet, entonces el servidor es Apache Tomcat12. 
+%%Finalmente, los usuarios necesitan una interfaz de usuario, para la consulta de información de las tripletas. Nosotros proponemos una interfaz amigable que sea accesible vía Web. De esta manera, los usuarios no instalan ningún componente y simplemente acceden a la página Web del sistema.
+%%La interfaz al ser accesible vía Web, requiere ser instalada en un servidor Web. Para tomar la decisión sobre qué servidor es el apropiado para la interfaz. Nosotros debemos tomar en cuenta, el lenguaje de implementación del triplestore. Si el lenguaje es PHP9, entonces, podemos emplear un servidor HTTP Apache10. En otro caso, si el lenguaje es Java11 y permite implementar Servlet, entonces el servidor es Apache Tomcat12. 

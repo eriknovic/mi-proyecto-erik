@@ -30,6 +30,19 @@ Juan~J. Gilli.
 \newblock {\em Dise\~no organizativo: estructura y procesos}.
 \newblock Granica, 2007.
 
+\bibitem{MBSPap}
+Sergey Brin and Lawrence Page.
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock In {\em Proceedings of the seventh international conference on World
+  Wide Web 7}, WWW7, pages 107--117, Amsterdam, The Netherlands, The
+  Netherlands, 1998. Elsevier Science Publishers B. V.
+
+\bibitem{SGBDDIA}
+Peter Rob and Carlos Coronel.
+\newblock {\em Sistemas de bases de datos: dise\~{n}o, implementaci\'{o}n y
+  administraci\'{o}n}.
+\newblock Thomson, 05 edition, 2004.
+
 \bibitem{SemTecRetr}
 S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
 \newblock Semantic technology: An efficient approach to monogenean information
