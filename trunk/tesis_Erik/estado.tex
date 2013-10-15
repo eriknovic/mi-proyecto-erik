@@ -1,6 +1,6 @@
 \chapter{Estado del arte}
 \label{cap:soa}
-La \textbf{\textit{integración de los recursos de información en una memoria corporativa}} ha sido poco explotada por las organizaciones o áreas de investigación. Existen algunos trabajos sobre la \textit{integración de información} que incorporan a las tecnologías semánticas para modelar su dominio o emplear el concepto de memoria corporativa. Los trabajos que se estudiaron para este \textit{estado del arte}, son aquellos que cumplen con alguno de estos criterios:
+La \textbf{\textit{integración de los recursos de información en una memoria corporativa}} ha sido poco explotada por las organizaciones o áreas de investigación. Existen algunos trabajos sobre la \textit{integración de información} que incorporan a las tecnologías semánticas para representar y enriquecer el conocimiento de un dominio dado, así como, la búsqueda de información a partir de este conocimiento. Los trabajos para este \textit{estado del arte}, son aquellos que cumplen con alguno de estos criterios:
 
 \begin{itemize}
 \item Integración de los recursos: es el proceso de búsqueda y recuperación de la información sobre los recursos de información. En la sección \ref{sec:intdk} se define formalmente este concepto.
@@ -24,19 +24,22 @@ En la sección \ref{sec:eoats}, se describen estas aplicaciones con base en su fu
 
 \section{Integración semántica de recursos de información}
 \label{sec:eoaisr}
+El principal objetivo de la integración de los recursos es buscar y recuperar información significativa que está en los recursos, para responder las necesidades informativas de las personas. Una integración semántica de recursos emplea las tecnologías semánticas con la finalidad de recuperar información más significativa en los recursos a partir de las características y relaciones de estos. El uso de una memoria corporativa para la integración semántica, se traduce en información y conocimiento de los recursos bajo un dominio particular.
+
+Algunos trabajos exploran o emplean el enfoque semántico para fines de integración del conocimiento, representación de una memoria corporativa o búsqueda de información. A continuación, se describe el estado actual del conocimiento referente a estos trabajos.
+
+La \textbf{\textit{arquitectura del modelo dual}} \cite{Archetype} es una propuesta para la representación consistente y comprensible de la información clínica de cualquier persona. La finalidad de esta arquitectura es facilitar el acceso de historial clínico de los pacientes a los profesionales de la salud. La información de estos historiales esta distribuida en varios sistemas independientes y heterogéneos.
+
+Esta arquitectura se basa en separar la representación de la información y el conocimiento. En la información se describen las estructuras de datos comunes. Mientras, el conocimiento se especifica con arquetipos que representan el conocimiento formal de conceptos clínicos.
+
+Este trabajo presenta una herramienta para desarrollar los arquetipos de datos clínicos. Esta herramienta es llamada LinkEHR-Ed. La finalidad de está es que los profesionales de la salud y expertos en tecnologías de la información sean los principales constructores del conocimiento.
+
+Nosotros elegimos este trabajo por las siguientes razones:
+1) \textit{la arquitectura representa el conocimiento de los historiales clínicos (dominio de la salud)}, 2) \textit{la arquitectura solventa la información distribuida y formatos propios de un sistema}, 3) \textit{la arquitectura modela el conocimiento a manera de un componente terminológico y un componente asertivo}, 4) \textit{los arquetipos agregan una capa semántica y proporcionar el conocimiento formal para el sector salud} y 5) \textit{una herramienta para construir arquetipos asociados al sector salud}.
+
 %%%[04:14:23 p.m.] Carolina Medina: 1.- LA descripción de cada trabajo/enfoque (resumen). Por qué lo seleccionó o incluye [ref]
 %%%[04:14:54 p.m.] Carolina Medina: 2.- culminar la sección con una tabla comparativa en la cual se pongan
 %%%[04:15:35 p.m.] Carolina Medina: Sistemas comparados/ características que tienen o deben de cumplir
-La integración de información en los recursos es el proceso que facilita la búsqueda y recuperación de información para satisfacer las necesidades informativas de las personas.
-
-La integración semántica de recursos es una integración de información que utiliza un enfoque semántico (tecnologías semánticas), para tener información con un significado bien definido (clases, relaciones e individuos), que sea enriquecida con reglas de inferencia, fácil de consultar y se apegue a entandares.
-
-Esta integración en una memoria corporativa significa que la información a recuperar debe estar asociada a un determinado dominio, por ello, los resultados deben ser significativos para las personas en el dominio.
-
-Actualmente, existen algunos trabajos 
-Existen varios trabajos para distintos dominio del conocimiento que tratan 
-
-El objetivo de realizar integrar información en los recursos, es representar el conocimiento de estos recursos 
 
 \section{Herramientas para la integración semántica de recursos}
 \label{sec:eoats}
