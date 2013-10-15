@@ -1,17 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  15 OCT 2013 01:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  15 OCT 2013 15:56
 entering extended mode
 **tesis_Erik.tex
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
-lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
-m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
-i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
-ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
-ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
@@ -348,7 +349,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 30.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux
 
 LaTeX Warning: Label `sec:eoaisr' multiply defined.
 
@@ -381,7 +382,7 @@ LaTeX Font Info:    ... okay on input line 63.
 ) ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 63.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
 File: uam.pdf Graphic file (type pdf)
  <use uam.pdf>
@@ -390,17 +391,17 @@ Package pdftex.def Info: uam.pdf used on input line 5.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
-oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
-k\resumen.tex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ARTE/Desktop/Tes
+isErikSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_E
+rik\resumen.tex
 [3
 
-] [4] [5]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
-[6]) [7
+] [4] [5]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\agradecimientos.tex [
+6]) [7
 
 ] [8
 
-] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.toc
+] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -413,22 +414,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [9])
 \tf@toc=\write4
  [10]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lot)
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lot)
 \tf@lot=\write5
  [11
 
 ] [12
 
 ]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof)
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lof)
 \tf@lof=\write6
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\acronimos.tex [13] [14
 
-]) [15]
-[16
+])
+[15] [16
 
-] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
+] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\introduccion.tex
 Cap\'{\i }tulo 1.
 [1
 
@@ -456,7 +457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [5]
+[4]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\problematica.tex [5]
 [6
 
 ]
@@ -476,11 +477,11 @@ File: CasosUso.pdf Graphic file (type pdf)
 <use CasosUso.pdf>
 Package pdftex.def Info: CasosUso.pdf used on input line 113.
 (pdftex.def)             Requested size: 306.81741pt x 188.62881pt.
- [13 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUso.pdf>]
+ [13 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/CasosUso.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [15] [16
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\semanticas.tex [15] [16
 
 ]
 Cap\'{\i }tulo 3.
@@ -522,7 +523,7 @@ File: GrafoRDF.pdf Graphic file (type pdf)
 Package pdftex.def Info: GrafoRDF.pdf used on input line 164.
 (pdftex.def)             Requested size: 377.62642pt x 254.83821pt.
 
-[21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
+[21 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/EjmpTripleta.pdf>]
 <FormaSPARQL.pdf, id=162, 402.50375pt x 221.82875pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
@@ -531,8 +532,8 @@ Package pdftex.def Info: FormaSPARQL.pdf used on input line 197.
 
 Underfull \vbox (badness 6575) has occurred while \output is active []
 
- [22 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>] [23 <C:/Users
-/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>] [24]
+ [22 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/GrafoRDF.pdf>] [23 <C:/User
+s/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormaSPARQL.pdf>] [24]
 Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
@@ -556,48 +557,48 @@ File: SparqlExmpReaz.pdf Graphic file (type pdf)
 <use SparqlExmpReaz.pdf>
 Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 327.
 (pdftex.def)             Requested size: 283.22162pt x 102.67497pt.
- [28 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf>] <Tripleta
-sInferidas.pdf, id=225, 1163.34625pt x 336.25626pt>
+ [28 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/OntoexmpReaz.pdf>] <Triplet
+asInferidas.pdf, id=225, 1163.34625pt x 336.25626pt>
 File: TripletasInferidas.pdf Graphic file (type pdf)
 
 <use TripletasInferidas.pdf>
 Package pdftex.def Info: TripletasInferidas.pdf used on input line 338.
 (pdftex.def)             Requested size: 472.04022pt x 142.26309pt.
 )
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [29 <C:/Users/Gatito/D
-esktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf> <C:/Users/Gatito/Desktop/Google
-SVN/tesis_Erik/TripletasInferidas.pdf
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\estado.tex [29 <C:/Users/ARTE/De
+sktop/TesisErikSVN/tesis_Erik/SparqlExmpReaz.pdf> <C:/Users/ARTE/Desktop/TesisE
+rikSVN/tesis_Erik/TripletasInferidas.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Tri
-pletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in 
-a single page
+pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Tr
+ipletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in
+ a single page
 >] [30
 
 ]
 Cap\'{\i }tulo 4.
 [31] [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[35]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [36]
+[35]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\sir.tex [36]
 Cap\'{\i }tulo 5.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [37
+) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\prototipo.tex [37
 
 ] [38
 
 ]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [39] [40
+) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\evaluacion.tex [39] [40
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [41] [42
+) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\conclusiones.tex [41] [42
 
 ]
 Cap\'{\i }tulo 8.
@@ -609,26 +610,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [47
 
-] [48] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [48] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [49
+) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.bbl [49
 
 ] [50
 
 ]
-[51] [52]) [53] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+[51] [52]) [53] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5712 strings out of 493944
- 77173 string characters out of 3148281
- 164308 words of memory out of 3000000
- 8815 multiletter control sequences out of 15000+200000
+ 5714 strings out of 493921
+ 77244 string characters out of 3147330
+ 164313 words of memory out of 3000000
+ 8828 multiletter control sequences out of 15000+200000
  25059 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,13n,43p,2052b,571s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,43p,2052b,566s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
@@ -648,7 +649,7 @@ per/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (69 pages, 833656 bytes).
+Output written on tesis_Erik.pdf (69 pages, 834993 bytes).
 PDF statistics:
  397 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
