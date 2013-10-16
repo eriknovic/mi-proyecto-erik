@@ -24,17 +24,17 @@
 \contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
 \contentsline {chapter}{\numberline {4}Estado del arte}{31}
 \contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{32}
-\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{33}
-\contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{37}
-\contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento en los recursos}{37}
-\contentsline {section}{\numberline {5.2}Enriquecimiento del conocimiento en el modelo}{37}
-\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en los recursos}{37}
-\contentsline {chapter}{\numberline {6}Prototipo}{39}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{41}
-\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{41}
-\contentsline {section}{\numberline {7.2}Experimentaci\'on}{41}
-\contentsline {section}{\numberline {7.3}Resultados}{41}
-\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{43}
-\contentsline {chapter}{Appendices}{47}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{49}
-\contentsline {chapter}{Bibliograf\'{\i }a}{51}
+\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{34}
+\contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{39}
+\contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento en los recursos}{39}
+\contentsline {section}{\numberline {5.2}Enriquecimiento del conocimiento en el modelo}{39}
+\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en los recursos}{39}
+\contentsline {chapter}{\numberline {6}Prototipo}{41}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{43}
+\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{43}
+\contentsline {section}{\numberline {7.2}Experimentaci\'on}{43}
+\contentsline {section}{\numberline {7.3}Resultados}{43}
+\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{45}
+\contentsline {chapter}{Appendices}{49}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{51}
+\contentsline {chapter}{Bibliograf\'{\i }a}{53}
