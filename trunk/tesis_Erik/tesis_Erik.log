@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  16 OCT 2013 03:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  17 OCT 2013 03:23
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -348,11 +348,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 30.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
-
-LaTeX Warning: Label `sec:eoaisr' multiply defined.
-
-)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
@@ -365,7 +361,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen141
@@ -393,9 +390,18 @@ Package pdftex.def Info: uam.pdf used on input line 5.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
 oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
 k\resumen.tex
+
+LaTeX Warning: Citation `Ontoinra2002' on page \es@scroman {iii} undefined on i
+nput line 4.
+
 [3
 
-] [4] [5]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
+]
+
+LaTeX Warning: Citation `BLURI98' on page \es@scroman {iv} undefined on input l
+ine 31.
+
+[4] [5]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
 [6]) [7
 
 ] [8
@@ -425,14 +431,132 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
 
-]) [15]
-[16
+]
+
+LaTeX Warning: Reference `sym:RyT' on page \es@scroman {xv} undefined on input 
+line 12.
+
+
+LaTeX Warning: Reference `sym:IE' on page \es@scroman {xv} undefined on input l
+ine 14.
+
+
+LaTeX Warning: Reference `sym:UAMI' on page \es@scroman {xv} undefined on input
+ line 16.
+
+
+LaTeX Warning: Reference `sym:MC' on page \es@scroman {xv} undefined on input l
+ine 18.
+
+
+LaTeX Warning: Reference `sym:MO' on page \es@scroman {xv} undefined on input l
+ine 20.
+
+
+LaTeX Warning: Reference `sym:TI' on page \es@scroman {xv} undefined on input l
+ine 22.
+
+
+LaTeX Warning: Reference `sym:gbdr' on page \es@scroman {xv} undefined on input
+ line 24.
+
+
+LaTeX Warning: Reference `sym:BD' on page \es@scroman {xv} undefined on input l
+ine 26.
+
+
+LaTeX Warning: Reference `sym:TS' on page \es@scroman {xv} undefined on input l
+ine 28.
+
+
+LaTeX Warning: Reference `sym:abox' on page \es@scroman {xv} undefined on input
+ line 30.
+
+
+LaTeX Warning: Reference `sym:tbox' on page \es@scroman {xv} undefined on input
+ line 32.
+
+
+LaTeX Warning: Reference `sym:rdf' on page \es@scroman {xv} undefined on input 
+line 34.
+
+
+LaTeX Warning: Reference `sym:uri' on page \es@scroman {xv} undefined on input 
+line 36.
+
+
+LaTeX Warning: Reference `sym:wwwc' on page \es@scroman {xv} undefined on input
+ line 38.
+
+
+LaTeX Warning: Reference `sym:rdfs' on page \es@scroman {xv} undefined on input
+ line 40.
+
+
+LaTeX Warning: Reference `sym:owl' on page \es@scroman {xv} undefined on input 
+line 42.
+
+
+LaTeX Warning: Reference `sym:foaf' on page \es@scroman {xv} undefined on input
+ line 44.
+
+
+LaTeX Warning: Reference `sym:xml' on page \es@scroman {xv} undefined on input 
+line 46.
+
+
+LaTeX Warning: Reference `sym:gui' on page \es@scroman {xv} undefined on input 
+line 48.
+
+
+LaTeX Warning: Reference `sym:ide' on page \es@scroman {xv} undefined on input 
+line 50.
+
+
+LaTeX Warning: Reference `sym:api' on page \es@scroman {xv} undefined on input 
+line 52.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 53.
+
+) [15] [16
 
 ] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation `TeoOrg-James' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `TeoOrg-Richard' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `TeoAdmon-Reinaldo' on page 1 undefined on input line 1
+7.
+
+
+LaTeX Warning: Citation `DisOrg-Gilli' on page 1 undefined on input line 17.
+
 [1
 
 ]
+
+LaTeX Warning: Citation `TeoAdmon-Reinaldo' on page 2 undefined on input line 1
+9.
+
+
+LaTeX Warning: Citation `MBSPap' on page 2 undefined on input line 21.
+
+
+LaTeX Warning: Citation `SGBDDIA' on page 2 undefined on input line 21.
+
+
+LaTeX Warning: Citation `SGBDDIA' on page 2 undefined on input line 23.
+
+
+LaTeX Warning: Citation `SGBDDIA' on page 2 undefined on input line 23.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
@@ -441,8 +565,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 Underfull \vbox (badness 7722) has occurred while \output is active []
 
  [2]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 
+LaTeX Warning: Citation `SemTecRetr' on page 3 undefined on input line 25.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -456,8 +582,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[4]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [5]
-[6
+[4]
+
+LaTeX Warning: Reference `cap:dop' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:ets' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:soa' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:sir' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:piu' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:exp' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `cap:concl' on page 5 undefined on input line 60.
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [5] [6
 
 ]
 Cap\'{\i }tulo 2.
@@ -465,15 +612,32 @@ Cap\'{\i }tulo 2.
 Underfull \vbox (badness 1769) has occurred while \output is active []
 
  [7]
-[8] [9]
+
+LaTeX Warning: Citation `Ontoinra2002' on page 8 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Corpmem98' on page 8 undefined on input line 26.
+
+[8]
+
+LaTeX Warning: Citation `Corpmem98' on page 9 undefined on input line 28.
+
+
+LaTeX Warning: Citation `TeoAdmon-Reinaldo' on page 9 undefined on input line 5
+6.
+
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-[10] [11] [12] <CasosUso.pdf, id=113, 367.3725pt x 225.84375pt>
-File: CasosUso.pdf Graphic file (type pdf)
+[10] [11] [12]
 
-<use CasosUso.pdf>
+LaTeX Warning: Reference `fig:cdu' on page 13 undefined on input line 109.
+
+<CasosUso.pdf, id=114, 367.3725pt x 225.84375pt>
+File: CasosUso.pdf Graphic file (type pdf)
+ <use CasosUso.pdf>
 Package pdftex.def Info: CasosUso.pdf used on input line 113.
 (pdftex.def)             Requested size: 306.81741pt x 188.62881pt.
  [13 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUso.pdf>]
@@ -485,23 +649,71 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Cap\'{\i }tulo 3.
 
+LaTeX Warning: Citation `SemLyons' on page 17 undefined on input line 6.
+
+
+LaTeX Warning: Citation `SemTecRetr' on page 17 undefined on input line 8.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
 [][]\T1/cmr/m/n/10 L. Fei-gen-baum, ``Se-man-tic Web vs. Se-man-tic Tech-no-lo-
 gies,'' Dis-po-ni-ble en: $\T1/cmtt/m/n/10 http : / / www .$
  []
 
+
+LaTeX Warning: Citation `OntoTecRrpKnw' on page 17 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Gruber' on page 17 undefined on input line 16.
+
+
+LaTeX Warning: Citation `OntoTecRrpKnw' on page 17 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Staab' on page 17 undefined on input line 16.
+
 [17]
+
+LaTeX Warning: Citation `Gruber' on page 18 undefined on input line 27.
+
+
+LaTeX Warning: Citation `Markus2012DLprimer' on page 18 undefined on input line
+ 29.
+
+
+LaTeX Warning: Citation `protegeManual' on page 18 undefined on input line 29.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
- [18]
+
+
+LaTeX Warning: Citation `Magdalena' on page 18 undefined on input line 40.
+
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 57--57
 [][]\T1/cmr/m/n/10 W3C,``RDF 1.1 Con-cepts and Abs-tract Syn-tax,'' Dis-po-ni-b
 le en: $\T1/cmtt/m/n/10 http : / / www . w3 . org / TR /$
  []
+
+
+LaTeX Warning: Citation `SurvSemWeb2012' on page 19 undefined on input line 57.
+
+
+
+LaTeX Warning: Citation `SwarmComp' on page 19 undefined on input line 59.
+
+
+LaTeX Warning: Citation `rfc3986' on page 19 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tab:rec' on page 19 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tab:prop' on page 19 undefined on input line 88.
 
 [19]
 Overfull \hbox (5.69904pt too wide) in paragraph at lines 97--97
@@ -510,29 +722,92 @@ Overfull \hbox (5.69904pt too wide) in paragraph at lines 97--97
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/it' tried instead on input line 111.
-<EjmpTripleta.pdf, id=142, 587.19376pt x 208.78pt>
+
+LaTeX Warning: Reference `tab:rec' on page 20 undefined on input line 111.
+
+
+LaTeX Warning: Reference `tab:prop' on page 20 undefined on input line 111.
+
+
+LaTeX Warning: Citation `SurvSemWeb2012' on page 20 undefined on input line 120
+.
+
+
+LaTeX Warning: Citation `SemWebTim' on page 20 undefined on input line 120.
+
+
+LaTeX Warning: Reference `fig:triple' on page 20 undefined on input line 128.
+
+<EjmpTripleta.pdf, id=143, 587.19376pt x 208.78pt>
 File: EjmpTripleta.pdf Graphic file (type pdf)
  <use EjmpTripleta.pdf>
 Package pdftex.def Info: EjmpTripleta.pdf used on input line 132.
 (pdftex.def)             Requested size: 283.22162pt x 100.70065pt.
 
-[20] <GrafoRDF.pdf, id=147, 861.2175pt x 581.17125pt>
+
+LaTeX Warning: Reference `tab:asign' on page 20 undefined on input line 137.
+
+[20]
+
+LaTeX Warning: Citation `SwarmComp' on page 21 undefined on input line 158.
+
+
+LaTeX Warning: Reference `fig:ejmrep' on page 21 undefined on input line 160.
+
+
+LaTeX Warning: Reference `fig:triple' on page 21 undefined on input line 160.
+
+<GrafoRDF.pdf, id=148, 861.2175pt x 581.17125pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
  <use GrafoRDF.pdf>
 Package pdftex.def Info: GrafoRDF.pdf used on input line 164.
 (pdftex.def)             Requested size: 377.62642pt x 254.83821pt.
 
+
+LaTeX Warning: Reference `fig:triple' on page 21 undefined on input line 169.
+
+
+LaTeX Warning: Citation `Markus2012DLprimer' on page 21 undefined on input line
+ 171.
+
 [21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
-<FormaSPARQL.pdf, id=162, 402.50375pt x 221.82875pt>
+
+LaTeX Warning: Citation `SPARQL' on page 22 undefined on input line 191.
+
+
+LaTeX Warning: Reference `fig:sparql' on page 22 undefined on input line 193.
+
+<FormaSPARQL.pdf, id=163, 402.50375pt x 221.82875pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
 Package pdftex.def Info: FormaSPARQL.pdf used on input line 197.
 (pdftex.def)             Requested size: 283.22162pt x 156.08801pt.
 
+
+LaTeX Warning: Citation `Gruber' on page 22 undefined on input line 208.
+
+
+LaTeX Warning: Citation `Magdalena' on page 22 undefined on input line 208.
+
+
 Underfull \vbox (badness 6575) has occurred while \output is active []
 
- [22 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>] [23 <C:/Users
-/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>] [24]
+ [22 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>]
+
+LaTeX Warning: Citation `YunLin' on page 23 undefined on input line 212.
+
+
+LaTeX Warning: Citation `protegeManual' on page 23 undefined on input line 212.
+
+
+[23 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>] [24]
+
+LaTeX Warning: Citation `YunLin' on page 25 undefined on input line 240.
+
+
+LaTeX Warning: Citation `Mishra2011' on page 25 undefined on input line 240.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
@@ -544,29 +819,51 @@ Overfull \hbox (7.94305pt too wide) in paragraph at lines 284--285
 cmr/m/it/12 )\T1/cmr/m/n/12 ,
  []
 
-[27] <OntoexmpReaz.pdf, id=203, 1158.3275pt x 223.83624pt>
-File: OntoexmpReaz.pdf Graphic file (type pdf)
+[27]
 
-<use OntoexmpReaz.pdf>
+LaTeX Warning: Reference `fig:otxp' on page 28 undefined on input line 314.
+
+<OntoexmpReaz.pdf, id=204, 1158.3275pt x 223.83624pt>
+File: OntoexmpReaz.pdf Graphic file (type pdf)
+ <use OntoexmpReaz.pdf>
 Package pdftex.def Info: OntoexmpReaz.pdf used on input line 318.
 (pdftex.def)             Requested size: 472.0187pt x 105.27818pt.
- <SparqlExmpReaz.pdf, id=204, 401.5pt x 145.54375pt>
-File: SparqlExmpReaz.pdf Graphic file (type pdf)
 
-<use SparqlExmpReaz.pdf>
+
+LaTeX Warning: Reference `fig:csr' on page 28 undefined on input line 323.
+
+<SparqlExmpReaz.pdf, id=205, 401.5pt x 145.54375pt>
+File: SparqlExmpReaz.pdf Graphic file (type pdf)
+ <use SparqlExmpReaz.pdf>
 Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 327.
 (pdftex.def)             Requested size: 283.22162pt x 102.67497pt.
- [28 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf>] <Tripleta
-sInferidas.pdf, id=225, 1163.34625pt x 336.25626pt>
+
+
+LaTeX Warning: Reference `fig:otxp' on page 28 undefined on input line 332.
+
+[28 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf>]
+
+LaTeX Warning: Reference `fig:otxp' on page 29 undefined on input line 334.
+
+
+LaTeX Warning: Reference `fig:trinf' on page 29 undefined on input line 334.
+
+<TripletasInferidas.pdf, id=226, 1163.34625pt x 336.25626pt>
 File: TripletasInferidas.pdf Graphic file (type pdf)
 
 <use TripletasInferidas.pdf>
 Package pdftex.def Info: TripletasInferidas.pdf used on input line 338.
 (pdftex.def)             Requested size: 472.04022pt x 142.26309pt.
-)
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [29 <C:/Users/Gatito/D
-esktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf> <C:/Users/Gatito/Desktop/Google
-SVN/tesis_Erik/TripletasInferidas.pdf
+
+
+LaTeX Warning: Reference `fig:csr' on page 29 undefined on input line 343.
+
+
+LaTeX Warning: Reference `fig:trinf' on page 29 undefined on input line 343.
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [29 <C:/Users/Gatito
+/Desktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf> <C:/Users/Gatito/Desktop/Goog
+leSVN/tesis_Erik/TripletasInferidas.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Tri
 pletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in 
@@ -575,17 +872,109 @@ a single page
 
 ]
 Cap\'{\i }tulo 4.
-[31] [32] [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+LaTeX Warning: Reference `sec:intdk' on page 31 undefined on input line 6.
+
+
+LaTeX Warning: Reference `sec:mecor' on page 31 undefined on input line 7.
+
+
+LaTeX Warning: Reference `sec:rdf' on page 31 undefined on input line 8.
+
+
+LaTeX Warning: Reference `sec:reginf' on page 31 undefined on input line 8.
+
+
+LaTeX Warning: Reference `sec:reginf' on page 31 undefined on input line 9.
+
+
+LaTeX Warning: Reference `cap:piu' on page 31 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:eoats' on page 31 undefined on input line 23.
+
+[31]
+
+LaTeX Warning: Citation `Archetype' on page 32 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Accommodation' on page 32 undefined on input line 40.
+
+[32]
+
+LaTeX Warning: Citation `JunZhai' on page 33 undefined on input line 46.
+
+
+LaTeX Warning: Citation `WangXin' on page 33 undefined on input line 52.
+
+
+LaTeX Warning: Citation `Behja' on page 33 undefined on input line 58.
+
+[33]
+
+LaTeX Warning: Reference `tab:soasi' on page 34 undefined on input line 63.
+
+
+LaTeX Warning: Citation `Uren:2006' on page 34 undefined on input line 75.
+
+
+LaTeX Warning: Citation `OntoBasDoc' on page 34 undefined on input line 81.
+
+
+LaTeX Warning: Citation `Uren:2006' on page 34 undefined on input line 82.
+
+
+LaTeX Warning: Citation `Cunningham2011a' on page 34 undefined on input line 83
+.
+
+[34]
+
+LaTeX Warning: Citation `Uren:2006' on page 35 undefined on input line 84.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
+
+
+LaTeX Warning: Citation `Tode' on page 35 undefined on input line 91.
+
+
+LaTeX Warning: Citation `protege' on page 35 undefined on input line 94.
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+LaTeX Warning: Citation `pow' on page 36 undefined on input line 95.
+
+
+LaTeX Warning: Citation `OntologyManagement' on page 36 undefined on input line
+ 96.
+
+
+LaTeX Warning: Citation `swoop' on page 36 undefined on input line 97.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-[36]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [37] [38
+
+LaTeX Warning: Citation `dbpedia_2012' on page 36 undefined on input line 105.
+
+[36]
+
+LaTeX Warning: Citation `McBride' on page 37 undefined on input line 110.
+
+
+LaTeX Warning: Citation `stardog' on page 37 undefined on input line 111.
+
+
+LaTeX Warning: Citation `Fstore' on page 37 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Sesame' on page 37 undefined on input line 113.
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [37] [38
 
 ]
 Cap\'{\i }tulo 5.
@@ -616,42 +1005,49 @@ Ap\'{e}ndice A.
 ] [52
 
 ]
-[53] [54] [55]) [56]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+[53] [54] [55])
 
-LaTeX Warning: There were multiply-defined labels.
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+[56] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5722 strings out of 493944
- 77271 string characters out of 3148281
- 164335 words of memory out of 3000000
- 8825 multiletter control sequences out of 15000+200000
+ 5723 strings out of 493944
+ 77282 string characters out of 3148281
+ 163514 words of memory out of 3000000
+ 8826 multiletter control sequences out of 15000+200000
  25059 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,13n,43p,2052b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfc
-c1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfit1200.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
-per/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
-095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (72 pages, 840732 bytes).
+ 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfb
+x2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfit1200.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
+per/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1
+440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on tesis_Erik.pdf (72 pages, 856455 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
+ 410 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
