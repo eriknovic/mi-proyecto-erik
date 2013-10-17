@@ -1,15 +1,38 @@
-\documentclass[10pt,letterpaper]{report}
+\documentclass[letterpaper]{report}
 \usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[left=1.7cm, right=1.7cm, top=1.9cm, bottom = 2.54cm]{geometry}
+
 \begin{document}
-Un descriptor semántico de recursos es una herramienta que permite a un usuario escribir información sobre una característica de un recurso o para relacionar a éste con otro recurso.
+%%definir qué se entiende por herramienta para las descripciones semánticas.
+\chapter*{Descriptores de Recursos}
+En el estado del arte de mi tesis, se describe el estudio de las herramientas que facilitan la construcción y mantenimiento de ontologías. El tipo de herramienta que centra nuestra atención, es el descriptor semántico de los recursos. El objetivo principal de un descriptor es proporcionar a las personas una interfaz de usuario para describir las características y relaciones de los recursos. Esta herramienta posteriormente transforma las descripciones a tripletas RDF.
 
-Las características de esta herramienta son:
+A continuación, se presentan varias características básicas que debe tener un descriptor, las cuales se obtuvieron con base en el uso de varías de estas herramientas y la revisión documental.
+%%Cuales son las caracteristicas que debe cumplir esta herramienta
+\begin{itemize}
+\item Formato estándar: la herramienta debe interpretar y almacenar la información de las tripletas en alguna de las sintaxis estándares como: RDF/XML, Turtle o N3. También, permitir el uso de vocabularios estándares para escribir las tripletas como RDF(s) y OWL.
+\item Diseño centrado al usuario: la herramienta  debe proporcionar interfaces fáciles de usar para simplificar a las personas la generaciones de declaraciones en los recursos.
+\item Apoyo en el formato de los recursos: la herramienta debe soportar la descripción de cualquier tipo de recurso en cualquier formato.
+\item Almacenamiento de las anotaciones: la herramienta no debe incrustar las tripletas en los recursos (documentos), sino guardar las descripciones en otro(s) archivos.
+\item Colaboración entre usuarios: la herramienta debe permitir el trabajo colaborativo entre usuarios para que estos auxilien a los demás en la generación de descripciones de sus recursos.
+\item Licencia libre: la herramienta debe proporcionar funcionalidad gratuitas para que cualquier usuario pueda utilizarla, porque una herramienta de pago se traduce en comprar varias licencias o un conjunto pequeño de éstas.
+\item Independencia de la plataforma: la herramienta debe ser ejecutada en cualquier sistema operativo, con la finalidad que cualquier usuarios de Linux, Windows o Mac pueda describir sus recursos. En este aspecto, lo ideal es que esta herramienta sea una aplicación Web.
+\item Apoyo invisible de los usuarios: uno de los principales objetivos de este tipo de herramientas es proveer una manera fácil, sencilla y agradable manera de describir los recursos, con la finalidad que los usuarios sean los principales constructores del grafo del conocimiento explícito. Además, esta información será verdadera, ya que los usuarios son los expertos en el conocimiento sobre los recursos.
+\end{itemize}
 
-Facilidad de uso.
-Acceso vía web.
+Actualmente, ninguna de las herramientas que estudiamos cumple con todos estos requisitos. Las cuatro razones principales son estas: 1) las herramientas son difíciles de instalar por un usuario común, 2) las herramientas poseen poca documentación, 3) las herramientas emplean vocabularios propios con un significado genérico y  4) la herramienta no permiten utilizar vocabularios específicos.
 
+Nosotros proponemos la combinación de formularios y scripts para realizar la descripción de los recursos y la transformación a triplestas. Esta solución se apega a las características básicas de un descriptor.
+
+El funcionamiento de esta propuesta es el siguiente. Por un lado, los formularios son el medio para que los usuarios escriban las características y relaciones de los recursos. La información recuperada por los formularios, es almacenada en tablas que posteriormente se descargan en documentos csv (valores separados por comas). Por otro lado, los scripts son programas en algún lenguaje de programación y cuya finalidad es transformar la información de los archivos csv. Estos scripts representan cada dato del archivo csv en forma de tripleta. En particular, este mapeo se basa en la posición de un dato (columna) para asignar la correspondiente propiedad, y de esta manera, construir la tripleta.
+
+Esta propuesta agiliza la manera de representar el conocimiento explícito de los recursos en tripletas y permite la participación activa de los usuarios, ya que los formularios se acceden vía Web.
+%%Existen algunas herramientas que hagan esto
+
+%%Que hicimos para superar esta limitante
 
 \end{document}
