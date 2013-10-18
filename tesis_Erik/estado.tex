@@ -7,7 +7,7 @@ La \textbf{\textit{integración de los recursos de información en una memoria cor
 \item Memoria corporativa: es la representación del conocimiento en una organización. En la sección \ref{sec:mecor} se define formalmente este concepto.
 \item Modelo semántico: es la representación del conocimiento a partir de las tecnologías semánticas. En la sección \ref{sec:rdf} y \ref{sec:reginf} se describe este concepto.
 \item Inferencia en el modelo: es el proceso de deducir información a partir del modelo semántico. En la sección \ref{sec:reginf} se define formalmente este concepto.
-\item Interfaz de usuario: es la construcción de un aplicación visual para que los usuarios pregunten o naveguen a partir  del modelo semántico. En la sección \ref{cap:piu} se describen las funciones que debe tener un prototipo para la integración de los recursos.
+\item Interfaz de integración: es la construcción de un aplicación visual para que los usuarios pregunten o naveguen a partir  del modelo semántico. En la sección \ref{cap:piu} se describen las funciones que debe tener un prototipo para la integración de los recursos.
 \end{itemize}
 
 La sección \label{sec:eoaisr} describe los trabajos que se estudiaron para la integración de los recursos. Al final de esta sección, se presenta una tabla comparativa de estos trabajos y los criterios que éstos cumplen.
@@ -32,7 +32,6 @@ Algunos trabajos exploran o emplean el enfoque semántico para fines de integraci
 \item La \textbf{\textit{arquitectura del modelo dual}} \cite{Archetype} es una propuesta para la representación consistente y comprensible de la información clínica de cualquier persona. La finalidad de esta arquitectura es facilitar el acceso de historial clínico de los pacientes a los profesionales de la salud. La información de estos historiales esta distribuida en varios sistemas independientes y heterogéneos. Esta arquitectura se basa en un modelo que por un lado representa la información y por el otro el conocimiento. En la representación de la información se describen las estructuras de datos comunes. Mientras, en la representación del conocimiento se emplean arquetipos para representar el conocimiento formal de conceptos clínicos. Este trabajo presenta una herramienta para desarrollar los arquetipos de datos clínicos. Esta herramienta es llamada LinkEHR-Ed. La finalidad de está es que los profesionales de la salud y expertos en tecnologías de la información sean los principales constructores del conocimiento.
 \end{itemize}
 
-
 Nosotros \textbf{\textit{elegimos este trabajo}} por las siguientes razones:
 1) \textit{la arquitectura representa el conocimiento de los historiales clínicos (dominio de la salud)}, 2) \textit{la arquitectura solventa la información distribuida y formatos propios de un sistema}, 3) \textit{la arquitectura modela el conocimiento a manera de un componente terminológico y un componente asertivo}, 4) \textit{los arquetipos agregan una capa semántica y proporcionar el conocimiento formal para el sector salud} y 5) \textit{una herramienta para construir arquetipos asociados al sector salud}.
 
@@ -43,7 +42,7 @@ Nosotros \textbf{\textit{elegimos este trabajo}} por las siguientes razones:
 Este trabajo \textbf{\textit{se eligió}} por estas razones: 1) \textit{proporciona un marco de trabajo para la integración de la información}, 2) \textit{emplea una ontología para modelar la información del dominio de alojamiento en-línea} y 3) \textit{emplear la ontología como instrumento para resolver la heterogeneidad en la estructura de la información y el acceso a la información integrada}.
 
 \begin{itemize}
-\item Jun Zhai et al. \cite{JunZhai} proponen una \textbf{\textit{integración semántica}} con base en ontologías para \textbf{\textit{sistemas de información de energía eléctrica}}, donde, estos sistemas son heterogéneos con funciones y organizaciones descentralizadas. Esta integración, por un lado, \textit{emplea al \textbf{lenguaje de marcado extensible} (XML\label{sym:xml} para el intercambio de información entre estos sistemas}. Por otro lado, esta integración \textit{utiliza una \textbf{ontología} para describir formalmente la información a nivel conceptual en el dominio de la electricidad}. Este trabajo propone una arquitectura de tres capas para esta integración semántica: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
+\item Jun Zhai et al. \cite{JunZhai} proponen una \textbf{\textit{integración semántica}} con base en ontologías para \textbf{\textit{sistemas de información de energía eléctrica (SIE\label{sym:sie})}}, donde, estos sistemas son heterogéneos con funciones y organizaciones descentralizadas. Esta integración, por un lado, \textit{emplea al \textbf{lenguaje de marcado extensible} (XML\label{sym:xml} para el intercambio de información entre estos sistemas}. Por otro lado, esta integración \textit{utiliza una \textbf{ontología} para describir formalmente la información a nivel conceptual en el dominio de la electricidad}. Este trabajo propone una arquitectura de tres capas para esta integración semántica: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
 \end{itemize}
 
 Este trabajo de Jun Zhai es interesante, en primera, \textit{porque emplea una ontología como especificación para integrar la información a nivel semántico}, y en segunda, \textit{el uso de XML para el intercambio de información y solucionar la heterogeneidad de datos en los sistemas de energía eléctrica}.
@@ -55,12 +54,35 @@ Este trabajo de Jun Zhai es interesante, en primera, \textit{porque emplea una o
 Este trabajo es importante por estas razones: 1) \textit{utilizar una memoria corporativa para el conocimiento del design rational}, 2) \textit{emplear ontologías para capturar la información del design rational} y 3) \textit{acceder de manera uniforma a los recursos de información mediante las ontologías}.
 
 \begin{itemize}
-\item PCOGEME \cite{Behja} es un entorno de colaboración para la creación, gestión, difusión, mantenimiento de memorias corporativas. En este trabajo, las memorias corporativas son mecanismos para la gestión del conocimiento y documentos. PCOGEME propone un modelo de interacción basado en las ontologías para la representación y gestión de estas memorias. El funcionamiento de PCOGEME se basa en la lluvia de ideas y un mecanismo de toma de decisiones consensuadas, para la construcción de memorias corporativas mediante el uso de ontologías.
+\item \textbf{\textit{PCOGEME}} \cite{Behja} es un \textbf{\textit{entorno de colaboración}} para la \textit{creación, gestión, difusión, mantenimiento de memorias corporativas}. En este trabajo, las memorias corporativas son mecanismos para la gestión del conocimiento y documentos. PCOGEME propone un modelo de interacción basado en las ontologías para la representación y gestión de estas memorias. El funcionamiento de PCOGEME se basa en la lluvia de ideas y un mecanismo de toma de decisiones consensuadas, para la construcción de memorias corporativas mediante el uso de ontologías.
 \end{itemize}
 
 Nosotros elegimos este trabajo, porque emplea los siguientes elementos: 1) \textit{memoria corporativa como instrumentos de gestión del conocimiento}, 2) \textit{representación del conocimiento mediante el uso de ontologías} y 3) \textit{el uso de un entorno de gestión del conocimiento}.
 
-La Tabla \ref{tab:soasi} muestra para cada trabajo la información particular que se asocia a alguno de nuestros criterios: objetivo, integración de la información en los recursos, memoria corporativa, modelo semántico, inferencia, interfaz de usuario. Una celda con el símbolo ``\textit{-}'' se traduce en la carencia de esta característica.
+La Tabla \ref{tab:soasi} muestra la información de cada trabajo que esta asociada a nuestros criterios de investigación: integración de la información, memoria corporativa, modelo semántico, inferencia, interfaz de integración.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\caption{Comparativa entre los trabajos estudiados y nuestros criterios para la integración semántica de recursos.}
+\label{tab:soasi}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{1.0in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.95in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.95in}}
+\hline
+\textbf{Trabajo} & \textbf{Integración de información} & \textbf{Memoria Corporativa} & \textbf{Modelo Semántico} & \textbf{Inferencia en el modelo} & \textbf{Interfaz de integración}\\
+\hline
+\hline
+Arquitectura del modelo dual & Datos clínicos de los pacientes & -\footnote{El símbolo \textit{-} significa que el trabajo no cuenta con esa caracter\'{i}stica.} & Modelo de referencia y arquetipos & - & - \\
+\hline
+Marco de integración semántica & Información referente al alojamiento en-línea & - & Información XML y ontología global & - & Prototipo \\
+\hline
+Arquitectura para la integración en SIE\footnote{Sistemas de Información de energía Eléctrica} & Información XML de los sistemas de información de electricidad & - & tripletas RDF y axiomas RDF(S) & Consistencia & - \\
+\hline
+Metodología para capturar información del design rationale & Acceso uniforme de objetos y actividades del design rationale & Design rationale & Ontología & - & - \\
+\hline
+Construcción de MC en forma colaborativa & - & SSII\footnote{Sociedad de servicios en ingeniería informática} & Ontología & - & -\\
+\hline 
+\end{tabular}
+\end{table}
 
 
 
