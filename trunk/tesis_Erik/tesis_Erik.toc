@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
 \contentsline {chapter}{\numberline {4}Estado del arte}{31}
 \contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{32}
-\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{34}
+\contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{35}
 \contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{39}
 \contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento en los recursos}{39}
 \contentsline {section}{\numberline {5.2}Enriquecimiento del conocimiento en el modelo}{39}
