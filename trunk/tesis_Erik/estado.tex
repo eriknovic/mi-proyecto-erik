@@ -1,14 +1,29 @@
 \chapter{Estado del arte}
 \label{cap:soa}
-La \textbf{\textit{integración de los recursos de información en una memoria corporativa}} ha sido poco explotada por las organizaciones o áreas de investigación. Existen algunos trabajos sobre la \textit{integración de información} que incorporan a las tecnologías semánticas para representar y enriquecer el conocimiento de un dominio dado, así como, la búsqueda de información a partir de este conocimiento. Los trabajos para este \textit{estado del arte}, son aquellos que cumplen con alguno de estos criterios:
+La \textbf{\textit{integración de los recursos de información en una memoria corporativa}} ha sido poco explotada por las organizaciones o áreas de investigación. Existen algunos trabajos sobre la \textit{integración de información} que incorporan a las tecnologías semánticas para representar y enriquecer el conocimiento de un dominio dado, así como, la búsqueda de información a partir de este conocimiento. Los trabajos para este \textit{estado del arte}, son aquellos que cumplen con alguno de los criterios de la Tabla \ref{tab:crit}.
 
-\begin{itemize}
-\item Integración de información en los recursos: es el proceso de búsqueda y recuperación de la información sobre los recursos de información. En la sección \ref{sec:intdk} se define formalmente este concepto.
-\item Memoria corporativa: es la representación del conocimiento en una organización. En la sección \ref{sec:mecor} se define formalmente este concepto.
-\item Modelo semántico: es la representación del conocimiento a partir de las tecnologías semánticas. En la sección \ref{sec:rdf} y \ref{sec:reginf} se describe este concepto.
-\item Inferencia en el modelo: es el proceso de deducir información a partir del modelo semántico. En la sección \ref{sec:reginf} se define formalmente este concepto.
-\item Interfaz de integración: es la construcción de un aplicación visual para que los usuarios pregunten o naveguen a partir  del modelo semántico. En la sección \ref{cap:piu} se describen las funciones que debe tener un prototipo para la integración de los recursos.
-\end{itemize}
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\caption{Criterios que deben considerarse para el estado del arte en la integración semántica de recursos.}
+\label{tab:crit}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{3.7in} >{\centering\arraybackslash}m{1.0in}}
+\hline
+\textbf{Criterio} & \textbf{Descripción} & \textbf{Definición formal}\\
+\hline
+\hline
+Integración de información en los recursos & Ésta consiste en el proceso de búsqueda y recuperación de la información sobre los recursos de información. & Sección \ref{sec:intdk} \\
+\hline
+Memoria corporativa & Ésta es la representación consistente y formal del conocimiento en una organización. & Sección \ref{sec:mecor} \\
+\hline
+Modelo semántico & Éste es la representación del conocimiento a partir de las tecnologías semánticas. & Secciones \ref{sec:rdf} y \ref{sec:reginf} \\
+\hline
+Inferencia en el modelo & Ésta consiste en deducir información a partir de los axiomas en el modelo. & Sección \ref{sec:reginf} \\
+\hline
+Interfaz visual para la integración & Ésta es un aplicación con una enfoque visual para que las personas pregunten o naveguen a través de la información en el modelo semántico. & Sección \ref{cap:piu} \\
+\hline 
+\end{tabular}
+\end{table}
 
 La sección \label{sec:eoaisr} describe los trabajos que se estudiaron para la integración de los recursos. Al final de esta sección, se presenta una tabla comparativa de estos trabajos y los criterios que éstos cumplen.
 
@@ -42,51 +57,57 @@ Nosotros \textbf{\textit{elegimos este trabajo}} por las siguientes razones:
 Este trabajo \textbf{\textit{se eligió}} por estas razones: 1) \textit{proporciona un marco de trabajo para la integración de la información}, 2) \textit{emplea una ontología para modelar la información del dominio de alojamiento en-línea} y 3) \textit{emplear la ontología como instrumento para resolver la heterogeneidad en la estructura de la información y el acceso a la información integrada}.
 
 \begin{itemize}
-\item Jun Zhai et al. \cite{JunZhai} proponen una \textbf{\textit{integración semántica}} con base en ontologías para \textbf{\textit{sistemas de información de energía eléctrica (SIE\label{sym:sie})}}, donde, estos sistemas son heterogéneos con funciones y organizaciones descentralizadas. Esta integración, por un lado, \textit{emplea al \textbf{lenguaje de marcado extensible} (XML\label{sym:xml} para el intercambio de información entre estos sistemas}. Por otro lado, esta integración \textit{utiliza una \textbf{ontología} para describir formalmente la información a nivel conceptual en el dominio de la electricidad}. Este trabajo propone una arquitectura de tres capas para esta integración semántica: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
+\item Jun Zhai et al. \cite{JunZhai} proponen una \textit{\textbf{integración semántica} con base en ontologías para \textbf{sistemas de información de energía eléctrica}}, donde, estos sistemas son heterogéneos con funciones y organizaciones descentralizadas. Esta integración, por un lado, \textit{emplea al \textbf{lenguaje de marcado extensible} (XML\label{sym:xml} para el intercambio de información entre estos sistemas}. Por otro lado, esta integración \textit{utiliza una \textbf{ontología} para describir formalmente la información a nivel conceptual en el dominio de la electricidad}. Este trabajo propone una arquitectura de tres capas para esta integración semántica: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
 \end{itemize}
 
-Este trabajo de Jun Zhai es interesante, en primera, \textit{porque emplea una ontología como especificación para integrar la información a nivel semántico}, y en segunda, \textit{el uso de XML para el intercambio de información y solucionar la heterogeneidad de datos en los sistemas de energía eléctrica}.
+Este trabajo de Jun Zhai \textbf{\textit{es interesante}}, en primera, \textit{porque emplea una ontología como especificación para integrar la información a nivel semántico}, y en segunda, \textit{el uso de XML para el intercambio de información y solucionar la heterogeneidad de datos en los sistemas de energía eléctrica}.
 
 \begin{itemize}
-\item Xin y Guangleng \cite{WangXin} emplean un \textbf{\textit{enfoque basado en las ontologías}} para capturar la información del \textbf{\textit{design rationale}}. Este design rationale es un conocimiento para explicar qué y cómo se diseña un producto, así como para apoyar la reutilización, comunicación y verificación de diseños en empresas manufactureras. En este trabajo, se emplea una memoria corporativa para las actividades de gestión del conocimiento, en particular, las actividades de captura y disponibilidad en el design rationale. Las ontologías permiten el acceso uniforma a las fuentes de información, y en este trabajo, éstas modelan el design rational para el backgraund del diseño de autos de carga.
+\item Xin y Guangleng \cite{WangXin} emplean un \textit{enfoque basado en las \textbf{ontologías} para capturar la \textbf{información del design rationale}}. Este design rationale es un conocimiento para explicar qué y cómo se diseña un producto, así como para apoyar la reutilización, comunicación y verificación de diseños en empresas manufactureras. En este trabajo, se emplea una memoria corporativa para las actividades de gestión del conocimiento, en particular, las actividades de captura y disponibilidad en el design rationale. Las ontologías permiten el acceso uniforma a las fuentes de información, y en este trabajo, éstas modelan el design rational para el backgraund del diseño de autos de carga.
 \end{itemize}
 
-Este trabajo es importante por estas razones: 1) \textit{utilizar una memoria corporativa para el conocimiento del design rational}, 2) \textit{emplear ontologías para capturar la información del design rational} y 3) \textit{acceder de manera uniforma a los recursos de información mediante las ontologías}.
+Este trabajo \textbf{\textit{es importante}} por estas razones: 1) \textit{utilizar una memoria corporativa para el conocimiento del design rational}, 2) \textit{emplear ontologías para capturar la información del design rational} y 3) \textit{acceder de manera uniforma a los recursos de información mediante las ontologías}.
 
 \begin{itemize}
 \item \textbf{\textit{PCOGEME}} \cite{Behja} es un \textbf{\textit{entorno de colaboración}} para la \textit{creación, gestión, difusión, mantenimiento de memorias corporativas}. En este trabajo, las memorias corporativas son mecanismos para la gestión del conocimiento y documentos. PCOGEME propone un modelo de interacción basado en las ontologías para la representación y gestión de estas memorias. El funcionamiento de PCOGEME se basa en la lluvia de ideas y un mecanismo de toma de decisiones consensuadas, para la construcción de memorias corporativas mediante el uso de ontologías.
 \end{itemize}
 
-Nosotros elegimos este trabajo, porque emplea los siguientes elementos: 1) \textit{memoria corporativa como instrumentos de gestión del conocimiento}, 2) \textit{representación del conocimiento mediante el uso de ontologías} y 3) \textit{el uso de un entorno de gestión del conocimiento}.
+Nosotros \textbf{\textit{elegimos}} este trabajo, porque emplea los siguientes elementos: 1) \textit{memoria corporativa como instrumentos de gestión del conocimiento}, 2) \textit{representación del conocimiento mediante el uso de ontologías} y 3) \textit{el uso de un entorno de gestión del conocimiento}.
 
-La Tabla \ref{tab:soasi} muestra la información de cada trabajo que esta asociada a nuestros criterios de investigación: integración de la información, memoria corporativa, modelo semántico, inferencia, interfaz de integración.
+La Tabla \ref{tab:soasi} es un sumario de los valores asociados a nuestros criterios investigación, para cada trabajo estudiado. Estos criterios de investigación están en la Tabla \ref{tab:crit}.
+Las cabeceras de la Tabla \ref{tab:soasi} están en forma abreviada y estos son sus significados: IIR = integración de información en los recursos, MC = memoria corporativa, MS = modelo semántico, IeM = inferencia en el modelo y IVpI = interfaz visual para la integración.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
-\caption{Comparativa entre los trabajos estudiados y nuestros criterios para la integración semántica de recursos.}
-\label{tab:soasi}
-\centering
-\begin{tabular}{>{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{1.0in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.95in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.95in}}
-\hline
-\textbf{Trabajo} & \textbf{Integración de información} & \textbf{Memoria Corporativa} & \textbf{Modelo Semántico} & \textbf{Inferencia en el modelo} & \textbf{Interfaz de integración}\\
-\hline
-\hline
-Arquitectura del modelo dual & Datos clínicos de los pacientes & -\footnote{El símbolo \textit{-} significa que el trabajo no cuenta con esa caracter\'{i}stica.} & Modelo de referencia y arquetipos & - & - \\
-\hline
-Marco de integración semántica & Información referente al alojamiento en-línea & - & Información XML y ontología global & - & Prototipo \\
-\hline
-Arquitectura para la integración en SIE\footnote{Sistemas de Información de energía Eléctrica} & Información XML de los sistemas de información de electricidad & - & tripletas RDF y axiomas RDF(S) & Consistencia & - \\
-\hline
-Metodología para capturar información del design rationale & Acceso uniforme de objetos y actividades del design rationale & Design rationale & Ontología & - & - \\
-\hline
-Construcción de MC en forma colaborativa & - & SSII\footnote{Sociedad de servicios en ingeniería informática} & Ontología & - & -\\
-\hline 
-\end{tabular}
+  \centering
+  \caption{Comparativa entre los trabajos estudiados y nuestros criterios para la integración semántica de recursos.}
+  \label{tab:soasi}
+  \smallskip 
+  \begin{threeparttable}
+      \begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{0.6in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.95in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.8in}}
+		\hline
+		\textbf{Trabajo} & \textbf{IIR} & \textbf{MC} & \textbf{MS} & \textbf{IeM} & \textbf{IVpI}\\
+		\hline
+		\hline
+		Arquitectura del modelo dual & Si & No & Modelo de referencia y arquetipos & No & No \\
+		\hline
+		Marco de integración semántica & Si & No & Información XML y ontología global & No & Prototipo \\
+		\hline
+		Arquitectura para la integración en SIEE\tnote{a} & Si & No & tripletas RDF y axiomas RDF(S) & Consistencia & No \\
+		\hline
+		Metodología para ontologías en el design rationale & Si & Design rationale & Ontología & No & No \\
+		\hline
+		Construcción de MC en forma colaborativa & No & SSII\tnote{b} & Ontología & No & No \\
+		\hline 
+     \end{tabular}
+     \begin{tablenotes}
+       \item[a] \scriptsize Sistemas de Información de Energía Eléctrica. 
+       \item[b] \scriptsize Sociedad de Servicios en Ingeniería Informática.
+     \end{tablenotes}
+  \end{threeparttable}
 \end{table}
 
-
-
-%%%Escribir los motivos por los cuáles decidí emplear este artículo para el estados del arte
+En esta Tabla \ref{tab:soasi}, el valor `Si' indica que el trabajo cumple con ese criterio. Mientras, el `No' indica lo contrario.
 
 %%%[04:14:23 p.m.] Carolina Medina: 1.- LA descripción de cada trabajo/enfoque (resumen). Por qué lo seleccionó o incluye [ref]
 %%%[04:14:54 p.m.] Carolina Medina: 2.- culminar la sección con una tabla comparativa en la cual se pongan
