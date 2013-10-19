@@ -62,8 +62,6 @@ El \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, pág
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
-\caption{Ejemplos de identificadores (URI) asignados a distintos recursos.}
-\label{tab:rec}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{4.7in}}
 \hline 
@@ -81,6 +79,8 @@ celda solar & \url{http://www.mi-ejemplo.com/celda_sol}\\
 Mamífero & \url{http://www.mi-ejemplo.com/mamifero}\\
 \hline 
 \end{tabular}
+\caption{Ejemplos de identificadores (URI) asignados a distintos recursos.}
+\label{tab:rec}
 \end{table}
 
 La \textbf{\textit{propiedad}} es un \textit{aspecto significativo, característica, metadato (datos de datos)o relación} que se describe del recurso. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
@@ -89,8 +89,6 @@ Estas propiedades indican acción entre dos recursos, por ello, es común que el \
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
-\caption{Ejemplos de identificadores asociados a distintas propiedades.}
-\label{tab:prop}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{4.7in}}
 \hline 
@@ -106,6 +104,8 @@ autor & \url{http://www.mi-ejemplo.com/tiene-autor}\\
 referencia & \url{http://www.mi-ejemplo.com/refiere-a}\\
 \hline 
 \end{tabular}
+\caption{Ejemplos de identificadores asociados a distintas propiedades.}
+\label{tab:prop}
 \end{table}
 
 Los identificadores URI de los recursos y propiedades son cadenas con una longitud larga. Para abreviar estas cadenas se emplea un \textbf{\textit{prefijo}}. Un prefijo sustituye la secuencia de caracteres desde \textbf{\textit{\url{http://}}} hasta el comienzo del  \textbf{\textit{nombre del recurso o propiedad}} por una \textbf{\textit{abreviación}}. Por ejemplo, el prefijo ``\textit{exp}'' es la abreviación de esta URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades \textit{Juan Lopez, Mamífero, nombre y conocido} de las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente manera.
@@ -138,8 +138,6 @@ El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
-\caption{Ejemplos triples que emplean la propiedad \textit{rdf:type} para asignar un recurso a una determinada clase.}
-\label{tab:asign}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{3.1in} >{\centering\arraybackslash}m{3.1in}}
 \hline 
@@ -153,6 +151,8 @@ exp:Juan rdf:type exp:Persona & exp:kitty rdf:type exp:Mascota\\
 exp:Pablo rdf:type exp:Persona & exp:orion rdf:type exp:Mascota\\
 \hline 
 \end{tabular}
+\caption{Ejemplos triples que emplean la propiedad \textit{rdf:type} para asignar un recurso a una determinada clase.}
+\label{tab:asign}
 \end{table}
 
 Un \textbf{\textit{grafo estructurado y dirigido}} es la estructura para visualizar las tripletas. Este \textbf{\textit{grafo RDF}} \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar la tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
