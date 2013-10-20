@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  19 OCT 2013 00:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  20 OCT 2013 00:10
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -491,55 +491,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--8
 gies,'' Dis-po-ni-ble en: $\T1/cmtt/m/n/10 http : / / www .$
  []
 
-[17]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
- [18]
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 [][]\T1/cmr/m/n/10 W3C,``RDF 1.1 Con-cepts and Abs-tract Syn-tax,'' Dis-po-ni-b
 le en: $\T1/cmtt/m/n/10 http : / / www . w3 . org / TR /$
  []
 
-[19]
-Overfull \hbox (5.69904pt too wide) in paragraph at lines 95--95
+[17]
+Overfull \hbox (5.69904pt too wide) in paragraph at lines 63--63
  []|\T1/cmr/bx/n/12 Metadato/Relación| 
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 111.
-<EjmpTripleta.pdf, id=142, 587.19376pt x 208.78pt>
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 79.
+[18] <EjmpTripleta.pdf, id=138, 587.19376pt x 208.78pt>
 File: EjmpTripleta.pdf Graphic file (type pdf)
  <use EjmpTripleta.pdf>
-Package pdftex.def Info: EjmpTripleta.pdf used on input line 132.
+Package pdftex.def Info: EjmpTripleta.pdf used on input line 100.
 (pdftex.def)             Requested size: 283.22162pt x 100.70065pt.
 
-[20] <GrafoRDF.pdf, id=147, 861.2175pt x 581.17125pt>
+[19 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
+<GrafoRDF.pdf, id=153, 861.2175pt x 581.17125pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
  <use GrafoRDF.pdf>
-Package pdftex.def Info: GrafoRDF.pdf used on input line 164.
+Package pdftex.def Info: GrafoRDF.pdf used on input line 132.
 (pdftex.def)             Requested size: 377.62642pt x 254.83821pt.
-
-[21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
-<FormaSPARQL.pdf, id=162, 402.50375pt x 221.82875pt>
+ [20 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>]
+<FormaSPARQL.pdf, id=168, 402.50375pt x 221.82875pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
-Package pdftex.def Info: FormaSPARQL.pdf used on input line 197.
+Package pdftex.def Info: FormaSPARQL.pdf used on input line 165.
 (pdftex.def)             Requested size: 283.22162pt x 156.08801pt.
 
-Underfull \vbox (badness 6575) has occurred while \output is active []
+Underfull \vbox (badness 1394) has occurred while \output is active []
 
- [22 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>] [23 <C:/Users
-/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+ [21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 196.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
+ [22] [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 [25] [26]
-Overfull \hbox (7.94305pt too wide) in paragraph at lines 284--285
+Overfull \hbox (7.94305pt too wide) in paragraph at lines 283--284
 \T1/cmr/m/n/12 Es-tos son los axio-mas pa-ra de-fi-nir ob-je-tos si-nó-ni-mos: 
 \T1/cmr/m/it/12 cla-se equi-va-len-te (\T1/cmr/bx/it/12 owl:equivalentClass\T1/
 cmr/m/it/12 )\T1/cmr/m/n/12 ,
@@ -549,20 +550,20 @@ cmr/m/it/12 )\T1/cmr/m/n/12 ,
 File: OntoexmpReaz.pdf Graphic file (type pdf)
 
 <use OntoexmpReaz.pdf>
-Package pdftex.def Info: OntoexmpReaz.pdf used on input line 318.
+Package pdftex.def Info: OntoexmpReaz.pdf used on input line 317.
 (pdftex.def)             Requested size: 472.0187pt x 105.27818pt.
  <SparqlExmpReaz.pdf, id=204, 401.5pt x 145.54375pt>
 File: SparqlExmpReaz.pdf Graphic file (type pdf)
 
 <use SparqlExmpReaz.pdf>
-Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 327.
+Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 326.
 (pdftex.def)             Requested size: 283.22162pt x 102.67497pt.
  [28 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf>] <Tripleta
 sInferidas.pdf, id=225, 1163.34625pt x 336.25626pt>
 File: TripletasInferidas.pdf Graphic file (type pdf)
 
 <use TripletasInferidas.pdf>
-Package pdftex.def Info: TripletasInferidas.pdf used on input line 338.
+Package pdftex.def Info: TripletasInferidas.pdf used on input line 337.
 (pdftex.def)             Requested size: 472.04022pt x 142.26309pt.
 )
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [29 <C:/Users/Gatito/D
@@ -658,7 +659,7 @@ iKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (72 pages, 856132 bytes).
+Output written on tesis_Erik.pdf (72 pages, 855304 bytes).
 PDF statistics:
  410 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

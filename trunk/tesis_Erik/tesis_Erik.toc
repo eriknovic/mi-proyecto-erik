@@ -18,9 +18,9 @@
 \contentsline {section}{\numberline {2.3}Hip\'otesis}{15}
 \contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as Sem\'anticas}{17}
 \contentsline {section}{\numberline {3.1}Introducci\'on y definiciones}{17}
-\contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos}{19}
-\contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{22}
-\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{23}
+\contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos}{17}
+\contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{21}
+\contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{22}
 \contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
 \contentsline {chapter}{\numberline {4}Estado del arte}{31}
 \contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{32}

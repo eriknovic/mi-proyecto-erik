@@ -3,45 +3,13 @@
 
 \section{Introducción y definiciones}
 \label{sec:intTS}
-La \textbf{\textit{semántica}} \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de estas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
+La \textbf{\textit{semántica}} \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de éstas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
 
-Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre estos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
+Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
 
 La categoría para la integración de la información (búsqueda) es la segunda (\textit{técnicas para describir formalmente el conocimiento}), porque al describir formalmente la información y el conocimiento en los recursos, se crea una \textbf{\textit{capa de conocimiento}} en los recursos. La finalidad de esta capa es que los procesos automáticos puedan \textit{acceder, procesar, razonar, combinar, reutilizar y compartir la información y su significado} \cite{OntoTecRrpKnw}. De esta manera, se podrá mejorar la búsqueda de información, ya que se evitan problemas de ambigüedad y las personas obtendrán resultados más significativos de acuerdo al contexto del dominio dado.
 
 %Las herramientas, metodologías y estándares para construir esta capa, se describen en las siguientes secciones de este presente Capítulo \ref{cap:ets}.
-
-%\section{Ontología}
-%\label{sec:onto}
-En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
-
-\begin{itemize}
-\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de los conceptos, funciones, relaciones, restricciones y otros objetos relevantes en dicho fenómeno}.
-\item \textit{\textbf{Explícita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
-\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sea comprensible por los procesos automáticos}.
-\item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
-\end{itemize}
-
-La finalidad de una \textbf{\textit{ontología de un área investigación}} es \textit{permitir encontrar información pertinente sobre temas especializados para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor pasen más tiempo en realizar sus actividades de investigación.
-
-Los principales objetivos en el uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos}. \textit{6) La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología}. \textit{6) Personas y procesos consulten información mediante motores de búsqueda y razonadores}
-
-Una ontología tiene tres elementos clave \cite{Markus2012DLprimer}, \cite{protegeManual}:
-\begin{itemize}
-\item[$-$] Clase (Class) representa una colección de objetos que comparten características comunes. 
-\item[$-$] Individuo (Individual) es el nombre de un objeto específico que pertenece a alguna clase. 
-\item[$-$] Propiedad (Property) describe relaciones binarias entre los objetos.
-\begin{itemize}
-\item Propiedad de Objeto (Object Property) son relaciones entre objetos.
-\item Propiedad de Dato (Data Property) son relaciones entre un objeto y una literal (cadena, entero).
-\end{itemize}
-\end{itemize}
-
-Una ontología tiene dos componentes \cite{Magdalena}:
-\begin{itemize}
-\item Un componente asertivo (ABox\label{sym:abox}) compuesto por aserciones (hechos verdaderos) que afirman que los individuos son instancias de una clase o propiedad. Por ejemplo, puede afirmarse que: \textit{el curso \textbf{Temas Selectos de Bases de Datos} pertenece al plan de estudios de la \textbf{Licenciatura en Computación}, el alumno \textbf{Jorge Aparicio} está cursando \textbf{Temas Selectos de Bases de Datos} o el \textbf{Laboratorio de Análisis y Rendimiento de Teleservicios} está en la \textbf{Universidad Autónoma Metropolitana Unidad Iztapalapa}}.
-\item Un componente terminológico (TBox\label{sym:tbox}) que describe las clases y propiedades relevantes, así como los axiomas para aprovechar la manera en que las instancias se relacionan entre sí. Por ejemplo, se puede afirmar que: 1) \textit{todo \textbf{alumno} está inscrito a un \textbf{curso} y pertenece a una \textbf{universidad}, 2) toda \textbf{universidad} es una \textbf{institución educativa} o 3) todo \textbf{estudiante de universidad} pertenece a la \textbf{comunidad universitaria}}.
-\end{itemize}
 
 %%%que es una ontología
 %%%para que sirve
@@ -54,7 +22,7 @@ Una ontología tiene dos componentes \cite{Magdalena}:
 
 \section{Marco de Descripción de Recursos}
 \label{sec:rdf} 
-Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}})\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
+Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}}\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
 
 En el marco RDF se tienen tres conceptos claves \cite{SwarmComp}: \textbf{\textit{1) Recurso, 2) Propiedad y 3) Sentencia}}.
 
@@ -134,7 +102,7 @@ En la Figura \ref{fig:triple} se ejemplifican las tripletas que están asociadas 
 \label{fig:triple}
 \end{figure}
 
-El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir y hacer declaraciones sobre los recursos, porque nos permite clasificar a los recursos. El triple asociado a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Jorge, Juan, y Pablo son personas, mientras los recursos fido, kitty, orión son mascotas. Las respectivas tripletas de estos se muestran en la Tabla \ref{tab:asign}.
+El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir y hacer declaraciones sobre los recursos, porque nos permite clasificar a los recursos. La tripleta asociada a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Jorge, Juan, y Pablo son personas, mientras los recursos fido, kitty, orión son mascotas. Las respectivas tripletas de estos se muestran en la Tabla \ref{tab:asign}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -151,13 +119,13 @@ exp:Juan rdf:type exp:Persona & exp:kitty rdf:type exp:Mascota\\
 exp:Pablo rdf:type exp:Persona & exp:orion rdf:type exp:Mascota\\
 \hline 
 \end{tabular}
-\caption{Ejemplos triples que emplean la propiedad \textit{rdf:type} para asignar un recurso a una determinada clase.}
+\caption{Ejemplos de tripletas que emplean la propiedad \textit{rdf:type} para asignar un recurso a una determinada clase.}
 \label{tab:asign}
 \end{table}
 
-Un \textbf{\textit{grafo estructurado y dirigido}} es la estructura para visualizar las tripletas. Este \textbf{\textit{grafo RDF}} \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar la tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
+Un \textbf{\textit{grafo estructurado y dirigido}} es la estructura para visualizar las tripletas. Este \textbf{\textit{grafo RDF}} \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar las tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
 
-La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a los tripletas de la Figura \ref{fig:triple}. En este grafo, los nodos circulares son recursos y los nodos rectangulares son literales, el nodo destino es aquel a quien apunta la \textit{punta de flecha}, mientras el otro nodo es el origen.
+La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a las tripletas de la Figura \ref{fig:triple}. En este grafo, los nodos circulares son recursos y los nodos rectangulares son literales, el nodo destino es aquel a quien apunta la \textit{punta de flecha}, mientras el otro nodo es el origen.
 
 \begin{figure}[!htb]
 \centering
@@ -166,7 +134,7 @@ La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a los tripletas de la F
 \label{fig:ejmrep}
 \end{figure}
 
-En el marco RDF, existen distintas sintaxis para escribir y almacenar las tripletas. Estas sintaxis son: N3\footnote{W3C,``Notation3 (N3),'' Disponible en: \url{http://www.w3.org/TeamSubmission/n3/}}, turtle\footnote{W3C,``Turtle,'' Disponible en: \url{http://www.w3.org/TR/2013/CR-turtle-20130219/}}, RDF/XML\footnote{W3C,``RDF/XML Syntax Specification,'' Disponible en: \url{http://www.w3.org/TR/rdf-syntax-grammar/}}, N-triples\footnote{W3C,``N-Triples,'' Disponible en: \url{http://www.w3.org/2001/sw/RDFCore/ntriples/}}. El Consorcio de la Web (W3C\label{sym:wwwc}) establece como sintaxis estándar al RDF/XML. Aunque, la sintaxis Turtle es equivalente a la de los triples de la Figura \ref{fig:triple}.
+En el marco RDF, existen distintas sintaxis para escribir y almacenar las tripletas. Estas sintaxis son: N3\footnote{W3C,``Notation3 (N3),'' Disponible en: \url{http://www.w3.org/TeamSubmission/n3/}}, turtle\footnote{W3C,``Turtle,'' Disponible en: \url{http://www.w3.org/TR/2013/CR-turtle-20130219/}}, RDF/XML\footnote{W3C,``RDF/XML Syntax Specification,'' Disponible en: \url{http://www.w3.org/TR/rdf-syntax-grammar/}}, N-triples\footnote{W3C,``N-Triples,'' Disponible en: \url{http://www.w3.org/2001/sw/RDFCore/ntriples/}}. El Consorcio de la Web (W3C\label{sym:wwwc}) establece como sintaxis estándar al RDF/XML. Aunque, la sintaxis Turtle es equivalente a las tripletas de la Figura \ref{fig:triple}.
 
 En una ontología, todas las declaraciones de los recursos son el \textbf{\textit{componente asertivo (ABox)}} \cite{Markus2012DLprimer}, porque éstas representan el conocimiento e información explícita en los recursos del dominio.
 %%%que es RDF
@@ -190,7 +158,7 @@ En una ontología, todas las declaraciones de los recursos son el \textbf{\textit
 \label{sec:lsparql}
 Las tecnologías semánticas proponen al lenguaje \textbf{\textit{SPARQL}} como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}, para la búsqueda y recuperación de la información en un grafo RDF. 
 
-La idea básica de una \textbf{\textit{consulta SPARQL}} es encontrar conjuntos de tripletas en el grafo RDF que coincidan con un \textbf{\textit{patrón tripleta}}. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}excepto que el sujeto, predicado y objeto pueden ser una variable. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
+La idea básica de una \textbf{\textit{consulta SPARQL}} es encontrar conjuntos de tripletas en el grafo RDF que coincidan con un \textbf{\textit{patrón tripleta}}. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
 
 \begin{figure}[!htb]
 \centering
@@ -204,10 +172,41 @@ Un motor de consulta SPARQL a partir de estas consultas básicas, realiza las sig
 \section{Reglas de inferencia (RDF(S)/OWL) y razonadores}
 \label{sec:reginf} 
 %En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
+%\section{Ontología}
+%\label{sec:onto}
+En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
+
+\begin{itemize}
+\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de los conceptos, funciones, relaciones, restricciones y otros objetos relevantes en dicho fenómeno}.
+\item \textit{\textbf{Explícita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
+\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sea comprensible por los procesos automáticos}.
+\item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
+\end{itemize}
+
+La finalidad de una \textbf{\textit{ontología de un área investigación}} es \textit{permitir encontrar información pertinente sobre temas especializados para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor pasen más tiempo en realizar sus actividades de investigación.
+
+Los principales objetivos en el uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos}. \textit{6) La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología}. \textit{6) Personas y procesos consulten información mediante motores de búsqueda y razonadores}
+
+Una ontología tiene tres elementos clave \cite{Markus2012DLprimer}, \cite{protegeManual}:
+\begin{itemize}
+\item[$-$] Clase (Class) representa una colección de objetos que comparten características comunes. 
+\item[$-$] Individuo (Individual) es el nombre de un objeto específico que pertenece a alguna clase. 
+\item[$-$] Propiedad (Property) describe relaciones binarias entre los objetos.
+\begin{itemize}
+\item Propiedad de Objeto (Object Property) son relaciones entre objetos.
+\item Propiedad de Dato (Data Property) son relaciones entre un objeto y una literal (cadena, entero).
+\end{itemize}
+\end{itemize}
+
+Una ontología tiene dos componentes \cite{Magdalena}:
+\begin{itemize}
+\item Un componente asertivo (ABox\label{sym:abox}) compuesto por aserciones (hechos verdaderos) que afirman que los individuos son instancias de una clase o propiedad. Por ejemplo, puede afirmarse que: \textit{el curso \textbf{Temas Selectos de Bases de Datos} pertenece al plan de estudios de la \textbf{Licenciatura en Computación}, el alumno \textbf{Jorge Aparicio} está cursando \textbf{Temas Selectos de Bases de Datos} o el \textbf{Laboratorio de Análisis y Rendimiento de Teleservicios} está en la \textbf{Universidad Autónoma Metropolitana Unidad Iztapalapa}}.
+\item Un componente terminológico (TBox\label{sym:tbox}) que describe las clases y propiedades relevantes, así como los axiomas para aprovechar la manera en que las instancias se relacionan entre sí. Por ejemplo, se puede afirmar que: 1) \textit{todo \textbf{alumno} está inscrito a un \textbf{curso} y pertenece a una \textbf{universidad}, 2) toda \textbf{universidad} es una \textbf{institución educativa} o 3) todo \textbf{estudiante de universidad} pertenece a la \textbf{comunidad universitaria}}.
+\end{itemize}
 
 Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explícito en el grafo RDF. Estos axiomas tienen diferentes propósitos \cite{Magdalena}, como son: describir relaciones entre clases, definir propiedades en términos de otras, definir relaciones entre conceptos, definir restricciones de cómo las propiedades se relacionan, por mencionar algunos.
 
-Estos axiomas se representan en forma de triple y los vocabularios para escribirlos, son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
+Estos axiomas se representan en forma de tripleta y los vocabularios para escribirlos, son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y al \textit{Lenguaje  de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
 
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en la construcción y mantenimiento de ontologías \cite{YunLin}, \cite{protegeManual}.
 
@@ -241,7 +240,7 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 
 \begin{itemize}
 \item Un razonador como \textit{instrumento de validación de consistencia de una ontología}. La validación consiste en deducir información con los axiomas y encontrar si hay contradicciones en el modelo. Si no existen contradicciones en el modelo, entonces, éste es consistente. Por el contrario si hay una contradicción, entonces el modelo no es consistente. Por ejemplo, si en la ontología se establece que la clase Hombre y Mujer son disjuntas, y el recurso Antonio es instancia de estas dos clases, entonces el modelo tiene una contradicción, por tanto, el modelo no es consistente.
-\item Un razonador para \textit{mejorar la búsqueda de la información en una ontología}. Las declaraciones explícitas y un motor SPARQL solamente permiten recuperar información explícita de los recursos. Un motor de búsqueda SPARQL junto con un razonador, permiten integrar mayor información al grafo RDF. Esto es, el razonador deduce triples del conocimiento implícito (axiomas). En el grafo RDF se incrementa el número de triples. De esta manera, el motor consulta más triples y puede recuperar más información.
+\item Un razonador para \textit{mejorar la búsqueda de la información en una ontología}. Las declaraciones explícitas y un motor SPARQL solamente permiten recuperar información explícita de los recursos. Un motor de búsqueda SPARQL junto con un razonador, permiten integrar mayor información al grafo RDF. Esto es, el razonador deduce tripletas del conocimiento implícito (axiomas). En el grafo RDF se incrementa el número de tripletas. De esta manera, el motor consulta más tripletas y puede recuperar más información.
 \end{itemize}
 
 %Leer TFC: XML y Web Semántica y https://docs.google.com/document/d/117iPj__5HAHXICy4kfPyI_BeGezjJradBLZaow2YaPM/edit y C:\Users\ARTE\Dropbox\Tesis Erik UAM\Investigacion\PDF que vas a usar\A Description Logic Primer.pdf
