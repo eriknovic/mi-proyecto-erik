@@ -66,35 +66,6 @@ Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
 \newblock Ontologias: una tecnica de representacion de conocimiento.
 \newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
 
-\bibitem{Gruber}
-Thomas~R. Gruber.
-\newblock A translation approach to portable ontology specifications.
-\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
-
-\bibitem{Staab}
-Nicola Guarino, Daniel Oberle, and Steffen Staab.
-\newblock What is an ontology?
-\newblock In Steffen Staab and Rudi Studer, editors, {\em Handbook on
-  Ontologies}, International Handbooks on Information Systems, pages 1--17.
-  Springer Berlin Heidelberg, 2009.
-
-\bibitem{Markus2012DLprimer}
-Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
-\newblock A description logic primer.
-\newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
-
-\bibitem{protegeManual}
-Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
-  Wroe.
-\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
-  Plugin and CO-ODE Tools Edition 1.0}.
-\newblock August 2004.
-
-\bibitem{Magdalena}
-Magdalena Ortiz.
-\newblock {Introducci\'on a las L\'ogicas Descriptivas}.
-\newblock Technical report, Vienna University of Technology, 2009.
-
 \bibitem{SurvSemWeb2012}
 S.~Bouzid, C.~Cauvet, and J.~Pinaton.
 \newblock A survey of semantic web standards to representing knowledge in
@@ -124,16 +95,78 @@ T.~Fujino and N.~Fukuta.
 \newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
   International Conference on}, pages 230--235, 2012.
 
+\bibitem{Gruber}
+Thomas~R. Gruber.
+\newblock A translation approach to portable ontology specifications.
+\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
+
+\bibitem{Staab}
+Nicola Guarino, Daniel Oberle, and Steffen Staab.
+\newblock What is an ontology?
+\newblock In Steffen Staab and Rudi Studer, editors, {\em Handbook on
+  Ontologies}, International Handbooks on Information Systems, pages 1--17.
+  Springer Berlin Heidelberg, 2009.
+
+\bibitem{Markus2012DLprimer}
+Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
+\newblock A description logic primer.
+\newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
+
+\bibitem{protegeManual}
+Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
+  Wroe.
+\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
+  Plugin and CO-ODE Tools Edition 1.0}.
+\newblock August 2004.
+
+\bibitem{Magdalena}
+Magdalena Ortiz.
+\newblock {Introducci\'on a las L\'ogicas Descriptivas}.
+\newblock Technical report, Vienna University of Technology, 2009.
+
 \bibitem{YunLin}
 Yun Lin and John Krogstie.
 \newblock Semantic annotation of process models for facilitating process
   knowledge management.
 \newblock {\em Int. J. Inf. Syst. Model. Des.}, 1(3):45--67, July 2010.
 
+\bibitem{Grau}
+Bernardo~Cuenca Grau, Ian Horrocks, Boris Motik, Bijan Parsia, Peter
+  Patel-Schneider, and Ulrike Sattler.
+\newblock Owl 2: The next step for owl.
+\newblock {\em Web Semant.}, 6(4):309--322, November 2008.
+
 \bibitem{Mishra2011}
 R.~B. Mishra and Sandeep Kumar.
 \newblock Semantic web reasoners and languages.
 \newblock {\em Artif. Intell. Rev.}, 35(4):339--368, April 2011.
+
+\bibitem{Namiy}
+A.Q. Al-Namiy and F.S. Majeed.
+\newblock Towards automatic extracted semantic annotation (esa) for web
+  documents.
+\newblock In {\em Information Processing, 2009. APCIP 2009. Asia-Pacific
+  Conference on}, volume~2, pages 614--617, 2009.
+
+\bibitem{Norta}
+A.~Norta, R.~Yangarber, and L.~Carlson.
+\newblock Utility evaluation of tools for collaborative development and
+  maintenance of ontologies.
+\newblock In {\em Enterprise Distributed Object Computing Conference Workshops
+  (EDOCW), 2010 14th IEEE International}, pages 207--214, 2010.
+
+\bibitem{LiDing}
+Li~Ding, Pranam Kolari, Zhongli Ding, and Sasikanth Avancha.
+\newblock Using ontologies in the semantic web: A survey.
+\newblock In Raj Sharman, Rajiv Kishore, and Ram Ramesh, editors, {\em
+  Ontologies}, volume~14 of {\em Integrated Series in Information Systems},
+  pages 79--113. Springer US, 2007.
+
+\bibitem{SurvOnto}
+T.~Aruna, K.~Saranya, and C.~Bhandari.
+\newblock A survey on ontology evaluation tools.
+\newblock In {\em Process Automation, Control and Computing (PACC), 2011
+  International Conference on}, pages 1--5, 2011.
 
 \bibitem{Archetype}
 {\em {Archetype-Based Semantic Integration and Standardization of Clinical
