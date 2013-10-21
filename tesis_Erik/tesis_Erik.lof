@@ -6,9 +6,10 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplos de tripletas asociadas a las declaraciones para los recursos Juan y libro de matem\'aticas discretas.}}{19}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo de un grafo RDF o grafo de conocimientos.}}{20}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Estructura b\'asica de una consulta SPARQL.}}{21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{29}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{29}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{29}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Regla para indicar que un Metal-Liquido pertenece a las clases Metal y L\IeC {\'\i }quido.}}{25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{29}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{29}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
