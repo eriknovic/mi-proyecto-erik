@@ -4,39 +4,23 @@
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
 La \textit{integración de los recursos} es el proceso de búsqueda y recuperación de información significativa en los recursos para responder una consulta dada por un usuario. En las tecnologías de la información existen distintas maneras de llevar a cabo esta integración. La \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}} es el proceso de \textit{integración de información} mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}.
 
-Una \textit{memoria corporativa} tiene distintos recursos de información que representan el conocimiento de una organización (dominio particular). La ISR puede ser utilizada en una \textit{memoria corporativa} para lograr estos objetivos: 1) \textit{superar las cualidades de una memoria corporativa (ambigüedad y heterogeneidad en formato, contenido, estructura)}, 2) \textit{hacer búsquedas específicas a partir de las características y relaciones de los recursos} y 3) \textit{responder y satisfacer las preguntas de las personas adscritas en la organización}.
+Una \textit{memoria corporativa} tiene distintos recursos de información que representan el conocimiento de una organización (dominio particular). La ISR puede efectuarse en una \textit{memoria corporativa}, con la finalidad de lograr estos objetivos: 1) \textit{superar las cualidades de una memoria corporativa (información ambigua, así como heterogeneidad en formato, contenido y estructura)}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos},  3) \textit{hacer búsquedas específicas a partir de las características y relaciones de los recursos} y 4) \textit{recuperar recursos vinculados que respondan las preguntas de las personas adscritas en la organización}.
 
-El proceso de desarrollo para la \textit{integración semántica en una memoria corporativa}, se hace a partir de una serie de métodos (metodología). Las etapas principales de la metodología son: : 1) representación del conocimiento en los recursos, 2) enriquecimiento del conocimiento en el modelo y 3) búsqueda y recuperación de la información en los recursos.
+El proceso de desarrollo para la \textit{integración semántica en una memoria corporativa}, se hace a partir de una serie de métodos (metodología). Las etapas principales de la metodología son: 1) \textit{representación del conocimiento en los recursos}, 2) \textit{enriquecimiento del conocimiento en el modelo} y 3) \textit{búsqueda y recuperación de la información en los recursos}.
 
-La etapa de representación consiste en identificar los recursos de la memoria corporativa, así como la representación de los metadatos de éstos mediante el marco RDF. La etapa de enriquecimiento 
+La \textit{etapa de representación} consiste en identificar los recursos de la memoria corporativa y representar los metadatos (conocimiento explícito) en estos recursos mediante el marco RDF. La etapa de enriquecimiento consiste en introducir reglas de inferencia para extender, completar y adaptar el conocimiento explícito de los recurso. Por último, la \textit{etapa de búsqueda y recuperación} consiste en identificar las principales consultas de las personas del dominio y ejecutar éstas mediante el uso de un motor SPARQL junto con un razonador.
 
+En esta metodología, las tres etapas siempre van a estar guiadas por los casos de uso, con la finalidad de establecer claramente lo siguiente: 1) qué características y relaciones son significativas, 2) qué reglas de inferencia son necesarias y 3) cuáles consultas son importantes.
 
 La Integración Semántica de Recursos es poder soportar búsqueda semántica de los recursos en la Memoria Corporativa de Redes y Telecomunicaciones.
 
-Esta búsqueda es guiada por los dos casos de uso: cartografía de competencias y búsqueda de recursos digitales.
-
-El modelado consiste en representar el conocimiento de los recursos en forma de grafo RDF y expandir este grafo con axiomas.
-
-Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
-
-
-La Web Semántica se pensó para ser implantada en la Web y en dominios particulares.
-
-Además este enfoque semántico proporciona muchas actividades para la gestión del conocimiento.
+Los principales usuarios en la ISR son los expertos y personas que se vinculan al dominio de la MC.
 
 Nosotros específicamente empleamos este enfoque para una Integración Semántica de los Recursos (SIR) en el área de Redes y Telecomunicaciones (RyT).
 
-Esta integración semántica consiste en tres actividades: 1) buscar los recursos que respondan la consulta de un usuario, 2) recuperar los metadatos significativos de estos recursos y 3) combinar los metadatos en un formato estándar como respuesta para las personas. 
+%%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 
-La Integración Semántica de Recursos (ISR) es el proceso de búsqueda y recuperación significativa de información existente en los recursos de información (documentos) que están residentes en algún medio de almacenamiento.
-
-Se basa en el uso de tecnologías semánticas.
-
-La finalidad de esta integración es recuperar documentos vinculados que respondan a una pregunta hecha por un usuario.
-
-La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como:
-
-1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras. Los principales usuarios en la ISR son los expertos y personas que se vinculan al dominio de la MC.
+%%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras. 
 
 \section{Representación del conocimiento en los recursos}
 %La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
