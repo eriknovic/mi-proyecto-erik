@@ -28,7 +28,7 @@
 \contentsline {chapter}{\numberline {5}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{39}
 \contentsline {section}{\numberline {5.1}Representaci\'on del conocimiento en los recursos}{40}
 \contentsline {section}{\numberline {5.2}Enriquecimiento del conocimiento en el modelo}{40}
-\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en los recursos}{40}
+\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{40}
 \contentsline {chapter}{\numberline {6}Prototipo}{41}
 \contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{43}
 \contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{43}
