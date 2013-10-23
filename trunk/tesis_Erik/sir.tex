@@ -1,35 +1,35 @@
 \chapter{Integración semántica de recursos de información en una memoria corporativa}
 \label{cap:sir}
-
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
-La \textit{integración de los recursos} es el proceso de búsqueda y recuperación de información significativa en los recursos para responder una consulta dada por un usuario. En las tecnologías de la información existen distintas maneras de llevar a cabo esta integración. La \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}} es el proceso de \textit{integración de información} mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}.
+La \textit{integración de los recursos} es el proceso de búsqueda y recuperación significativa de información existente en los recursos, para responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
-Una \textit{memoria corporativa} (MC) tiene distintos recursos de información que representan el conocimiento en una organización (dominio particular). Esto significa que la integración semántica puede efectuarse en una memoria corporativa. Estas son las razones principales de emplear la ISR en una MC: 
+Esta \textit{integración semántica de recursos} se emplea en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información que representan el conocimiento de una organización (dominio particular). Las principales razones para realizar la \textit{integración semántica de recursos en una memoria corporativa}, son las siguientes: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{permitir extender y mantener la representación del conocimiento} 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
+El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe nuestra propuesta de metodología para la \textit{integración semántica de recursos en una memoria corporativa}, la cual es guiada por los casos de uso. La finalidad de nuestra propuesta de metodología es facilitar y guiar a los desarrolladores en la construcción y búsqueda de información de/en un modelo semántico.
 
-El desarrollo de la ISR en una MC se hace con base en el seguimiento de una \textbf{\textit{serie de métodos (metodología)}} que tienen por finalidad: \textit{facilitar y guiar a los desarrolladores con una secuencia ordenada de actividades para construir y utilizar un modelo semántico (ontología)}.
-
-En esta tesis, se propone una \textbf{\textit{metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}. Esta metodología tiene tres etapas principales, las cuales son:
+Nuestra metodología está organizada en tres etapas principales:
 
 \begin{enumerate}
-\item \textbf{\textit{representación del conocimiento en los recursos}} consiste en identificar los recursos de la memoria corporativa y representar los metadatos (conocimiento explícito) de estos recursos mediante el marco RDF.
-\item \textbf{\textit{enriquecimiento del conocimiento en el modelo}} consiste en introducir reglas de inferencia para extender, completar y adaptar el conocimiento explícito de los recurso.
-\item \textbf{\textit{búsqueda y recuperación de la información en los recursos}} consiste en identificar las principales consultas de las personas del dominio y ejecutar éstas mediante el uso de un motor SPARQL junto con un razonador.
+\item \textbf{\textit{Representación del conocimiento en los recursos}} consiste en identificar los recursos de la memoria corporativa y representar los metadatos (conocimiento explícito) de estos recursos mediante el marco RDF.
+\item \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir axiomas en OWL y RDF(S) para extender, completar y adaptar el conocimiento explícito de los recursos.
+\item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
 
-En nuestra metodología, uno de los elementos principales es el caso de uso. Porque este elemento guía el desarrollo de la integración semántica. En concreto, los casos de uso permiten lo siguiente para las tres etapas: 1) qué características y relaciones son significativas, 2) qué reglas de inferencia son necesarias y 3) cuáles consultas son importantes.
+En nuestra metodología, uno de los elementos clave es el \textbf{\textit{caso de uso}}. Porque este elemento guía el desarrollo de la integración semántica. En concreto, los casos de uso permiten lo siguiente para las tres etapas: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
 
-La Integración Semántica de Recursos es poder soportar búsqueda semántica de los recursos en la Memoria Corporativa de Redes y Telecomunicaciones.
+Nuestra metodología es pensada para realizar la ISR en cualquier memoria corporativa, por ejemplo: \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}. También, esta metodología contempla la utilización de cualquier caso de uso y no limita el número de éstos.
 
-Los principales usuarios en la ISR son los expertos y personas que se vinculan al dominio de la MC.
+Si bien, nuestra \textit{metodología} es abierta en estos dos aspectos (memoria corporativa y casos de uso). Esta propuesta se pone en práctica para la \textit{memoria corporativa} del grupo de investigación en el área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. 
 
-Nosotros específicamente empleamos este enfoque para una Integración Semántica de los Recursos (SIR) en el área de Redes y Telecomunicaciones (RyT).
+Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
+
+La arquitectura para la integración semántica de recursos se muestra en la Figura \ref{fig:arq}. Esta arquitectura se desarrollo 
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 
-%%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras. 
+%%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
 
+%Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 \section{Representación del conocimiento en los recursos}
 %La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
 
@@ -40,7 +40,7 @@ Hay que mostrar las jerarquías de clases y de propriedades, así como los axiomas
 Dado que los casos de uso son independientes, decidimos utilizar una ontología para cada uno y otra que es de uso común (ODARyT).
 
 
-\section{Búsqueda y recuperación de información en los recursos}
+\section{Búsqueda y recuperación de información en el modelo}
 Aquí hay que retomar nuestros casos de uso y expandirlos con consultas específicas que se hacen sobre las ontologías definidas en la sección anterior.
 
 Es importante hacer notar que ciertas consultas explotan a los axiomas, por lo que se requiere de un razonador.
