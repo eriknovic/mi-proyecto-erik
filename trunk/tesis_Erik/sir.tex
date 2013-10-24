@@ -5,9 +5,18 @@ La \textit{integración de los recursos} es el proceso de búsqueda y recuperación
 
 Esta \textit{integración semántica de recursos} se emplea en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información que representan el conocimiento de una organización (dominio particular). Las principales razones para realizar la \textit{integración semántica de recursos en una memoria corporativa}, son las siguientes: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe nuestra propuesta de metodología para la \textit{integración semántica de recursos en una memoria corporativa}, la cual es guiada por los casos de uso. La finalidad de nuestra propuesta de metodología es facilitar y guiar a los desarrolladores en la construcción y búsqueda de información de/en un modelo semántico.
+El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual es guiada por \textit{casos de uso}. La finalidad de esta metodología es: facilitar y guiar a los desarrolladores en las tareas de construcción y búsqueda de información de/en un modelo semántico.
 
-Nuestra metodología está organizada en tres etapas principales:
+La finalidad de esta propuesta es \textit{facilitar y guiar a los desarrolladores en las tareas de construcción  de un modelo semántico, así como en la búsqueda de información sobre éste}. Mientras, los principales objetivos de ésta son:
+
+\begin{itemize}
+\item realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}
+\item emplear distintos \textit{casos de uso} para la ISR y no limitar el número de éstos.
+\item representar una MC en un formato estándar con un vocabulario consensuado y asociado al contexto de la MC.
+\item utilizar vocabularios estándares para los axiomas, así como el uso del lenguaje SPARQL para las consultas.
+\end{itemize}
+
+Esta metodología está organizada en tres etapas principales:
 
 \begin{enumerate}
 \item \textbf{\textit{Representación del conocimiento en los recursos}} consiste en identificar los recursos de la memoria corporativa y representar los metadatos (conocimiento explícito) de estos recursos mediante el marco RDF.
@@ -15,15 +24,32 @@ Nuestra metodología está organizada en tres etapas principales:
 \item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
 
-En nuestra metodología, uno de los elementos clave es el \textbf{\textit{caso de uso}}. Porque este elemento guía el desarrollo de la integración semántica. En concreto, los casos de uso permiten lo siguiente para las tres etapas: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
+En esta metodología, uno de los elementos clave es el \textbf{\textit{caso de uso}}. Porque este elemento guía el desarrollo de la integración semántica. En concreto, los casos de uso permiten lo siguiente para las tres etapas: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
 
-Nuestra metodología es pensada para realizar la ISR en cualquier memoria corporativa, por ejemplo: \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}. También, esta metodología contempla la utilización de cualquier caso de uso y no limita el número de éstos.
+La arquitectura de la integración semántica se diseño con base en el modelo de tres capas (nivel usuario, nivel negocio y nivel de datos).
 
-Si bien, nuestra \textit{metodología} es abierta en estos dos aspectos (memoria corporativa y casos de uso). Esta propuesta se pone en práctica para la \textit{memoria corporativa} del grupo de investigación en el área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. 
+\begin{itemize}
+\item En el nivel de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario.
+\item En el nivel de negocios: una aplicación transforma la información recopilada de las páginas estáticas en patrones tripletas y construir una consulta SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
+\item En el nivel de datos (conocimiento): la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
+\end{itemize}
 
-Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
+La Figura \ref{fig:arq} muestra esta arquitectura de \textit{integración semántica de recursos}. Esta arquitectura es genérica para desarrollarse e implementarse en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan mediante el uso de nuestra propuesta de metodología.
+
+La propuesta de metodología permite construir, utilizar e implementar los componentes de esta arquitectura.
+
+Esta arquitectura es genérica y se puede implementar en cualquier memoria corporativa asociada a un dominio. La Figura 1 muestra la arquitectura, en la cual varios de los componentes son desarrollados en alguna de las tres etapas
+de esta ISR.
+
+Esta arquitectura es genérica y puede implementarse en cualquier memoria corporativa. La Figura \ref{fig:arq} muestra esta arquitectura, en la que cada componente se desarrolla en una de las tres etapas de nuestra metodología.
+
+ La Figura 1 muestra la arquitectura, en la cual varios de los componentes son desarrollados en alguna de las tres etapas de esta ISR.
 
 La arquitectura para la integración semántica de recursos se muestra en la Figura \ref{fig:arq}. Esta arquitectura se desarrollo 
+
+
+
+Si bien, nuestra \textit{metodología} es abierta en estos dos aspectos (memoria corporativa y casos de uso). Esta propuesta se pone en práctica para la \textit{memoria corporativa} del grupo de investigación en el área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 
