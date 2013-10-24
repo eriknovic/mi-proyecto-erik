@@ -29,31 +29,47 @@ La Figura \ref{fig:arq} muestra la arquitectura para la \textit{integración semá
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.8\textwidth]{Arquitectura}
+\includegraphics[width=0.6\textwidth]{Arquitectura}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
 
-Esta arquitectura se diseño con base en el modelo de tres capas (nivel usuario, nivel negocio y nivel de datos).
+Esta arquitectura se diseño con base en el modelo de tres capas: \textbf{\textit{usuario, negocio}} y \textbf{\textit{datos}}.
 
 \begin{itemize}
-\item En el nivel de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario.
-\item En el nivel de negocios: una aplicación transforma la información recopilada de las páginas estáticas en patrones tripletas y construir una consulta SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
-\item En el nivel de datos (conocimiento): la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
+\item En la capa de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario.
+\item En la capa de negocios: una aplicación transforma la información recopilada de las páginas estáticas en patrones tripletas y construir una consulta SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
+\item En la capa de datos (conocimiento): la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
 \end{itemize}
 
-Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación en el área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
+Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
-
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
-
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 \section{Representación del conocimiento en los recursos}
 %La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
-
 %% El primer paso en la representación es la adquisisción, identificación, caracterización y representación de los recursos
-La primera actividad en nuestra metodología es identificar las principales  necesidades que se deben adquirir para representar la memoria corporativa.
+La primera actividad en esta etapa es identificar los requerimientos de la integración de información para la memoria corporativa, es decir, se deben analizar, encontrar y escribir los casos de uso.
+
+La ``\textit{cartografía de competencias} y la \textit{búsqueda de recursos digitales}'' son los dos casos de uso básicos para la memoria corporativa del área de redes y telecomunicaciones. La descripción de la cartografía y búsqueda son descritas a continuación.
+
+\begin{enumerate}
+\item La \textbf{\textit{cartografía de competencias}} es la búsqueda y recuperación de las personas a partir de las características profesionales. Los principales parámetros en la búsqueda de estas personas son: las competencias profesionales (\textit{trabajo en equipo, liderazgo, organizar, planificar}), conocimientos en temas de Redes y Telecomunicaciones (\textit{sistemas operativos, capa enlace, filtros, ontologías, radios cognitivos}), capacidades lingüísticas  (\textit{lee en inglés, escribe en español, habla en francés}), relaciones profesionales (\textit{colega, asesor o conocido}) y finalmente por la ocupación (\textit{estudiante, empleado, investigador o profesor}).
+\item La \textbf{\textit{búsqueda de recursos digitales}} es la búsqueda y recuperación de los documentos y archivos multimedia a partir del contenido de éstos. Los principales parámetros de búsqueda de los recursos digitales son: el autor, la extensión (\textit{ppt, wav, mp3, mpg, jpg}), relaciones con los temas de Redes y Telecomunicaciones (\textit{sistemas operativos, capa enlace, filtros, ontologías, radios cognitivos}), el idioma fuente (\textit{inglés, español, francés. ruso, chino}), tipo de recurso digital (\textit{artículos, reportes técnicos, páginas web, tesis, libros, audios, vídeos, imágenes y presentaciones}) y la organización a la que pertenece (\textit{uam, unam, ipn, iee, acm, oracle}).
+\end{enumerate}
+
+La Figura \ref{fig:mccu} muestra los recursos de información de la memoria corporativa del área de Redes y Telecomunicaciones (RyT), los cuales están clasificados con base en los dos casos de uso.
+
+\begin{figure}[!htb]
+\centering
+%\includegraphics[width=3.2in]{Arquitectura}
+\includegraphics[width=0.7\textwidth]{CasosUsoMC}
+\caption{Recursos de información agrupados por casos de uso para nuestra memoria corporativa.}
+\label{fig:mccu}
+\end{figure}
+
+
 
 \section{Enriquecimiento del conocimiento en el modelo}
 Hay que mostrar las jerarquías de clases y de propriedades, así como los axiomas de nuestras ontologías.
