@@ -50,7 +50,7 @@ Esta propuesta de metodología se pone en práctica para la \textit{memoria corpor
 \section{Representación del conocimiento en los recursos}
 %La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
 %% El primer paso en la representación es la adquisisción, identificación, caracterización y representación de los recursos
-La primera actividad en esta etapa es identificar los requerimientos de la integración de información para la memoria corporativa, es decir, se deben analizar, encontrar y escribir los casos de uso.
+La primera actividad en esta etapa es \textbf{\textit{identificar los requerimientos}} de la integración de información para la memoria corporativa, es decir, se deben analizar, encontrar y escribir los casos de uso.
 
 La ``\textit{cartografía de competencias} y la \textit{búsqueda de recursos digitales}'' son los dos casos de uso básicos para la memoria corporativa del área de redes y telecomunicaciones. La descripción de la cartografía y búsqueda son descritas a continuación.
 
@@ -59,7 +59,7 @@ La ``\textit{cartografía de competencias} y la \textit{búsqueda de recursos digi
 \item La \textbf{\textit{búsqueda de recursos digitales}} es la búsqueda y recuperación de los documentos y archivos multimedia a partir del contenido de éstos. Los principales parámetros de búsqueda de los recursos digitales son: el autor, la extensión (\textit{ppt, wav, mp3, mpg, jpg}), relaciones con los temas de Redes y Telecomunicaciones (\textit{sistemas operativos, capa enlace, filtros, ontologías, radios cognitivos}), el idioma fuente (\textit{inglés, español, francés. ruso, chino}), tipo de recurso digital (\textit{artículos, reportes técnicos, páginas web, tesis, libros, audios, vídeos, imágenes y presentaciones}) y la organización a la que pertenece (\textit{uam, unam, ipn, iee, acm, oracle}).
 \end{enumerate}
 
-La Figura \ref{fig:mccu} muestra los recursos de información de la memoria corporativa del área de Redes y Telecomunicaciones (RyT), los cuales están clasificados con base en los dos casos de uso.
+La Figura \ref{fig:mccu} muestra los recursos de información de la memoria corporativa del área de Redes y Telecomunicaciones (RyT), los cuales están clasificados a partir de los dos \textit{casos de uso}.
 
 \begin{figure}[!htb]
 \centering
@@ -68,6 +68,34 @@ La Figura \ref{fig:mccu} muestra los recursos de información de la memoria corpo
 \caption{Recursos de información agrupados por casos de uso para nuestra memoria corporativa.}
 \label{fig:mccu}
 \end{figure}
+
+La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} a representar en los recursos de información. Esta adquisición se hace mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste''. Por esta razón, la adquisición del conocimiento debe ser con base en las características y relaciones en/de los recursos de información.
+
+Un diagrama de clases es una manera visual de adquisición para describir y formalizar el conocimiento en los recursos de información. En la memoria corporativa de RyT, se obtienen dos diagramas de clase; uno para cada caso de uso.
+
+La Figura \ref{fig:dccc} presenta las clases, características y relaciones para los recursos persona que están asociados a la cartografía de competencias.
+
+%%%
+%%% Diagram de clases Personas
+%%%
+
+La Figura \ref{fig:dcbrd} presenta las clases, características y relaciones para los documentos y archivos multimedia que están asociados a la búsqueda de recursos digitales.
+
+%%%
+%%% Diagram de clases recursos digitales
+%%%
+
+La siguiente actividad es la representación del conocimiento e información mediante el marco de trabajo RDF. Esta representación tiene cuatro pasos: asignar identificadores a los recursos, asignar identificadores a las propiedades, identificar literales y otros recursos, finalmente construir tripletas.
+
+El primer paso, es asignar un identificado único de recursos para cada recurso de información. Esta asignación de identificadores se hace mediante los casos de uso, es decir, los recursos que intervienen en la cartografía de competencias tienen la siguiente cadena (espacio de nombre) como base: ``\url{http://arte.izt.uam.mx/ontologies/personRyT.owl}\#'', mientras, los recursos digitales utilizan esta cadena base: ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#''.
+
+La Tabla \ref{tab:uriper} enuncia los identificadores (URI) de algunos profesores del área de RyT. Mientras, la Tabla \ref{tab:urird} enuncia los identificadores (URI) de varios tipos de recursos digitales pertenecientes a la memoria de RyT.
+
+El siguiente paso es asignar un identificador para cada propiedad que en el diagrama de clases son las características y relaciones de/entre recursos.
+
+%%%Falta describir aqui.
+
+Ahora bien, el diagrama de clases nos permite establecer la relación con otros recursos, distintos a las personas y recursos digitales. Por ello, se debe asignar URI para estos recursos. Para fines prácticos, aquellos recursos asociados al primer caso de uso, se emplea el mismo espacio de nombre. Mientras, los identificadores de los recursos del segundo caso de uso van 
 
 
 
