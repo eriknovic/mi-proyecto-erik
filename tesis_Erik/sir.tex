@@ -3,9 +3,11 @@
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
 La \textit{integración de los recursos} es el proceso de búsqueda y recuperación significativa de información existente en los recursos, para responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
-Esta \textit{integración semántica de recursos} se emplea en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información que representan el conocimiento de una organización (dominio particular). Las principales razones para realizar esta \textit{integración en una memoria corporativa}, son las siguientes: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
+La \textit{integración semántica de recursos} puede ser utilizada en una \textit{memoria corporativa (MC)}. Porque una memoria tiene un conjunto diverso de recursos de información, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual es guiada por \textit{casos de uso}. La finalidad de esta propuesta es \textit{facilitar y guiar a los desarrolladores en las tareas de construcción  de un modelo semántico, así como en la búsqueda de información sobre éste}. Mientras, los principales objetivos de ésta son:
+El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual es guiada por \textit{casos de uso}.
+
+La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de ésta son:
 
 \begin{itemize}
 \item realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}
@@ -21,6 +23,8 @@ Esta metodología está organizada en tres etapas principales:
 \item \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir axiomas en OWL y RDF(S) para extender, completar y adaptar el conocimiento explícito de los recursos.
 \item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
+
+La primera y segunda etapa consisten en la construcción del modelo semántico, mientras la tercera etapa consiste en la consulta de información en este modelo.
 
 En esta metodología, uno de los elementos clave es el \textbf{\textit{caso de uso}}. Porque este elemento guía el desarrollo de la integración semántica. En concreto, los casos de uso permiten lo siguiente para las tres etapas: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
 
@@ -42,24 +46,41 @@ Esta arquitectura se diseño con base en el modelo de tres capas: \textbf{\textit
 \item En la capa de datos (conocimiento): la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
 \end{itemize}
 
-Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los \textit{casos de uso} usados en esta propuesta, son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}. Los principales usuarios en la integración son los profesores-investigadores del núcleo del área de Redes y Telecomunicaciones, así como los estudiantes que realizan algún proyecto o servicios social y que son asesorados por un profesor del núcleo.
+Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Los principales usuarios en la integración son los \textbf{\textit{profesores-investigadores}} del núcleo del área de Redes y Telecomunicaciones, así como los \textbf{\textit{estudiantes}} que realizan algún proyecto o servicios social y están a cargo de profesor del núcleo.
+
+Los \textit{casos de uso} básicos en esta metodología son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}.
+
+\begin{enumerate}
+\item La cartografía de competencias es la búsqueda y recuperación de las personas a partir de las características personales y profesionales (competencias, capacidades, conocimientos en los temas del dominio).
+\item La búsqueda de recursos digitales es la búsqueda y recuperación de los documentos y archivos multimedia a partir del contenido de éstos (temas del dominio, autor, año).
+\end{enumerate}
+
+Estos dos \textit{casos de uso} son independientes entre ellos, por tal razón, cada uno tiene una respectiva ontología. La ontología de la cartografía de competencias modela el conocimiento explícito e implícito de los recursos persona, con base en las características personales y profesionales de éstos. Mientras, la ontología de los recursos digitales modela el conocimiento explícito e implícito del contenido y acerca de éstos.
+
+En ambos casos de uso, un aspecto importante es que tanto personas como recursos digitales se vinculan con los temas del área de Redes y Telecomunicaciones(RyT). Específicamente, los conocimientos de las personas son relaciones entre personas y temas de RyT. Mientras, los tópicos pertenecientes en los recursos digitales son las relaciones entre recursos digitales y temas de RyT. Por tal razón, se construye una tercer ontología para modelar el vocabulario consensual del área de Redes y Telecomunicaciones.
+
+La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información.
+
+%% Diagrama de Venn ontologías.
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.6\textwidth]{Arquitectura}
+%\caption{Diagrama de Venn para visualizar las tres ontologías que conforman el modelo semántico}
+%\label{fig:ontocu}
+%\end{figure}
+
+Las Sección \ref{sec:repKrec} describe la representación del conocimiento explícito en los recursos de información. La Sección \ref{sec:enrKrec} describe los axiomas para enriquecer el conocimiento en el conocimiento explícito. Finalmente, la Sección \ref{sec:byrKrec} describe la búsqueda y recuperación de información en el modelo semántico.
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 \section{Representación del conocimiento en los recursos}
+\label{sec:repKrec} 
 %La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
 %% El primer paso en la representación es la adquisisción, identificación, caracterización y representación de los recursos
-En esta etapa, la primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los casos de uso.
+La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
-\begin{enumerate}
-\item La \textbf{\textit{cartografía de competencias}} es la búsqueda y recuperación de las personas a partir de las características profesionales. Los principales parámetros en la búsqueda de estas personas son: las competencias profesionales (\textit{trabajo en equipo, liderazgo, organizar, planificar}), conocimientos en temas de Redes y Telecomunicaciones (\textit{sistemas operativos, capa enlace, filtros, ontologías, radios cognitivos}), capacidades lingüísticas  (\textit{lee en inglés, escribe en español, habla en francés}), relaciones profesionales (\textit{colega, asesor o conocido}) y finalmente por la ocupación (\textit{estudiante, empleado, investigador o profesor}).
-\item La \textbf{\textit{búsqueda de recursos digitales}} es la búsqueda y recuperación de los documentos y archivos multimedia a partir del contenido de éstos. Los principales parámetros de búsqueda de los recursos digitales son: el autor, la extensión (\textit{ppt, wav, mp3, mpg, jpg}), relaciones con los temas de Redes y Telecomunicaciones (\textit{sistemas operativos, capa enlace, filtros, ontologías, radios cognitivos}), el idioma fuente (\textit{inglés, español, francés. ruso, chino}), tipo de recurso digital (\textit{artículos, reportes técnicos, páginas web, tesis, libros, audios, vídeos, imágenes y presentaciones}) y la organización a la que pertenece (\textit{uam, unam, ipn, iee, acm, oracle}).
-\end{enumerate}
-
-Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
-
-La Figura \ref{fig:mccu} muestra estos recursos en memoria corporativa del área, los cuales están clasificados a partir de los dos \textit{casos de uso}.
+La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos  de información} están clasificados por caso de uso.
 
 \begin{figure}[!htb]
 \centering
@@ -69,23 +90,29 @@ La Figura \ref{fig:mccu} muestra estos recursos en memoria corporativa del área,
 \label{fig:mccu}
 \end{figure}
 
-La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información. Esta adquisición se hace mediante la utilización de los dos \textit{casos de uso}.
+La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}''. Por esta razón, la adquisición del conocimiento debe ser con base en las características y relaciones en/de los recursos de información.
 
-En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste''. Por esta razón, la adquisición del conocimiento debe ser con base en las características y relaciones en/de los recursos de información.
-
-Un diagrama de clases es una manera visual de adquisición para describir y formalizar el conocimiento en los recursos de información. En la memoria corporativa de RyT, se obtienen dos diagramas de clase; uno para cada caso de uso.
+Un \textbf{\textit{diagrama de clases}} es una manera visual para describir y formalizar el conocimiento (características, relaciones y clases) en los recursos de información. Los \textit{diagramas de clases} de la memoria del área de RyT se obtienen a partir de los dos \textit{casos de uso}.
 
 La Figura \ref{fig:dccc} presenta las clases, características y relaciones para los recursos persona que están asociados a la cartografía de competencias.
 
-%%%
 %%% Diagrama de clases Personas
-%%%
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.7\textwidth]{CasosUsoMC}
+%\caption{Diagrama de clases para la cartografía competencias.}
+%\label{fig:mccu}
+%\end{figure}
 
 La Figura \ref{fig:dcbrd} presenta las clases, características y relaciones para los documentos y archivos multimedia que están asociados a la búsqueda de recursos digitales.
 
-%%%
 %%% Diagrama de clases recursos digitales
-%%%
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.7\textwidth]{CasosUsoMC}
+%\caption{Diagrama de clases para la búsqueda de recursos digitales.}
+%\label{fig:mccu}
+%\end{figure}
 
 La siguiente actividad es la representación del conocimiento e información mediante el marco de trabajo RDF. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
 
@@ -96,33 +123,74 @@ El primer paso, es asignar un URI para cada recurso de información. Esta asignac
 \item Los recursos pertenecientes a la búsqueda de recursos digitales, utilizan el siguiente URI: ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'' y el prefijo ``\textit{sird}'' para abreviar esta cadena.
 \end{itemize}
 
-La Tabla \ref{tab:uriper} enuncia los identificadores (URI) de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los URi de éstos.
+La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
 
 %%%
 %%% Tabla ejemplos de URI's personas
 %%%
 
-La Tabla \ref{tab:urird} enuncia los identificadores (URI) de algunos recursos digitales de los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
+La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales de los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
 
 %%%
 %%% Tabla ejemplos de URI's
 %%%
 
-El siguiente paso es asignar un identificador (URI) para cada propiedad. Estas propiedades son obtenidas con base en las características y relaciones en/de los recursos que aparecen en los diagramas de clases (Figuras \ref{fig:dccc} y \ref{fig:dcbrd}). El identificador (URI) se escribe dependiendo el caso de uso. La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades asociadas a la cartografía de competencias y la Tabla \ref{tab:brdprop} presenta algunas propiedades de la búsqueda de recursos digitales.
+El siguiente paso es asignar un identificador URI para cada propiedad. Estas propiedades son obtenidas con base en las características y relaciones en/de los recursos que aparecen en los diagramas de clases (Figuras \ref{fig:dccc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ```\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ```\textit{sird}''.
 
-%%%Falta describir aqui.
+La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia la característica o relación, mientras la segunda columna presenta el identificador URI, el cual está abreviado con el prefijo ``sirp''.
 
-Ahora bien, el diagrama de clases nos permite establecer la relación con otros recursos, distintos a las personas y recursos digitales. Por ello, se debe asignar URI para estos recursos. Para fines prácticos, aquellos recursos asociados al primer caso de uso, se emplea el mismo espacio de nombre. Mientras, los identificadores de los recursos del segundo caso de uso van 
+%%
+%% Tabla de muestra de URI para propiedades
+%%
 
 
+La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades de la búsqueda de recursos digitales. La primera columna enuncia la característica o relación, mientras la segunda columna presenta  el URI que está abreviado con el prefijo ``\textit{sird}''.
+
+%%
+%% Tabla de muestra de URI para propiedades
+%%
+
+El siguiente paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
+
+El último paso en la representación es escribir los recursos, propiedades, así como literales y otros objetos en forma de tripletas. Para ello, se emplea alguna herramienta para mapear la información en forma de tripletas. En la Sección \ref{sec:eoats}, la manera para la generación de tripletas se hace mediante el uso de formularios y scripts.
+
+El siguiente procedimiento se emplea para la generación de triplestas mediante el uso de formularios y scripts. Los formularios son hechos mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}} con la finalidad de recopilar de forma fácil y sencilla las características y relaciones en los \textit{recursos de información}. Estos formularios son enviados vía mail a los profesores o alumnos para que ellos describan los recursos de información. Las \textit{respuestas de los formularios} son enviados automáticamente a \textit{hojas de cálculo}. Posteriormente, estas respuestas son descargadas en un archivo csv. Estos archivos sirven como entradas para los scripts. La finalidad de estos scripts es transformar la información de estos archivos en forma de tripletas RDF y almacenar éstas en un archivo con extensión ``\textit{rdf}''.
+
+La Tabla \ref{tab:drper} presenta algunas características y relaciones vistas como tripletas RDF para una persona del área de RyT. La primera columna enuncia las descripciones de los recursos, mientras la segunda columna presenta las tripleta RDF asociadas a estas descripciones.
+
+%%
+%% Tabla descripciones de recursos del tipo persona
+%%
+
+La Figura \ref{fig:gfoper} muestra gráficamente las tripletas de la Tabla \ref{tab:drper} en un grafo RDF.
+
+%%
+%% Grafo RDF de los recursos personas
+%%
+
+La Tabla \ref{tab:drrd} muestra las descripciones de un documento en forma de tripletas RDF. La primera columna enuncia la descripción y la segunda columna muestra la tripleta RDF asociada a ésta.
+
+%%
+%% Tabla descripciones de recursos del tipo persona
+%%
+
+La Figura \ref{fig:gford} muestra gráficamente las tripletas de la Tabla \ref{tab:drrd} en un grafo RDF.
+
+%%
+%% Grafo RDF de los recursos personas
+%%
+
+%Ahora bien, el diagrama de clases nos permite establecer la relación con otros recursos, distintos a las personas y recursos digitales. Por ello, se debe asignar URI para estos recursos. Para fines prácticos, aquellos recursos asociados al primer caso de uso, se emplea el mismo espacio de nombre. Mientras, los identificadores de los recursos del segundo caso de uso van 
 
 \section{Enriquecimiento del conocimiento en el modelo}
+\label{sec:enrKrec} 
 Hay que mostrar las jerarquías de clases y de propriedades, así como los axiomas de nuestras ontologías.
 
 Dado que los casos de uso son independientes, decidimos utilizar una ontología para cada uno y otra que es de uso común (ODARyT).
 
 
 \section{Búsqueda y recuperación de información en el modelo}
+\label{sec:byrKrec} 
 Aquí hay que retomar nuestros casos de uso y expandirlos con consultas específicas que se hacen sobre las ontologías definidas en la sección anterior.
 
 Es importante hacer notar que ciertas consultas explotan a los axiomas, por lo que se requiere de un razonador.
