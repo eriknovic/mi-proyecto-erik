@@ -2,14 +2,14 @@
 \select@language {spanish}
 \beamer@sectionintoc {1}{Contenido}{2}{0}{1}
 \beamer@sectionintoc {2}{Introducci\'on}{3}{0}{2}
-\beamer@sectionintoc {3}{Integraci\'on sem\'antica de recursos}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{Casos de uso}{7}{0}{3}
-\beamer@subsectionintoc {3}{2}{Ontolog\IeC {\'\i }a}{8}{0}{3}
-\beamer@subsectionintoc {3}{3}{Arquitectura}{9}{0}{3}
-\beamer@subsectionintoc {3}{4}{Representaci\'on del Conocimiento}{10}{0}{3}
-\beamer@subsectionintoc {3}{5}{Enriquecimiento del Conocimiento}{11}{0}{3}
-\beamer@subsectionintoc {3}{6}{Consulta de informaci\'on}{13}{0}{3}
-\beamer@sectionintoc {4}{Prototipo}{14}{0}{4}
-\beamer@sectionintoc {5}{Experimenaci\'on}{15}{0}{5}
-\beamer@sectionintoc {6}{Conclusiones}{18}{0}{6}
-\beamer@sectionintoc {7}{Referencias}{19}{0}{7}
+\beamer@sectionintoc {3}{Integraci\'on sem\'antica de recursos}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Casos de uso}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Ontolog\IeC {\'\i }a}{7}{0}{3}
+\beamer@subsectionintoc {3}{3}{Arquitectura}{8}{0}{3}
+\beamer@subsectionintoc {3}{4}{Representaci\'on del Conocimiento}{9}{0}{3}
+\beamer@subsectionintoc {3}{5}{Enriquecimiento del Conocimiento}{10}{0}{3}
+\beamer@subsectionintoc {3}{6}{Consulta de informaci\'on}{12}{0}{3}
+\beamer@sectionintoc {4}{Prototipo}{13}{0}{4}
+\beamer@sectionintoc {5}{Experimenaci\'on}{14}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{17}{0}{6}
+\beamer@sectionintoc {7}{Referencias}{18}{0}{7}
