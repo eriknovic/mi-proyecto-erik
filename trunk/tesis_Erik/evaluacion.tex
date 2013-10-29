@@ -15,6 +15,71 @@
 \section{Escenarios de experimentación}
 Algún texto...
 
+\begin{table}[!htb]
+%\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
+\hline 
+Id. Consulta & Pregunta & No. de Recursos\\
+\hline
+\hline 
+Q1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
+\hline
+Q2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
+\hline 
+Q3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
+\hline 
+Q4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
+\hline 
+Q5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
+\hline 
+Q6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
+\hline 
+Q7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
+\hline 
+Q8 & ¿Qué recursos tienen en su contenido las palabras "linked data"? & 159\\
+\hline 
+Q9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
+\hline 
+Q10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
+\hline 
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | }
+\hline 
+\multirow{2}{*}{Id. Consulta} & \multicolumn{2}{c|}{Modelo (ABox)} & \multicolumn{2}{c|}{Modelo (Razonador+Ontología)}\\
+\cline{2-5} 
+ & Tiempo promedio (ms) & No. Recursos  & Tiempo promedio (ms) & No. Recursos\\
+\hline 
+\hline
+Q1 & 12 & 1330/1330 & 138 & 1330/1330\\
+\hline
+Q2 & 10 & 0/103 & 194 & 103/103\\
+\hline
+Q3 & 8 & 18/18 & 406 & 18/18\\
+\hline
+Q4 & 28 & 15/31 & 129 & 31/31\\
+\hline
+Q5 & 7 & 66/119 & 157 & 119/119\\
+\hline
+Q6 & 9 & 15/30 & 4016 & 30/30\\
+\hline
+Q7 & 12 & 156/156 & 3520 & 156/156\\
+\hline
+Q8 & 16 & 159/159 & 3472 & 159/159\\
+\hline
+Q9 & 42 & 0/2 & 3451 & 2/2\\
+\hline
+Q10 & 13 & 3/4 & 3312 & 4/4\\
+\hline
+\end{tabular}
+\end{table}
+
 \section{Experimentación}
 Más texto...
 

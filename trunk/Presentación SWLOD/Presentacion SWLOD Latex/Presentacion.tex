@@ -24,16 +24,16 @@
 
 \decimalpoint
 
-\usetheme{Montpellier}%este es el templete que se usa a lo largo de la presentacion
+\usetheme{Madrid}%este es el templete que se usa a lo largo de la presentacion
 
 \setbeamertemplate{bibliography item}[text]
 
 \mode<presentation>%tipo de 
 
 \begin{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Uso de Tecnologías Semánticas para \\la Integración de Recursos de Información \\en una Memoria Corporativa}
+%\insertframenumber/\inserttotalframenumber
 \author{Erik Alarcón-Zamora \\ R. Carolina Medina-Ramírez  \\ Héctor Pérez-Urbina}
 \institute{Universidad Autónoma Metropolitana\\ Departamento de Ingeniería Eléctrica\\ Iztapalapa, México\\}
 \date{\today}%para que ponga la fecha de hoy 
@@ -141,7 +141,7 @@ Estas tecnologías permiten:
 \textit{Una \textbf{ontología} es una especificación formal y explícita de una conceptualización compartida} \cite{Gruber}.
 
 \begin{figure}
-\includegraphics[scale=0.25]{OntologiasDiagrama} 
+\includegraphics[scale=0.3]{OntologiasDiagrama} 
 \end{figure}
 \end{frame}
 
@@ -159,8 +159,14 @@ Estas tecnologías permiten:
 \justifying
 Representación del conocimiento explícito a partir de las características significativas y relaciones de los mismos.
 
-\begin{figure}
+\begin{figure}[htbp]
+\centering
+\subfigure{
+\includegraphics[scale=0.2]{RecursoPDF} 
+}
+\subfigure{
 \includegraphics[scale=0.20]{RecDigGrafoRDF} 
+}
 \end{figure}
 
 Las herramientas para la transformación de información a triples es una combinación de Formularios y Scripts.
@@ -188,7 +194,7 @@ Protégé es la herramienta que se emplea para representar los axiomas.
 \justifying
 Un razonador es un programa para inferir hechos o asociaciones a partir del conocimiento existente (axiomas y propiedades).
 \begin{figure}
-\includegraphics[scale=0.28]{RecDigi} 
+\includegraphics[scale=0.25]{InferenciaGrafo} 
 \end{figure}
 \end{frame}
 
@@ -207,7 +213,7 @@ Lenguaje SPARQL es la especificación para consultar, recuperar y modificar la in
 \includegraphics[scale=0.25]{Qrycraz} 
 }
 \end{figure}
-
+Triplestore es el programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -234,88 +240,28 @@ criterios de evaluación para el triplestore Jena:
 	\item Calidad de los resultados.
 	\item Cantidad de resultados. 
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}
 \frametitle{Preguntas}
 \justifying
-\renewcommand{\tablename}{Tabla}
-\begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
-\centering
-\begin{tabular}{>{\centering\arraybackslash}m{0.4in} >{\arraybackslash}m{2.1in} >{\centering\arraybackslash}m{0.5in}}
-\hline 
-Id. Consulta & Pregunta & No. de Recursos\\
-\hline
-\hline 
-Q1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
-\hline
-Q2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
-\hline 
-Q3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
-\hline 
-Q4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
-\hline 
-Q5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
-\hline 
-Q6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
-\hline 
-Q7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
-\hline 
-Q8 & ¿Qué recursos tienen en su contenido las palabras "linked data"? & 159\\
-\hline 
-Q9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
-\hline 
-Q10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
-\hline 
-\end{tabular}
-\end{table}
-
+\begin{figure}
+\includegraphics[scale=0.50]{Preguntas} 
+\end{figure}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Resultados}
 \justifying
-\begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
-\centering
-\begin{tabular}{| >{\centering\arraybackslash}m{0.5in} | >{\centering\arraybackslash}m{0.4in} | >{\centering\arraybackslash}m{0.6in} | >{\centering\arraybackslash}m{0.4in} | >{\centering\arraybackslash}m{0.6in} | }
-\hline 
-\multirow{2}{*}{Id. Consulta} & \multicolumn{2}{c|}{Modelo (ABox)} & \multicolumn{2}{c|}{Modelo (Razonador+Ontología)}\\
-\cline{2-5} 
- & Tiempo promedio (ms) & No. Recursos  & Tiempo promedio (ms) & No. Recursos\\
-\hline 
-\hline
-Q1 & 12 & 1330/1330 & 138 & 1330/1330\\
-\hline
-Q2 & 10 & 0/103 & 194 & 103/103\\
-\hline
-Q3 & 8 & 18/18 & 406 & 18/18\\
-\hline
-Q4 & 28 & 15/31 & 129 & 31/31\\
-\hline
-Q5 & 7 & 66/119 & 157 & 119/119\\
-\hline
-Q6 & 9 & 15/30 & 4016 & 30/30\\
-\hline
-Q7 & 12 & 156/156 & 3520 & 156/156\\
-\hline
-Q8 & 16 & 159/159 & 3472 & 159/159\\
-\hline
-Q9 & 42 & 0/2 & 3451 & 2/2\\
-\hline
-Q10 & 13 & 3/4 & 3312 & 4/4\\
-\hline
-\end{tabular}
-\end{table}
+\begin{figure}
+\includegraphics[scale=0.48]{Resultados} 
+\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Conclusiones}
 
 \begin{frame}
-
 \frametitle{Conclusiones}
 \begin{itemize}
 \item \justifying Beneficios en el uso de las tecnologías semánticas para la integración de los recursos de información en una memoria corporativa.
