@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  28 OCT 2013 18:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  29 OCT 2013 08:42
 entering extended mode
 **Presentacion.tex
 
@@ -1276,11 +1276,18 @@ acion SWLOD Latex/Qrycraz.pdf
 pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/Qrycraz.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->] <Interfaz.pdf, id=753, 672.5125pt x 387.4475pt>
+>] <InterfazBusqueda.pdf, id=753, 633.36626pt x 365.365pt>
+File: InterfazBusqueda.pdf Graphic file (type pdf)
+
+<use InterfazBusqueda.pdf>
+Package pdftex.def Info: InterfazBusqueda.pdf used on input line 237.
+(pdftex.def)             Requested size: 158.34117pt x 91.34102pt.
+ <Interfaz.pdf, id=754, 672.5125pt x 387.4475pt>
 File: Interfaz.pdf Graphic file (type pdf)
- <use Interfaz.pdf>
-Package pdftex.def Info: Interfaz.pdf used on input line 229.
-(pdftex.def)             Requested size: 188.30222pt x 108.48456pt.
+
+<use Interfaz.pdf>
+Package pdftex.def Info: Interfaz.pdf used on input line 237.
+(pdftex.def)             Requested size: 168.1277pt x 96.86163pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1294,7 +1301,13 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 [13
 
  <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Interfaz.pdf>]
+ex/InterfazBusqueda.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLO
+D/Presentacion SWLOD Latex/Interfaz.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
+ SWLOD/Presentacion SWLOD Latex/Interfaz.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+>]
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1306,10 +1319,10 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [14
 
-] <Preguntas.pdf, id=816, 554.07pt x 379.4175pt>
+] <Preguntas.pdf, id=821, 554.07pt x 379.4175pt>
 File: Preguntas.pdf Graphic file (type pdf)
  <use Preguntas.pdf>
-Package pdftex.def Info: Preguntas.pdf used on input line 251.
+Package pdftex.def Info: Preguntas.pdf used on input line 259.
 (pdftex.def)             Requested size: 277.03432pt x 189.70828pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
@@ -1324,11 +1337,11 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 [15
 
  <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Preguntas.pdf>] <Resultados.pdf, id=849, 546.04pt x 320.19624pt>
+ex/Preguntas.pdf>] <Resultados.pdf, id=854, 546.04pt x 320.19624pt>
 File: Resultados.pdf Graphic file (type pdf)
 
 <use Resultados.pdf>
-Package pdftex.def Info: Resultados.pdf used on input line 259.
+Package pdftex.def Info: Resultados.pdf used on input line 267.
 (pdftex.def)             Requested size: 262.09622pt x 153.69244pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
@@ -1373,13 +1386,13 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
 
 ("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: C0482F06AEA711FF39E83E4646BD8D0F;798.
 
@@ -1387,13 +1400,13 @@ Package rerunfilecheck Info: File `Presentacion.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
  ) 
 Here is how much of TeX's memory you used:
- 17258 strings out of 493921
- 321529 string characters out of 3147330
+ 17263 strings out of 493921
+ 321648 string characters out of 3147330
  386135 words of memory out of 3000000
- 20037 multiletter control sequences out of 15000+200000
+ 20041 multiletter control sequences out of 15000+200000
  15089 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,16n,57p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1406,9 +1419,9 @@ blic/cm-super/sfss0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
 uper/sfss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss
 1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0600.pfb>
-Output written on Presentacion.pdf (18 pages, 1387993 bytes).
+Output written on Presentacion.pdf (18 pages, 1464159 bytes).
 PDF statistics:
- 977 PDF objects out of 1000 (max. 8388607)
+ 982 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 
