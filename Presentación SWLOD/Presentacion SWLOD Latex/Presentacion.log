@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  30 OCT 2013 00:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  30 OCT 2013 00:45
 entering extended mode
 **Presentacion.tex
 
@@ -1105,7 +1105,7 @@ File: TecSem.pdf Graphic file (type pdf)
 Package pdftex.def Info: TecSem.pdf used on input line 113.
 (pdftex.def)             Requested size: 180.67455pt x 135.5059pt.
 
-Overfull \vbox (11.44696pt too high) detected at line 113
+Overfull \vbox (9.53386pt too high) detected at line 113
  []
 
 [5
@@ -1119,11 +1119,7 @@ File: Arquitectura.pdf Graphic file (type pdf)
 <use Arquitectura.pdf>
 Package pdftex.def Info: Arquitectura.pdf used on input line 142.
 (pdftex.def)             Requested size: 225.63899pt x 178.66432pt.
-
-Overfull \vbox (0.20535pt too high) detected at line 142
- []
-
-[7
+ [7
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/Arquitectura.pdf>] [8
@@ -1135,11 +1131,7 @@ File: OntologiasDiagrama.pdf Graphic file (type pdf)
 <use OntologiasDiagrama.pdf>
 Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 164.
 (pdftex.def)             Requested size: 154.4783pt x 149.9614pt.
-
-Overfull \vbox (1.43933pt too high) detected at line 164
- []
-
-[9
+ [9
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/OntologiasDiagrama.pdf>]
@@ -1154,9 +1146,6 @@ File: RecDigGrafoRDF.pdf Graphic file (type pdf)
  <use RecDigGrafoRDF.pdf>
 Package pdftex.def Info: RecDigGrafoRDF.pdf used on input line 183.
 (pdftex.def)             Requested size: 187.09567pt x 120.84935pt.
-
-Overfull \vbox (1.04767pt too high) detected at line 183
- []
 
 [10
 
@@ -1195,7 +1184,7 @@ File: InferenciaGrafo.pdf Graphic file (type pdf)
 Package pdftex.def Info: InferenciaGrafo.pdf used on input line 209.
 (pdftex.def)             Requested size: 233.87317pt x 151.064pt.
 
-Overfull \vbox (2.54193pt too high) detected at line 209
+Overfull \vbox (0.62883pt too high) detected at line 209
  []
 
 [12
@@ -1227,18 +1216,14 @@ File: InterfazBusqueda.pdf Graphic file (type pdf)
 
 <use InterfazBusqueda.pdf>
 Package pdftex.def Info: InterfazBusqueda.pdf used on input line 247.
-(pdftex.def)             Requested size: 152.011pt x 87.68939pt.
+(pdftex.def)             Requested size: 139.341pt x 80.38054pt.
  <Interfaz.pdf, id=813, 672.5125pt x 387.4475pt>
 File: Interfaz.pdf Graphic file (type pdf)
 
 <use Interfaz.pdf>
 Package pdftex.def Info: Interfaz.pdf used on input line 247.
-(pdftex.def)             Requested size: 161.4063pt x 92.98929pt.
-
-Overfull \vbox (47.54836pt too high) detected at line 247
- []
-
-[14
+(pdftex.def)             Requested size: 147.9532pt x 85.23871pt.
+ [14
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/InterfazBusqueda.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLO
@@ -1255,7 +1240,7 @@ File: Preguntas.pdf Graphic file (type pdf)
 Package pdftex.def Info: Preguntas.pdf used on input line 269.
 (pdftex.def)             Requested size: 277.03432pt x 189.70828pt.
 
-Overfull \vbox (11.24931pt too high) detected at line 269
+Overfull \vbox (9.33621pt too high) detected at line 269
  []
 
 [16
@@ -1297,11 +1282,11 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 17363 strings out of 493921
- 323095 string characters out of 3147330
+ 17365 strings out of 493921
+ 323117 string characters out of 3147330
  389266 words of memory out of 3000000
- 20109 multiletter control sequences out of 15000+200000
- 20637 words of font info for 55 fonts, out of 3000000 for 9000
+ 20110 multiletter control sequences out of 15000+200000
+ 21403 words of font info for 56 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,15n,55p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
@@ -1315,8 +1300,8 @@ public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
 ss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1095.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0600.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on Presentacion.pdf (19 pages, 1516174 bytes).
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0900.pfb>
+Output written on Presentacion.pdf (19 pages, 1518821 bytes).
 PDF statistics:
  1062 PDF objects out of 1200 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
