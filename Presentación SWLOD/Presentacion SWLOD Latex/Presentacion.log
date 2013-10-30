@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  29 OCT 2013 08:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  29 OCT 2013 23:49
 entering extended mode
 **Presentacion.tex
 
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
@@ -17,10 +17,10 @@ an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamer.cls"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasercs.sty"
-Package: beamerbasercs 2013/01/04 (rcs-revision 9a97a4eee358)
+Package: beamerbasercs 2013/04/04 (rcs-revision 7b8d65c07caf)
 )
-Document Class: beamer 2013/01/04 3.26 A class for typesetting presentations (r
-cs-revision e81e0c94bcc6)
+Document Class: beamer 2013/04/04 3.27 A class for typesetting presentations (r
+cs-revision dca7db0ccda1)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasemodes.sty"
 Package: beamerbasemodes 2012/04/15 (rcs-revision cc6557182d97)
 \beamer@tempbox=\box26
@@ -83,7 +83,7 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \beamer@tocsectionnumber=\count101
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseoptions.sty"
-Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
@@ -471,7 +471,7 @@ Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 "
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasefont.sty"
-Package: beamerbasefont 2012/09/19  (rcs-revision 733629cd0c6c)
+Package: beamerbasefont 2013/06/04  (rcs-revision e18016724886)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -483,6 +483,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty"
+Package: sansmathaccent 2013/03/28
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\filehook\filehook.sty"
+Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetranslator.sty"
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
@@ -508,7 +514,7 @@ Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasesection.sty"
-Package: beamerbasesection 2013/01/04  (rcs-revision 54309ceef997)
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@lecture=\count128
 \c@part=\count129
 \c@section=\count130
@@ -516,7 +522,7 @@ Package: beamerbasesection 2013/01/04  (rcs-revision 54309ceef997)
 \c@subsubsection=\count132
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseframe.sty"
-Package: beamerbaseframe 2012/12/26  (rcs-revision 1443917db2cf)
+Package: beamerbaseframe 2013/03/31  (rcs-revision edcfd2d0f22d)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
@@ -556,14 +562,14 @@ Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetoc.sty"
-Package: beamerbasetoc 2012/10/02  (rcs-revision 5ed0f4010e8a)
+Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetemplates.sty"
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
 \beamer@sbttoks=\toks27
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseauxtemplates.sty"
-Package: beamerbaseauxtemplates 2012/05/01  (rcs-revision 67c48b3b652d)
+Package: beamerbaseauxtemplates 2013/02/02  (rcs-revision f179744ff1e3)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbaseboxes.sty"
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@box=\box46
@@ -591,7 +597,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \belowcaptionskip=\skip50
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasenavigation.sty"
-Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
+Package: beamerbasenavigation 2013/04/04  (rcs-revision 905a39e12b38)
 \beamer@section@min@dim=\dimen173
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamerbasetheorems.sty"
@@ -841,7 +847,7 @@ Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 meinfolines.sty"
 Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 ))
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -921,9 +927,9 @@ LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
 
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.out")
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.out")
 \@outlinefile=\write5
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -968,6 +974,21 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `normal' on input line 33
+.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 33
+.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `bold' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
+3.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1022,7 +1043,7 @@ LaTeX Info: Redefining \includegraphics on input line 33.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 33.
 
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.nav")
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
@@ -1084,11 +1105,11 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [3
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/ConocimientoRyT.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/ConocimientoRyT.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD
 /Presentacion SWLOD Latex/EjemploMC.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
+pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/EjemploMC.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
@@ -1103,7 +1124,12 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [4
 
-]
+] <TecSem.pdf, id=426, 722.7pt x 542.025pt>
+File: TecSem.pdf Graphic file (type pdf)
+ <use TecSem.pdf>
+Package pdftex.def Info: TecSem.pdf used on input line 112.
+(pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
+
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1115,7 +1141,8 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [5
 
-]
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/TecSem.pdf>]
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1127,12 +1154,12 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [6
 
-] <OntologiasDiagrama.pdf, id=480, 514.92375pt x 499.8675pt>
-File: OntologiasDiagrama.pdf Graphic file (type pdf)
+] <Arquitectura.pdf, id=490, 564.1075pt x 446.66875pt>
+File: Arquitectura.pdf Graphic file (type pdf)
 
-<use OntologiasDiagrama.pdf>
-Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 146.
-(pdftex.def)             Requested size: 154.4783pt x 149.9614pt.
+<use Arquitectura.pdf>
+Package pdftex.def Info: Arquitectura.pdf used on input line 142.
+(pdftex.def)             Requested size: 225.63899pt x 178.66432pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1145,14 +1172,8 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [7
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/OntologiasDiagrama.pdf>]
-<Arquitectura.pdf, id=520, 564.1075pt x 446.66875pt>
-File: Arquitectura.pdf Graphic file (type pdf)
- <use Arquitectura.pdf>
-Package pdftex.def Info: Arquitectura.pdf used on input line 154.
-(pdftex.def)             Requested size: 225.63899pt x 178.66432pt.
-
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/Arquitectura.pdf>]
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1164,19 +1185,12 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [8
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Arquitectura.pdf>] <RecursoPDF.pdf, id=573, 522.95375pt x 543.02875pt>
-File: RecursoPDF.pdf Graphic file (type pdf)
+] <OntologiasDiagrama.pdf, id=571, 514.92375pt x 499.8675pt>
+File: OntologiasDiagrama.pdf Graphic file (type pdf)
 
-<use RecursoPDF.pdf>
-Package pdftex.def Info: RecursoPDF.pdf used on input line 173.
-(pdftex.def)             Requested size: 104.5889pt x 108.60382pt.
- <RecDigGrafoRDF.pdf, id=574, 935.495pt x 604.2575pt>
-File: RecDigGrafoRDF.pdf Graphic file (type pdf)
-
-<use RecDigGrafoRDF.pdf>
-Package pdftex.def Info: RecDigGrafoRDF.pdf used on input line 173.
-(pdftex.def)             Requested size: 187.09567pt x 120.84935pt.
+<use OntologiasDiagrama.pdf>
+Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 165.
+(pdftex.def)             Requested size: 154.4783pt x 149.9614pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1189,24 +1203,19 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [9
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/RecursoPDF.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Pres
-entacion SWLOD Latex/RecDigGrafoRDF.pdf
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/OntologiasDiagrama.pdf>]
+<RecursoPDF.pdf, id=610, 522.95375pt x 543.02875pt>
+File: RecursoPDF.pdf Graphic file (type pdf)
+ <use RecursoPDF.pdf>
+Package pdftex.def Info: RecursoPDF.pdf used on input line 184.
+(pdftex.def)             Requested size: 104.5889pt x 108.60382pt.
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
- SWLOD/Presentacion SWLOD Latex/RecDigGrafoRDF.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->] <Clases.pdf, id=619, 699.61375pt x 338.26375pt>
-File: Clases.pdf Graphic file (type pdf)
- <use Clases.pdf>
-Package pdftex.def Info: Clases.pdf used on input line 190.
-(pdftex.def)             Requested size: 153.9155pt x 74.41824pt.
-
-<DomainyRange.pdf, id=620, 623.32875pt x 328.22626pt>
-File: DomainyRange.pdf Graphic file (type pdf)
- <use DomainyRange.pdf>
-Package pdftex.def Info: DomainyRange.pdf used on input line 190.
-(pdftex.def)             Requested size: 137.13274pt x 72.20999pt.
+<RecDigGrafoRDF.pdf, id=611, 935.495pt x 604.2575pt>
+File: RecDigGrafoRDF.pdf Graphic file (type pdf)
+ <use RecDigGrafoRDF.pdf>
+Package pdftex.def Info: RecDigGrafoRDF.pdf used on input line 184.
+(pdftex.def)             Requested size: 187.09567pt x 120.84935pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1219,19 +1228,24 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [10
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Clases.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presenta
-cion SWLOD Latex/DomainyRange.pdf
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/RecursoPDF.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Pres
+entacion SWLOD Latex/RecDigGrafoRDF.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
- SWLOD/Presentacion SWLOD Latex/DomainyRange.pdf): PDF inclusion: multiple pdfs
- with page group included in a single page
->] <InferenciaGrafo.pdf, id=663, 935.495pt x 604.2575pt>
-File: InferenciaGrafo.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
+ SWLOD/Presentacion SWLOD Latex/RecDigGrafoRDF.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>] <Clases.pdf, id=656, 699.61375pt x 338.26375pt>
+File: Clases.pdf Graphic file (type pdf)
+ <use Clases.pdf>
+Package pdftex.def Info: Clases.pdf used on input line 201.
+(pdftex.def)             Requested size: 153.9155pt x 74.41824pt.
 
-<use InferenciaGrafo.pdf>
-Package pdftex.def Info: InferenciaGrafo.pdf used on input line 199.
-(pdftex.def)             Requested size: 233.87317pt x 151.064pt.
+<DomainyRange.pdf, id=657, 623.32875pt x 328.22626pt>
+File: DomainyRange.pdf Graphic file (type pdf)
+ <use DomainyRange.pdf>
+Package pdftex.def Info: DomainyRange.pdf used on input line 201.
+(pdftex.def)             Requested size: 137.13274pt x 72.20999pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1244,19 +1258,19 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [11
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/InferenciaGrafo.pdf>] <Qrysraz.pdf, id=707, 543.02875pt x 309.155pt>
-File: Qrysraz.pdf Graphic file (type pdf)
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/Clases.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presenta
+cion SWLOD Latex/DomainyRange.pdf
 
-<use Qrysraz.pdf>
-Package pdftex.def Info: Qrysraz.pdf used on input line 217.
-(pdftex.def)             Requested size: 135.75685pt x 77.28856pt.
- <Qrycraz.pdf, id=708, 463.7325pt x 206.7725pt>
-File: Qrycraz.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
+ SWLOD/Presentacion SWLOD Latex/DomainyRange.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>] <InferenciaGrafo.pdf, id=700, 935.495pt x 604.2575pt>
+File: InferenciaGrafo.pdf Graphic file (type pdf)
 
-<use Qrycraz.pdf>
-Package pdftex.def Info: Qrycraz.pdf used on input line 217.
-(pdftex.def)             Requested size: 115.93283pt x 51.693pt.
+<use InferenciaGrafo.pdf>
+Package pdftex.def Info: InferenciaGrafo.pdf used on input line 210.
+(pdftex.def)             Requested size: 233.87317pt x 151.064pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1269,25 +1283,19 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [12
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Qrysraz.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Present
-acion SWLOD Latex/Qrycraz.pdf
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/InferenciaGrafo.pdf>] <Qrysraz.pdf, id=744, 543.02875pt x 309.155pt>
+File: Qrysraz.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
- SWLOD/Presentacion SWLOD Latex/Qrycraz.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->] <InterfazBusqueda.pdf, id=753, 633.36626pt x 365.365pt>
-File: InterfazBusqueda.pdf Graphic file (type pdf)
+<use Qrysraz.pdf>
+Package pdftex.def Info: Qrysraz.pdf used on input line 228.
+(pdftex.def)             Requested size: 135.75685pt x 77.28856pt.
+ <Qrycraz.pdf, id=745, 463.7325pt x 206.7725pt>
+File: Qrycraz.pdf Graphic file (type pdf)
 
-<use InterfazBusqueda.pdf>
-Package pdftex.def Info: InterfazBusqueda.pdf used on input line 237.
-(pdftex.def)             Requested size: 158.34117pt x 91.34102pt.
- <Interfaz.pdf, id=754, 672.5125pt x 387.4475pt>
-File: Interfaz.pdf Graphic file (type pdf)
-
-<use Interfaz.pdf>
-Package pdftex.def Info: Interfaz.pdf used on input line 237.
-(pdftex.def)             Requested size: 168.1277pt x 96.86163pt.
+<use Qrycraz.pdf>
+Package pdftex.def Info: Qrycraz.pdf used on input line 228.
+(pdftex.def)             Requested size: 115.93283pt x 51.693pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1300,11 +1308,42 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [13
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/InterfazBusqueda.pdf> <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLO
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/Qrysraz.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Present
+acion SWLOD Latex/Qrycraz.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
+ SWLOD/Presentacion SWLOD Latex/Qrycraz.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <InterfazBusqueda.pdf, id=791, 633.36626pt x 365.365pt>
+File: InterfazBusqueda.pdf Graphic file (type pdf)
+
+<use InterfazBusqueda.pdf>
+Package pdftex.def Info: InterfazBusqueda.pdf used on input line 248.
+(pdftex.def)             Requested size: 158.34117pt x 91.34102pt.
+ <Interfaz.pdf, id=792, 672.5125pt x 387.4475pt>
+File: Interfaz.pdf Graphic file (type pdf)
+
+<use Interfaz.pdf>
+Package pdftex.def Info: Interfaz.pdf used on input line 248.
+(pdftex.def)             Requested size: 168.1277pt x 96.86163pt.
+
+Overfull \hbox (368.4273pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/bx/n/6 ([])  
+ []
+
+
+Overfull \hbox (190.1673pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/InterfazBusqueda.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLO
 D/Presentacion SWLOD Latex/Interfaz.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/Presentación
+pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/Interfaz.pdf): PDF inclusion: multiple pdfs wit
 h page group included in a single page
 >]
@@ -1317,32 +1356,13 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[14
-
-] <Preguntas.pdf, id=821, 554.07pt x 379.4175pt>
-File: Preguntas.pdf Graphic file (type pdf)
- <use Preguntas.pdf>
-Package pdftex.def Info: Preguntas.pdf used on input line 259.
-(pdftex.def)             Requested size: 277.03432pt x 189.70828pt.
-
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [15
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Preguntas.pdf>] <Resultados.pdf, id=854, 546.04pt x 320.19624pt>
-File: Resultados.pdf Graphic file (type pdf)
-
-<use Resultados.pdf>
-Package pdftex.def Info: Resultados.pdf used on input line 267.
-(pdftex.def)             Requested size: 262.09622pt x 153.69244pt.
+] <Preguntas.pdf, id=858, 554.07pt x 379.4175pt>
+File: Preguntas.pdf Graphic file (type pdf)
+ <use Preguntas.pdf>
+Package pdftex.def Info: Preguntas.pdf used on input line 270.
+(pdftex.def)             Requested size: 277.03432pt x 189.70828pt.
 
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
@@ -1355,8 +1375,14 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [16
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Resultados.pdf>]
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/Preguntas.pdf>] <Resultados.pdf, id=891, 546.04pt x 320.19624pt>
+File: Resultados.pdf Graphic file (type pdf)
+
+<use Resultados.pdf>
+Package pdftex.def Info: Resultados.pdf used on input line 278.
+(pdftex.def)             Requested size: 262.09622pt x 153.69244pt.
+
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1368,9 +1394,8 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 
 [17
 
-]
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
-ex\Presentacion.bbl")
+ <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
+ex/Resultados.pdf>]
 Overfull \hbox (368.4273pt too wide) has occurred while \output is active
  [][]  \T1/cmss/bx/n/6 ([])  
  []
@@ -1383,33 +1408,47 @@ Overfull \hbox (190.1673pt too wide) has occurred while \output is active
 [18
 
 ]
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
+ex\Presentacion.bbl")
+Overfull \hbox (368.4273pt too wide) has occurred while \output is active
+ [][]  \T1/cmss/bx/n/6 ([])  
+ []
+
+
+Overfull \hbox (190.1673pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 
-("C:\Users\ARTE\Desktop\TesisErikSVN\Presentación SWLOD\Presentacion SWLOD Lat
+("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: C0482F06AEA711FF39E83E4646BD8D0F;798.
+(rerunfilecheck)             Checksum: 8CEAF84E0B825291E8309B7E909E2BCC;799.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 17263 strings out of 493921
- 321648 string characters out of 3147330
- 386135 words of memory out of 3000000
- 20041 multiletter control sequences out of 15000+200000
+ 17389 strings out of 493921
+ 324195 string characters out of 3147330
+ 388474 words of memory out of 3000000
+ 20156 multiletter control sequences out of 15000+200000
  15089 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,16n,57p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,16n,57p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1000.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1095.pfb><C:/Program Files/MiKTeX 
@@ -1419,9 +1458,9 @@ blic/cm-super/sfss0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
 uper/sfss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss
 1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0600.pfb>
-Output written on Presentacion.pdf (18 pages, 1464159 bytes).
+Output written on Presentacion.pdf (19 pages, 1492396 bytes).
 PDF statistics:
- 982 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
