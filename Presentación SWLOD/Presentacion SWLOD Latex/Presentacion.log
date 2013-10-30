@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  29 OCT 2013 23:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  30 OCT 2013 00:21
 entering extended mode
 **Presentacion.tex
 
@@ -831,38 +831,30 @@ Timing Style, Ludwig May <Dec 1991> Jens Leilich <May 1994>.
 \timewidthdim=\dimen194
 \timebox=\box55
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\theme\beamerthemeMad
-rid.sty"
-Package: beamerthemeMadrid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\theme\beamerthemeMon
+tpellier.sty"
+Package: beamerthemeMontpellier 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\color\beamercolorthe
-meorchid.sty"
-Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\inner\beamerinnerthe
-merounded.sty"
-Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\themes\outer\beamerouterthe
-meinfolines.sty"
-Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
+metree.sty"
+Package: beamerouterthemetree 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
 ("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -872,14 +864,14 @@ LaTeX Font Info:    ... okay on input line 33.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.88002pt, 342.43532pt, 10.88002pt)
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=342.43532pt
+* \textwidth=307.28987pt
 * \textheight=244.6939pt
-* \oddsidemargin=-61.38997pt
-* \evensidemargin=-61.38997pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -913,7 +905,7 @@ LaTeX Font Info:    ... okay on input line 33.
 \everyMPtoPDFconversion=\toks47
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -923,9 +915,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 ("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.out")
@@ -933,62 +925,62 @@ ex\Presentacion.out")
 ex\Presentacion.out")
 \@outlinefile=\write5
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 34.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 33.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 33.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 33.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 33.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 33.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 33.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 33.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 34.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 33
+(Font)              `pureletters' in the math version `normal' on input line 34
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 33
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 34
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 33.
+(Font)              `pureletters' in the math version `bold' on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
-3.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 33.
+ut line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1038,72 +1030,65 @@ Dictionary: translator-theorem-dictionary, Language: English
 -theorem-dictionary\translator-theorem-dictionary-Spanish.dict"
 Dictionary: translator-theorem-dictionary, Language: Spanish 
 )
-LaTeX Info: Redefining \includegraphics on input line 33.
+LaTeX Info: Redefining \includegraphics on input line 34.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 33.
+LaTeX Info: Redefining \selectfont on input line 34.
 
 ("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.nav")
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 37.
+(hyperref)                setting the option has no effect on input line 38.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 41.
+(Font)              size <5> substituted on input line 42.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 41.
+(Font)              size <5> substituted on input line 42.
 
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 64.
 
-[1
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 64.
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
+("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
 [2
 
-] <ConocimientoRyT.pdf, id=136, 770.88pt x 621.32124pt>
+] <ConocimientoRyT.pdf, id=123, 770.88pt x 621.32124pt>
 File: ConocimientoRyT.pdf Graphic file (type pdf)
 
 <use ConocimientoRyT.pdf>
-Package pdftex.def Info: ConocimientoRyT.pdf used on input line 87.
+Package pdftex.def Info: ConocimientoRyT.pdf used on input line 88.
 (pdftex.def)             Requested size: 131.04787pt x 105.62321pt.
- <EjemploMC.pdf, id=137, 755.82375pt x 538.01pt>
+ <EjemploMC.pdf, id=124, 755.82375pt x 538.01pt>
 File: EjemploMC.pdf Graphic file (type pdf)
 
 <use EjemploMC.pdf>
-Package pdftex.def Info: EjemploMC.pdf used on input line 87.
+Package pdftex.def Info: EjemploMC.pdf used on input line 88.
 (pdftex.def)             Requested size: 136.0424pt x 96.83762pt.
-
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[3
+ [3
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/ConocimientoRyT.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD
@@ -1112,118 +1097,65 @@ ex/ConocimientoRyT.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD
 pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/EjemploMC.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
->]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
+>] [4
 
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[4
-
-] <TecSem.pdf, id=426, 722.7pt x 542.025pt>
+] <TecSem.pdf, id=417, 722.7pt x 542.025pt>
 File: TecSem.pdf Graphic file (type pdf)
  <use TecSem.pdf>
-Package pdftex.def Info: TecSem.pdf used on input line 112.
-(pdftex.def)             Requested size: 216.81166pt x 162.60875pt.
+Package pdftex.def Info: TecSem.pdf used on input line 113.
+(pdftex.def)             Requested size: 180.67455pt x 135.5059pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (11.44696pt too high) detected at line 113
  []
 
 [5
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/TecSem.pdf>]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
+ex/TecSem.pdf>] [6
 
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[6
-
-] <Arquitectura.pdf, id=490, 564.1075pt x 446.66875pt>
+] <Arquitectura.pdf, id=486, 564.1075pt x 446.66875pt>
 File: Arquitectura.pdf Graphic file (type pdf)
 
 <use Arquitectura.pdf>
 Package pdftex.def Info: Arquitectura.pdf used on input line 142.
 (pdftex.def)             Requested size: 225.63899pt x 178.66432pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (0.20535pt too high) detected at line 142
  []
 
 [7
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Arquitectura.pdf>]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
+ex/Arquitectura.pdf>] [8
 
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[8
-
-] <OntologiasDiagrama.pdf, id=571, 514.92375pt x 499.8675pt>
+]
+<OntologiasDiagrama.pdf, id=573, 514.92375pt x 499.8675pt>
 File: OntologiasDiagrama.pdf Graphic file (type pdf)
 
 <use OntologiasDiagrama.pdf>
-Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 165.
+Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 164.
 (pdftex.def)             Requested size: 154.4783pt x 149.9614pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (1.43933pt too high) detected at line 164
  []
 
 [9
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/OntologiasDiagrama.pdf>]
-<RecursoPDF.pdf, id=610, 522.95375pt x 543.02875pt>
+<RecursoPDF.pdf, id=615, 522.95375pt x 543.02875pt>
 File: RecursoPDF.pdf Graphic file (type pdf)
  <use RecursoPDF.pdf>
-Package pdftex.def Info: RecursoPDF.pdf used on input line 184.
+Package pdftex.def Info: RecursoPDF.pdf used on input line 183.
 (pdftex.def)             Requested size: 104.5889pt x 108.60382pt.
 
-<RecDigGrafoRDF.pdf, id=611, 935.495pt x 604.2575pt>
+<RecDigGrafoRDF.pdf, id=616, 935.495pt x 604.2575pt>
 File: RecDigGrafoRDF.pdf Graphic file (type pdf)
  <use RecDigGrafoRDF.pdf>
-Package pdftex.def Info: RecDigGrafoRDF.pdf used on input line 184.
+Package pdftex.def Info: RecDigGrafoRDF.pdf used on input line 183.
 (pdftex.def)             Requested size: 187.09567pt x 120.84935pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (1.04767pt too high) detected at line 183
  []
 
 [10
@@ -1235,26 +1167,17 @@ entacion SWLOD Latex/RecDigGrafoRDF.pdf
 pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/RecDigGrafoRDF.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] <Clases.pdf, id=656, 699.61375pt x 338.26375pt>
+>] <Clases.pdf, id=665, 699.61375pt x 338.26375pt>
 File: Clases.pdf Graphic file (type pdf)
  <use Clases.pdf>
-Package pdftex.def Info: Clases.pdf used on input line 201.
+Package pdftex.def Info: Clases.pdf used on input line 200.
 (pdftex.def)             Requested size: 153.9155pt x 74.41824pt.
 
-<DomainyRange.pdf, id=657, 623.32875pt x 328.22626pt>
+<DomainyRange.pdf, id=666, 623.32875pt x 328.22626pt>
 File: DomainyRange.pdf Graphic file (type pdf)
  <use DomainyRange.pdf>
-Package pdftex.def Info: DomainyRange.pdf used on input line 201.
+Package pdftex.def Info: DomainyRange.pdf used on input line 200.
 (pdftex.def)             Requested size: 137.13274pt x 72.20999pt.
-
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [11
 
@@ -1265,48 +1188,32 @@ cion SWLOD Latex/DomainyRange.pdf
 pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/DomainyRange.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
->] <InferenciaGrafo.pdf, id=700, 935.495pt x 604.2575pt>
+>] <InferenciaGrafo.pdf, id=713, 935.495pt x 604.2575pt>
 File: InferenciaGrafo.pdf Graphic file (type pdf)
 
 <use InferenciaGrafo.pdf>
-Package pdftex.def Info: InferenciaGrafo.pdf used on input line 210.
+Package pdftex.def Info: InferenciaGrafo.pdf used on input line 209.
 (pdftex.def)             Requested size: 233.87317pt x 151.064pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (2.54193pt too high) detected at line 209
  []
 
 [12
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/InferenciaGrafo.pdf>] <Qrysraz.pdf, id=744, 543.02875pt x 309.155pt>
+ex/InferenciaGrafo.pdf>] <Qrysraz.pdf, id=761, 543.02875pt x 309.155pt>
 File: Qrysraz.pdf Graphic file (type pdf)
 
 <use Qrysraz.pdf>
-Package pdftex.def Info: Qrysraz.pdf used on input line 228.
+Package pdftex.def Info: Qrysraz.pdf used on input line 227.
 (pdftex.def)             Requested size: 135.75685pt x 77.28856pt.
- <Qrycraz.pdf, id=745, 463.7325pt x 206.7725pt>
+ <Qrycraz.pdf, id=762, 463.7325pt x 206.7725pt>
 File: Qrycraz.pdf Graphic file (type pdf)
 
 <use Qrycraz.pdf>
-Package pdftex.def Info: Qrycraz.pdf used on input line 228.
+Package pdftex.def Info: Qrycraz.pdf used on input line 227.
 (pdftex.def)             Requested size: 115.93283pt x 51.693pt.
-
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[13
+ [13
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
 ex/Qrysraz.pdf> <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Present
@@ -1315,26 +1222,20 @@ acion SWLOD Latex/Qrycraz.pdf
 pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/Qrycraz.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->] <InterfazBusqueda.pdf, id=791, 633.36626pt x 365.365pt>
+>] <InterfazBusqueda.pdf, id=812, 633.36626pt x 365.365pt>
 File: InterfazBusqueda.pdf Graphic file (type pdf)
 
 <use InterfazBusqueda.pdf>
-Package pdftex.def Info: InterfazBusqueda.pdf used on input line 248.
-(pdftex.def)             Requested size: 158.34117pt x 91.34102pt.
- <Interfaz.pdf, id=792, 672.5125pt x 387.4475pt>
+Package pdftex.def Info: InterfazBusqueda.pdf used on input line 247.
+(pdftex.def)             Requested size: 152.011pt x 87.68939pt.
+ <Interfaz.pdf, id=813, 672.5125pt x 387.4475pt>
 File: Interfaz.pdf Graphic file (type pdf)
 
 <use Interfaz.pdf>
-Package pdftex.def Info: Interfaz.pdf used on input line 248.
-(pdftex.def)             Requested size: 168.1277pt x 96.86163pt.
+Package pdftex.def Info: Interfaz.pdf used on input line 247.
+(pdftex.def)             Requested size: 161.4063pt x 92.98929pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (47.54836pt too high) detected at line 247
  []
 
 [14
@@ -1346,121 +1247,78 @@ D/Presentacion SWLOD Latex/Interfaz.pdf
 pdfTeX warning: pdflatex (file C:/Users/Usuario/Desktop/GoogleSVN/Presentación
  SWLOD/Presentacion SWLOD Latex/Interfaz.pdf): PDF inclusion: multiple pdfs wit
 h page group included in a single page
->]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
+>] [15
 
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[15
-
-] <Preguntas.pdf, id=858, 554.07pt x 379.4175pt>
+] <Preguntas.pdf, id=883, 554.07pt x 379.4175pt>
 File: Preguntas.pdf Graphic file (type pdf)
  <use Preguntas.pdf>
-Package pdftex.def Info: Preguntas.pdf used on input line 270.
+Package pdftex.def Info: Preguntas.pdf used on input line 269.
 (pdftex.def)             Requested size: 277.03432pt x 189.70828pt.
 
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (11.24931pt too high) detected at line 269
  []
 
 [16
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Preguntas.pdf>] <Resultados.pdf, id=891, 546.04pt x 320.19624pt>
+ex/Preguntas.pdf>] <Resultados.pdf, id=918, 546.04pt x 320.19624pt>
 File: Resultados.pdf Graphic file (type pdf)
 
 <use Resultados.pdf>
-Package pdftex.def Info: Resultados.pdf used on input line 278.
+Package pdftex.def Info: Resultados.pdf used on input line 277.
 (pdftex.def)             Requested size: 262.09622pt x 153.69244pt.
-
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[17
+ [17
 
  <C:/Users/Usuario/Desktop/GoogleSVN/Presentación SWLOD/Presentacion SWLOD Lat
-ex/Resultados.pdf>]
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[18
+ex/Resultados.pdf>] [18
 
 ]
 ("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
-ex\Presentacion.bbl")
-Overfull \hbox (368.4273pt too wide) has occurred while \output is active
- [][]  \T1/cmss/bx/n/6 ([])  
- []
-
-
-Overfull \hbox (190.1673pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[19
+ex\Presentacion.bbl") [19
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
 
 ("C:\Users\Usuario\Desktop\GoogleSVN\Presentación SWLOD\Presentacion SWLOD Lat
 ex\Presentacion.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 8CEAF84E0B825291E8309B7E909E2BCC;799.
+(rerunfilecheck)             Checksum: 2BC4445B5608810D68AFF33A0CD7FD0B;673.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 17389 strings out of 493921
- 324195 string characters out of 3147330
- 388474 words of memory out of 3000000
- 20156 multiletter control sequences out of 15000+200000
- 15089 words of font info for 33 fonts, out of 3000000 for 9000
+ 17363 strings out of 493921
+ 323095 string characters out of 3147330
+ 389266 words of memory out of 3000000
+ 20109 multiletter control sequences out of 15000+200000
+ 20637 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,16n,57p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,15n,55p,402b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1000.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1095.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfso1095.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfss0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
-uper/sfss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss
-1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0600.pfb>
-Output written on Presentacion.pdf (19 pages, 1492396 bytes).
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1000.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/cm-super/sfsi1095.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfso1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
+-super/sfss0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+ss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1095.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0600.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on Presentacion.pdf (19 pages, 1516174 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1062 PDF objects out of 1200 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
