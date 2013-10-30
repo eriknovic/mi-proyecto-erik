@@ -105,12 +105,10 @@ Las actividades básicas para la integración de los recursos son:
 \justifying
 \textit{Las \textbf{tecnologías semánticas} son un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos.}
 
-Estas tecnologías permiten:
-\begin{enumerate}
-\item \justifying representar el conocimiento explícito de los recursos en un formato estándar.
-\item \justifying explotar el conocimiento implícito mediante la introducción de axiomas.
-\item \justifying buscar y recuperar la información en la representación para responder una pregunta dada.
-\end{enumerate}
+\begin{figure}
+\includegraphics[scale=0.3]{TecSem} 
+\end{figure}
+
 \end{frame}
 
 %Estas son las razones del uso de estas tecnologías para la integración de los recursos.
@@ -121,6 +119,27 @@ Estas tecnologías permiten:
 %\end{enumerate}
 
 \section{Integración semántica de recursos}
+\begin{frame}
+\frametitle{Integración semántica de recursos}
+\justifying
+El uso de las tecnologías semánticas para realizar el proceso de integración de información para los recursos de una memoria corporativa.
+
+Las etapas de esta integración semántica son:
+ 
+\begin{enumerate}
+\item \justifying representar el conocimiento explícito de los recursos en un formato estándar.
+\item \justifying enriquecer el conocimiento implícito mediante la introducción de axiomas.
+\item \justifying buscar y recuperar la información en este modelo para responder una pregunta dada.
+\end{enumerate}
+\end{frame}
+
+\subsection{Arquitectura}
+\begin{frame}
+\frametitle{Arquitectura}
+\begin{figure}
+\includegraphics[scale=0.4]{Arquitectura} 
+\end{figure}
+\end{frame}
 
 \subsection{Casos de uso}
 \begin{frame}
@@ -142,14 +161,6 @@ Estas tecnologías permiten:
 
 \begin{figure}
 \includegraphics[scale=0.3]{OntologiasDiagrama} 
-\end{figure}
-\end{frame}
-
-\subsection{Arquitectura}
-\begin{frame}
-\frametitle{Arquitectura}
-\begin{figure}
-\includegraphics[scale=0.4]{Arquitectura} 
 \end{figure}
 \end{frame}
 
@@ -213,7 +224,7 @@ Lenguaje SPARQL es la especificación para consultar, recuperar y modificar la in
 \includegraphics[scale=0.25]{Qrycraz} 
 }
 \end{figure}
-Triplestore es el programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas.
+Apache Jena es una librería que permite el almacenamiento, carga, indexación, inferencia y consulta de/en tripletas RDF.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -245,8 +256,8 @@ amigable del usuario con el modelo semántico.
 En la integración semántica de recursos, se tienen dos
 criterios de evaluación para el triplestore Jena:
 \begin{itemize}
-	\item Calidad de los resultados.
-	\item Cantidad de resultados. 
+	\item Calidad de los resultados (sin inferencia vs con inferencia).
+	\item Tiempo medio de procesamiento (sin inferencia vs con inferencia). 
 \end{itemize}
 \end{frame}
 
