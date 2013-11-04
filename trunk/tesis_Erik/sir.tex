@@ -76,11 +76,9 @@ Las Sección \ref{sec:repKrec} describe la representación del conocimiento explíc
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 \section{Representación del conocimiento en los recursos}
 \label{sec:repKrec} 
-%La etapa de representación consiste en identificar y recopilar los recursos de la memoria corporativa, adquirir el conocimiento de los recursos a partir de las características y relaciones de éstos, representar este conocimiento mediante el uso del marco RDF.
-%% El primer paso en la representación es la adquisisción, identificación, caracterización y representación de los recursos
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
-La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos  de información} están clasificados por caso de uso.
+La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos de información} están clasificados por caso de uso.
 
 \begin{figure}[!htb]
 \centering
@@ -90,7 +88,7 @@ La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de
 \label{fig:mccu}
 \end{figure}
 
-La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}''. Por esta razón, la adquisición del conocimiento debe ser con base en las características y relaciones en/de los recursos de información.
+La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}''. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
 
 Un \textbf{\textit{diagrama de clases}} es una manera visual para describir y formalizar el conocimiento (características, relaciones y clases) en los recursos de información. Los \textit{diagramas de clases} de la memoria del área de RyT se obtienen a partir de los dos \textit{casos de uso}.
 
@@ -135,7 +133,7 @@ La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos dig
 %%% Tabla ejemplos de URI's
 %%%
 
-El siguiente paso es asignar un identificador URI para cada propiedad. Estas propiedades son obtenidas con base en las características y relaciones en/de los recursos que aparecen en los diagramas de clases (Figuras \ref{fig:dccc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ```\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ```\textit{sird}''.
+El siguiente paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ```\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ```\textit{sird}''.
 
 La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia la característica o relación, mientras la segunda columna presenta el identificador URI, el cual está abreviado con el prefijo ``sirp''.
 
@@ -152,38 +150,76 @@ La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades d
 
 El siguiente paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
 
-El último paso en la representación es escribir los recursos, propiedades, así como literales y otros objetos en forma de tripletas. Para ello, se emplea alguna herramienta para mapear la información en forma de tripletas. En la Sección \ref{sec:eoats}, la manera para la generación de tripletas se hace mediante el uso de formularios y scripts.
+El último paso en la representación es mapear los recursos, propiedades, así como literales y otros objetos en forma de tripletas. En esta tesis, el mapeo se hace mediante la combinación de formularios y scripts. Los objetivos de los formularios son la recuperación y almacenamiento de la información acerca de los recursos en \textit{hojas de cálculo}. Mientras, la finalidad de los scripts es transformar la información de las \textit{hojas de cálculo} en forma de tripletas RDF para su almacenamiento en archivos ``\textit{.rdf}''.
 
-El siguiente procedimiento se emplea para la generación de triplestas mediante el uso de formularios y scripts. Los formularios son hechos mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}} con la finalidad de recopilar de forma fácil y sencilla las características y relaciones en los \textit{recursos de información}. Estos formularios son enviados vía mail a los profesores o alumnos para que ellos describan los recursos de información. Las \textit{respuestas de los formularios} son enviados automáticamente a \textit{hojas de cálculo}. Posteriormente, estas respuestas son descargadas en un archivo csv. Estos archivos sirven como entradas para los scripts. La finalidad de estos scripts es transformar la información de estos archivos en forma de tripletas RDF y almacenar éstas en un archivo con extensión ``\textit{rdf}''.
+Este es el procedimiento para realizar el mapeo de información a tripletas RDF:
 
-La Tabla \ref{tab:drper} presenta algunas características y relaciones vistas como tripletas RDF para una persona del área de RyT. La primera columna enuncia las descripciones de los recursos, mientras la segunda columna presenta las tripleta RDF asociadas a estas descripciones.
+\begin{enumerate}
+\item Identificar la información que debe ser adquirida en los recursos con base en los diagramas de clases.
+\item Construir los formularios para los recursos de información (persona, documento y multimedia) mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}}, con el propósito de agilizar el proceso de recopilación de la información en los recursos.
+\item Enviar los formularios vía email a los profesores o alumnos, para que ellos escriban la información sobre las características y relaciones de los recursos.
+\item Recuperar y almacenar las respuestas de cada formulario en una de tres \textit{hojas de cálculo} (persona, documento y multimedia).
+\item Descargar la información de cada \textit{hoja de cálculo} en un archivo CSV\label{sym:csv} (persona, documento y multimedia).
+\item Transformar cada fila de un archivo csv a un conjunto de tripletas RDF, mediante los scripts que están escritos en Java y con la librería Jena.
+\item Almacenar las tripletas RDF asociadas a una fila (descripción semántica de un recurso) en un archivo ``\textit{rdf}'' con la sintaxis de serialización Turtle.
+\end{enumerate}
 
-%%
-%% Tabla descripciones de recursos del tipo persona
-%%
+%%Dibujo proceso de eneración de tripletas.
 
-La Figura \ref{fig:gfoper} muestra gráficamente las tripletas de la Tabla \ref{tab:drper} en un grafo RDF.
-
-%%
-%% Grafo RDF de los recursos personas
-%%
-
-La Tabla \ref{tab:drrd} muestra las descripciones de un documento en forma de tripletas RDF. La primera columna enuncia la descripción y la segunda columna muestra la tripleta RDF asociada a ésta.
-
-%%
-%% Tabla descripciones de recursos del tipo persona
-%%
-
-La Figura \ref{fig:gford} muestra gráficamente las tripletas de la Tabla \ref{tab:drrd} en un grafo RDF.
+La Figura \ref{fig:drper} presenta el mapeo de las características y relaciones de una persona del área de RyT en forma de tripletas RDF.
 
 %%
-%% Grafo RDF de los recursos personas
+%% Figura descripciones de recursos del tipo persona
 %%
 
-%Ahora bien, el diagrama de clases nos permite establecer la relación con otros recursos, distintos a las personas y recursos digitales. Por ello, se debe asignar URI para estos recursos. Para fines prácticos, aquellos recursos asociados al primer caso de uso, se emplea el mismo espacio de nombre. Mientras, los identificadores de los recursos del segundo caso de uso van 
+La Figura \ref{fig:drper} presenta el mapeo de las características y relaciones para un recurso documento perteneciente al área de RyT en forma de tripletas RDF.
+
+%%
+%% Figura descripciones de recursos del tipo persona
+%%
+
+Las tripletas RDF del conocimiento explícito para los recursos \textit{persona} conforman el componente asertivo (ABox) de la \textit{ontología cartografía de competencias}. Mientras, las tripletas RDF del conocimiento explícito de los recursos \textit{documento y multimedia} constituyen el componente asertivo de la \textit{ontología Recursos Digitales}.
 
 \section{Enriquecimiento del conocimiento en el modelo}
 \label{sec:enrKrec} 
+La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia.
+
+Los axiomas permiten representar el conocimiento implícito en los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
+
+Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas se hace con base en los siguientes elementos:1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
+
+\textbf{Herencia de clases}\\
+En el área de Redes y Telecomunicaciones, las personas pueden agruparse en cuatro clases básicas: \textbf{\textit{Estudiante}}, \textbf{\textit{Profesor}}, \textbf{\textit{Investigador}} y \textbf{\textit{Empleado}}. Las personas pueden pertenecer a más de una clase, por ejemplo, un profesor puede ser un investigador o un empleado, así como un estudiante puede ser un profesor o un empleado. Los profesores y empleados son profesionistas, por ello, la clase \textbf{\textit{Profesionista}} es super-clase de \textbf{\textit{Profesor}} y \textbf{\textit{Empleado}}. Finalmente, cualquier individuo perteneciente a una de estas cinco clases, pertenece es una persona. De esta manera, las cinco clases tienen como super-clase la clase \textbf{\textit{Persona}}. La Figura \ref{fig:jdc} muestra la jerarquía de clases para los recursos persona.
+
+%%
+%% Figura herencia de clases personas
+%%
+
+En el área de Redes y Telecomunicaciones, los principales recursos digitales se pueden agrupar en: \textbf{\textit{Artículo}}, \textbf{\textit{Libro}}, \textbf{\textit{Tesis}}, \textbf{\textit{Página Web}}, \textbf{\textit{Reporte Técnico}}, \textbf{\textit{Audio}}, \textbf{\textit{Vídeo}}, \textbf{\textit{Presentación}} e \textbf{\textit{Imagen}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documentos}} y \textbf{\textit{Mutimedia}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
+
+%%
+%% Figura herencia de clases recursos digitales
+%%
+
+\textbf{Herencia de propiedades}\\
+Las propiedades \textbf{\textit{lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son habilidades lingüísticas. Estas propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüísticos en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}.
+
+Las propiedades \textbf{\textit{trabaja en}} y \textbf{\textit{estudia en}} son relaciones entre una persona y un lugar de trabajo, por ello estas dos propiedades son generalizadas a partir de la propiedad \textit{tiene lugar de trabajo}.
+
+Las propiedades \textbf{\textit{tiene asesor}} y \textbf{\textit{tiene colega}} son relaciones que vinculan a dos personas. La propiedad \textit{tiene asesor} vincula a un estudiante con un profesor. Mientras, la propiedad \textit{tiene colega} vincula a dos profesionistas. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{conoce a}}, es decir, \textit{tiene colega} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a}.
+
+La Figura \ref{fig:dpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de la cartografía de competencias.
+
+%%
+%% Figura herencia de propiedades recursos digitales
+%%
+
+Axiomas de herencia de propiedades para la ontología de recursos persona
+
+Axiomas de herencia de propiedades para la ontología de recursos digitales
+
+En esta tesis, la finalidad de los axiomas es efectuar tareas de inferencia.
+
 Hay que mostrar las jerarquías de clases y de propriedades, así como los axiomas de nuestras ontologías.
 
 Dado que los casos de uso son independientes, decidimos utilizar una ontología para cada uno y otra que es de uso común (ODARyT).
