@@ -184,12 +184,14 @@ Las tripletas RDF del conocimiento explícito para los recursos \textit{persona} 
 \label{sec:enrKrec} 
 La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia.
 
-Los axiomas permiten representar el conocimiento implícito en los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
+Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
 
-Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas se hace con base en los siguientes elementos:1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
+Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
 \textbf{Herencia de clases}
-La primer representación del conocimiento implícito es la jerarquía de clases. La construcción de la jerarquía se hace con base en los diagramas de clases de las Figuras \ref{fig:dccc} y \ref{fig:mccu}. A continuación, se describen las dos jerarquías para la cartografía de competencias y recursos digitales.
+El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccc} y \ref{fig:mccu}.
+
+A continuación, se describen las dos \textit{jerarquías de clases} para la cartografía de competencias y recursos digitales.
 
 \begin{itemize}
 \item En el área RyT, las personas pueden agruparse en cuatro clases básicas: \textbf{\textit{Estudiante}}, \textbf{\textit{Profesor}}, \textbf{\textit{Investigador}} y \textbf{\textit{Empleado}}. Las personas pueden pertenecer a más de una clase, por ejemplo, un profesor puede ser un investigador o un empleado, así como un estudiante puede ser un profesor o un empleado. Los profesores y empleados son profesionistas, por ello, la clase \textbf{\textit{Profesionista}} es super-clase de \textbf{\textit{Profesor}} y \textbf{\textit{Empleado}}. Finalmente, cualquier individuo perteneciente a una de estas cinco clases, pertenece es una persona. De esta manera, las cinco clases tienen como super-clase la clase \textbf{\textit{Persona}}. La Figura \ref{fig:jdc} muestra la jerarquía de clases para los recursos persona.
@@ -219,7 +221,7 @@ A continuación, se describen las \textit{jerarquías de propiedades} para la\text
 \item Las propiedades \textbf{\textit{tiene asesor}} y \textbf{\textit{tiene colega}} son relaciones que vinculan a dos personas. La propiedad \textit{tiene asesor} vincula a un estudiante con un profesor. Mientras, la propiedad \textit{tiene colega} vincula a dos profesionistas. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{conoce a}}, es decir, \textit{tiene colega} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a}.
 \end{itemize}
 
-La Figura \ref{fig:dpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
+La Figura \ref{fig:jpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
 
 %%
 %% Figura herencia de propiedades recursos digitales
@@ -229,17 +231,32 @@ A continuación, se describen las \textit{jerarquías de propiedades} para el caso
 
 La propiedad \textbf{\textit{tiene resumen}} se emplea para describir el contenido básico de un documento. Mientras, la propiedad \textbf{\textit{tiene sinopsis}} describe el contenido básico de un recurso multimedia. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene compendio}}, la cual vincula a cualquier \textit{recurso digital} con la descripción básica del contenido de éste. Por esta razón, \textit{tiene resumen} y \textit{tiene sinopsis} son subpropiedades de \textit{tiene compendio}.
 
-La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la super-propiedad de las otras cinco propiedades.
+La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la superpropiedad de las otras cinco propiedades.
 
-La propiedad \textbf{\textit{publicado en la revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} se emplea para indicar que  y \textbf{\textit{tiene institución involucrada}} vinculan a un a los recursos digitales con una organizaciín
+La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una determinada revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}.
 
-En el caso de los recursos digitales, las jerarquías de propiedades son 
+La propiedad \textbf{\textit{publicado en la revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} se emplea para indicar que  y \textbf{\textit{tiene institución involucrada}} vinculan a un a los recursos digitales con una organización
 
-En el caso de uso recursos digitales, se tiene la siguiente jerarquía de propiedades:
+La Figura \ref{fig:jpXrd} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{búsqueda de recursos digitales}.
 
-Axiomas de herencia de propiedades para la ontología de recursos persona
+%%
+%% Figura herencia de propiedades recursos digitales
+%%
 
-Axiomas de herencia de propiedades para la ontología de recursos digitales
+\textbf{Domingo y rango de propiedades}
+Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio son \textit{los valores que puede tomar una función} y el rango son \textit{los valores que resultan de evaluar la función}.
+
+La Tabla \ref{tab:dyrcc} presenta el Dominio y Rango para las propiedades significativas pertenecientes a la cartografía de competencias. En la primera columna se enuncian las propiedades, la segunda columna muestra las clases para el Dominio, y la tercera columna muestra las clases o literales para el Rango de la propiedad.
+
+%%
+%% Tabla con los dominios para l cartografía de compenteias 
+%%
+
+La Tabla \ref{tab:dyrrd} muestra el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas que están asociadas al caso \textit{búsqueda de recursos digitales}. La primera columna se enuncian las propiedades, la segunda columna se enuncian las clases asociadas al Dominio, y la tercera columna se presentan las clases o literales del Rango.
+
+%%
+%% Tabla con los dominios para l cartografía de compenteias 
+%%
 
 En esta tesis, la finalidad de los axiomas es efectuar tareas de inferencia.
 
