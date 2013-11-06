@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  5 NOV 2013 22:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  6 NOV 2013 00:41
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -352,7 +352,11 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 31.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
+
+LaTeX Warning: Label `fig:dcbrd' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
@@ -365,8 +369,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen141
@@ -665,47 +668,52 @@ s/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoRecDig.pdf
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Cas
 oUsoRecDig.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
->]
-Overfull \hbox (22.8423pt too wide) in paragraph at lines 120--121
-[]\T1/cmr/m/n/12 Los re-cur-sos per-te-ne-cien-tes a la car-to-gra-fía de com-p
-e-ten-cia, em-plean el si-guien-te URI:``$\T1/cmtt/m/n/12 http :$
- []
+>] [45] [46] <Person2RDF.pdf, id=521, 941.5175pt x 446.66875pt>
+File: Person2RDF.pdf Graphic file (type pdf)
 
-[45] [46] [47]
+<use Person2RDF.pdf>
+Package pdftex.def Info: Person2RDF.pdf used on input line 264.
+(pdftex.def)             Requested size: 424.82523pt x 201.54433pt.
+ <Vid2RDF.pdf, id=522, 943.525pt x 350.30875pt>
+File: Vid2RDF.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:drper' on page 48 undefined on input line 278.
+<use Vid2RDF.pdf>
+Package pdftex.def Info: Vid2RDF.pdf used on input line 273.
+(pdftex.def)             Requested size: 424.82523pt x 157.72835pt.
+ [47] [48 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Person2RDF.pdf> <C:/Use
+rs/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid2RDF.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid
+2RDF.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>] <HerenClassCartComp.pdf, id=553, 477.785pt x 226.8475pt>
+File: HerenClassCartComp.pdf Graphic file (type pdf)
+
+<use HerenClassCartComp.pdf>
+Package pdftex.def Info: HerenClassCartComp.pdf used on input line 299.
+(pdftex.def)             Requested size: 283.22162pt x 134.46883pt.
+
+<HerenClassRecDigi.pdf, id=554, 477.785pt x 116.435pt>
+File: HerenClassRecDigi.pdf Graphic file (type pdf)
+
+<use HerenClassRecDigi.pdf>
+Package pdftex.def Info: HerenClassRecDigi.pdf used on input line 310.
+(pdftex.def)             Requested size: 448.42537pt x 142.2779pt.
+ [49 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>]
+
+LaTeX Warning: Reference `fig:jpXrp' on page 50 undefined on input line 327.
+
+[50 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassRecDigi.pdf>]
+
+LaTeX Warning: Reference `fig:jpXrd' on page 51 undefined on input line 343.
 
 
-LaTeX Warning: Reference `fig:drper' on page 48 undefined on input line 284.
+LaTeX Warning: Reference `tab:dyrcc' on page 51 undefined on input line 352.
 
 
-LaTeX Warning: Reference `fig:dccc' on page 48 undefined on input line 301.
+LaTeX Warning: Reference `tab:dyrrd' on page 51 undefined on input line 358.
 
-
-LaTeX Warning: Reference `fig:jdc' on page 48 undefined on input line 306.
-
-[48]
-
-LaTeX Warning: Reference `fig:jdrd' on page 49 undefined on input line 314.
-
-
-LaTeX Warning: Reference `fig:jpXrp' on page 49 undefined on input line 333.
-
-[49]
-
-LaTeX Warning: Reference `fig:jpXrd' on page 50 undefined on input line 349.
-
-
-LaTeX Warning: Reference `tab:dyrcc' on page 50 undefined on input line 358.
-
-
-LaTeX Warning: Reference `tab:dyrrd' on page 50 undefined on input line 364.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [51] [52
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [51] [52
 
 ]
 Cap\'{\i }tulo 6.
@@ -737,12 +745,15 @@ Ap\'{e}ndice A.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 5875 strings out of 493944
- 79497 string characters out of 3148281
- 166631 words of memory out of 3000000
- 8967 multiletter control sequences out of 15000+200000
+ 5897 strings out of 493944
+ 79933 string characters out of 3148281
+ 166703 words of memory out of 3000000
+ 8985 multiletter control sequences out of 15000+200000
  25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -766,9 +777,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (84 pages, 1238891 bytes).
+Output written on tesis_Erik.pdf (84 pages, 1541123 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
+ 698 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
