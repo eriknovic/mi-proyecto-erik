@@ -1,0 +1,10 @@
+@startuml
+
+(sirp:Investigador) -up-> (sirp:Persona) : rdfs:subClassOf
+(sirp:Profesionista) -up-> (sirp:Persona) : rdfs:subClassOf
+(sirp:Estudiante) -up-> (sirp:Persona) : rdfs:subClassOf
+
+(sirp:Profesor) -up-> (sirp:Profesionista) : rdfs:subClassOf
+(sirp:Empleado) -up-> (sirp:Profesionista) : rdfs:subClassOf
+
+@enduml

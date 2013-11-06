@@ -1,0 +1,71 @@
+@startuml
+skinparam stereotypeCBackgroundColor YellowGreen
+
+RecursoDigital <|-- Documento : es un
+Documento <|-- Artículo : es un
+Documento <|-- Libro : es un
+Documento <|-- Tesis : es un
+Documento <|-- ReporteTécnico : es un
+Documento <|-- PáginaWeb : es un
+
+RecursoDigital <|-- Multimedia : es un
+Multimedia <|-- Audio : es un
+Multimedia <|-- Vídeo : es un
+Multimedia <|-- Imagen : es un
+Multimedia <|-- Presentación : es un
+
+class RecursoDigital #PaleGreen {
+  Título: String
+  Autor: String
+  Ruta Archivo: URL
+}
+
+RecursoDigital -left-- Lenguaje : tiene idioma >
+RecursoDigital -down-- Extensión : tiene formato >
+RecursoDigital -right-- TemaODARyT : tiene topico >
+
+class Documento #PaleGreen {
+  Resumen: String
+  Número de páginas: Int
+}
+
+class Multimedia #PaleGreen {
+  Sinopsis: String
+  Año de creación: Int
+}
+
+class Tesis #PaleGreen {
+  Año de conclusión: Int
+}
+
+Tesis -- Universidad : institución\n involucrada >
+
+class Libro #PaleGreen {
+  Edición: Int
+  Año de publicación: Int
+}
+
+Libro -- CasaEditorial : tiene editorial >
+
+class Artículo #PaleGreen {
+  Keyword: String
+  Año de publicación: Int
+}
+
+Artículo -- RevistaCientifica : publicado en\n revista >
+Artículo -up-- TipoArtículo : es tipo >
+
+class ReporteTécnico #PaleGreen {
+  Año de elaboración: Int
+}
+
+class PáginaWeb #PaleGreen {
+  Año de última visita: Int
+}
+
+class Audio #PaleGreen
+class Vídeo #PaleGreen
+class Imagen #PaleGreen
+class Presentación #PaleGreen
+
+@enduml
