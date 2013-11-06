@@ -1,0 +1,47 @@
+@startuml
+
+skinparam stereotypeCBackgroundColor YellowGreen
+Persona <|-- Profesionista : es un
+Persona <|-- Estudiante : es un
+Persona <|-- Investigador : es un
+
+Profesionista <|-- Profesor : es un
+Profesionista <|-- Empleado : es un
+
+
+class Persona #PaleGreen {
+  Nombre: String
+  Edad: Int
+  Número telefónico: String
+  Email: URL
+  Sitio Web: URL
+}
+
+class Profesionista #PaleGreen
+class Estudiante #PaleGreen
+class Profesor #PaleGreen
+class Empleado #PaleGreen
+
+Persona -right-- Género : tiene género >
+Persona -down-- CompetenciaProfesional : compentente en >
+Persona -left-- Lenguaje : lee >
+Persona -left-- Lenguaje : habla >
+Persona -left-- Lenguaje : escribe >
+Persona -down-- TemaODARyT : habilidoso en >
+
+class Investigador #PaleGreen {
+  Línea de investigación: String
+}
+
+Estudiante -- Universidad : estudia en >
+Estudiante -- Profesionista : tiene asesor >
+
+Profesor -right-- Universidad : trabaja en >
+Profesor -down-- Profesionista : tiene colega >
+
+Empleado -right-- Organización : trabaja en >
+Empleado -left-- Profesionista : tiene colega >
+
+Organización <|-- Universidad
+
+@enduml

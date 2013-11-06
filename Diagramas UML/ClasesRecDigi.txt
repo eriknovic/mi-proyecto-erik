@@ -1,0 +1,17 @@
+@startuml
+
+(sird:Documento) -up-> (sird:RecursoDigital) : rdfs:subClassOf
+(sird:Multimedia) -up-> (sird:RecursoDigital) : rdfs:subClassOf
+
+(sird:Audio) -up--> (sird:Multimedia) : rdfs:subClassOf
+(sird:Video) -up--> (sird:Multimedia) : rdfs:subClassOf
+(sird:Imagen) -up--> (sird:Multimedia) : rdfs:subClassOf
+(sird:Presentacion) -up--> (sird:Multimedia) : rdfs:subClassOf
+
+(sird:Articulo) -up--> (sird:Documento) : rdfs:subClassOf
+(sird:Libro) -up--> (sird:Documento) : rdfs:subClassOf
+(sird:Tesis) -up--> (sird:Documento) : rdfs:subClassOf
+(sird:ReporteTecnico) -up--> (sird:Documento) : rdfs:subClassOf
+(sird:PaginaWeb) -up--> (sird:Documento) : rdfs:subClassOf
+
+@enduml
