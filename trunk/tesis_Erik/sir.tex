@@ -62,14 +62,14 @@ En ambos casos de uso, un aspecto importante es que tanto personas como recursos
 La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información.
 
 %% Diagrama de Venn ontologías.
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=0.6\textwidth]{Arquitectura}
-%\caption{Diagrama de Venn para visualizar las tres ontologías que conforman el modelo semántico}
-%\label{fig:ontocu}
-%\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{OntologiasDiagrama}
+\caption{Diagrama de Venn para visualizar las tres ontologías que conforman el modelo semántico}
+\label{fig:ontocu}
+\end{figure}
 
-Las Sección \ref{sec:repKrec} describe la representación del conocimiento explícito en los recursos de información. La Sección \ref{sec:enrKrec} describe los axiomas para enriquecer el conocimiento en el conocimiento explícito. Finalmente, la Sección \ref{sec:byrKrec} describe la búsqueda y recuperación de información en el modelo semántico.
+%Las Sección \ref{sec:repKrec} describe la representación del conocimiento explícito en los recursos de información. La Sección \ref{sec:enrKrec} describe los axiomas para enriquecer el conocimiento en el conocimiento explícito. Finalmente, la Sección \ref{sec:byrKrec} describe la búsqueda y recuperación de información en el modelo semántico.
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
@@ -92,25 +92,25 @@ La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información
 
 Un \textbf{\textit{diagrama de clases}} es una manera visual para describir y formalizar el conocimiento (características, relaciones y clases) en los recursos de información. Los \textit{diagramas de clases} de la memoria del área de RyT se obtienen a partir de los dos \textit{casos de uso}.
 
-La Figura \ref{fig:dccc} presenta las clases, características y relaciones para los recursos persona que están asociados a la cartografía de competencias.
+La Figura \ref{fig:dccarc} presenta las clases, características (atributos) y relaciones para los recursos persona que están asociados a la cartografía de competencias.
 
-%%% Diagrama de clases Personas
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=0.7\textwidth]{CasosUsoMC}
-%\caption{Diagrama de clases para la cartografía competencias.}
-%\label{fig:dccc}}
-%\end{figure}
+%%%Diagrama de clases Personas
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{CasoUsoCartComp}
+\caption{Diagrama de clases para la cartografía competencias.}
+\label{fig:dccarc}
+\end{figure}
 
-La Figura \ref{fig:dcbrd} presenta las clases, características y relaciones para los documentos y archivos multimedia que están asociados a la búsqueda de recursos digitales.
+La Figura \ref{fig:dcbrd} presenta las clases, características (atributos) y relaciones para los documentos y archivos multimedia que están asociados a la búsqueda de recursos digitales.
 
 %%% Diagrama de clases recursos digitales
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=0.7\textwidth]{CasosUsoMC}
-%\caption{Diagrama de clases para la búsqueda de recursos digitales.}
-%\label{fig:mccu}
-%\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{CasoUsoRecDig}
+\caption{Diagrama de clases para la búsqueda de recursos digitales.}
+\label{fig:dcbrd}
+\end{figure}
 
 La siguiente actividad es la \textbf{\textit{representación del conocimiento}} e información mediante el \textbf{\textit{marco de trabajo RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
 
@@ -123,36 +123,145 @@ El primer paso, es asignar un URI para cada recurso de información. Esta asignac
 
 La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
 
-%%%
-%%% Tabla ejemplos de URI's personas
-%%%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
+\hline
+\textbf{Nombre} & \textbf{Identificador}\\
+\hline
+\hline
+Alfonso Prieto & \textit{\textbf{sirp:}AlfonsoPrieto}  \\
+\hline
+Michael Pascoe & \textit{\textbf{sirp:}MichaelPascoe} \\
+\hline
+Reyna Carolina Medina & \textit{\textbf{sirp:}CarolinaMedinaRamirez} \\
+\hline
+Ricardo Marcelin & \textit{\textbf{sirp:}RicardoMarcelinJimenez} \\
+\hline
+Miguel Lopez & \textit{\textbf{sirp:}MiguelLopez} \\
+\hline 
+Victor Manuel Ramos & \textit{\textbf{sirp:}VictorRamosVictorRamos} \\
+\hline 
+Fausto Marcos Casco & \textit{\textbf{sirp:}FaustoCasco} \\
+\hline 
+Cesar Jalpa & \textit{\textbf{sirp:}CesarJalpa} \\
+\hline 
+Enrique Rodriguez & \textit{\textbf{sirp:}EnriqueRodriguez} \\
+\hline
+\end{tabular}
+\caption{Ejemplos de identificadores URI asociados a los recursos persona para la cartografía de competencias.}
+\label{tab:uriper}
+\end{table}
 
-La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales de los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
+La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales pertenecientes a los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
 
-%%%
-%%% Tabla ejemplos de URI's
-%%%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.4in}}
+\hline
+\textbf{Nombre} & \textbf{Identificador}\\
+\hline
+\hline
+Ontology engineering & \textit{\textbf{sird:}RR-4396-2002-pdf}  \\
+\hline
+Visualization in Ontology Tools & \textit{\textbf{sird:}VisualizationOntologyTools-2009-pdf} \\
+\hline
+A Description Logic Primer & \textit{\textbf{sird:}A-DescriptionLogicPrimer-2012-pdf} \\
+\hline
+A Survey on Ontology Evaluation Tools & \textit{\textbf{sird:}A-Survey-OntoEvaluationTools-2011-pdf} \\
+\hline
+TODE: Tool for Ontology Development and Editing & \textit{\textbf{sird:}TODE-Tool4OntologyDevel-2010-pdf} \\
+\hline 
+Introduction to Ontologies and OWL & \textit{\textbf{sird:}Introduction2Ontol-2005-pdf} \\
+\hline 
+The Semantic Web - An Overview & \textit{\textbf{sird:}TheSemanticWeb-AnOverview-2011-flv} \\
+\hline 
+Using Ontologies in the Semantic Web & \textit{\textbf{sird:}UsingOntologies-SemWeb-2005-pdf} \\
+\hline 
+What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
+\hline
+\end{tabular}
+\caption{Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la búsqueda de recursos digitales.}
+\label{tab:urird}
+\end{table}
 
-El siguiente paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ```\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ```\textit{sird}''.
+El siguiente paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
 
-La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia la característica o relación, mientras la segunda columna presenta el identificador URI, el cual está abreviado con el prefijo ``sirp''.
+La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas característica.
 
-%%
-%% Tabla de muestra de URI para propiedades
-%%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
+\hline
+\textbf{Característica o relación} & \textbf{Identificador}\\
+\hline
+\hline
+Nombre & \textit{\textbf{sirp:}tiene-nombre}  \\
+\hline
+Género & \textit{\textbf{sirp:}tiene-genero} \\
+\hline
+Email & \textit{\textbf{sirp:}tiene-email} \\
+\hline
+Sitio Web & \textit{\textbf{sirp:}tiene-sitioWeb} \\
+\hline
+Lugar de trabajo & \textit{\textbf{sirp:}trabajaEn} \\
+\hline
+Línea de investigación & \textit{\textbf{sirp:}investigaEn} \\
+\hline 
+Colega & \textit{\textbf{sirp:}tiene-colega} \\
+\hline
+Competencias & \textit{\textbf{sirp:}competenteEn} \\
+\hline
+Habilidades en de Redes y Telecom. & \textit{\textbf{sirp:}habilidosoEn} \\
+\hline
+\end{tabular}
+\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
+\label{tab:ccprop}
+\end{table}
 
+La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades de la búsqueda de recursos digitales. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas característica.
 
-La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades de la búsqueda de recursos digitales. La primera columna enuncia la característica o relación, mientras la segunda columna presenta  el URI que está abreviado con el prefijo ``\textit{sird}''.
-
-%%
-%% Tabla de muestra de URI para propiedades
-%%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
+\hline
+\textbf{Característica o relación} & \textbf{Identificador}\\
+\hline
+\hline
+Título & \textit{\textbf{sird:}tiene-titulo}  \\
+\hline
+Autor & \textit{\textbf{sird:}tiene-autor} \\
+\hline
+Ruta Archivo& \textit{\textbf{sird:}tiene-rutaArchivo} \\
+\hline
+Resumen & \textit{\textbf{sird:}tiene-resumen} \\
+\hline
+Año de creación & \textit{\textbf{sird:}tiene-añoDeCreacion} \\
+\hline
+Número de páginas & \textit{\textbf{sird:}tiene-numeroPaginas} \\
+\hline
+Keyword & \textit{\textbf{sird:}tiene-keyword} \\
+\hline 
+Lenguaje Fuente & \textit{\textbf{sird:}tiene-idioma} \\
+\hline 
+Temas de Redes y Telecom. & \textit{\textbf{sird:}tiene-topico} \\
+\hline 
+\end{tabular}
+\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la búsqueda de recursos digitales.}
+\label{tab:brdprop}
+\end{table}
 
 El siguiente paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
 
-El último paso en la representación es mapear los recursos, propiedades, así como literales y otros objetos en forma de tripletas. En esta tesis, el mapeo se hace mediante la combinación de formularios y scripts. Los objetivos de los formularios son la recuperación y almacenamiento de la información acerca de los recursos en \textit{hojas de cálculo}. Mientras, la finalidad de los scripts es transformar la información de las \textit{hojas de cálculo} en forma de tripletas RDF para su almacenamiento en archivos ``\textit{.rdf}''.
+En la representación del conocimiento explícito, el último paso es la \textbf{\textit{generación}} de \textit{tripletas RDF} asociadas a las declaraciones de los recursos.
 
-Este es el procedimiento para realizar el mapeo de información a tripletas RDF:
+En esta tesis, la generación de tripletas se hace mediante la combinación de formularios y scripts. Por un lado, los formularios son las herramientas para la recuperación y almacenamiento de la información acerca de los recursos en \textit{hojas de cálculo}. Por el otro lado, los scripts mapean la información de las \textit{hojas de cálculo} en forma de tripletas RDF para que posteriormente éstas sean almacenadas en archivos ``\textit{.rdf}''.
+
+Este es el procedimiento de generación de tripletas RDF mediante el uso de formularios y scripts:
 
 \begin{enumerate}
 \item Identificar la información que debe ser adquirida en los recursos con base en los diagramas de clases.
@@ -164,9 +273,9 @@ Este es el procedimiento para realizar el mapeo de información a tripletas RDF:
 \item Almacenar las tripletas RDF asociadas a una fila (descripción semántica de un recurso) en un archivo ``\textit{rdf}'' con la sintaxis de serialización Turtle.
 \end{enumerate}
 
-%%Dibujo proceso de eneración de tripletas.
+%%Dibujo proceso de generación de tripletas.
 
-La Figura \ref{fig:drper} presenta el mapeo de las características y relaciones de una persona del área de RyT en forma de tripletas RDF.
+La Figura \ref{fig:drper} presenta el mapeo de los valores asociados a las características y relaciones de una persona del área de RyT en forma de tripletas RDF.
 
 %%
 %% Figura descripciones de recursos del tipo persona
@@ -246,7 +355,7 @@ La Figura \ref{fig:jpXrd} muestra la jerarquía de propiedades para el \textit{ca
 \textbf{Domingo y rango de propiedades}
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio son \textit{los valores que puede tomar una función} y el rango son \textit{los valores que resultan de evaluar la función}.
 
-La Tabla \ref{tab:dyrcc} presenta el Dominio y Rango para las propiedades significativas pertenecientes a la cartografía de competencias. En la primera columna se enuncian las propiedades, la segunda columna muestra las clases para el Dominio, y la tercera columna muestra las clases o literales para el Rango de la propiedad.
+La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas pertenecientes a la \textit{cartografía de competencias}. En la primera columna se enuncian las propiedades, la segunda columna muestra las clases para el Dominio, y la tercera columna muestra las clases o literales para el Rango de la propiedad.
 
 %%
 %% Tabla con los dominios para l cartografía de compenteias 
@@ -257,13 +366,6 @@ La Tabla \ref{tab:dyrrd} muestra el \textbf{\textit{Dominio}} y \textbf{\textit{
 %%
 %% Tabla con los dominios para l cartografía de compenteias 
 %%
-
-En esta tesis, la finalidad de los axiomas es efectuar tareas de inferencia.
-
-Hay que mostrar las jerarquías de clases y de propriedades, así como los axiomas de nuestras ontologías.
-
-Dado que los casos de uso son independientes, decidimos utilizar una ontología para cada uno y otra que es de uso común (ODARyT).
-
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
