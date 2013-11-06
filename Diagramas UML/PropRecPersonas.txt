@@ -1,0 +1,15 @@
+@startuml
+
+"sirp:reads" -up-> "sirp:has-language" : rdfs:subPropertyOf 
+"sirp:speaks" -up-> "sirp:has-language" : rdfs:subPropertyOf 
+"sirp:writes" -up-> "sirp:has-language" : rdfs:subPropertyOf 
+
+"sirp:studiesIn" -up-> "sirp:has-workplace" : rdfs:subPropertyOf
+"sirp:worksIn" -up-> "sirp:has-workplace" : rdfs:subPropertyOf
+
+"sirp:has-advisor" -up-> "sirp:knows" : rdfs:subPropertyOf
+"sirp:has-colleague" -up-> "sirp:knows" : rdfs:subPropertyOf
+
+hide members
+hide circle
+@enduml

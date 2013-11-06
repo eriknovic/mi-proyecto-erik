@@ -1,0 +1,18 @@
+@startuml
+
+"sird:has-institutionInvolved" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
+"sird:has-publishingHouse" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
+"sird:publishedInJournal" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
+
+"sird:has-abstract" -up-> "sird:has-compendium" : rdfs:subPropertyOf
+"sird:has-synopsis" -up-> "sird:has-compendium" : rdfs:subPropertyOf
+
+"sird:has-yearOfConclusion" -up-> "sird:has-year" : rdfs:subPropertyOf
+"sird:has-yearOfCreation" -up-> "sird:has-year" : rdfs:subPropertyOf
+"sird:has-yearOfElaboration" -up-> "sird:has-year" : rdfs:subPropertyOf
+"sird:has-yearOfLastView" -up-> "sird:has-year" : rdfs:subPropertyOf
+"sird:has-yearOfPublication" -up-> "sird:has-year" : rdfs:subPropertyOf
+
+hide members
+hide circle
+@enduml
