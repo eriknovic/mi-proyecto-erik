@@ -117,8 +117,8 @@ La siguiente actividad es la \textbf{\textit{representación del conocimiento}} e
 El primer paso, es asignar un URI para cada recurso de información. Esta asignación de identificadores URI se hace con base en los casos de uso:
 
 \begin{itemize}
-\item Los recursos pertenecientes a la cartografía de competencia, emplean el siguiente URI:``\url{http://arte.izt.uam.mx/ontologies/personRyT.owl}\#'' y el prefijo ``\textit{sirp}'' para abreviar esta cadena.
-\item Los recursos pertenecientes a la búsqueda de recursos digitales, utilizan el siguiente URI: ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'' y el prefijo ``\textit{sird}'' para abreviar esta cadena.
+\item Los identificadores de los recursos en la cartografía de competencia emplean el prefijo ``\url{http://arte.izt.uam.mx/ontologies/personRyT.owl}\#'', el cual se abrevia ``\textit{sirp}''.
+\item Los identificadores de los recursos pertenecientes a la búsqueda de recursos digitales, utilizan el prefijo ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'', el cual se abrevia ``\textit{sird}''.
 \end{itemize}
 
 La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
@@ -159,27 +159,19 @@ La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos dig
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.2}
 \centering
-\begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.4in}}
+\begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.2in}}
 \hline
 \textbf{Nombre} & \textbf{Identificador}\\
 \hline
 \hline
 Ontology engineering & \textit{\textbf{sird:}RR-4396-2002-pdf}  \\
 \hline
-Visualization in Ontology Tools & \textit{\textbf{sird:}VisualizationOntologyTools-2009-pdf} \\
-\hline
 A Description Logic Primer & \textit{\textbf{sird:}A-DescriptionLogicPrimer-2012-pdf} \\
 \hline
-A Survey on Ontology Evaluation Tools & \textit{\textbf{sird:}A-Survey-OntoEvaluationTools-2011-pdf} \\
-\hline
-TODE: Tool for Ontology Development and Editing & \textit{\textbf{sird:}TODE-Tool4OntologyDevel-2010-pdf} \\
-\hline 
 Introduction to Ontologies and OWL & \textit{\textbf{sird:}Introduction2Ontol-2005-pdf} \\
 \hline 
 The Semantic Web - An Overview & \textit{\textbf{sird:}TheSemanticWeb-AnOverview-2011-flv} \\
-\hline 
-Using Ontologies in the Semantic Web & \textit{\textbf{sird:}UsingOntologies-SemWeb-2005-pdf} \\
-\hline 
+\hline
 What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
 \hline
 \end{tabular}
@@ -199,23 +191,19 @@ La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades qu
 \textbf{Característica o relación} & \textbf{Identificador}\\
 \hline
 \hline
-Nombre & \textit{\textbf{sirp:}tiene-nombre}  \\
+Nombre & \textit{\textbf{sirp:}has-name}  \\
 \hline
-Género & \textit{\textbf{sirp:}tiene-genero} \\
+Sitio Web & \textit{\textbf{sirp:}has-webSite} \\
 \hline
-Email & \textit{\textbf{sirp:}tiene-email} \\
+Lugar de trabajo & \textit{\textbf{sirp:}worksIn} \\
 \hline
-Sitio Web & \textit{\textbf{sirp:}tiene-sitioWeb} \\
-\hline
-Lugar de trabajo & \textit{\textbf{sirp:}trabajaEn} \\
-\hline
-Línea de investigación & \textit{\textbf{sirp:}investigaEn} \\
+Línea de investigación & \textit{\textbf{sirp:}researchesOn} \\
 \hline 
-Colega & \textit{\textbf{sirp:}tiene-colega} \\
+Colega & \textit{\textbf{sirp:}has-colleague} \\
 \hline
-Competencias & \textit{\textbf{sirp:}competenteEn} \\
+Competencias & \textit{\textbf{sirp:}competentIn} \\
 \hline
-Habilidades en de Redes y Telecom. & \textit{\textbf{sirp:}habilidosoEn} \\
+Habilidades en de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
 \hline
 \end{tabular}
 \caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
@@ -232,23 +220,17 @@ La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades d
 \textbf{Característica o relación} & \textbf{Identificador}\\
 \hline
 \hline
-Título & \textit{\textbf{sird:}tiene-titulo}  \\
+Título & \textit{\textbf{sird:}has-title}  \\
 \hline
-Autor & \textit{\textbf{sird:}tiene-autor} \\
+Autor & \textit{\textbf{sird:}has-author} \\
 \hline
-Ruta Archivo& \textit{\textbf{sird:}tiene-rutaArchivo} \\
+Ruta Archivo& \textit{\textbf{sird:}has-filePath} \\
 \hline
-Resumen & \textit{\textbf{sird:}tiene-resumen} \\
+Año de creación & \textit{\textbf{sird:}has-yearOfCreation} \\
 \hline
-Año de creación & \textit{\textbf{sird:}tiene-añoDeCreacion} \\
-\hline
-Número de páginas & \textit{\textbf{sird:}tiene-numeroPaginas} \\
-\hline
-Keyword & \textit{\textbf{sird:}tiene-keyword} \\
+Lenguaje Fuente & \textit{\textbf{sird:}has-languageSource} \\
 \hline 
-Lenguaje Fuente & \textit{\textbf{sird:}tiene-idioma} \\
-\hline 
-Temas de Redes y Telecom. & \textit{\textbf{sird:}tiene-topico} \\
+Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
 \hline 
 \end{tabular}
 \caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la búsqueda de recursos digitales.}
@@ -277,15 +259,21 @@ Este es el procedimiento de generación de tripletas RDF mediante el uso de formu
 
 La Figura \ref{fig:drper} presenta el mapeo de los valores asociados a las características y relaciones de una persona del área de RyT en forma de tripletas RDF.
 
-%%
-%% Figura descripciones de recursos del tipo persona
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{Person2RDF}
+\caption{Declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
+\label{fig:drper}
+\end{figure}
 
 La Figura \ref{fig:drper} presenta el mapeo de las características y relaciones para un recurso documento perteneciente al área de RyT en forma de tripletas RDF.
 
-%%
-%% Figura descripciones de recursos del tipo persona
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{Vid2RDF}
+\caption{Declaraciones de vídeo ``What is Linked Data?'' en forma de tripletas RDF}
+\label{fig:dcbrd}
+\end{figure}
 
 Las tripletas RDF del conocimiento explícito para los recursos \textit{persona} conforman el componente asertivo (ABox) de la \textit{ontología cartografía de competencias}. Mientras, las tripletas RDF del conocimiento explícito de los recursos \textit{documento y multimedia} constituyen el componente asertivo de la \textit{ontología Recursos Digitales}.
 
@@ -298,7 +286,7 @@ Los axiomas permiten representar el conocimiento implícito sobre: los recursos y
 Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
 \textbf{Herencia de clases}
-El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccc} y \ref{fig:mccu}.
+El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
 
 A continuación, se describen las dos \textit{jerarquías de clases} para la cartografía de competencias y recursos digitales.
 
@@ -306,17 +294,23 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 \item En el área RyT, las personas pueden agruparse en cuatro clases básicas: \textbf{\textit{Estudiante}}, \textbf{\textit{Profesor}}, \textbf{\textit{Investigador}} y \textbf{\textit{Empleado}}. Las personas pueden pertenecer a más de una clase, por ejemplo, un profesor puede ser un investigador o un empleado, así como un estudiante puede ser un profesor o un empleado. Los profesores y empleados son profesionistas, por ello, la clase \textbf{\textit{Profesionista}} es super-clase de \textbf{\textit{Profesor}} y \textbf{\textit{Empleado}}. Finalmente, cualquier individuo perteneciente a una de estas cinco clases, pertenece es una persona. De esta manera, las cinco clases tienen como super-clase la clase \textbf{\textit{Persona}}. La Figura \ref{fig:jdc} muestra la jerarquía de clases para los recursos persona.
 \end{itemize}
 
-%%
-%% Figura herencia de clases personas fig:jdc
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{HerenClassCartComp}
+\caption{Jerarquía de clases para los recursos persona}
+\label{fig:jdc}
+\end{figure}
 
 \begin{itemize}
 \item En el área RyT, los principales recursos digitales se pueden agrupar en: \textbf{\textit{Artículo}}, \textbf{\textit{Libro}}, \textbf{\textit{Tesis}}, \textbf{\textit{Página Web}}, \textbf{\textit{Reporte Técnico}}, \textbf{\textit{Audio}}, \textbf{\textit{Vídeo}}, \textbf{\textit{Presentación}} e \textbf{\textit{Imagen}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documentos}} y \textbf{\textit{Mutimedia}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
 \end{itemize}
 
-%%
-%% Figura herencia de clases recursos digitales fig:jdrd
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[height= 4cm, width=0.95\textwidth]{HerenClassRecDigi}
+\caption{Jerarquía de clases para los recursos digitales}
+\label{fig:jdrd}
+\end{figure}
 
 \textbf{Herencia de propiedades}
 
