@@ -326,40 +326,133 @@ A continuación, se describen las \textit{jerarquías de propiedades} para la\text
 
 La Figura \ref{fig:jpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
 
-%%
-%% Figura herencia de propiedades recursos digitales
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{HerenPropCartComp}
+\caption{Ejemplos de jerarquía de propiedades para los recursos persona}
+\label{fig:jpXrp}
+\end{figure}
 
 A continuación, se describen las \textit{jerarquías de propiedades} para el caso de uso \textit{búsqueda de recursos digitales}.
 
-La propiedad \textbf{\textit{tiene resumen}} se emplea para describir el contenido básico de un documento. Mientras, la propiedad \textbf{\textit{tiene sinopsis}} describe el contenido básico de un recurso multimedia. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene compendio}}, la cual vincula a cualquier \textit{recurso digital} con la descripción básica del contenido de éste. Por esta razón, \textit{tiene resumen} y \textit{tiene sinopsis} son subpropiedades de \textit{tiene compendio}.
-
-La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la superpropiedad de las otras cinco propiedades.
-
-La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una determinada revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}.
-
-La propiedad \textbf{\textit{publicado en la revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} se emplea para indicar que  y \textbf{\textit{tiene institución involucrada}} vinculan a un a los recursos digitales con una organización
+\begin{itemize}
+\item La propiedad \textbf{\textit{tiene resumen}} se emplea para describir el contenido básico de un documento. Mientras, la propiedad \textbf{\textit{tiene sinopsis}} describe el contenido básico de un recurso multimedia. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene compendio}}, la cual vincula a cualquier \textit{recurso digital} con la descripción básica del contenido de éste. Por esta razón, \textit{tiene resumen} y \textit{tiene sinopsis} son subpropiedades de \textit{tiene compendio}.
+\item La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la superpropiedad de las otras cinco propiedades.
+\item La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}.
+\end{itemize}
 
 La Figura \ref{fig:jpXrd} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{búsqueda de recursos digitales}.
 
-%%
-%% Figura herencia de propiedades recursos digitales
-%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{HerenPropRecDigi}
+\caption{Ejemplos de jerarquía de propiedades para los recursos digitales}
+\label{fig:jpXrd}
+\end{figure}
 
 \textbf{Domingo y rango de propiedades}
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio son \textit{los valores que puede tomar una función} y el rango son \textit{los valores que resultan de evaluar la función}.
 
 La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas pertenecientes a la \textit{cartografía de competencias}. En la primera columna se enuncian las propiedades, la segunda columna muestra las clases para el Dominio, y la tercera columna muestra las clases o literales para el Rango de la propiedad.
 
-%%
-%% Tabla con los dominios para l cartografía de compenteias 
-%%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
+\hline
+\textbf{Propiedad} & \textbf{Dominio} & \textbf{Rango}\\
+\hline
+\hline
+\textit{\textbf{sirp:}has-name} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sirp:}has-age} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sirp:}has-email} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}anyURI} \\
+\hline
+\textit{\textbf{sirp:}has-webSite} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}anyURI} \\
+\hline
+\textit{\textbf{sirp:}competentIn} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}Competence} \\
+\hline
+\textit{\textbf{sirp:}expertiseIn} & \textit{\textbf{sirp:}Person} & \textit{\textbf{redes:}TopicRyT} \\
+\hline
+\textit{\textbf{sirp:}has-gender} & \textit{\textbf{sirp:}Person} & \textit{\textbf{sirp:}Gender} \\
+\hline
+\textit{\textbf{sirp:}reads} & \textit{\textbf{sirp:}Person} & \textit{\textbf{sirp:}Language} \\
+\hline
+\textit{\textbf{sirp:}speaks} & \textit{\textbf{sirp:}Person} & \textit{\textbf{sirp:}Language} \\
+\hline
+\textit{\textbf{sirp:}writes} & \textit{\textbf{sirp:}Person} & \textit{\textbf{sirp:}Language} \\
+\hline
+\textit{\textbf{sirp:}researchesOn} & \textit{\textbf{sirp:}Researcher} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sirp:}has-advisor} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}Professional} \\
+\hline
+\textit{\textbf{sirp:}has-colleague} & \textit{\textbf{sirp:}Professional} & \textit{\textbf{sirp:}Professional} \\
+\hline
+\textit{\textbf{sirp:}studiesIn} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}University} \\
+\hline
+\textit{\textbf{sirp:}worksIn} & \textit{\textbf{sirp:}Professional} & \textit{\textbf{sirp:}Organization} \\
+\hline
+\end{tabular}
+\caption{Dominio y Rango para las propiedades asociadas a la cartografía de competencias.}
+\label{tab:dyrcc}
+\end{table}
 
 La Tabla \ref{tab:dyrrd} muestra el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas que están asociadas al caso \textit{búsqueda de recursos digitales}. La primera columna se enuncian las propiedades, la segunda columna se enuncian las clases asociadas al Dominio, y la tercera columna se presentan las clases o literales del Rango.
 
 %%
 %% Tabla con los dominios para l cartografía de compenteias 
 %%
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
+\hline
+\textbf{Propiedad} & \textbf{Dominio} & \textbf{Rango}\\
+\hline
+\hline
+\textit{\textbf{sird:}has-title} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sird:}has-author} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sird:}has-filePath} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{xsd:}anyURI} \\
+\hline
+\textit{\textbf{sird:}has-fileExtension} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{sird:}Extension} \\
+\hline
+\textit{\textbf{sird:}has-languageSource} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{sird:}Language} \\
+\hline
+\textit{\textbf{sird:}has-topic} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{redes:}TopicRyT} \\
+\hline
+\textit{\textbf{sird:}has-abstract} & \textit{\textbf{sird:}Document} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sird:}has-numberOfPages} & \textit{\textbf{sird:}Document} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-description} & \textit{\textbf{sird:}Multimedia} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sird:}has-edition} & \textit{\textbf{sird:}Book} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-publishingHouse} & \textit{\textbf{sird:}Book} & \textit{\textbf{sirp:}PublishingHouse} \\
+\hline
+\textit{\textbf{sird:}publishedInJournal} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}Journal} \\
+\hline
+\textit{\textbf{sird:}has-institutionInvolved} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
+\hline
+\textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}TypeArticle} \\
+\hline
+\textit{\textbf{sird:}has-yearOfConclusion} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfElaboration} & \textit{\textbf{ }} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfLastView} & \textit{\textbf{sird:}Webpage} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Book} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Paper} & \textit{\textbf{xsd:}integer} \\
+\hline
+\end{tabular}
+\caption{Dominio y Rango para las propiedades asociadas a la búsqueda de recursos digitales.}
+\label{tab:dyrrd}
+\end{table}
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
