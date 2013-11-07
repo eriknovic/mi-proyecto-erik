@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  6 NOV 2013 00:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  6 NOV 2013 23:37
 entering extended mode
 **sir.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex
@@ -11632,5 +11632,5 @@ Here is how much of TeX's memory you used:
  3408 multiletter control sequences out of 15000+200000
  4653 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 19i,4n,30p,1036b,132s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 19i,4n,30p,1168b,132s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
