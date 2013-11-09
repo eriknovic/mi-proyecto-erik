@@ -33,7 +33,7 @@ La Figura \ref{fig:arq} muestra la arquitectura para la \textit{integración semá
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.6\textwidth]{Arquitectura}
+\includegraphics[width=0.7\textwidth]{Arquitectura}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
@@ -80,7 +80,7 @@ La primera actividad es \textbf{\textit{identificar los principales recursos de 
 
 La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos de información} están clasificados por caso de uso.
 
-\begin{figure}[!htb]
+\begin{figure}[!hp]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
 \includegraphics[width=0.7\textwidth]{CasosUsoMC}
@@ -90,24 +90,22 @@ La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de
 
 La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}''. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
 
-Un \textbf{\textit{diagrama de clases}} es una manera visual para describir y formalizar el conocimiento (características, relaciones y clases) en los recursos de información. Los \textit{diagramas de clases} de la memoria del área de RyT se obtienen a partir de los dos \textit{casos de uso}.
+Un \textbf{\textit{diagrama de clases}} es una manera visual para mostrar un conjunto de clases, colaboraciones y sus relaciones \cite{UML}. Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones y sus relaciones en un momento dado.
 
-La Figura \ref{fig:dccarc} presenta las clases, características (atributos) y relaciones para los recursos persona que están asociados a la cartografía de competencias.
+En la Figura \ref{fig:dccarc} se presentan las clases, atributos(características) y relaciones entre éstas para visualizar y especificar el comportamiento de los \textit{recursos de información} que pertenecen a la cartografía de competencias. Mientras, la Figura \ref{fig:dcbrd} muestra las clases y sus relaciones para los documentos y archivos multimedia pertenecientes a la búsqueda de recursos digitales.
 
 %%%Diagrama de clases Personas
-\begin{figure}[!htb]
+\begin{figure}[hp]
 \centering
-\includegraphics[width=0.8\textwidth]{CasoUsoCartComp}
+\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}
 \caption{Diagrama de clases para la cartografía competencias.}
 \label{fig:dccarc}
 \end{figure}
 
-La Figura \ref{fig:dcbrd} presenta las clases, características (atributos) y relaciones para los documentos y archivos multimedia que están asociados a la búsqueda de recursos digitales.
-
 %%% Diagrama de clases recursos digitales
-\begin{figure}[!htb]
+\begin{figure}[hp]
 \centering
-\includegraphics[width=0.9\textwidth]{CasoUsoRecDig}
+\includegraphics[angle=90,scale=0.85]{CasoUsoRecDig}
 \caption{Diagrama de clases para la búsqueda de recursos digitales.}
 \label{fig:dcbrd}
 \end{figure}
@@ -256,24 +254,45 @@ Este es el procedimiento de generación de tripletas RDF mediante el uso de formu
 \end{enumerate}
 
 %%Dibujo proceso de generación de tripletas.
-
-La Figura \ref{fig:drper} presenta el mapeo de los valores asociados a las características y relaciones de una persona del área de RyT en forma de tripletas RDF.
+En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF. En la parte izquierda de esta figura, se presenta una foto representativa del Dr. Ricardo. Mientras, la parte derecha se dan a conocer las tripletas RDF en formato de serialización Turtle que describen las características y relaciones básicas de esta persona.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{Person2RDF}
+\includegraphics[width=1.0\textwidth]{Person2RDF}
 \caption{Declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
 \label{fig:drper}
 \end{figure}
 
-La Figura \ref{fig:drper} presenta el mapeo de las características y relaciones para un recurso documento perteneciente al área de RyT en forma de tripletas RDF.
+
+El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\textit{\textbf{sirp:}RicardoMarcelin Jimenez}''. En la Figura \ref{fig:drper}, el conjunto de tripletas RDF  indican las siguientes declaraciones:
+
+\begin{itemize}
+\item En el primer recuadro, la tripleta RDF establece que este recurso pertenece a la clase Profesor.
+\item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
+\item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
+\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica \cite{Compentences}.
+\item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}.
+\item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
+\end{itemize}
+
+La Figura \ref{fig:drdig} presenta la representación del vídeo ``\textit{What is Linked Data?}'' en forma de tripletas RDF. La parte izquierda de esta figura, muestra una captura de pantalla de éste vídeo, mientras la parte derecha muestra las declaraciones de este vídeo en forma de tripletas RDF.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{Vid2RDF}
+\includegraphics[width=1.0\textwidth]{Vid2RDF}
 \caption{Declaraciones de vídeo ``What is Linked Data?'' en forma de tripletas RDF}
-\label{fig:dcbrd}
+\label{fig:drdig}
 \end{figure}
+
+Las tripletas RDF de la Figura \ref{fig:drdig} establecen las siguientes características y relaciones para el vídeo \textit{What is Linked Data?}.
+
+\begin{itemize}
+\item En el primer recuadro, la tripleta RDF indica que el recurso \textit{What is Linked Data?} pertenece a la clase Video.
+\item En el segundo recuadro se indican los valores asociados a las características \textit{título}, \textit{autor} y \textit{ruta del archivo}.
+\item En el tercer recuadro, la tripleta RDF establece la extensión o formato del recurso digital, así como el idioma fuente en que está escrito o que se habla en este recurso.
+\item En el cuarto recuadro, se establecen los temas de Redes y Telecomunicaciones que están  en el contenido de este recurso digital.
+\item En el quinto recuadro, se establecen las tripletas para indicar la sinopsis y el año de creación de este vídeo.
+\end{itemize}
 
 Las tripletas RDF del conocimiento explícito para los recursos \textit{persona} conforman el componente asertivo (ABox) de la \textit{ontología cartografía de competencias}. Mientras, las tripletas RDF del conocimiento explícito de los recursos \textit{documento y multimedia} constituyen el componente asertivo de la \textit{ontología Recursos Digitales}.
 

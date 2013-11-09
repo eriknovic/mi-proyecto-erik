@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  6 NOV 2013 23:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 NOV 2013 01:03
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -352,11 +352,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 Package color Info: Redefining color black on input line 31.
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
-
-LaTeX Warning: Label `fig:dcbrd' multiply defined.
-
-)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
@@ -369,7 +365,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen141
@@ -623,7 +620,7 @@ File: Arquitectura.pdf Graphic file (type pdf)
 
 <use Arquitectura.pdf>
 Package pdftex.def Info: Arquitectura.pdf used on input line 36.
-(pdftex.def)             Requested size: 283.22162pt x 293.85837pt.
+(pdftex.def)             Requested size: 330.42041pt x 342.8318pt.
  [40]
 
 Package Fancyhdr Warning: \headheight is too small (18.0pt): 
@@ -638,125 +635,123 @@ File: OntologiasDiagrama.pdf Graphic file (type pdf)
 <use OntologiasDiagrama.pdf>
 Package pdftex.def Info: OntologiasDiagrama.pdf used on input line 67.
 (pdftex.def)             Requested size: 236.01561pt x 231.87253pt.
-
-Underfull \vbox (badness 5548) has occurred while \output is active []
-
- [42 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntologiasDiagrama.pdf>]
-<CasosUsoMC.pdf, id=346, 764.8575pt x 571.13374pt>
+ [42 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntologiasDiagrama.pdf>] <Ca
+sosUsoMC.pdf, id=346, 764.8575pt x 571.13374pt>
 File: CasosUsoMC.pdf Graphic file (type pdf)
- <use CasosUsoMC.pdf>
+
+<use CasosUsoMC.pdf>
 Package pdftex.def Info: CasosUsoMC.pdf used on input line 86.
 (pdftex.def)             Requested size: 330.42041pt x 246.73308pt.
-
-[43 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUsoMC.pdf>]
-<CasoUsoCartComp.pdf, id=500, 733.74126pt x 460.72125pt>
+ [43 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUsoMC.pdf>] <CasoUsoCar
+tComp.pdf, id=500, 733.74126pt x 460.72125pt>
 File: CasoUsoCartComp.pdf Graphic file (type pdf)
 
 <use CasoUsoCartComp.pdf>
 Package pdftex.def Info: CasoUsoCartComp.pdf used on input line 100.
-(pdftex.def)             Requested size: 377.62642pt x 237.11592pt.
+(pdftex.def)             Requested size: 733.73947pt x 460.72012pt.
 
 <CasoUsoRecDig.pdf, id=501, 720.6925pt x 310.15875pt>
 File: CasoUsoRecDig.pdf Graphic file (type pdf)
  <use CasoUsoRecDig.pdf>
-Package pdftex.def Info: CasoUsoRecDig.pdf used on input line 110.
-(pdftex.def)             Requested size: 424.82523pt x 182.82643pt.
+Package pdftex.def Info: CasoUsoRecDig.pdf used on input line 108.
+(pdftex.def)             Requested size: 720.69075pt x 310.15799pt.
 
-[44 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoCartComp.pdf> <C:/User
-s/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoRecDig.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Cas
-oUsoRecDig.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->] [45] [46] <Person2RDF.pdf, id=521, 941.5175pt x 446.66875pt>
+LaTeX Warning: Float too large for page by 20.1391pt on input line 111.
+
+[44] [45 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoCartComp.pdf>]
+[46 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoRecDig.pdf>] [47]
+[48] <Person2RDF.pdf, id=528, 1013.7875pt x 457.71pt>
 File: Person2RDF.pdf Graphic file (type pdf)
+ <use Person2RDF.pdf>
+Package pdftex.def Info: Person2RDF.pdf used on input line 261.
+(pdftex.def)             Requested size: 472.03123pt x 213.11232pt.
 
-<use Person2RDF.pdf>
-Package pdftex.def Info: Person2RDF.pdf used on input line 264.
-(pdftex.def)             Requested size: 424.82523pt x 201.54433pt.
- <Vid2RDF.pdf, id=522, 943.525pt x 350.30875pt>
+
+LaTeX Warning: Citation `Compentences' on page 49 undefined on input line 273.
+
+[49 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Person2RDF.pdf>]
+<Vid2RDF.pdf, id=551, 992.70876pt x 347.2975pt>
 File: Vid2RDF.pdf Graphic file (type pdf)
-
-<use Vid2RDF.pdf>
-Package pdftex.def Info: Vid2RDF.pdf used on input line 273.
-(pdftex.def)             Requested size: 424.82523pt x 157.72835pt.
- [47] [48 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Person2RDF.pdf> <C:/Use
-rs/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid2RDF.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid
-2RDF.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
->] <HerenClassCartComp.pdf, id=553, 421.575pt x 210.7875pt>
+ <use Vid2RDF.pdf>
+Package pdftex.def Info: Vid2RDF.pdf used on input line 282.
+(pdftex.def)             Requested size: 472.03123pt x 165.1376pt.
+ [50 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid2RDF.pdf>]
+<HerenClassCartComp.pdf, id=575, 421.575pt x 210.7875pt>
 File: HerenClassCartComp.pdf Graphic file (type pdf)
 
 <use HerenClassCartComp.pdf>
-Package pdftex.def Info: HerenClassCartComp.pdf used on input line 299.
+Package pdftex.def Info: HerenClassCartComp.pdf used on input line 318.
 (pdftex.def)             Requested size: 283.22162pt x 141.61285pt.
- [49 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>]
-<HerenClassRecDigi.pdf, id=562, 483.8075pt x 122.4575pt>
+
+<HerenClassRecDigi.pdf, id=576, 483.8075pt x 122.4575pt>
 File: HerenClassRecDigi.pdf Graphic file (type pdf)
 
 <use HerenClassRecDigi.pdf>
-Package pdftex.def Info: HerenClassRecDigi.pdf used on input line 310.
+Package pdftex.def Info: HerenClassRecDigi.pdf used on input line 329.
 (pdftex.def)             Requested size: 448.4451pt x 142.26753pt.
+ [51] [52 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>
+ <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassRecDigi.pdf
 
-<HerenPropCartComp.pdf, id=563, 459.7175pt x 242.9075pt>
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+enClassRecDigi.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+>] <HerenPropCartComp.pdf, id=593, 459.7175pt x 242.9075pt>
 File: HerenPropCartComp.pdf Graphic file (type pdf)
 
 <use HerenPropCartComp.pdf>
-Package pdftex.def Info: HerenPropCartComp.pdf used on input line 331.
+Package pdftex.def Info: HerenPropCartComp.pdf used on input line 350.
 (pdftex.def)             Requested size: 330.42041pt x 174.59674pt.
- [50 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassRecDigi.pdf>] <Her
-enPropRecDigi.pdf, id=572, 624.3325pt x 254.9525pt>
+ [53 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenPropCartComp.pdf>] <Her
+enPropRecDigi.pdf, id=604, 624.3325pt x 254.9525pt>
 File: HerenPropRecDigi.pdf Graphic file (type pdf)
 
 <use HerenPropRecDigi.pdf>
-Package pdftex.def Info: HerenPropRecDigi.pdf used on input line 348.
+Package pdftex.def Info: HerenPropRecDigi.pdf used on input line 367.
 (pdftex.def)             Requested size: 330.42041pt x 134.93355pt.
- [51 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenPropCartComp.pdf>] [52 
-<C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenPropRecDigi.pdf>]) (C:\Users
-\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex
-[53] [54
-
-]
+)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [54 <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/HerenPropRecDigi.pdf>] [55] [56]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [55] [56
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [57
+
+] [58
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [57] [58]
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [59] [60]
 Cap\'{\i }tulo 8.
-[59
+[61
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60])
-[61] [62
+ [62])
+[63] [64
 
-] [63
+] [65
 
-] [64] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [66] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [65
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [67
 
-] [66
+] [68
 
 ]
-[67] [68] [69]) [70]
+[69] [70] [71]) [72]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5911 strings out of 493944
- 80220 string characters out of 3148281
- 166749 words of memory out of 3000000
- 8997 multiletter control sequences out of 15000+200000
+ 5916 strings out of 493944
+ 80266 string characters out of 3148281
+ 172725 words of memory out of 3000000
+ 9002 multiletter control sequences out of 15000+200000
  25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
@@ -777,9 +772,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (86 pages, 1583871 bytes).
+Output written on tesis_Erik.pdf (88 pages, 1617269 bytes).
 PDF statistics:
- 721 PDF objects out of 1000 (max. 8388607)
+ 742 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
