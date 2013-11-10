@@ -7,7 +7,7 @@ La \textit{integración semántica de recursos} puede implementarse en una \textit
 
 El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
 
-La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de ésta son:
+La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
 
 \begin{itemize}
 \item realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}
@@ -24,16 +24,16 @@ Esta metodología está organizada en tres etapas principales:
 \item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
 
-La primera y segunda etapa consisten en la construcción del modelo semántico, mientras la tercera etapa consiste en la consulta de información en este modelo.
+En esta metodología, la primera y segunda etapa sirven para construir el modelo semántico a partir del conocimiento explícito e implícito en los recursos de información. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
-En esta metodología, uno de los elementos clave es el \textbf{\textit{caso de uso}}. Porque este elemento encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
+En esta metodología, el elemento clave es el \textbf{\textit{caso de uso}}. Porque un caso de uso encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}.
 
 La Figura \ref{fig:arq} muestra la arquitectura para la \textit{integración semántica de recursos}. Esta arquitectura es genérica para ser desarrollada e implementada en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan mediante el uso de nuestra propuesta de metodología.
 
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.7\textwidth]{Arquitectura}
+\includegraphics[width=0.5\textwidth]{Arquitectura}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
@@ -59,7 +59,7 @@ Estos dos \textit{casos de uso} son independientes entre ellos, por tal razón, c
 
 En ambos casos de uso, un aspecto importante es que tanto personas como recursos digitales se vinculan con los temas del área de Redes y Telecomunicaciones(RyT). Específicamente, los conocimientos de las personas son relaciones entre personas y temas de RyT. Mientras, los tópicos pertenecientes en los recursos digitales son las relaciones entre recursos digitales y temas de RyT. Por tal razón, se construye una tercer ontología para modelar el vocabulario consensual del área de Redes y Telecomunicaciones.
 
-La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información.
+La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información (personas, documentos y multimedia, así como conceptos de RyT). En esta figura, las flechas representan el vinculo entre: \textit{personas personas - conceptos de RyT} y \textit{recursos digitales - conceptos de RyT}.
 
 %% Diagrama de Venn ontologías.
 \begin{figure}[!htb]
@@ -294,7 +294,7 @@ Las tripletas RDF de la Figura \ref{fig:drdig} establecen las siguientes caracte
 \item En el quinto recuadro, se establecen las tripletas para indicar la sinopsis y el año de creación de este vídeo.
 \end{itemize}
 
-Las tripletas RDF del conocimiento explícito para los recursos \textit{persona} conforman el componente asertivo (ABox) de la \textit{ontología cartografía de competencias}. Mientras, las tripletas RDF del conocimiento explícito de los recursos \textit{documento y multimedia} constituyen el componente asertivo de la \textit{ontología Recursos Digitales}.
+Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los recursos persona, conforman el \textit{componente asertivo} de la ontología \textit{cartografía de competencias}. De igual manera, todas las \textit{tripletas RDF} asociadas a las declaraciones de los documentos y archivos multimedia, constituyen el \textit{componente asertivo} de la ontología \textit{búsqueda de recursos digitales}.
 
 \section{Enriquecimiento del conocimiento en el modelo}
 \label{sec:enrKrec} 
@@ -304,7 +304,7 @@ Los axiomas permiten representar el conocimiento implícito sobre: los recursos y
 
 Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
-\textbf{Herencia de clases}
+\subsection{Herencia de clases}
 El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
 
 A continuación, se describen las dos \textit{jerarquías de clases} para la cartografía de competencias y recursos digitales.
@@ -320,37 +320,81 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 \label{fig:jdc}
 \end{figure}
 
+En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a partir del uso de axiomas de \textit{jerarquía de clases}. En la parte izquierda de la Figura \ref{fig:exHerClasPer}, se muestra una rama de la ontología \textit{cartografía de competencias}. Esta rama tiene dos axiomas que establecen que un \textit{Profesor es un Profesionista} y un \textit{Profesionista es una Persona}. Esta rama también indica que el recurso Ricardo Marcelin Jiménez pertenece a la clase Profesor. Mientras, en la parte de la derecha de la Figura \ref{fig:exHerClasPer}, se muestra la misma rama con inferencia, la cual indica que el recurso Ricardo Marcelin Jiménez pertenece  las clases: Profesor, Profesionista y Persona.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{ExpInfsubClassPer}
+\caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
+\label{fig:exHerClasPer}
+\end{figure}
+
 \begin{itemize}
-\item En el área RyT, los principales recursos digitales se pueden agrupar en: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documento (Document)}} y \textbf{\textit{Mutimedia (Multimedia)}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
+\item En el área RyT, los principales recursos digitales se pueden agrupar en ocho clases básicas: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documento (Document)}} y \textbf{\textit{Mutimedia (Multimedia)}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
 \end{itemize}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height= 5cm, width=0.95\textwidth]{HerenClassRecDigi}
+\includegraphics[height=2.5in,width=0.95\textwidth]{HerenClassRecDigi}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
 
-\textbf{Herencia de propiedades}
+En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a partir de axiomas de \textit{jerarquía de clases}. En esta figura, los axiomas son tomados de la ontología \textit{búsqueda de recursos digitales}. La parte izquierda de esta Figura \ref{fig:exHerClasDigi} ilustra una rama de la \textit{ontología recursos digitales}. En esta rama, se exalta la asignación del recurso \textit{What is Linked Data?} a la clase Video. Mientras, la parte derecha de la Figura \ref{fig:exHerClasDigi}, se presenta esta rama después de realizar inferencia. En esta rama, el recurso \textit{What is Linked Data?} está asignado a estas clases: \textit{Video, Multimedia} y \textit{Recurso Digital}.
 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{ExpInfsubClassDigi}
+\caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso What is Linked Data?}
+\label{fig:exHerClasDigi}
+\end{figure}
+
+\subsection{Herencia de propiedades}
 Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos en los caso de uso; averiguando que propiedades tienen un significado común.
 
 A continuación, se describen las \textit{jerarquías de propiedades} para la\textit{cartografía de competencias}.
 
 \begin{itemize}
-\item Las propiedades \textbf{\textit{lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son habilidades lingüísticas. Estas propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüísticos en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}.
-\item Las propiedades \textbf{\textit{trabaja en}} y \textbf{\textit{estudia en}} son relaciones entre una persona y un lugar de trabajo, por ello estas dos propiedades son generalizadas a partir de la propiedad \textit{tiene lugar de trabajo}.
-\item Las propiedades \textbf{\textit{tiene asesor}} y \textbf{\textit{tiene colega}} son relaciones que vinculan a dos personas. La propiedad \textit{tiene asesor} vincula a un estudiante con un profesor. Mientras, la propiedad \textit{tiene colega} vincula a dos profesionistas. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{conoce a}}, es decir, \textit{tiene colega} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a}.
+\item \textbf{\textit{Lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son propiedades para indicar las habilidades lingüísticas de una persona. Estas propiedades pueden generalizarse a partir de la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüísticos en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}. En la Figura \ref{fig:HerPropLang} se muestra la jerarquía de propiedades para describir las habilidades lingüísticas de las personas.
 \end{itemize}
-
-La Figura \ref{fig:jpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.7\textwidth]{HerenPropCartComp}
-\caption{Ejemplos de jerarquía de propiedades para los recursos persona}
-\label{fig:jpXrp}
+\includegraphics[width=0.6\textwidth]{HerPropLang}
+\caption{Jerarquía de propiedades para las habilidades lingüísticas.}
+\label{fig:HerPropLang}
 \end{figure}
+
+\begin{itemize}
+\item Las propiedades \textbf{\textit{trabaja en}} y \textbf{\textit{estudia en}} son relaciones que permiten vincular a una persona con el lugar donde labora (trabajo o estudio), por ello, estas dos propiedades son generalizadas a partir de la propiedad \textit{tiene lugar de trabajo}. En la Figura \ref{fig:HerPropLoW} se muestra la jerarquía de propiedades para el lugar de trabajo.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.40\textwidth]{HerPropLoW}
+\caption{Jerarquía de propiedades para el lugar de trabajo.}
+\label{fig:HerPropLoW}
+\end{figure}
+
+\begin{itemize}
+\item Las propiedades \textbf{\textit{tiene asesor}} y \textbf{\textit{tiene colega}} son relaciones que vinculan a dos personas. La propiedad \textit{tiene asesor} vincula a un estudiante con un profesor. Mientras, la propiedad \textit{tiene colega} vincula a dos profesionistas. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{conoce a}}, es decir, \textit{tiene colega} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a}. En la Figura \ref{fig:HerPropKno} se muestra la jerarquía de propiedades que representan las relaciones profesionales entre las personas del área RyT.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.40\textwidth]{HerPropKno}
+\caption{Jerarquía de propiedades para las relaciones profesionales entre personas.}
+\label{fig:HerPropKno}
+\end{figure}
+
+%La Figura \ref{fig:jpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[height=1.3in,width=1.0\textwidth]{HerenPropCartComp}
+%\caption{Ejemplos de jerarquía de propiedades para los recursos persona}
+%\label{fig:jpXrp}
+%\end{figure}
 
 A continuación, se describen las \textit{jerarquías de propiedades} para el caso de uso \textit{búsqueda de recursos digitales}.
 
