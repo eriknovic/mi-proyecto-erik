@@ -30,13 +30,14 @@
 \contentsline {section}{\numberline {5.2}Enriquecimiento del conocimiento en el modelo}{50}
 \contentsline {subsection}{\numberline {5.2.1}Herencia de clases}{51}
 \contentsline {subsection}{\numberline {5.2.2}Herencia de propiedades}{53}
-\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{57}
-\contentsline {chapter}{\numberline {6}Prototipo}{59}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{61}
-\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{61}
-\contentsline {section}{\numberline {7.2}Experimentaci\'on}{61}
-\contentsline {section}{\numberline {7.3}Resultados}{62}
-\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{63}
-\contentsline {chapter}{Appendices}{67}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{69}
-\contentsline {chapter}{Bibliograf\'{\i }a}{71}
+\contentsline {subsection}{\numberline {5.2.3}Domingo y rango de propiedades}{56}
+\contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{59}
+\contentsline {chapter}{\numberline {6}Prototipo}{61}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{63}
+\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{63}
+\contentsline {section}{\numberline {7.2}Experimentaci\'on}{63}
+\contentsline {section}{\numberline {7.3}Resultados}{64}
+\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{65}
+\contentsline {chapter}{Appendices}{69}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{71}
+\contentsline {chapter}{Bibliograf\'{\i }a}{73}

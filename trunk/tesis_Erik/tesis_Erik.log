@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  10 NOV 2013 00:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  11 NOV 2013 23:53
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -421,15 +421,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [12
 
 ]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof [13])
 \tf@lof=\write6
 
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [13] [14
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [14]) [15
 
-]) [15]
-[16
+] [16
 
-] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
+]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex
 Cap\'{\i }tulo 1.
 [1
 
@@ -682,21 +682,21 @@ File: HerenClassCartComp.pdf Graphic file (type pdf)
 
 <use HerenClassCartComp.pdf>
 Package pdftex.def Info: HerenClassCartComp.pdf used on input line 318.
-(pdftex.def)             Requested size: 283.22162pt x 141.61285pt.
-
-<ExpInfsubClassPer.pdf, id=576, 530.98375pt x 294.09875pt>
+(pdftex.def)             Requested size: 377.62642pt x 188.81607pt.
+ [51 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>]
+<ExpInfsubClassPer.pdf, id=585, 530.98375pt x 294.09875pt>
 File: ExpInfsubClassPer.pdf Graphic file (type pdf)
 
 <use ExpInfsubClassPer.pdf>
 Package pdftex.def Info: ExpInfsubClassPer.pdf used on input line 327.
 (pdftex.def)             Requested size: 377.62642pt x 209.16159pt.
- [51 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>]
-<HerenClassRecDigi.pdf, id=586, 483.8075pt x 122.4575pt>
+
+<HerenClassRecDigi.pdf, id=586, 483.8075pt x 143.53625pt>
 File: HerenClassRecDigi.pdf Graphic file (type pdf)
 
 <use HerenClassRecDigi.pdf>
 Package pdftex.def Info: HerenClassRecDigi.pdf used on input line 338.
-(pdftex.def)             Requested size: 448.4451pt x 180.67928pt.
+(pdftex.def)             Requested size: 448.4451pt x 166.22618pt.
 
 <ExpInfsubClassDigi.pdf, id=587, 520.94624pt x 305.14pt>
 File: ExpInfsubClassDigi.pdf Graphic file (type pdf)
@@ -715,19 +715,19 @@ a single page
 File: HerPropLang.pdf Graphic file (type pdf)
  <use HerPropLang.pdf>
 Package pdftex.def Info: HerPropLang.pdf used on input line 363.
-(pdftex.def)             Requested size: 259.6186pt x 88.34865pt.
+(pdftex.def)             Requested size: 283.22162pt x 96.38034pt.
 
 <HerPropLoW.pdf, id=613, 225.84375pt x 119.44624pt>
 File: HerPropLoW.pdf Graphic file (type pdf)
  <use HerPropLoW.pdf>
 Package pdftex.def Info: HerPropLoW.pdf used on input line 374.
-(pdftex.def)             Requested size: 188.8096pt x 99.86574pt.
+(pdftex.def)             Requested size: 212.41261pt x 112.34872pt.
 
 <HerPropKno.pdf, id=614, 233.87375pt x 117.43875pt>
 File: HerPropKno.pdf Graphic file (type pdf)
  <use HerPropKno.pdf>
 Package pdftex.def Info: HerPropKno.pdf used on input line 385.
-(pdftex.def)             Requested size: 188.8096pt x 94.81483pt.
+(pdftex.def)             Requested size: 236.01561pt x 118.52078pt.
 
 [54 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropLang.pdf> <C:/Users/Ga
 tito/Desktop/GoogleSVN/tesis_Erik/HerPropLoW.pdf
@@ -735,57 +735,99 @@ tito/Desktop/GoogleSVN/tesis_Erik/HerPropLoW.pdf
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
 PropLoW.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
->] <HerenPropRecDigi.pdf, id=627, 624.3325pt x 254.9525pt>
-File: HerenPropRecDigi.pdf Graphic file (type pdf)
+>] <HerPropCompe.pdf, id=627, 233.87375pt x 117.43875pt>
+File: HerPropCompe.pdf Graphic file (type pdf)
 
-<use HerenPropRecDigi.pdf>
-Package pdftex.def Info: HerenPropRecDigi.pdf used on input line 411.
-(pdftex.def)             Requested size: 330.42041pt x 134.93355pt.
- [55 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropKno.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use HerPropCompe.pdf>
+Package pdftex.def Info: HerPropCompe.pdf used on input line 403.
+(pdftex.def)             Requested size: 212.41261pt x 106.66692pt.
+ [55 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropKno.pdf> <C:/Users/Ga
+tito/Desktop/GoogleSVN/tesis_Erik/HerPropCompe.pdf
 
- [56 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenPropRecDigi.pdf>])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [57] [58
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+PropCompe.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>] <HerPropYr.pdf, id=640, 682.55pt x 176.66pt>
+File: HerPropYr.pdf Graphic file (type pdf)
+ <use HerPropYr.pdf>
+Package pdftex.def Info: HerPropYr.pdf used on input line 414.
+(pdftex.def)             Requested size: 462.5886pt x 119.73094pt.
 
-]
+<HerPropInst.pdf, id=641, 407.5225pt x 115.43124pt>
+File: HerPropInst.pdf Graphic file (type pdf)
+ <use HerPropInst.pdf>
+Package pdftex.def Info: HerPropInst.pdf used on input line 425.
+(pdftex.def)             Requested size: 330.42041pt x 93.59566pt.
+
+[56 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropYr.pdf> <C:/Users/Gati
+to/Desktop/GoogleSVN/tesis_Erik/HerPropInst.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+PropInst.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>] <exAxDyRPer.pdf, id=654, 348.30125pt x 136.51pt>
+File: exAxDyRPer.pdf Graphic file (type pdf)
+ <use exAxDyRPer.pdf>
+Package pdftex.def Info: exAxDyRPer.pdf used on input line 536.
+(pdftex.def)             Requested size: 283.22162pt x 111.00783pt.
+
+[57] <exTriplDyRPer.pdf, id=659, 480.79625pt x 229.85875pt>
+File: exTriplDyRPer.pdf Graphic file (type pdf)
+
+<use exTriplDyRPer.pdf>
+Package pdftex.def Info: exTriplDyRPer.pdf used on input line 545.
+(pdftex.def)             Requested size: 424.82523pt x 203.10403pt.
+ [58 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exAxDyRPer.pdf>] <exInfDyRPe
+r.pdf, id=670, 509.905pt x 408.52625pt>
+File: exInfDyRPer.pdf Graphic file (type pdf)
+
+<use exInfDyRPer.pdf>
+Package pdftex.def Info: exInfDyRPer.pdf used on input line 554.
+(pdftex.def)             Requested size: 448.45325pt x 310.77615pt.
+)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [59 <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/exTriplDyRPer.pdf>] [60 <C:/Users/Gatito/Desktop
+/GoogleSVN/tesis_Erik/exInfDyRPer.pdf>]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [59] [60
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [61
+
+] [62
 
 ]
 Cap\'{\i }tulo 7.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [61] [62]
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [63] [64]
 Cap\'{\i }tulo 8.
-[63
+[65
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64])
-[65] [66
+ [66])
+[67] [68
 
-] [67
+] [69
 
-] [68] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [70] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [69
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [71
 
-] [70
+] [72
 
 ]
-[71] [72] [73]) [74]
+[73] [74] [75]) [76]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5944 strings out of 493944
- 80817 string characters out of 3148281
- 170773 words of memory out of 3000000
- 9026 multiletter control sequences out of 15000+200000
+ 5979 strings out of 493944
+ 81444 string characters out of 3148281
+ 171833 words of memory out of 3000000
+ 9056 multiletter control sequences out of 15000+200000
  25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Program Files/MiKTeX
@@ -806,9 +848,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (90 pages, 1692804 bytes).
+Output written on tesis_Erik.pdf (92 pages, 1765323 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
+ 808 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
