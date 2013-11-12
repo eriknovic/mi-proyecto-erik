@@ -315,7 +315,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.6\textwidth]{HerenClassCartComp}
+\includegraphics[width=0.8\textwidth]{HerenClassCartComp}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -335,11 +335,11 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.5in,width=0.95\textwidth]{HerenClassRecDigi}
+\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
-
+%height=2.3in,
 En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a partir de axiomas de \textit{jerarquía de clases}. En esta figura, los axiomas son tomados de la ontología \textit{búsqueda de recursos digitales}. La parte izquierda de esta Figura \ref{fig:exHerClasDigi} ilustra una rama de la \textit{ontología recursos digitales}. En esta rama, se exalta la asignación del recurso \textit{What is Linked Data?} a la clase Video. Mientras, la parte derecha de la Figura \ref{fig:exHerClasDigi}, se presenta esta rama después de realizar inferencia. En esta rama, el recurso \textit{What is Linked Data?} está asignado a estas clases: \textit{Video, Multimedia} y \textit{Recurso Digital}.
 
 \begin{figure}[!htb]
@@ -352,7 +352,7 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 \subsection{Herencia de propiedades}
 Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos en los caso de uso; averiguando que propiedades tienen un significado común.
 
-A continuación, se describen las \textit{jerarquías de propiedades} para la\textit{cartografía de competencias}.
+La siguiente lista describe las \textit{jerarquías de propiedades} que se identificaron para la \textit{cartografía de competencias}. Para cada item de esta lista, se presenta un diagrama que muestra esta jerarquía en forma de un grafo.
 
 \begin{itemize}
 \item \textbf{\textit{Lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son propiedades para indicar las habilidades lingüísticas de una persona. Estas propiedades pueden generalizarse a partir de la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüísticos en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}. En la Figura \ref{fig:HerPropLang} se muestra la jerarquía de propiedades para describir las habilidades lingüísticas de las personas.
@@ -371,7 +371,7 @@ A continuación, se describen las \textit{jerarquías de propiedades} para la\text
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.40\textwidth]{HerPropLoW}
+\includegraphics[width=0.45\textwidth]{HerPropLoW}
 \caption{Jerarquía de propiedades para el lugar de trabajo.}
 \label{fig:HerPropLoW}
 \end{figure}
@@ -382,41 +382,56 @@ A continuación, se describen las \textit{jerarquías de propiedades} para la\text
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.40\textwidth]{HerPropKno}
+\includegraphics[width=0.5\textwidth]{HerPropKno}
 \caption{Jerarquía de propiedades para las relaciones profesionales entre personas.}
 \label{fig:HerPropKno}
 \end{figure}
 
-%La Figura \ref{fig:jpXrp} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{cartografía de competencias}.
-
-%\begin{figure}[!htb]
-%\centering
 %\includegraphics[height=1.3in,width=1.0\textwidth]{HerenPropCartComp}
 %\caption{Ejemplos de jerarquía de propiedades para los recursos persona}
 %\label{fig:jpXrp}
 %\end{figure}
 
-A continuación, se describen las \textit{jerarquías de propiedades} para el caso de uso \textit{búsqueda de recursos digitales}.
+De la misma manera que en la cartografía de competencias, el siguiente listado presenta las tres \textit{jerarquías de propiedades} que se identificaron para el TBox de la \textit{búsqueda de recursos digitales}. Al final de cada item, se presenta una imagen que muestra la respectiva jerarquía en forma de un grafo.
 
 \begin{itemize}
-\item La propiedad \textbf{\textit{tiene resumen}} se emplea para describir el contenido básico de un documento. Mientras, la propiedad \textbf{\textit{tiene sinopsis}} describe el contenido básico de un recurso multimedia. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene compendio}}, la cual vincula a cualquier \textit{recurso digital} con la descripción básica del contenido de éste. Por esta razón, \textit{tiene resumen} y \textit{tiene sinopsis} son subpropiedades de \textit{tiene compendio}.
-\item La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la superpropiedad de las otras cinco propiedades.
-\item La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}.
+\item La propiedad \textbf{\textit{tiene resumen}} se emplea para describir el contenido básico de un documento. Mientras, la propiedad \textbf{\textit{tiene sinopsis}} describe el contenido básico de un recurso multimedia. Estas dos propiedades pueden generalizarse mediante la propiedad \textbf{\textit{tiene compendio}}, la cual vincula a cualquier \textit{recurso digital} con la descripción básica del contenido de éste. Por esta razón, \textit{tiene resumen} y \textit{tiene sinopsis} son subpropiedades de \textit{tiene compendio}. Esta jerarquía de propiedades se presenta en la Figura \ref{fig:HerPropCompe}.
 \end{itemize}
-
-La Figura \ref{fig:jpXrd} muestra la jerarquía de propiedades para el \textit{caso de uso} de \textit{búsqueda de recursos digitales}.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.7\textwidth]{HerenPropRecDigi}
-\caption{Ejemplos de jerarquía de propiedades para los recursos digitales}
-\label{fig:jpXrd}
+\includegraphics[width=0.45\textwidth]{HerPropCompe}
+\caption{Jerarquía de propiedades para describir el contenido de un recurso digital.}
+\label{fig:HerPropCompe}
 \end{figure}
 
-\textbf{Domingo y rango de propiedades}
+\begin{itemize}
+\item La propiedad \textbf{\textit{tiene año de conclusión}} indica el año de conclusión de una tesis. La propiedad \textbf{\textit{tiene año de última visita}} indica el año de la última visita para una página Web. La propiedad \textbf{\textit{tiene año de publicación}} indica el año en que fue publicado un artículo científico o un libro. Mientras, las propiedades \textbf{\textit{tiene año de creación}} y \textbf{\textit{tiene año de elaboración}} se emplean para indicar el año de creación o elaboración de un recurso multimedia. Estas cinco propiedades pueden ser generalizadas a partir de la propiedad \textbf{\textit{tiene año}}. De esta manera, la propiedad \textit{tiene año} es la superpropiedad de las otras cinco propiedades. La Figura \ref{fig:HerPropYr} muestra gráficamente esta jerarquía de propiedades para el año de construcción de un recurso.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.98\textwidth]{HerPropYr}
+\caption{Jerarquía de propiedades para indicar el año de un recurso digital.}
+\label{fig:HerPropYr}
+\end{figure}
+
+\begin{itemize}
+\item La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}. Esta jerarquía de propiedades gráficamente se muestra en la Figura \ref{fig:HerPropInst}.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{HerPropInst}
+\caption{Jerarquía de propiedades para vincular a una organización con un recurso digital.}
+\label{fig:HerPropInst}
+\end{figure}
+
+\subsection{Domingo y rango de propiedades}
+
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio son \textit{los valores que puede tomar una función} y el rango son \textit{los valores que resultan de evaluar la función}.
 
-La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas pertenecientes a la \textit{cartografía de competencias}. En la primera columna se enuncian las propiedades, la segunda columna muestra las clases para el Dominio, y la tercera columna muestra las clases o literales para el Rango de la propiedad.
+La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} de las propiedades que pertenecen a la cartografía de competencias. En esta Tabla, la primer columna enuncia las propiedades de la cartografía, la segunda columna muestra las clases para el dominio y la tercera columna enuncia las clases o tipo de literales del rango. De la misma manera, la Tabla \ref{tab:dyrrd} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} para las propiedades en el TBox de la \textit{búsqueda de recursos digitales}. La primera columna enuncia las propiedades, la segunda las clases del dominio y la tercera las literales o clases del rango.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.2}
@@ -461,11 +476,6 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{Dominio}} y \textbf{\textit
 \label{tab:dyrcc}
 \end{table}
 
-La Tabla \ref{tab:dyrrd} muestra el \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} para las propiedades significativas que están asociadas al caso \textit{búsqueda de recursos digitales}. La primera columna se enuncian las propiedades, la segunda columna se enuncian las clases asociadas al Dominio, y la tercera columna se presentan las clases o literales del Rango.
-
-%%
-%% Tabla con los dominios para l cartografía de compenteias 
-%%
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.2}
 \centering
@@ -516,6 +526,45 @@ La Tabla \ref{tab:dyrrd} muestra el \textbf{\textit{Dominio}} y \textbf{\textit{
 \caption{Dominio y Rango para las propiedades asociadas a la búsqueda de recursos digitales.}
 \label{tab:dyrrd}
 \end{table}
+
+La Figura \ref{fig:exAxDyRPer}, \ref{fig:exTriplDyRPer} y \ref{fig:exInfDyRPer} ejemplifican el proceso de inferencia a partir del uso de axiomas de Dominio y Rango. Estos axiomas pertenecen a la cartografía de competencias y son utilizados para restringir las relaciones profesionales entre personas.
+
+En la Figura \ref{fig:exAxDyRPer} se presentan los axiomas de dominio y rango para las propiedades ``\textit{tiene asesor}'' y ``\textit{tiene colega}''. Por un lado, la clase \textit{Profesionista} es tanto el dominio como el rango de la propiedad \textit{tiene colega}. Por otro lado, las clases \textit{Estudiante} y \textit{Profesionista} son respectivamente el dominio y rango de la propiedad \textit{tiene asesor}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{exAxDyRPer}
+\caption{Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
+\label{fig:exAxDyRPer}
+\end{figure}
+
+En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tripletas indican lo siguiente: \textit{la Dra. Carolina Medina y el Dr. Héctor Pérez son asesores de Erik Alarcón}, \textit{Laura Mendez tiene por asesores a la Dra. Carolina Medina y al Dr. Enrique Rodriguez}, \textit{el Dr. Ricardo Marcelin y el Dr. Enrique Rodriguez son colegas de la Dra. Carolina Medina} y \textit{la Dra. Carolina Medina es colega del Dr. Héctor Pérez}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.90\textwidth]{exTriplDyRPer}
+\caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
+\label{fig:exTriplDyRPer}
+\end{figure}
+
+En la parte derecha de la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación profesional entre individuos, así como las tripletas de asignación a una de estas dos clases: \textit{Estudiante} y \textit{Profesionista}. Las tripletas de asignación son obtenidas después de realizar el proceso de inferencia. Los individuos Ricardo Marcelin, Enrique Rodriguez, Carolina Medina y Héctor Pérez son Profesionistas, porque el dominio y rango de la función \textit{tiene colega} es la clase Profesionista, también porque el rango de la función \textit{tiene asesor} es la clase Profesionista. Mientras, los individuos Erik Alarcón y Laura Mendez son Estudiantes, porque el dominio de la propiedad \textit{tiene asesor} es la clase Estudiante.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=4.3in, width=0.95\textwidth]{exInfDyRPer}
+\caption{Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartografía de competencias.}
+\label{fig:exInfDyRPer}
+\end{figure}
+%height=3.0in
+
+\subsection{Característica simétrica en las propiedades}
+Un aspecto interesante en las propiedades, es identificar aquellas que tienen cierto comportamiento que se basa en sentido común. 
+
+En las siguientes secciones se describen los mecanismos utilizados para especificar aún más las propiedades. Es posible especificar las características de la propiedad, lo que proporciona un poderoso mecanismo para mejorar el razonamiento sobre una propiedad.
+
+Sintacticamente, una propiedad se define como simétrica por lo que es una instancia de la función de OWL clase owl: SymmetricProperty, una subclase de owl: ObjectProperty.
+
+knows y has-colleague
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
