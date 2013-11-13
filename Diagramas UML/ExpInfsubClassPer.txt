@@ -1,0 +1,14 @@
+@startuml
+
+(sirp:Person) <-down- (sirp:Professional) : rdfs:subClassOf
+
+(sirp:Professional) <-down- (sirp:Teacher) : rdfs:subClassOf
+
+interface "sirp:RicardoMarcelinJimenez" as Inter
+
+(sirp:Teacher) <-down- Inter : rdf:type
+
+(sirp:Professional) <-[#0000FF] Inter : rdf:type
+(sirp:Person) <-[#0000FF]- Inter : rdf:type
+
+@enduml

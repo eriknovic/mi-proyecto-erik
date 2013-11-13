@@ -1,0 +1,9 @@
+@startuml
+
+interface "sirp:p" as () Inter1
+interface "sirp:q" as Inter2
+
+Inter1 -> Inter2 : sirp:propiedad-simetrica
+Inter2 -> Inter1 : sirp:propiedad-simetrica
+
+@enduml

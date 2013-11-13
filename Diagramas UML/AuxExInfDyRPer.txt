@@ -1,0 +1,11 @@
+@startuml
+
+"sirp:has-colleague" -up-> "sirp:Professional" : rdfs:Domain
+"sirp:has-colleague" -up-> "sirp:Professional" : rdfs:Range
+
+"sirp:has-advisor" -up-> "sirp:Student" : rdfs:Domain
+"sirp:has-advisor" -up-> "sirp:Professional" : rdfs:Range
+
+hide members
+hide circle
+@enduml
