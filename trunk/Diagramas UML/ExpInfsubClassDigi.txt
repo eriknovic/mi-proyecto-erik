@@ -1,0 +1,14 @@
+@startuml
+
+(sird:DigitalResource) <-down- (sird:Multimedia) : rdfs:subClassOf
+
+(sird:Multimedia) <-down- (sird:Video) : rdfs:subClassOf
+
+interface "sird:What-isLinkedData-2012-flv" as Inter
+
+(sird:Video) <-down- Inter : rdf:type
+
+(sird:Multimedia) <-[#0000FF] Inter : rdf:type
+(sird:DigitalResource) <-[#0000FF]- Inter : rdf:type
+
+@enduml
