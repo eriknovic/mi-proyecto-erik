@@ -1,17 +1,17 @@
 @startuml
 
 (sird:Document) -up-> (sird:DigitalResource) : rdfs:subClassOf
-(sird:Multimedia) -up-> (sird:DigitalResource) : rdfs:subClassOf
+(sird:Multimedia) -left-> (sird:DigitalResource) : rdfs:subClassOf
 
-(sird:Audio) -up--> (sird:Multimedia) : rdfs:subClassOf
-(sird:Video) -up--> (sird:Multimedia) : rdfs:subClassOf
-(sird:Image) -up--> (sird:Multimedia) : rdfs:subClassOf
-(sird:Presentation) -up--> (sird:Multimedia) : rdfs:subClassOf
+(sird:Audio) -up-> (sird:Multimedia) : rdfs:subClassOf
+(sird:Video) -up-> (sird:Multimedia) : rdfs:subClassOf
+(sird:Image) -up-> (sird:Multimedia) : rdfs:subClassOf
+(sird:Presentation) -up-> (sird:Multimedia) : rdfs:subClassOf
 
-(sird:Paper) -up--> (sird:Document) : rdfs:subClassOf
-(sird:Book) -up--> (sird:Document) : rdfs:subClassOf
-(sird:Thesis) -up--> (sird:Document) : rdfs:subClassOf
-(sird:TechnicalReport) -up--> (sird:Document) : rdfs:subClassOf
-(sird:Webpage) -up--> (sird:Document) : rdfs:subClassOf
+(sird:Paper) -up-> (sird:Document) : rdfs:subClassOf
+(sird:Book) -up-> (sird:Document) : rdfs:subClassOf
+(sird:Thesis) -up-> (sird:Document) : rdfs:subClassOf
+(sird:TechnicalReport) -up-> (sird:Document) : rdfs:subClassOf
+(sird:Webpage) -up-> (sird:Document) : rdfs:subClassOf
 
 @enduml

@@ -29,9 +29,11 @@
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{55}
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para indicar el a\~no de un recurso digital.}}{56}
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para vincular a una organizaci\'on con un recurso digital.}}{56}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{58}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{59}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{57}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{60}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{60}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{61}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{61}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

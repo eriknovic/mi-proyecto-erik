@@ -258,7 +258,7 @@ En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcel
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=1.0\textwidth]{Person2RDF}
+\includegraphics[height=3.3in,width=1.0\textwidth]{Person2RDF}
 \caption{Declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
 \label{fig:drper}
 \end{figure}
@@ -279,7 +279,7 @@ La Figura \ref{fig:drdig} presenta la representación del vídeo ``\textit{What is
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=1.0\textwidth]{Vid2RDF}
+\includegraphics[height=2.7in,width=1.0\textwidth]{Vid2RDF}
 \caption{Declaraciones de vídeo ``What is Linked Data?'' en forma de tripletas RDF}
 \label{fig:drdig}
 \end{figure}
@@ -315,7 +315,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{HerenClassCartComp}
+\includegraphics[width=0.7\textwidth]{HerenClassCartComp}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -382,7 +382,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.5\textwidth]{HerPropKno}
+\includegraphics[width=0.48\textwidth]{HerPropKno}
 \caption{Jerarquía de propiedades para las relaciones profesionales entre personas.}
 \label{fig:HerPropKno}
 \end{figure}
@@ -429,12 +429,12 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 
 \subsection{Domingo y rango de propiedades}
 
-Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio son \textit{los valores que puede tomar una función} y el rango son \textit{los valores que resultan de evaluar la función}.
+Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio es el conjunto formado por \textit{los valores que puede tomar una función}. Mientras, el rango es el conjunto de \textit{los valores que resultan de evaluar la función}.
 
 La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} de las propiedades que pertenecen a la cartografía de competencias. En esta Tabla, la primer columna enuncia las propiedades de la cartografía, la segunda columna muestra las clases para el dominio y la tercera columna enuncia las clases o tipo de literales del rango. De la misma manera, la Tabla \ref{tab:dyrrd} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} para las propiedades en el TBox de la \textit{búsqueda de recursos digitales}. La primera columna enuncia las propiedades, la segunda las clases del dominio y la tercera las literales o clases del rango.
 
-\begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\begin{table}[hp]
+\renewcommand{\arraystretch}{1.9}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
@@ -476,8 +476,8 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \label{tab:dyrcc}
 \end{table}
 
-\begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\begin{table}[hp]
+\renewcommand{\arraystretch}{1.7}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
@@ -542,7 +542,7 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.90\textwidth]{exTriplDyRPer}
+\includegraphics[width=0.89\textwidth]{exTriplDyRPer}
 \caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exTriplDyRPer}
 \end{figure}
@@ -551,16 +551,35 @@ En la parte derecha de la Figura \ref{fig:exInfDyRPer}, se presentan las triplet
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=4.3in, width=0.95\textwidth]{exInfDyRPer}
+\includegraphics[height=4.2in, width=0.90\textwidth]{exInfDyRPer}
 \caption{Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartografía de competencias.}
 \label{fig:exInfDyRPer}
 \end{figure}
 %height=3.0in
 
-\subsection{Característica simétrica en las propiedades}
-Un aspecto interesante en las propiedades, es identificar aquellas que tienen cierto comportamiento que se basa en sentido común. 
+\subsection{Simetría en las propiedades}
+\label{cap:simprop} 
+Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{individuo p} y termina en \textit{individuo q}. En la Figura\ref{fig:unidirecc} se ejemplifica este comportamiento unidireccional, donde la relación \textit{p tiene género q}, indica que todos los \textit{individuos p} se relacionan con un \textit{individuo q}.
 
-En las siguientes secciones se describen los mecanismos utilizados para especificar aún más las propiedades. Es posible especificar las características de la propiedad, lo que proporciona un poderoso mecanismo para mejorar el razonamiento sobre una propiedad.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.33\textwidth]{unidirecc}
+\caption{Ejemplo del comportamiento unidireccional de una propiedad.}
+\label{fig:unidirecc}
+\end{figure}
+
+Sin embargo, existen algunas propiedades que requieren tener un comportamiento bidireccional, con la finalidad de tener una mejor representación del dominio. En la Figura \ref{fig:bidirecc} se presenta un ejemplo genérico del uso de relaciones simétricas. En este ejemplo, los individuo p y q son el nodo origen y el nodo destino, es decir, en una tripleta RDF pueden ser el sujeto o el objeto.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.39\textwidth]{bidirecc}
+\caption{Ejemplo de simetría en una propiedad genérica.}
+\label{fig:bidirecc}
+\end{figure}
+
+En esta Sección \ref{cap:simprop}, se describen las propiedades simétricas que se identificaron para la \textit{cartografía de competencias}. En el caso de la búsqueda de recursos digitales, no se identifico alguna propiedad que tenga la característica simétrica.
+
+
 
 Sintacticamente, una propiedad se define como simétrica por lo que es una instancia de la función de OWL clase owl: SymmetricProperty, una subclase de owl: ObjectProperty.
 
