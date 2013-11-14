@@ -122,7 +122,7 @@ El primer paso, es asignar un URI para cada recurso de información. Esta asignac
 La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
@@ -155,7 +155,7 @@ Enrique Rodriguez & \textit{\textbf{sirp:}EnriqueRodriguez} \\
 La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales pertenecientes a los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.2in}}
 \hline
@@ -182,7 +182,7 @@ El siguiente paso es asignar un identificador URI para cada propiedad. Estos ide
 La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas característica.
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
 \hline
@@ -211,7 +211,7 @@ Habilidades en de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
 La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades de la búsqueda de recursos digitales. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas característica.
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
@@ -298,11 +298,11 @@ Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los 
 
 \section{Enriquecimiento del conocimiento en el modelo}
 \label{sec:enrKrec} 
-La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia.
-
-Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
+La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia. Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
 
 Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
+
+Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle\footnote{W3C, ``OWL 2 Web Ontology Language Document Overview (Second Edition),''  Disponible en: \url{http://www.w3.org/TR/owl2-overview/}}).
 
 \subsection{Herencia de clases}
 El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
@@ -324,7 +324,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{ExpInfsubClassPer}
+\includegraphics[width=0.75\textwidth]{ExpInfsubClassPer}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
 \label{fig:exHerClasPer}
 \end{figure}
@@ -335,7 +335,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}
+\includegraphics[height=2.1in, width=0.95\textwidth]{HerenClassRecDigi}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
@@ -371,7 +371,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.45\textwidth]{HerPropLoW}
+\includegraphics[width=0.44\textwidth]{HerPropLoW}
 \caption{Jerarquía de propiedades para el lugar de trabajo.}
 \label{fig:HerPropLoW}
 \end{figure}
@@ -529,11 +529,11 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 
 La Figura \ref{fig:exAxDyRPer}, \ref{fig:exTriplDyRPer} y \ref{fig:exInfDyRPer} ejemplifican el proceso de inferencia a partir del uso de axiomas de Dominio y Rango. Estos axiomas pertenecen a la cartografía de competencias y son utilizados para restringir las relaciones profesionales entre personas.
 
-En la Figura \ref{fig:exAxDyRPer} se presentan los axiomas de dominio y rango para las propiedades ``\textit{tiene asesor}'' y ``\textit{tiene colega}''. Por un lado, la clase \textit{Profesionista} es tanto el dominio como el rango de la propiedad \textit{tiene colega}. Por otro lado, las clases \textit{Estudiante} y \textit{Profesionista} son respectivamente el dominio y rango de la propiedad \textit{tiene asesor}.
+En la Figura \ref{fig:exAxDyRPer} se presentan los axiomas de dominio y rango para las propiedades ``\textit{tiene asesor}'' y ``\textit{tiene colega}''. Por un lado, la clase \textit{Profesionista} es tanto el \textbf{\textit{dominio}} como el \textbf{\textit{rango}} de la propiedad \textit{tiene colega}. Por otro lado, las clases \textit{Estudiante} y \textit{Profesionista} son respectivamente el \textbf{\textit{dominio}} y \textbf{\textit{rango}} de la propiedad \textit{tiene asesor}.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.6\textwidth]{exAxDyRPer}
+\includegraphics[width=0.5\textwidth]{exAxDyRPer}
 \caption{Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exAxDyRPer}
 \end{figure}
@@ -542,16 +542,16 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.89\textwidth]{exTriplDyRPer}
+\includegraphics[width=0.8\textwidth]{exTriplDyRPer}
 \caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exTriplDyRPer}
 \end{figure}
 
-En la parte derecha de la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación profesional entre individuos, así como las tripletas de asignación a una de estas dos clases: \textit{Estudiante} y \textit{Profesionista}. Las tripletas de asignación son obtenidas después de realizar el proceso de inferencia. Los individuos Ricardo Marcelin, Enrique Rodriguez, Carolina Medina y Héctor Pérez son Profesionistas, porque el dominio y rango de la función \textit{tiene colega} es la clase Profesionista, también porque el rango de la función \textit{tiene asesor} es la clase Profesionista. Mientras, los individuos Erik Alarcón y Laura Mendez son Estudiantes, porque el dominio de la propiedad \textit{tiene asesor} es la clase Estudiante.
+En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación profesional entre individuos, así como las tripletas de asignación a una de estas dos clases: \textit{Estudiante (Student)} y \textit{Profesionista (Professional)}. Las tripletas de asignación son obtenidas después de realizar el proceso de inferencia. Los individuos \textit{Ricardo Marcelin, Enrique Rodriguez, Carolina Medina y Héctor Pérez son Profesionistas}, porque el \textit{dominio} y \textit{rango} de la función \textit{tiene colega (has-colleague)} es la clase \textit{Profesionista}, también porque el \textit{rango} de la función \textit{tiene asesor (has-advisor)} es la clase \textit{Profesionista}. Mientras, los individuos \textit{Erik Alarcón y Laura Mendez son Estudiantes}, porque el \textit{dominio} de la propiedad \textit{tiene asesor} es la clase \textit{Estudiante}.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=4.2in, width=0.90\textwidth]{exInfDyRPer}
+\includegraphics[height=4.0in, width=0.90\textwidth]{exInfDyRPer}
 \caption{Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartografía de competencias.}
 \label{fig:exInfDyRPer}
 \end{figure}
@@ -568,7 +568,7 @@ Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{i
 \label{fig:unidirecc}
 \end{figure}
 
-Sin embargo, existen algunas propiedades que requieren tener un comportamiento bidireccional, con la finalidad de tener una mejor representación del dominio. En la Figura \ref{fig:bidirecc} se presenta un ejemplo genérico del uso de relaciones simétricas. En este ejemplo, los individuo p y q son el nodo origen y el nodo destino, es decir, en una tripleta RDF pueden ser el sujeto o el objeto.
+Sin embargo, existen algunas propiedades que requieren tener un comportamiento bidireccional, con la finalidad de tener una mejor representación del dominio. En la Figura \ref{fig:bidirecc} se presenta un ejemplo genérico del uso de relaciones simétricas (``relación bidireccional''). En este ejemplo, los individuos p y q son el nodo origen y el nodo destino, es decir, en una tripleta RDF pueden ser el sujeto o el objeto.
 
 \begin{figure}[!htb]
 \centering
@@ -577,13 +577,54 @@ Sin embargo, existen algunas propiedades que requieren tener un comportamiento b
 \label{fig:bidirecc}
 \end{figure}
 
-En esta Sección \ref{cap:simprop}, se describen las propiedades simétricas que se identificaron para la \textit{cartografía de competencias}. En el caso de la búsqueda de recursos digitales, no se identifico alguna propiedad que tenga la característica simétrica.
+A continuación, se describen las propiedades simétricas que se identificaron para la \textit{cartografía de competencias}. Con respecto al caso de la búsqueda de recursos digitales, no se identificó alguna propiedad que tenga la característica simétrica.
 
+\begin{itemize}
+\item La propiedad \textbf{\textit{tiene colega (has-colleague)}} es una relación del tipo laboral que vincula a dos Profesionistas (Profesor o Empleado). La idea básica de esta relación es indicar quiénes son los colegas de trabajo o con quiénes ha hecho colaboración un \textit{Profesionista}.
 
+La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tiene colega} entre cuatro profesores del área de Redes y Telecomunicaciones (RyT). En este subgrafo las tripletas indican las siguientes declaraciones: \textit{el Dr. Ricardo Marcelin tiene por colegas a la Dra. Carolina Medina, Dr. Enrique Rodrígez y Dr. Miguel López}, \textit{el Dr. Enrique Rodrígez tiene por colegas a la Dra. Carolina Medina y al Dr. Miguel López} y \textit{la Dr. Carolina Medina tiene por colega al Dr. Miguel López}.
 
-Sintacticamente, una propiedad se define como simétrica por lo que es una instancia de la función de OWL clase owl: SymmetricProperty, una subclase de owl: ObjectProperty.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{axSymColl}
+\caption{Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del área.}
+\label{fig:axSymColl}
+\end{figure}
 
-knows y has-colleague
+En la Figura \ref{fig:axSymColl}, el recurso ``\textit{sirp:MiguelLopez}'' es el \textbf{\textit{objeto}} en todas las tripletas del subgrafo RDF, es decir, el Dr. Miguel López no tiene alguna declaración propia que indique quienes son sus colegas. El comportamiento de la propiedad \textit{tiene colega} indica una relación unidireccional. Sin embargo, esta propiedad debe tener un comportamiento bidireccional. Por ello, la propiedad \textit{tiene colega (has-colleague)} tiene la \textit{característica simétrica}.
+
+La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo se obtiene a partir de las tripletas en la Figura \ref{fig:axSymColl} y del axioma que establece que la propiedad \textit{tiene colega} es simétrica. En esta Figura, el recurso ``\textit{sirp:MiguelLopez}'' tiene el rol de \textit{\textit{objeto}}, así como el rol de \textbf{\textit{sujeto}} para otras tres tripletas RDF. Ésto significa que el \textit{Dr. Miguel López tiene por colegas a la Dra. Carolina, Dr. Enrique y al Dr. Ricardo}. De la misma manera, los otros recursos (Doctores) carentes de su propia afirmación, ahora tienen esta relación.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=2.5in,width=0.95\textwidth]{infSymColl}
+\caption{Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad simétrica.}
+\label{fig:infSymColl}
+\end{figure}
+
+\end{itemize}
+
+\begin{itemize}
+\item La propiedad \textbf{\textit{conoce a (knows)}} es una relación profesional para la interacción entre las personas (profesor, empleado o estudiante) del área de Redes y Telecomunicaciones. Esta propiedad, al igual que la propiedad \textit{tiene colega}, tiene un comportamiento bidireccional. Por ello, la propiedad \textit{conoce a} es una propiedad simétrica.
+
+La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relaciones \textit{conoce a} tienen solo una dirección. En esta Figura, las tripletas indican lo siguiente: \textit{Erik Alarcón conoce a la Dra. Carolina Medina, Dr. Héctor Pérez y Laura Méndez}, \textit{Laura Méndez conoce a la Dra. Carolina Medina y Dr. Enrique Rodríguez}, la \textit{Dra. Carolina conoce al Dr. Héctor Pérez} y el \textit{Dr. Enrique Rodríguez conoce a la Dra. Carolina Medina}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=1.5in,width=0.8\textwidth]{triplKnows}
+\caption{Subgrafo RDF de las relaciones conoce-a entre personas del área de Redes y Telecomunicaciones.}
+\label{fig:triplKnows}
+\end{figure}
+
+La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKnows} después de realizar el proceso de inferencia, donde la propiedad \textit{conoce a} tiene la característica de ser simétrica. En esta Figura \ref{fig:InfKnows}, todos los recursos (personas) son sujeto y objeto en las tripletas RDF. Por ejemplo, el Dr. Héctor Pérez en la Figura \ref{fig:triplKnows} no tiene sus propias declaraciones que indican a quienes conoce. Mientras, el Dr. Héctor Pérez en la Figura \ref{fig:InfKnows} sí tiene sus propias declaraciones que indican que conoce a la Dra. Carolina Medina y Erik Alarcón.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=1.8in,width=0.90\textwidth]{InfKnows}
+\caption{Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad simétrica.}
+\label{fig:InfKnows}
+\end{figure}
+\end{itemize}
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 

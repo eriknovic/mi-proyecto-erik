@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de clases para la b\'usqueda de recursos digitales.}}{45}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Declaraciones del Dr. Ricardo Marcelin Jim\'enez en forma de tripletas RDF}}{49}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Declaraciones de v\IeC {\'\i }deo ``What is Linked Data?'' en forma de tripletas RDF}}{50}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{51}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{52}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{52}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{53}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{53}
@@ -34,6 +34,10 @@
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{60}
 \contentsline {figure}{\numberline {5.21}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{61}
 \contentsline {figure}{\numberline {5.22}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{61}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del \'area.}}{62}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{62}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{63}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{63}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

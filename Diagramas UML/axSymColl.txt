@@ -1,0 +1,18 @@
+@startuml
+
+interface "sirp:RicardoMarcelinJimenez" as Ricardo
+interface "sirp:MiguelLopez" as Miguel
+interface "sirp:CarolinaMedinaRamirez" as Carolina
+interface "sirp:EnriqueRodriguez" as Enrique
+
+
+() Ricardo -up-> Carolina : sirp:has-colleague
+Ricardo -up-> Miguel : sirp:has-colleague
+Ricardo -up-> Enrique : sirp:has-colleague
+
+Carolina -up-> Miguel : sirp:has-colleague
+
+Enrique -> Carolina : sirp:has-colleague
+Enrique -up-> Miguel : sirp:has-colleague
+
+@enduml
