@@ -1,0 +1,20 @@
+@startuml
+
+interface "sirp:ErikAlarconZamora" as Erik
+interface "sirp:LauraMendez" as Laura
+interface "sirp:CarolinaMedinaRamirez" as Carolina
+interface "sirp:EnriqueRodriguez" as Enrique
+interface "sirp:HectorPerezUrbina" as Hector
+
+() Erik -up-> Carolina : sirp:knows
+Erik -up-> Hector : sirp:knows
+Erik -left-> Laura : sirp:knows
+
+Laura -up-> Carolina : sirp:knows
+Laura -up-> Enrique : sirp:knows
+
+Carolina -> Hector : sirp:knows
+
+Enrique -> Carolina : sirp:knows
+
+@enduml
