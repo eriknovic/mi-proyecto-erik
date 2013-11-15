@@ -20,6 +20,7 @@ En esta integraci�n sem�ntica, el grafo se constituye de triples y las consultas
 Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %%No solo basta con un razonador también se requiere un modulo integrador de la información que transforme las consultas de los usuarios expresadas en lenguaje natural, a lenguaje que sea interpretado por el razonador. Además este integrador es el encargado de regresar los enlaces y los datos del recurso. De esta manera el motor de búsqueda queda de la siguiente manera:
 
 %%Para llevar acabo está integración de la información es necesario un prototipo que satisfaga más eficientemente las consultas que escribe el usuario. De esta manera es necesario un análisis documental y técnico de los módulos de Anotaciones, Ontología de Dominio y Razonadores. Con la finalidad de tener una propuesta de sistema con las últimas novedades hechas en búsqueda y recuperación de la información basada en la semántica de los recursos.
