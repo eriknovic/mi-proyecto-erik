@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 NOV 2013 02:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  14 NOV 2013 23:12
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -597,21 +597,32 @@ Overfull \hbox (4.8151pt too wide) in paragraph at lines 9--25
  []
 
 [31] [32] [33]
-Overfull \hbox (6.27086pt too wide) in paragraph at lines 96--96
+Overfull \hbox (6.27086pt too wide) in paragraph at lines 95--95
  []|\T1/cmr/m/n/12 Consistencia| 
  []
 
+
+Overfull \hbox (5.71404pt too wide) in paragraph at lines 97--97
+ []|\T1/cmr/m/n/12 Justificación 
+ []
+
 [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
-[37]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [38]
+[37]
+Underfull \hbox (badness 2142) in paragraph at lines 157--157
+[][]\T1/cmr/m/n/10 The Apa-che Soft-wa-re Foun-da-tion, ``OWL co-ve-ra-ge,'' Di
+s-po-ni-ble en: $\T1/cmtt/m/n/10 http : / / jena . apache . org /$
+ []
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [38]
 Cap\'{\i }tulo 5.
 [39
 
@@ -882,7 +893,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  6023 strings out of 493944
  82154 string characters out of 3148281
- 173918 words of memory out of 3000000
+ 174918 words of memory out of 3000000
  9094 multiletter control sequences out of 15000+200000
  25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -907,7 +918,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (96 pages, 1863247 bytes).
+Output written on tesis_Erik.pdf (96 pages, 1864296 bytes).
 PDF statistics:
  851 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

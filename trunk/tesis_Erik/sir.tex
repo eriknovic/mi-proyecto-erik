@@ -300,7 +300,7 @@ Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los 
 \label{sec:enrKrec} 
 La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia. Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
 
-Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
+Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan todos los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
 Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle\footnote{W3C, ``OWL 2 Web Ontology Language Document Overview (Second Edition),''  Disponible en: \url{http://www.w3.org/TR/owl2-overview/}}).
 
@@ -628,6 +628,75 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
+Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
+
+En esta tesis, la finalidad de las ontologías es la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios de Redes y Telecomunicaciones. Esta búsqueda y recuperación se hace a partir de tres pasos: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas en un motor de búsqueda SPARQL}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+Los grafos RDF son la fuente de conocimiento sobre los recursos y para consultar la información de éstos, es necesario un lenguaje de consulta. Las tecnologías de la Web semántica establecen al lenguaje SPARQL como especificación para consultar, recuperar y modificar la información en grafos RDF. 
+Las consultas SPARQL se basan en el uso de patrones que concuerden con los triples de un grafo RDF.  Un patrón es parecido a un triple pero a diferencia de éste, el sujeto, la propiedad, el objeto  o cualquiera de los tres son variables. La sintaxis de una típica consulta SPARQL tiene dos cláusulas: SELECT y WHERE. La cláusula SELECT enuncia las variables respuesta, que recuperarán los valores después de ejecutar la consulta. Mientras, la cláusula WHERE enuncia  los patrones de comparación. 
+
+A continuación se muestran algunas ejemplificaciones de consultas, basada en los triples del recurso Juan. Las consultas en lenguaje natural son: 1) Cuál es el nombre y email de todos los recursos. 2) Quién conoce a Juan y 3) Dónde estudia Juan. Mientras las consultas en sintaxis SPARQL se muestran en la Figura 4.
+consultas sparql
+Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, busca aquellos triples en el grafo RDF que concuerdan con los patrones de la cláusula WHERE. Para aquellas variables de la cláusula SELECT se extrae la información y se devuelve en determinado formato visual, típicamente en forma de tabla. En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%####
+Las ontologías son fuentes de conocimiento en forma de triples y para integrar información de éstas, es necesario tres cosas: 1) una pregunta en lenguaje natural, 2) una consulta a partir de triples y 3) un motor de consulta.
+
+En el primer punto, mediante el análisis de los casos de uso, se identifican y escriben en lenguaje natural las principales preguntas que pueden hacer los usuarios al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales, pero para ejemplificar la consulta de información, se muestra una de éstas: (1) ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+
+En el segundo punto, se debe emplear un lenguaje de consulta para buscar e interrogar los triples. En las tecnologías semántica, el lenguaje SPARQL \{Perez2009} es la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
+
+SELECT ?title ?path
+WHERE
+{?x rdf:type sird:Document;
+   sird:has-topic redes:Peer_to_Peer_System;
+   sird:has-title ?title;
+   sird:has-filePath ?path.}
+
+Para el tercer punto, un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con JAVA.
+%%%####
+
+%//////////////////////
+La segunda etapa de la Integración Semántica consiste en consultar el conocimiento de las Ontologías. Para ello, mediante el análisis de los casos de uso, se identifican y se escriben un conjunto de preguntas básicas en lenguaje natural. La siguiente lista muestra las preguntas que identificamos del caso de uso Cartografía de competencias.
+C1.1.- ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT?
+C1.2.- ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT?
+C1.3.- ¿Quiénes son mayores de 20 años y menores de 45 años?
+C1.4.- ¿Cuál es el nombre y sitio web de los profesionistas del área de RyT?
+C1.5.- ¿Quiénes trabajan en la Clark & Parsia y son del sexo Masculino?
+C1.6.- ¿Quiénes son estudiantes y leen en inglés?
+C1.7.- ¿Quienes hablan, leen y escriben en inglés?
+C1.8.- ¿Qué estudiantes saben algo de inglés?
+C1.9.- ¿Qué profesores tienen la capacidad de síntesis?
+C1.10.- ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?
+C1.11.- ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?
+C1.12.- ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?
+C1.13.- ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?
+C1.14.- ¿Quiénes trabajan en una Universidad?
+C1.15.- ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?
+C1.16.- ¿Qué personas tienen como asesor a Carolina Medina?
+C1.17.- ¿Quiénes son los colegas de Ricardo Marcelin?
+C1.18.- ¿Quiénes conocen a Carolina Medina Ramirez?
+Por otro lado, el siguiente listado muestra las preguntas del caso uso Búsqueda de Recursos Digitales.
+C2.1.- ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?
+C2.2.- ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?
+C2.3.- ¿Qué recursos fueron publicados por la UAM?
+C2.4.- ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+C2.5.- ¿Qué recursos multimedia son mayores al año 2009?
+C2.6.- ¿Cuáles documentos tratan sobre Ontologías?
+C2.7.- ¿Qué recursos fueron publicados en una Revista científica?
+C2.8.- ¿Qué recursos tienen en su descripción las palabras "linked data"?
+C2.9.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
+C2.10.- ¿Cuáles son las tesis de Samuel Hernandez Maza?
+A partir de estas preguntas en lenguaje natural, el siguiente paso es transformarlas a consultas SPARQL. Esta conversión se hace de la siguiente manera: para cada pregunta se analizan los valores a recuperar (variables resultado), las propiedades (predicado) y los parámetros de búsqueda (variables auxiliares o valores específicos). Posteriormente, las variables resultado se escriben en la cláusula SELECT, mientras los parámetros de búsqueda y las propiedades se escriben en forma de triple para formar los patrones. Finalmente, estos patrones se introducen en la cláusula WHERE. Para ejemplificar esta situación, la consulta C1.4 tiene como valores de recuperación el nombre y sitio web (?nombre y ?sitioWeb), el  valores de búsqueda es Profesionista, y las variables auxiliares son ?x. De esta manera, la consulta SPARQL queda de la siguiente manera:
+consulta sparql C1.4
+Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
+Un motor de consulta SPARQL con un razonador además de proporcionar ?más? resultados, también reduce la complejidad de las consultas. Esto es, si solamente se emplean patrones, para comprar con triples explícitos del grafo RDF, entonces el número de patrones se incrementa en la cláusula SELECT de la consulta. Mientras que la consulta con patrones sobre triples inferidos, tiene menor cantidad de éstos. Por ejemplo, en la consulta C2.4 un parametro de busqueda es comparar todos los recursos que sean documentos, para ello, la consulta SPARQL se puede elaborar de dos maneras: 
+Unión de patrones: se escriben cinco patrones y mediante el operador unión se conjuntan, en el cuál cada patrón tiene el mismo sujeto (?x), el mismo  predicado rdf:tipo y distinto objeto (Artículo, Reporte Técnico, Página Web, Tesis y Libro). En la Figura 10 del lado izquierdo se muestra esta consulta SPARQL con unión de varios patrones.
+Un solo patrón: se escribe únicamente el patrón que relaciona a un recurso con el tipo Documento, porque con la inferencia, todas las instancias de las clases Artículo, Reporte Técnico, Página Web, Tesis y Libro son instancias de la clase Documento. La Figura 10, lado derecho muestra la consulta SPARQL con patrones que se basan relaciones nuevas.
+%//////////////////////
+
 Aquí hay que retomar nuestros casos de uso y expandirlos con consultas específicas que se hacen sobre las ontologías definidas en la sección anterior.
 
 Es importante hacer notar que ciertas consultas explotan a los axiomas, por lo que se requiere de un razonador.

@@ -11,6 +11,8 @@
 %%?Proporción de material relevante recuperado del total de documentos que son relevantes, Donde la exhaustividad es inversamente proporcional a la precisión? [3]. Igual que en la precisión el intervalo está entre el cero y uno.
 %%Exhasutividad =  (Documentos Relevantes Recuperados)/(Total de Documentos Relevantes en la MC)
 
+Funcionamiento de los scripts 
+%https://docs.google.com/document/d/1c-JfQYGg7O2xMTNh5gCmdtiDf2vmrsreQfpLU9na4AQ/edit
 
 \section{Escenarios de experimentación}
 Algún texto...
@@ -85,3 +87,23 @@ Más texto...
 
 \section{Resultados}
 Más texto...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+La integración semántica consiste en la búsqueda y recuperación de la información de los recursos. En este punto, es importante evaluar esa recuperación y medir los tiempos de procesamiento para un modelo con razonamiento en Jena. Para evaluar la recuperación de los recursos consiste en enumerar los recursos que responden a una consulta. Mientras, el tiempo promedio de procesamiento es la media en tiempo (milisegundos) que tarda una consulta en ejecutarse.
+	En esta experimentación hay 73 personas y 1330 recursos digitales. Nosotros escribimos manualmente los triples de 11 personas que están adscritas al Departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana y los triples de las otras 60 fueron generados artificialmente. Por otro lado, nosotros escribimos manualmente los triples de 16 recursos digitales, mientras que los triples de los otros 1314 fueron generados artificialmente.
+	Las 73 personas se clasifican en: Profesor, Estudiante, Empleado, Profesionista, Investigador y Persona. Mientras los 1330 recursos digitales se clasifican en: Artículos, Reportes Técnicos, Páginas Web, Tesis, Libros, Presentaciones, Imágenes, Audios, Videos, Documento, Multimedia y Recurso Digital. En particular, para cada clase de Persona y Recursos Digital se tienen las siguientes cantidades:
+Para los recursos persona en esta experimentación se tienen 1750 triples. Mientras, para los recursos digitales se tienen 20429 triples. De esta manera, el número total de triples en esta experimentación son 22179.
+	Por otro lado, basándonos en las consultas básicas para nuestros modelos, el análisis de los triples escritos manualmente y el uso de variables contador en los dos scripts, se identificaron para cada consulta el número de recursos que responden a la misma. En la tabla 3 se listan solamente 10 de nuestras 28 preguntas y el número de resultados de las mismas.
+	Ahora bien, la finalidad de este listado es tomar los tiempos promedios y el número de respuestas, cuándo las consultas SPARQL se hacen con el motor sin razonador y con razonador. Con la finalidad de averiguar la precisión [5], así como el desempeño del motor de SPARQL y el razonador de Jena.
+	Las dos variables de experimentación son tiempo y número de resultados.  La variable tiempo nos permite sacar el tiempo promedio que toma una consulta en ser ejecutada K veces. Mientras la variable número de resultados almacena la cantidad de recursos que fueron recuperados para una consulta dada. 
+	Para encontrar los valores de estas variables, nosotros empleamos un programa en Java. Este programa se ha diseñado para ejecutar únicamente una consulta e imprimir los valores de las variables en pantalla. El programa permite elegir al usuario el modelo RDF a consultar. Si es modelo RDF con triples explícitos, entonces solo cargan los triples (ABox) de los recursos. Por el contrario, si el modelo es con triples inferidos, entonces se cargan los triples (ABox), los axiomas (TBox) y se hace inferencia con el razonador de Jena.
+Este programa se ejecutó en una computadora con las siguientes capacidades: Procesador Intel Core I7 a 2.3GHz con 8Gb en RAM y 8 núcleos de procesamiento, y los valores resultantes de las variables se muestran en la Tabla 2.
+
+Interpretación de resultados
+	En esta tabla se tienen dos columnas compuestas, la columna (titulada conocimiento explícito) muestra los valores de las consultas que emplearon únicamente el modelo con triples explícitos. Mientras, la segunda columna (titulada conocimiento inferido) muestra los valores de las consultas que emplearon el modelo con triples explícitos, axiomas y un razonador. Para las columnas sencillas, la columna ?Número de resultados? muestra el número de recursos recuperados del total esperado para la consulta dada, mientras la columna ?Tiempo promedio? muestra el tiempo promedio de consulta en milisegundos.
+	En algunos casos, la consulta al conocimiento explícito recupera todos los recursos esperados y los tiempos de respuesta son pequeños (no pasan del segundo). Sin embargo, en otras consultas se descartaron varios recursos que si responden la consulta. Esto se debe a que algunos recursos carecen un determinado triple. Por otro lado, las consultas al grafo con triples inferidos permitieron recuperar todos los recursos esperados, porque mediante los axiomas y el razonador se deducen triples (materializaron) que serán considerados por el motor de búsqueda . Sin embargo, el tiempo de procesamiento es mucho mayor porque se invierte tiempo en procesar e inferir relaciones en el grafo RDF.
+Todo tiene un costo, cuando el razonador materializa los triples en el modelo, éste consume tiempo en procesamiento y al hacer una consulta, el motor debe comparar más aserciones. El desarrollador no debe abusar de la axiomatización, en algunos casos cuando la consulta es sobre  hechos explícitos, no es necesario el uso del razonador, basta con escribir y hacer la consulta sobre el conocimiento explícito.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Documento importante
+%https://docs.google.com/document/d/1rv-RDqdSB3Sd_zd7WANHDRXqEa_UHgV0WjC0DupYK4M/edit
