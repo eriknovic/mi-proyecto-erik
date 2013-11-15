@@ -646,14 +646,17 @@ Las ontologías son fuentes de conocimiento en forma de triples y para integrar i
 
 En el primer punto, mediante el análisis de los casos de uso, se identifican y escriben en lenguaje natural las principales preguntas que pueden hacer los usuarios al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales, pero para ejemplificar la consulta de información, se muestra una de éstas: (1) ¿Qué documentos sirven para dar un curso de Sistemas P2P?
 
-En el segundo punto, se debe emplear un lenguaje de consulta para buscar e interrogar los triples. En las tecnologías semántica, el lenguaje SPARQL \{Perez2009} es la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
+En el segundo punto, se debe emplear un lenguaje de consulta para buscar e interrogar los triples. En las tecnologías semántica, el lenguaje SPARQL es la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
 
+\begin{alltt}
+\small
 SELECT ?title ?path
 WHERE
-{?x rdf:type sird:Document;
+\{?x rdf:type sird:Document;
    sird:has-topic redes:Peer_to_Peer_System;
    sird:has-title ?title;
-   sird:has-filePath ?path.}
+   sird:has-filePath ?path.\}
+\end{alltt}
 
 Para el tercer punto, un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con JAVA.
 %%%####
@@ -664,7 +667,7 @@ C1.1.- ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del á
 C1.2.- ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT?
 C1.3.- ¿Quiénes son mayores de 20 años y menores de 45 años?
 C1.4.- ¿Cuál es el nombre y sitio web de los profesionistas del área de RyT?
-C1.5.- ¿Quiénes trabajan en la Clark & Parsia y son del sexo Masculino?
+C1.5.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
 C1.6.- ¿Quiénes son estudiantes y leen en inglés?
 C1.7.- ¿Quienes hablan, leen y escriben en inglés?
 C1.8.- ¿Qué estudiantes saben algo de inglés?
