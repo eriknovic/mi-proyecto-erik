@@ -34,12 +34,12 @@
 \contentsline {subsection}{\numberline {5.2.3}Domingo y rango de propiedades}{57}
 \contentsline {subsection}{\numberline {5.2.4}Simetr\IeC {\'\i }a en las propiedades}{61}
 \contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{64}
-\contentsline {chapter}{\numberline {6}Prototipo}{69}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{71}
-\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{71}
-\contentsline {section}{\numberline {7.2}Experimentaci\'on}{71}
-\contentsline {section}{\numberline {7.3}Resultados}{72}
-\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{75}
-\contentsline {chapter}{Appendices}{79}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{81}
-\contentsline {chapter}{Bibliograf\'{\i }a}{83}
+\contentsline {chapter}{\numberline {6}Prototipo}{71}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{73}
+\contentsline {section}{\numberline {7.1}Escenarios de experimentaci\'on}{73}
+\contentsline {section}{\numberline {7.2}Experimentaci\'on}{74}
+\contentsline {section}{\numberline {7.3}Resultados}{74}
+\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{77}
+\contentsline {chapter}{Appendices}{81}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}C\'odigos interfaz de Usuario}{83}
+\contentsline {chapter}{Bibliograf\'{\i }a}{85}
