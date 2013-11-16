@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  15 NOV 2013 01:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  16 NOV 2013 01:28
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -857,53 +857,46 @@ tito/Desktop/GoogleSVN/tesis_Erik/InfKnows.pdf
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Inf
 Knows.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
->]
-
-LaTeX Warning: Reference `tab:qln' on page 64 undefined on input line 647.
-
-[64] [65]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-[67] [68
+>] [64] [65] [66] [67] [68])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [69] [70
 
 ]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [69] [70
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [71] [72
 
 ]
 Cap\'{\i }tulo 7.
-[71] [72]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
-[73] [74
+[73] [74]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
+[75] [76
 
 ]
 Cap\'{\i }tulo 8.
-[75]
+[77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76])
-[77] [78
+ [78])
+[79] [80
 
-] [79
+] [81
 
-] [80] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [82] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [81
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [83
 
-] [82
+] [84
 
 ]
-[83] [84] [85]) [86]
+[85] [86] [87]) [88]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6026 strings out of 493944
- 82188 string characters out of 3148281
+ 6035 strings out of 493944
+ 82311 string characters out of 3148281
  173918 words of memory out of 3000000
- 9096 multiletter control sequences out of 15000+200000
+ 9105 multiletter control sequences out of 15000+200000
  26139 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -928,9 +921,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (102 pages, 1913917 bytes).
+Output written on tesis_Erik.pdf (104 pages, 1925957 bytes).
 PDF statistics:
- 874 PDF objects out of 1000 (max. 8388607)
+ 881 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

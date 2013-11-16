@@ -630,23 +630,111 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \label{sec:byrKrec} 
 Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
 
-En esta tesis, la finalidad de las ontologías es la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios de Redes y Telecomunicaciones. Esta búsqueda y recuperación se hace a partir de tres pasos: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas en un motor de búsqueda SPARQL}.
+En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT). Esta búsqueda y recuperación se hace a partir de tres puntos clave: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas en un motor de búsqueda SPARQL}.
+
+La \textbf{\textit{identificación de las preguntas en lenguaje natural}} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
+
+Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textbf{\textit{la búsqueda de recursos digitales}} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
+
+Los parámetros de búsqueda en la cartografía competencias son:
+\begin{itemize}
+\item Habilidades profesionales como trabajo en equipo, creatividad, liderazgo, administración de proyectos, auto-aprendizaje, toma de decisiones, por mencionar algunas.
+\item Habilidades lingüísticas como hablar en español, inglés y francés; escribir en español, inglés y japones; leer en español y francés, entre otros idiomas.
+\item Conocimientos de Redes y Telecomunicaciones como sabiduría en sistemas operativos, capa enlace, filtros, ontologías, hilos de procesamiento, radios cognitivos, datos ligados, por mencionar algunos.
+\item Relaciones profesionales como conoce a la Dra. Carolina, Dr. Héctor, Dr. Ricardo, Dr. Miguel, Erik, Laura, entre otros.
+\item Clase de persona en RyT como profesionista, profesor, estudiante o empleado.
+\item Intervalo de edad como como 18 a 40, < 40, > 18, 18 a 18, por mencionar.
+\item Lugar de trabajo como la Universidad Autónoma Metropolitana, Clark \& Parsia LLC, Infotec, Canonical Ltd, entre otras.
+\item Género, masculino, femenino, hombre y mujer. 
+\end{itemize}
+
+A partir de estos parámetros de búsqueda, se hallaron un conjunto de preguntas básicas. El siguiente listado presenta las diecinueve preguntas básicas para la \textit{cartografía de competencias}, donde cada pregunta tiene un respectivo \textit{identificador de consulta}.
+
+\begin{itemize}
+\item \textbf{\textit{Q1.1}}.- ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT?
+\item \textbf{\textit{Q1.2}}.- ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT?
+\item \textbf{\textit{Q1.3}}.- ¿Quiénes son mayores de 20 años y menores de 45 años?
+\item \textbf{\textit{Q1.4}}.- ¿Cuál es el nombre y sitio web de los profesionistas del área de RyT?
+\item \textbf{\textit{Q1.5}}.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
+\item \textbf{\textit{Q1.6}}.- ¿Quiénes son estudiantes y leen en inglés?
+\item \textbf{\textit{Q1.7}}.- ¿Quienes hablan, leen y escriben en inglés?
+\item \textbf{\textit{Q1.8}}.- ¿Qué estudiantes saben algo de inglés?
+\item \textbf{\textit{Q1.9}}.- ¿Qué profesores tienen la capacidad de síntesis?
+\item \textbf{\textit{Q1.10}}.- ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?
+\item \textbf{\textit{Q1.11}}.- ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?
+\item \textbf{\textit{Q1.12}}.- ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?
+\item \textbf{\textit{Q1.13}}.- ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?
+\item \textbf{\textit{Q1.14}}.- ¿Quiénes trabajan en una Universidad?
+\item \textbf{\textit{Q1.15}}.- ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?
+\item \textbf{\textit{Q1.16}}.- ¿Qué personas tienen como asesor a Carolina Medina?
+\item \textbf{\textit{Q1.17}}.- ¿Quiénes son los colegas de Ricardo Marcelin?
+\item \textbf{\textit{Q1.18}}.- ¿Quiénes conocen a Carolina Medina Ramirez?
+\item \textbf{\textit{Q1.19}}.- ¿Qué personas son profesores-investigadores?
+\end{itemize}
+
+De la misma manera que la cartografía, los principales criterios de búsqueda para los recursos digitales son: 
+\begin{itemize}
+\item Nombre del autor como Carolina Medina, Héctor Pérez, Ricardo Baeza, Tim Berners Lee, por mencionar algunos.
+\item Lenguaje como inglés, español, francés, chino, ruso, entre otros.
+\item Extensión del archivo como pdf, doc, odp, txt, html, xml, ppt, flv, mpg, mp3, wav, jpg, entre otras.
+\item Institución involucrada como editorial (Mc Graw Hill, Grijalbo, Pearson), universidad (UNAM, UAM, IPN), revista científica (IEEE, ACM, Springer).
+\item Año de cota inferior, por ejemplo > 1980, > 2000, > 2012.
+\item Clase de recurso digital en RyT como libro, artículo, reporte técnico, tesis, página Web, audio, vídeo, imagen, presentación, documento y multimedia.
+\item Temas vinculados al área de RyT como sistemas operativos, capa enlace, filtros, ontologías, hilos de procesamiento, radios cognitivos, datos ligados, por mencionar algunos.
+\end{itemize}
+
+Estos parámetros de búsqueda dieron pauta a la búsqueda de las principales preguntas para este \textit{caso de uso}. A continuación, se listan las diez preguntas principales que se hallaron para la búsqueda de recursos digitales.
+
+\begin{itemize}
+\item \textbf{\textit{Q2.1}}.- ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?
+\item \textbf{\textit{Q2.2}}.- ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?
+\item \textbf{\textit{Q2.3}}.- ¿Qué recursos fueron publicados por la UAM?
+\item \textbf{\textit{Q2.4}}.- ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+\item \textbf{\textit{Q2.5}}.- ¿Qué recursos multimedia son mayores al año 2009?
+\item \textbf{\textit{Q2.6}}.- ¿Cuáles documentos tratan sobre Ontologías?
+\item \textbf{\textit{Q2.7}}.- ¿Qué recursos fueron publicados en una Revista científica?
+\item \textbf{\textit{Q2.8}}.- ¿Qué recursos tienen en su descripción las palabras "linked data"?
+\item \textbf{\textit{Q2.9}}.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
+\item \textbf{\textit{Q2.10}}.- ¿Cuál son las tesis de Samuel Hernandez Maza?
+\end{itemize}
+
+Las preguntas para los dos casos de uso fueron electas, porque algunas utilizan el conocimiento explícito y otras aprovechan el conocimiento implícito.
+
+Con base en las preguntas de ambos listados, el siguiente paso es transformar estas preguntas a consultas SPARQL. Esta transformación para cada \textit{pregunta-consulta} se hace de esta manera.
+\begin{enumerate}
+\item Analizar e identificar estos componentes: a) los valores que se desean recuperar, a los cuales se les asocia una \textit{variable resultado}, b) las \textit{propiedades} y c) los criterios de búsqueda que son \textit{variables auxiliares} o \textit{valores específicos} (recursos o literales).
+\item Escribir las \textit{variables resultado} en la cláusula SELECT.
+\item Construir y escribir los \textit{patrones tripletas} a partir de las variable resultado, propiedades, variables auxiliares y valores específicos.
+\item Introducir los \textit{patrones tripletas} en la cláusula WHERE.
+%\item Opcional, puede escribirse esta instrucción \textit{ORDER BY ?x} para ordenar los recursos con base en una variable (?x).
+\end{enumerate}
+
+Para ejemplificar esta transformación \textit{pregunta-consulta}, se presentan algunas preguntas de las dos listas en forma de consultas SPARQL.
+
+----> Voy aquí
+
+Finalmente, estos patrones se introducen en la cláusula WHERE. Para ejemplificar esta situación, la consulta C1.4 tiene como valores de recuperación el nombre y sitio web (?nombre y ?sitioWeb), el  valores de búsqueda es Profesionista, y las variables auxiliares son ?x. De esta manera, la consulta SPARQL queda de la siguiente manera:
+
+------------
+Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
+
+Un motor de consulta SPARQL con un razonador además de proporcionar ?más? resultados, también reduce la complejidad de las consultas. Esto es, si solamente se emplean patrones, para comprar con triples explícitos del grafo RDF, entonces el número de patrones se incrementa en la cláusula SELECT de la consulta. Mientras que la consulta con patrones sobre triples inferidos, tiene menor cantidad de éstos. Por ejemplo, en la consulta C2.4 un parametro de busqueda es comparar todos los recursos que sean documentos, para ello, la consulta SPARQL se puede elaborar de dos maneras: 
+Unión de patrones: se escriben cinco patrones y mediante el operador unión se conjuntan, en el cuál cada patrón tiene el mismo sujeto (?x), el mismo  predicado rdf:tipo y distinto objeto (Artículo, Reporte Técnico, Página Web, Tesis y Libro). En la Figura 10 del lado izquierdo se muestra esta consulta SPARQL con unión de varios patrones.
+Un solo patrón: se escribe únicamente el patrón que relaciona a un recurso con el tipo Documento, porque con la inferencia, todas las instancias de las clases Artículo, Reporte Técnico, Página Web, Tesis y Libro son instancias de la clase Documento. La Figura 10, lado derecho muestra la consulta SPARQL con patrones que se basan relaciones nuevas.
+
+---------------
+
+se debe emplear un lenguaje de consulta para buscar e interrogar los triples. En las tecnologías semántica, el lenguaje SPARQL es la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-Los grafos RDF son la fuente de conocimiento sobre los recursos y para consultar la información de éstos, es necesario un lenguaje de consulta. Las tecnologías de la Web semántica establecen al lenguaje SPARQL como especificación para consultar, recuperar y modificar la información en grafos RDF. 
-Las consultas SPARQL se basan en el uso de patrones que concuerden con los triples de un grafo RDF.  Un patrón es parecido a un triple pero a diferencia de éste, el sujeto, la propiedad, el objeto  o cualquiera de los tres son variables. La sintaxis de una típica consulta SPARQL tiene dos cláusulas: SELECT y WHERE. La cláusula SELECT enuncia las variables respuesta, que recuperarán los valores después de ejecutar la consulta. Mientras, la cláusula WHERE enuncia  los patrones de comparación. 
-
 A continuación se muestran algunas ejemplificaciones de consultas, basada en los triples del recurso Juan. Las consultas en lenguaje natural son: 1) Cuál es el nombre y email de todos los recursos. 2) Quién conoce a Juan y 3) Dónde estudia Juan. Mientras las consultas en sintaxis SPARQL se muestran en la Figura 4.
 consultas sparql
 Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, busca aquellos triples en el grafo RDF que concuerdan con los patrones de la cláusula WHERE. Para aquellas variables de la cláusula SELECT se extrae la información y se devuelve en determinado formato visual, típicamente en forma de tabla. En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%####
-Las ontologías son fuentes de conocimiento en forma de triples y para integrar información de éstas, es necesario tres cosas: 1) una pregunta en lenguaje natural, 2) una consulta a partir de triples y 3) un motor de consulta.
 
-En el primer punto, mediante el análisis de los casos de uso, se identifican y escriben en lenguaje natural las principales preguntas que pueden hacer los usuarios al modelo. En nuestro caso de estudio, se obtuvieron 10 preguntas (Tabla \ref{tab:qln}) para la búsqueda de recursos digitales, pero para ejemplificar la consulta de información, se muestra una de éstas: (1) ¿Qué documentos sirven para dar un curso de Sistemas P2P?
-
-En el segundo punto, se debe emplear un lenguaje de consulta para buscar e interrogar los triples. En las tecnologías semántica, el lenguaje SPARQL es la especificación para consultar, recuperar y modificar la información de triples RDF. Este lenguaje se basa en el uso de patrones de búsqueda para comparar con los triples del modelo y variables para la recuperación de información. Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
+Un patrón de búsqueda es parecido a un triple, pero a diferencia de este último, el sujeto, la propiedad o el objeto pueden ser una variable. En una consulta SPARQL, hay dos cláusulas SELECT y WHERE, la cláusula SELECT enuncia las variables resultado y la cláusula WHERE enuncia los patrones de comparación. En nuestro ejemplo, la pregunta (1) se escribe como consulta SPARQL de la siguiente manera.
 
 \begin{alltt}
 \small
@@ -662,37 +750,7 @@ Para el tercer punto, un motor de consulta SPARQL es el programa que permite res
 %%%####
 
 %//////////////////////
-La segunda etapa de la Integración Semántica consiste en consultar el conocimiento de las Ontologías. Para ello, mediante el análisis de los casos de uso, se identifican y se escriben un conjunto de preguntas básicas en lenguaje natural. La siguiente lista muestra las preguntas que identificamos del caso de uso Cartografía de competencias.
-C1.1.- ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT?
-C1.2.- ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT?
-C1.3.- ¿Quiénes son mayores de 20 años y menores de 45 años?
-C1.4.- ¿Cuál es el nombre y sitio web de los profesionistas del área de RyT?
-C1.5.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
-C1.6.- ¿Quiénes son estudiantes y leen en inglés?
-C1.7.- ¿Quienes hablan, leen y escriben en inglés?
-C1.8.- ¿Qué estudiantes saben algo de inglés?
-C1.9.- ¿Qué profesores tienen la capacidad de síntesis?
-C1.10.- ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?
-C1.11.- ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?
-C1.12.- ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?
-C1.13.- ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?
-C1.14.- ¿Quiénes trabajan en una Universidad?
-C1.15.- ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?
-C1.16.- ¿Qué personas tienen como asesor a Carolina Medina?
-C1.17.- ¿Quiénes son los colegas de Ricardo Marcelin?
-C1.18.- ¿Quiénes conocen a Carolina Medina Ramirez?
-Por otro lado, el siguiente listado muestra las preguntas del caso uso Búsqueda de Recursos Digitales.
-C2.1.- ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?
-C2.2.- ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?
-C2.3.- ¿Qué recursos fueron publicados por la UAM?
-C2.4.- ¿Qué documentos sirven para dar un curso de Sistemas P2P?
-C2.5.- ¿Qué recursos multimedia son mayores al año 2009?
-C2.6.- ¿Cuáles documentos tratan sobre Ontologías?
-C2.7.- ¿Qué recursos fueron publicados en una Revista científica?
-C2.8.- ¿Qué recursos tienen en su descripción las palabras "linked data"?
-C2.9.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
-C2.10.- ¿Cuáles son las tesis de Samuel Hernandez Maza?
-A partir de estas preguntas en lenguaje natural, el siguiente paso es transformarlas a consultas SPARQL. Esta conversión se hace de la siguiente manera: para cada pregunta se analizan los valores a recuperar (variables resultado), las propiedades (predicado) y los parámetros de búsqueda (variables auxiliares o valores específicos). Posteriormente, las variables resultado se escriben en la cláusula SELECT, mientras los parámetros de búsqueda y las propiedades se escriben en forma de triple para formar los patrones. Finalmente, estos patrones se introducen en la cláusula WHERE. Para ejemplificar esta situación, la consulta C1.4 tiene como valores de recuperación el nombre y sitio web (?nombre y ?sitioWeb), el  valores de búsqueda es Profesionista, y las variables auxiliares son ?x. De esta manera, la consulta SPARQL queda de la siguiente manera:
+Para ejemplificar esta situación, la consulta C1.4 tiene como valores de recuperación el nombre y sitio web (?nombre y ?sitioWeb), el  valores de búsqueda es Profesionista, y las variables auxiliares son ?x. De esta manera, la consulta SPARQL queda de la siguiente manera:
 consulta sparql C1.4
 Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
 Un motor de consulta SPARQL con un razonador además de proporcionar ?más? resultados, también reduce la complejidad de las consultas. Esto es, si solamente se emplean patrones, para comprar con triples explícitos del grafo RDF, entonces el número de patrones se incrementa en la cláusula SELECT de la consulta. Mientras que la consulta con patrones sobre triples inferidos, tiene menor cantidad de éstos. Por ejemplo, en la consulta C2.4 un parametro de busqueda es comparar todos los recursos que sean documentos, para ello, la consulta SPARQL se puede elaborar de dos maneras: 
