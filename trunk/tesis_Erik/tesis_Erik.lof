@@ -38,6 +38,9 @@
 \contentsline {figure}{\numberline {5.24}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{62}
 \contentsline {figure}{\numberline {5.25}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{63}
 \contentsline {figure}{\numberline {5.26}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{63}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.1 de la cartograf\IeC {\'\i }a de competencias.}}{67}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.118, en la cual no se da por hecho el uso del razonamiento.}}{68}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q1.118 mediante la asunci\'on de emplear razonamiento.}}{69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
