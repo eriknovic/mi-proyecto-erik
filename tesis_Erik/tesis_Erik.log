@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  16 NOV 2013 01:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  17 NOV 2013 01:56
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -857,47 +857,74 @@ tito/Desktop/GoogleSVN/tesis_Erik/InfKnows.pdf
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Inf
 Knows.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
->] [64] [65] [66] [67] [68])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [69] [70
+>] [64] [65] [66] <q112rql.pdf, id=737, 818.05624pt x 372.39125pt>
+File: q112rql.pdf Graphic file (type pdf)
+
+<use q112rql.pdf>
+Package pdftex.def Info: q112rql.pdf used on input line 718.
+(pdftex.def)             Requested size: 424.82523pt x 193.38885pt.
+ [67 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q112rql.pdf>] <q2rqlSR.pdf, 
+id=752, 930.47626pt x 431.6125pt>
+File: q2rqlSR.pdf Graphic file (type pdf)
+ <use q2rqlSR.pdf>
+Package pdftex.def Info: q2rqlSR.pdf used on input line 739.
+(pdftex.def)             Requested size: 424.82523pt x 197.05574pt.
+
+<q2rqlCR.pdf, id=753, 819.06pt x 343.2825pt>
+File: q2rqlCR.pdf Graphic file (type pdf)
+ <use q2rqlCR.pdf>
+Package pdftex.def Info: q2rqlCR.pdf used on input line 748.
+(pdftex.def)             Requested size: 424.82523pt x 178.05745pt.
+
+
+LaTeX Warning: Reference `fig:q2torqlSR' on page 68 undefined on input line 753
+.
+
+[68 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlSR.pdf>] [69 <C:/Users/G
+atito/Desktop/GoogleSVN/tesis_Erik/q2rqlCR.pdf>]
+Underfull \vbox (badness 7722) has occurred while \output is active []
+
+ [70])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [71] [72
 
 ]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [71] [72
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [73] [74
 
 ]
 Cap\'{\i }tulo 7.
-[73] [74]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
-[75] [76
+[75] [76]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
+[77] [78
 
 ]
 Cap\'{\i }tulo 8.
-[77]
+[79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78])
-[79] [80
+ [80])
+[81] [82
 
-] [81
+] [83
 
-] [82] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [84] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [83
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [85
 
-] [84
+] [86
 
 ]
-[85] [86] [87]) [88]
+[87] [88] [89]) [90]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6035 strings out of 493944
- 82311 string characters out of 3148281
- 173918 words of memory out of 3000000
- 9105 multiletter control sequences out of 15000+200000
- 26139 words of font info for 64 fonts, out of 3000000 for 9000
+ 6056 strings out of 493944
+ 82616 string characters out of 3148281
+ 173954 words of memory out of 3000000
+ 9124 multiletter control sequences out of 15000+200000
+ 25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
@@ -918,12 +945,11 @@ per/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1
 440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (104 pages, 1925957 bytes).
+iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on tesis_Erik.pdf (106 pages, 1988109 bytes).
 PDF statistics:
- 881 PDF objects out of 1000 (max. 8388607)
+ 919 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
