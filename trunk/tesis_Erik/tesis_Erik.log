@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  17 NOV 2013 01:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  18 NOV 2013 01:41
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -792,15 +792,15 @@ File: exTriplDyRPer.pdf Graphic file (type pdf)
 Package pdftex.def Info: exTriplDyRPer.pdf used on input line 545.
 (pdftex.def)             Requested size: 377.62642pt x 180.5377pt.
 
-<exInfDyRPer.pdf, id=655, 509.905pt x 408.52625pt>
+[57 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exAxDyRPer.pdf>] [58]
+[59] <exInfDyRPer.pdf, id=672, 509.905pt x 408.52625pt>
 File: exInfDyRPer.pdf Graphic file (type pdf)
  <use exInfDyRPer.pdf>
 Package pdftex.def Info: exInfDyRPer.pdf used on input line 554.
 (pdftex.def)             Requested size: 424.84717pt x 289.09569pt.
 
-[57 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exAxDyRPer.pdf>] [58]
-[59] [60 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exTriplDyRPer.pdf> <C:/U
-sers/Gatito/Desktop/GoogleSVN/tesis_Erik/exInfDyRPer.pdf
+[60 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exTriplDyRPer.pdf> <C:/Users/
+Gatito/Desktop/GoogleSVN/tesis_Erik/exInfDyRPer.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exI
 nfDyRPer.pdf): PDF inclusion: multiple pdfs with page group included in a singl
@@ -834,25 +834,28 @@ File: infSymColl.pdf Graphic file (type pdf)
 Package pdftex.def Info: infSymColl.pdf used on input line 600.
 (pdftex.def)             Requested size: 448.44698pt x 180.682pt.
 
-[62 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/axSymColl.pdf> <C:/Users/Gati
-to/Desktop/GoogleSVN/tesis_Erik/infSymColl.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/inf
-SymColl.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->] <triplKnows.pdf, id=713, 516.93124pt x 137.51375pt>
+<triplKnows.pdf, id=701, 516.93124pt x 137.51375pt>
 File: triplKnows.pdf Graphic file (type pdf)
  <use triplKnows.pdf>
 Package pdftex.def Info: triplKnows.pdf used on input line 614.
 (pdftex.def)             Requested size: 377.64063pt x 108.40805pt.
 
-<InfKnows.pdf, id=714, 601.24625pt x 155.58125pt>
+<InfKnows.pdf, id=702, 601.24625pt x 155.58125pt>
 File: InfKnows.pdf Graphic file (type pdf)
  <use InfKnows.pdf>
 Package pdftex.def Info: InfKnows.pdf used on input line 623.
-(pdftex.def)             Requested size: 424.84195pt x 130.08673pt.
- [63 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/triplKnows.pdf> <C:/Users/Ga
-tito/Desktop/GoogleSVN/tesis_Erik/InfKnows.pdf
+(pdftex.def)             Requested size: 424.84195pt x 122.86035pt.
+ [62 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/axSymColl.pdf>]
+Overfull \vbox (21.31322pt too high) has occurred while \output is active []
+
+
+[63 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/infSymColl.pdf> <C:/Users/Gat
+ito/Desktop/GoogleSVN/tesis_Erik/triplKnows.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/tri
+plKnows.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/InfKnows.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Inf
 Knows.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -863,8 +866,15 @@ File: q112rql.pdf Graphic file (type pdf)
 <use q112rql.pdf>
 Package pdftex.def Info: q112rql.pdf used on input line 718.
 (pdftex.def)             Requested size: 424.82523pt x 193.38885pt.
- [67 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q112rql.pdf>] <q2rqlSR.pdf, 
-id=752, 930.47626pt x 431.6125pt>
+
+Overfull \hbox (52.02544pt too wide) in paragraph at lines 730--731
+[]\T1/cmr/m/n/12 Propiedades: \T1/cmr/m/it/12 tie-ne nom-bre (sirp:has-name)\T1
+/cmr/m/n/12 , \T1/cmr/m/it/12 tie-ne co-le-ga (sirp:has-colleague) tie-ne aseso
+r(sirp:has-
+ []
+
+[67 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q112rql.pdf>]
+<q2rqlSR.pdf, id=752, 930.47626pt x 431.6125pt>
 File: q2rqlSR.pdf Graphic file (type pdf)
  <use q2rqlSR.pdf>
 Package pdftex.def Info: q2rqlSR.pdf used on input line 739.
@@ -874,22 +884,38 @@ Package pdftex.def Info: q2rqlSR.pdf used on input line 739.
 File: q2rqlCR.pdf Graphic file (type pdf)
  <use q2rqlCR.pdf>
 Package pdftex.def Info: q2rqlCR.pdf used on input line 748.
-(pdftex.def)             Requested size: 424.82523pt x 178.05745pt.
+(pdftex.def)             Requested size: 377.62642pt x 158.27328pt.
 
+<q2torqlSR.pdf, id=754, 885.3075pt x 482.80376pt>
+File: q2torqlSR.pdf Graphic file (type pdf)
+ <use q2torqlSR.pdf>
+Package pdftex.def Info: q2torqlSR.pdf used on input line 759.
+(pdftex.def)             Requested size: 377.62642pt x 205.944pt.
+ [68 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlSR.pdf>] [69 <C:/Users/
+Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlCR.pdf> <C:/Users/Gatito/Desktop/Googl
+eSVN/tesis_Erik/q2torqlSR.pdf
 
-LaTeX Warning: Reference `fig:q2torqlSR' on page 68 undefined on input line 753
-.
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2t
+orqlSR.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>] <q2torqlCR.pdf, id=794, 878.28125pt x 353.32pt>
+File: q2torqlCR.pdf Graphic file (type pdf)
+ <use q2torqlCR.pdf>
+Package pdftex.def Info: q2torqlCR.pdf used on input line 780.
+(pdftex.def)             Requested size: 424.82523pt x 170.90173pt.
 
-[68 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlSR.pdf>] [69 <C:/Users/G
-atito/Desktop/GoogleSVN/tesis_Erik/q2rqlCR.pdf>]
-Underfull \vbox (badness 7722) has occurred while \output is active []
-
- [70])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [71] [72
-
-]
+<exMBS.pdf, id=795, 727.71875pt x 530.98375pt>
+File: exMBS.pdf Graphic file (type pdf)
+ <use exMBS.pdf>
+Package pdftex.def Info: exMBS.pdf used on input line 789.
+(pdftex.def)             Requested size: 424.82523pt x 309.98822pt.
+ [70 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2torqlCR.pdf>] [71 <C:/User
+s/Gatito/Desktop/GoogleSVN/tesis_Erik/exMBS.pdf>])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [72]
 Cap\'{\i }tulo 6.
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [73] [74
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [73
+
+] [74
 
 ]
 Cap\'{\i }tulo 7.
@@ -920,10 +946,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6056 strings out of 493944
- 82616 string characters out of 3148281
- 173954 words of memory out of 3000000
- 9124 multiletter control sequences out of 15000+200000
+ 6076 strings out of 493944
+ 82915 string characters out of 3148281
+ 173990 words of memory out of 3000000
+ 9141 multiletter control sequences out of 15000+200000
  25825 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -947,9 +973,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (106 pages, 1988109 bytes).
+Output written on tesis_Erik.pdf (106 pages, 2231862 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
+ 967 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
