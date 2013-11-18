@@ -547,7 +547,7 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 \label{fig:exTriplDyRPer}
 \end{figure}
 
-En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación profesional entre individuos, así como las tripletas de asignación a una de estas dos clases: \textit{Estudiante (Student)} y \textit{Profesionista (Professional)}. Las tripletas de asignación son obtenidas después de realizar el proceso de inferencia. Los individuos \textit{Ricardo Marcelin, Enrique Rodriguez, Carolina Medina y Héctor Pérez son Profesionistas}, porque el \textit{dominio} y \textit{rango} de la función \textit{tiene colega (has-colleague)} es la clase \textit{Profesionista}, también porque el \textit{rango} de la función \textit{tiene asesor (has-advisor)} es la clase \textit{Profesionista}. Mientras, los individuos \textit{Erik Alarcón y Laura Mendez son Estudiantes}, porque el \textit{dominio} de la propiedad \textit{tiene asesor} es la clase \textit{Estudiante}.
+En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación profesional entre individuos, así como las tripletas de asignación a una de estas dos clases: \textit{Estudiante (sirp:Student)} y \textit{Profesionista (sirp:Professional)}. Las tripletas de asignación son obtenidas después de realizar el proceso de inferencia. Los individuos \textit{Ricardo Marcelin, Enrique Rodriguez, Carolina Medina y Héctor Pérez son Profesionistas}, porque el \textit{dominio} y \textit{rango} de la función \textit{tiene colega (sirp:has-colleague)} es la clase \textit{Profesionista}, también porque el \textit{rango} de la función \textit{tiene asesor (sirp:has-advisor)} es la clase \textit{Profesionista}. Mientras, los individuos \textit{Erik Alarcón y Laura Mendez son Estudiantes}, porque el \textit{dominio} de la propiedad \textit{tiene asesor} es la clase \textit{Estudiante}.
 
 \begin{figure}[!htb]
 \centering
@@ -580,7 +580,7 @@ Sin embargo, existen algunas propiedades que requieren tener un comportamiento b
 A continuación, se describen las propiedades simétricas que se identificaron para la \textit{cartografía de competencias}. Con respecto al caso de la búsqueda de recursos digitales, no se identificó alguna propiedad que tenga la característica simétrica.
 
 \begin{itemize}
-\item La propiedad \textbf{\textit{tiene colega (has-colleague)}} es una relación del tipo laboral que vincula a dos Profesionistas (Profesor o Empleado). La idea básica de esta relación es indicar quiénes son los colegas de trabajo o con quiénes ha hecho colaboración un \textit{Profesionista}.
+\item La propiedad \textbf{\textit{tiene colega (sir:has-colleague)}} es una relación del tipo laboral que vincula a dos Profesionistas (Profesor o Empleado). La idea básica de esta relación es indicar quiénes son los colegas de trabajo o con quiénes ha hecho colaboración un \textit{Profesionista}.
 
 La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tiene colega} entre cuatro profesores del área de Redes y Telecomunicaciones (RyT). En este subgrafo las tripletas indican las siguientes declaraciones: \textit{el Dr. Ricardo Marcelin tiene por colegas a la Dra. Carolina Medina, Dr. Enrique Rodrígez y Dr. Miguel López}, \textit{el Dr. Enrique Rodrígez tiene por colegas a la Dra. Carolina Medina y al Dr. Miguel López} y \textit{la Dr. Carolina Medina tiene por colega al Dr. Miguel López}.
 
@@ -591,7 +591,7 @@ La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tie
 \label{fig:axSymColl}
 \end{figure}
 
-En la Figura \ref{fig:axSymColl}, el recurso ``\textit{sirp:MiguelLopez}'' es el \textbf{\textit{objeto}} en todas las tripletas del subgrafo RDF, es decir, el Dr. Miguel López no tiene alguna declaración propia que indique quienes son sus colegas. El comportamiento de la propiedad \textit{tiene colega} indica una relación unidireccional. Sin embargo, esta propiedad debe tener un comportamiento bidireccional. Por ello, la propiedad \textit{tiene colega (has-colleague)} tiene la \textit{característica simétrica}.
+En la Figura \ref{fig:axSymColl}, el recurso ``\textit{sirp:MiguelLopez}'' es el \textbf{\textit{objeto}} en todas las tripletas del subgrafo RDF, es decir, el Dr. Miguel López no tiene alguna declaración propia que indique quienes son sus colegas. El comportamiento de la propiedad \textit{tiene colega} indica una relación unidireccional. Sin embargo, esta propiedad debe tener un comportamiento bidireccional. Por ello, la propiedad \textit{tiene colega (sirp:has-colleague)} tiene la \textit{característica simétrica}.
 
 La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo se obtiene a partir de las tripletas en la Figura \ref{fig:axSymColl} y del axioma que establece que la propiedad \textit{tiene colega} es simétrica. En esta Figura, el recurso ``\textit{sirp:MiguelLopez}'' tiene el rol de \textit{\textit{objeto}}, así como el rol de \textbf{\textit{sujeto}} para otras tres tripletas RDF. Ésto significa que el \textit{Dr. Miguel López tiene por colegas a la Dra. Carolina, Dr. Enrique y al Dr. Ricardo}. De la misma manera, los otros recursos (Doctores) carentes de su propia afirmación, ahora tienen esta relación.
 
@@ -605,7 +605,7 @@ La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo s
 \end{itemize}
 
 \begin{itemize}
-\item La propiedad \textbf{\textit{conoce a (knows)}} es una relación profesional para la interacción entre las personas (profesor, empleado o estudiante) del área de Redes y Telecomunicaciones. Esta propiedad, al igual que la propiedad \textit{tiene colega}, tiene un comportamiento bidireccional. Por ello, la propiedad \textit{conoce a} es una propiedad simétrica.
+\item La propiedad \textbf{\textit{conoce a (sirp:knows)}} es una relación profesional para la interacción entre las personas (profesor, empleado o estudiante) del área de Redes y Telecomunicaciones. Esta propiedad, al igual que la propiedad \textit{tiene colega}, tiene un comportamiento bidireccional. Por ello, la propiedad \textit{conoce a} es una propiedad simétrica.
 
 La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relaciones \textit{conoce a} tienen solo una dirección. En esta Figura, las tripletas indican lo siguiente: \textit{Erik Alarcón conoce a la Dra. Carolina Medina, Dr. Héctor Pérez y Laura Méndez}, \textit{Laura Méndez conoce a la Dra. Carolina Medina y Dr. Enrique Rodríguez}, la \textit{Dra. Carolina conoce al Dr. Héctor Pérez} y el \textit{Dr. Enrique Rodríguez conoce a la Dra. Carolina Medina}.
 
@@ -620,7 +620,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=1.8in,width=0.90\textwidth]{InfKnows}
+\includegraphics[height=1.7in,width=0.90\textwidth]{InfKnows}
 \caption{Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad simétrica.}
 \label{fig:InfKnows}
 \end{figure}
@@ -630,7 +630,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \label{sec:byrKrec} 
 Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
 
-En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT). Esta búsqueda y recuperación se hace a partir de tres puntos clave: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas en un motor de búsqueda SPARQL}.
+En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT). Esta búsqueda y recuperación se hace a partir de tres puntos clave: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas mediante un motor de búsqueda SPARQL}.
 
 La \textbf{\textit{identificación de las preguntas en lenguaje natural}} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
 
@@ -711,7 +711,7 @@ Con base en las preguntas de ambos listados, el siguiente paso es transformar es
 
 A continuación, se presentan y describen algunos ejemplos para transformar las preguntas en \textit{lenguaje natural} a sus respectivas consultas SPARQL. Estas preguntas son electas del listado de preguntas para la cartografía de competencias y la búsqueda de recursos digitales.
 
-La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la pregunta (Q1.1) \textit{¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?}. En esta pregunta, los valores de recuperación son: \textit{nombre}, \textit{correo}, \textit{sitio Web}, \textit{género} y \textit{edad} para cualquier recurso persona. Cada valor tiene asociado una respectiva variable: \textit{?name}, \textit{?mail}, \textit{?ws}, \textit{?gender} y \textit{?age}. Las propiedades asociadas a estos valores son: \textit{tiene nombre (has-name)}, \textit{tiene email (has-email)}, \textit{tiene sitio Web (has-webSite)} y \textit{tiene género (has-gender)}. Finalmente, la variable auxiliar ``\textit{?x}'' establece que sin importar el identificador URI del recurso, deben recuperarse los valores de las variables respuesta.
+La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la pregunta (Q1.1) \textit{¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?}. En esta pregunta, los valores de recuperación son: \textit{nombre}, \textit{correo}, \textit{sitio Web}, \textit{género} y \textit{edad} para cualquier recurso persona. Cada valor tiene asociado una respectiva variable: \textit{?name}, \textit{?mail}, \textit{?ws}, \textit{?gender} y \textit{?age}. Las propiedades asociadas a estos valores son: \textit{tiene nombre (sirp:has-name)}, \textit{tiene email (sirp:has-email)}, \textit{tiene sitio Web (sirp:has-webSite)} y \textit{tiene género (sirp:has-gender)}. Finalmente, la variable auxiliar ``\textit{?x}'' establece que sin importar el identificador URI del recurso, deben recuperarse los valores de las variables respuesta.
 
 \begin{figure}[!htb]
 \centering
@@ -727,9 +727,9 @@ A continuación, se listan los elementos de la consulta que están asociados a la 
 
 \begin{itemize}
 \item Variable resultado: \textit{?name} - nombre y \textit{?ws} - sitio Web.
-\item Propiedades: \textit{tiene nombre (has-name)}, \textit{tiene colega (has-colleague)} \textit{tiene asesor(has-advisor)}, \textit{conoce a (knows)} y \textit{tiene sitio Web (has-webSite)}.
+\item Propiedades: \textit{tiene nombre (sirp:has-name)}, \textit{tiene colega (sirp:has-colleague)} \textit{tiene asesor(sirp:has-advisor)}, \textit{conoce a (sirp:knows)} y \textit{tiene sitio Web (sirp:has-webSite)}.
 \item Variables auxiliares: \textit{?x} - identificador del recurso.
-\item Valores específicos: sirp:CarolinaMedinaRamirez - identificador de la Dra. Carolina Medina Ramírez
+\item Valores específicos: \textit{sirp:CarolinaMedinaRamirez} - identificador de la Dra. Carolina Medina Ramírez.
 \end{itemize}
 
 En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones tripleta} que indican las relaciones profesionales de cualquier individuo con la Dra. Carolina. Porque, para indicar \textit{a quiénes conoce} o \textit{quiénes conocen a} la Dra. Carolina se deben emplear cinco \textit{patrones tripleta}, los cuales aparecen en el recuadro con el símbolo del asterisco.
@@ -737,7 +737,7 @@ En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.9\textwidth]{q2rqlSR}
-\caption{Consulta SPARQL asociada a la pregunta Q1.118, en la cual no se da por hecho el uso del razonamiento.}
+\caption{Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}
 \label{fig:q2rqlSR}
 \end{figure}
 
@@ -745,12 +745,57 @@ La consulta de la pregunta Q1.18, puede simplificarse mediante la asunción de em
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{q2rqlCR}
-\caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q1.118 mediante la asunción de emplear razonamiento.}
+\includegraphics[width=0.8\textwidth]{q2rqlCR}
+\caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunción de emplear razonamiento.}
 \label{fig:q2rqlCR}
 \end{figure}
 
-En la búsqueda de recursos digitales, hay transformaciones de pregunta-consulta que aprovechan el razonamiento para simplificar el número de patrones en una consulta. La Figura \ref{fig:q2torqlSR} presenta la consulta asociada a la pregunta (Q2.6) \textit{¿Cuáles documentos tratan sobre Ontologías?}.
+En el caso de uso \textit{búsqueda de recursos digitales}, existen consultas que mediante la inferencia en una ontologia, pueden reducirse el número de patrones en sus respectivas clausulas WHERE.  A continuación, se presenta un ejemplo de este tipo de consultas. Este ejemplo esta dividido en dos partes: 1) \textit{la consulta se construye sin dar por hecho el uso de un razonador} y 2) la consulta se construye a partir de la aseveración de emplear razonamiento en una ontología.
+
+La Figura \ref{fig:q2torqlSR} presenta la consulta asociada a la pregunta (Q2.6) \textit{¿Cuáles documentos tratan sobre Ontologías?}. Esta consulta se construye a partir de las tripletas explícitas en la ontología de \textit{recursos digitales}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{q2torqlSR}
+\caption{Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}
+\label{fig:q2torqlSR}
+\end{figure} 
+
+Los elementos importantes en la consulta (Q2.6) de la Figura \ref{fig:q2torqlSR}, se listan a continuación:
+
+\begin{itemize}
+\item Variable resultado: \textit{?x} - identificador del recurso.
+\item Propiedades: \textit{tipo (rdf:type)} y \textit{tiene tópico (sird:has-topic)}.
+\item Variables auxiliares: \textit{?x} - identificador del recurso.
+\item Valores específicos:  \textit{sird:Book} - identificador de la clase Libro, \textit{ sird:Paper} - identificador de la clase Artículo, \textit{ sird:Thesis} - identificador de la clase Tesis, \textit{Webpage} - identificador de la clase Página Web, \textit{sird:
+TechnicalReport} - identificador de la clase Reporte Técnico, \textit{sird:Document} - identificador de la clase Documento y \textit{redes:Ontology} identificador del tema Ontología.
+\end{itemize}
+
+En esta consulta SPARQL, se resaltan los patrones del recuadro marcado con dos asteriscos. Estos seis patrones indican los recursos que son documentos. Porque, si solamente se emplea un patrón (\textit{?x rdf:type sird:Document}), entonces se omiten artículos, libros, reportes técnicos, tesis y páginas Web que no tienen la asignación a la clase \textit{Documento (sird:Document)}.
+
+La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante la asunción de emplear el proceso de inferencia en la ontología de recursos digitales. La Figura \ref{fig:q2torqlCR} presenta la consulta simplificada para la pregunta Q2.6. En esta consulta los seis patrones son reducidos a un patrón que está marcado con el doble signo de más. Porque, se da por hecho que los \textit{individuos} de las clases \textit{Artículo (sird:Paper)}, \textit{Libro (sird:Book)}, \textit{Reporte Técnico (sird:TechnicalReport)}, \textit{Tesis (sird:Thesis)} y Página Web (sird:Webpage) son individuos de la clase \textit{Documento (sird:Document)}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{q2torqlCR}
+\caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunción de emplear razonamiento.}
+\label{fig:q2torqlCR}
+\end{figure} 
+
+En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, interpreta esta consulta SPARQL. Posteriormente, este motor compara los patrones de la cláusula WHERE con todos los triples en un \textit{grafo RDF} (modelo). Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{exMBS}
+\caption{Proceso básico de consulta de información para un motor de búsqueda SPARQL.}
+\label{fig:exMBS}
+\end{figure} 
+
+Un motor de consulta puede encontrarse en un triplestore. Apache Jena posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
+
+Ahora 
+
+En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
 
 ----> Voy aquí
 
@@ -761,24 +806,13 @@ Estos son tres ejemplos de transformación de preguntas a consultas SPARQL. Algun
 ------------
 Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
 
-Un motor de consulta SPARQL con un razonador además de proporcionar ?más? resultados, también reduce la complejidad de las consultas. Esto es, si solamente se emplean patrones, para comprar con triples explícitos del grafo RDF, entonces el número de patrones se incrementa en la cláusula SELECT de la consulta. Mientras que la consulta con patrones sobre triples inferidos, tiene menor cantidad de éstos. Por ejemplo, en la consulta C2.4 un parametro de busqueda es comparar todos los recursos que sean documentos, para ello, la consulta SPARQL se puede elaborar de dos maneras: 
-Unión de patrones: se escriben cinco patrones y mediante el operador unión se conjuntan, en el cuál cada patrón tiene el mismo sujeto (?x), el mismo  predicado rdf:tipo y distinto objeto (Artículo, Reporte Técnico, Página Web, Tesis y Libro). En la Figura 10 del lado izquierdo se muestra esta consulta SPARQL con unión de varios patrones.
-Un solo patrón: se escribe únicamente el patrón que relaciona a un recurso con el tipo Documento, porque con la inferencia, todas las instancias de las clases Artículo, Reporte Técnico, Página Web, Tesis y Libro son instancias de la clase Documento. La Figura 10, lado derecho muestra la consulta SPARQL con patrones que se basan relaciones nuevas.
-
 ---------------
 %%%%%%%%%%%%%%%%%%%%%%%%%
-Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, busca aquellos triples en el grafo RDF que concuerdan con los patrones de la cláusula WHERE. Para aquellas variables de la cláusula SELECT se extrae la información y se devuelve en determinado formato visual, típicamente en forma de tabla. En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
-%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%####
-Para el tercer punto, un motor de consulta SPARQL es el programa que permite responder las consultas de los usuarios. La función básica de este motor es: interpreta una consulta SPARQL, compara los patrones con los triples del modelo, recupera la información asociadas a las variables que están en la cláusula SELECT y regresa la información al usuario. Un motor de consulta se puede encontrar en un triplestore. En particular, Jena posee un motor de consulta (ARQ) que soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla o para procesar estos resultados con JAVA.
-%%%####
+%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %//////////////////////
 Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
-Un motor de consulta SPARQL con un razonador además de proporcionar ?más? resultados, también reduce la complejidad de las consultas. Esto es, si solamente se emplean patrones, para comprar con triples explícitos del grafo RDF, entonces el número de patrones se incrementa en la cláusula SELECT de la consulta. Mientras que la consulta con patrones sobre triples inferidos, tiene menor cantidad de éstos. Por ejemplo, en la consulta C2.4 un parametro de busqueda es comparar todos los recursos que sean documentos, para ello, la consulta SPARQL se puede elaborar de dos maneras: 
-Unión de patrones: se escriben cinco patrones y mediante el operador unión se conjuntan, en el cuál cada patrón tiene el mismo sujeto (?x), el mismo  predicado rdf:tipo y distinto objeto (Artículo, Reporte Técnico, Página Web, Tesis y Libro). En la Figura 10 del lado izquierdo se muestra esta consulta SPARQL con unión de varios patrones.
-Un solo patrón: se escribe únicamente el patrón que relaciona a un recurso con el tipo Documento, porque con la inferencia, todas las instancias de las clases Artículo, Reporte Técnico, Página Web, Tesis y Libro son instancias de la clase Documento. La Figura 10, lado derecho muestra la consulta SPARQL con patrones que se basan relaciones nuevas.
 
 %//////////////////////
 Es importante hacer notar que ciertas consultas explotan a los axiomas, por lo que se requiere de un razonador.

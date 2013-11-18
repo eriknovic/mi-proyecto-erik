@@ -1,0 +1,50 @@
+@startuml
+
+interface "Juan" as Juan
+interface "Pedro" as Pedro
+interface "Maria" as Maria
+interface "Alan" as Alan
+interface "Kim" as Kim
+interface "Erik" as Erik
+interface "Ele" as Ele
+
+() Juan -up-> Maria : prop1
+Juan -up-> Kim : prop1
+Juan -left-> Pedro : prop1
+Juan -down-> Alan : prop2
+Juan -right-> Ele : prop2
+Juan -down-> Alan : prop2
+Juan -right-> Erik : prop2
+
+Pedro -up-> Maria : prop1
+Pedro -down-> Alan : prop1
+Pedro -right-> Juan : prop1
+Pedro -right-> Erik : prop2
+Pedro -right-> Ele : prop2
+
+Maria -right-> Kim : prop1
+Maria -down-> Juan : prop2
+Maria -down-> Pedro : prop1
+Maria -down-> Alan : prop3
+
+Alan -up-> Maria : prop2
+Alan -up-> Erik : prop3
+Alan -up-> Ele : prop3
+Alan -up-> Pedro : prop3
+
+Kim -down-> Juan : prop1
+Kim -left-> Maria : prop2
+Kim -down-> Alan : prop3
+Kim -down-> Erik : prop2
+Kim -down-> Ele : prop2
+Kim -down-> Pedro : prop2
+
+Ele -right-> Erik : prop2
+Ele -down-> Alan : prop1
+Ele -left-> Pedro : prop3
+
+Erik -left-> Ele : prop3
+Erik -left-> Juan : prop1
+Erik -up-> Kim : prop2
+
+@enduml
