@@ -586,7 +586,7 @@ La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tie
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{axSymColl}
+\includegraphics[width=0.75\textwidth]{axSymColl}
 \caption{Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del área.}
 \label{fig:axSymColl}
 \end{figure}
@@ -597,7 +597,7 @@ La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo s
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.5in,width=0.95\textwidth]{infSymColl}
+\includegraphics[height=2.45in,width=0.95\textwidth]{infSymColl}
 \caption{Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad simétrica.}
 \label{fig:infSymColl}
 \end{figure}
@@ -782,6 +782,8 @@ La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante
 \label{fig:q2torqlCR}
 \end{figure} 
 
+Estos son cinco ejemplos de transformación de preguntas a consultas SPARQL. Algunas consultas se construyen mediante tripletas del ABox, porque la información a recuperar pertenece al conocimiento explícito; por ejemplo, la consulta de la Figura \ref{fig:q112rql}. Otras consultas se construyen mediante la agrupación de varios patrones, porque éstos permiten recuperar mejor información en el grafo RDF; por ejemplo las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}. Finalmente, existen consultas que aprovechan el uso de inferencia, para reducir el número de patrones y obtener mejores resultados; por ejemplo, las consultas SPARQL de las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}.
+
 En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, interpreta esta consulta SPARQL. Posteriormente, este motor compara los patrones de la cláusula WHERE con todos los triples en un \textit{grafo RDF} (modelo). Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
 
 \begin{figure}[!htb]
@@ -791,17 +793,32 @@ En la recuperación de la información, el \textit{tercer punto clave} es la \text
 \label{fig:exMBS}
 \end{figure} 
 
-Un motor de consulta puede encontrarse en un triplestore. Apache Jena posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
+Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena\footnote{The Apache Software Foundation, ``Apache Jena,''  Disponible en: \url{http://jena.apache.org/}} posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
 
-Ahora 
+Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo de la ontología de la \textit{cartografía de competencias}.
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.9\textwidth]{grafoSR}
+%\caption{Ejemplo de modelo sin inferencia para el proceso de consulta de información.}
+%\label{fig:grafoSR}
+%\end{figure} 
+
+Las tripletas en la Figura \ref{fig:grafoSR} representan estas declaraciones:
+
+Este grafo representa las siguientes declaraciones de los recursos  
+
+
+Ahora bien
+
+ es nuestro modelo de entrada. Mientras la consulta es la , de la Figura \ref{fig:q2rqlSR}.
+
+
 
 En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
 
 ----> Voy aquí
 
------> Este párrafo es bueno para concluir el sgundo o tercer punto.
-
-Estos son tres ejemplos de transformación de preguntas a consultas SPARQL. Algunas consultas se emplean para recuperar información explícita de los recursos, otras consultas agrupan varios patrones con la finalidad de obtener mejores resultados, finalmente, algunas consultas aprovechan el uso de la inferencia para reducir el número de patrones y recuperar mejores resultados.
 
 ------------
 Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
