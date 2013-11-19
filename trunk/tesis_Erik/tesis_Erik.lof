@@ -44,6 +44,10 @@
 \contentsline {figure}{\numberline {5.30}{\ignorespaces Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}}{69}
 \contentsline {figure}{\numberline {5.31}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunci\'on de emplear razonamiento.}}{70}
 \contentsline {figure}{\numberline {5.32}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{71}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{73}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{74}
+\contentsline {figure}{\numberline {5.35}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{75}
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{76}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

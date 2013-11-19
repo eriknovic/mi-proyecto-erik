@@ -700,7 +700,7 @@ Estos parámetros de búsqueda dieron pauta a la búsqueda de las principales pregu
 
 Las preguntas para los dos casos de uso fueron electas, porque algunas utilizan el conocimiento explícito y otras aprovechan el conocimiento implícito.
 
-Con base en las preguntas de ambos listados, el siguiente paso es transformar estas preguntas a consultas SPARQL. Esta transformación para cada \textit{pregunta-consulta} se hace de esta manera.
+Con base en las preguntas de ambos listados, el siguiente paso es \textbf{\textit{transformar estas preguntas a consultas SPARQL}}. Esta transformación para cada \textit{pregunta-consulta} se hace de esta manera.
 \begin{enumerate}
 \item Analizar e identificar estos componentes: a) los valores que se desean recuperar, a los cuales se les asocia una \textit{variable resultado}, b) las \textit{propiedades} y c) los criterios de búsqueda que son \textit{variables auxiliares} o \textit{valores específicos} (recursos o literales).
 \item Escribir las \textit{variables resultado} en la cláusula SELECT.
@@ -795,41 +795,129 @@ En la recuperación de la información, el \textit{tercer punto clave} es la \text
 
 Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena\footnote{The Apache Software Foundation, ``Apache Jena,''  Disponible en: \url{http://jena.apache.org/}} posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
 
-Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo de la ontología de la \textit{cartografía de competencias}.
+Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo que se tomo de la ontología \textit{búsqueda de recursos digitales}.
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=0.9\textwidth]{grafoSR}
-%\caption{Ejemplo de modelo sin inferencia para el proceso de consulta de información.}
-%\label{fig:grafoSR}
-%\end{figure} 
+\begin{figure}[hp]
+\centering
+\includegraphics[angle=90,scale=0.84]{grafoSR}
+\caption{Ejemplo de modelo sin inferencia para el proceso de consulta de información.}
+\label{fig:grafoSR}
+\end{figure} 
 
-Las tripletas en la Figura \ref{fig:grafoSR} representan estas declaraciones:
+A continuación, se listan las declaraciones que están asociadas a las tripletas de la Figura \ref{fig:grafoSR}.
 
-Este grafo representa las siguientes declaraciones de los recursos  
+\begin{itemize}
+\item El recurso \textit{tesis 01 (sird:tesis01-pdf)} tiene dos declaraciones; la primera establece que este recurso pertenece a la clase \textit{tesis (sird:Thesis)} y la segunda indica que la \textit{UAM (sirp:UAM)}es la institución involucrada en este recurso.
+\item Los recursos \textit{tesis 02 (sird:tesis02-doc)}, \textit{tesis 03 (sird:tesis03-odp)} y \textit{tesis 05 (sird:tesis05-pdf)} tienen estas declaraciones. La \textit{UAM (sirp:UAM)} es la institución involucrada en la \textit{tesis 02} y \textit{tesis 05}. Mientras, el \textit{IPN (sird:IPN)} es la institución en la \textit{tesis 03}.
+\item El recurso \textit{tesis 04 (sird:tesis04-pdf)} tiene estas declaraciones. Este recurso pertenece a la clase \textit{Tesis (sird:Thesis)} y el \textit{IPN (sirp:IPN)} es la institución involucrada en esta \textit{tesis 04}.
+\item Los recursos \textit{libro 01 (sird:book01-pdf)}, \textit{libro 03 (sird:book03-odp)} y \textit{libro 05 (sird:book05-pdf)} tienen las siguientes declaraciones. \textit{Mc Graw Hill (sirp:McgrawHill)} es la editorial del recurso \textit{libro 01}. Mientras, los recursos \textit{libro 03} y \textit{libro 05} tienen a la editorial \textit{Oceano (sirp:Oceano)}.
+\item El recurso \textit{libro 02 (sird:book02-doc)} es un recurso que pertenece a la clase \textit{libro (sird:Book)} y la editorial de éste es \textit{Mc Graw Hill (sirp:McgrawHill)}.
+\item El recurso \textit{libro 04 (sird:book04-docx)} tiene estas declaraciones. Este recurso pertenece a la clase \textit{libro (sird:Book)} y \textit{Oceano (sirp:Oceano)} es la editorial de éste.
+\item Los recursos \textit{artículo 01 (sird:paper01-pdf)} y \textit{artículo 02 (sird:paper02-odp)} son publicados en la \textit{IEEE (sirp:IEEE)} y la \textit{ACM (sirp:ACM)} respectivamente.
+\item El recurso \textit{artículo 03 (sird:paper03-doc)} tiene dos declaraciones. La primera establece que este recurso se publico en la \textit{IEEE (sirp:IEEE)}. Mientras, la segunda indica que éste pertenece a la clase \textit{Artículo (sird:Paper)}.
+\item El recurso \textit{artículo 04 (sird:paper04-docx)} pertenece a la clase \textit{artículo (sird:Paper)} y se publico en la \textit{ACM (sirp:ACM)}.
+\item La clase \textit{Documento (sird:Document)} es superclse de las clases \textit{artículo (sird:Paper)}, \textit{libro (sird:Book)} y \textit{Tesis (sird:Thesis)}.
+\end{itemize}
 
+La consulta a interpretar por el motor SPARQL, es la asociada a la pregunta \textit{¿Cuáles son los recursos que son documentos?}. Esta consulta se presenta en la Figura \ref{fig:consultaGrafo} y emplea seis patrones para establecer cuales recursos son documentos (artículos, libros, tesis, reportes técnicos, páginas web).
 
-Ahora bien
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.70\textwidth]{consultaGrafo}
+\caption{Consulta de ejemplo para el proceso de consulta de información.}
+\label{fig:consultaGrafo}
+\end{figure} 
 
- es nuestro modelo de entrada. Mientras la consulta es la , de la Figura \ref{fig:q2rqlSR}.
+Un motor SPARQL interpreta esta consulta, compara estos patrones con el grafo de la Figura \ref{fig:grafoSR} y arroja una serie de resultados. La Tabla \ref{tab:resSC} muestra los identificadores de los recursos que son documentos.
 
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.1}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.0in}}
+\hline
+\textbf{?x} \\
+\hline
+\hline
+\textit{sird:tesis01-pdf}  \\
+\hline
+\textit{sird:tesis04-pdf} \\
+\hline
+\textit{sird:book02-doc} \\
+\hline
+\textit{sird:book04-docx} \\
+\hline
+\textit{sird:paper01-pdf} \\
+\hline 
+\textit{sird:paper02-odp} \\
+\hline 
+\end{tabular}
+\caption{Identificadores de los recursos resultantes sin inferencia para la consulta de información.}
+\label{tab:resSC}
+\end{table}
 
+Esta \textit{ejecución de la consulta} por un motor SPARQL arrojo seis resultados. Sin embargo, existen otros recursos que son documentos y no tienen la declaración para indicar que pertenece a la clase \textit{Documento} o a las subclases de ésta. De tal manera, es necesario el uso de un modelo con inferencia. La Figura \ref{fig:grafoCR} presenta el modelo que se obtiene por inferencia. En este modelo, todos los recursos están asignado a la clase \textit{Documento (sird:Document)}, por estas razones:
 
-En la Figura 5 se presentan algunos resultados ficticios de las consultas de la Figura 4, el propósito es mostrar el formato de salida de las consultas SPARQL.
+\begin{figure}[!hp]
+\centering
+\includegraphics[angle=90,scale=0.83]{grafoCR}
+\caption{Ejemplo de modelo con inferencia para el proceso de consulta de información.}
+\label{fig:grafoCR}
+\end{figure}
 
-----> Voy aquí
+\begin{itemize}
+\item Todos los recursos que pertenecen a las clases \textit{artículo (sird:Paper)}, \textit{libro (sird:Book)} y \textit{tesis (Thesis)}, también pertenecen a la clase \textit{documento (Documento)} , por los axiomas de jerarquía (rdfs:subClassOf).
+\item La propiedad \textit{publicado en la revista (publishedInJournal)} tiene por \textit{dominio} la clase \textit{artículo (sird:Paper)}. Por ello, los recursos que utilizan esta propiedad, pertenecen a la clase Artículo, además la clase \textit{artículo} es subclase de \textit{documento}.
+\item De igual manera, las propiedades \textit{tiene institución involucrada (sird:has-institutionInvolved)} y \textit{tiene editorial (sird:has-publishingHouse)} tienen por dominio las clases \textit{Tesis (sird:Thesis)} y \textit{libro (sird:Book)} respectivamente. Estas dos clases son subclases de \textit{documento}.
+\end{itemize}
 
+Al darse por hecho el uso de inferencia, la consulta \ref{fig:consultaGrafo} puede simplificarse a un solo \textit{patrón tripleta}. Este patrón  indica que se busca cualquier recurso que sea del tipo \textit{documento (sird:Document)}. En la Figura \ref{fig:consSimpGrafo} se presenta la consulta simplifica para la pregunta \textit{¿Cuáles son los recursos que son documentos?}.
 
-------------
-Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.60\textwidth]{consSimpGrafo}
+\caption{Consulta simplificada para el proceso de consulta de información.}
+\label{fig:consSimpGrafo}
+\end{figure} 
 
----------------
-%%%%%%%%%%%%%%%%%%%%%%%%%
+Finalmente, la Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL para la consulta de la Figura \ref{fig:consSimpGrafo} y empleando el grafo de la Figura \ref{fig:grafoCR}. En esta Tabla, todos los identificadores de los recursos son los recursos que se esperan para responder esta pregunta.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%//////////////////////
-Ahora bien, una consulta SPARQL va arrojar más o menos resultados, dependiendo del uso o no de un motor de consulta con razonador. Esto es, una consulta procesada por un motor SPARQL y un razonador, obtendrá más o igual número de resultados que esta misma consulta procesada por un motor sin razonador. Nuevamente ejemplificando esto: la consulta C1.4 se procesa con un motor sin razonamiento, entonces solamente aquellos triples que tengan como predicado rdf:tipo y objeto Profesionista, serán tomados en cuenta por éste. Por otro lado, un razonador crea nuevas relaciones en el modelo RDF a partir de los axiomas, de esta manera, entre los nuevos triples se tienen algunos con el predicado rdf:tipo y el objeto Profesionista. En consecuencia, el motor SPARQL al comparar estos triples con el patrón (?x rdf:tipo :Profesionista) obtendrá más o igual número de resultados.
-
-%//////////////////////
-Es importante hacer notar que ciertas consultas explotan a los axiomas, por lo que se requiere de un razonador.
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{0.9}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{2.0in}}
+\hline
+\textbf{?x} \\
+\hline
+\hline
+\textit{sird:tesis01-pdf}  \\
+\hline
+\textit{sird:tesis02-doc}  \\
+\hline
+\textit{sird:tesis03-odp}  \\
+\hline
+\textit{sird:tesis04-pdf} \\
+\hline
+\textit{sird:tesis05-pdf} \\
+\hline
+\textit{sird:book01-pdf} \\
+\hline
+\textit{sird:book02-doc} \\
+\hline
+\textit{sird:book03-odp} \\
+\hline
+\textit{sird:book04-docx} \\
+\hline
+\textit{sird:book05-pdf} \\
+\hline
+\textit{sird:paper01-pdf} \\
+\hline 
+\textit{sird:paper02-odp} \\
+\hline
+\textit{sird:paper03-doc} \\
+\hline 
+\textit{sird:paper04-docx} \\
+\hline 
+\end{tabular}
+\caption{Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de información.}
+\label{tab:resCR}
+\end{table}
