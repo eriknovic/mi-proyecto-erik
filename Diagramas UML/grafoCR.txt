@@ -27,29 +27,52 @@ interface "sird:Thesis" as Thesis
 interface "sird:Document" as Doc
 
 () pap1 -up-> ieee : <color #blue>sird:publishedInJournal</color>
+pap1 -[#green]-> Paper : "rdf:type"
+pap1 -[#green]-> Doc : "rdf:type"
 pap2 -up-> acm : <color #blue>sird:publishedInJournal</color>
+pap2 -[#green]-> Paper : "rdf:type"
+pap2 -[#green]-> Doc : "rdf:type"
 pap3 -up-> Paper : "rdf:type"
 pap3 -down-> ieee : <color #blue>sird:publishedInJournal</color>
+pap3 -[#green]-> Doc : "rdf:type"
 pap4 -up-> Paper : "rdf:type"
 pap4 -down-> acm : <color #blue>sird:publishedInJournal</color>
+pap4 -[#green]-> Doc : "rdf:type"
 
-book1 -up-> mcgraw : <color #green>sird:has-publishingHouse</color>
-book2 -up-> Book : "rdf:type"
-book2 -down-> mcgraw : <color #green>sird:has-publishingHouse</color>
-book3 -up-> oceano : <color #green>sird:has-publishingHouse</color>
-book4 -up-> Book : "rdf:type"
-book4 -down-> oceano : <color #green>sird:has-publishingHouse</color>
-book5 -up-> oceano : <color #green>sird:has-publishingHouse</color>
+book1 -down-> mcgraw : <color #green>sird:has-publishingHouse</color>
+book1 -[#red]-> Book : "rdf:type"
+book1 -[#red]-> Doc : "rdf:type"
+book2 -down-> Book : "rdf:type"
+book2 -up-> mcgraw : <color #green>sird:has-publishingHouse</color>
+book2 -[#red]-> Doc : "rdf:type"
+book3 -down-> oceano : <color #green>sird:has-publishingHouse</color>
+book3 -[#red]-> Book : "rdf:type"
+book3 -[#red]-> Doc : "rdf:type"
+book4 -down-> Book : "rdf:type"
+book4 -up-> oceano : <color #green>sird:has-publishingHouse</color>
+book4 -[#red]-> Doc : "rdf:type"
+book5 -down-> oceano : <color #green>sird:has-publishingHouse</color>
+book5 -[#red]-> Book : "rdf:type"
+book5 -[#red]-> Doc : "rdf:type"
 
 tes1 -up-> Thesis : "rdf:type"
+tes1 -[#blue]-> Doc : "rdf:type"
 tes1 -down-> uam : <color #red>sird:has-institutionInvolved</color>
 tes2 -up-> uam : <color #red>sird:has-institutionInvolved</color>
+tes2 -[#blue]-> Thesis : "rdf:type"
+tes2 -[#blue]-> Doc : "rdf:type"
 tes3 -up-> ipn : <color #red>sird:has-institutionInvolved</color>
+tes3 -[#blue]-> Thesis : "rdf:type"
+tes3 -[#blue]-> Doc : "rdf:type"
 tes4 -up-> Thesis : "rdf:type"
+tes4 -[#blue]-> Doc : "rdf:type"
 tes4 -down-> ipn : <color #red>sird:has-institutionInvolved</color>
 tes5 -up-> uam : <color #red>sird:has-institutionInvolved</color>
+tes5 -[#blue]-> Thesis : "rdf:type"
+tes5 -[#blue]-> Doc : "rdf:type"
 
-Book -up-> Doc : "rdfs:subClassOf"
-Paper -down-> Doc : "rdfs:subClassOf"
+Book -down-> Doc : "rdfs:subClassOf"
+Paper -up-> Doc : "rdfs:subClassOf"
 Thesis -up-> Doc : "rdfs:subClassOf"
+
 @enduml
