@@ -1,0 +1,55 @@
+@startuml
+usecase "sird:paper01-pdf" as pap1
+usecase "sird:paper02-odp" as pap2
+usecase "sird:paper03-doc" as pap3
+usecase "sird:paper04-docx" as pap4
+usecase "sird:book01-pdf" as book1
+usecase "sird:book02-doc" as book2
+usecase "sird:book03-odp" as book3
+usecase "sird:book04-docx" as book4
+usecase "sird:book05-pdf" as book5
+usecase "sird:tesis01-pdf" as tes1
+usecase "sird:tesis02-doc" as tes2
+usecase "sird:tesis03-odp" as tes3
+usecase "sird:tesis04-pdf" as tes4
+usecase "sird:tesis05-pdf" as tes5
+
+usecase "sirp:McgrawHill" as mcgraw
+usecase "sirp:Oceano" as oceano
+usecase "sirp:ACM" as acm
+usecase "sirp:IEEE" as ieee
+usecase "sirp:UAM" as uam
+usecase "sirp:IPN" as ipn
+
+usecase "sird:Book" as Book
+usecase "sird:Paper" as Paper
+usecase "sird:Thesis" as Thesis
+usecase "sird:Document" as Doc
+
+() pap1 -up-> ieee : <color #blue>sird:publishedInJournal</color>
+pap2 -up-> acm : <color #blue>sird:publishedInJournal</color>
+pap3 -up-> Paper : "rdf:type"
+pap3 -down-> ieee : <color #blue>sird:publishedInJournal</color>
+pap4 -up-> Paper : "rdf:type"
+pap4 -down-> acm : <color #blue>sird:publishedInJournal</color>
+
+book1 -up-> mcgraw : <color #green>sird:has-publishingHouse</color>
+book2 -up-> Book : "rdf:type"
+book2 -down-> mcgraw : <color #green>sird:has-publishingHouse</color>
+book3 -up-> oceano : <color #green>sird:has-publishingHouse</color>
+book4 -up-> Book : "rdf:type"
+book4 -down-> oceano : <color #green>sird:has-publishingHouse</color>
+book5 -up-> oceano : <color #green>sird:has-publishingHouse</color>
+
+tes1 -up-> Thesis : "rdf:type"
+tes1 -down-> uam : <color #red>sird:has-institutionInvolved</color>
+tes2 -up-> uam : <color #red>sird:has-institutionInvolved</color>
+tes3 -up-> ipn : <color #red>sird:has-institutionInvolved</color>
+tes4 -up-> Thesis : "rdf:type"
+tes4 -down-> ipn : <color #red>sird:has-institutionInvolved</color>
+tes5 -up-> uam : <color #red>sird:has-institutionInvolved</color>
+
+Book -up-> Doc : "rdfs:subClassOf"
+Paper -down-> Doc : "rdfs:subClassOf"
+Thesis -up-> Doc : "rdfs:subClassOf"
+@enduml
