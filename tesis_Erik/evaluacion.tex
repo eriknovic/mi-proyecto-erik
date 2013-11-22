@@ -1,21 +1,31 @@
 \chapter{Evaluación experimental}
 \label{cap:exp}
 %%%% Observación consiste en la medida y registro de hechos observables.
-La \textit{integración semántica de los recursos} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada.
+La \textit{integración semántica de los recursos} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}. Éste proporciona dos componentes importantes: 1) \textit{un motor de búsqueda} para tripletas RDF, denominado \textbf{\textit{ARQ}} y 2) \textit{un motor de inferencia} que soporta los axiomas de nuestras ontologías, los cuales son descritos en la Sección \ref{sec:enrKrec}.
 
-La \textit{calidad de los resultados} depende del uso o no de inferencia en un modelo semántico. Si un motor emplea un \textit{modelo sin inferencia} como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el motor puede proporcionar todos, varios o ningún resultado. Esta variedad en la entrega de resultados, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas de las anteriores consultas}, como las consultas de las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, un motor puede entregar mejores resultados cuando emplea un modelo que se obtiene de la inferencia en una ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
+La \textit{calidad de los resultados} depende del uso o no de inferencia en nuestros modelo semántico. Si Jena emplea un \textit{modelo sin inferencia} como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el motor ARQ puede proporcionar todos, varios o ningún resultado. Esta variedad en la entrega de resultados, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, Jena puede entregar mejores resultados cuando emplea un modelo que se obtiene de la inferencia en una ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
 
-Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} para responder las consultas. Por un lado, se ha observado que el \textit{tiempo de consulta} es pequeño cuando se usa un modelo sin inferencia. En cambio, si se emplea inferencia en una ontología, entonces el tiempo es mayor comparado con el modelo sin inferencia.
+Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} para responder las consultas. Por un lado, se ha observado que este \textit{tiempo} es pequeño (menor a medio segundo) cuando se usa un \textit{modelo sin inferencia}. Mientras tanto, el \textit{tiempo para un modelo con inferencia} es mayor en comparación con con el tiempo del modelo sin inferencia.
 
 %%%% Hipótesis es una solución para un problema dado.
-A partir de estas observaciones, nuestras dos hipótesis de experimentación  son éstas: 1) \textit{un \textbf{motor de búsqueda} obtiene \textbf{mejores resultados} cuando utiliza un modelo con inferencia} y 2) \textit{el \textbf{tiempo de consulta} es \textbf{mayor} para un \textit{modelo con inferencia} en comparación de un modelo sin inferencia}.
+Con base en estas observaciones, nuestras dos hipótesis de experimentación  son éstas:
+\begin{enumerate}
+\item \textit{El \textbf{triplestore Jena} obtiene \textbf{mejores resultados} cuando utiliza nuestros modelos con inferencia}.
+\item \textit{El \textbf{tiempo de consulta} es \textbf{mayor} para nuestros \textit{modelos con inferencia} en comparación con nuestros \textbf{modelos sin inferencia}}.
+\end{enumerate}
 
 %%%% Método consiste en: la elección de los sujetos para confirmar la muestra, el procedimiento a seguir para éstos, las variables consideradas: dependiente, independiente y auxiliares.
 
 %%Elaborar un experimento que ponga a prueba una hipótesis
-Para probar nuestras hipótesis, nosotros  Nuestra experimentación consiste en ...
+Esta experimentación consiste en la realización de dos actividades para probar nuestras hipótesis de experimentación. La primera actividad es evaluar la calidad de los resultados para los modelos con y sin inferencia. Esta evaluación consiste en estas etapas: 1) establecer una serie de consultas para interrogar nuestros modelos, 2) encontrar manualmente cuántos y cuáles recursos responden las consultas, 3) ejecutar las consultas con el motor ARQ de Jena y 4) comparar los recursos dados por Jena con las respuestas manuales.
+
+La segunda actividad consiste en medir los \textit{tiempos promedio de procesamiento} para las consultas de la primera actividad. La finalidad de esta segunda actividad es comparar los tiempos de procesamiento para un modelo con inferencia y otro que no emplea ésta. La determinación del tiempo para modelos sin inferencia, consiste en medir los tiempos de: 1) \textit{carga del modelo en memoria ram}, 2) \textit{ejecución de la consulta en en el modelo} y 3) \textit{recuperación e impresión de los resultados en pantalla}. De la misma manera, la medición de tiempos para un modelo con inferencia es parecida a la medición en un modelos sin inferencia. La excepción es que en un modelo con inferencia, se toman en cuenta los tiempos para: \textit{el proceso de inferencia en el modelo} y \textit{la ejecución de la consulta en el modelo inferido}.
 
 %%Elección de los sujetos para confirmar la muestra
+
+
+----> Aquí voy
+
 Este proyecto contempla dos casos de uso: la Cartografía de Competencias (C1) y la Búsqueda de Recursos Digitales (C2).
 
 Los recursos persona agrupan a los miembros del Área de Redes y Telecomunicaciones. Los recursos digitales conjuntan todos los documentos digitales y archivos multimedia que emplean los miembros del área.
