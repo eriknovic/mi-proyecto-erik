@@ -1,2 +1,73 @@
-\chapter{Códigos interfaz de Usuario}
-\label{aped:A}
+\chapter{Algoritmos para le generación de datos simulados}
+\label{aped:AlgDS}
+%Códigos interfaz de Usuario
+\textbf{\textit{Algoritmo para generar datos artificialmente de los recursos persona}}
+\begin{enumerate}
+\item $N\leftarrow$ número de personas a describir;
+\item Tópicos de Redes y Telecomunicaciones $TopRyT \leftarrow \{ \theta_1 \dots \theta_k \}$;
+\item \textbf{for} $i\leftarrow 1$ \textbf{to} $N$ \textbf{do}
+\begin{enumerate}
+\item Elegir el nombre, apellido paterno y apellido materno de unas listas predefinidas;
+\item Concatenar el nombre y apellidos electos, donde cada palabra sea separada por un espacio en blanco;
+\item Guardar este nombre en una lista tipo cola ($Names$);
+\end{enumerate}
+\item Lista de Nombres $Names \leftarrow \{ nombre_1 \dots nombre_N \}$;
+\item $modelo_{rdf} \leftarrow$ Crear un modelo rdf para los recursos persona;
+\item \textbf{for} $i\leftarrow 1$ \textbf{to} $N$ \textbf{do}
+\begin{enumerate}
+\item $\sigma_i \leftarrow$ crear el recurso $i$ y establecer un identificador URI para éste;
+\begin{enumerate}
+\item Seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
+\item Quitar los espacios en blanco de esta cadena;
+\item Establecer esta cadena como identificador del recurso;
+\end{enumerate}
+\item Para cada característica significativa de una persona elaborar las literales y elegir los objetos de ésta;
+\begin{enumerate}
+\item Literal \textit{nombre} $\leftarrow$ seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
+\item Objeto \textit{Género} $\leftarrow$ elegir el sexo de la persona a partir del nombre;
+\item Literal \textit{Año} $\leftarrow$ establecer el año aleatoriamente en un intervalo del 2000 al 2013;
+\item Objeto \textit{Ocupación} $\leftarrow$ elegir una ocupación para la persona de las tres posibles (Estudiante, Profesor o Empleado);
+
+/** \emph{Establecer la edad a partir de la ocupación de la persona} **/
+\item \textbf{if} (Ocupación $\equiv$ `Empleado' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+\begin{itemize}
+\item [$ $] Literal \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 27 a 57;
+\end{itemize}
+\item \textbf{else if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
+\begin{itemize}
+\item [$ $] \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 18 a 28;
+\end{itemize}
+
+/** \emph{Elegir una organización de un listado a partir de la ocupación de la persona} **/
+\item \textbf{if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+\begin{itemize}
+\item [$ $] Literal \textit{Organización} $\leftarrow$  se elige una universidad de un listado preestablecido de universidades;
+\end{itemize}
+\item \textbf{else if} (Ocupación $\equiv$ `Empleado') \textbf{then}
+\begin{itemize}
+\item [$ $] \textit{Organización} $\leftarrow$ se elige una organización de una lista preestablecida de organizaciones;
+\end{itemize}
+\item Literal \textit{Email} $\leftarrow$ construir el email a partir del nombre de la persona (cambiando los espacios en blanco por guiones bajos), la organización donde labora y otras palabras especiales;
+\item Literal \textit{Sitio Web} $\leftarrow$ construir el URL concatenando el nombre (cambiando espacios en blanco por guiones), la organización donde labora, la ocupación, una extensión de páginas web y otras palabras especiales;
+
+/** Elegir otros individuos que se relacionan con esta persona a partir de la ocupación de la persona **/
+\item \textbf{if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
+\begin{itemize}
+\item [$ $] \textit{Conocidos} $\leftarrow$ se eligen dos nombres aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
+\item [$ $] Quitar los espacios en blanco de los nombres;
+\item [$ $] Guardar estas cadenas en una lista de conocidos;
+\end{itemize}
+\item \textbf{else if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+\begin{itemize}
+\item [$ $] \textit{Conocidos} $\leftarrow$ se eligen dos nombres a cinco nombre aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
+\item [$ $] Quitar los espacios en blanco de los nombres;
+\item [$ $] Guardar estas cadenas en una lista de conocidos;
+\end{itemize}
+\item Objeto \textit{Habilidades lingüísticas} $\leftarrow$ se eligen de forma aleatoria de 1 a 3 idiomas de una lista preestablecida de idiomas;
+\item Objeto \textit{Conocimientos de RyT} $\leftarrow$ se eligen de manera aleatoria de 5 a 7 Tópicos de Redes y Telecomunicaciones ($TopRyT$);
+\item Objeto \textit{Competencias profesionales} $\leftarrow$ se eligen de forma aleatoria de 3 a 4 competencias de un listado preestablecido de competencias;
+\end{enumerate}
+\item Para cada característica significativa de una persona construir sus aserciones respectivas.
+\end{enumerate}
+\end{enumerate}
+
