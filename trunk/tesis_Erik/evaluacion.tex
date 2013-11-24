@@ -17,14 +17,41 @@ Con base en estas observaciones, nuestras dos hipótesis de experimentación  son 
 %%%% Método consiste en: la elección de los sujetos para confirmar la muestra, el procedimiento a seguir para éstos, las variables consideradas: dependiente, independiente y auxiliares.
 
 %%Elaborar un experimento que ponga a prueba una hipótesis
-Esta experimentación consiste en la realización de dos actividades para probar nuestras hipótesis de experimentación. La primera actividad es evaluar la calidad de los resultados para los modelos con y sin inferencia. Esta evaluación consiste en estas etapas: 1) establecer una serie de consultas para interrogar nuestros modelos, 2) encontrar manualmente cuántos y cuáles recursos responden las consultas, 3) ejecutar las consultas con el motor ARQ de Jena y 4) comparar los recursos dados por Jena con las respuestas manuales.
+Esta experimentación consiste en la realización de dos actividades para probar nuestras hipótesis de experimentación. \textit{La \textbf{primera actividad} es \textbf{evaluar la calidad de los resultados} para los modelos con y sin inferencia}. Esta evaluación consiste en estas etapas: 1) establecer una serie de consultas para interrogar nuestros modelos, 2) encontrar manualmente cuántos y cuáles recursos responden las consultas, 3) ejecutar las consultas con el motor ARQ de Jena y 4) comparar los recursos dados por Jena con las respuestas manuales.
 
-La segunda actividad consiste en medir los \textit{tiempos promedio de procesamiento} para las consultas de la primera actividad. La finalidad de esta segunda actividad es comparar los tiempos de procesamiento para un modelo con inferencia y otro que no emplea ésta. La determinación del tiempo para modelos sin inferencia, consiste en medir los tiempos de: 1) \textit{ejecución de la consulta en en el modelo} y 2) \textit{recuperación de la información}. De la misma manera, la medición de tiempos para un modelo con inferencia es parecida a la medición en un modelos sin inferencia. La excepción es que en un modelo con inferencia, se toman en cuenta los tiempos para: \textit{el proceso de inferencia en el modelo} y \textit{la ejecución de la consulta al modelo inferido}.
+\textit{La \textbf{segunda actividad} consiste en medir los \textbf{tiempos promedio de procesamiento} para las consultas de la primera actividad}. La finalidad de esta segunda actividad es comparar los tiempos de procesamiento para un modelo con inferencia y otro que no emplea ésta. La determinación del tiempo para modelos sin inferencia, consiste en medir los tiempos de: 1) \textit{ejecución de la consulta en en el modelo} y 2) \textit{recuperación de la información}. De la misma manera, la medición de tiempos para un modelo con inferencia es parecida a la medición en un modelos sin inferencia. La excepción es que en un modelo con inferencia, se toman en cuenta los tiempos para: \textit{el proceso de inferencia en el modelo} y \textit{la ejecución de la consulta al modelo inferido}.
 
 En esta tesis, el proceso de \textit{integración semántica} está asociado a dos \textit{casos de uso} (cartografía de competencias y búsqueda de recursos digitales). Ahora bien, nuestra experimentación consiste en probar la \textit{calidad de los resultados} y el \textit{tiempo de procesamiento} para la \textit{integración semántica de recursos} en la \textit{memoria corporativa} del área de Redes y Telecomunicaciones. Por esta razón, las dos actividades de nuestra experimentación deben ser aplicadas a nuestros dos \textit{casos de uso}.
 
 %%Elección de los sujetos para confirmar la muestra
-Los sujetos de nuestra experimentación son un conjunto de personas, documentos y archivos multimedia que son generados artificialmente. Esta generación artificial consiste en dos actividades: 1) la asignación de un identificador URI para una serie de \textit{recursos de información} ficticios, así como 2) la generación de tripletas RDF para estos recursos con base en las propiedades de nuestra ontología y datos aleatorios. La finalidad del uso de \textit{información simulada} es tener rápidamente un volumen grande de datos y ver que Jena soporta esta escala de datos para nuestros ABox.
+Los sujetos de nuestra experimentación son un conjunto de personas, documentos y archivos multimedia que son generados artificialmente. Esta \textit{generación artificial} consiste en el uso de scripts para: 1) \textit{asignar un identificador URI para un conjunto de \textbf{recursos de información ficticios}} y 2) \textit{generar tripletas RDF para estos recursos con base en las \textbf{propiedades} y \textbf{clases} de nuestras ontologías, así como \textbf{datos aleatorios}}. 
+
+Un script genera un conjunto de declaraciones para los recursos persona. Mientras, otro script genera las declaraciones para los documentos y archivo multimedia. El algoritmo \ref{alg:fsg} presenta el funcionamiento general de ambos scripts para la generación y almacenamiento de tripletas RDF.
+
+\begin{algorithm}
+\SetKwData{Sigma}{$\sigma_i$}
+\SetKwData{Model}{$modelo_{rdf}$}
+$N\leftarrow$  número de \textit{recursos ficticios de información} a describir\;
+\Model$\leftarrow$Crear un modelo rdf\;
+\For{$i\leftarrow 1$ \KwTo $N$}{
+	\Sigma$\leftarrow$Crear el recurso $i$ y establecer un identificador URI para éste\;
+	Elaborar los valores para cada característica significativa de este recurso (\Sigma)\; \label{lin:values}
+	Escribir las aserciones, concatenando el URI del recurso (\Sigma), las propiedades de la ontología y los valores del paso \ref{lin:values}\;
+}
+Guardar el \Model en un archivo con extensión ``\textit{rdf}'' y sintaxis de serialización \textit{Turtle}\;
+\caption{Funcionamiento básico de scripts para la generación de tripletas artificialmente}
+\label{alg:fsg} 
+\end{algorithm}
+
+El apéndice \ref{aped:AlgDS} presenta los dos algoritmos con el funcionamiento detallado de los scripts. Un algoritmo para los datos simulados de los recursos persona y el otro para los recursos digitales.
+
+La finalidad del uso de \textit{información simulada} es tener rápidamente un volumen grande de datos en nuestros ABox. La \textit{cantidad de información} en estos ABox debe ser realista con respecto al área de Redes y Telecomunicaciones (RyT). Ya que al tener información realista, nuestra experimentación se ajusta a la cantidad de datos que esperamos manejar en la integración semántica. Otra razón del uso de información simulada es ver si Jena soporta esta escala realista de datos (según los profesores del área RyT).
+
+El número de 
+
+La cantidad de recursos persona y digitales 
+
+se construyo a partir de un cuestionario que se hizo a varios profesores del área de redes y telecomunicaciones. 
 
 
 ----> Aquí voy
