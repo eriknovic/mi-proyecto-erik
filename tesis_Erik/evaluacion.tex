@@ -47,46 +47,183 @@ El apéndice \ref{aped:AlgDS} presenta los dos algoritmos con el funcionamiento d
 
 La finalidad del uso de \textit{información simulada} es tener rápidamente un volumen grande de datos en nuestros ABox. La \textit{cantidad de información} en estos ABox debe ser realista con respecto al área de Redes y Telecomunicaciones (RyT). Ya que al tener información realista, nuestra experimentación se ajusta a la cantidad de datos que esperamos manejar en la integración semántica. Otra razón del uso de información simulada es ver si Jena soporta esta escala realista de datos (según los profesores del área RyT).
 
-El número de 
+Las cantidades de \textit{recursos persona} son 60 recursos artificiales y 13 recursos reales, dando un total de 73 personas. Mientras, las cantidades para los \textit{recursos digitales} son 16 recursos reales y 1314 recurso simulados, un total de 1330 recursos digitales.
 
-La cantidad de recursos persona y digitales 
+En nuestra experimentación, algunos \textit{recursos persona} tienen la declaración que los asignan explícitamente a una de estas clases: \textit{Estudiante (sirp:Student)}, \textit{Empleado (sird:Emplyee)} y \textit{Profesor (sirp:Teacher)}. Otros recursos persona carecen de esta asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de la \textit{ontología cartografía de competencias}.
 
-se construyo a partir de un cuestionario que se hizo a varios profesores del área de redes y telecomunicaciones. 
+En concreto, se tienen estas \textit{cantidades de recursos} por clase: 51 recursos son profesionistas y 23 son \textit{estudiantes}. Los 51 recursos persona mediante inferencia son asignados a la clase \textit{Profesionista (sirp:Professional)}. De estos 51 profesionistas se tiene que 19 son profesores y 9 son empleados. Por otro lado, de los 23 estudiantes se tiene que 9 recursos están asignados a la clase \textit{Estudiante} y los 14 restantes por inferencia son asignados a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
+
+La Tabla \ref{tab:noRP} muestra las cantidades de \textit{recursos persona} por clases de la \textit{ontología cartografía de competencias}. La \textit{primera columna} presenta el nombre de las clases, la \textit{segunda} el número de recursos que tienen la declaración que los asigna explícitamente a una clase y la \textit{tercera columna} el número de recursos que por inferencia tienen la declaración para asignarlos a una clase.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{2in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
+\hline 
+\multirow{2}{*}{\textbf{Clase}} & \multicolumn{2}{c|}{\textbf{Número de Recursos}} \\
+\cline{2-3} 
+ & \textbf{Asignación explícita} & \textbf{Asignación explícita y con inferencia}\\
+\hline 
+\hline
+Persona & 0 & 73\\
+\hline
+Investigador & 0 & 13\\
+\hline
+Profesionista & 0 & 51\\
+\hline
+Estudiante & 11 & 23\\
+\hline
+Profesor & 19 & 19\\
+\hline
+Empleado & 9 & 9\\
+\hline
+\end{tabular}
+\caption{Número de recursos persona por clase.}
+\label{tab:noRP}
+\end{table}
+
+De la misma manera que los \textit{recursos persona}, algunos \textit{recursos digitales} tienen la declaración que los asignan explícitamente a una clase. Otros recursos carecen de esta asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de la \textit{ontología búsqueda de recursos digitales}.
+
+Los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 artículos, 366 libros, 34 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. De los 156 artículos, 89 recursos tienen la declaración explícita a la clase \textit{Artículo (sird:Paper)} y los restantes 67 mediante inferencia tienen la declaración a esta clase. En los libros, 185 recursos tienen la declaración explicita y 181 recursos mediante inferencia tienen la declaración a la clase \textit{Libro (sird:Book)}. De la misma manera, 79 recursos tienen la declaración explicita a la clase \textit{Página Web (sird:PageWeb)} y 31 recursos a la clase \textit{Tesis (sird:Thesis)}. Mientras, 67 recursos mediante inferencia pertenecen a la clase  \textit{Página Web} y 42 a la clase \textit{Tesis}. Por ultimo, los 1330 recursos se clasifican en 815 \textit{Documnetos (sird:Document)} y 515 \textit{Multimedia (sird:Multimedia)}. Las declaraciones a estas dos clases se obtienen mediante inferencia.
+
+La Tabla \ref{tab:noRD} presenta las cantidades de recursos digitales por clases de la \textit{ontología recursos digitales}. Esta Tabla \ref{tab:noRD} presenta la misma estructura de la Tabla \ref{tab:noRP} 
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{2in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
+\hline 
+\multirow{2}{*}{\textbf{Clase}} & \multicolumn{2}{c|}{\textbf{Número de Recursos}} \\
+\cline{2-3} 
+ & \textbf{Asignación explícita} & \textbf{Asignación explícita y con inferencia}\\
+\hline 
+\hline
+Recurso Digital & 0 & 1330\\
+\hline
+Documento & 0 & 815\\
+\hline
+Artículo & 89 & 156\\
+\hline
+Reporte Técnico & 34 & 34\\
+\hline
+Página Web & 79 & 146\\
+\hline
+Tesis & 31 & 73\\
+\hline
+Libro & 185 & 366\\
+\hline
+Multimedia & 0 & 515\\
+\hline
+Presentación & 112 & 112\\
+\hline
+Audio & 42 & 42\\
+\hline
+Vídeo & 42 & 42\\
+\hline
+Imagen & 77 & 77\\
+\hline
+\end{tabular}
+\caption{Número de recursos digitales por clase.}
+\label{tab:noRD}
+\end{table}
+
+El siguiente paso en esta experimentación es tener un conjunto base de consultas, así como saber cuántos y cuáles recursos de nuestras ontologías responden a estas consultas. Para elegir estas consultas, se retomaron las consultas asociadas a las preguntas de la Sección \ref{sec:byrKrec}. Con base en estas consultas se encontraron los recursos que responden éstas.
+
+La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve pregunta, la segunda columna enuncia la pregunta y la tercer columna presenta el número de recursos que responden a ésta. De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas, para la \textit{búsqueda de recursos digitales}.
+
+\begin{table}[!htb]
+%\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
+\hline 
+Id. & Pregunta & No. de Recursos\\
+\hline
+\hline 
+Q1.1 &  ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT? & 73 \\
+\hline
+Q1.2 & ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT? & 73\\
+\hline 
+Q1.3 & ¿Quiénes son mayores de 20 años y menores de 45 años? & 50\\
+\hline 
+Q1.4 & ¿Quiénes son profesionistas del área de RyT? & 51\\
+\hline 
+Q1.5 & ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino? & 3\\
+\hline 
+Q1.6 & ¿Quiénes son estudiantes y leen en inglés? & 8\\
+\hline 
+Q1.7 & ¿Quienes hablan, leen y escriben en inglés? & 16\\
+\hline 
+Q1.8 & ¿Qué estudiantes saben algo de inglés? & 6\\
+\hline 
+Q1.9 & ¿Qué profesores tienen la capacidad de síntesis? & 2\\
+\hline 
+Q1.10 & ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica? & 58\\
+\hline
+Q1.11 & ¿Qué profesores tienen conocimientos en Sistemas Distribuidos? & 3\\
+\hline 
+Q1.12 & ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP? & 1\\
+\hline 
+Q1.13 & ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos? & 33\\
+\hline 
+Q1.14 & ¿Quiénes trabajan en una Universidad? & 24\\
+\hline 
+Q1.15 & ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica? & 19\\
+\hline 
+Q1.16 & ¿Qué personas tienen como asesor a Carolina Medina? & 2\\
+\hline 
+Q1.17 & ¿Quiénes son los colegas de Ricardo Marcelin? & 8\\
+\hline 
+Q1.18 &  ¿Quiénes conocen a Carolina Medina Ramirez? & 11\\
+\hline 
+Q1.19 & ¿Qué personas son profesores-investigadores? & 9\\
+\hline 
+\end{tabular}
+\caption{Preguntas y cantidad de personas que responden a éstas.}
+\label{tab:qrynoRP}
+\end{table}
+
+\begin{table}[!htb]
+%\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
+\hline 
+Id. & Pregunta & No. de Recursos\\
+\hline
+\hline 
+Q2.1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
+\hline
+Q2.2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
+\hline 
+Q2.3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
+\hline 
+Q2.4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
+\hline 
+Q2.5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
+\hline 
+Q2.6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
+\hline 
+Q2.7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
+\hline 
+Q2.8 & ¿Qué recursos tienen en su contenido las palabras "linked data"? & 159\\
+\hline 
+Q2.9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
+\hline 
+Q2.10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
+\hline 
+\end{tabular}
+\caption{Preguntas y cantidad de recursos digitales que responden a éstas.}
+\label{tab:qrynoRD}
+\end{table}
 
 
 ----> Aquí voy
 
-Este proyecto contempla dos casos de uso: la Cartografía de Competencias (C1) y la Búsqueda de Recursos Digitales (C2).
-
-Los recursos persona agrupan a los miembros del Área de Redes y Telecomunicaciones. Los recursos digitales conjuntan todos los documentos digitales y archivos multimedia que emplean los miembros del área.
-
-Los recursos persona (C1) se clasifican en cuatro tipos básicos: Profesor, Empleado, Investigador y Estudiante. Un profesor es aquella persona que imparte docencia y está adscrito a una Universidad. Un empleado es aquella persona que trabaja en una organización y realiza otras actividades distintas a la docencia. Un investigador es aquella persona que realiza actividades de investigación científica. Finalmente un estudiante es la persona que estudia en una Universidad y realiza algún proyecto (terminal, investigación o doctoral).
-
-Estas cuatro agrupaciones básicas se pensaron para ser conjuntos no disjuntos. Por este motivo, un persona puede ser estudiante y también empleado, inclusive una persona puede pertenecer a los cuatro grupos básicos. En general, un recurso persona puede estar en varias agrupaciones, siempre y cuando, este recurso tenga explícitamente las aserciones que lo vincule con más de un tipo básico.
-
-Por otro lado existen personas que no pertenecen a los conjuntos básicos, por tal razón, estos individuos no poseen ninguna aserción (rdf:type) a un tipo básico. Este hecho es importante, porque en la búsqueda de información hay personas que carecer de la propiedad tipo, de esta manera, estas personas pueden ser excluidas de los resultados de la búsqueda. 
-
-Nuestra experimentación con los recursos persona se basa en la asignación explícita de solo uno de los cuatro tipos básicos o la carencia de esta asignación. En concreto, se tienen 73 recursos persona de los cuales: 51 son son profesores o empleados (profesionista) y 23 estudiantes. De estas 51 personas profesionistas: 19 son profesores, 9 empleados y el resto (33) no están catalogados pero sabemos que trabajan. Ahora bien de los 23 estudiantes se afirma explícitamente que 9 son estudiantes y el resto (14) solo se sabe que estudian, porque en descripción RDF se tiene la propiedad ?estudiaEn?. Con respecto a los investigadores, explícitamente ninguna persona se identifica como investigador pero sabemos que 13 hacen investigación (en su descripción RDF tienen la propiedad investiga-sobre).
-
-Nosotros para representar mejor los valores de la tabla 1, decidimos hacer un diagrama de Venn. La figura 1 muestra los 4 tipos básicos, así como otras agrupaciones a partir de estos 4 tipos. También este diagrama contempla aquellos recursos que se deducen a partir del razonador. Específicamente, aquellas personas que estudian y cuya propiedad ?rdf:type? no es explícita, a través del razonador se infiere que estos son estudiantes. De la misma manera, aquellos recursos que no estamos seguros si pertenecen a uno de los 4 tipos básicos, empleando el razonador se puede inferir si son profesionistas o personas.
-
-Los Recursos Digitales (C2) se clasifican en ocho grupos: Artículos, Reportes Técnicos, Páginas Web, Tesis, Libros, Presentaciones, Imágenes, Audios y Videos. La clasificación de los recursos digitales se hace con base en las características de los mismos. Un artículo es una documento de carácter científico que es publicado en revistas o ponencias. Un reporte técnico es un documento que informa el estatus técnico de un problema. Una Página Web es un documento que emplea un lenguaje de etiquetado, típicamente html. Un tesis es un documento sobre un tema particular que se emplea para obtener algún grado académico. Un libro es un documento literario o científico que debe poseer más de 49 páginas [1]. Una presentación es un recurso multimedia empleado para mostrar visualmente información sobre un determinado tema, puede contener imágenes, videos, y oraciones cortas. Una Imagen es un recurso multimedia de contenido visual. Un Audio es un recurso multimedia de contenido auditivo y típicamente se emplea para: grabar una conversación importante o como archivos de prueba. Un Video es un recursos multimedia de contenido audiovisual.
-
-Estas ocho agrupaciones son conjuntos disjuntos, por tanto, ningún recurso digital debe estar en más de una agrupación de las ocho básicas. Ésto significa que los recursos digitales tienen explícitamente sólo una asignación de las ocho básicas. Por otra parte, estos recursos digitales también pueden carecer de esta asignación. De esta manera, los recursos digitales pueden tener una o ninguna asignación de los ocho agrupaciones básicas. Estos ocho tipos básicos se agrupan en dos tipos generales. Por un lado, los documentos conjuntan los artículos, libros, reportes técnicos, páginas web, tesis y también todo aquel recurso escrito. Mientras los recursos multimedia conjuntan audios, videos, imágenes y presentaciones.
-
-Nuestra experimentación cuenta con 1330 recursos digitales. Estos recursos se dividen en: 156 artículos, 366 libros, 34 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. Para los artículos hay 89 recursos que explícitamente tienen esta asignación. Las páginas web, libros y tesis respectivamente tienen 79, 185 y 31 recursos que explícitamente tienen la asignación del tipo. El resto de recursos digitales no poseen explícitamente la asignación del tipo. Pero, nosotros sabemos que hay 815 documentos y 515 recursos multimedia. La tabla 2 lista los tipos de recursos digitales y el número de recursos que tiene cada tipo.
-
-A partir de estos números y las aserciones de todos los recursos, se hace un listado de consultas estáticas. La finalidad de estas consultas es interrogar la información de los recursos a partir de sus aserciones. Estas consultas se escriben en lenguaje natural y para cada una se enumeran los recursos que las responden. En particular, se tiene una lista de preguntas para los recursos persona (C1) y una lista para los recursos digitales (C2). La tabla 3 contiene las consultas sobre los recursos persona y para cada consulta se muestra el número de recursos que la responden. Mientras la tabla 4 lista las consultas para los recursos digitales, así como el número recursos que responden a estas consultas.
 
 Para evaluar este costo en tiempo, calculamos el tiempo promedio que tarda cada consulta en responderse. Específicamente, nosotros tomamos el tiempo desde que se consulta la información del modelo hasta que se presentan los resultados en pantalla. Esta operación la repetimos veinte veces por consulta, de esta manera, sacamos el tiempo promedio por consulta de nuestro modelo. 
 
 Esta medición del tiempo promedio se hace a partir de un script en Java. Este script se ejecuta en una computadora que tiene un procesador Intel core I7 a 2.3GHz con 8Gb en ram y 8 núcleos de procesamiento.  Las siguientes dos tablas presentan los tiempos de respuesta para nuestro conjunto de consultas. En la tabla 7 se muestran los valores de las consultas para el caso de uso Cartografía de Competencias, en tanto, la tabla 8 muestra los tiempos para el caso de uso Recursos Digitales. En ambas tablas, se contemplan los tiempos de respuesta y el número de resultados para las consultas que emplean sólo con ABox, así como para las consultas que utilizan ABox, TBox y un Razonador (ATR).
 
 --------------
-En esta experimentación hay 73 personas y 1330 recursos digitales. Nosotros escribimos manualmente los triples de 11 personas que están adscritas al Departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana y los triples de las otras 60 fueron generados artificialmente. Por otro lado, nosotros escribimos manualmente los triples de 16 recursos digitales, mientras que los triples de los otros 1314 fueron generados artificialmente.
-
-Las 73 personas se clasifican en: Profesor, Estudiante, Empleado, Profesionista, Investigador y Persona. Mientras los 1330 recursos digitales se clasifican en: Artículos, Reportes Técnicos, Páginas Web, Tesis, Libros, Presentaciones, Imágenes, Audios, Videos, Documento, Multimedia y Recurso Digital. En particular, para cada clase de Persona y Recursos Digital se tienen las siguientes cantidades:
-
 Para los recursos persona en esta experimentación se tienen 1750 triples. Mientras, para los recursos digitales se tienen 20429 triples. De esta manera, el número total de triples en esta experimentación son 22179.
 
 Por otro lado, basándonos en las consultas básicas para nuestros modelos, el análisis de los triples escritos manualmente y el uso de variables contador en los dos scripts, se identificaron para cada consulta el número de recursos que responden a la misma. En la tabla 3 se listan solamente 10 de nuestras 28 preguntas y el número de resultados de las mismas.
@@ -135,37 +272,6 @@ Funcionamiento de los scripts
 
 \section{Escenarios de experimentación}
 Algún texto...
-
-\begin{table}[!htb]
-%\renewcommand{\arraystretch}{1.2}
-\centering
-\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
-\hline 
-Id. Consulta & Pregunta & No. de Recursos\\
-\hline
-\hline 
-Q1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
-\hline
-Q2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
-\hline 
-Q3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
-\hline 
-Q4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
-\hline 
-Q5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
-\hline 
-Q6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
-\hline 
-Q7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
-\hline 
-Q8 & ¿Qué recursos tienen en su contenido las palabras "linked data"? & 159\\
-\hline 
-Q9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
-\hline 
-Q10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
-\hline 
-\end{tabular}
-\end{table}
 
 
 \begin{table}[!htb]
