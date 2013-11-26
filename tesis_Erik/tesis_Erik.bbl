@@ -290,4 +290,16 @@ Ivar Jacobson, James Rumbaugh, and Grady Booch.
 \newblock {\em El lenguaje unificado de modelado}.
 \newblock ADDISON-WESLEY, 2001.
 
+\bibitem{Nasraoui}
+O.~Nasraoui and L.~Zhuhadar.
+\newblock Improving recall and precision of a personalized semantic search
+  engine for e-learning.
+\newblock In {\em Digital Society, 2010. ICDS '10. Fourth International
+  Conference on}, pages 216--221, 2010.
+
+\bibitem{RecYPres}
+J.~Beall.
+\newblock Measuring duplicate metadata records in library databases.
+\newblock In {\em Library Hi Tech News}, volume~27, pages 10--12, 2010.
+
 \end{thebibliography}

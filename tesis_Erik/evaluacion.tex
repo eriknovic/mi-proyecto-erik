@@ -1,29 +1,35 @@
-\chapter{Evaluación experimental}
+\chapter{Desarrollo experimental}
 \label{cap:exp}
 %%%% Observación consiste en la medida y registro de hechos observables.
 La \textit{integración semántica de los recursos} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}. Éste proporciona dos componentes importantes: 1) \textit{un motor de búsqueda} para tripletas RDF, denominado \textbf{\textit{ARQ}} y 2) \textit{un motor de inferencia} que soporta los axiomas de nuestras ontologías, los cuales son descritos en la Sección \ref{sec:enrKrec}.
 
+\section{Observaciones}
 La \textit{calidad de los resultados} depende del uso o no de inferencia en nuestros modelo semántico. Si Jena emplea un \textit{modelo sin inferencia} como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el motor ARQ puede proporcionar todos, varios o ningún resultado. Esta variedad en la entrega de resultados, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, Jena puede entregar mejores resultados cuando emplea un modelo que se obtiene de la inferencia en una ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
 
-Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} para responder las consultas. Por un lado, se ha observado que este \textit{tiempo} es pequeño (menor a medio segundo) cuando se usa un \textit{modelo sin inferencia}. Mientras tanto, el \textit{tiempo para un modelo con inferencia} es mayor en comparación con con el tiempo del modelo sin inferencia.
+Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} de \textit{Jena} para responder las consultas. Por un lado, se ha observado que el \textit{tiempo de consulta} de Jena es pequeño, menor a medio segundo, cuando usa un \textit{modelo sin inferencia}. Mientras, el \textit{tiempo de consulta} de Jena para un \textit{modelo con inferencia} es mayor en comparación con el tiempo del \textit{modelo sin inferencia}.
 
 %%%% Hipótesis es una solución para un problema dado.
+\section{Hipótesis}
 Con base en estas observaciones, nuestras dos hipótesis de experimentación  son éstas:
 \begin{enumerate}
 \item \textit{El \textbf{triplestore Jena} obtiene \textbf{mejores resultados} cuando utiliza nuestros modelos con inferencia}.
-\item \textit{El \textbf{tiempo de consulta} es \textbf{mayor} para nuestros \textit{modelos con inferencia} en comparación con nuestros \textbf{modelos sin inferencia}}.
+\item \textit{El \textbf{tiempo de consulta} de Jena es \textbf{mayor} para nuestros \textit{modelos con inferencia} en comparación con nuestros \textbf{modelos sin inferencia}}.
 \end{enumerate}
 
 %%%% Método consiste en: la elección de los sujetos para confirmar la muestra, el procedimiento a seguir para éstos, las variables consideradas: dependiente, independiente y auxiliares.
 
 %%Elaborar un experimento que ponga a prueba una hipótesis
-Esta experimentación consiste en la realización de dos actividades para probar nuestras hipótesis de experimentación. \textit{La \textbf{primera actividad} es \textbf{evaluar la calidad de los resultados} para los modelos con y sin inferencia}. Esta evaluación consiste en estas etapas: 1) establecer una serie de consultas para interrogar nuestros modelos, 2) encontrar manualmente cuántos y cuáles recursos responden las consultas, 3) ejecutar las consultas con el motor ARQ de Jena y 4) comparar los recursos dados por Jena con las respuestas manuales.
+\section{Experimentación}
+Esta experimentación consiste en la realización de dos actividades para probar nuestras hipótesis de experimentación. \textit{La \textbf{primera actividad} es \textbf{evaluar la calidad de los resultados} de Jena para los modelos con y sin inferencia}. Esta evaluación consiste en estas etapas: 1) establecer una serie de consultas para interrogar nuestros modelos, 2) encontrar manualmente cuántos y cuáles recursos responden las consultas, 3) ejecutar las consultas con el motor ARQ de Jena y 4) comparar los recursos dados por Jena con las respuestas manuales.
 
-\textit{La \textbf{segunda actividad} consiste en medir los \textbf{tiempos promedio de procesamiento} para las consultas de la primera actividad}. La finalidad de esta segunda actividad es comparar los tiempos de procesamiento para un modelo con inferencia y otro que no emplea ésta. La determinación del tiempo para modelos sin inferencia, consiste en medir los tiempos de: 1) \textit{ejecución de la consulta en en el modelo} y 2) \textit{recuperación de la información}. De la misma manera, la medición de tiempos para un modelo con inferencia es parecida a la medición en un modelos sin inferencia. La excepción es que en un modelo con inferencia, se toman en cuenta los tiempos para: \textit{el proceso de inferencia en el modelo} y \textit{la ejecución de la consulta al modelo inferido}.
+\textit{La \textbf{segunda actividad} consiste en medir los \textbf{tiempos promedio de procesamiento} de Jena para las consultas de nuestra primera actividad}. La finalidad de esta segunda actividad es comparar los \textit{tiempos de consulta} para un modelo con inferencia y otro que no emplea ésta. En ambos modelos se evalúa el tiempo desde \textit{la ejecución de Jena para una consulta a un modelo (con o sin inferencia)} hasta \textit{la presentación de los resultados en pantalla}.
+
+%%La determinación del tiempo para modelos sin inferencia, consiste en medir los tiempos de: 1) \textit{ejecución de la consulta en en el modelo} y 2) \textit{recuperación de la información}. De la misma manera, la medición de tiempos para un modelo con inferencia es parecida a la medición en un modelos sin inferencia. La excepción es que en un modelo con inferencia, se toman en cuenta los tiempos para: \textit{el proceso de inferencia en el modelo} y \textit{la ejecución de la consulta al modelo inferido}.
 
 En esta tesis, el proceso de \textit{integración semántica} está asociado a dos \textit{casos de uso} (cartografía de competencias y búsqueda de recursos digitales). Ahora bien, nuestra experimentación consiste en probar la \textit{calidad de los resultados} y el \textit{tiempo de procesamiento} para la \textit{integración semántica de recursos} en la \textit{memoria corporativa} del área de Redes y Telecomunicaciones. Por esta razón, las dos actividades de nuestra experimentación deben ser aplicadas a nuestros dos \textit{casos de uso}.
 
 %%Elección de los sujetos para confirmar la muestra
+\section{Sujetos de experimentación}
 Los sujetos de nuestra experimentación son un conjunto de personas, documentos y archivos multimedia que son generados artificialmente. Esta \textit{generación artificial} consiste en el uso de scripts para: 1) \textit{asignar un identificador URI para un conjunto de \textbf{recursos de información ficticios}} y 2) \textit{generar tripletas RDF para estos recursos con base en las \textbf{propiedades} y \textbf{clases} de nuestras ontologías, así como \textbf{datos aleatorios}}. 
 
 Un script genera un conjunto de declaraciones para los recursos persona. Mientras, otro script genera las declaraciones para los documentos y archivo multimedia. El algoritmo \ref{alg:fsg} presenta el funcionamiento general de ambos scripts para la generación y almacenamiento de tripletas RDF.
@@ -39,7 +45,7 @@ $N\leftarrow$  número de \textit{recursos ficticios de información} a describir\
 	Escribir las aserciones, concatenando el URI del recurso (\Sigma), las propiedades de la ontología y los valores del paso \ref{lin:values}\;
 }
 Guardar el \Model en un archivo con extensión ``\textit{rdf}'' y sintaxis de serialización \textit{Turtle}\;
-\caption{Funcionamiento básico de scripts para la generación de tripletas artificialmente}
+\caption{Funcionamiento básico de scripts para la generación de tripletas artificialmente.}
 \label{alg:fsg} 
 \end{algorithm}
 
@@ -89,7 +95,7 @@ Los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 art
 La Tabla \ref{tab:noRD} presenta las cantidades de recursos digitales por clases de la \textit{ontología recursos digitales}. Esta Tabla \ref{tab:noRD} presenta la misma estructura de la Tabla \ref{tab:noRP} 
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{| >{\centering\arraybackslash}m{2in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
 \hline 
@@ -127,16 +133,21 @@ Imagen & 77 & 77\\
 \label{tab:noRD}
 \end{table}
 
-El siguiente paso en esta experimentación es tener un conjunto base de consultas, así como saber cuántos y cuáles recursos de nuestras ontologías responden a estas consultas. Para elegir estas consultas, se retomaron las consultas asociadas a las preguntas de la Sección \ref{sec:byrKrec}. Con base en estas consultas se encontraron los recursos que responden éstas.
+\section{Metodología}
+Esta experimentación se ha dividido en dos actividades. La primera actividad consiste en la \textit{evaluación de la calidad de los resultados} que proporciona el triplestore Jena. Mientras, la segunda actividad consiste en medir los \textit{tiempos promedios} que toma Jena para: consultar los modelos con/sin inferencia y mostrar los resultados al usuario.
 
-La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve pregunta, la segunda columna enuncia la pregunta y la tercer columna presenta el número de recursos que responden a ésta. De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas, para la \textit{búsqueda de recursos digitales}.
+El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es identificar un conjunto básico de consultas para interrogar las ontologías \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. En la Sección \ref{sec:byrKrec} se hizo un análisis e identificación de preguntas base que posteriormente se transformaron a consultas SPARQL. Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
 
-\begin{table}[!htb]
-%\renewcommand{\arraystretch}{1.2}
+El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, se hace una \textit{búsqueda manual} exhaustiva de los recursos relevantes que responden las consultas de experimentación. Esta búsqueda se hace sobre los recursos de nuestra memoria corporativa que está guiada por los casos de uso. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
+
+La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve pregunta, la segunda columna enuncia la pregunta y la tercer columna presenta el número de recursos que responden a ésta. De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas, para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas. Porque algunas consultas tienen muchos recursos relevantes.
+
+\begin{table}[!hp]
+\renewcommand{\arraystretch}{1.4}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
 \hline 
-Id. & Pregunta & No. de Recursos\\
+Id. Consulta & Pregunta & No. de Recursos\\
 \hline
 \hline 
 Q1.1 &  ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT? & 73 \\
@@ -182,12 +193,12 @@ Q1.19 & ¿Qué personas son profesores-investigadores? & 9\\
 \label{tab:qrynoRP}
 \end{table}
 
-\begin{table}[!htb]
-%\renewcommand{\arraystretch}{1.2}
+\begin{table}[!hp]
+\renewcommand{\arraystretch}{1.4}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
 \hline 
-Id. & Pregunta & No. de Recursos\\
+Id. Consulta & Pregunta & No. de Recursos\\
 \hline
 \hline 
 Q2.1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
@@ -215,8 +226,142 @@ Q2.10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
 \label{tab:qrynoRD}
 \end{table}
 
+El \textit{tercer paso} es emplear \textit{Jena} para ejecutar las \textit{consultas SPARQL} a un modelo sin inferencia y otro con inferencia. La finalidad de ésto es ver la calidad de resultados y la cantidad de éstos que al emplear un modelo con inferencia y otro sin inferencia. De esta manera, podemos ver el impacto de la inferencia para la consulta de información en una ontología.
+
+En esta \textit{ejecución de consultas}, se emplea un script para consultar un \textit{modelo semántico} y proporcionar los resultados qu están asociados a una consulta dada. El funcionamiento de este script se presenta en el Algoritmo \ref{alg:srinf}. En este algoritmo, los \textbf{\textit{parámetros de entrada}} son: 1) \textit{la consulta SPARQL}, 2) \textit{la ontología} (\textit{Personas o RecDigi}), 3) \textit{inferencia} (\textit{0 sin inferencia} y \textit{1 con inferencia}). Mientras, los valores de salida son: 1) \textit{la impresión en pantalla de los identificadores URI que responden la consulta} y 2) \textit{la impresión de la cantidad de recursos respuesta}.
+
+\begin{algorithm}
+\SetKwData{Model}{$modelo_{semantico}$}
+\KwIn{Consulta SPARQL: $query$, Nombre del modelo: $model$, Uso de inferencia: $inference$}
+\KwOut{Resultados: $\Pi_{query}$, Número de resultados: $noRes$}
+\BlankLine
+$noRes \leftarrow 0$\;
+$\Pi_{query} \leftarrow \{ \}$\;
+\uIf{$model \equiv$ `Personas'}{
+	Cargar en memoria el ABox y TBox de la ontología cartografía de competencias\;
+}
+\ElseIf{$model \equiv$ `RecDigi'}{
+	Cargar en memoria el ABox y TBox de la ontología búsqueda de recursos digitales\;
+}
+\uIf{$model \equiv 0$}{
+	\Model $\leftarrow$ modelo ABox y TBox\;
+}
+\ElseIf{$model \equiv 1$}{
+	Inferir en memoria sobre el ABox y Tbox\;
+	\Model $\leftarrow$ modelo inferido\;
+}
+Cargar en memoria consulta SPARQL ($query$)\;
+Ejecutar consulta ($query$) en el modelo (\Model)\;
+$Pi_{query} \leftarrow$ Recuperar resultados de consulta\tcc*{$Pi_{query} = \{ \pi_1, \dots, \pi_n \}$}
+\ForAll{elements of $Pi_{query}$}{
+	Imprimir $\pi_k$ en pantalla\;
+	$noRes \leftarrow noRes + 1$\;
+}
+Imprimir $noRes$ en pantalla\;
+\caption{Algoritmo para la evaluación de la calidad de resultados}
+\label{alg:srinf} 
+\end{algorithm}
+
+El \textit{cuarto paso} consiste en ver cuantos resultados dados por Jena, responden las consulta de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La finalidad de ésto, es \textit{comparar} la calidad de los resultados dados por Jena, para un modelo con inferencia y otro sin inferencia. Este paso se hace en dos fases y para cada consulta de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. Éstos dos pasos son: 1) encontrar los recursos relevantes y no relevantes de lasa partir de las respuestas del script, y 2) usar (\textit{métricas de recuperación de la información}) para comparar la calidad de los resultados con y sin inferencia.
+
+La \textit{fase uno} consiste en comparar y anotar las cantidades de recursos relevantes e irrelevantes para cada consulta. En esta fase se considera el modelo de uso: con inferencia o sin ésta. Esta comparación y anotación se hizo de forma manual. El primer criterio de comparación es ver la cantidad de recursos de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD} con el número de respuestas que proporciona el script. Posteriormente, se hace la comparación identificador a identificador de los recursos que son proporcionados por el script con los recursos que realmente responden la consulta.
+
+La segunda fase, consiste en emplear las siguientes métricas de \textit{recuperación de la información}: \textbf{\textit{exhaustividad}} y \textbf{\textit{precisión}}.
+
+La \textbf{\textit{exhaustividad (recall)}} \cite{Nasraoui} es ``\textit{la cantidad de elementos relevantes que han sido recuperados, entre la cantidad de elementos relevantes en la base de conocimientos}'' \cite{RecYPres}. Ésto significa, la cantidad de \textit{elementos relevantes recuperados} es el \textit{número de recursos relevantes dados por el script para una consulta}. Mientras, el número total de \textit{elementos relevantes en la base de conocimiento} es la \textit{cantidad de resultados de nuestra búsqueda manual que están en las Tablas} \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. Ésta es la ecuación asociada a la exhaustividad.
+
+$$
+	Exhaustividad = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: que\: han\: sido\: recuperados}{N\acute{u}mero\: de\: recursos\: relevantes\: en\: la\: base\: de\: conocimientos} * 0.1
+$$
+
+La \textbf{\textit{precisión (Precision)}} \cite{Nasraoui} es la ``\textit{cantidad de elementos recuperados que son relevantes, entre el total de elementos recuperados}'' \cite{RecYPres}. En nuestra experimentación. la cantidad de \textit{elementos relevantes recuperados} es el \textit{número de recursos relevantes dados por el script para una consulta}. Mientras, \textit{el total de elementos recuperados en la base de conocimiento} es la cantidad de \textit{recursos dados por el script, sin el análisis de aquellos que son relevantes}.
+
+$$
+	Precisión = \frac{N\acute{u}mero\: de\: elementos\: relevantes\: que\: han\: sido\: recuperados}{Total\: de\:elementos\: recuperados\: en\: la\: base\: de\: conocimientos} * 0.1
+$$
 
 ----> Aquí voy
+
+Sigue experimentación de los tiempos de procesamiento
+hay que hablar de la manera de llevar a cabo esto
+y del uso de un script para calcular estos tiempos, basado en el algoritmo 2.
+
+\section{Resultados}
+La Tabla \ref{tab:rrRP} muestra los recursos relevantes y no relevantes que se recuperaron para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna presenta el identificador de la consulta. La segunda y tercera columna muestran los recursos no relevantes y relevantes respectivamente cuando se emplea un modelo sin inferencia. La cuarta y quita presentan los recursos no relevantes y relevantes para un modelo con inferencia.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | }
+\hline 
+\multirow{2}{*}{Id. Consulta} & \multicolumn{2}{c|}{Modelo sin inferencia} & \multicolumn{2}{c|}{Modelo con inferencia}\\
+\cline{2-5} 
+ & Recursos no relevantes & Recursos relevantes & Recursos no relevantes & Recursos relevantes\\
+\hline 
+\hline
+Q1 & 12 & 1330/1330 & 138 & 1330/1330\\
+\hline
+Q2 & 10 & 0/103 & 194 & 103/103\\
+\hline
+Q3 & 8 & 18/18 & 406 & 18/18\\
+\hline
+Q4 & 28 & 15/31 & 129 & 31/31\\
+\hline
+Q5 & 7 & 66/119 & 157 & 119/119\\
+\hline
+Q6 & 9 & 15/30 & 4016 & 30/30\\
+\hline
+Q7 & 12 & 156/156 & 3520 & 156/156\\
+\hline
+Q8 & 16 & 159/159 & 3472 & 159/159\\
+\hline
+Q9 & 42 & 0/2 & 3451 & 2/2\\
+\hline
+Q10 & 13 & 3/4 & 3312 & 4/4\\
+\hline
+\end{tabular}
+\caption{Recursos relevantes y no relevantes asociados a las preguntas de la cartografía de competencias.}
+\label{tab:rrRP}
+\end{table}
+
+De la misma manera, la Tabla \ref{tab:rrRD} presenta los recursos relevantes y no relevantes cuando se consulta el modelo sin inferencia y con inferencia de los recursos digitales. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es igual a la Tabla \ref{tab:rrRP}.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.2}
+\centering
+\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | }
+\hline 
+\multirow{2}{*}{Id. Consulta} & \multicolumn{2}{c|}{Modelo sin inferencia} & \multicolumn{2}{c|}{Modelo con inferencia}\\
+\cline{2-5} 
+ & Recursos no relevantes & Recursos relevantes & Recursos no relevantes & Recursos relevantes\\
+\hline 
+\hline
+Q2.1 & 0 & 1330 & 0 & 1330\\
+\hline
+Q2.2 & 0 & 103 & 0 & 103\\
+\hline
+Q2.3 & 0 & 18 & 0 & 18\\
+\hline
+Q2.4 & 0 & 15 & 0 & 31\\
+\hline
+Q2.5 & 0 & 66 & 0 & 119\\
+\hline
+Q2.6 & 0 & 15 & 0 & 30\\
+\hline
+Q2.7 & 0 & 156 & 0 & 156\\
+\hline
+Q2.8 & 0 & 159 & 0 & 159\\
+\hline
+Q2.9 & 0 & 0 & 0 & 2\\
+\hline
+Q2.10 & 0 & 3 & 0 & 4\\
+\hline
+\end{tabular}
+\caption{Recursos relevantes y no relevantes asociados a las preguntas de la búsqueda de recursos digitales.}
+\label{tab:rrRD}
+\end{table}
+
+----> Aquí voy **
 
 
 Para evaluar este costo en tiempo, calculamos el tiempo promedio que tarda cada consulta en responderse. Específicamente, nosotros tomamos el tiempo desde que se consulta la información del modelo hasta que se presentan los resultados en pantalla. Esta operación la repetimos veinte veces por consulta, de esta manera, sacamos el tiempo promedio por consulta de nuestro modelo. 
@@ -259,13 +404,6 @@ La segunda conclusión tiene que ver con el número de resultados. Si bien, las as
 
 %http://hal-lirmm.ccsd.cnrs.fr/docs/00/63/97/05/PDF/A_Flexible_System_for_Ontology_Matching.pdf
 
-%%Precisión
-%%?Es la proporción del material recuperado que realmente es relevante, del total de documentos recuperados? [2, 3]. En donde la precisión está dada por la relación entre Documentos Relevantes Recuperados y Documentos recuperados. Y cuyo intervalo está entre el cero y uno.
-%%Presisión =  (Documentos Relevantes Recuperados)/(Total de Documentos recuperados)
-%%Dibujo de ejemplo
-%%Exhaustividad
-%%?Proporción de material relevante recuperado del total de documentos que son relevantes, Donde la exhaustividad es inversamente proporcional a la precisión? [3]. Igual que en la precisión el intervalo está entre el cero y uno.
-%%Exhasutividad =  (Documentos Relevantes Recuperados)/(Total de Documentos Relevantes en la MC)
 
 Funcionamiento de los scripts 
 %https://docs.google.com/document/d/1c-JfQYGg7O2xMTNh5gCmdtiDf2vmrsreQfpLU9na4AQ/edit

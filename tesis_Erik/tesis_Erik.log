@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  25 NOV 2013 01:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  26 NOV 2013 04:00
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -433,10 +433,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lot=\write5
  [11
 
-] [12
+] [12]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof [13
 
-]
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof [13])
+])
 \tf@lof=\write6
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex [14]) [15
@@ -992,27 +992,33 @@ Cap\'{\i }tulo 6.
 ]
 Cap\'{\i }tulo 7.
 [79]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 35.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 41.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [80] [81]
-[82] [83] [84] [85] [86]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[82]
+Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [87])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [88]
+ [83]
+[84] [85] [86]
+
+LaTeX Warning: Command \' invalid in math mode on input line 280.
+
+Missing character: There is no ó in font cmr12!
+[87] [88] [89] [90] [91])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [92]
 Cap\'{\i }tulo 8.
-[89
+[93
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90])
-[91] [92
+ [94])
+[95] [96
 
-] [93
+] [97
 
-] [94] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
+] [98] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
 
 Overfull \hbox (10.17401pt too wide) in paragraph at lines 26--27
@@ -1021,22 +1027,22 @@ Overfull \hbox (10.17401pt too wide) in paragraph at lines 26--27
 t/12 nombre[]$\T1/cmr/m/n/12 ); 
  []
 
-[95
+[99
 
-] [96]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl
-[97] [98
+] [100]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl
+[101] [102
 
-] [99] [100] [101]) [102]
+] [103] [104] [105]) [106]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6258 strings out of 493944
- 85782 string characters out of 3148281
- 176485 words of memory out of 3000000
- 9307 multiletter control sequences out of 15000+200000
+ 6272 strings out of 493944
+ 85935 string characters out of 3148281
+ 178524 words of memory out of 3000000
+ 9321 multiletter control sequences out of 15000+200000
  27371 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  33i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1064,9 +1070,9 @@ pe1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (118 pages, 2630237 bytes).
+Output written on tesis_Erik.pdf (122 pages, 2654930 bytes).
 PDF statistics:
- 1066 PDF objects out of 1200 (max. 8388607)
+ 1079 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
