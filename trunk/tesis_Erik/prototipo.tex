@@ -1,5 +1,72 @@
 \chapter{Prototipo}
 \label{cap:piu}
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Navegación entre personas.\\ 
+\hline
+\textbf{Objetivo:}& Visualizar las características significativas de las personas del área de Redes y Telecomunicaciones.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Persons (Personas)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar las personas por ocupación.\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda} \textit{avanzada de personas (Advanced Search Person)} y para cada persona muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para la navegación entre la información de las personas.}
+\label{tab:iwnp}
+\end{table}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{IntWebNavPer}
+\caption{Interfaz Web: navegación entre personas del área RyT.}
+\label{fig:iwnp}
+\end{figure}
+
+\begin{table}[htb]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Navegación entre documentos.\\ 
+\hline
+\textbf{Objetivo:}& Visualizar las características significativas de los documentos pertenecientes a los profesores y estudiantes del área de Redes y Telecomunicaciones.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Persons (Personas)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los documentos por clase (Artículo, Tesis, Libro, Reporte Técnico y Página Web).\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda} \textit{avanzada de documentos (Advanced Search Document)} y para cada documento muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para la navegación entre la información de los documentos.}
+\label{tab:iwnd}
+\end{table}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{IntWebNavDoc}
+\caption{Interfaz Web: navegación entre documentos de la memoria corporativa del área RyT.}
+\label{fig:iwnp}
+\end{figure}
+
 Cualquier usuario no puede realizar el proceso de consulta (interacción) de información (integración ISR) en las ontologías de la \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. Porque los usuarios deben tener un conocimiento básico en: las tecnologías semánticas (tripletas y consultas SPARQL), el vocabulario utilizado en las tripletas (recursos y propiedades), manejo del triplestore (carga, inferencia ).
 
 La integración semántica de recursos (ISR) a partir del uso de un
