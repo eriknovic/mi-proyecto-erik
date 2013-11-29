@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor usuario as usu1
+actor profesor as usu2
+actor estudiante as usu3
+
+usu3 -left--|> usu1
+usu2 -right--|> usu1
+
+rectangle interfazWeb {
+	usu1 -- (Búsqueda por topico)
+	usu1 -- (Navegación entre multimedia)
+	usu1 -- (Navegación entre documentos)
+	usu1 -- (Navegación entre personas)
+
+	(Más detalles del recurso de información) -up.> (Búsqueda por topico): <<include>>
+	(Búsqueda Avanzada de documentos) -up.> (Navegación entre documentos): <<include>>
+	(Búsqueda Avanzada de multimedia) -up.> (Navegación entre multimedia): <<include>>
+	(Búsqueda Avanzada de personas) -up.> (Navegación entre personas): <<include>>
+
+	(Filtrar por tipo-multimedia) -up.> (Navegación entre multimedia): <<extend>>
+	(Filtrar por tipo-documento) -up.> (Navegación entre documentos): <<extend>>
+	(Filtrar por tipo-persona) -up.> (Navegación entre personas): <<extend>>
+	
+	(Más detalles de multimedia) -up.> (Filtrar por tipo-multimedia): <<include>>
+	(Más detalles de multimedia) -up.> (Búsqueda Avanzada de multimedia): <<include>>
+	(Más detalles de multimedia) -up.> (Navegación entre multimedia): <<include>>
+	
+	(Más detalles de documento) -up.> (Filtrar por tipo-documento): <<include>>
+	(Más detalles de documento) -up.> (Búsqueda Avanzada de documentos): <<include>>
+	(Más detalles de documento) -up.> (Navegación entre documentos): <<include>>
+	
+	(Más detalles de persona) -up.> (Filtrar por tipo-persona): <<include>>
+	(Más detalles de persona) -up.> (Búsqueda Avanzada de personas): <<include>>
+	(Más detalles de persona) -up.> (Navegación entre personas): <<include>>
+}
+@enduml
