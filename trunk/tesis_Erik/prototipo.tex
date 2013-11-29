@@ -1,6 +1,13 @@
 \chapter{Prototipo}
 \label{cap:piu}
 
+\begin{figure}[hp]
+\centering
+\includegraphics[angle=90,scale=0.7]{casosUsoIW}
+\caption{Casos de uso para el prototipo integrador semántico.}
+\label{fig:iwnp}
+\end{figure}
+
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.0}
 \centering
@@ -20,7 +27,7 @@
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
 \hline
 \textbf{Post-condición}& La interfaz Web muestra una sección para filtrar las personas por ocupación.\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda} \textit{avanzada de personas (Advanced Search Person)} y para cada persona muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de personas (Advanced Search Person)} y para cada persona muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
 \hline
 \end{tabular}
 \caption{Especificación para la navegación entre la información de las personas.}
@@ -53,7 +60,7 @@
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
 \hline
 \textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los documentos por clase (Artículo, Tesis, Libro, Reporte Técnico y Página Web).\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda} \textit{avanzada de documentos (Advanced Search Document)} y para cada documento muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de documentos (Advanced Search Document)} y para cada documento muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
 \hline
 \end{tabular}
 \caption{Especificación para la navegación entre la información de los documentos.}
@@ -64,27 +71,100 @@
 \centering
 \includegraphics[width=0.8\textwidth]{IntWebNavDoc}
 \caption{Interfaz Web: navegación entre documentos de la memoria corporativa del área RyT.}
-\label{fig:iwnp}
+\label{fig:iwnd}
 \end{figure}
 
-Cualquier usuario no puede realizar el proceso de consulta (interacción) de información (integración ISR) en las ontologías de la \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. Porque los usuarios deben tener un conocimiento básico en: las tecnologías semánticas (tripletas y consultas SPARQL), el vocabulario utilizado en las tripletas (recursos y propiedades), manejo del triplestore (carga, inferencia ).
+\begin{table}[htb]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Navegación entre multimedia.\\ 
+\hline
+\textbf{Objetivo:}& Visualizar las características significativas de los archivos multimedia pertenecientes a los profesores y estudiantes del área de Redes y Telecomunicaciones.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Multimedia (Multimedia)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos multimedia por clase (Audio, Imagen, Presentación y Vídeo).\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)} y para cada recurso multimedia muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para la navegación entre la información de los recursos multimedia.}
+\label{tab:iwnm}
+\end{table}
 
-La integración semántica de recursos (ISR) a partir del uso de un
-triplestore, no es una tarea que cualquier usuario (profesor o estudiante) puede hacer,
-ya que éste debe estar familiarizado con el triplestore, el
-lenguaje de consulta SPARQL y las ternas RDF.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{IntWebNavMult}
+\caption{Interfaz Web: navegación entre recursos multimedia de la memoria corporativa del área RyT.}
+\label{fig:iwnm}
+\end{figure}
+
+\begin{table}[htb]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Búsqueda por topico.\\ 
+\hline
+\textbf{Objetivo:}& Visualizar las características significativas de todos los recursos de información pertenecientes a la memoria corporativa del área de Redes y Telecomunicaciones.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Multimedia (Multimedia)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos multimedia por clase (Audio, Imagen, Presentación y Vídeo).\\
+&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)} y para cada recurso multimedia muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para la navegación entre la información de los recursos multimedia.}
+\label{tab:iwnm}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\subfigure[Formulario Web: búsqueda por temas]{
+\includegraphics[totalheight=0.40\textheight]{FormAllRes} 
+}
+\subfigure[Página Dinámica: Resultados de búsqueda]{
+\includegraphics[totalheight=0.40\textheight]{IntWebNavAll} 
+}
+\caption{Formulario Web para la búsqueda por temas en todos los recursos de información y la página Web mostrando los resultados de esta búsqueda.}
+\label{fig:iwbxt}
+\end{figure}
 
 
-La manera de probar el enfoque semántico y la integración semántica es desarrollar un prototipo de sistema.
 
-Este prototipo basa su funcionamiento en los elementos, tecnologías y estándares actuales de la Web Semántica.
+%%%%%%%Cualquier usuario no puede realizar el proceso de consulta (interacción) de información (integración ISR) en las ontologías de la \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. Porque los usuarios deben tener un conocimiento básico en: las tecnologías semánticas (tripletas y consultas SPARQL), el vocabulario utilizado en las tripletas (recursos y propiedades), manejo del triplestore (carga, inferencia ).
 
-Nosotros para construir el sistema seguimos una serie de actividades. En donde estas actividades se apegan a la metodología que propusimos.
+%%%%%%%La integración semántica de recursos (ISR) a partir del uso de un
+%%%%%%%triplestore, no es una tarea que cualquier usuario (profesor o estudiante) puede hacer,
+%%%%%%%ya que éste debe estar familiarizado con el triplestore, el
+%%%%%%%lenguaje de consulta SPARQL y las ternas RDF.
+%%%%%%%
+%%%%%%%
+%%%%%%%La manera de probar el enfoque semántico y la integración semántica es desarrollar un prototipo de sistema.
+%%%%%%%
+%%%%%%%Este prototipo basa su funcionamiento en los elementos, tecnologías y estándares actuales de la Web Semántica.
+%%%%%%%
+%%%%%%%Nosotros para construir el sistema seguimos una serie de actividades. En donde estas actividades se apegan a la metodología que propusimos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-La integración semántica es un proceso de búsqueda y recuperación de información sobre los recursos de una Memoria Corporativa, bajo el enfoque de las Tecnologías Semánticas. Esta integración se basa en la representación del conocimiento de los recursos en forma de un grafo RDF y en la consulta del mismo, para satisfacer la pregunta de un usuario.
-En esta integración semántica, el grafo se constituye de triples y las consultas están están compuestas de patrones parecidos a triples. Ahora bien, cualquier usuario del área de Redes y Telecomunicaciones (RyT) que quiera consultar el modelo RDF, debe aprender a construir consultas SPARQL y tener un conocimiento general sobre los triples del modelo RDF. Sin embargo, esta situación puede ser molesta para los usuarios. Así que, nosotros proponemos un prototipo para la interacción amigable de los usuarios con el modelo RDF, de esta forma, un usuario podrá consultar al modelo RDF y visualizar los resultados asociados a la misma, sin que éste tenga conocimientos en las Tecnologías Semánticas.
-Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
+%%%%%%%%La integración semántica es un proceso de búsqueda y recuperación de información sobre los recursos de una Memoria Corporativa, bajo el enfoque de las Tecnologías Semánticas. Esta integración se basa en la representación del conocimiento de los recursos en forma de un grafo RDF y en la consulta del mismo, para satisfacer la pregunta de un usuario.
+%%%%%%%%En esta integración semántica, el grafo se constituye de triples y las consultas están están compuestas de patrones parecidos a triples. Ahora bien, cualquier usuario del área de Redes y Telecomunicaciones (RyT) que quiera consultar el modelo RDF, debe aprender a construir consultas SPARQL y tener un conocimiento general sobre los triples del modelo RDF. Sin embargo, esta situación puede ser molesta para los usuarios. Así que, nosotros proponemos un prototipo para la interacción amigable de los usuarios con el modelo RDF, de esta forma, un usuario podrá consultar al modelo RDF y visualizar los resultados asociados a la misma, sin que éste tenga conocimientos en las Tecnologías Semánticas.
+%%%%%%%%Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

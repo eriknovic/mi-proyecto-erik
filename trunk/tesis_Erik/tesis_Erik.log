@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  28 NOV 2013 02:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  29 NOV 2013 01:21
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -312,52 +312,72 @@ Package: xstring 2013/2/28  v1.7a  String manipulations (C Tellechea)
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box37
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip87
+\subfigcapskip=\skip88
+\subfigcaptopadj=\dimen127
+\subfigbottomskip=\skip89
+\subfigcapmargin=\dimen128
+\subfiglabelskip=\skip90
+\c@subfigure=\count103
+\c@lofdepth=\count104
+\c@subtable=\count105
+\c@lotdepth=\count106
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip91
+\subfig@bottom=\skip92
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip87
-\LTright=\skip88
-\LTpre=\skip89
-\LTpost=\skip90
-\LTchunksize=\count103
-\LTcapwidth=\dimen127
+\LTleft=\skip93
+\LTright=\skip94
+\LTpre=\skip95
+\LTpost=\skip96
+\LTchunksize=\count107
+\LTcapwidth=\dimen129
 \LT@head=\box38
 \LT@firsthead=\box39
 \LT@foot=\box40
 \LT@lastfoot=\box41
-\LT@cols=\count104
-\LT@rows=\count105
-\c@LT@tables=\count106
-\c@LT@chunks=\count107
+\LT@cols=\count108
+\LT@rows=\count109
+\c@LT@tables=\count110
+\c@LT@chunks=\count111
 \LT@p@ftn=\toks31
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen128
-\lightrulewidth=\dimen129
-\cmidrulewidth=\dimen130
-\belowrulesep=\dimen131
-\belowbottomsep=\dimen132
-\aboverulesep=\dimen133
-\abovetopsep=\dimen134
-\cmidrulesep=\dimen135
-\cmidrulekern=\dimen136
-\defaultaddspace=\dimen137
-\@cmidla=\count108
-\@cmidlb=\count109
-\@aboverulesep=\dimen138
-\@belowrulesep=\dimen139
-\@thisruleclass=\count110
-\@lastruleclass=\count111
-\@thisrulewidth=\dimen140
+\heavyrulewidth=\dimen130
+\lightrulewidth=\dimen131
+\cmidrulewidth=\dimen132
+\belowrulesep=\dimen133
+\belowbottomsep=\dimen134
+\aboverulesep=\dimen135
+\abovetopsep=\dimen136
+\cmidrulesep=\dimen137
+\cmidrulekern=\dimen138
+\defaultaddspace=\dimen139
+\@cmidla=\count112
+\@cmidlb=\count113
+\@aboverulesep=\dimen140
+\@belowrulesep=\dimen141
+\@thisruleclass=\count114
+\@lastruleclass=\count115
+\@thisrulewidth=\dimen142
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count112
-\c@ALC@line=\count113
-\c@ALC@rem=\count114
-\c@ALC@depth=\count115
-\ALC@tlm=\skip91
-\algorithmicindent=\skip92
+\c@ALC@unique=\count116
+\c@ALC@line=\count117
+\c@ALC@rem=\count118
+\c@ALC@depth=\count119
+\ALC@tlm=\skip97
+\algorithmicindent=\skip98
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\Tabbing\tabbing.sty"
 
@@ -366,36 +386,42 @@ LaTeX Warning: You have requested package `tabbing',
 
 Package: Tabbing 1997/12/18 v1.0 Tabbing environment (JPFD)
 )
-Package color Info: Redefining color black on input line 33.
- (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+Package color Info: Redefining color black on input line 34.
+ (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Warning: Label `fig:iwnp' multiply defined.
+
+
+LaTeX Warning: Label `tab:iwnm' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen141
+\scratchcounter=\count120
+\scratchdimen=\dimen143
 \scratchbox=\box42
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\nofMPsegments=\count121
+\nofMParguments=\count122
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen142
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen144
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks33
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 66.
+LaTeX Info: Redefining \selectfont on input line 67.
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
@@ -990,52 +1016,84 @@ Package pdftex.def Info: consSimpGrafo.pdf used on input line 873.
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipo.tex [76 <C:/Users/Gatit
 o/Desktop/GoogleSVN/tesis_Erik/consSimpGrafo.pdf>]
 Cap\'{\i }tulo 6.
-<IntWebNavPer.pdf, id=893, 747.79375pt x 544.0325pt>
+<casosUsoIW.pdf, id=893, 711.65875pt x 578.16pt>
+File: casosUsoIW.pdf Graphic file (type pdf)
+ <use casosUsoIW.pdf>
+Package pdftex.def Info: casosUsoIW.pdf used on input line 6.
+(pdftex.def)             Requested size: 711.65701pt x 578.15858pt.
+
+<IntWebNavPer.pdf, id=894, 747.79375pt x 544.0325pt>
 File: IntWebNavPer.pdf Graphic file (type pdf)
  <use IntWebNavPer.pdf>
-Package pdftex.def Info: IntWebNavPer.pdf used on input line 32.
+Package pdftex.def Info: IntWebNavPer.pdf used on input line 39.
 (pdftex.def)             Requested size: 377.62642pt x 274.73009pt.
 
-<IntWebNavDoc.pdf, id=894, 757.83125pt x 549.05125pt>
+<IntWebNavDoc.pdf, id=895, 757.83125pt x 549.05125pt>
 File: IntWebNavDoc.pdf Graphic file (type pdf)
  <use IntWebNavDoc.pdf>
-Package pdftex.def Info: IntWebNavDoc.pdf used on input line 65.
+Package pdftex.def Info: IntWebNavDoc.pdf used on input line 72.
 (pdftex.def)             Requested size: 377.62642pt x 273.595pt.
 
-[77
+<IntWebNavMult.pdf, id=896, 749.80125pt x 547.04375pt>
+File: IntWebNavMult.pdf Graphic file (type pdf)
+ <use IntWebNavMult.pdf>
+Package pdftex.def Info: IntWebNavMult.pdf used on input line 105.
+(pdftex.def)             Requested size: 377.62642pt x 275.51617pt.
 
-]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [78 <C:/Users/G
-atito/Desktop/GoogleSVN/tesis_Erik/IntWebNavPer.pdf>] [79 <C:/Users/Gatito/Desk
-top/GoogleSVN/tesis_Erik/IntWebNavDoc.pdf>] [80
+<FormAllRes.pdf, id=897, 749.80125pt x 527.9725pt>
+File: FormAllRes.pdf Graphic file (type pdf)
+ <use FormAllRes.pdf>
+Package pdftex.def Info: FormAllRes.pdf used on input line 140.
+(pdftex.def)             Requested size: 351.77737pt x 247.71028pt.
+
+<IntWebNavAll.pdf, id=898, 749.80125pt x 527.9725pt>
+File: IntWebNavAll.pdf Graphic file (type pdf)
+ <use IntWebNavAll.pdf>
+Package pdftex.def Info: IntWebNavAll.pdf used on input line 143.
+(pdftex.def)             Requested size: 351.77737pt x 247.71028pt.
+)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [77
+
+] [78 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/casosUsoIW.pdf>] [79 <C:/Us
+ers/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebNavPer.pdf>] [80 <C:/Users/Gatito
+/Desktop/GoogleSVN/tesis_Erik/IntWebNavDoc.pdf>] [81 <C:/Users/Gatito/Desktop/G
+oogleSVN/tesis_Erik/IntWebNavMult.pdf>] [82 <C:/Users/Gatito/Desktop/GoogleSVN/
+tesis_Erik/FormAllRes.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWeb
+NavAll.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebNavAll.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>]
+Cap\'{\i }tulo 7.
+[83
 
 ]
-Cap\'{\i }tulo 7.
-[81]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 41.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [82]
+) [84]
 Overfull \hbox (0.44507pt too wide) in paragraph at lines 58--59
 \T1/cmr/m/n/12 nan ex-plí-ci-ta-men-te a una de es-tas cla-ses: \T1/cmr/m/it/12
  Es-tu-dian-te (sirp:Student)\T1/cmr/m/n/12 , \T1/cmr/m/it/12 Em-plea-do (sird:
 Employee)
  []
 
-[83] [84]
+[85] [86]
 Underfull \vbox (badness 1721) has occurred while \output is active []
 
- [85]
-[86] [87] [88]
+ [87]
+[88] [89] [90]
 
 LaTeX Warning: Command \' invalid in math mode on input line 284.
 
 Missing character: There is no ó in font cmr12!
-[89] [90]
+[91] [92]
 Overfull \hbox (0.87743pt too wide) in paragraph at lines 356--356
  []|[]| 
  []
 
-[91]
+[93]
 Overfull \hbox (0.87743pt too wide) in paragraph at lines 413--413
  []|[]| 
  []
@@ -1050,20 +1108,20 @@ Overfull \hbox (0.87743pt too wide) in paragraph at lines 507--507
  []|[]| 
  []
 
-[92] [93] [94]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
-[95] [96
+[94] [95] [96]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex
+[97] [98
 
 ]
 Cap\'{\i }tulo 8.
-[97]
+[99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98])
-[99] [100
+ [100])
+[101] [102
 
-] [101
+] [103
 
-] [102]
+] [104]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
 
@@ -1073,28 +1131,28 @@ Overfull \hbox (10.17401pt too wide) in paragraph at lines 26--27
 t/12 nombre[]$\T1/cmr/m/n/12 ); 
  []
 
-[103
+[105
 
-] [104]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl
-[105] [106
+] [106]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl
+[107] [108
 
-] [107] [108] [109]) [110]
+] [109] [110] [111]) [112]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6306 strings out of 493944
- 86375 string characters out of 3148281
- 188649 words of memory out of 3000000
- 9353 multiletter control sequences out of 15000+200000
+ 6478 strings out of 493944
+ 88931 string characters out of 3148281
+ 190233 words of memory out of 3000000
+ 9515 multiletter control sequences out of 15000+200000
  27371 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,18n,43p,2052b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
@@ -1119,9 +1177,9 @@ pe1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (126 pages, 2862333 bytes).
+Output written on tesis_Erik.pdf (128 pages, 3245370 bytes).
 PDF statistics:
- 1107 PDF objects out of 1200 (max. 8388607)
+ 1143 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
