@@ -3,7 +3,7 @@
 
 \begin{figure}[hp]
 \centering
-\includegraphics[angle=90,scale=0.7]{casosUsoIW}
+\includegraphics[height=3.5in, width=1.05\textwidth]{casosUsoIWGen}
 \caption{Casos de uso para el prototipo integrador semántico.}
 \label{fig:iwnp}
 \end{figure}
@@ -13,9 +13,52 @@
 \centering
 \begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
 \hline 
-\textbf{Nombre}& Navegación entre personas.\\ 
+\textbf{Nombre}& Validación Usuario.\\ 
 \hline
-\textbf{Objetivo:}& Visualizar las características significativas de las personas del área de Redes y Telecomunicaciones.\\
+\textbf{Objetivo:}& Validar a un usuario para el uso de la interfaz Web de la integración semántica de recursos.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario debe estar registrado en el prototipo.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario introduce el URL del Login en su navegador, por ejemplo: \url{http://localhost:8080/appsir/login.html}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- El usuario escribe su \textit{nombre de usuario} y \textit{contraseña}, después da clic en Enviar (Send).}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{3.- La interfaz Web cambia la página Web Login a la página principal que se denomina Home.} \\
+\hline
+\textbf{Flujos secundarios} &\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{3b.- El usuario escribe erróneamente su \textit{nombre de usuario} o \textit{contraseña}, después da clic en Enviar (Send).}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{4b.- La interfaz Web recarga la página Web Login y borra los datos de los campos \textit{nombre de usuario} y \textit{contraseña}.} \\
+\hline
+\textbf{Post-condición}& El usuario es valido y la interfaz Web presenta la página Web principal.\\
+\hline
+\end{tabular}
+\caption{Especificación para validar a un usuario.}
+\label{tab:iwlog}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\subfigure[Formulario Web: Validar al usuario]{
+\includegraphics[totalheight=0.40\textheight]{FormLogin} 
+}
+\subfigure[Interfaz Web: Home]{
+\includegraphics[totalheight=0.40\textheight]{IntWebHome} 
+}
+\caption{Validación del acceso de un usuario al prototipo de integración semántica de recursos.}
+\label{fig:iwbxt}
+\end{figure}
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Navegación entre personas/documentos/multimedia.\\ 
+\hline
+\textbf{Objetivo:}& Visualizar las características significativas de las \textit{personas}, \textit{documentos} o \textit{recursos multimedia} del área de Redes y Telecomunicaciones.\\
 \hline
 \textbf{Actor}& Usuarios.\\
 \hline
@@ -23,14 +66,17 @@
 \hline
 \textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
 \hline
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Personas (Persons)}.}\\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona una de estas tres opciones: \textit{Personas (Persons)}, \textit{Documentos (Documents)}, \textit{Multimedia (Multimedia)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra algunas características significativas que dependen del tipo de \textit{recursos de información}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.1.- Si la opción es Personas, entonces son mostrados el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.2.- Si la opción es Documentos, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.3.- Si la opción es Multimedia, entonces son mostrados el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
 \hline
-\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar las personas por ocupación.\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de personas (Advanced Search Person)} y para cada persona muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos.\\
+&También, dependiendo la clase Persona, Documento o Multimedia, la \textit{interfaz Web} muestra un botón de \textit{búsqueda avanzada por clase (Advanced Search Person, Document, Multimedia)}, y para cada \textit{recurso de información} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
 \hline
 \end{tabular}
-\caption{Especificación para la navegación entre la información de las personas.}
+\caption{Especificación para la navegación entre personas/documentos/multimedia.}
 \label{tab:iwnp}
 \end{table}
 
