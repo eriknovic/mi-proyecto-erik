@@ -1,14 +1,17 @@
 \chapter{Prototipo}
 \label{cap:piu}
 
-\begin{figure}[hp]
+%%%%%Figura casos de uso%%%%%
+\begin{figure}[!hp]
 \centering
 \includegraphics[height=3.5in, width=1.05\textwidth]{casosUsoIWGen}
 \caption{Casos de uso para el prototipo integrador semántico.}
 \label{fig:iwnp}
 \end{figure}
 
-\begin{table}[!htb]
+
+%%%%%Descripción caso vlidación%%%%%
+\begin{table}[!hp]
 \renewcommand{\arraystretch}{1.0}
 \centering
 \begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
@@ -39,7 +42,8 @@
 \label{tab:iwlog}
 \end{table}
 
-\begin{figure}[htbp]
+%%%%%Figura formulario para validar%%%%%
+\begin{figure}[hp]
 \centering
 \subfigure[Formulario Web: Validar al usuario]{
 \includegraphics[totalheight=0.40\textheight]{FormLogin} 
@@ -51,14 +55,15 @@
 \label{fig:iwbxt}
 \end{figure}
 
-\begin{table}[!htb]
+%%%%%Navegación entre recursos de informaición%%%%%
+\begin{table}[hp]
 \renewcommand{\arraystretch}{1.0}
 \centering
 \begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
 \hline 
 \textbf{Nombre}& Navegación entre personas/documentos/multimedia.\\ 
 \hline
-\textbf{Objetivo:}& Visualizar las características significativas de las \textit{personas}, \textit{documentos} o \textit{recursos multimedia} del área de Redes y Telecomunicaciones.\\
+\textbf{Objetivo:}& Desplazarse y visualizar las \textit{características significativas} de las \textit{personas}, \textit{documentos} o \textit{recursos multimedia} del área de Redes y Telecomunicaciones.\\
 \hline
 \textbf{Actor}& Usuarios.\\
 \hline
@@ -77,24 +82,34 @@
 \hline
 \end{tabular}
 \caption{Especificación para la navegación entre personas/documentos/multimedia.}
-\label{tab:iwnp}
+\label{tab:iwnav}
 \end{table}
 
-\begin{figure}[!htb]
+%%%%% Figuras pantallas resultados de la navegación entre recursos.
+\begin{figure}[hp]
 \centering
-\includegraphics[width=0.8\textwidth]{IntWebNavPer}
-\caption{Interfaz Web: navegación entre personas del área RyT.}
-\label{fig:iwnp}
+\subfigure[Interfaz Web: navegación entre personas del área RyT]{
+\includegraphics[totalheight=0.28\textheight]{IntWebNavPer} 
+}
+\subfigure[Interfaz Web: navegación entre documentos de la memoria corporativa del área RyT]{
+\includegraphics[totalheight=0.28\textheight]{IntWebNavDoc} 
+}
+\subfigure[Interfaz Web: navegación entre recursos multimedia de la memoria corporativa del área RyT]{
+\includegraphics[totalheight=0.28\textheight]{IntWebNavMult} 
+}
+\caption{Interfaces Web: navegación entre personas/documentos/multimedia.}
+\label{fig:iwnav}
 \end{figure}
 
-\begin{table}[htb]
+%%%%% Caso de uso búsqueda por topicos%%%%%
+\begin{table}[hp]
 \renewcommand{\arraystretch}{1.0}
 \centering
 \begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
 \hline 
-\textbf{Nombre}& Navegación entre documentos.\\ 
+\textbf{Nombre}& Búsqueda por tópico.\\ 
 \hline
-\textbf{Objetivo:}& Visualizar las características significativas de los documentos pertenecientes a los profesores y estudiantes del área de Redes y Telecomunicaciones.\\
+\textbf{Objetivo:}& Buscar \textit{información significativa} en los \textit{recursos de información} a partir de los tópicos de redes y telecomunicaciones.\\
 \hline
 \textbf{Actor}& Usuarios.\\
 \hline
@@ -102,86 +117,32 @@
 \hline
 \textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
 \hline
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Documentos (Documents)}.}\\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Tópicos de redes (Topics RyT)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra un formulario para estructurar la pregunta.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{3.- El usuario escribe los tópicos de RyT, separando cada uno de éstos con una coma.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{4.- El usuario selecciona el operador \textit{y (and)} u \textit{o (or)} para comparar los tópicos de RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{5.- El usuario selecciona una opción de dos; \textit{exactamente los tópicos escritos} o \textit{tópicos asociados con aquellos ya escritos}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{6.- El usuario selecciona el tipo de \textit{recurso de información}: \textit{Todos}, \textit{Persona}, \textit{Documento}, \textit{Multimedia}, \textit{Artículo}, \textit{Libro} y \textit{Presentación}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.- Indicar como criterio de búsqueda el idioma o lenguaje.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.1.- El usuario selecciona el \textit{check box} \textit{lenguaje (Language)}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.2.- El usuario selecciona un lenguaje del \textit{combo box}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{8.- El usuario elige un opción para ordenar los resultados de la búsqueda.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.- Establecer la cantidad de resultados a mostrar.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.1.- El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.2.- El usuario escribe el número de recursos a recuperar.} \\
 \hline
-\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los documentos por clase (Artículo, Tesis, Libro, Reporte Técnico y Página Web).\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de documentos (Advanced Search Document)} y para cada documento muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
-\hline
-\end{tabular}
-\caption{Especificación para la navegación entre la información de los documentos.}
-\label{tab:iwnd}
-\end{table}
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=0.8\textwidth]{IntWebNavDoc}
-\caption{Interfaz Web: navegación entre documentos de la memoria corporativa del área RyT.}
-\label{fig:iwnd}
-\end{figure}
-
-\begin{table}[htb]
-\renewcommand{\arraystretch}{1.0}
-\centering
-\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
-\hline 
-\textbf{Nombre}& Navegación entre multimedia.\\ 
-\hline
-\textbf{Objetivo:}& Visualizar las características significativas de los recursos multimedia pertenecientes a los profesores y estudiantes del área de Redes y Telecomunicaciones.\\
-\hline
-\textbf{Actor}& Usuarios.\\
-\hline
-\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
-\hline
-\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
-\hline
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Multimedia (Multimedia)}.}\\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
-\hline
-\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos multimedia por clase (Audio, Imagen, Presentación y Vídeo).\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)} y para cada recurso multimedia muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condición}& La interfaz Web muestra el conjunto de resultados de la búsqueda.\\
+&También, la interfaz Web muestra para cada recurso el botón de \textit{más detalles} \textit{(More Details)}.\\
 \hline
 \end{tabular}
-\caption{Especificación para la navegación entre la información de los recursos multimedia.}
+\caption{Especificación para la búsqueda por tópico(s) de redes y telecomunicaciones.}
 \label{tab:iwnm}
 \end{table}
 
-\begin{figure}[!htb]
+%%%%%Figura pantalla búsqueda por topicos
+\begin{figure}[hp]
 \centering
-\includegraphics[width=0.8\textwidth]{IntWebNavMult}
-\caption{Interfaz Web: navegación entre recursos multimedia de la memoria corporativa del área RyT.}
-\label{fig:iwnm}
-\end{figure}
-
-\begin{table}[htb]
-\renewcommand{\arraystretch}{1.0}
-\centering
-\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
-\hline 
-\textbf{Nombre}& Búsqueda por topico.\\ 
-\hline
-\textbf{Objetivo:}& Visualizar las características significativas de todos los recursos de información pertenecientes a la memoria corporativa del área de Redes y Telecomunicaciones.\\
-\hline
-\textbf{Actor}& Usuarios.\\
-\hline
-\textbf{Pre-condición}& El usuario está en la página \textit{Home}.\\
-\hline
-\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
-\hline
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Multimedia (Multimedia)}.}\\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
-\hline
-\textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos multimedia por clase (Audio, Imagen, Presentación y Vídeo).\\
-&También, la interfaz Web muestra el botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)} y para cada recurso multimedia muestra el botón de \textit{más detalles} \textit{(More Details)}.\\
-\hline
-\end{tabular}
-\caption{Especificación para la navegación entre la información de los recursos multimedia.}
-\label{tab:iwnm}
-\end{table}
-
-\begin{figure}[htbp]
-\centering
-\subfigure[Formulario Web: búsqueda por temas]{
+\subfigure[Formulario Web: búsqueda por tópicos]{
 \includegraphics[totalheight=0.40\textheight]{FormAllRes} 
 }
 \subfigure[Página Dinámica: Resultados de búsqueda]{
