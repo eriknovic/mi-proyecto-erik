@@ -1,17 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  30 NOV 2013 13:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  3 DEC 2013 12:56
 entering extended mode
 **prototipoGen.tex
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipoGen.tex
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\prototipoGen.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
-lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
-m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
-i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
-ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
-ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ! Undefined control sequence.
 l.1 \chapter
             {Prototipo}
@@ -54,8 +55,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{figure}
-                  [hp]
+l.5 \begin{figure}
+                  [!hp]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -67,17 +68,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{figure}[
-                   hp]
+l.5 \begin{figure}[
+                   !hp]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
+Missing character: There is no ! in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.6 \includegraphics
+l.7 \includegraphics
                     [height=3.5in, width=1.05\textwidth]{casosUsoIWGen}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -112,7 +114,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.6 ...raphics[height=3.5in, width=1.05\textwidth]
+l.7 ...raphics[height=3.5in, width=1.05\textwidth]
                                                   {casosUsoIWGen}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -121,7 +123,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.6 ...raphics[height=3.5in, width=1.05\textwidth]
+l.7 ...raphics[height=3.5in, width=1.05\textwidth]
                                                   {casosUsoIWGen}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -151,7 +153,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 \caption
+l.8 \caption
             {Casos de uso para el prototipo integrador semántico.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -208,14 +210,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 \end{figure}
-                
+l.10 \end{figure}
+                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--10
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--11
 []
  []
 
@@ -226,8 +228,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \begin{table}
-                  [!htb]
+l.14 \begin{table}
+                  [!hp]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -239,25 +241,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \begin{table}[
-                   !htb]
+l.14 \begin{table}[
+                   !hp]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no ] in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 17.
 ! Use of \@array doesn't match its definition.
 \@ifnextchar ... \reserved@d =#1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -267,7 +268,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -280,7 +281,7 @@ Runaway argument?
 ! Paragraph ended before \@firstoftwo was complete.
 <to be read again> 
                    \par 
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -289,7 +290,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Use of \@array doesn't match its definition.
 \@xexpast #1*#2#3#4\@@ ->\edef \reserved@a {
                                             #1}\@tempcnta #2\relax \ifnum \@...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -299,7 +300,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@array doesn't match its definition.
 \@ifnextchar ... \reserved@d =#1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -309,7 +310,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@argtabularcr doesn't match its definition.
 \@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -319,7 +320,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@array doesn't match its definition.
 \@xexpast #1*#2#3#4\@@ ->\edef \reserved@a {
                                             #1}\@tempcnta #2\relax \ifnum \@...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -331,7 +332,7 @@ Runaway argument?
 ! Paragraph ended before \reserved@b was complete.
 <to be read again> 
                    \par 
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -340,7 +341,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \reserved@a ...@unexpandable@protect \let \@sharp 
                                                   \relax \let \@startpbox \r...
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -351,7 +352,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -360,7 +361,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.14 ...>{\raggedright\arraybackslash}m{4.5in} | }
+l.17 ...>{\raggedright\arraybackslash}m{4.5in} | }
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -370,7 +371,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 )
-! Incomplete \iffalse; all text was ignored after line 14.
+! Incomplete \iffalse; all text was ignored after line 17.
 <inserted text> 
                 \fi 
 <*> prototipoGen.tex
@@ -386,10 +387,10 @@ the matching `\fi'. I've inserted a `\fi'; this might work.
 
  
 Here is how much of TeX's memory you used:
- 13 strings out of 493944
- 309 string characters out of 3148281
- 48988 words of memory out of 3000000
- 3395 multiletter control sequences out of 15000+200000
+ 13 strings out of 493921
+ 312 string characters out of 3147330
+ 49031 words of memory out of 3000000
+ 3406 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  19i,4n,30p,725b,90s stack positions out of 5000i,500n,10000p,200000b,50000s

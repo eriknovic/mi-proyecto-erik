@@ -73,8 +73,8 @@
 \hline
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona una de estas tres opciones: \textit{Personas (Persons)}, \textit{Documentos (Documents)}, \textit{Multimedia (Multimedia)}.}\\
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra algunas características significativas que dependen del tipo de \textit{recursos de información}.}\\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.1.- Si la opción es Personas, entonces son mostrados el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
-\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.2.- Si la opción es Documentos, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.1.- Si la opción es Persona, entonces son mostrados el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.2.- Si la opción es Documento, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.3.- Si la opción es Multimedia, entonces son mostrados el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
 \hline
 \textbf{Post-condición}& La interfaz Web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos.\\
@@ -130,6 +130,8 @@
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.- Establecer la cantidad de resultados a mostrar.} \\
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.1.- El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.} \\
 \multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.2.- El usuario escribe el número de recursos a recuperar.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{10.- El usuario da clic da en Enviar (Send).} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{11.- La interfaz Web muestra el \textit{nombre (Name)}, \textit{tipo de recurso (Resource Type)}, \textit{ruta o página web (URL)} y \textit{tópicos de redes (Topics RyT)}, para cada recurso resultante.} \\
 \hline
 \textbf{Post-condición}& La interfaz Web muestra el conjunto de resultados de la búsqueda.\\
 &También, la interfaz Web muestra para cada recurso el botón de \textit{más detalles} \textit{(More Details)}.\\
@@ -152,6 +154,82 @@
 \label{fig:iwbxt}
 \end{figure}
 
+%%%%%Filtrar por subclases de las clases Persona, Documento o Multimedia%%%%%
+\begin{table}[hp]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Filtrar por tipo personas/documentos/multimedia.\\ 
+\hline
+\textbf{Objetivo:}& Buscar los \textit{recursos de información} a partir de las subclases de Persona/Documento/Multimedia y mostrar un conjunto de \textit{características significativas} de éstos.\\
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página de \textit{Navegación entre personas/documentos/multimedia}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción para filtrar los recursos a partir de las subclases de las clases Persona, Documento o Multimedia.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.1.- Si la navegación es entre personas, entonces el usuario puede elegir las opciones: \textit{estudiante (Student)}, \textit{profesionista (Professional)}, \textit{profesor (Teacher)}, \textit{empleado (Employee)} e \textit{investigador (Researcher)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.2.- Si la navegación es entre documentos, entonces el usuario puede elegir las opciones: \textit{libro (Book)}, \textit{artículo (Paper)}, \textit{tesis (Thesis)}, \textit{reporte técnico (TechnicalReport)} e \textit{página web (Webpage)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.3.- Si la navegación es entre multimedia, entonces el usuario puede elegir las opciones: \textit{audio (Audio)}, \textit{imagen (Image)}, \textit{presentación (Presentation)} y \textit{vídeo (Video)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra algunas \textit{características significativas} de los \textit{recursos resultantes}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.1.- Si es Personas, entonces son mostrados el \textit{nombre (Name)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.2.- Si la opción es Documentos, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.3.- Si la opción es Multimedia, entonces son mostrados el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)} para todos los \textit{archivos multimedia} en la \textit{memoria corporativa} del área RyT.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra nuevamente la sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos.\\
+&También, la \textit{interfaz Web} dependiendo el tipo de recursos (Persona, Documento o Multimedia), muestra un botón de \textit{búsqueda avanzada (Advanced Search Person, Document o Multimedia)}, y para cada \textit{recurso respuesta} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para filtrar los recursos personas/documentos/multimedia por la subclases de éstos.}
+\label{tab:iwfilt}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%
+%%    FIGURA DE   %%
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Caso de uso búsqueda por topicos%%%%%
+\begin{table}[hp]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular}{| >{\raggedright\arraybackslash}m{1.5in} | >{\raggedright\arraybackslash}m{4.5in} | }
+\hline 
+\textbf{Nombre}& Búsqueda Avanzada de Personas.\\ 
+\hline
+\textbf{Objetivo:}& Estructurar la consulta de un usuario y buscar la información significativa de las personas del área de RyT, para responder esta consulta. \\ 
+\hline
+\textbf{Actor}& Usuarios.\\
+\hline
+\textbf{Pre-condición}& El usuario está en la página de \textit{navegación entre personas}.\\
+\hline
+\textbf{Secuencia de interacciones} & Prototipo de Interfaz Web para la Integración Semántica de Recursos.\\
+\hline
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{1.- El usuario selecciona la opción \textit{Tópicos de redes (Topics RyT)}.}\\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{2.- La interfaz Web muestra un formulario para estructurar la pregunta.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{3.- El usuario escribe los tópicos de RyT, separando cada uno de éstos con una coma.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{4.- El usuario selecciona el operador \textit{y (and)} u \textit{o (or)} para comparar los tópicos de RyT.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{5.- El usuario selecciona una opción de dos; \textit{exactamente los tópicos escritos} o \textit{tópicos asociados con aquellos ya escritos}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{6.- El usuario selecciona el tipo de \textit{recurso de información}: \textit{Todos}, \textit{Persona}, \textit{Documento}, \textit{Multimedia}, \textit{Artículo}, \textit{Libro} y \textit{Presentación}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.- Indicar como criterio de búsqueda el idioma o lenguaje.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.1.- El usuario selecciona el \textit{check box} \textit{lenguaje (Language)}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{7.2.- El usuario selecciona un lenguaje del \textit{combo box}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{8.- El usuario elige un opción para ordenar los resultados de la búsqueda.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.- Establecer la cantidad de resultados a mostrar.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.1.- El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{9.2.- El usuario escribe el número de recursos a recuperar.} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{10.- El usuario da clic da en Enviar (Send).} \\
+\multicolumn{2}{| >{\raggedright\arraybackslash}m{6.0in} |}{11.- La interfaz Web muestra el \textit{nombre (Name)}, \textit{tipo de recurso (Resource Type)}, \textit{ruta o página web (URL)} y \textit{tópicos de redes (Topics RyT)}, para cada recurso resultante.} \\
+\hline
+\textbf{Post-condición}& La interfaz Web muestra el conjunto de resultados de la búsqueda.\\
+&También, la interfaz Web muestra para cada recurso el botón de \textit{más detalles} \textit{(More Details)}.\\
+\hline
+\end{tabular}
+\caption{Especificación para la búsqueda por tópico(s) de redes y telecomunicaciones.}
+\label{tab:iwnm}
+\end{table}
 
 
 %%%%%%%Cualquier usuario no puede realizar el proceso de consulta (interacción) de información (integración ISR) en las ontologías de la \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. Porque los usuarios deben tener un conocimiento básico en: las tecnologías semánticas (tripletas y consultas SPARQL), el vocabulario utilizado en las tripletas (recursos y propiedades), manejo del triplestore (carga, inferencia ).
