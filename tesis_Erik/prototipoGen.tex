@@ -1,5 +1,32 @@
 \chapter{Prototipo}
 \label{cap:piu}
+La \textit{integración semántica de recursos} es el proceso de \textit{búsqueda y recuperación de información} en los \textit{recursos de información} a partir del uso de tecnologías semánticas. Esta \textit{búsqueda y recuperación} debe efectuarse por un usuario que maneje o tenga estas nociones:
+
+\begin{itemize}
+\item \textbf{Tecnologías semánticas}: tripletas rdf, consultas SPARQL, ABox, TBox, patrones, variables resultado o auxiliares, inferencia.
+\item \textbf{Herramientas y operaciones de gestión de tripletas}: triplestore, motor de inferencia, motor de consulta, carga de modelo, forma de recuperación de la información, inferencia en un modelo.
+\item \textbf{Representación del dominio}: vocabularios (URIs), propiedades, axiomas, prefijos.
+\end{itemize}
+
+Sin embargo, no todos los \textit{profesores-investigadores} y \textit{estudiantes} tienen estos conocimientos, es decir, no todos los usuarios del área de redes y telecomunicaciones aprovechan la \textit{integración semántica de recursos}. Este motivo 
+
+Por esta razón, se propone construir un prototipo de \textit{interfaz gráfica de usuario}. La \textbf{\textit{finalidad}} de éste es \textit{recuperar información} en un \textit{modelo semántico}, para responder una consulta de cualquier usuario.
+
+Estos son los objetivos funcionales de este prototipo:
+\begin{itemize}
+\item Estructurar las consultas de un usuario.
+\item Permitir búsquedas complejas de los usuarios.
+\item Recuperar la información de los \textit{recursos de información} en un modelo semántico.
+\item Utilizar modelos semánticos con inferencia.
+\item Proporcionar un servicio transparente con respecto al uso de tecnologías semánticas.
+\item Permitir el acceso vía web.
+\end{itemize}
+
+nosotros proponemos un prototipo para la interacción amigable de los usuarios con el modelo RDF, de esta forma, un usuario podrá consultar al modelo RDF y visualizar los resultados asociados a la misma, sin que éste tenga conocimientos en las Tecnologías Semánticas.
+
+
+Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
+
 
 %%%%%Figura casos de uso%%%%%
 \begin{figure}[!hp]
@@ -232,7 +259,7 @@
 \end{table}
 
 
-%%%%%%%Cualquier usuario no puede realizar el proceso de consulta (interacción) de información (integración ISR) en las ontologías de la \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. Porque los usuarios deben tener un conocimiento básico en: las tecnologías semánticas (tripletas y consultas SPARQL), el vocabulario utilizado en las tripletas (recursos y propiedades), manejo del triplestore (carga, inferencia ).
+%%%%%%%
 
 %%%%%%%La integración semántica de recursos (ISR) a partir del uso de un
 %%%%%%%triplestore, no es una tarea que cualquier usuario (profesor o estudiante) puede hacer,
@@ -247,9 +274,7 @@
 %%%%%%%Nosotros para construir el sistema seguimos una serie de actividades. En donde estas actividades se apegan a la metodología que propusimos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%La integración semántica es un proceso de búsqueda y recuperación de información sobre los recursos de una Memoria Corporativa, bajo el enfoque de las Tecnologías Semánticas. Esta integración se basa en la representación del conocimiento de los recursos en forma de un grafo RDF y en la consulta del mismo, para satisfacer la pregunta de un usuario.
-%%%%%%%%En esta integración semántica, el grafo se constituye de triples y las consultas están están compuestas de patrones parecidos a triples. Ahora bien, cualquier usuario del área de Redes y Telecomunicaciones (RyT) que quiera consultar el modelo RDF, debe aprender a construir consultas SPARQL y tener un conocimiento general sobre los triples del modelo RDF. Sin embargo, esta situación puede ser molesta para los usuarios. Así que, nosotros proponemos un prototipo para la interacción amigable de los usuarios con el modelo RDF, de esta forma, un usuario podrá consultar al modelo RDF y visualizar los resultados asociados a la misma, sin que éste tenga conocimientos en las Tecnologías Semánticas.
-%%%%%%%%Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
+%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
