@@ -1,41 +1,78 @@
 \chapter{Prototipo}
 \label{cap:piu}
-La \textit{integraciÛn sem·ntica de recursos} es el proceso de \textit{b˙squeda y recuperaciÛn de informaciÛn} en los \textit{recursos de informaciÛn} a partir del uso de tecnologÌas sem·nticas. Esta \textit{b˙squeda y recuperaciÛn} debe efectuarse por un usuario que maneje o tenga estas nociones:
+La finalidad de la \textit{integraciÛn sem·ntica de recursos} es la \textit{b˙squeda y recuperaciÛn de informaciÛn} en un modelo sem·ntico, para responder las consultas de los usuarios del ·rea de redes y telecomunicaciones. Aunque, un aspecto importante en esta \textit{b˙squeda y recuperaciÛn} es Èste: \textit{un usuario puede consultar informaciÛn en un modelo, si Èste tiene conocimientos en las \textbf{tecnologÌas sem·nticas} y en los \textbf{vocabularios de las ontologÌas}}. En concreto, Èl debe tener estas nociones:
 
 \begin{itemize}
-\item \textbf{TecnologÌas sem·nticas}: tripletas rdf, consultas SPARQL, ABox, TBox, patrones, variables resultado o auxiliares, inferencia.
+\item \textbf{TecnologÌas sem·nticas}: tripletas rdf, axiomas, consultas SPARQL, patrones, variables resultado o auxiliares, inferencia.
 \item \textbf{Herramientas y operaciones de gestiÛn de tripletas}: triplestore, motor de inferencia, motor de consulta, carga de modelo, forma de recuperaciÛn de la informaciÛn, inferencia en un modelo.
-\item \textbf{RepresentaciÛn del dominio}: vocabularios (URIs), propiedades, axiomas, prefijos.
+\item \textbf{RepresentaciÛn del dominio}: vocabularios (URIs), propiedades(URIs), tripletas de los axiomas, prefijos.
 \end{itemize}
 
-Sin embargo, no todos los \textit{profesores-investigadores} y \textit{estudiantes} tienen estos conocimientos, es decir, no todos los usuarios del ·rea de redes y telecomunicaciones aprovechan la \textit{integraciÛn sem·ntica de recursos}. Este motivo 
+Sin embargo, no todos los \textit{profesores-investigadores} y \textit{estudiantes} tienen estos conocimientos. …sto significa que no todos los usuarios del ·rea de redes y telecomunicaciones utilizan la \textit{integraciÛn sem·ntica de recursos}. Por esta razÛn, se propone construir un prototipo de \textit{interfaz gr·fica de usuario} (GUI).
 
-Por esta razÛn, se propone construir un prototipo de \textit{interfaz gr·fica de usuario}. La \textbf{\textit{finalidad}} de Èste es \textit{recuperar informaciÛn} en un \textit{modelo sem·ntico}, para responder una consulta de cualquier usuario.
+La finalidad de nuestro prototipo es proporcionar una manera f·cil, sencilla y amigable de interacciÛn entre un usuario y la \textit{integraciÛn sem·ntica de los recursos}. De esta forma, un usuario puede consultar y visualizar la informaciÛn que responde a su consulta, sin que Èste tenga conocimientos en las tecnologÌas sem·ntica o los modelos.
 
-Estos son los objetivos funcionales de este prototipo:
+\textit{Nuestro \textbf{prototipo} es una \textbf{aplicaciÛn Web} para \textbf{consultar} y \textbf{visualizar informaciÛn} de los recursos de informaciÛn}. Estos \textit{recursos} pertenecen a nuestros dos \textit{casos de uso}: cartografÌa de competencias y b˙squeda de recursos digitales.
+
+El diseÒo del prototipo es una interfaz web, para facilitar el acceso de cualquier usuario a la informaciÛn que proviene de los modelos sem·nticos. De esta manera, un usuario mediante un navegador puede acceder al prototipo y hacer consultas. Adem·s. esta interfaz no requiere que el usuario instale alguna aplicaciÛn, porque todo el proceso de integraciÛn sem·ntica se hace del lado de un servidor. Con el objetivo de utilizar este prototipo en cualquier plataforma (Windows, Linux, Mac).
+
+Los objetivos funcionales de nuestra \textit{interfaz de usuario} son:
 \begin{itemize}
-\item Estructurar las consultas de un usuario.
-\item Permitir b˙squedas complejas de los usuarios.
-\item Recuperar la informaciÛn de los \textit{recursos de informaciÛn} en un modelo sem·ntico.
+\item Visualizar \textit{informaciÛn descriptiva} (Ver Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}) de los \textit{recursos de informaciÛn}.
+\item Permitir b˙squedas complejas con base en los par·metros de b˙squeda en nuestros casos de uso (Ver SecciÛn \ref{sec:byrKrec}).
+\item Recuperar \textit{informaciÛn descriptiva} de los \textit{recursos de informaciÛn} en los modelos sem·nticos.
+\item Mostrar la informaciÛn en un entorno amigable al usuario.
 \item Utilizar modelos sem·nticos con inferencia.
 \item Proporcionar un servicio transparente con respecto al uso de tecnologÌas sem·nticas.
-\item Permitir el acceso vÌa web.
 \end{itemize}
 
-nosotros proponemos un prototipo para la interacciÛn amigable de los usuarios con el modelo RDF, de esta forma, un usuario podr· consultar al modelo RDF y visualizar los resultados asociados a la misma, sin que Èste tenga conocimientos en las TecnologÌas Sem·nticas.
+Nosotros para alcanzar estos objetivos, construimos este prototipo como un aplicaciÛn Web din·mica. Porque, para cada pregunta de los usuarios se tienen distintos listados de resultados. Adem·s, el contenido de una ontologÌa puede cambiar (aumentar, disminuir o modificar) con el tiempo, de esta manera, los resultados se mantendr·n actualizados.
 
+Este prototipo est· constituido por un conjunto de servlets y p·ginas din·micas. Las p·ginas est·ticas son formularios que permiten estructurar las consultas de los usuarios. Estos formularios reciben la informaciÛn de los usuarios y la proporcionan a los servlets. Mientras, los servlets son los encargados de: recopilar la informaciÛn para la consulta, asÌ como procesar y ejecutar la consulta en el modelo sem·ntico, recuperar la informaciÛn de Èsta, publicar la informaciÛn en el navegador del usuario.
 
-Los objetivos particulares del prototipo son: 1) permitir a los usuarios estructurar su pregunta, para que se mapee a una consulta SPARQL. 2) cargar el modelo RDF y los axiomas, e invocar el razonador para inferir nuevas relaciones al grafo RDF. 3) invocar el motor de consulta SPARQL, para que ejecute la consulta SPARQL al grafo RDF inferido. 4) mostrar para cada resultado un conjunto de datos significativos (nombre, ruta, lenguaje, etc.). A partir de estos objetivos se plantea la siguiente arquitectura.
+El motivo de usar formularios, es proporcionar al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generaciÛn din·mica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librerÌa para Java. Por esta razÛn, es f·cil la interacciÛn de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo sem·ntico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo sem·ntico, asi como publicar Èsta en lenguaje HTML\label{sym:html}.
 
+La interfaz Web al implementarse a partir del uso de servlets y p·ginas est·ticas, requiere un servidor apropiado que soporte Èstos dos elementos. Apache Tomcat\footnote{The Apache Software Foundation, ``Apache Tomcat,'' Available: \url{http://tomcat.apache.org/}} es una servidor que soporta el uso de servlets Java y p·ginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras p·ginas est·ticas y din·micas. Otra razÛn del uso de Tomcat, Èste es un software open source e implementado bajo la licencia ``Apache License version 2''.
 
-%%%%%Figura casos de uso%%%%%
-\begin{figure}[!hp]
+La Figura \ref{fig:fbes} muestra de manera general la interacciÛn de un usuario con una interfaz web del prototipo (formularios y servlets). En esta Figura, tambiÈn se presentan los procesos internos del servlet para: cargar, inferir, consultar en un modelo sem·ntico, asÌ como la visualizaciÛn de los resultados en una p·gina din·mica.
+
+%%%%%Flujo servlet y usuario%%%%%
+\begin{figure}[hp]
 \centering
-\includegraphics[height=3.5in, width=1.05\textwidth]{casosUsoIWGen}
-\caption{Casos de uso para el prototipo integrador sem·ntico.}
-\label{fig:iwnp}
+\includegraphics[width=0.5\textwidth]{DiagramaFlujo}
+\caption{Flujo b·sico de la interacciÛn de un usuario con un servlet.}
+\label{fig:fbes}
 \end{figure}
 
+Las actividades de la Figura \ref{fig:fbes} se describen en dos etapas: \textbf{\textit{pre-consulta}} e \textbf{\textit{in-consulta}}. Las actividades de la \textit{pre-consulta} son las siguientes. El usuario escribe la direcciÛn URL\label{sym:url} del formulario en su navegador. El sistema proporciona el formulario al navegador del usuario. El usuario escribe los valores de su consulta en el formulario y da clic en enviar. El sistema invoca al servlet y el sistema le proporciona los valores del formulario. El servlet transforma los valores del formulario a una consulta SPARQL. El servlet carga el ABox del modelo (\textit{Recursos Persona} o \textit{Recursos Digitales}) y los TBoxes (\textit{Recursos Persona-Vocabulario RyT} o \textit{Recursos Digitales-Vocabulario RyT}) en memoria RAM\label{sym:ram}. El servlet invoca al \textit{motor de inferencia} y genera un modelo inferido a partir del ABox y los TBoxes.
+
+Mientras las etapas de la \textit{in-cosulta} son Èstas. El servlet ejecuta la consulta SPARQL a partir del modelo inferido. Si esta consulta tiene respuestas, entonces el servlet recupera de manera iterativa los valores resultantes de la consulta y los incrusta entre etiquetas HTML. El servlet agrega las etiquetas necesarias (cabeceras, cuerpo, etc.) para que la p·gina din·mica estÈ bien formada. El servlet libera memoria RAM del ABox, los TBoxes y el modelo inferido. El servlet envÌa la p·gina din·mica (HTML) al navegador del usuario. Ahora bien, si la consulta no tiene respuestas, el servlet manda una p·gina din·mica con el mensaje: ``No se han encontrado resultados''.
+
+Este prototipo de GUI debe permitir la realizaciÛn de estas actividades:
+--->Aqui voy
+Esta interfaz permite a un usuario la realizaciÛn de estas actividades: 1) visualizar la informaciÛn de los recursos a partir de las clases (Persona, Documento, Multimedia), 2) filtrar los recursos por subclases, 3) realizar b˙squedas avanzada de los recursos con base en sus metadatos, 4) estructurar la pregunta de Èste, 5) visualizar los resultados de la pregunta y 6) visualizar toda la informaciÛn de un recurso, como ficha descriptiva.
+
+realizar estas actividades: estructurar la pregunta de un usuario, transformar la pregunta a su respectiva consulta SPARQL, cargar 
+
+La interfaz debe proporcionar un navegaciÛn entre la informaciÛn de las personas, documentos, multimedia, para que los usuarios que no tienen alg˙n conocimiento de la informaciÛn de estos recursos, puedan tener una visiÛn general de la informaciÛn descriptiva de los recursos.
+
+%%La interfaz debe permitir hacer las siguientes actividades a los usuarios:
+%%‚Ä¢	Login.
+%%‚Ä¢	Navegar entre personas.
+%%o	Filtrar por ocupaci√≥n.
+%%o	Mostrar la informaci√≥n m√°s detallada de una persona.
+%%o	B√∫squeda Avanzada de las personas.
+%%‚Ä¢	Navegar entre documentos.
+%%o	Filtrar por clase de documento.
+%%o	Mostrar la informaci√≥n m√°s detallada de un documento.
+%%o	B√∫squeda Avanzada de documentos.
+%%‚Ä¢	Navegar entre multimedia.
+%%o	Filtrar por clase multimedia.
+%%o	Mostrar la informaci√≥n m√°s detallada de un recurso multimedia.
+%%o	B√∫squeda Avanzada de recursos multimedia.
+%%‚Ä¢	B√∫squeda en todos los recursos de informaci√≥n por informaci√≥n semejante.
+
+En las siguientes secciones se presentan las especificaciones que est·n asociadas a las interfaces del prototipo.
 
 %%%%%DescripciÛn caso vlidaciÛn%%%%%
 \begin{table}[!hp]
@@ -257,55 +294,3 @@ Los objetivos particulares del prototipo son: 1) permitir a los usuarios estruct
 \caption{EspecificaciÛn para la b˙squeda por tÛpico(s) de redes y telecomunicaciones.}
 \label{tab:iwnm}
 \end{table}
-
-
-%%%%%%%
-
-%%%%%%%La integraciÛn sem·ntica de recursos (ISR) a partir del uso de un
-%%%%%%%triplestore, no es una tarea que cualquier usuario (profesor o estudiante) puede hacer,
-%%%%%%%ya que Èste debe estar familiarizado con el triplestore, el
-%%%%%%%lenguaje de consulta SPARQL y las ternas RDF.
-%%%%%%%
-%%%%%%%
-%%%%%%%La manera de probar el enfoque sem·ntico y la integraciÛn sem·ntica es desarrollar un prototipo de sistema.
-%%%%%%%
-%%%%%%%Este prototipo basa su funcionamiento en los elementos, tecnologÌas y est·ndares actuales de la Web Sem·ntica.
-%%%%%%%
-%%%%%%%Nosotros para construir el sistema seguimos una serie de actividades. En donde estas actividades se apegan a la metodologÌa que propusimos.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%No solo basta con un razonador tambi√©n se requiere un modulo integrador de la informaci√≥n que transforme las consultas de los usuarios expresadas en lenguaje natural, a lenguaje que sea interpretado por el razonador. Adem√°s este integrador es el encargado de regresar los enlaces y los datos del recurso. De esta manera el motor de b√∫squeda queda de la siguiente manera:
-
-%%Para llevar acabo est√° integraci√≥n de la informaci√≥n es necesario un prototipo que satisfaga m√°s eficientemente las consultas que escribe el usuario. De esta manera es necesario un an√°lisis documental y t√©cnico de los m√≥dulos de Anotaciones, Ontolog√≠a de Dominio y Razonadores. Con la finalidad de tener una propuesta de sistema con las √∫ltimas novedades hechas en b√∫squeda y recuperaci√≥n de la informaci√≥n basada en la sem√°ntica de los recursos.
-
-%%se requiere proporcionar interfaces f√°ciles de usar, para simplificar a los miembros el proceso de generaci√≥n de anotaciones y colocar en contexto su trabajo.  Un buen enfoque para un sistema de anotaciones es aquel donde se maneja una √∫nica interfaz, y es en esta donde los usuarios crean, modifican y comparten sus anotaciones.
-
-%%La interfaz debe tener ..., para que los usuarios estructuren sus consulta, capturando los valores que desean buscar. En la interfaz debe proporcionar un navegador entre personas, documentos, multimedia, para que los usuarios que no tienen alg√∫n conocimiento previo de las personas y recursos digitales, puedan tener una vision general de la informaci√≥n de los recursos.
-
-%%La interfaz debe permitir hacer las siguientes actividades a los usuarios:
-%%‚Ä¢	Login.
-%%‚Ä¢	Navegar entre personas.
-%%o	Filtrar por ocupaci√≥n.
-%%o	Mostrar la informaci√≥n m√°s detallada de una persona.
-%%o	B√∫squeda Avanzada de las personas.
-%%‚Ä¢	Navegar entre documentos.
-%%o	Filtrar por clase de documento.
-%%o	Mostrar la informaci√≥n m√°s detallada de un documento.
-%%o	B√∫squeda Avanzada de documentos.
-%%‚Ä¢	Navegar entre multimedia.
-%%o	Filtrar por clase multimedia.
-%%o	Mostrar la informaci√≥n m√°s detallada de un recurso multimedia.
-%%o	B√∫squeda Avanzada de recursos multimedia.
-%%‚Ä¢	B√∫squeda en todos los recursos de informaci√≥n por informaci√≥n semejante.
-
-%%Las distintas aplicaciones que hay pueden ser elaboradas para Windows, Linux, Macs, u otros sistemas operativos, y tambi√©n se pueden tener distintas versiones del mismo sistema para poder trabajar entre los distintos sistemas operativos. Lo ideal es que sin importar cual sea el sistema operativo el usuario pueda realizar sus anotaciones sem√°nticas, para logara esto se puede emplear una aplicaci√≥n web o aplicaciones elaboradas en java.
-%%Si se emplea una aplicaci√≥n web no es necesario instalar alg√∫n software extra, solo basta que el usuario acceda utilizando su navegador web de preferencia y comience el proceso de creaci√≥n de anotaciones sem√°nticas.
-
-%%Por otro lado al usar una aplicaci√≥n basada en Java, es necesario tener Java Development Kit (JDK) que es independiente de la plataforma, para tener un entorno amigable al usuario.
-
-%%Finalmente, los usuarios necesitan una interfaz de usuario, para la consulta de informaci√≥n de las tripletas. Nosotros proponemos una interfaz amigable que sea accesible v√≠a Web. De esta manera, los usuarios no instalan ning√∫n componente y simplemente acceden a la p√°gina Web del sistema.
-%%La interfaz al ser accesible v√≠a Web, requiere ser instalada en un servidor Web. Para tomar la decisi√≥n sobre qu√© servidor es el apropiado para la interfaz. Nosotros debemos tomar en cuenta, el lenguaje de implementaci√≥n del triplestore. Si el lenguaje es PHP9, entonces, podemos emplear un servidor HTTP Apache10. En otro caso, si el lenguaje es Java11 y permite implementar Servlet, entonces el servidor es Apache Tomcat12. 

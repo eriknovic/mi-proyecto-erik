@@ -49,17 +49,17 @@
 \contentsline {figure}{\numberline {5.35}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{75}
 \contentsline {figure}{\numberline {5.36}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{76}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Casos de uso para el prototipo integrador sem\'antico.}}{78}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{79}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{79}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{79}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{81}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{81}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{81}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{81}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{83}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{83}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{83}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{79}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{82}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{82}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{82}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{84}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{84}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{84}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{84}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{86}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{86}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{86}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
