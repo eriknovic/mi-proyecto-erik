@@ -50,16 +50,30 @@
 \contentsline {figure}{\numberline {5.36}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{76}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{79}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{82}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{82}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{82}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{84}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{84}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{84}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{84}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{86}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{86}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{86}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{83}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{83}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{83}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{85}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{85}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{85}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{85}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Interfaces Web: filtrar los recursos por subclases de Persona, Documento y Multimedia.}}{87}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: filtrar personas por estudiantes}}}{87}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: filtrar documentos por art\IeC {\'\i }culos cient\IeC {\'\i }ficos}}}{87}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: filtrar recursos multimedia por v\IeC {\'\i }deos}}}{87}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Formulario Web: b\'usqueda avanzada de personas.}}{90}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de personas.}}{91}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Formulario Web: b\'usqueda avanzada de documentos.}}{94}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de documentos.}}{95}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Formulario Web: b\'usqueda avanzada de multimedia.}}{97}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de multimedia.}}{98}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{99}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{99}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{99}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Interfaces Web: mostrar detalles de un recurso de informaci\'on.}}{101}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: mostrar detalles de la profesora \textit {Amelia Alles Estrada}}}}{101}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: mostrar detalles del libro Using \textit {Ontologies in the Semantic Web: A Survey}}}}{101}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: mostrar detalles del v\IeC {\'\i }deo \textit {The Semantic Web - An Overview}}}}{101}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
