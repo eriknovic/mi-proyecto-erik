@@ -1,0 +1,541 @@
+\chapter{Transformación de preguntas a consultas SPARQL}
+\label{aped:TrPC}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+\BlankLine
+SELECT ?name ?mail ?ws ?gender ?age \\
+WHERE \{ \\
+\Indp ?x	sirp:has-name ?name\;
+			sirp:has-email ?mail\;
+			sirp:has-webSite ?ws\;
+			sirp:has-gender ?gender. \\
+			OPTIONAL \{?x sirp:has-age ?age\} \\
+\Indm \}
+\label{alg:spa1p1}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.1} ¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT.}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT  ?name ?ws ?work  \\
+%WHERE \{ \\
+%\Indp ?x 	sirp:has-name ?name\;
+%			sirp:has-webSite ?ws. \\
+%	\{?x sirp:worksIn ?work.\} UNION \\
+%	\{?x sirp:studiesIn ?work.\} \\
+%\Indm \}
+%\label{alg:spa1p2}
+%\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.2} ¿Cuáles son los nombres, sitios web y los lugares donde laboran las personas del RyT?}
+%\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT  ?name ?ws ?work  \\
+WHERE \{ \\
+\Indp ?x	sirp:has-name ?name\;
+			sirp:has-webSite ?ws\;
+			sirp:has-workplace ?work. \\
+\Indm \}
+\label{alg:spa1p2}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.2} ¿Cuáles son los nombres, sitios web y los lugares donde laboran las personas del RyT?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	sirp:has-name ?name\;
+			sirp:has-webSite ?ws\;
+			sirp:has-age ?edad.\\
+		FILTER (45 > ?edad \&\& ?edad > 20) \\
+\Indm \}
+\label{alg:spa1p3}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.3} ¿Quiénes son mayores de 20 años y menores de 45 años?}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT ?name ?ws \\
+%WHERE \{ \\
+%\Indp \{?x rdf:type sirp:Teacher.\} UNION \\
+%	\{?x rdf:type sirp:Employee.\} \\
+%		?x	sirp:has-name ?name\;
+%			sirp:has-webSite ?ws. \\
+%\Indm \}
+%\label{alg:spa1p4}
+%\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.4} ¿Cuáles son los nombres y sitios web de los profesionistas del área de RyT?}
+%\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x 	rdf:type sirp:Professional\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p4}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.4} ¿Cuáles son los nombres y sitios web de los profesionistas del área de RyT?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	sirp:has-gender sirp:Male\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws\;
+			sirp:worksIn sirp:ClarkParsia.\\
+\Indm \}
+\label{alg:spa1p5}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.5} ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	rdf:type sirp:Student\;
+			sirp:reads sirp:English\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p6}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.6} ¿Quiénes son estudiantes y leen en inglés?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	sirp:reads sirp:English\;
+			sirp:speaks sirp:English\;
+			sirp:writes sirp:English\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p7}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.7} ¿Quienes hablan, leen y escriben en inglés?}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT ?name ?ws \\
+%WHERE \{ \\
+%\Indp \{?x sirp:reads sirp:German.\} UNION\\
+%	  \{?x sirp:speaks sirp:German.\} UNION\\
+%	  \{?x sirp:writes sirp:German.\} \\
+%		?x	rdf:type sirp:Student\;
+%			sirp:has-name ?name\;
+%			sirp:has-webSite ?ws.\\
+%\Indm \}
+%\label{alg:spa1p8}
+%\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.8} ¿Qué estudiantes saben algo de inglés?}
+%\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x 	sirp:has-language sirp:German\;
+			rdf:type sirp:Student\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p8}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.8} ¿Qué estudiantes saben algo de inglés?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x 	sirp:competentIn sirp:Synthesis\_Skills\;
+			rdf:type sirp:Teacher\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p9}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.9} ¿Qué profesores tienen la capacidad de síntesis?}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT ?name ?ws \\
+%WHERE \{ \\
+%\Indp \{?x rdf:type sirp:Teacher.\} UNION \\
+%	  \{?x rdf:type sirp:Employee.\} \\
+%		?x	sirp:expertiseIn redes:Semantic\_Web\;
+%			sirp:has-name ?name\;
+%			sirp:has-webSite ?ws.\\
+%\Indm \}
+%\label{alg:spa1p10}
+%\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.10} ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?}
+%\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema\#>\\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?k 	rdfs:subClassOf redes:Semantic\_Web.\\
+	  ?x 	rdf:type sirp:Professional\;
+			sirp:expertiseIn ?k\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p10}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.10} ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	rdf:type sirp:Teacher\;
+			sirp:expertiseIn redes:Distributed\_Systems\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p11}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.11} ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x 	sirp:expertiseIn redes:Java, redes:OWL, redes:RDF, \\ 
+\Indp				redes:Threads, redes:C, redes:OpenMP\;
+\Indm		sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p12}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.12} ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT ?name ?ws \\
+%WHERE \{ \\
+%\Indp \{?x	sirp:expertiseIn redes:Invocation.\} UNION \\
+%	  \{?x sirp:expertiseIn redes:Process\_Management.\} UNION\\
+%	  \{?x sirp:expertiseIn redes:Processes.\} UNION\\
+%	  \{?x sirp:expertiseIn redes:Threads.\} UNION\\
+%	  \{?x sirp:expertiseIn redes:Operating\_System.\} \\
+%		?x	sirp:has-name ?name\;
+%			sirp:has-webSite ?ws.\\
+%\Indm \}
+%\label{alg:spa1p13}
+%\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.13} ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?}
+%\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema\#>\\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?k	rdfs:subClassOf redes:Operating\_system.\\
+	  ?x	sirp:expertiseIn ?k\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p13}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.13} ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?}
+\end{algorithm}
+
+%\begin{algorithm}
+%PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+%PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+%PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+%SELECT DISTINCT ?name ?ws \\
+%WHERE \{ \\
+%\Indp \{?x	sirp:worksIn sirp:UAM.\} UNION \\
+%	  \{?x	sirp:worksIn sirp:UNAM.\} UNION \\
+%	  \{?x	sirp:worksIn sirp:IPN.\}\\
+%			?x	sirp:has-name ?name\;
+%				sirp:has-webSite ?ws.\\
+%\Indm \}
+%\label{alg:spa1p14a}
+%\caption{Consulta SPARQL sin inferencia asociada a la pregunta \textit{Q1.14} ¿Quiénes trabajan en una Universidad?}
+%\end{algorithm}
+
+\clearpage
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?k rdf:type sirp:University. \\
+	  ?x	sirp:worksIn ?k\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p14}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.14} ¿Quiénes trabajan en una Universidad?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x 	sirp:has-workplace sirp:UAM\;
+			sirp:expertiseIn redes:Semantic\_Web\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p15}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.15} ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x sirp:has-advisor ?y.\\
+	  ?y sirp:has-name ?z.\\
+	  FILTER regex(?z, ``Carolina Medina'',``i'')\\
+	  ?x sirp:has-name ?name\;
+	  sirp:has-webSite ?ws. \}
+\label{alg:spa1p16}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.16} ¿Qué personas tienen como asesor a Carolina Medina?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?y sirp:has-name ?z.\\
+	  FILTER regex(?z, ``Ricardo Marcelin'', ``i'')\\
+	  ?x	sirp:has-colleague ?y\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\\
+\Indm \}
+\label{alg:spa1p17}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.17} ¿Quiénes son los colegas de Ricardo Marcelin?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?y sirp:has-name ?z.\\
+	  FILTER regex(?z, ``Carolina Medina Ramirez'',``i'')\\
+	  ?x 	sirp:knows ?y\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws. \}
+\label{alg:spa1p18}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.18} ¿Cuáles son los nombres y correos de las personas que conocen a Carolina Medina Ramírez?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl\#> \\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> \\
+SELECT DISTINCT ?name ?ws \\
+WHERE \{ \\
+\Indp ?x	rdf:type sirp:Researcher\;
+			sirp:has-name ?name\;
+			sirp:has-webSite ?ws.\}
+\label{alg:spa1p19}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q1.19} ¿Qué personas son profesores-investigadores?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT ?title ?path ?ext ?lang \\
+WHERE \{ \\
+\Indp ?x	sird:has-title ?title\;
+			sird:has-filePath ?path\;
+			sird:has-fileExtension ?ext\;
+			sird:has-languageSource ?lang.\\
+\Indm \}
+\label{alg:spa2p1}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.1} ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	rdf:type sird:Book\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path\;
+			sird:has-topic ?k.\\
+	  ?k 	rdfs:subClassOf redes:Distributed\_Systems.\\
+\Indm \}
+\label{alg:spa2p2}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.2} ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x 	sird:publishedIn sirp:UAM\;
+			sird:has-filePath ?path\;
+			sird:has-title ?title.\\
+\Indm \}
+\label{alg:spa2p3}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.3} ¿Qué recursos fueron publicados por la UAM?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x 	rdf:type sird:Document\;
+			sird:has-topic redes:Peer\_to\_Peer\_Systems\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+\Indm \}
+\label{alg:spa2p4}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.4} ¿Qué documentos sirven para dar un curso de Sistemas P2P?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	rdf:type sird:Multimedia\;
+			sird:has-year ?year\;
+		  	sird:has-title ?title\;
+		  	sird:has-filePath ?path.\\
+		FILTER (?year > 2009)\\
+\Indm \}
+\label{alg:spa2p5}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.5} ¿Qué recursos multimedia son mayores al año 2009?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	rdf:type sird:Document\;
+			sird:has-topic redes:Ontology\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+\Indm \}
+\label{alg:spa2p6}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.6} ¿Cuáles documentos tratan sobre Ontologías?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	sird:publishedInJournal ?k\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+\Indm \}
+\label{alg:spa2p7}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.7} ¿Qué recursos fueron publicados en una Revista científica?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x sird:has-compendium ?txt \\
+	  FILTER regex(?txt,``state of the art'',``i'')\\
+	  ?x	sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+\Indm \}
+\label{alg:spa2p8}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.8} ¿Qué recursos tienen en su descripción las palabras ``linked data''?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	rdf:type sird:Document\;
+			sird:has-year ?year.\\
+	  FILTER (?year > 2000)\\
+	  ?x	sird:has-languageSource sirp:English\;
+			sird:has-author ?z\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+	  FILTER regex(?z, ``Erik Alarcon Zamora'', ``i'')\\
+\Indm \}
+\label{alg:spa2p9}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.9} ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?}
+\end{algorithm}
+
+\begin{algorithm}
+PREFIX sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl\#>\\
+PREFIX redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl\#>\\
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#>\\
+SELECT DISTINCT ?title ?path \\
+WHERE \{ \\
+\Indp ?x	rdf:type sird:Thesis\;
+			sird:has-author ?y\;
+			sird:has-title ?title\;
+			sird:has-filePath ?path.\\
+	  FILTER regex(?y, ``Samuel Hernandez Maza'',``i'')\\
+\Indm \}
+\label{alg:spa2p10}
+\caption{Consulta SPARQL asociada a la pregunta \textit{Q2.10} ¿Cuál son las tesis de Samuel Hernandez Maza?}
+\end{algorithm}

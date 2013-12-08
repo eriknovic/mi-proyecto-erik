@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  7 DEC 2013 04:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  8 DEC 2013 03:43
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -388,18 +388,18 @@ Package: Tabbing 1997/12/18 v1.0 Tabbing environment (JPFD)
 )
 Package color Info: Redefining color black on input line 34.
  (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -415,7 +415,7 @@ LaTeX Font Info:    ... okay on input line 67.
 \makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks33
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 67.
+LaTeX Info: Redefining \selectfont on input line 68.
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
@@ -1306,23 +1306,34 @@ t/12 nombre[]$\T1/cmr/m/n/12 );
 
 [125
 
-] [126]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl
-[127] [128
+] [126]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendB.tex [127]
+[128
 
-] [129] [130] [131]) [132]
+]
+Ap\'{e}ndice B.
+[129] [130] [131] [132] [133])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [134
+
+] [135]
+[136] [137] [138] [139] [140
+
+] [141] [142] [143]) [144]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 6647 strings out of 493944
- 91563 string characters out of 3148281
- 190767 words of memory out of 3000000
- 9669 multiletter control sequences out of 15000+200000
+ 6713 strings out of 493944
+ 92468 string characters out of 3148281
+ 193262 words of memory out of 3000000
+ 9732 multiletter control sequences out of 15000+200000
  28057 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,18n,43p,2052b,571s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,2052b,571s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
@@ -1349,9 +1360,9 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (150 pages, 4543202 bytes).
+Output written on tesis_Erik.pdf (162 pages, 4562029 bytes).
 PDF statistics:
- 1326 PDF objects out of 1440 (max. 8388607)
+ 1364 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
