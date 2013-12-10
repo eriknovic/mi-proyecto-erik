@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  8 DEC 2013 03:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 DEC 2013 15:48
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -379,15 +379,12 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip97
 \algorithmicindent=\skip98
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\Tabbing\tabbing.sty"
-
-LaTeX Warning: You have requested package `tabbing',
-               but the package provides `Tabbing'.
-
+("C:\Program Files\MiKTeX 2.9\tex\latex\Tabbing\Tabbing.sty"
 Package: Tabbing 1997/12/18 v1.0 Tabbing environment (JPFD)
 )
 Package color Info: Redefining color black on input line 34.
- (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
@@ -610,9 +607,9 @@ File: TripletasInferidas.pdf Graphic file (type pdf)
 Package pdftex.def Info: TripletasInferidas.pdf used on input line 348.
 (pdftex.def)             Requested size: 472.04022pt x 142.26309pt.
  [28])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estado.tex [29 <C:/Users/Gatito/D
-esktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/Gatito/Desktop/GoogleSV
-N/tesis_Erik/SparqlExmpReaz.pdf
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estadoNew.tex [29 <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/Gatito/Desktop/Googl
+eSVN/tesis_Erik/SparqlExmpReaz.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Spa
 rqlExmpReaz.pdf): PDF inclusion: multiple pdfs with page group included in a si
@@ -1322,13 +1319,10 @@ Ap\'{e}ndice B.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 6713 strings out of 493944
- 92468 string characters out of 3148281
+ 6714 strings out of 493944
+ 92484 string characters out of 3148281
  193262 words of memory out of 3000000
  9732 multiletter control sequences out of 15000+200000
  28057 words of font info for 66 fonts, out of 3000000 for 9000
@@ -1360,7 +1354,7 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (162 pages, 4562029 bytes).
+Output written on tesis_Erik.pdf (162 pages, 4561959 bytes).
 PDF statistics:
  1364 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

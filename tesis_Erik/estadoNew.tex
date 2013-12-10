@@ -1,0 +1,185 @@
+\chapter{Estado del arte}
+\label{cap:soa}
+En este apartado se presenta la \textit{revisión actual} de aquellos trabajos que están relacionados con la \textit{integración semántica de recursos}. Esta revisión se basa en estos \textit{ejes claves de investigación}:
+
+\begin{enumerate}
+\item Integración del conocimiento a partir del uso de tecnologías semánticas.
+\item Búsqueda, recuperación y publicación de la información desde un modelo semántico.
+\item Gestión de una memoria corporativa.
+\item Uso de un modelo semántico para el dominio de las telecomunicaciones.
+\end{enumerate}
+
+La \textit{revisión de la literatura} también contempla el estudio de aplicaciones y herramientas para desarrollar la \textit{integración semántica de recursos en una memoria corporativa}. Esta \textit{revisión de herramientas} se hace con base en estas funcionalidades:
+
+\begin{enumerate}
+\item Escribir y guardar automáticamente \textit{tripletas RDF} en alguna sintaxis de serialización RDF.
+\item Escribir, guardar y visualizar automáticamente los axiomas con los vocabularios OWL y RDF(S).
+\item Gestionar las \textit{tripletas RDF} con fines de almacenamiento, carga en memoria, búsqueda e inferencia a partir de éstas.
+\end{enumerate}
+
+La Sección \ref{sec:eoats} muestra y describe las aplicaciones estudiadas con base en su funcionalidad; al final de cada agrupación, se da a conocer: \textit{cuál herramienta se eligió para facilitar y efectuar la funcionalidad dada}.
+
+\section{Integración semántica de recursos de información}
+\label{sec:eoaisr}
+La \textit{integración semántica de recursos} tiene por objetivo la búsqueda y recuperación de información en los recursos, para responder las necesidades informativas de las personas. Esta integración emplea las tecnologías semánticas para representar, enriquecer y consultar la información, así como el conocimiento de/en los recursos de un dominio. El uso de una \textit{memoria corporativa} se traduce en información y conocimiento de los recursos bajo un dominio particular.
+%Algunos trabajos exploran o emplean el enfoque de las \textit{tecnologías semánticas} para fines de \textit{integración del conocimiento}, representación de una memoria corporativa o búsqueda de información. A continuación, se describe el estado actual del conocimiento referente a estos trabajos.
+
+\subsection{Integración del conocimiento a partir del uso de tecnologías semánticas}
+El elemento clave en estos trabajos es la utilización de \textit{tecnologías semánticas} para representar las características y relaciones de los recursos en un \textit{modelo semántico} (formato estándar). Esta \textit{representación semántica} permite la \textit{integración de información} desde los diversos \textit{recursos de información}, con el fin de superar las dificultades en la heterogeneidad de formato, contenido y estructura en los recursos.
+
+La \textit{representación semántica de la información} es el piedra angular para realizar otras actividades como: visualización de la información, búsqueda y recuperación de la información, acceso a los recursos, tareas de inferencia, agregar y extender el conocimiento, compartir la información, por mencionar algunas.
+
+Moner et al. \cite{Archetype} proponen un \textit{arquitectura dual} para la representación consistente y comprensible de la información clínica de cualquier persona. La finalidad es que profesionales de la salud puedan acceder al historial clínico de los pacientes.
+
+La \textit{arquitectura dual} se basa en un modelo que representa la información y el conocimiento. Por un lado, la información se describe en estructuras de datos comunes de los \textit{historiales clínicos} que están distribuidos en varios sistemas independientes y heterogéneos. Por otro lado, en la representación del conocimiento se emplean arquetipos para describir el conocimiento formal de conceptos clínicos.
+
+En esta arquitectura dual, los autores presentan a LinkEHR-Ed; una herramienta para desarrollar arquetipos de datos clínicos. La finalidad de ésta es que los profesionales de la salud sean los constructores del conocimiento.
+
+K. Yang y R. Steele proponen un \textit{marco de integración semántica} \cite{Accommodation} como solución eficaz y flexible para la integración de la información en el dominio del alojamiento en-línea. El objetivo de este trabajo reunir y compartir la información en constante cambio que procede de páginas web de alojamiento en-línea.
+
+Este marco propone estos elementos para representar e integrar el conocimiento procedente de distintos servidores. Primero, emplear un \textit{proceso automático} para resolver la naturaleza dinámica de las fuentes de información. Segundo, emplear \textit{ontologías} locales para facilitar el acceso a la \textit{información integrada} y solucionar la heterogeneidad en la estructura de la información. Tercero, emplear un conjunto de \textit{esquemas}, basados en la ontologías locales, para el intercambio de información. Finalmente, permitir a los \textit{propietarios de la información} verificar la información que es integrada.
+
+Jun Zhai et al. \cite{JunZhai} proponen una \textit{integración semántica} en \textbf{sistemas de información de energía eléctrica}} (heterogéneos con funciones y organizaciones descentralizadas) a partir del uso de ontologías.
+
+La propuesta de Jun Zhai et al. emplea dos \textit{elementos semánticos} para la integración de la información. La primera es el \textbf{lenguaje de marcado extensible} (XML\label{sym:xml}, para intercambiar información entre los \textit{sistemas de información eléctrica}. La segunda es una \textit{ontología} para describir formalmente la información, a nivel conceptual, en el dominio de la electricidad.
+
+Esta \textit{integración de información} emplea una arquitectura de tres capas: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
+
+%%%Los trabajos  considerados para este \textit{estado del arte} son aquellos que utilizan alguno de los criterios de la Tabla \ref{tab:crit}.
+%\begin{table}[!htb]
+%\renewcommand{\arraystretch}{1.3}
+%\centering
+%\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{3.7in} >{\centering\arraybackslash}m{0.9in}}
+%\hline
+%\textbf{Criterio} & \textbf{Descripción} & \textbf{Definición formal}\\
+%\hline
+%\hline
+%Integración de información en los recursos & Ésta consiste en el proceso de búsqueda y recuperación de la información sobre los recursos de información. & Sección \ref{sec:intdk} \\
+%\hline
+%Memoria corporativa & Ésta es la representación consistente y formal del conocimiento en una organización. & Sección \ref{sec:mecor} \\
+%\hline
+%Modelo semántico & Éste es la representación del conocimiento a partir de las tecnologías semánticas. & Secciones \ref{sec:rdf} y \ref{sec:reginf} \\
+%\hline
+%Inferencia en el modelo & Ésta consiste en deducir información a partir de los axiomas en el modelo. & Sección \ref{sec:reginf} \\
+%\hline
+%Interfaz visual para la integración & Ésta es un aplicación con una enfoque visual para que las personas pregunten o naveguen a través de la información en el modelo semántico. & Sección \ref{cap:piu} \\
+%\hline 
+%\end{tabular}
+%\caption{Criterios considerados para el \textit{estado del arte} de la integración semántica de recursos.}
+%\label{tab:crit}
+%\end{table}
+
+Éstas son las características asociadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, el objetivo de la arquitectura dual es facilitar la información clínica de los pacientes a los profesionales de la salud} y 2) \textit{\textbf{Modelo semántico}, la arquitectura dual por un lado representa las estructuras de datos comunes y por otro lado, representar el conocimiento formal de conceptos clínicos a partir del uso de arquetipos.}
+
+Éstas son características del \textit{marco de integración semántica} que están vinculadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, este trabajo es una propuesta para reunir y compartir la información del alojamiento en-línea} y 2) \textit{\textbf{Modelo semántico}, este marco propone el uso de una ontología para modelar la información del dominio de alojamiento en-línea.}
+
+En el trabajo de Jun Zhai, éstas son las características asociadas a nuestros criterios de investigación: 1) \textit{\textbf{Integración de información}, este trabajo propone una integración semántica para especificar la información a nivel semántico, proveniente de los sistemas de información de energía eléctrica}, 2) \textit{\textbf{Modelo semántico}, Jun Zhai et al. emplean a XML para el intercambio de información entre estos sistemas, así como una ontología para describir formalmente los conceptos en el dominio de la electricidad} y 3) \textit{\textbf{Inferencia en el modelo}, este trabajo emplea al proceso de inferencia como herramienta para la construcción de modelos (conceptos y datos XML) consistentes}.
+-----> debes revisar lo de arriba para ver cuales son la limitantes que estos trabajos no tienen en la integración del conocimiento.
+
+El objetivo de representación en un modelo semántico es superar los limites de la diversidad de los \textit{recursos de información}. 
+1) \textit{integración de la información} desde los diversos \textit{recursos de información} (heterogéneos en formato, contenido y estructura), 2) búsqueda, recuperación y publicación de información proveniente de un modelo semántico y 3) uso de un modelo semántico de telecomunicaciones.
+
+\begin{itemize}
+\item Xin y Guangleng \cite{WangXin} emplean un \textit{enfoque basado en las \textbf{ontologías} para capturar la \textbf{información de la ``justificación del diseño''}}. Esta \textit{justificación del diseño (design rationale)} es un conocimiento para explicar qué y cómo se diseña un producto, así como para apoyar la reutilización, comunicación y verificación de diseños en empresas manufactureras. En este trabajo, se emplea una memoria corporativa para las actividades de gestión del conocimiento, en particular, las actividades de captura y disponibilidad en la \textit{justificación del diseño}. Las ontologías permiten el acceso uniforme a las fuentes de información, y en este trabajo, éstas modelan la \textit{justificación del diseño} para el background del diseño de autos de carga.
+\end{itemize}
+
+En este trabajo de Xin y Guangleng, éstas son las características asociadas a nuestros criterios de investigación: \textit{\textbf{Integración de la información}, la finalidad de este trabajo es capturar, reutilizar y comunicar la información de las distintas tareas de la ``justificación del diseño''}, 2) \textit{\textbf{Memoria Corporativa}, este trabajo emplea una memoria corporativa para las actividades de captura y disponibilidad en la ``justificación del diseño''} y 3) \textit{\textbf{Modelo semántico}, Xin y Guangleng emplean a las ontologías para capturar la información de la ``justificación del diseño'' y tener el acceso de manera uniforme a los recursos de información}
+
+\begin{itemize}
+\item \textbf{\textit{PCOGEME}} \cite{Behja} es un \textbf{\textit{entorno de colaboración}} para la \textit{creación, gestión, difusión, mantenimiento de memorias corporativas}. En este trabajo, las memorias corporativas son mecanismos para la gestión del conocimiento y documentos. PCOGEME propone un modelo de interacción basado en las ontologías para la representación y gestión de estas memorias. El funcionamiento de PCOGEME se basa en la lluvia de ideas y un mecanismo de toma de decisiones consensuadas, para la construcción de memorias corporativas mediante el uso de ontologías.
+\end{itemize}
+
+Éstas son características del \textit{PCOGEME} que están vinculadas a nuestros criterios de investigación: 1) \textit{\textbf{Memoria corporativa}, en este trabajo se emplea a la memoria corporativa como mecanismo para la gestión del conocimiento y los documentos} y 2) \textit{\textbf{Modelo semántico}, este trabajo propone a las ontologías como medio para la representación y gestión de/en una memoria corporativa}
+
+Para concluir esta Sección \ref{sec:eoaisr}, se presenta la Tabla \ref{tab:soasi}, la cual resume todos los valores asociados a nuestros criterios investigación para cada trabajo estudiado. Las cabeceras en esta Tabla están en forma abreviada y estos son sus significados: \textbf{IIR} = integración de información en los recursos, \textbf{MC} = memoria corporativa, \textbf{MS} = modelo semántico, \textbf{IeM} = inferencia en el modelo y \textbf{IVpI} = interfaz visual para la integración.
+
+%Estos criterios de investigación están en la Tabla \ref{tab:crit}.
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+  \centering
+  \smallskip 
+  \begin{threeparttable}
+      \begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{0.6in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.95in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.8in}}
+		\hline
+		\textbf{Trabajo} & \textbf{IIR} & \textbf{MC} & \textbf{MS} & \textbf{IeM} & \textbf{IVpI}\\
+		\hline
+		\hline
+		Arquitectura del modelo dual & Sí & No & Modelo de referencia y arquetipos & No & No \\
+		\hline
+		Marco de integración semántica & Sí & No & Información XML y ontología global & No & No \\
+		\hline
+		Arquitectura para la integración en SIEE\tnote{a} & Sí & No & tripletas RDF y axiomas RDF(S) & Consistencia & No \\
+		\hline
+		Metodología para ontologías en la ``justificación del diseño'' & Sí & Justificación del diseño & Ontología & No & No \\
+		\hline
+		Construcción de MC en forma colaborativa & No & SSII\tnote{b} & Ontología & No & No \\
+		\hline 
+     \end{tabular}
+     \begin{tablenotes}
+       \item[a] \scriptsize Sistemas de Información de Energía Eléctrica. 
+       \item[b] \scriptsize Sociedad de Servicios en Ingeniería Informática.
+     \end{tablenotes}
+  \end{threeparttable}
+  \caption{Comparativa entre los trabajos estudiados y nuestros criterios para la integración semántica de recursos.}
+  \label{tab:soasi}
+\end{table}
+
+En esta Tabla \ref{tab:soasi}, el valor `\textbf{Sí}' indica que el trabajo cumple con ese criterio, mientras, el valor `\textbf{No}' indica lo contrario.
+
+%%%[04:14:23 p.m.] Carolina Medina: 1.- LA descripción de cada trabajo/enfoque (resumen). Por qué lo seleccionó o incluye [ref]
+%%%[04:14:54 p.m.] Carolina Medina: 2.- culminar la sección con una tabla comparativa en la cual se pongan
+%%%[04:15:35 p.m.] Carolina Medina: Sistemas comparados/ características que tienen o deben de cumplir
+
+\section{Herramientas para la integración semántica de recursos}
+\label{sec:eoats}
+Un \textbf{\textit{descriptor semántico de recursos}} \cite{Uren:2006} es una herramienta para crear y almacenar tripletas RDF a partir de la \textit{información explícita en los recursos}. Las tripletas que son generadas por esta herramienta, están escritas en una de las siguientes sintaxis: \textit{RDF/XML, Turtle, N-triple y N3}. El principal objetivo de un \textit{descriptor} es construir instancias y relacionar éstas con determinados valores u otras instancias (\textit{concepto de triple}). Algunas de estas herramientas requieren un TBox para saber cuáles clases y propiedades, pueden emplearse en los triples. Un descriptor proporciona una \textit{interfaz gráfica de usuario} (GUI\label{sym:gui}) para simplificar a los usuarios la creación y modificación de las declaraciones. Algunos descriptores sugieren información para las declaraciones a partir de un proceso de aprendizaje en un corpus documental o de imágenes.
+
+En la siguiente lista, se presentan los descriptores semánticos que nosotros estudiamos.
+% Estas interfaces tienen un editor de documentos para que un usuario: \textit{1) visualice el contenido de estos, 2) seleccione los datos (literales: cadenas, enteros, flotantes) y 3) asocie los datos a una propiedad}.
+
+\begin{itemize}
+\item \textbf{\textit{OntoMat Annotizer}} \cite{OntoBasDoc} es una herramienta para hacer anotaciones semánticas de páginas web, documentos basados en texto plano y lenguajes de marcado\footnote{M. Siroker, ``OntoMat Annotizer,''  Disponible en: \url{http://projects.semwebcentral.org/projects/ontomat/}}. El objetivo de esta herramienta es que el usuario cree de manera amigable instancias y declaraciones de éstas, mediante la funcionalidad de arrastrar y soltar (drag-and-drop).
+\item \textbf{\textit{MnM}} \cite{Uren:2006} es una herramienta que proporciona apoyo automatizado y semiautomatizado para describir páginas Web con contenido semántico\footnote{The Open University, ``MnM,''  Disponible en: \url{http://projects.kmi.open.ac.uk/akt/MnM/}}. MnM tiene GUI que integra un editor de ontología, navegador Web, un editor de instancias y de propiedades. El objetivo de esta herramienta es la descripción de documentos a partir de declaraciones derivadas de ontologías preexistentes.
+\item \textbf{\textit{Aktive Media}} \cite{Uren:2006} es una GUI para la descripción automática de una colección de imágenes o documentos (batch annotation) para un contexto específico. ``\textit{El objetivo de Aktive es automatizar el proceso de descripción, mediante la sugerencia interactiva de la información al usuario, mientras éste está describiendo}\footnote{A. Chakravarthy, V. Lanfranchi , F. Ciravegna, ``AKTive Media,''  Disponible en: \url{http://www.aktors.org/technologies/aktivemedia/index.html}}''. Estas sugerencias se hacen con base en axiomas y descripciones previas.
+\end{itemize}
+
+La finalidad de un descriptor es facilitar la generación de descripciones en forma de triple. Sin embargo, hay varias razones, por las cuáles, no se elige una de estas herramientas para alcanzar este fin. Las razones son: 1) \textit{todas estas aplicaciones permiten hacer declaraciones de documentos e imágenes, por tal razón, no proporcionan una solución a la heterogeneidad en formato}, 2) \textit{OntoMat Annotizer y MnM no interpretan los axiomas que están escritos con los vocabularios OWL y RDF(S)}, 3) \textit{Aktive Media cambia las URIs de los recursos y propiedades por sus propios URIs}, 4) \textit{OntoMat Annotizer y MnM no tienen versión estable} y 5) \textit{Aktive Media y MnM no tienen documentación disponible para solucionar problemas de configuración}.\\
+
+Un \textbf{\textit{editor de ontología}} \cite{Tode} es una herramienta que proporciona una serie de interfaces amigables para la construcción y mantenimiento de ontologías. Estos editores proporcionan las siguientes funcionalidades básicas a los usuarios: 1)\textit{definir las clases, propiedades, instancias y axiomas}, 2) \textit{cargar, almacenar, importar y exportar ontologías que son escritas con lenguajes estándar (RDF(S)y OWL)} y 3) \textit{visualizar las clases, propiedades e individuos}.
+
+\begin{itemize}
+\item \textbf{\textit{Protégé}} \cite{protege} es una plataforma con herramientas para la creación, visualización y manipulación de ontologías en diversos formatos de representación\footnote{Stanford Center for Biomedical Informatics Research, ``Prot\'{e}g\'{e},''  Disponible en: \url{http://protege.stanford.edu/}}. Esta plataforma proporciona al usuario una interfaz amigable para la definición de clase, propiedades y axiomas, así como la introducción de datos. La arquitectura de esta herramienta se puede extender a través de plug-ins y APIs. Esta herramienta tiene licencia open-source Mozilla Public License\footnote{Mozilla, ``Mozilla Public License,''  Disponible en: \url{http://www.mozilla.org/MPL/}}.
+\item \textbf{\textit{pOWL}} \cite{pow} es una herramienta para la visualización y edición de ontologías vía web\footnote{S\"{o}ren Auer, ``pOWL,''  Disponible en: \url{http://aksw.org/Projects/Powl.html}}. Esta herramienta soporta la carga y edición de ontologías con vocabularios RDF(S) y OWL, generación de consultas y almacenamiento del modelo en una base de datos relacional.
+\item \textbf{\textit{TopBraid Composer}} \cite{OntologyManagement} es un \textit{entorno de desarrollo integrado}(IDE\label{sym:ide}) para "\textit{desarrollar, gestionar y probar configuraciones de los modelos de conocimiento e instancias de las bases de conocimiento}"\footnote{TopQuadrant, Inc., ``TopBraid Composer,''  Disponible en: \url{http://www.topquadrant.com/products/TB_Composer.html}}. Esta herramienta proporciona un conjunto de editores para visualizar grafos RDF y diagramas de clase. Existen tres versiones de esta herramienta: maestro, estándar y gratuita. La versión gratuita permite crear y editar archivos OWL/XML, así como consultar con el lenguaje SPARQL.
+\item \textbf{\textit{SWOOP}} \cite{swoop} es un editor para crear y editar ontologías, comprobar inconsistencias, navegar por las ontologías, compartir y reutilizar los datos existentes\footnote{University of Maryland, ``SWOOP,''  Disponible en: \url{https://code.google.com/p/swoop/downloads/list}}. Este editor ofrece un entorno con aspecto de navegador web para facilitar la navegación y edición de ontologías OWL. Este editor provee una interfaz amigable y eficaz para los usuarios web promedios.
+\end{itemize}
+
+%Protégé se puede extender sus funcionalidades a través de plug-ins y APIs. Estas funcionalidades son: 1) visualizar los axiomas, clases y propiedades en forma de grafo, 2) exportar ontologías a una variedad de formatos, 3) importar y hacer uso de algún motor de inferencia o razonador, 4) cambiar el URI del vocabulario, 5) exportar las ontología a otras sintaxis (RDF/XML, Turtle, Manchester), por mencionar algunas.
+
+\textbf{\textit{Protégé}} es el editor electo para representar los axiomas en una ontología. Porque este editor proporciona estos beneficios: 1) \textit{una interfaz amigable e intuitiva para el usuario}, 2) \textit{amplia documentación y tutoriales, así como una comunidad de desarrolladores}, 3)\textit{facilidad de extender la funcionalidad de esta herramienta, gracias a su arquitectura de plug-ins}, 4) \textit{variedad de sintaxis para las ontologías, como: Turtle, Manchester, OWL/XML o XML/RDF}, 5) \textit{visualización del grafo (axiomas, clases y propiedades)}, 6) \textit{incorporar razonadores, como: Pellet\footnote{Clark \& Parsia, LLC, ``Pellet,''  Disponible en: \url{http://clarkparsia.com/pellet/}}, Fact++\footnote{Clark \& Parsia, LLC, ``Pellet,''  Disponible en: \url{http://clarkparsia.com/pellet/}} y HermiT\footnote{Oxford University, ``HermiT,''  Disponible en: \url{http://hermit-reasoner.com/}}} y 
+7) \textit{incorpora un plugin para escribir y ejecutar consultas SPARQL desde la interfaz de usuario}.\\
+
+Un \textbf{\textit{triplestore}} \cite{dbpedia_2012} es un programa para \textit{el almacenamiento e indexación de tripletas RDF}, con el fin de permitir la consulta eficiente de información sobre estas tripletas. Estos triplestores emplean el estándar SPARQL como lenguaje de consulta para consultar el grafo RDF. Algunos triplestores soportan la capacidad de inferir en el grafo RDF a partir de axiomas, mediante la incorporación o importación de un razonador para ello. Los triplestores se idealizan como \textit{sistema gestor de bases de datos para modelos basados en tripletas RDF}.
+
+En el siguiente listado, se describen cuatro triplestores que estudiamos de muchos que hay disponibles\footnote{W3C, ``Triple Store,''  Disponible en: \url{http://www.w3.org/2001/sw/wiki/Category:Triple_Store}}.
+
+\begin{itemize}
+\item \textbf{\textit{Apache Jena}} \cite{McBride} es un \textit{marco de trabajo} que  proporciona un conjunto de interfaces de programación de aplicaciones (API\label{sym:api}) para Java. Estas APIs ofrecen las siguientes funcionalidades: \textit{lectura, procesamiento y escritura de triples RDF, así como axiomas RDF(S) y OWL, un motor de inferencia y un motor de consulta SPARQL}. La finalidad de Jena es desarrollar aplicaciones que usan las tecnologías semánticas para la representación del conocimiento\footnote{The Apache Software Foundation, ``Apache Jena,''  Disponible en: \url{http://jena.apache.org/}}.%%%Estas APIs tienen las siguientes funcionalidades: 1) \textit{lectura, procesamiento y escritura de triples RDF en alguna sintaxis estándar (RDF/XML, N-triples y turtle)}. 2) soporte de axiomas en los lenguajes OWL y RDF(S), 3) \textit{un motor de inferencia que soporta axiomas en OWL y RDF(S)}, 4) \textit{almacenamiento eficiente de los triples en el disco duro} y 5) \textit{un motor de consultas con soporte para el lenguaje SPARQL}.
+\item \textbf{\textit{Stardog}} \cite{stardog} es una base de datos para modelos semánticos. El propósito de esta herramienta es la ejecución de consultas sobre los datos RDF que están bajo su gestión directa\footnote{Clark \& Parsia, LLC, ``Stardog,''  Disponible en: \url{http://stardog.com/}}. Esta herramienta emplea los protocolos \textit{HTTP  y SNARL} para \textit{acceder y controlar de manera remota el modelo de datos RDF, inferencia a partir de axiomas en lenguaje OWL} y \textit{consultas SPARQL}. %%%Stardog soporta el lenguaje estándar SPARQL y emplea los protocolos \textit{HTTP  y SNARL} para: acceder y controlar de manera remota el modelo de datos RDF, la inferencia y el análisis de datos en el lenguaje OWL. Stardog apoyado en el motor de búsqueda de texto Lucene, proporciona la capacidad de búsquedas semánticas que consiste en la indexación de literales RDF.
+\item \textbf{\textit{4store}} \cite{Fstore} \textit{es un sistema para el almacenamiento RDF que incorpora un motor de consultas SPARQL}\footnote{Garlik, ``4store,''  Disponible en: \url{http://4store.org/}}. Las principales fortalezas de esta herramienta son el rendimiento, seguridad, escalabilidad y estabilidad.
+\item \textbf{\textit{Sesame}} \cite{Sesame} \textit{es un \textit{marco de trabajo} estándar de facto para el análisis, almacenamiento, inferencia y consulta de datos RDF}\footnote{Aduna, ``Sesame,''  Disponible en: \url{http://www.openrdf.org/index.jsp}}. Este marco proporciona una API que puede emplearse sobre los distintos \textit{sistemas de almacenamiento RDF} para consultar y acceder a esta información de manera remota. %Finalmente, Sesame soporta: los principales sintaxis para los triples RDF y el lenguaje de consulta SPARQL.
+\end{itemize}
+
+Cualquiera de estos cuatro triplestores son opciones viables para efectuar las tareas de almacenamiento y búsqueda de información en grafos RDF. Aunque, el más interesante desde nuestra perspectiva es Apache Jena. Las razones del \textit{porqué emplear esta herramienta}, son: 1) \textit{amplia documentación y tutoriales para el desarrollo de modelos semánticos}, 2) \textit{integración de Jena en IDEs para el lenguaje Java, como Eclipse}\footnote{The Eclipse Foundation, ``Eclipse IDE,''  Disponible en: \url{http://www.eclipse.org/}}, 3) \textit{proyecto open-source bajo la licencia Apache\footnote{The Eclipse Foundation, ``Licencia Apache v. 2.0 ,''  Disponible en: \url{http://www.apache.org/licenses/LICENSE-2.0.html}} versión 2}, 4) \textit{un conjunto de librerías para crear, cargar, almacenar y consultar declaraciones, así como axiomas en OWL y RDF(S)}, 5) \textit{un motor de inferencia que soporta varios axiomas\footnote{The Apache Software Foundation, ``OWL coverage,''  Disponible en: \url{http://jena.apache.org/documentation/inference/index.html}\#\url{OWLcoverage}} OWL y RDF(S)} y 6) \textit{una amplia comunidad de desarrolladores}.
+
+\section{Resumen}
+Necesitamos una sección que resuma este capítulo. Termina muy abruptamente. Hay que decir claramente (1) cuáles son las características distintivas de nuestro enfoque, (2) por qué no utilizamos una herramienta como MnM para generar RDF y qué hicimos en su lugar (utilizamos un script para generar RDF artificial), y (3) qué editor de ontologías y triplestore utilizamos y para qué.
+
+Un \textbf{\textit{script}} es un programa para generar tripletas RDF. El propósito es facilitar y agilizar el proceso de generación de tripletas en alguna sintaxis estándar. Aunque un script no posee una interfaz gráfica para seleccionar la información de los recursos. Esto se puede solucionar mediante el uso de formularios web que capturen la información sobre los recursos. Posteriormente, la información es guardada en algún documento de texto plano, para que un script transforme esta información en triples RDF. Por tal razón, \textbf{\textit{un script es la opción electa}} para representar el conocimiento explícito en forma de tripletas.
+
+%%%Fuentes: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 8 y 9\Anotaciones Semánticas.docx
+
+%%%C:\Users\ARTE\Dropbox\Gestión Semántica\Actividades 13I\feedback\CMED_8_FEB_Integracion Semántica de los recursos.docx
+
+% TABLA ONTOLOGIAS en: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 10\doc auxiliar.docx
