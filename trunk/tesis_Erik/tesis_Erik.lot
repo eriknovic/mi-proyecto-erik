@@ -6,29 +6,28 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Ejemplos de identificadores asociados a distintas propiedades.}}{18}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Ejemplos de tripletas que emplean la propiedad \textit {rdf:type} para asignar un recurso a una determinada clase.}}{20}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Criterios considerados para el \textit {estado del arte} de la integraci\'on sem\'antica de recursos.}}{31}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Comparativa entre los trabajos estudiados y nuestros criterios para la integraci\'on sem\'antica de recursos.}}{35}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Comparativa entre los trabajos estudiados y nuestros criterios para la integraci\'on sem\'antica de recursos.}}{36}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Ejemplos de identificadores URI asociados a los recursos persona para la cartograf\IeC {\'\i }a de competencias.}}{46}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la b\'usqueda de recursos digitales.}}{47}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Ejemplos de identificadores URI de las propiedades pertenecientes a la cartograf\IeC {\'\i }a de competencias.}}{47}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Ejemplos de identificadores URI de las propiedades pertenecientes a la b\'usqueda de recursos digitales.}}{47}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Dominio y Rango para las propiedades asociadas a la cartograf\IeC {\'\i }a de competencias.}}{58}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Dominio y Rango para las propiedades asociadas a la b\'usqueda de recursos digitales.}}{59}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Identificadores de los recursos resultantes sin inferencia para la consulta de informaci\'on.}}{74}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de informaci\'on.}}{76}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Ejemplos de identificadores URI asociados a los recursos persona para la cartograf\IeC {\'\i }a de competencias.}}{48}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la b\'usqueda de recursos digitales.}}{49}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Ejemplos de identificadores URI de las propiedades pertenecientes a la cartograf\IeC {\'\i }a de competencias.}}{49}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Ejemplos de identificadores URI de las propiedades pertenecientes a la b\'usqueda de recursos digitales.}}{49}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Dominio y Rango para las propiedades asociadas a la cartograf\IeC {\'\i }a de competencias.}}{60}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Dominio y Rango para las propiedades asociadas a la b\'usqueda de recursos digitales.}}{61}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Identificadores de los recursos resultantes sin inferencia para la consulta de informaci\'on.}}{76}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de informaci\'on.}}{78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces N\'umero de recursos persona por clase.}}{106}
-\contentsline {table}{\numberline {7.2}{\ignorespaces N\'umero de recursos digitales por clase.}}{107}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Preguntas y cantidad de personas que responden a \'estas.}}{108}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Preguntas y cantidad de recursos digitales que responden a \'estas.}}{109}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Recursos relevantes y no relevantes asociados a las preguntas de la cartograf\IeC {\'\i }a de competencias.}}{113}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Recursos relevantes y no relevantes asociados a las preguntas de la b\'usqueda de recursos digitales.}}{114}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Exhaustividad y precisi\'on para las consultas de la cartograf\IeC {\'\i }a de competencias.}}{115}
-\contentsline {table}{\numberline {7.8}{\ignorespaces Exhaustividad y precisi\'on para las consultas de la b\'usqueda de recursos digitales.}}{115}
-\contentsline {table}{\numberline {7.9}{\ignorespaces Tiempo promedio de procesamiento para las consultas de la cartograf\IeC {\'\i }a de competencias.}}{116}
-\contentsline {table}{\numberline {7.10}{\ignorespaces Tiempo promedio de procesamiento para las consultas de la b\'usqueda de recursos digitales.}}{117}
+\contentsline {table}{\numberline {7.1}{\ignorespaces N\'umero de recursos persona por clase.}}{108}
+\contentsline {table}{\numberline {7.2}{\ignorespaces N\'umero de recursos digitales por clase.}}{109}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Preguntas y cantidad de personas que responden a \'estas.}}{110}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Preguntas y cantidad de recursos digitales que responden a \'estas.}}{111}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Recursos relevantes y no relevantes asociados a las preguntas de la cartograf\IeC {\'\i }a de competencias.}}{115}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Recursos relevantes y no relevantes asociados a las preguntas de la b\'usqueda de recursos digitales.}}{116}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Exhaustividad y precisi\'on para las consultas de la cartograf\IeC {\'\i }a de competencias.}}{117}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Exhaustividad y precisi\'on para las consultas de la b\'usqueda de recursos digitales.}}{117}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Tiempo promedio de procesamiento para las consultas de la cartograf\IeC {\'\i }a de competencias.}}{118}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Tiempo promedio de procesamiento para las consultas de la b\'usqueda de recursos digitales.}}{119}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

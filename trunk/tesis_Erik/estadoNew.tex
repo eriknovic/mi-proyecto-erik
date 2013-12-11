@@ -27,57 +27,67 @@ La \textit{integración semántica de recursos} tiene por objetivo la búsqueda y r
 \subsection{Integración del conocimiento a partir del uso de tecnologías semánticas}
 El elemento clave en estos trabajos es la utilización de \textit{tecnologías semánticas} para representar las características y relaciones de los recursos en un \textit{modelo semántico} (formato estándar). Esta \textit{representación semántica} permite la \textit{integración de información} desde los diversos \textit{recursos de información}, con el fin de superar las dificultades en la heterogeneidad de formato, contenido y estructura en los recursos.
 
-La \textit{representación semántica de la información} es el piedra angular para realizar otras actividades como: visualización de la información, búsqueda y recuperación de la información, acceso a los recursos, tareas de inferencia, agregar y extender el conocimiento, compartir la información, por mencionar algunas.
-
 Moner et al. \cite{Archetype} proponen un \textit{arquitectura dual} para la representación consistente y comprensible de la información clínica de cualquier persona. La finalidad es que profesionales de la salud puedan acceder al historial clínico de los pacientes.
 
 La \textit{arquitectura dual} se basa en un modelo que representa la información y el conocimiento. Por un lado, la información se describe en estructuras de datos comunes de los \textit{historiales clínicos} que están distribuidos en varios sistemas independientes y heterogéneos. Por otro lado, en la representación del conocimiento se emplean arquetipos para describir el conocimiento formal de conceptos clínicos.
 
-En esta arquitectura dual, los autores presentan a LinkEHR-Ed; una herramienta para desarrollar arquetipos de datos clínicos. La finalidad de ésta es que los profesionales de la salud sean los constructores del conocimiento.
+En esta \textit{arquitectura dual}, los autores presentan a LinkEHR-Ed, una herramienta para desarrollar arquetipos de datos clínicos. La finalidad de ésta es que los profesionales de la salud sean los constructores del conocimiento.
 
 K. Yang y R. Steele proponen un \textit{marco de integración semántica} \cite{Accommodation} como solución eficaz y flexible para la integración de la información en el dominio del alojamiento en-línea. El objetivo de este trabajo reunir y compartir la información en constante cambio que procede de páginas web de alojamiento en-línea.
 
 Este marco propone estos elementos para representar e integrar el conocimiento procedente de distintos servidores. Primero, emplear un \textit{proceso automático} para resolver la naturaleza dinámica de las fuentes de información. Segundo, emplear \textit{ontologías} locales para facilitar el acceso a la \textit{información integrada} y solucionar la heterogeneidad en la estructura de la información. Tercero, emplear un conjunto de \textit{esquemas}, basados en la ontologías locales, para el intercambio de información. Finalmente, permitir a los \textit{propietarios de la información} verificar la información que es integrada.
 
-Jun Zhai et al. \cite{JunZhai} proponen una \textit{integración semántica} en \textbf{sistemas de información de energía eléctrica}} (heterogéneos con funciones y organizaciones descentralizadas) a partir del uso de ontologías.
+Jun Zhai et al. \cite{JunZhai} proponen una arquitectura basada en ontologías y el \textbf{lenguaje de marcado extensible} (XML\label{sym:xml} para la \textit{integración semántica} en \textbf{sistemas de información de energía eléctrica}. Estos \textit{sistemas de información} son sistemas heterogéneos con funciones y organizaciones descentralizadas.
 
-La propuesta de Jun Zhai et al. emplea dos \textit{elementos semánticos} para la integración de la información. La primera es el \textbf{lenguaje de marcado extensible} (XML\label{sym:xml}, para intercambiar información entre los \textit{sistemas de información eléctrica}. La segunda es una \textit{ontología} para describir formalmente la información, a nivel conceptual, en el dominio de la electricidad.
+En esta arquitectura, el lenguaje XML se emplea como medio para el intercambio de datos entre los \textit{sistemas de información de la electricidad}. Sin embargo, XML no expresa semántica, sino más bien la estructura. Por ello, esta arquitectura emplea una ontología para describir formalmente el conocimiento, a nivel conceptual, en el dominio de la electricidad. También, esta ontología permite compartir, reutilizar y usar el conocimiento.
 
-Esta \textit{integración de información} emplea una arquitectura de tres capas: 1) capa fuentes de datos heterogéneos distribuidos, 2) capa de integración de la información y 3) capa de sistemas de aplicación.
+La arquitectura de Jun Zhai et al está dividida en tres capas. La primer capa está constituida por varios \textit{sistemas heterogéneos de información de electricidad}. La segunda genera ontologías locales y una ontología global a partir de la unión de las locales. La tercera capa es para el desarrollo de sistemas que consuman o utilicen los datos de la \textit{integración semántica}.
 
-%%%Los trabajos  considerados para este \textit{estado del arte} son aquellos que utilizan alguno de los criterios de la Tabla \ref{tab:crit}.
-%\begin{table}[!htb]
-%\renewcommand{\arraystretch}{1.3}
-%\centering
-%\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{3.7in} >{\centering\arraybackslash}m{0.9in}}
-%\hline
-%\textbf{Criterio} & \textbf{Descripción} & \textbf{Definición formal}\\
-%\hline
-%\hline
-%Integración de información en los recursos & Ésta consiste en el proceso de búsqueda y recuperación de la información sobre los recursos de información. & Sección \ref{sec:intdk} \\
-%\hline
-%Memoria corporativa & Ésta es la representación consistente y formal del conocimiento en una organización. & Sección \ref{sec:mecor} \\
-%\hline
-%Modelo semántico & Éste es la representación del conocimiento a partir de las tecnologías semánticas. & Secciones \ref{sec:rdf} y \ref{sec:reginf} \\
-%\hline
-%Inferencia en el modelo & Ésta consiste en deducir información a partir de los axiomas en el modelo. & Sección \ref{sec:reginf} \\
-%\hline
-%Interfaz visual para la integración & Ésta es un aplicación con una enfoque visual para que las personas pregunten o naveguen a través de la información en el modelo semántico. & Sección \ref{cap:piu} \\
-%\hline 
-%\end{tabular}
-%\caption{Criterios considerados para el \textit{estado del arte} de la integración semántica de recursos.}
-%\label{tab:crit}
-%\end{table}
+%Éstas son las características asociadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, el objetivo de la arquitectura dual es facilitar la información clínica de los pacientes a los profesionales de la salud} y 2) \textit{\textbf{Modelo semántico}, la arquitectura dual por un lado representa las estructuras de datos comunes y por otro lado, representar el conocimiento formal de conceptos clínicos a partir del uso de arquetipos.}
+%
+%Éstas son características del \textit{marco de integración semántica} que están vinculadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, este trabajo es una propuesta para reunir y compartir la información del alojamiento en-línea} y 2) \textit{\textbf{Modelo semántico}, este marco propone el uso de una ontología para modelar la información del dominio de alojamiento en-línea.}
+%
+%En el trabajo de Jun Zhai, éstas son las características asociadas a nuestros criterios de investigación: 1) \textit{\textbf{Integración de información}, este trabajo propone una integración semántica para especificar la información a nivel semántico, proveniente de los sistemas de información de energía eléctrica}, 2) \textit{\textbf{Modelo semántico}, Jun Zhai et al. emplean a XML para el intercambio de información entre estos sistemas, así como una ontología para describir formalmente los conceptos en el dominio de la electricidad} y 3) \textit{\textbf{Inferencia en el modelo}, este trabajo emplea al proceso de inferencia como herramienta para la construcción de modelos (conceptos y datos XML) consistentes}.
 
-Éstas son las características asociadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, el objetivo de la arquitectura dual es facilitar la información clínica de los pacientes a los profesionales de la salud} y 2) \textit{\textbf{Modelo semántico}, la arquitectura dual por un lado representa las estructuras de datos comunes y por otro lado, representar el conocimiento formal de conceptos clínicos a partir del uso de arquetipos.}
+\subsection{Búsqueda y recuperación de la información desde un modelo semántico}
+Un \textit{modelo semántico} permite la realización de diversas actividades, para aprovechar el conocimiento que está residente en este modelo. Por ejemplo, visualización de la información, búsqueda y recuperación de la información, acceso a los recursos, tareas de inferencia, agregar y extender el conocimiento, compartir la información, por mencionar algunas.
 
-Éstas son características del \textit{marco de integración semántica} que están vinculadas a nuestros criterios de investigación (Ver Tabla \ref{tab:crit}): 1) \textit{\textbf{Integración de la información}, este trabajo es una propuesta para reunir y compartir la información del alojamiento en-línea} y 2) \textit{\textbf{Modelo semántico}, este marco propone el uso de una ontología para modelar la información del dominio de alojamiento en-línea.}
+En particular, \textit{la búsqueda y recuperación de información} son actividades de mucha importancia para las personas. Porque esas actividades permiten entregar los resultados que satisfagan las \textit{necesidades informativas} de estas personas. La búsqueda y recuperación se hace a partir del \textit{uso del lenguaje de consulta SPARQL} y un \textit{motor de búsqueda para modelos semánticos}.
 
-En el trabajo de Jun Zhai, éstas son las características asociadas a nuestros criterios de investigación: 1) \textit{\textbf{Integración de información}, este trabajo propone una integración semántica para especificar la información a nivel semántico, proveniente de los sistemas de información de energía eléctrica}, 2) \textit{\textbf{Modelo semántico}, Jun Zhai et al. emplean a XML para el intercambio de información entre estos sistemas, así como una ontología para describir formalmente los conceptos en el dominio de la electricidad} y 3) \textit{\textbf{Inferencia en el modelo}, este trabajo emplea al proceso de inferencia como herramienta para la construcción de modelos (conceptos y datos XML) consistentes}.
------> debes revisar lo de arriba para ver cuales son la limitantes que estos trabajos no tienen en la integración del conocimiento.
+A continuación, se presentan los trabajos para la búsqueda y recuperación de información en un \textit{modelo semántico}, con la finalidad de responder las \textit{necesidades informativas} de las personas.
+
+%%%2011------->
+Tuan-Dung et al. \cite{Tuan-Dung2011} proponen desarrollar un sistema para la \textit{recomendación y acceso a la información turística semántica} (STAAR\label{sym:staar}). El propósito de este trabajo es aprovechar las ventajas de la tecnologías semánticas para auxiliar a los turistas en encontrar información turística mediante un smart-phone con Internet.
+
+El sistema STAAR emplea una ontología para definir conceptos y propiedades asociadas a la información y conocimiento sobre el turismo. La ontología tiene un diseño abierto y para interoperar con repositorios que tienen grades conjuntos de tripletas.
+
+Tuan-Dung et al. construyeron una aplicación móvil para la \textit{búsqueda y recomendación de información en forma inteligente} a partir de aplicaciones que emparejan los \textit{datos de viaje enriquecidos con semántica} y las \textit{preferencias turísticas}.
+
+Ha Inay et al. \cite{Inay2011} proponen estas actividades. Primero, modelar una ontología, para \textit{representar} y \textit{recuperar} la información que los mecánicos necesitan sobre los contenidos de los \textit{manuales de mantenimiento electrónicos}. Segundo, diseñar un \textit{sistema de visualización} basado en esta ontología.
+
+Ellos modelaron la ontología a partir del análisis dominio de \textit{mantenimiento de aeronaves}, extrayendo los conceptos y definiendo las relaciones entre éstos. Posteriormente, para cada manual técnico se generaron instancias de las clases en esta ontología. Todas las instancias son guardadas en un repositorio de tripletas.
+
+El objetivo del \textit{sistema de visualización} es proporcionar a los mecánicos y trabajadores con una herramienta, para \textit{comprender intuitivamente la información} y \textit{obtener fácilmente información de tareas dadas}. De esta manera, estas personas reducen su tiempo para buscar \textit{información relacionada}.
+
+%%%2013------->
+Suganyakala y Rajalaxmi \cite{Suganyakala2013} proponen un \textit{marco de trabajo} para la recuperación de información basado en ontología. El objetivo de este marco es superar este problema: \textit{la mayoría de los sistemas de búsqueda semánticos requieren que el usuario exprese su pregunta en forma de una consulta formal}.
+
+Este framework permite el diseño de una \textit{interfaz de consulta} para que un usuario, sin conocimientos en un lenguaje de consulta formal, pueda
+escribir una consulta en lenguaje natural. Posteriormente, esta interfaz recupera las respuestas desde una ontología. Suganyakala y Rajalaxmi emplean la \textit{ontología Película} para hacer pruebas de esta interfaz.
+
+En el trabajo de Salam \cite{Salam2013}, él propone un método basado en ontologías para la \textit{recuperación de información}. Este método emplea un \textit{motor de búsqueda e indexación semántico} para recuperar \textit{información contenida en un documento} a partir de los conceptos asociados que están en una ontología. De esta manera, se considera el contenido semántico de los documentos.
+
+Este \textit{motor de búsqueda e indexación} es una aplicación para 1) extraer \textit{información textual}, \textit{palabras} y \textit{términos} que están relacionados, así como 2) almacenar esta información en un índice.
+
+El enfoque de Salam se denomina MIRO, el cual está implementado en un \textit{motor de indexación y búsqueda} sobre una ontología. MIRO permite una búsqueda semántica multilingüe de documentos, mediante una herramienta de búsqueda guiada. También, MIRO proporciona una herramienta para un enriquecimiento automático de la ontología.
+
+\subsection{Gestión de una memoria corporativa}
 
 El objetivo de representación en un modelo semántico es superar los limites de la diversidad de los \textit{recursos de información}. 
-1) \textit{integración de la información} desde los diversos \textit{recursos de información} (heterogéneos en formato, contenido y estructura), 2) búsqueda, recuperación y publicación de información proveniente de un modelo semántico y 3) uso de un modelo semántico de telecomunicaciones.
+1) \textit{integración de la información} desde los diversos \textit{recursos de información} (heterogéneos en formato, contenido y estructura),
+
+2) búsqueda, recuperación y publicación de información proveniente de un modelo semántico y 3) uso de un modelo semántico de telecomunicaciones.
+
 
 \begin{itemize}
 \item Xin y Guangleng \cite{WangXin} emplean un \textit{enfoque basado en las \textbf{ontologías} para capturar la \textbf{información de la ``justificación del diseño''}}. Esta \textit{justificación del diseño (design rationale)} es un conocimiento para explicar qué y cómo se diseña un producto, así como para apoyar la reutilización, comunicación y verificación de diseños en empresas manufactureras. En este trabajo, se emplea una memoria corporativa para las actividades de gestión del conocimiento, en particular, las actividades de captura y disponibilidad en la \textit{justificación del diseño}. Las ontologías permiten el acceso uniforme a las fuentes de información, y en este trabajo, éstas modelan la \textit{justificación del diseño} para el background del diseño de autos de carga.
@@ -178,8 +188,35 @@ Necesitamos una sección que resuma este capítulo. Termina muy abruptamente. Hay 
 
 Un \textbf{\textit{script}} es un programa para generar tripletas RDF. El propósito es facilitar y agilizar el proceso de generación de tripletas en alguna sintaxis estándar. Aunque un script no posee una interfaz gráfica para seleccionar la información de los recursos. Esto se puede solucionar mediante el uso de formularios web que capturen la información sobre los recursos. Posteriormente, la información es guardada en algún documento de texto plano, para que un script transforme esta información en triples RDF. Por tal razón, \textbf{\textit{un script es la opción electa}} para representar el conocimiento explícito en forma de tripletas.
 
+La revisión de la literatura indica que estos tres trabajos \cite{Archetype}, \cite{Accommodation}, \cite{JunZhai} representan la información y el conocimiento en \textit{modelos semánticos}, con el fin de superar las dificultades de heterogeneidad en los recursos o en los sistemas generadores de éstos. En estos tres trabajos, la representación se hace en dos fases: \textit{información} y \textit{conocimiento}. La \textit{representación de información} se hace como estructuras de datos (historial clínico, página Web o información eléctrica). Mientras , el conocimiento se expresa en una ontología. Porque una ontología permite el acceso, intercambio y reutilización del conocimiento con un significado definido (salud, acomodación o electricidad).
+
 %%%Fuentes: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 8 y 9\Anotaciones Semánticas.docx
 
 %%%C:\Users\ARTE\Dropbox\Gestión Semántica\Actividades 13I\feedback\CMED_8_FEB_Integracion Semántica de los recursos.docx
 
 % TABLA ONTOLOGIAS en: C:\Users\Gatito\Dropbox\Gestión Semántica\Actividades 12P\Semana 10\doc auxiliar.docx
+
+
+%%%Los trabajos  considerados para este \textit{estado del arte} son aquellos que utilizan alguno de los criterios de la Tabla \ref{tab:crit}.
+%\begin{table}[!htb]
+%\renewcommand{\arraystretch}{1.3}
+%\centering
+%\begin{tabular}{>{\centering\arraybackslash}m{1.5in} >{\centering\arraybackslash}m{3.7in} >{\centering\arraybackslash}m{0.9in}}
+%\hline
+%\textbf{Criterio} & \textbf{Descripción} & \textbf{Definición formal}\\
+%\hline
+%\hline
+%Integración de información en los recursos & Ésta consiste en el proceso de búsqueda y recuperación de la información sobre los recursos de información. & Sección \ref{sec:intdk} \\
+%\hline
+%Memoria corporativa & Ésta es la representación consistente y formal del conocimiento en una organización. & Sección \ref{sec:mecor} \\
+%\hline
+%Modelo semántico & Éste es la representación del conocimiento a partir de las tecnologías semánticas. & Secciones \ref{sec:rdf} y \ref{sec:reginf} \\
+%\hline
+%Inferencia en el modelo & Ésta consiste en deducir información a partir de los axiomas en el modelo. & Sección \ref{sec:reginf} \\
+%\hline
+%Interfaz visual para la integración & Ésta es un aplicación con una enfoque visual para que las personas pregunten o naveguen a través de la información en el modelo semántico. & Sección \ref{cap:piu} \\
+%\hline 
+%\end{tabular}
+%\caption{Criterios considerados para el \textit{estado del arte} de la integración semántica de recursos.}
+%\label{tab:crit}
+%\end{table}
