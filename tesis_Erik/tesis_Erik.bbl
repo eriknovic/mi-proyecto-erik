@@ -169,8 +169,12 @@ T.~Aruna, K.~Saranya, and C.~Bhandari.
   International Conference on}, pages 1--5, 2011.
 
 \bibitem{Archetype}
-{\em {Archetype-Based Semantic Integration and Standardization of Clinical
-  Data}}, 2006.
+David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
+  P.J. Vivancos, and M.~Robles.
+\newblock Archetype-based semantic integration and standardization of clinical
+  data.
+\newblock In {\em Engineering in Medicine and Biology Society, 2006. EMBS '06.
+  28th Annual International Conference of the IEEE}, pages 5141--5144, 2006.
 
 \bibitem{Accommodation}
 Kai Yang and R.~Steele.
@@ -186,6 +190,32 @@ Jun Zhai, Jianfeng Li, and Qinglian Wang.
 \newblock In {\em Electric Utility Deregulation and Restructuring and Power
   Technologies, 2008. DRPT 2008. Third International Conference on}, pages
   2197--2201, 2008.
+
+\bibitem{Tuan-Dung2011}
+Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
+\newblock An ontology based approach to data representation and information
+  search in smart tourist guide system.
+\newblock In {\em Knowledge and Systems Engineering (KSE), 2011 Third
+  International Conference on}, pages 171--175, 2011.
+
+\bibitem{Inay2011}
+Inay Ha, Kyeong-Jin Oh, and Geun-Sik Jo.
+\newblock Ontology-driven visualization system for semantic search.
+\newblock In {\em Information Science and Applications (ICISA), 2011
+  International Conference on}, pages 1--6, 2011.
+
+\bibitem{Suganyakala2013}
+R.~Suganyakala and R.R. Rajalaxmi.
+\newblock Movie related information retrieval using ontology based semantic
+  search.
+\newblock In {\em Information Communication and Embedded Systems (ICICES), 2013
+  International Conference on}, pages 421--424, 2013.
+
+\bibitem{Salam2013}
+F.~Salam.
+\newblock New semantic indexing and search system based on ontology.
+\newblock In {\em Emerging Intelligent Data and Web Technologies (EIDWT), 2013
+  Fourth International Conference on}, pages 313--318, 2013.
 
 \bibitem{WangXin}
 Wang Xin and Xiong Guangleng.
