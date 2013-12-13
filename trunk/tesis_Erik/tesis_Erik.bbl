@@ -176,13 +176,6 @@ David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
 \newblock In {\em Engineering in Medicine and Biology Society, 2006. EMBS '06.
   28th Annual International Conference of the IEEE}, pages 5141--5144, 2006.
 
-\bibitem{Accommodation}
-Kai Yang and R.~Steele.
-\newblock A semantic integration solution for online accommodation information
-  integration.
-\newblock In {\em Industrial Electronics and Applications (ICIEA), 2011 6th
-  IEEE Conference on}, pages 1105--1110, 2011.
-
 \bibitem{JunZhai}
 Jun Zhai, Jianfeng Li, and Qinglian Wang.
 \newblock Using ontology and xml for semantic integration of electricity
@@ -190,6 +183,13 @@ Jun Zhai, Jianfeng Li, and Qinglian Wang.
 \newblock In {\em Electric Utility Deregulation and Restructuring and Power
   Technologies, 2008. DRPT 2008. Third International Conference on}, pages
   2197--2201, 2008.
+
+\bibitem{Accommodation}
+Kai Yang and R.~Steele.
+\newblock A semantic integration solution for online accommodation information
+  integration.
+\newblock In {\em Industrial Electronics and Applications (ICIEA), 2011 6th
+  IEEE Conference on}, pages 1105--1110, 2011.
 
 \bibitem{Tuan-Dung2011}
 Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
@@ -223,6 +223,13 @@ Wang Xin and Xiong Guangleng.
 \newblock In {\em Systems, Man, and Cybernetics, 2001 IEEE International
   Conference on}, volume~3, pages 1904--1908 vol.3, 2001.
 
+\bibitem{Behja}
+R.~Chakhmoune, H.~Behja, and A.~Marzak.
+\newblock Building corporate memories in collaborative way using ontologies:
+  Case study of a ssii.
+\newblock In {\em Next Generation Networks and Services (NGNS), 2011 3rd
+  International Conference on}, pages 23--28, 2011.
+
 \bibitem{Uren:2006}
 Victoria Uren, Philipp Cimiano, Jos{\'e} Iria, Siegfried Handschuh, Maria
   Vargas-Vera, Enrico Motta, and Fabio Ciravegna.
@@ -236,6 +243,14 @@ Oscar Corcho.
 \newblock {Ontology based document annotation: trends and open research
   problems}.
 \newblock {\em Int. J. Metadata Semant. Ontologies}, 1(1):47--57, 2006.
+
+\bibitem{Cunningham2011a}
+Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
+  Aswani, Ian Roberts, Genevieve Gorrell, Adam Funk, Angus Roberts, Danica
+  Damljanovic, Thomas Heitz, Mark~A. Greenwood, Horacio Saggion, Johann Petrak,
+  Yaoyong Li, and Wim Peters.
+\newblock {\em {Text Processing with GATE (Version 6)}}.
+\newblock 2011.
 
 \bibitem{Tode}
 N.~Islam, M.S. Siddiqui, and Z.A. Shaikh.
