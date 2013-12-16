@@ -1,19 +1,107 @@
 \chapter{Conclusiones y Trabajo Futuro}
 \label{cap:concl}
-En este trabajo realizamos un estudio del uso de las \textit{tecnologías semánticas} para la \textit{representación del conocimiento} en una \textit{memoria corporativa}, así como la búsqueda y recuperación de información sobre esta representación.
+%%%Qué hicimos
+En este trabajo presentamos un estudio sobre el uso de las \textit{tecnologías semánticas} (TS) para realizar el proceso de \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta \textit{integración semántica de recursos} es el proceso de \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos \textit{recursos de información}, o bien son documentos, archivos o bases de datos residentes en algún medio de almacenamiento, o bien personas que andan de un lugar a otro.
 
-%%%
-Aunque los buscadores actuales entregan un conjunto de resultados en poco tiempo. Muchos de éstos no satisfacen la pregunta dada por un usuario. En cambio, al hacer una búsqueda basada en la semántica de los recursos. Los resultados entregados serán más significativos para un usuario. Nuestra propuesta se basa en ésta idea. Así como el uso de conceptos y estándares de la Web Semántica. Un razonador para una interrogación más inteligente. En donde el dominio para nuestra propuesta es el de Redes y Telecomunicaciones.  Los recursos que sean devueltos por nuestra propuesta. Los vamos a evaluar con base en la opinión de los usuarios del dominio. Así como los valores proporcionados por las métricas de la Recuperación de la Información. Aunque nuestra propuesta es para el dominio RyT. El objetivo a largo plazo de nuestra propuesta se implemente en otros dominios.
+%%%Por qué hicimos ésto
+Este trabajo tiene dos finalidades. Por un lado, construir un \textit{modelo semántico} (ontología) que representa el \textit{conocimiento acerca de los recursos de información en una memoria corporativa} y el \textit{conocimiento sobre el dominio de ésta}. Por otro lado, hacer la \textit{búsqueda y recuperación inteligente de información} para responder las preguntas de los usuarios.
 
-Los recursos son los elementos clave para la adquisición del conocimiento en una organización. Si existe una buena gestión de este conocimiento, la organización tiene ventajas competitivas. En las tecnologías de la información existen muchos instrumentos para lograr esta gestión. El enfoque semántico que estamos investigando requiere varias actividades y mucho tiempo para adaptarlo a una aplicación. Sin embargo, hay varias ventajas de usar este enfoque. Por ejemplo, tener bien definido el significado de los recursos, aprovechar el potencial de los metadatos en los recursos, aprovechar la información explicita e implícita, hacer el conocimiento comprensible por las personas y procesos automáticos, colaborar con otras personas y con procesos automáticos, establecer estándares en la Web, etc. 
-Este enfoque es curioso y nosotros lo asociamos con una analogía de la vida. ?Para entender y comprender a una persona, debemos comunicarnos con esta persona. Podemos empezar por conocer su nombre, edad, interés y otras cualidades. De esta manera, podemos inferir si esta persona es afín a nuestros intereses o si es una persona de la que podemos aprender?. En este sentido, un recurso no sabemos qué utilidad tiene. Solamente hasta que empezamos a entender su significado. Por esta razón un proceso automático debe ?comprender que representa un recurso? para que los resultados que devuelva sea los apropiados para las personas.
+%%Nuestro prototipo realmente fácilita la interacción entre usuarios y un modelo semántico.
+Nuestro trabajo propone un \textit{marco de trabajo} para lograr la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta propuesta comprende tres actividades. La primera actividad es construir un modelo para representar el \textit{conocimiento explícito} sobre los \textit{recursos de información} en una memoria corporativa. La segunda actividad es introducir \textit{reglas de inferencia} para enriquecer al modelo con conocimiento implícito de la memoria corporativa. La tercera actividad es \textit{buscar y recuperar información} acerca de los recursos en el modelo, con el fin de responder las preguntas de los usuarios de la memoria.
 
-Nuestro prototipo de sistema aún está en fase de construcción. Sin embargo, nosotros hemos obtenido experiencia y también experimentado con todos los elementos de la Web Semántica.
+%%%Qué hicimos en cada etapa con las tecnologías semánticas
+%Nuestro \textit{marco de trabajo} se fundamenta en el uso de las tecnologías semánticas. En concreto, empleamos estas tecnologías para desarrollar las tres actividades en nuestra propuesta. En la representación del conocimiento, el \textit{marco de descripción recursos} (RDF) es el mecanismo para describir a los \textit{recursos de información} y las características de éstos en un \textbf{\textit{formato estándar (tripletas)}}. En el enriquecimiento de conocimiento, se emplean al esquema RDF (RDF(S)) y el lenguaje de ontologías (OWL) como lenguajes para escribir las reglas de inferencia. En la búsqueda y recuperación, las consultas son escritas con el lenguaje de consulta SPARQL, el cual está basado en las tripletas de nuestro modelo.
+%%%Ventajas del uso de las tecnologías semánticas
 
-En nuestra experiencia hemos identificado varios nichos de oportunidades. Específicamente, nosotros hemos identificado la necesidad de automatizar varias actividades. También, aunque nuestro sistema solo emplea un subconjunto de recursos del área de Redes y Telecomunicaciones. Nosotros estamos seguros que se puede extender el alcance (en futuros proyectos) para gestionar todos los recursos del área. En donde, todos los recursos deben guiarse por los casos de uso. De esta manera, habrá orden y se construirá un adecuado modelo de ontología. Finalmente, nosotros aún tenemos actividades por investigar, desarrollar y terminar. Como, terminar las descripciones semánticas de los recursos de la memoria corporativa, agregar los axiomas necesarios a las ontologías  del sistema SIR,  instalar y probar el Framework Jena, así como implementar el sistema SIR y evaluarlo. Este trabajo es laborioso, pero nuestra motivación es obtener los beneficios del enfoque semántico.
+Nosotros utilizamos a las tecnologías semánticas, porque éstas proporcionan varias ventajas en la gestión el conocimiento. A continuación se listan las ventajas, las cuales observamos durante y al finalizar el desarrollo e implantación de nuestro \textit{marco de trabajo}.
 
-Los recursos son los elementos clave para la adquisición del conocimiento en una organización. Si existe una buena gestión de este conocimiento, la organización tiene ventajas competitivas. En las tecnologías de la información existen muchos instrumentos para lograr esta gestión. El enfoque semántico que estamos investigando requiere varias actividades y mucho tiempo para adaptarlo a una aplicación. Sin embargo, hay varias ventajas de usar este enfoque. Por ejemplo, tener bien definido el significado de los recursos, aprovechar el potencial de los metadatos en los recursos, aprovechar la información explicita e implícita, hacer el conocimiento comprensible por las personas y procesos automáticos, colaborar con otras personas y con procesos automáticos, establecer estándares en la Web, etc. 
-Este enfoque es curioso y nosotros lo asociamos con una analogía de la vida. ?Para entender y comprender a una persona, debemos comunicarnos con esta persona. Podemos empezar por conocer su nombre, edad, interés y otras cualidades. De esta manera, podemos inferir si esta persona es afín a nuestros intereses o si es una persona de la que podemos aprender?. En este sentido, un recurso no sabemos qué utilidad tiene. Solamente hasta que empezamos a entender su significado. Por esta razón un proceso automático debe ?comprender que representa un recurso? para que los resultados que devuelva sea los apropiados para las personas.
-Nuestro prototipo de sistema aún está en fase de construcción. Sin embargo, nosotros hemos obtenido experiencia y también experimentado con todos los elementos de la Web Semántica. Específicamente, las actividades hechas hasta la redacción de este artículo son: 1) investigar los elementos de la web semántica, 2) identificar los casos de uso, 3) construir nuestros modelos de ontologías en OWL RDF y posteriormente transformarlo a un archivo OWL con la herramienta protégé, 4) verificar que el modelo es consistente y hacer inferencias con el razonador, 6) consultar las descripciones semánticas empleando SPARQL, 7) construir un GoogleForm para construir las descripciones semánticas y finalmente 8) proponer una metodología para  la construcción de un sistema Semántico Integrador de los Recursos (SIR) de una memoria corporativa.
-En nuestra experiencia hemos identificado varios nichos de oportunidades. Específicamente, nosotros hemos identificado la necesidad de automatizar varias actividades. También, aunque nuestro sistema solo emplea un subconjunto de recursos del área de Redes y Telecomunicaciones. Nosotros estamos seguros que se puede extender el alcance (en futuros proyectos) para gestionar todos los recursos del área. En donde, todos los recursos deben guiarse por los casos de uso. De esta manera, habrá orden y se construirá un adecuado modelo de ontología. Finalmente, nosotros aún tenemos actividades por investigar, desarrollar y terminar. Como, terminar las descripciones semánticas de los recursos de la memoria corporativa, agregar los axiomas necesarios a las ontologías  del sistema SIR,  instalar y probar el Framework Jena, así como implementar el sistema SIR y evaluarlo. Este trabajo es laborioso, pero nuestra motivación es obtener los beneficios del enfoque semántico.
+\begin{itemize}
+\item El \textit{marco RDF} permite representar cualquier recurso, sea un ser vivo, un archivo digital, un país, ciudad, un edificio, una organización o un concepto abstracto. De esta manera, se supera la integración de información de recursos que son heterogéneos en formato, contenido y estructura.
+\item El \textit{marco RDF} establece que los recursos tengan un URI, para identificar de manera única a un recurso. De esta forma, se solucionan problemas de homonimia con respecto a los nombres de los recursos.
+\item En el \textit{marco RDF}, la representación del conociendo en los recursos no se limita a un pequeño número de características sobre éstos; sino que cualquier información, sea una relación o una característica, puede describirse para un \textit{recurso de información}.
+\item La introducción de \textit{reglas de inferencia} enriquezcan el conocimiento en un modelo. Porque un razonador a partir de estas reglas puede hacer explícito el conocimiento implícito. Este comportamiento se dio en nuestras ontologías.
+\item Una \textit{ontología} puede ser extendida con el fin de \textit{incorporara mayor conocimiento} o \textit{adaptarse a cambios en el conocimiento}. De esta manera, si nuevos recursos se describen, entonces éstos pueden incorporarse a la ontología. De la misma manera, si cambia el conocimiento en algunas ramas de la ontología, entonces éstas pueden ser sustituidas por otras.
+\item Las \textit{ontologías} están elaboradas en un formato estándar y escritas con vocabularios consensuados. Por esta razón, éstas se pueden intercambiar y reutilizar entre personas o aplicaciones.
+\item Una \textit{ontología} puede representarse gráficamente como un grafo dirigido. El objetivo es tener una \textit{estructura gráfica} para visualizar las descripciones y reglas de inferencia en forma de tripleta.
+\item Una \textit{ontología} fomenta el desarrollo de aplicaciones genéricas para aprovechar estos modelos. Ejemplos de estas aplicaciones son editores de ontologías, interfaces gráficas para describir semánticamente los recursos, navegadores sobre ontologías, por mencionar algunas. Estas herramientas genéricas posibilitan que personas expertas en el dominio sean las principales constructoras del grafo de conocimiento. De esta manera, la información en el grafo será confiable, ya que estas personas son las que tienen los conocimientos en el dominio.
+\end{itemize}
 
+%Otras ventajas de tener ontologías en un formato estándar, son:
+%\begin{itemize}
+%\item Realizar tareas de inferencia a partir de los vocabularios OWL y RDF(S).
+%\item Liberar a las organizaciones del uso de formatos propietarios que tienen un costo económico o de propiedad intelectual.
+%\item Construir rápidamente modelos de conocimiento a partir de ontologías básicas.
+%\item Mezclar ontologías y construir modelos de conocimiento complejos.
+%\end{itemize}
+
+%%%Ventajas de nuestra propuesta en relación a otros trabajos
+%Este \textit{marco de trabajo} emplea a los \textit{casos de uso} para guiar el proceso de \textit{integración semántica}. El primer \textit{caso de uso} es la \textit{cartografía de competencias} que consiste en encontrar personas con base a sus habilidades y capacidades profesionales, así como conocimientos en los temas del dominio de la memoria. El segundo caso es la \textit{búsqueda de recursos digitales} que consiste en encontrar los \textit{documentos y recursos multimedia} a partir de la información sobre éstos (metadatos), en particular, encontrar recursos por los temas del dominio en la memoria.
+
+%Estos dos \textit{casos de uso} son independientes entre sí, por ello, este marco propone la construcción de dos modelos u ontologías. La primera ontología tiene el conocimiento explícito e implícito acerca de los \textit{recursos persona}. De la misma manera, la segunda ontología tiene el conocimiento de los \textit{recursos digitales}. Un aspecto importante en ambos \textit{casos de uso} es vincular a cualquier recurso con los temas del dominio de la memoria corporativa. Por esta razón, se construye una tercera ontología con los temas del dominio, donde estos temas está jerarquizados.
+
+%%%Para quién lo hicimos y con que propóstio
+%Esta propuesta se implemento para la memoria corporativa del área de Redes y Telecomunicaciones que pertenece al departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana. Por ello, la primera ontología tiene información sobre profesores, alumnos y colegas que están vinculados con esta área. La segunda ontología tienen información sobre los recursos digitales que representan trabajos, investigaciones, notas de curso, proyectos, tesis de las personas del área RyT. La tercera ontología tiene los temas del área de RyT que están jerarquizados en cuatro ramas: \textit{sistemas distribuidos}, redes y servicios de telecomunicaciones, sistemas de comunicación digital y web semántica.
+
+%%% que ventajas tiene nuestro prototipo en relacion con otros que se han examinado
+La tarea de búsqueda y recuperación de información son actividades que no cualquier usuario puede llevar a cabo. Porque es necesario que un usuario tenga conocimientos en las tecnologías semánticas y los vocabularios en nuestras ontologías. Por esta razón, nosotros proponemos una aplicación que permita la interacción de cualquier usuario con el modelo, para fines de búsqueda de información.
+
+Nuestra interfaz está orientada al usuario, es decir, un ambiente visual que permite a éstos una manera agradable de consultar la información en nuestras ontologías. Esta característica es importante, porque en los trabajos de nuestro \textit{estado del arte} (Ver Sección \ref{sec:eoaisr}), ninguna aplicación está orientada al usuario.
+
+%Nuestro prototipo establece las siguientes funcionalidades: 1) permitir a los usuarios, navegar a través de la información básica en los recursos, 2) permitir a los usuarios, estructurar sus preguntas y hacer búsquedas específicas de los recursos, 3) publicar los resultados de la búsqueda y navegación en un formato visual agradable, 4) transformar la preguntas a consultas SPARQL, 5) cargar las ontologías en memoria, 6) construir un modelo a partir de la inferencia en la ontologías y un motor de inferencia.
+
+%%%Conclusiones sobre la experimentación
+Nosotros llevamos a cabo una evaluación experimental. Los objetivos de esta evaluación son: 1) \textit{evaluar la calidad de los resultados de Jena para los modelos con y sin inferencia}, así como 2) \textit{medir los tiempos promedio de procesamiento de Jena para las consultas de nuestra primera actividad}. En la medición de tiempos, queríamos ver el rendimiento de Jena con la cantidad de datos que esperamos manejar. Mientras, en la evaluación de resultados, queríamos ver si los resultados devueltos por Jena, son los que responden nuestras preguntas.
+
+Los resultados en nuestra experimentación indican lo siguiente. El \textit{tiempo de consulta} es mayor en un \textit{modelo con inferencia} en comparación de un \textit{modelo sin inferencia}. Sin embargo, los resultados de las búsquedas en un modelo sin inferencia son variados. En algunos casos, todos los \textit{resultados} que se sabe responden la consulta, son recuperados cuando la consulta es sobre el conocimiento explícito. En otros casos, varios recursos que responden la consulta, son descartados, porque algunos recursos carecen de un determinado triple. En cambio, los resultados de búsquedas sobre un \textit{modelo con inferencia} son buenos, porque estas consultas recuperan todos los recursos que de antemano sabemos que responden a las consultas.
+
+%%%Conclusión final, es factible o no es factible el uso de las TS y describir porqué
+En este trabajo presentamos nuestro \textit{marco de trabajo}, un prototipo para la consulta de información, los resultados en nuestra evaluación experimental, así como las ventajas de las tecnologías semánticas, y con base en éstos, nosotros hacemos esta conclusión. \textbf{El uso de \textit{tecnologías semánticas} es una buena aproximación para lograr la \textit{integración semántica de recursos} en una \textit{memoria corporativa}}.
+
+%%% Trabajos futuros
+En la realización de este trabajo, nosotros identificamos varias actividades que establecimos como trabajos futuros. Estos trabajos se listan a continuación.
+
+
+\begin{itemize}
+\item Introducir más \textit{casos de uso}, por ejemplo, administración del inventario en los distintos laboratorios que componen el departamento de IE de la UAM
+\item Actualizar los \textit{recursos de información} en la \textit{memoria corporativa} del área de RyT y describir a estos recursos con el \textit{marco RDF}.
+\item Construir una interfaz gráfica de usuario para que éste pueda describir los \textit{recursos de información}. El objetivo es que los usuarios empleen esta aplicación como una aplicación de red social. Algunas funcionalidades de esta interfaz son:
+	\begin{itemize}
+		\item Describir un nuevo \textit{recurso de información}.
+		\begin{itemize}
+			\item Asignar un URI al nuevo recurso
+			\item Construir un conjunto de tripletas RDF, asociadas al nuevo recurso.
+			\item Guardar las tripletas en un archivo o agregar éstas al modelo inmediatamente.
+		\end{itemize}
+		\item Actualizar la información de un \textit{recurso de información}.
+		\begin{itemize}
+			\item Ver la información vieja del recurso.
+			\item Corregir la información en el modelo.
+			\item Guardar el nuevo modelo.
+		\end{itemize}
+		\item Eliminar las descripciones de un \textit{recurso de información}.
+		\begin{itemize}
+			\item Ver la información del recurso a eliminar.
+			\item Eliminar las tripletas en el modelo, donde el recurso es el sujeto.
+			\item Guardar el nuevo modelo.
+		\end{itemize}
+	\end{itemize}
+\item Evaluar la introducción de nuevos axiomas en las ontologías, los cuales sean más complejos.
+\item Utiliza el triplestore Stardog.
+	\begin{itemize}
+	\item Cargar, inferir y consultar nuestras ontologías con Stardog.
+	\item Hacer nuestra evaluación experimental con Stardog.
+	\item Comparar el desempeño y resultados de experimento de Stardog contra Jena.
+	\end{itemize}
+\item Dar mantenimiento a la ontología del vocabulario de Redes y Telecomunicaciones.
+	\begin{itemize}
+	\item Introducir nuevos conceptos, como radios cognitivos, computación en la nube, computación móvil, por mencionar algunos.
+	\item Introducir tripletas para indicar la traducción de un tema  otros idiomas, por ejemplo, semantic web, web semántica, web sem\^{a}ntica, semantisch web, anlamsal web, web semantikoa.
+	\end{itemize}
+\item Mejorar el prototipo de integración semántica de recursos.
+	\begin{itemize}
+		\item Mejorar la seguridad en el prototipo.
+		\item Mejorar la visualización de la información en las interfaces.
+		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index\footnote{The Apache Software Foundation, ``adding free text searches to SPARQL,''  Disponible en: \url{http://jena.apache.org/documentation/larq/}}.
+		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda y despliegue de información.
+	\end{itemize}
+\end{itemize}
