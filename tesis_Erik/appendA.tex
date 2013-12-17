@@ -4,70 +4,220 @@
 \textbf{\textit{Algoritmo para generar datos artificialmente de los recursos persona}}
 \begin{enumerate}
 \item $N\leftarrow$ número de personas a describir;
-\item Tópicos de Redes y Telecomunicaciones $TopRyT \leftarrow \{ \theta_1 \dots \theta_k \}$;
+\item Tópicos de Redes y Telecomunicaciones: $TopRyT \leftarrow \{ \theta_1 \dots \theta_k \}$;
 \item \textbf{for} $i\leftarrow 1$ \textbf{to} $N$ \textbf{do}
-\begin{enumerate}
-\item Elegir el nombre, apellido paterno y apellido materno de unas listas predefinidas;
-\item Concatenar el nombre y apellidos electos, donde cada palabra sea separada por un espacio en blanco;
-\item Guardar este nombre en una lista tipo cola ($Names$);
-\end{enumerate}
-\item Lista de Nombres $Names \leftarrow \{ nombre_1 \dots nombre_N \}$;
-\item $modelo_{rdf} \leftarrow$ Crear un modelo rdf para los recursos persona;
+	\begin{enumerate}
+		\item Elegir el nombre, apellido paterno y apellido materno de unas listas predefinidas;
+		\item Concatenar el nombre y apellidos electos, donde cada palabra sea separada por un espacio en blanco;
+		\item Guardar este nombre en una lista tipo cola ($Names$);
+	\end{enumerate}
+\item Lista de Nombres: $Names \leftarrow \{ nombre_1 \dots nombre_N \}$;
+\item Crear un modelo rdf vacío para los recursos: $modelo_{rdf} \leftarrow crea,modelo_{rdf}()$;
 \item \textbf{for} $i\leftarrow 1$ \textbf{to} $N$ \textbf{do}
+	\begin{enumerate}
+		\item $\sigma_i \leftarrow$ crear el recurso $i$ y establecer un identificador URI para éste;
+		\begin{enumerate}
+			\item Seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
+			\item Quitar los espacios en blanco de esta cadena;
+			\item Establecer esta cadena como identificador del recurso;
+		\end{enumerate}
+		\item \textbf{foreach} \textit{característica significativa} \textbf{of} \textit{recurso persona} \textbf{do} establece una literal o un recurso
+	\begin{enumerate}
+	\item Literal: \textit{nombre} $\leftarrow$ seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
+	\item Recurso: \textit{Género} $\leftarrow$ elegir el sexo de la persona a partir del nombre;
+	\item Literal: \textit{Año} $\leftarrow$ establecer el año aleatoriamente en un intervalo del 2000 al 2013;
+	\item Recurso: \textit{Ocupación} $\leftarrow$ elegir una ocupación para la persona de las tres posibles (Estudiante, Profesor o Empleado);
+	
+	/** \emph{Establecer la edad a partir de la ocupación de la persona} **/
+	\item \textbf{if} (Ocupación $= 0$) \textbf{then}
+		\begin{itemize}
+			\item [$ $] Literal: \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 27 a 57;
+		\end{itemize}
+	\item \textbf{else if} (Ocupación $= 1$) \textbf{then}
+		\begin{itemize}
+			\item [$ $] Literal: \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 18 a 28;
+		\end{itemize}
+	
+	/** \emph{Elegir una organización de un listado a partir de la ocupación de la persona} **/
+	\item \textbf{if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+		\begin{itemize}
+		\item [$ $] Literal: \textit{Organización} $\leftarrow$  se elige una universidad de un listado preestablecido de universidades;
+		\end{itemize}
+	\item \textbf{else if} (Ocupación $\equiv$ `Empleado') \textbf{then}
+		\begin{itemize}
+		\item [$ $] Literal: \textit{Organización} $\leftarrow$ se elige una organización de una lista preestablecida de organizaciones;
+		\end{itemize}
+	\item Literal: \textit{Email} $\leftarrow$ construir el email a partir del nombre de la persona (cambiando los espacios en blanco por guiones bajos), la organización donde labora y otras palabras especiales;
+	\item Literal: \textit{Sitio Web} $\leftarrow$ construir el URL concatenando el nombre (cambiando espacios en blanco por guiones), la organización donde labora, la ocupación, una extensión de páginas web y otras palabras especiales;
+	
+	/** Elegir otros individuos que se relacionan con esta persona a partir de la ocupación de la persona **/
+	\item \textbf{if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
+		\begin{itemize}
+			\item [$ $] Recurso: \textit{Conocidos} $\leftarrow$ se eligen dos nombres aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
+			\item [$ $] Quitar los espacios en blanco de los nombres;
+			\item [$ $] Guardar estas cadenas en una lista de conocidos;
+		\end{itemize}
+	\item \textbf{else if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+		\begin{itemize}
+			\item [$ $] Recurso: \textit{Conocidos} $\leftarrow$ se eligen dos nombres a cinco nombre aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
+			\item [$ $] Quitar los espacios en blanco de los nombres;
+			\item [$ $] Guardar estas cadenas en una lista de conocidos;
+		\end{itemize}
+	\item Recurso: \textit{Habilidades lingüísticas} $\leftarrow$ se eligen de forma aleatoria de 1 a 3 idiomas de una lista preestablecida de idiomas;
+	\item Recurso: \textit{Conocimientos de RyT} $\leftarrow$ se eligen de manera aleatoria de 5 a 7 Tópicos de Redes y Telecomunicaciones ($TopRyT$);
+	\item Recurso: \textit{Competencias profesionales} $\leftarrow$ se eligen de forma aleatoria de 3 a 4 competencias de un listado preestablecido de competencias;
+	\end{enumerate}
+\item \textbf{foreach} \textit{característica significativa} \textbf{of} \textit{recurso persona} \textbf{do} genera las tripletas RDF
+	\begin{enumerate}
+	\item Tripleta: nombre $\leftarrow$ concatenar el individuo, la propiedad ``tiene-nombre'' y la literal nombre.
+	\item Tripleta: email $\leftarrow$ concatenar el individuo, la propiedad ``tiene-email'' y la literal email.
+	\item Tripleta: website $\leftarrow$ concatenar el individuo, la propiedad ``tiene-website'' y la literal website.
+	\item Tripleta: edad $\leftarrow$ concatenar el individuo, la propiedad ``tiene-edad'' y la literal edad.
+	\item Tripleta: ocupación $\leftarrow$ concatenar el individuo, la propiedad ``tipo'' y el recurso ocupación.
+	\item Tripleta: género $\leftarrow$ concatenar el individuo, la propiedad ``tiene-género'' y la literal género.
+	\item \textbf{foreach} \textit{idioma electo} \textbf{of} \textit{este individuo} \textbf{do} escribe las aserciones lee, escribe y habla.
+		\begin{enumerate}
+		\item Tripleta: Lee $\leftarrow$ concatenar el individuo, la propiedad ``lee'' y el recurso idioma.
+		\item Tripleta: Escribe $\leftarrow$ concatenar el individuo, la propiedad ``escribe'' y el recurso idioma.
+		\item Tripleta: Habla $\leftarrow$ concatenar el individuo, la propiedad ``habla'' y el recurso idioma.
+		\end{enumerate}
+	\item \textbf{foreach} \textit{tema electo} \textbf{of} \textit{este individuo} \textbf{do} escribe las aserciones ``experiencia en''
+		\begin{enumerate}
+		\item Tripleta: experiencia en $\leftarrow$ concatenar el individuo, la propiedad ``experiencia-en'' y el recurso tema RyT.
+		\end{enumerate}
+	\item \textbf{foreach} \textit{habilidad profesional electa} \textbf{of} \textit{este individuo} \textbf{do} escribe las aserciones ``competente en''
+		\begin{enumerate}
+		\item Tripleta: competente en $\leftarrow$ concatenar el individuo, la propiedad ``competente-en'' y el recurso competencia.
+		\end{enumerate}
+	\item \textbf{foreach} \textit{persona conocida} \textbf{of} \textit{este individuo} \textbf{do} escribe la aserciones tiene-colega o tiene-asesor dependiendo la ocupación de este individuo.
+		\begin{itemize}
+		\item \textbf{if} (Ocupación $\equiv$ `Empleado' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+			\begin{itemize}
+			\item [$ $] Tripleta: tiene colega $\leftarrow$ concatenar el individuo, la propiedad ``tiene-colega'' y el recurso individuo conocido.
+			\end{itemize}
+		\item \textbf{else if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
+			\begin{itemize}
+			\item [$ $] Tripleta: tiene asesor $\leftarrow$ concatenar el individuo, la propiedad ``tiene-asesor'' y el recurso individuo conocido.
+			\end{itemize}
+		\end{itemize}
+	\item Escribir la Tripleta: trabaja-en o estudia-en, dependiendo la ocupación de este individuo.
+		\begin{itemize}
+		\item \textbf{if} (Ocupación $\equiv$ `Empleado') \textbf{then}
+			\begin{itemize}
+			\item [$ $] Tripleta: trabaja en $\leftarrow$ concatenar el individuo, la propiedad ``trabaja-en'' y el recurso organización.
+			\end{itemize}
+		\item \textbf{else if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
+			\begin{itemize}
+			\item [$ $] Tripleta: estudia en $\leftarrow$ concatenar el individuo, la propiedad ``estudia-en'' y el objeto organización (universidad).
+			\end{itemize}
+		\end{itemize}
+	\end{enumerate}
+	\item Agregar el conjunto de aserciones de este individuo al modelo.
+\end{enumerate}
+\item Guardar el modelo en un archivo con un formato estándar.
+\end{enumerate}
+
+
+\textbf{\textit{Algoritmo para generar datos artificialmente de los recursos digitales}}
 \begin{enumerate}
-\item $\sigma_i \leftarrow$ crear el recurso $i$ y establecer un identificador URI para éste;
-\begin{enumerate}
-\item Seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
-\item Quitar los espacios en blanco de esta cadena;
-\item Establecer esta cadena como identificador del recurso;
-\end{enumerate}
-\item Para cada característica significativa de una persona elaborar las literales y elegir los objetos de ésta;
-\begin{enumerate}
-\item Literal \textit{nombre} $\leftarrow$ seleccionar el i-ésimo nombre de la lista de nombres ($nombre_i$);
-\item Objeto \textit{Género} $\leftarrow$ elegir el sexo de la persona a partir del nombre;
-\item Literal \textit{Año} $\leftarrow$ establecer el año aleatoriamente en un intervalo del 2000 al 2013;
-\item Objeto \textit{Ocupación} $\leftarrow$ elegir una ocupación para la persona de las tres posibles (Estudiante, Profesor o Empleado);
+	\item $N\leftarrow$ número de recursos digitales a describir por Persona;
+	\item Tópicos de Redes y Telecomunicaciones: $TopRyT \leftarrow \{ \theta_1 \dots \theta_k \}$;
+	\item Listar los nombres de las personas que se generaron con el otro script.: $NomRyT \leftarrow \{ \eta_1 \dots \eta_t \}$;
+	\item Crear un modelo rdf vacío para los recursos: $modelo_{rdf} \leftarrow crea,modelo_{rdf}()$;
+	\item \textbf{foreach} $\eta_k$ \textbf{of} $NomRyT$ \textbf{do}
+		\begin{enumerate}
+		\item \textbf{for} $i\leftarrow 1$ \textbf{to} $N$ \textbf{do}
+			\begin{enumerate}
+			\item $\sigma_i \leftarrow$ crear el recurso $i$;
+			\item \textbf{foreach} \textit{característica significativa} \textbf{of} \textit{recurso digital} \textbf{do} establece una literal o un recurso
+				\begin{enumerate}
+				\item Recurso: Tipo de Recurso $\leftarrow$ elegir una ocupación para la persona de las tres posibles (Artículo, Presentación, Tesis, Audio, Video, PáginaWeb, ReporteTécnico, Imagen y Libro).
+				\item Literal: año $\leftarrow$ establecer el año aleatoriamente de un intervalo del 2000 al 2013.
+				\item Literal: extensión $\leftarrow$ elegir el tipo de extensión de unos listado preestablecidos de extensiones, donde esta elección se hace a partir del Tipo de Recurso.
+				\item $\sigma_i \leftarrow$ asignar un Identificador del recurso digital$i$, a partir de la concatenación del tipo de recurso, un número incremental para cada tipo de recurso, el año y extensión de este recurso.
+				\item Recurso: Tópicos de RyT $\leftarrow$ elegir de 4 a 6 tópicos de la misma lista de área de investigación.
+				\item Literal: Título $\leftarrow$ construir el título a partir de la elección de una oración inicial en unos listados preestablecidos y de la concatenación de algunos tópicos elegidos para este recurso. La elección de la oración se hace a partir del tipo de recurso. 
+				\item Establecer o elegir de 1 a 3 nombres a partir de una opción aleatoria binaria (OpcBin).
+					\begin{itemize}
+					\item \textbf{if} (OpcBin $= 0$) \textbf{then}
+						\begin{itemize}
+						\item [$ $] Literal: Autores $\leftarrow$ construir los nombres a partir de un listado de nombres y apellidos preestablecidos.
+						\end{itemize}
+					\item \textbf{else if} (OpcBin $= 1$) \textbf{then}
+						\begin{itemize}
+						\item [$ $] Literal: Autores $\leftarrow$ elegir los nombres de los individuos de la lista de nombres ($NomRyT$).
+						\end{itemize}
+					\end{itemize}
+				\item Literal: Ruta $\leftarrow$ construir el url a partir del Tipo de Recurso, la extensión y unas listas preestablecidas con url bases.
+					\begin{itemize}
+					\item \textbf{if} (Tipo de Recurso $\equiv$ `Audio' $\parallel$ Tipo de Recurso $\equiv$ `Vídeo') \textbf{then}
+						\begin{itemize}
+						\item [$ $] la parte inicial del url se elige de una lista con sitios dedicados a este tipo de recursos y de almacenamiento en la nube. Por ejemplo, youtube, dropbox, tube, etc.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `Artículo') \textbf{then}
+						\begin{itemize}
+						\item [$ $] la parte inicial del url se construye concatenando el nombre de las publicaciones y palabras reservadas. Por ejemplo, \url{http://www.ieee.org/}, \url{http://www.acm.org/}
+						\end{itemize}
+					\item \textbf{else}
+						\begin{itemize}
+						\item [$ $] la parte inicial del url se elige de una lista de sitios comunes dedicados al almacenamiento.
+						\end{itemize}
+					\end{itemize}
+				\item Recurso: Idioma $\leftarrow$ elegir un idioma de una lista preestablecida de idiomas.
 
-/** \emph{Establecer la edad a partir de la ocupación de la persona} **/
-\item \textbf{if} (Ocupación $\equiv$ `Empleado' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
-\begin{itemize}
-\item [$ $] Literal \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 27 a 57;
-\end{itemize}
-\item \textbf{else if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
-\begin{itemize}
-\item [$ $] \textit{Edad} $\leftarrow$ un número aleatorio en el intervalo de 18 a 28;
-\end{itemize}
-
-/** \emph{Elegir una organización de un listado a partir de la ocupación de la persona} **/
-\item \textbf{if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
-\begin{itemize}
-\item [$ $] Literal \textit{Organización} $\leftarrow$  se elige una universidad de un listado preestablecido de universidades;
-\end{itemize}
-\item \textbf{else if} (Ocupación $\equiv$ `Empleado') \textbf{then}
-\begin{itemize}
-\item [$ $] \textit{Organización} $\leftarrow$ se elige una organización de una lista preestablecida de organizaciones;
-\end{itemize}
-\item Literal \textit{Email} $\leftarrow$ construir el email a partir del nombre de la persona (cambiando los espacios en blanco por guiones bajos), la organización donde labora y otras palabras especiales;
-\item Literal \textit{Sitio Web} $\leftarrow$ construir el URL concatenando el nombre (cambiando espacios en blanco por guiones), la organización donde labora, la ocupación, una extensión de páginas web y otras palabras especiales;
-
-/** Elegir otros individuos que se relacionan con esta persona a partir de la ocupación de la persona **/
-\item \textbf{if} (Ocupación $\equiv$ `Estudiante') \textbf{then}
-\begin{itemize}
-\item [$ $] \textit{Conocidos} $\leftarrow$ se eligen dos nombres aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
-\item [$ $] Quitar los espacios en blanco de los nombres;
-\item [$ $] Guardar estas cadenas en una lista de conocidos;
-\end{itemize}
-\item \textbf{else if} (Ocupación $\equiv$ `Estudiante' $\parallel$ Ocupación $\equiv$ `Profesor') \textbf{then}
-\begin{itemize}
-\item [$ $] \textit{Conocidos} $\leftarrow$ se eligen dos nombres a cinco nombre aleatorios de la lista nombres, cuya ocupación de éstos sea Empleado o Profesor;
-\item [$ $] Quitar los espacios en blanco de los nombres;
-\item [$ $] Guardar estas cadenas en una lista de conocidos;
-\end{itemize}
-\item Objeto \textit{Habilidades lingüísticas} $\leftarrow$ se eligen de forma aleatoria de 1 a 3 idiomas de una lista preestablecida de idiomas;
-\item Objeto \textit{Conocimientos de RyT} $\leftarrow$ se eligen de manera aleatoria de 5 a 7 Tópicos de Redes y Telecomunicaciones ($TopRyT$);
-\item Objeto \textit{Competencias profesionales} $\leftarrow$ se eligen de forma aleatoria de 3 a 4 competencias de un listado preestablecido de competencias;
+				\item Literal: Sumario $\leftarrow$ construir el resumen o síntesis a partir de la elección de una oración inicial y de concatenar todos los tópicos electos para este individuo. La oración inicial se elige de dos listas, dependiendo el Tipo de Recurso.
+				\end{enumerate}
+			\item \textbf{foreach} \textit{característica significativa} \textbf{of} \textit{recurso digital} \textbf{do} genera las tripletas RDF
+				\begin{enumerate}
+				\item Tripleta: tipo de recurso $\leftarrow$ concatenar el individuo, la propiedad ``tipo'' y el Recurso Tipo Recurso.
+				\item Tripleta: título $\leftarrow$ concatenar el individuo, la propiedad ``tiene-título'' y la Literal título.
+				\item \textbf{foreach} \textit{autor electo} \textbf{of} \textit{este individuo} \textbf{do} escribe las aserciones ``tiene-autor''
+					\begin{itemize}
+					\item Tripleta: tiene autor $\leftarrow$ concatenar el individuo, la propiedad ``tiene-autor'' y la Literal autor.
+					\end{itemize}
+				\item Tripleta: ruta $\leftarrow$ concatenar el individuo, la propiedad ``tiene-rutaArchivo'' y la Literal ruta.
+				\item Tripleta: extensión $\leftarrow$ concatenar el individuo, la propiedad ``tiene-extensión'' y el Recurso Extensión.
+				\item Tripleta: Lenguaje $\leftarrow$ concatenar el individuo, la propiedad ``tiene-lenguajeFuente'' y el Recurso Idioma.
+				\item textbf{foreach} \textit{tópico electo} \textbf{of} \textit{este individuo} \textbf{do} escribe las aserciones ``tiene-tópico''
+					\begin{itemize}
+					\item Tripleta: tiene tópico $\leftarrow$ concatenar el individuo, la propiedad ``tiene-tópico'' y el Recurso Tópico.
+					\end{itemize}
+				\item Construir la Tripleta: tiene sinopsis o tiene resumen dependiendo el Tipo de Recurso.
+					\begin{itemize}
+					\item \textbf{if} (Tipo de Recurso $\equiv$ `Presentación' $\parallel$ Tipo de Recurso $\equiv$ `Audio' $\parallel$ Tipo de Recurso $\equiv$ `Vídeo' $\parallel$ Tipo de Recurso $\equiv$ `Audio' )  \textbf{then}
+						\begin{itemize}
+						\item [$ $]  Tripleta: tiene sinopsis $\leftarrow$ concatenar el individuo, la propiedad ``tiene-sinopsis'' y la Literal sumario.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `Artículo' $\parallel$ Tipo de Recurso $\equiv$ `Tesis' $\parallel$ Tipo de Recurso $\equiv$ `PáginaWeb' $\parallel$ Tipo de Recurso $\equiv$ `ReporteTécnico' $\parallel$ Tipo de Recurso $\equiv$ `Libro' )  \textbf{then}
+						\begin{itemize}
+						\item [$ $]  Tripleta: tiene sinopsis $\leftarrow$ concatenar el individuo, la propiedad ``tiene-resumen'' y la Literal sumario.
+						\end{itemize}
+					\end{itemize}
+				\item Construir la Tripleta: tiene año de creación, tiene año de publicación, tiene año de última visita, tiene año de presentación o tiene año de conclusión, dependiendo el Tipo de Recurso.
+					\begin{itemize}
+					\item \textbf{if} (Tipo de Recurso $\equiv$ `Presentación' $\parallel$ Tipo de Recurso $\equiv$ `Audio' $\parallel$ Tipo de Recurso $\equiv$ `Vídeo' $\parallel$ Tipo de Recurso $\equiv$ `Audio' )  \textbf{then}
+						\begin{itemize}
+						\item [$ $] Tripleta: año de creación $\leftarrow$ concatenar el individuo, la propiedad ``tiene-añoDeCreación'' y la Literal año.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `Artículo' $\parallel$ Tipo de Recurso $\equiv$ `Libro')  \textbf{then}
+						\begin{itemize}
+						\item [$ $] Tripleta: año de publicación $\leftarrow$ concatenar el individuo, la propiedad ``tiene-añoDePublicación'' y la Literal año.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `PáginaWeb?)  \textbf{then}
+						\begin{itemize}
+						\item [$ $] Tripleta: año de última visita $\leftarrow$ concatenar el individuo, la propiedad ``tiene-añoDeÚltimaVisita'' y la Literal año.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `ReporteTécnico?)  \textbf{then}
+						\begin{itemize}
+						\item [$ $] Tripleta: año de presentación $\leftarrow$ concatenar el individuo, la propiedad ``tiene-añoDePresentación'' y la Literal año.
+						\end{itemize}
+					\item \textbf{else if} (Tipo de Recurso $\equiv$ `Tesis?)  \textbf{then}
+						\begin{itemize}
+						\item [$ $] Tripleta: año de conclusión $\leftarrow$ concatenar el individuo, la propiedad ``tiene-añoDeConclusión'' y la Literal año.
+						\end{itemize}
+					\end{itemize}
+				\end{enumerate}
+			\end{enumerate}
+		\end{enumerate}
+	\item Guardar el modelo en un archivo con una sintaxis de serialización estándar;
 \end{enumerate}
-\item Para cada característica significativa de una persona construir sus aserciones respectivas.
-\end{enumerate}
-\end{enumerate}
-
