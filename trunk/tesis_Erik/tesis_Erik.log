@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  16 DEC 2013 03:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  16 DEC 2013 23:57
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -1043,12 +1043,12 @@ Package pdftex.def Info: DiagramaFlujo.pdf used on input line 42.
 (pdftex.def)             Requested size: 236.01561pt x 555.14973pt.
  [82] [83 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/DiagramaFlujo.pdf>] [84
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Overfull \hbox (5.68689pt too wide) in paragraph at lines 100--101
+Overfull \hbox (5.68689pt too wide) in paragraph at lines 104--105
 []\T1/cmr/m/n/12 El usua-rio in-tro-du-ce el URL del Lo-gin en su na-ve-ga-dor,
  por ejem-plo: $\T1/cmtt/m/n/12 http : / / localhost :$
  []
@@ -1056,16 +1056,16 @@ Overfull \hbox (5.68689pt too wide) in paragraph at lines 100--101
 [85] <FormLogin.pdf, id=934, 749.80125pt x 548.0475pt>
 File: FormLogin.pdf Graphic file (type pdf)
  <use FormLogin.pdf>
-Package pdftex.def Info: FormLogin.pdf used on input line 119.
+Package pdftex.def Info: FormLogin.pdf used on input line 123.
 (pdftex.def)             Requested size: 338.90622pt x 247.71028pt.
 
 <IntWebHome.pdf, id=935, 749.80125pt x 548.0475pt>
 File: IntWebHome.pdf Graphic file (type pdf)
  <use IntWebHome.pdf>
-Package pdftex.def Info: IntWebHome.pdf used on input line 123.
+Package pdftex.def Info: IntWebHome.pdf used on input line 127.
 (pdftex.def)             Requested size: 338.90622pt x 247.71028pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
@@ -1078,26 +1078,26 @@ WebHome.pdf): PDF inclusion: multiple pdfs with page group included in a single
 >] <IntWebNavPer.pdf, id=958, 747.79375pt x 544.0325pt>
 File: IntWebNavPer.pdf Graphic file (type pdf)
  <use IntWebNavPer.pdf>
-Package pdftex.def Info: IntWebNavPer.pdf used on input line 156.
+Package pdftex.def Info: IntWebNavPer.pdf used on input line 160.
 (pdftex.def)             Requested size: 238.34041pt x 173.3991pt.
 
 <IntWebNavDoc.pdf, id=959, 757.83125pt x 549.05125pt>
 File: IntWebNavDoc.pdf Graphic file (type pdf)
  <use IntWebNavDoc.pdf>
-Package pdftex.def Info: IntWebNavDoc.pdf used on input line 160.
+Package pdftex.def Info: IntWebNavDoc.pdf used on input line 164.
 (pdftex.def)             Requested size: 239.33098pt x 173.3991pt.
 
 <IntWebNavMult.pdf, id=960, 749.80125pt x 547.04375pt>
 File: IntWebNavMult.pdf Graphic file (type pdf)
  <use IntWebNavMult.pdf>
-Package pdftex.def Info: IntWebNavMult.pdf used on input line 164.
+Package pdftex.def Info: IntWebNavMult.pdf used on input line 168.
 (pdftex.def)             Requested size: 237.66454pt x 173.3991pt.
 
 
-LaTeX Warning: Float too large for page by 14.7965pt on input line 167.
+LaTeX Warning: Float too large for page by 14.7965pt on input line 171.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
@@ -1115,26 +1115,26 @@ gle page
 >] <IntWebFilPer.pdf, id=986, 746.79pt x 548.0475pt>
 File: IntWebFilPer.pdf Graphic file (type pdf)
  <use IntWebFilPer.pdf>
-Package pdftex.def Info: IntWebFilPer.pdf used on input line 211.
+Package pdftex.def Info: IntWebFilPer.pdf used on input line 215.
 (pdftex.def)             Requested size: 236.27704pt x 173.3991pt.
 
 <IntWebFilDoc.pdf, id=987, 746.79pt x 548.0475pt>
 File: IntWebFilDoc.pdf Graphic file (type pdf)
  <use IntWebFilDoc.pdf>
-Package pdftex.def Info: IntWebFilDoc.pdf used on input line 215.
+Package pdftex.def Info: IntWebFilDoc.pdf used on input line 219.
 (pdftex.def)             Requested size: 236.27704pt x 173.3991pt.
 
 <IntWebFilMult.pdf, id=988, 746.79pt x 548.0475pt>
 File: IntWebFilMult.pdf Graphic file (type pdf)
  <use IntWebFilMult.pdf>
-Package pdftex.def Info: IntWebFilMult.pdf used on input line 219.
+Package pdftex.def Info: IntWebFilMult.pdf used on input line 223.
 (pdftex.def)             Requested size: 236.27704pt x 173.3991pt.
 
 
-LaTeX Warning: Float too large for page by 12.17552pt on input line 222.
+LaTeX Warning: Float too large for page by 12.17552pt on input line 226.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
@@ -1153,16 +1153,16 @@ gle page
 File: FormBusPer.pdf Graphic file (type pdf)
 
 <use FormBusPer.pdf>
-Package pdftex.def Info: FormBusPer.pdf used on input line 297.
+Package pdftex.def Info: FormBusPer.pdf used on input line 301.
 (pdftex.def)             Requested size: 424.82523pt x 565.0969pt.
  <IntWebResPer.pdf, id=1019, 747.79375pt x 549.05125pt>
 File: IntWebResPer.pdf Graphic file (type pdf)
 
 <use IntWebResPer.pdf>
-Package pdftex.def Info: IntWebResPer.pdf used on input line 304.
+Package pdftex.def Info: IntWebResPer.pdf used on input line 308.
 (pdftex.def)             Requested size: 283.22162pt x 207.94627pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
@@ -1171,16 +1171,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 <FormBusDoc.pdf, id=1046, 761.84625pt x 1048.91875pt>
 File: FormBusDoc.pdf Graphic file (type pdf)
  <use FormBusDoc.pdf>
-Package pdftex.def Info: FormBusDoc.pdf used on input line 378.
+Package pdftex.def Info: FormBusDoc.pdf used on input line 382.
 (pdftex.def)             Requested size: 424.82523pt x 584.89369pt.
 
 <IntWebResDoc.pdf, id=1047, 747.79375pt x 545.03625pt>
 File: IntWebResDoc.pdf Graphic file (type pdf)
  <use IntWebResDoc.pdf>
-Package pdftex.def Info: IntWebResDoc.pdf used on input line 385.
+Package pdftex.def Info: IntWebResDoc.pdf used on input line 389.
 (pdftex.def)             Requested size: 283.22162pt x 206.42564pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
@@ -1189,16 +1189,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--399
 <FormBusMult.pdf, id=1072, 749.80125pt x 822.07124pt>
 File: FormBusMult.pdf Graphic file (type pdf)
  <use FormBusMult.pdf>
-Package pdftex.def Info: FormBusMult.pdf used on input line 447.
+Package pdftex.def Info: FormBusMult.pdf used on input line 451.
 (pdftex.def)             Requested size: 424.82523pt x 465.77567pt.
 
 <IntWebResMult.pdf, id=1073, 752.8125pt x 548.0475pt>
 File: IntWebResMult.pdf Graphic file (type pdf)
  <use IntWebResMult.pdf>
-Package pdftex.def Info: IntWebResMult.pdf used on input line 454.
+Package pdftex.def Info: IntWebResMult.pdf used on input line 458.
 (pdftex.def)             Requested size: 283.22162pt x 206.18631pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
@@ -1206,13 +1206,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 467--468
 <FormAllRes.pdf, id=1087, 749.80125pt x 527.9725pt>
 File: FormAllRes.pdf Graphic file (type pdf)
  <use FormAllRes.pdf>
-Package pdftex.def Info: FormAllRes.pdf used on input line 500.
+Package pdftex.def Info: FormAllRes.pdf used on input line 504.
 (pdftex.def)             Requested size: 351.77737pt x 247.71028pt.
 
 <IntWebNavAll.pdf, id=1088, 749.80125pt x 527.9725pt>
 File: IntWebNavAll.pdf Graphic file (type pdf)
  <use IntWebNavAll.pdf>
-Package pdftex.def Info: IntWebNavAll.pdf used on input line 504.
+Package pdftex.def Info: IntWebNavAll.pdf used on input line 508.
 (pdftex.def)             Requested size: 351.77737pt x 247.71028pt.
 
 [102 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebResMult.pdf>] [103 <C:
@@ -1223,30 +1223,30 @@ pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
 WebNavAll.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 
  []
 
 <IntWebDetPer.pdf, id=1116, 746.79pt x 546.04pt>
 File: IntWebDetPer.pdf Graphic file (type pdf)
  <use IntWebDetPer.pdf>
-Package pdftex.def Info: IntWebDetPer.pdf used on input line 543.
+Package pdftex.def Info: IntWebDetPer.pdf used on input line 547.
 (pdftex.def)             Requested size: 237.14307pt x 173.3991pt.
 
 <IntWebDetDoc.pdf, id=1117, 746.79pt x 546.04pt>
 File: IntWebDetDoc.pdf Graphic file (type pdf)
  <use IntWebDetDoc.pdf>
-Package pdftex.def Info: IntWebDetDoc.pdf used on input line 547.
+Package pdftex.def Info: IntWebDetDoc.pdf used on input line 551.
 (pdftex.def)             Requested size: 237.14307pt x 173.3991pt.
 
 <IntWebDetMult.pdf, id=1118, 746.79pt x 546.04pt>
 File: IntWebDetMult.pdf Graphic file (type pdf)
  <use IntWebDetMult.pdf>
-Package pdftex.def Info: IntWebDetMult.pdf used on input line 551.
+Package pdftex.def Info: IntWebDetMult.pdf used on input line 555.
 (pdftex.def)             Requested size: 237.14307pt x 173.3991pt.
 
 
-LaTeX Warning: Float too large for page by 20.95348pt on input line 554.
+LaTeX Warning: Float too large for page by 20.95348pt on input line 558.
 
 ) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [104] [105 <C:/U
 sers/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebDetPer.pdf> <C:/Users/Gatito/Des
@@ -1316,26 +1316,61 @@ Cap\'{\i }tulo 8.
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
 Ap\'{e}ndice A.
 
-Overfull \hbox (10.17401pt too wide) in paragraph at lines 26--27
-[]\T1/cmr/m/n/12 Literal \T1/cmr/m/it/12 nom-bre $\OMS/cmsy/m/n/12  $ \T1/cmr/m
-/n/12 se-lec-cio-nar el i-ésimo nom-bre de la lis-ta de nom-bres ($\OML/cmm/m/i
-t/12 nombre[]$\T1/cmr/m/n/12 ); 
+Overfull \hbox (13.43709pt too wide) in paragraph at lines 26--27
+[]\T1/cmr/m/n/12 Literal: \T1/cmr/m/it/12 nom-bre $\OMS/cmsy/m/n/12  $ \T1/cmr/
+m/n/12 se-lec-cio-nar el i-ésimo nom-bre de la lis-ta de nom-bres ($\OML/cmm/m/
+it/12 nombre[]$\T1/cmr/m/n/12 ); 
  []
 
 [129
 
-] [130]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendB.tex [131]
-[132
+] [130]
+Overfull \hbox (14.35353pt too wide) in paragraph at lines 86--87
+[]\T1/cmr/m/n/12 Tripleta: ex-pe-rien-cia en $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/1
+2 con-ca-te-nar el in-di-vi-duo, la pro-pie-dad ``experiencia-
+ []
 
-]
+
+Overfull \hbox (16.9641pt too wide) in paragraph at lines 90--91
+[]\T1/cmr/m/n/12 Tripleta: com-pe-ten-te en $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/12
+ con-ca-te-nar el in-di-vi-duo, la pro-pie-dad ``competente-
+ []
+
+[131] [132]
+Overfull \hbox (10.89467pt too wide) in paragraph at lines 179--180
+[]\T1/cmr/m/n/12 Tripleta: ex-ten-sión $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/12 con-
+ca-te-nar el in-di-vi-duo, la pro-pie-dad ``tiene-extensión''
+ []
+
+
+Overfull \hbox (38.82266pt too wide) in paragraph at lines 180--181
+[]\T1/cmr/m/n/12 Tripleta: Len-gua-je $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/12 con-c
+a-te-nar el in-di-vi-duo, la pro-pie-dad ``tiene-lenguajeFuente''
+ []
+
+[133]
+Overfull \hbox (0.1972pt too wide) in paragraph at lines 189--190
+[]\T1/cmr/m/n/12 Tripleta: tie-ne si-nop-sis $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/1
+2 con-ca-te-nar el in-di-vi-duo, la pro-pie-dad ``tiene-
+ []
+
+
+Overfull \hbox (0.1972pt too wide) in paragraph at lines 193--194
+[]\T1/cmr/m/n/12 Tripleta: tie-ne si-nop-sis $\OMS/cmsy/m/n/12  $ \T1/cmr/m/n/1
+2 con-ca-te-nar el in-di-vi-duo, la pro-pie-dad ``tiene-
+ []
+
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendB.tex [134]
 Ap\'{e}ndice B.
-[133] [134] [135] [136] [137])
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [138
+[135
 
-] [139]
-[140] [141] [142] [143] [144
+] [136] [137] [138] [139])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [140
 
-] [145] [146] [147] [148]) [149]
+] [141]
+[142] [143] [144] [145] [146
+
+] [147] [148] [149] [150]) [151]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1348,7 +1383,7 @@ Here is how much of TeX's memory you used:
  9803 multiletter control sequences out of 15000+200000
  28057 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,18n,43p,2052b,578s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,2052b,718s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
@@ -1375,9 +1410,9 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (167 pages, 4582251 bytes).
+Output written on tesis_Erik.pdf (169 pages, 4592534 bytes).
 PDF statistics:
- 1380 PDF objects out of 1440 (max. 8388607)
+ 1387 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
