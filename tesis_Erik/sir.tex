@@ -3,21 +3,20 @@
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
 La \textit{integración de los recursos} es el proceso de búsqueda y recuperación significativa de información existente en los recursos, para responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
-La \textit{integración semántica de recursos} puede implementarse en una \textit{memoria corporativa (MC)}. Porque una memoria tiene un conjunto diverso de recursos de información, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
+La \textit{integración semántica de recursos} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-El desarrollo de la \textit{integración semántica de recurso} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
+El desarrollo de la \textit{integración semántica de recursos} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
 
 La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
 
 \begin{itemize}
-\item Realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}
+\item Realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}.
 \item Emplear distintos \textit{casos de uso} para la ISR y no limitar el número de éstos.
 \item Representar una MC en un formato estándar con un vocabulario consensuado y asociado al contexto de la MC.
 \item Utilizar vocabularios estándares para los axiomas, así como el uso del lenguaje SPARQL para las consultas.
 \end{itemize}
 
 Esta metodología está organizada en tres etapas principales:
-
 \begin{enumerate}
 \item \textbf{\textit{Representación del conocimiento en los recursos}} consiste en identificar los recursos de la memoria corporativa y representar los metadatos (conocimiento explícito) de estos recursos mediante el marco RDF.
 \item \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir axiomas en OWL y RDF(S) para extender, completar y adaptar el conocimiento explícito de los recursos.
@@ -26,15 +25,17 @@ Esta metodología está organizada en tres etapas principales:
 
 La primera y segunda etapa de esta metodología es para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
-La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos}. Esta arquitectura tiene un diseño de tres capas (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan a lo largo de nuestra de metodología. %A continuación, se describen los elementos para cada una de las tres etapas.
+La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan a lo largo de nuestra de metodología.
 
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.5\textwidth]{Arquitectura}
+\includegraphics[width=0.8\textwidth]{Arquitectura}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
+
+A continuación se describen los elementos que están en las tres capas de nuestra arquitectura.
 
 \begin{itemize}
 \item En la capa de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario. La Sección \ref{cap:piu} muestra los detalles de esta interfaz gráfica de usuario para nuestros modelos semánticos.
@@ -55,31 +56,32 @@ Estos dos \textit{casos de uso} son independientes entre ellos, por tal razón, c
 
 En ambos casos de uso, un aspecto importante es que tanto personas como recursos digitales se vinculan con los temas del área de Redes y Telecomunicaciones(RyT). Específicamente, los conocimientos de las personas son relaciones entre personas y temas de RyT. Mientras, los tópicos pertenecientes en los recursos digitales son las relaciones entre recursos digitales y temas de RyT. Por tal razón, se construye una tercera ontología para modelar el vocabulario consensual del área de Redes y Telecomunicaciones.
 
-La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información (personas, documentos y multimedia, así como conceptos de RyT). En esta figura, las flechas representan el vinculo entre: \textit{personas personas - conceptos de RyT} y \textit{recursos digitales - conceptos de RyT}.
+%La Figura \ref{fig:ontocu} muestra el modelo semántico en forma de un diagrama de venn. En este diagrama, las circunferencias representan las tres ontologías: cartografía de competencias, recursos digitales y vocabulario de RyT. Estas circunferencias no tienen intersección, porque cada ontología representa un determinado recurso de información (personas, documentos y multimedia, así como conceptos de RyT). En esta figura, las flechas representan el vinculo entre: \textit{personas personas - conceptos de RyT} y \textit{recursos digitales - conceptos de RyT}.
 
-%% Diagrama de Venn ontologías.
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=0.45\textwidth]{OntologiasDiagrama}
-\caption{Diagrama de Venn para visualizar las tres ontologías que conforman el modelo semántico}
-\label{fig:ontocu}
-\end{figure}
+%%% Diagrama de Venn ontologías.
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=0.45\textwidth]{OntologiasDiagrama}
+%\caption{Diagrama de Venn para visualizar las tres ontologías que conforman el modelo semántico}
+%\label{fig:ontocu}
+%\end{figure}
 
 %Las Sección \ref{sec:repKrec} describe la representación del conocimiento explícito en los recursos de información. La Sección \ref{sec:enrKrec} describe los axiomas para enriquecer el conocimiento en el conocimiento explícito. Finalmente, la Sección \ref{sec:byrKrec} describe la búsqueda y recuperación de información en el modelo semántico.
 
 %%Mientras la recuperación consiste en consultar el modelo resultante mediante un motor SPARQL y un razonador los triples del grafo RDF.
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
+
 \section{Representación del conocimiento en los recursos}
 \label{sec:repKrec} 
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
 La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos de información} están clasificados por caso de uso.
 
-\begin{figure}[!hp]
+\begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.7\textwidth]{CasosUsoMC}
+\includegraphics[width=0.75\textwidth]{CasosUsoMC}
 \caption{Recursos de información agrupados por casos de uso para nuestra memoria corporativa.}
 \label{fig:mccu}
 \end{figure}
@@ -197,7 +199,7 @@ Colega & \textit{\textbf{sirp:}has-colleague} \\
 \hline
 Competencias & \textit{\textbf{sirp:}competentIn} \\
 \hline
-Habilidades en de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
+Habilidades en temas de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
 \hline
 \end{tabular}
 \caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
@@ -233,21 +235,7 @@ Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
 
 El siguiente paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
 
-En la representación del conocimiento explícito, el último paso es la \textbf{\textit{generación}} de \textit{tripletas RDF} asociadas a las declaraciones de los recursos.
-
-En esta tesis, la generación de tripletas se hace mediante la combinación de formularios y scripts. Por un lado, los formularios son las herramientas para la recuperación y almacenamiento de la información acerca de los recursos en \textit{hojas de cálculo}. Por el otro lado, los scripts mapean la información de las \textit{hojas de cálculo} en forma de tripletas RDF para que posteriormente éstas sean almacenadas en archivos ``\textit{.rdf}''.
-
-Este es el procedimiento de generación de tripletas RDF mediante el uso de formularios y scripts:
-
-\begin{enumerate}
-\item Identificar la información que debe ser adquirida en los recursos con base en los diagramas de clases.
-\item Construir los formularios para los recursos de información (persona, documento y multimedia) mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}}, con el propósito de agilizar el proceso de recopilación de la información en los recursos.
-\item Enviar los formularios vía email a los profesores o alumnos, para que ellos escriban la información sobre las características y relaciones de los recursos.
-\item Recuperar y almacenar las respuestas de cada formulario en una de tres \textit{hojas de cálculo} (persona, documento y multimedia).
-\item Descargar la información de cada \textit{hoja de cálculo} en un archivo CSV\label{sym:csv} (persona, documento y multimedia).
-\item Transformar cada fila de un archivo csv a un conjunto de tripletas RDF, mediante los scripts que están escritos en Java y con la librería Jena.
-\item Almacenar las tripletas RDF asociadas a una fila (descripción semántica de un recurso) en un archivo ``\textit{rdf}'' con la sintaxis de serialización Turtle.
-\end{enumerate}
+En esta representación, el siguiente paso es recopilar la información y conocimiento en los recursos, para salvarla mediante el uso de RDF. A continuación, se presentan dos ejemplos que describen a dos \textit{recursos de información} mediante el marco RDF.
 
 %%Dibujo proceso de generación de tripletas.
 En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF. En la parte izquierda de esta figura, se presenta una foto representativa del Dr. Ricardo. Mientras, la parte derecha se dan a conocer las tripletas RDF en formato de serialización Turtle que describen las características y relaciones básicas de esta persona.
@@ -259,14 +247,13 @@ En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcel
 \label{fig:drper}
 \end{figure}
 
-
 El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\textit{\textbf{sirp:}RicardoMarcelin Jimenez}''. En la Figura \ref{fig:drper}, el conjunto de tripletas RDF  indican las siguientes declaraciones:
 
 \begin{itemize}
 \item En el primer recuadro, la tripleta RDF establece que este recurso pertenece a la clase Profesor.
 \item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
 \item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
-\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica\footnote{L. Victorino y G. Medina , ``Educación basda en competencias y el proyecto tuning en Europa y Latinoamericana,'' Disponible en: \url{http://www.observatorio.org/colaboraciones/2007/TuningEuropayAL-LiberoVictorionoRamirez}\%\url{2011oct07.pdf}}.
+\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica\footnote{L. Victorino y G. Medina , ``Educación basda en competencias y el proyecto tuning en Europa y Latinoámerica,'' Disponible en: \url{http://www.observatorio.org/colaboraciones/2007/TuningEuropayAL-LiberoVictorionoRamirez}\%\url{2011oct07.pdf}}.
 \item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}.
 \item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
 \end{itemize}
@@ -290,6 +277,22 @@ Las tripletas RDF de la Figura \ref{fig:drdig} establecen las siguientes caracte
 \item En el quinto recuadro, se establecen las tripletas para indicar la sinopsis y el año de creación de este vídeo.
 \end{itemize}
 
+El último paso en la \textit{representación del conocimiento} es la \textbf{\textit{generación}} de \textit{tripletas RDF}, las cuales están asociadas a las declaraciones de los recursos.
+
+En esta tesis, la generación de tripletas se hace mediante la combinación de formularios y scripts. Por un lado, los formularios son las herramientas para la recuperación y almacenamiento de la información acerca de los recursos en \textit{hojas de cálculo}. Por el otro lado, los scripts mapean la información de las \textit{hojas de cálculo} en forma de tripletas RDF para que posteriormente éstas sean almacenadas en archivos ``\textit{.rdf}''.
+
+Este es el procedimiento de generación de tripletas RDF mediante el uso de formularios y scripts:
+
+\begin{enumerate}
+\item Identificar la información que debe ser adquirida en los recursos con base en los diagramas de clases.
+\item Construir los formularios para los recursos de información (persona, documento y multimedia) mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}}, con el propósito de agilizar el proceso de recopilación de la información en los recursos.
+\item Enviar los formularios vía email a los profesores o alumnos, para que ellos escriban la información sobre las características y relaciones de los recursos.
+\item Recuperar y almacenar las respuestas de cada formulario en una de tres \textit{hojas de cálculo} (persona, documento y multimedia).
+\item Descargar la información de cada \textit{hoja de cálculo} en un archivo CSV\label{sym:csv} (persona, documento y multimedia).
+\item Transformar cada fila de un archivo csv a un conjunto de tripletas RDF, mediante los scripts que están escritos en Java y con la librería Jena.
+\item Almacenar las tripletas RDF asociadas a una fila (descripción semántica de un recurso) en un archivo ``\textit{rdf}'' con la sintaxis de serialización Turtle.
+\end{enumerate}
+
 Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los recursos persona, conforman el \textit{componente asertivo} de la ontología \textit{cartografía de competencias}. De igual manera, todas las \textit{tripletas RDF} asociadas a las declaraciones de los documentos y archivos multimedia, constituyen el \textit{componente asertivo} de la ontología \textit{búsqueda de recursos digitales}.
 
 \section{Enriquecimiento del conocimiento en el modelo}
@@ -311,7 +314,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.7\textwidth]{HerenClassCartComp}
+\includegraphics[width=0.72\textwidth]{HerenClassCartComp}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -320,7 +323,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.75\textwidth]{ExpInfsubClassPer}
+\includegraphics[width=0.86\textwidth]{ExpInfsubClassPer}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
 \label{fig:exHerClasPer}
 \end{figure}
@@ -331,7 +334,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.1in, width=0.95\textwidth]{HerenClassRecDigi}
+\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
@@ -340,7 +343,7 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{ExpInfsubClassDigi}
+\includegraphics[width=0.83\textwidth]{ExpInfsubClassDigi}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso What is Linked Data?}
 \label{fig:exHerClasDigi}
 \end{figure}
@@ -356,7 +359,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.6\textwidth]{HerPropLang}
+\includegraphics[width=0.62\textwidth]{HerPropLang}
 \caption{Jerarquía de propiedades para las habilidades lingüísticas.}
 \label{fig:HerPropLang}
 \end{figure}
@@ -367,7 +370,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.44\textwidth]{HerPropLoW}
+\includegraphics[width=0.45\textwidth]{HerPropLoW}
 \caption{Jerarquía de propiedades para el lugar de trabajo.}
 \label{fig:HerPropLoW}
 \end{figure}
@@ -413,7 +416,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 \end{figure}
 
 \begin{itemize}
-\item La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{tiene institución involucrada}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}. Esta jerarquía de propiedades gráficamente se muestra en la Figura \ref{fig:HerPropInst}.
+\item La propiedad \textbf{\textit{publicado en revista}} indica que un artículo se publica en una revista científica. La propiedad \textbf{\textit{tiene editorial}} establece que un libro se publica por una determinada casa editorial. La propiedad \textbf{\textit{publicado por la universidad}} indica que una tesis pertenece a una determinada universidad o institución educativa. Estas tres propiedades se generalizan a partir de la propiedad \textbf{\textit{publicado en}}, por tal razón \textit{publicado en revista}, \textit{tiene editorial} y \textit{tiene institución involucrada} son subpropiedades de la propiedad \textit{publicado en}. Esta jerarquía de propiedades gráficamente se muestra en la Figura \ref{fig:HerPropInst}.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -423,7 +426,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 \label{fig:HerPropInst}
 \end{figure}
 
-\subsection{Domingo y rango de propiedades}
+\subsection{Dominio y rango de propiedades}
 
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio es el conjunto formado por \textit{los valores que puede tomar una función}. Mientras, el rango es el conjunto de \textit{los valores que resultan de evaluar la función}.
 
@@ -504,7 +507,7 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sird:}publishedInJournal} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}Journal} \\
 \hline
-\textit{\textbf{sird:}has-institutionInvolved} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
+\textit{\textbf{sird:}publishedByUniversity} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
 \hline
 \textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}TypeArticle} \\
 \hline
@@ -529,7 +532,7 @@ En la Figura \ref{fig:exAxDyRPer} se presentan los axiomas de dominio y rango pa
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.5\textwidth]{exAxDyRPer}
+\includegraphics[width=0.55\textwidth]{exAxDyRPer}
 \caption{Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exAxDyRPer}
 \end{figure}
@@ -538,7 +541,7 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{exTriplDyRPer}
+\includegraphics[width=0.76\textwidth]{exTriplDyRPer}
 \caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exTriplDyRPer}
 \end{figure}
@@ -582,7 +585,7 @@ La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tie
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.75\textwidth]{axSymColl}
+\includegraphics[width=0.77\textwidth]{axSymColl}
 \caption{Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del área.}
 \label{fig:axSymColl}
 \end{figure}
@@ -593,7 +596,7 @@ La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo s
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.45in,width=0.95\textwidth]{infSymColl}
+\includegraphics[height=2.54in,width=0.95\textwidth]{infSymColl}
 \caption{Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad simétrica.}
 \label{fig:infSymColl}
 \end{figure}
@@ -607,7 +610,7 @@ La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relac
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=1.5in,width=0.8\textwidth]{triplKnows}
+\includegraphics[height=1.7in,width=0.85\textwidth]{triplKnows}
 \caption{Subgrafo RDF de las relaciones conoce-a entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:triplKnows}
 \end{figure}
@@ -616,7 +619,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=1.7in,width=0.90\textwidth]{InfKnows}
+\includegraphics[height=1.8in,width=0.95\textwidth]{InfKnows}
 \caption{Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad simétrica.}
 \label{fig:InfKnows}
 \end{figure}
@@ -630,7 +633,7 @@ En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación d
 
 La \textbf{\textit{identificación de las preguntas en lenguaje natural}} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
 
-Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textbf{\textit{la búsqueda de recursos digitales}} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
+Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textit{la búsqueda de recursos digitales} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
 
 Los parámetros de búsqueda en la cartografía competencias son:
 \begin{itemize}
@@ -776,18 +779,18 @@ La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante
 \includegraphics[width=0.9\textwidth]{q2torqlCR}
 \caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunción de emplear razonamiento.}
 \label{fig:q2torqlCR}
-\end{figure} 
+\end{figure}
 
 Estos son cinco ejemplos de transformación de preguntas a consultas SPARQL. Algunas consultas se construyen mediante tripletas del ABox, porque la información a recuperar pertenece al conocimiento explícito; por ejemplo, la consulta de la Figura \ref{fig:q112rql}. Otras consultas se construyen mediante la agrupación de varios patrones, porque éstos permiten recuperar mejor información en el grafo RDF; por ejemplo las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}. Finalmente, existen consultas que aprovechan el uso de inferencia, para reducir el número de patrones y obtener mejores resultados; por ejemplo, las consultas SPARQL de las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}.
 
-En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de consulta SPARQL a partir de una consulta SPARQL y un grafo RDF, interpreta esta consulta SPARQL. Posteriormente, este motor compara los patrones de la cláusula WHERE con todos los triples en un \textit{grafo RDF} (modelo). Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
+En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de inferencia o razonador hace el proceso de inferencia sobre las descripciones y axiomas de una ontología. De este proceso de inferencia, se genera un grafo RDF de inferencia. Ahora bien, un motor de consulta SPARQL a partir de una consulta SPARQL y este modelo de inferencia, interpreta esta consulta SPARQL; posteriormente, éste compara los patrones de la cláusula WHERE con todos los triples en el \textit{modelo}. Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.9\textwidth]{exMBS}
 \caption{Proceso básico de consulta de información para un motor de búsqueda SPARQL.}
 \label{fig:exMBS}
-\end{figure} 
+\end{figure}
 
 Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena\footnote{The Apache Software Foundation, ``Apache Jena,''  Disponible en: \url{http://jena.apache.org/}} posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
 
@@ -798,7 +801,7 @@ Los resultados proporcionados por un motor SPARQL, dependen del uso o no del pro
 \includegraphics[angle=90,scale=0.84]{grafoSR}
 \caption{Ejemplo de modelo sin inferencia para el proceso de consulta de información.}
 \label{fig:grafoSR}
-\end{figure} 
+\end{figure}
 
 A continuación, se listan las declaraciones que están asociadas a las tripletas de la Figura \ref{fig:grafoSR}.
 
@@ -822,7 +825,7 @@ La consulta a interpretar por el motor SPARQL, es la asociada a la pregunta \tex
 \includegraphics[width=0.70\textwidth]{consultaGrafo}
 \caption{Consulta de ejemplo para el proceso de consulta de información.}
 \label{fig:consultaGrafo}
-\end{figure} 
+\end{figure}
 
 Un motor SPARQL interpreta esta consulta, compara estos patrones con el grafo de la Figura \ref{fig:grafoSR} y arroja una serie de resultados. La Tabla \ref{tab:resSC} muestra los identificadores de los recursos que son documentos.
 
@@ -851,7 +854,7 @@ Un motor SPARQL interpreta esta consulta, compara estos patrones con el grafo de
 \label{tab:resSC}
 \end{table}
 
-Esta \textit{ejecución de la consulta} por un motor SPARQL arrojo seis resultados. Sin embargo, existen otros recursos que son documentos y no tienen la declaración para indicar que pertenece a la clase \textit{Documento} o a las subclases de ésta. De tal manera, es necesario el uso de un modelo con inferencia. La Figura \ref{fig:grafoCR} presenta el modelo que se obtiene por inferencia. En este modelo, todos los recursos están asignado a la clase \textit{Documento (sird:Document)}, por estas razones:
+Esta \textit{ejecución de la consulta} por un motor SPARQL arrojó seis resultados. Sin embargo, existen otros recursos que son documentos y no tienen la declaración para indicar que pertenece a la clase \textit{Documento} o a las subclases de ésta. De tal manera, es necesario el uso de un modelo con inferencia. La Figura \ref{fig:grafoCR} presenta el modelo que se obtiene por inferencia. En este modelo, todos los recursos están asignado a la clase \textit{Documento (sird:Document)}, por estas razones:
 
 \begin{figure}[!hp]
 \centering
@@ -870,10 +873,10 @@ Al darse por hecho el uso de inferencia, la consulta \ref{fig:consultaGrafo} pue
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.60\textwidth]{consSimpGrafo}
+\includegraphics[width=0.72\textwidth]{consSimpGrafo}
 \caption{Consulta simplificada para el proceso de consulta de información.}
 \label{fig:consSimpGrafo}
-\end{figure} 
+\end{figure}
 
 Finalmente, la Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL para la consulta de la Figura \ref{fig:consSimpGrafo} y empleando el grafo de la Figura \ref{fig:grafoCR}. En esta Tabla, todos los identificadores de los recursos son los recursos que se esperan para responder esta pregunta.
 
@@ -917,3 +920,8 @@ Finalmente, la Tabla \ref{tab:resCR} presenta los resultados arrojados por un mo
 \caption{Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de información.}
 \label{tab:resCR}
 \end{table}
+
+%%%------------------->Revisa Aquí
+%Hay que dar un párrafo final diciendo qué se presentó.
+
+%También sería buena idea enfatizar que el uso de inferencia tiene un impacto directo en la complejidad de las consultas.
