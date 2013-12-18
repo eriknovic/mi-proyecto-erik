@@ -5,7 +5,6 @@ Warning--string name "june" is undefined
 --line 545 of file bibliografia.bib
 A bad cross reference---entry "stardog"
 refers to entry "conf/owled/2012", which doesn't exist
-Warning--I didn't find a database entry for "Compentences"
 Warning--I didn't find a database entry for "conf/owled/2012"
 Warning--empty journal in protegeManual
 Warning--empty publisher in Cunningham2011a
