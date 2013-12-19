@@ -19,8 +19,8 @@ Nosotros utilizamos a las tecnologías semánticas, porque éstas proporcionan vari
 \item El \textit{marco RDF} permite representar cualquier recurso, sea un ser vivo, un archivo digital, un país, ciudad, un edificio, una organización o un concepto abstracto. De esta manera, se supera la integración de información de recursos que son heterogéneos en formato, contenido y estructura.
 \item El \textit{marco RDF} establece que los recursos tengan un URI, para identificar de manera única a un recurso. De esta forma, se solucionan problemas de homonimia con respecto a los nombres de los recursos.
 \item En el \textit{marco RDF}, la representación del conociendo en los recursos no se limita a un pequeño número de características sobre éstos; sino que cualquier información, sea una relación o una característica, puede describirse para un \textit{recurso de información}.
-\item La introducción de \textit{reglas de inferencia} enriquezcan el conocimiento en un modelo. Porque un razonador a partir de estas reglas puede hacer explícito el conocimiento implícito. Este comportamiento se dio en nuestras ontologías.
-\item Una \textit{ontología} puede ser extendida con el fin de \textit{incorporara mayor conocimiento} o \textit{adaptarse a cambios en el conocimiento}. De esta manera, si nuevos recursos se describen, entonces éstos pueden incorporarse a la ontología. De la misma manera, si cambia el conocimiento en algunas ramas de la ontología, entonces éstas pueden ser sustituidas por otras.
+\item La introducción de \textit{reglas de inferencia} enriquecen el conocimiento en un modelo, porque un razonador a partir de estas reglas puede hacer explícito el conocimiento implícito. Este comportamiento se dio en nuestras ontologías.
+\item Una \textit{ontología} puede ser extendida con el fin de \textit{incorporar mayor conocimiento} o \textit{adaptarse a cambios en el conocimiento}. De esta manera, si nuevos recursos se describen, entonces éstos pueden incorporarse a la ontología. De la misma manera, si cambia el conocimiento en algunas ramas de la ontología, entonces éstas pueden ser sustituidas por otras.
 \item Las \textit{ontologías} están elaboradas en un formato estándar y escritas con vocabularios consensuados. Por esta razón, éstas se pueden intercambiar y reutilizar entre personas o aplicaciones.
 \item Una \textit{ontología} puede representarse gráficamente como un grafo dirigido. El objetivo es tener una \textit{estructura gráfica} para visualizar las descripciones y reglas de inferencia en forma de tripleta.
 \item Una \textit{ontología} fomenta el desarrollo de aplicaciones genéricas para aprovechar estos modelos. Ejemplos de estas aplicaciones son editores de ontologías, interfaces gráficas para describir semánticamente los recursos, navegadores sobre ontologías, por mencionar algunas. Estas herramientas genéricas posibilitan que personas expertas en el dominio sean las principales constructoras del grafo de conocimiento. De esta manera, la información en el grafo será confiable, ya que estas personas son las que tienen los conocimientos en el dominio.
@@ -43,7 +43,7 @@ Nosotros utilizamos a las tecnologías semánticas, porque éstas proporcionan vari
 %Esta propuesta se implemento para la memoria corporativa del área de Redes y Telecomunicaciones que pertenece al departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana. Por ello, la primera ontología tiene información sobre profesores, alumnos y colegas que están vinculados con esta área. La segunda ontología tienen información sobre los recursos digitales que representan trabajos, investigaciones, notas de curso, proyectos, tesis de las personas del área RyT. La tercera ontología tiene los temas del área de RyT que están jerarquizados en cuatro ramas: \textit{sistemas distribuidos}, redes y servicios de telecomunicaciones, sistemas de comunicación digital y web semántica.
 
 %%% que ventajas tiene nuestro prototipo en relacion con otros que se han examinado
-La tarea de búsqueda y recuperación de información son actividades que no cualquier usuario puede llevar a cabo. Porque es necesario que un usuario tenga conocimientos en las tecnologías semánticas y los vocabularios en nuestras ontologías. Por esta razón, nosotros proponemos una aplicación que permita la interacción de cualquier usuario con el modelo, para fines de búsqueda de información.
+La tarea de búsqueda y recuperación de información son actividades que no cualquier usuario puede llevar a cabo, porque es necesario que un usuario tenga conocimientos en las tecnologías semánticas y los vocabularios en nuestras ontologías. Por esta razón, nosotros proponemos una aplicación que permita la interacción de cualquier usuario con el modelo, para fines de búsqueda de información.
 
 Nuestra interfaz está orientada al usuario, es decir, un ambiente visual que permite a éstos una manera agradable de consultar la información en nuestras ontologías. Esta característica es importante, porque en los trabajos de nuestro \textit{estado del arte} (Ver Sección \ref{sec:eoaisr}), ninguna aplicación está orientada al usuario.
 
@@ -53,6 +53,8 @@ Este prototipo establece las siguientes funcionalidades: 1) permitir a los usuar
 Nosotros llevamos a cabo una evaluación experimental. Los objetivos de esta evaluación son: 1) \textit{evaluar la calidad de los resultados de Jena para los modelos con y sin inferencia}, así como 2) \textit{medir los tiempos promedio de procesamiento de Jena para las consultas de nuestra primera actividad}. En la medición de tiempos, queríamos ver el rendimiento de Jena con la cantidad de datos que esperamos manejar. Mientras, en la evaluación de resultados, queríamos ver si los resultados devueltos por Jena, son los que responden nuestras preguntas.
 
 Los resultados en nuestra experimentación indican lo siguiente. El \textit{tiempo de consulta} es mayor en un \textit{modelo con inferencia} en comparación de un \textit{modelo sin inferencia}. Sin embargo, los resultados de las búsquedas en un modelo sin inferencia son variados. En algunos casos, todos los \textit{resultados} que se sabe responden la consulta, son recuperados cuando la consulta es sobre el conocimiento explícito. En otros casos, varios recursos que responden la consulta, son descartados, porque algunos recursos carecen de un determinado triple. En cambio, los resultados de búsquedas sobre un \textit{modelo con inferencia} son buenos, porque estas consultas recuperan todos los recursos que de antemano sabemos que responden a las consultas.
+
+Respecto a los tiempos, se tiene lo siguiente: el proceso de consulta sin inferencia arroja tiempos menores a un segundo, mientras los tiempos en la consulta con inferencia son de al rededor de dos o tres segundos. Aunque, estos tiempos con inferencia son mayores en comparación de los tiempos sin inferencia, éstos tiempos (con inferencia) con Jena son aceptables para la búsqueda de información basada en ontologías.
 
 %%%Conclusión final, es factible o no es factible el uso de las TS y describir porqué
 En este trabajo presentamos nuestro \textit{marco de trabajo}, un prototipo para la consulta de información, los resultados en nuestra evaluación experimental, así como las ventajas de las tecnologías semánticas, y con base en éstos, nosotros hacemos esta conclusión. \textbf{El uso de \textit{tecnologías semánticas} es una buena aproximación para lograr la \textit{integración semántica de recursos} en una \textit{memoria corporativa}}.
@@ -86,11 +88,11 @@ En la realización de este trabajo, nosotros identificamos varias actividades que
 		\end{itemize}
 	\end{itemize}
 \item Evaluar la introducción de nuevos axiomas en las ontologías, los cuales sean más complejos.
-\item Utiliza el triplestore Stardog.
+\item Utilizar otro triplestore.
 	\begin{itemize}
-	\item Cargar, inferir y consultar nuestras ontologías con Stardog.
-	\item Hacer nuestra evaluación experimental con Stardog.
-	\item Comparar el desempeño y resultados de experimento de Stardog contra Jena.
+	\item Cargar, inferir y consultar nuestras ontologías con el \textit{triplestore electo}.
+	\item Hacer nuestra evaluación experimental con este triplestore.
+	\item Comparar el desempeño y resultados de experimentación del \textit{triplestore electo} contra \textit{Jena}.
 	\end{itemize}
 \item Dar mantenimiento a la ontología del vocabulario de Redes y Telecomunicaciones.
 	\begin{itemize}
@@ -105,3 +107,7 @@ En la realización de este trabajo, nosotros identificamos varias actividades que
 		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda y despliegue de información.
 	\end{itemize}
 \end{itemize}
+
+%%%%%%%%%%----------->Hay que expandir el capítulo con más ventajas de las TS
+
+%Este capítulo está bien escrito en general; pero es demasiado concreto. Hay que expandir las ventajas de la utilización de las tecnologías semánticas para vender la tesis mejor :).

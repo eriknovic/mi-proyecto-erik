@@ -141,16 +141,16 @@ Esta experimentación se ha dividido en dos actividades. La primera actividad con
 
 El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es identificar un conjunto básico de consultas para interrogar las ontologías \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. En la Sección \ref{sec:byrKrec} se hizo un análisis e identificación de preguntas base que posteriormente se transformaron a consultas SPARQL. Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
 
-El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, se hace una \textit{búsqueda manual} exhaustiva de los recursos relevantes que responden las consultas de experimentación. Esta búsqueda se hace sobre los recursos de nuestra memoria corporativa que está guiada por los casos de uso. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
+El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, se hace una \textit{búsqueda manual} de los \textit{recursos relevantes} que responden a las \textit{consultas de experimentación}. Esta búsqueda se hace sobre los recursos de nuestra \textit{memoria corporativa} que está guiada por los \textit{casos de uso}. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
 
-La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número de recursos que responden a ésta. De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas, para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes.
+La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número total de recursos que responden a ésta (total de recursos relevantes). De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas (total de recursos relevantes), para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes.
 
 \begin{table}[!hp]
 \renewcommand{\arraystretch}{1.4}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
 \hline 
-Id. Consulta & Pregunta & No. de Recursos\\
+Id. Consulta & Pregunta & Total de Recursos Relevantes\\
 \hline
 \hline 
 Q1.1 &  ¿Cuáles el nombre, correo, sitio web, género y edad de las personas del área de RyT? & 73 \\
@@ -201,7 +201,7 @@ Q1.19 & ¿Qué personas son profesores-investigadores? & 9\\
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
 \hline 
-Id. Consulta & Pregunta & No. de Recursos\\
+Id. Consulta & Pregunta & Total de Recursos Relevantes\\
 \hline
 \hline 
 Q2.1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
@@ -229,7 +229,7 @@ Q2.10 & ¿Cuáles la tesis de Samuel Hernández Maza? & 4\\
 \label{tab:qrynoRD}
 \end{table}
 
-En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a cada pregunta de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
+En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a las preguntas en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
 
 El \textit{tercer paso} es emplear \textit{Jena} para ejecutar las \textit{consultas SPARQL} a un modelo sin inferencia y otro con inferencia. La finalidad de esto es ver la calidad de resultados y la cantidad de éstos que al emplear un modelo con inferencia y otro sin inferencia. De esta manera, podemos ver el impacto de la inferencia para la consulta de información en una ontología.
 
@@ -266,27 +266,27 @@ Imprimir $noRes$ en pantalla\;
 \label{alg:srinf} 
 \end{algorithm}
 
-El \textit{cuarto paso} es comparar los \textit{resultados que proporciona el script (Algoritmo \ref{alg:srinf})} con los \textit{resultados que sabemos responden (búsqueda manual)} las consultas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La finalidad de este paso, es \textit{evaluar} la calidad de resultados de Jena, para un modelo con inferencia y otro sin el uso de ésta. El cuarto paso, se hace en dos fases: 1) \textit{encontrar los recursos relevantes} de las respuestas dadas por el script, y 2) usar (\textit{métricas de recuperación de la información}) para comparar la calidad de los resultados con y sin inferencia. 
+El \textit{cuarto paso} es comparar los \textit{resultados que proporciona (recursos recuperados) el script (Algoritmo \ref{alg:srinf})} con los \textit{resultados que sabemos responden (total de recursos relevantes)} a las consultas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La finalidad de este paso, es \textit{evaluar} la calidad de resultados de Jena, para un modelo con inferencia y otro sin ésta. El cuarto paso, se hace en dos fases: 1) \textit{encontrar los recursos relevantes} de las respuestas dadas por el script, y 2) usar (\textit{métricas de recuperación de la información}) para comparar la calidad de los resultados con y sin inferencia. 
 
-La \textit{fase uno} consiste en comparar y anotar las cantidades de recursos relevantes para cada consulta. En esta fase se considera el modelo de uso: con inferencia o sin ésta. Esta comparación y anotación se hizo de forma manual. El primer criterio de comparación es ver la cantidad de recursos de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD} con el número de respuestas que proporciona el script. Posteriormente, se hace la comparación \textit{identificador} a \textit{identificador} de \textit{los recursos que son proporcionados por el script} con \textit{los recursos que se saben responden a la consulta}.
+La \textit{fase uno} consiste en comparar y anotar las cantidades totaales de \textit{recursos relevantes} para cada consulta. En esta fase se considera el modelo de uso: con inferencia o sin ésta. Esta comparación y anotación se hizo de forma manual. El primer criterio de comparación es ver la cantidad de recursos de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD} con el número de respuestas que proporciona el script. Posteriormente, se hace la comparación \textit{identificador} a \textit{identificador} de \textit{los recursos que son proporcionados por el script} con \textit{los recursos que se saben responden a la consulta}.
 
 La segunda fase, consiste en emplear dos métricas de \textit{recuperación de la información (RI\label{sym:ri})}:
 
 \begin{itemize}
-\item La \textbf{\textit{exhaustividad (recall)}} \cite{Nasraoui} es ``\textit{la cantidad de elementos relevantes que han sido recuperados, entre la cantidad de elementos relevantes en la base de conocimientos}'' \cite{RecYPres}. La exhaustividad se presenta en la Ecuación \ref{ec:exa}.
+\item La \textbf{\textit{exhaustividad (recall)}} \cite{Nasraoui} es ``\textit{el número de recursos relevantes que han sido recuperados, entre el número total de recursos relevantes en la base de conocimientos}'' \cite{RecYPres}. La exhaustividad se presenta en la Ecuación \ref{ec:exa}.
 
 \begin{equation}
-	Exhaustividad = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: que\: han\: sido\: recuperados}{N\acute{u}mero\: de\: recursos\: relevantes\: en\: la\: base\: de\: conocimientos} * 1.0
+	Exhaustividad = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\: recursos\: relevantes}
 	\label{ec:exa}
 \end{equation}
 
 \end{itemize}
 
 \begin{itemize}
-\item La \textbf{\textit{precisión (precision)}} \cite{Nasraoui} es la ``\textit{cantidad de elementos recuperados que son relevantes, entre el total de elementos recuperados}'' \cite{RecYPres}. La precisión se presenta en la Ecuación \ref{ec:pre}.
+\item La \textbf{\textit{precisión (precision)}} \cite{Nasraoui} es la ``\textit{cantidad de recursos recuperados que son relevantes, entre el total de elementos recuperados}'' \cite{RecYPres}. La precisión se presenta en la Ecuación \ref{ec:pre}.
 
 \begin{equation}
-	Precisión = \frac{N\acute{u}mero\: de\: elementos\: relevantes\: que\: han\: sido\: recuperados}{Total\: de\:elementos\: recuperados\: en\: la\: base\: de\: conocimientos} *1.0
+	Precisi\acute{o}n = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\:recursos\: recuperados\:}
 	\label{ec:pre}
 \end{equation}
 \end{itemize}
@@ -356,89 +356,85 @@ Los resultados para la \textit{evaluación de la calidad de los resultados} se pr
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.92}
 \centering
-\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | }
+\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
 \hline 
-\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Modelo sin inferencia}} & \multicolumn{2}{c|}{\textbf{Modelo con inferencia}}\\
-\cline{2-5} 
- & \textbf{Recursos relevantes} & \textbf{Total recursos recuperados} & \textbf{Recursos relevantes} & \textbf{Total recursos recuperados}\\
+\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
 \hline 
 \hline
-Q1.1 & 73 & 73 & 73 & 73\\
+Q1.1 & 73 & 73 & 73\\
 \hline
-Q1.2 & 73 & 73 & 73 & 73\\
+Q1.2 & 73 & 73 & 73\\
 \hline
-Q1.3 & 50 & 50 & 50 & 50\\
+Q1.3 & 50 & 50 & 50\\
 \hline
-Q1.4 & 28 & 28 & 51 & 51\\
+Q1.4 & 28 & 51 & 51\\
 \hline
-Q1.5 & 3 & 3 & 3 & 3\\
+Q1.5 & 3 & 3 & 3\\
 \hline
-Q1.6 & 4 & 4 & 8 & 8\\
+Q1.6 & 4 & 8 & 8\\
 \hline
-Q1.7 & 16 & 16 & 16 & 16\\
+Q1.7 & 16 & 16 & 16\\
 \hline
-Q1.8 & 2 & 2 & 6 & 6\\
+Q1.8 & 2 & 6 & 6\\
 \hline
-Q1.9 & 10 & 10 & 10 & 10\\
+Q1.9 & 10 & 10 & 10\\
 \hline
-Q1.10 & 2 & 2 & 58 & 58\\
+Q1.10 & 2 & 58 & 58\\
 \hline
-Q1.11 & 3 & 3 & 3 & 3\\
+Q1.11 & 3 & 3 & 3\\
 \hline
-Q1.12 & 1 & 1 & 1 & 1\\
+Q1.12 & 1 & 1 & 1\\
 \hline
-Q1.13 & 6 & 6 & 20 & 20\\
+Q1.13 & 6  & 20 & 20\\
 \hline
-Q1.14 & 16 & 16 & 24 & 24\\
+Q1.14 & 16 & 24 & 24\\
 \hline
-Q1.15 & 2 & 2 & 2 & 2\\
+Q1.15 & 2 & 2 & 2\\
 \hline
-Q1.16 & 2 & 2 & 2 & 2\\
+Q1.16 & 2 & 2 & 2\\
 \hline
-Q1.17 & 2 & 2 & 8 & 8\\
+Q1.17 & 2 & 8 & 8\\
 \hline
-Q1.18 & 7 & 7 & 11 & 11\\
+Q1.18 & 7 & 11 & 11\\
 \hline
-Q1.19 & 0 & 0 & 13 & 13\\
+Q1.19 & 0 & 13 & 13\\
 \hline
 \end{tabular}
 \caption{Recursos relevantes y no relevantes asociados a las preguntas de la cartografía de competencias.}
 \label{tab:rrRP}
 \end{table}
 
-En la Tabla \ref{tab:rrRP} se presentan las cantidades de recursos relevantes y totales de la primera etapa, para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna presenta el identificador de consulta. La segunda y tercera columna muestra la cantidad de recursos relevantes y total recursos recuperados cuando se emplea un modelo sin inferencia. La cuarta y quinta presentan los recursos relevantes y total de recursos recuperados para un modelo con inferencia.
+En la Tabla \ref{tab:rrRP} se presentan los números de recursos relevantes y totales en la primera etapa. Estos valores son para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna presenta el identificador de consulta. La segunda columna muestra la cantidad de recursos relevantes recuperados cuando no se emplea inferencia. La cuarta columna presenta el número de recursos relevantes recuperados al emplear inferencia. La cuarta columna muestra el número total de recursos relevantes que responden las consultas.
 
-De la misma manera, la Tabla \ref{tab:rrRD} presenta la cantidad de recursos relevantes y total de recursos recuperados cuando se consulta el modelo sin inferencia y con inferencia de los recursos digitales. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es igual a la Tabla \ref{tab:rrRP}.
+De la misma manera, la Tabla \ref{tab:rrRD} presenta la cantidad de recursos relevantes y total de recursos recuperados cuando se emplea y no inferencia en los \textit{recursos digitales}. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es igual a la Tabla \ref{tab:rrRP}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.94}
 \centering
-\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1in} | }
+\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
 \hline 
-\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Modelo sin inferencia}} & \multicolumn{2}{c|}{\textbf{Modelo con inferencia}}\\
-\cline{2-5} 
- & \textbf{Recursos relevantes} & \textbf{Total recursos recuperados} & \textbf{Recursos relevantes} & \textbf{Total recursos recuperados}\\
+\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
 \hline 
 \hline
-Q2.1 & 1330 & 1330 & 1330 & 1330\\
+Q2.1 & 1330 & 1330 & 1330\\
 \hline
-Q2.2 & 0 & 0 & 103 & 103\\
+Q2.2 & 0 & 103 & 103\\
 \hline
-Q2.3 & 18 & 18 & 18 & 18\\
+Q2.3 & 18 & 18 & 18\\
 \hline
-Q2.4 & 15 & 15 & 31 & 31\\
+Q2.4 & 15 & 31 & 31\\
 \hline
-Q2.5 & 66 & 66 & 119 & 119\\
+Q2.5 & 66 & 119 & 119\\
 \hline
-Q2.6 & 15 & 15 & 30 & 30\\
+Q2.6 & 15 & 30 & 30\\
 \hline
-Q2.7 & 156 & 156 & 156 & 156\\
+Q2.7 & 156 & 156 & 156\\
 \hline
-Q2.8 & 159 & 159 & 159 & 159\\
+Q2.8 & 159 & 159 & 159\\
 \hline
-Q2.9 & 0 & 0 & 2 & 2\\
+Q2.9 & 0 & 2 & 2\\
 \hline
-Q2.10 & 3 & 3 & 4 & 4\\
+Q2.10 & 3 & 4 & 4\\
 \hline
 \end{tabular}
 \caption{Recursos relevantes y no relevantes asociados a las preguntas de la búsqueda de recursos digitales.}
@@ -454,7 +450,7 @@ La Tabla \ref{tab:exprRP} muestra los valores de exhaustividad y precisión para 
 \centering
 \begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1in} | }
 \hline 
-\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Modelo sin inferencia}} & \multicolumn{2}{c|}{\textbf{Modelo con inferencia}}\\
+\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Sin inferencia}} & \multicolumn{2}{c|}{\textbf{Con inferencia}}\\
 \cline{2-5} 
  & \textbf{Exhaustividad} & \textbf{Precisión} & \textbf{Exhaustividad} & \textbf{Precisión}\\
 \hline 
@@ -509,7 +505,7 @@ De la misma manera, la Tabla \ref{tab:exprRD} presenta los valores de estas dos 
 \centering
 \begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1in} | }
 \hline 
-\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Modelo sin inferencia}} & \multicolumn{2}{c|}{\textbf{Modelo con inferencia}}\\
+\multirow{2}{*}{\textbf{Id. Consulta}} & \multicolumn{2}{c|}{\textbf{Sin inferencia}} & \multicolumn{2}{c|}{\textbf{Con inferencia}}\\
 \cline{2-5} 
  & \textbf{Exhaustividad} & \textbf{Precisión} & \textbf{Exhaustividad} & \textbf{Precisión}\\
 \hline 
