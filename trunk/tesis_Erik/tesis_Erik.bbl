@@ -1,245 +1,86 @@
-\begin{thebibliography}{10}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MMB{\etalchar{+}}06}
 
-\bibitem{Ontoinra2002}
-L.~Gandon, Fabien.
-\newblock {Ontology Engineering: a Survey and a Return on Experience}.
-\newblock Technical Report RR-4396, INRIA, March 2002.
-
-\bibitem{TeoOrg-James}
-James~G. March, Herbert~A. Simon, and Harold~S. Guetzkow.
-\newblock {\em Teor\'\i{}a de la Organizaci\'on}.
-\newblock Ariel, 1987.
-
-\bibitem{TeoOrg-Richard}
-Richard~L. Daft.
-\newblock {\em Teor\'\i{}a Y Dise\~no Organizacional}.
-\newblock Cengage Learning, 09 edition, 2007.
-
-\bibitem{TeoAdmon-Reinaldo}
-Reinaldo~O. Silva.
-\newblock {\em Teor\'\i{}as de la administraci\'on}.
-\newblock Thomson, 01 edition, 2002.
-
-\bibitem{DisOrg-Gilli}
-Juan~J. Gilli.
-\newblock {\em Dise\~no organizativo: estructura y procesos}.
-\newblock Granica, 2007.
-
-\bibitem{MBSPap}
-Sergey Brin and Lawrence Page.
-\newblock The anatomy of a large-scale hypertextual web search engine.
-\newblock In {\em Proceedings of the seventh international conference on World
-  Wide Web 7}, WWW7, pages 107--117, Amsterdam, The Netherlands, The
-  Netherlands, 1998. Elsevier Science Publishers B. V.
-
-\bibitem{SGBDDIA}
-Peter Rob and Carlos Coronel.
-\newblock {\em Sistemas de bases de datos: dise\~{n}o, implementaci\'{o}n y
-  administraci\'{o}n}.
-\newblock Thomson, 05 edition, 2004.
-
-\bibitem{SemTecRetr}
+\bibitem[AALS10]{SemTecRetr}
 S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
 \newblock Semantic technology: An efficient approach to monogenean information
   retrieval.
 \newblock In {\em Computer and Network Technology (ICCNT), 2010 Second
   International Conference on}, pages 591--594, 2010.
 
-\bibitem{Corpmem98}
-Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
-\newblock {Methods and Tools for Corporate Knowledge Management}.
-\newblock Technical Report RR-3485, INRIA, September 1998.
-
-\bibitem{SemLyons}
-John Lyons.
-\newblock {\em Sem\'{a}ntica Ling\"{u}\'\i{}stica: Una Introducci\'on}.
-\newblock Paidos Iberica, 1997.
-
-\bibitem{OntoTecRrpKnw}
-Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
-  Luna.
-\newblock Ontologias: una tecnica de representacion de conocimiento.
-\newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
-
-\bibitem{SurvSemWeb2012}
-S.~Bouzid, C.~Cauvet, and J.~Pinaton.
-\newblock A survey of semantic web standards to representing knowledge in
-  problem solving situations.
-\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
-  International Conference on}, pages 121--125, 2012.
-
-\bibitem{SwarmComp}
-C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
-\newblock Evolutionary and swarm computing for the semantic web.
-\newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
-
-\bibitem{rfc3986}
-Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
-\newblock Uniform resource identifier ({URI}): Generic syntax.
-\newblock RFC 3986, RFC Editor, January 2005.
-
-\bibitem{SemWebTim}
-Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
-\newblock The semantic web revisited.
-\newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
-
-\bibitem{SPARQL}
-T.~Fujino and N.~Fukuta.
-\newblock A sparql query rewriting approach on heterogeneous ontologies with
-  mapping reliability.
-\newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
-  International Conference on}, pages 230--235, 2012.
-
-\bibitem{Gruber}
-Thomas~R. Gruber.
-\newblock A translation approach to portable ontology specifications.
-\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
-
-\bibitem{Staab}
-Nicola Guarino, Daniel Oberle, and Steffen Staab.
-\newblock What is an ontology?
-\newblock In Steffen Staab and Rudi Studer, editors, {\em Handbook on
-  Ontologies}, International Handbooks on Information Systems, pages 1--17.
-  Springer Berlin Heidelberg, 2009.
-
-\bibitem{Markus2012DLprimer}
-Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
-\newblock A description logic primer.
-\newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
-
-\bibitem{protegeManual}
-Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
-  Wroe.
-\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
-  Plugin and CO-ODE Tools Edition 1.0}.
-\newblock August 2004.
-
-\bibitem{Magdalena}
-Magdalena Ortiz.
-\newblock {Introducci\'on a las L\'ogicas Descriptivas}.
-\newblock Technical report, Vienna University of Technology, 2009.
-
-\bibitem{YunLin}
-Yun Lin and John Krogstie.
-\newblock Semantic annotation of process models for facilitating process
-  knowledge management.
-\newblock {\em Int. J. Inf. Syst. Model. Des.}, 1(3):45--67, July 2010.
-
-\bibitem{Grau}
-Bernardo~Cuenca Grau, Ian Horrocks, Boris Motik, Bijan Parsia, Peter
-  Patel-Schneider, and Ulrike Sattler.
-\newblock Owl 2: The next step for owl.
-\newblock {\em Web Semant.}, 6(4):309--322, November 2008.
-
-\bibitem{Mishra2011}
-R.~B. Mishra and Sandeep Kumar.
-\newblock Semantic web reasoners and languages.
-\newblock {\em Artif. Intell. Rev.}, 35(4):339--368, April 2011.
-
-\bibitem{Namiy}
+\bibitem[ANM09]{Namiy}
 A.Q. Al-Namiy and F.S. Majeed.
 \newblock Towards automatic extracted semantic annotation (esa) for web
   documents.
 \newblock In {\em Information Processing, 2009. APCIP 2009. Asia-Pacific
   Conference on}, volume~2, pages 614--617, 2009.
 
-\bibitem{Norta}
-A.~Norta, R.~Yangarber, and L.~Carlson.
-\newblock Utility evaluation of tools for collaborative development and
-  maintenance of ontologies.
-\newblock In {\em Enterprise Distributed Object Computing Conference Workshops
-  (EDOCW), 2010 14th IEEE International}, pages 207--214, 2010.
-
-\bibitem{LiDing}
-Li~Ding, Pranam Kolari, Zhongli Ding, and Sasikanth Avancha.
-\newblock Using ontologies in the semantic web: A survey.
-\newblock In Raj Sharman, Rajiv Kishore, and Ram Ramesh, editors, {\em
-  Ontologies}, volume~14 of {\em Integrated Series in Information Systems},
-  pages 79--113. Springer US, 2007.
-
-\bibitem{SurvOnto}
+\bibitem[ASB11]{SurvOnto}
 T.~Aruna, K.~Saranya, and C.~Bhandari.
 \newblock A survey on ontology evaluation tools.
 \newblock In {\em Process Automation, Control and Computing (PACC), 2011
   International Conference on}, pages 1--5, 2011.
 
-\bibitem{Archetype}
-David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
-  P.J. Vivancos, and M.~Robles.
-\newblock Archetype-based semantic integration and standardization of clinical
-  data.
-\newblock In {\em Engineering in Medicine and Biology Society, 2006. EMBS '06.
-  28th Annual International Conference of the IEEE}, pages 5141--5144, 2006.
+\bibitem[Aue05]{pow}
+S{\"o}ren Auer.
+\newblock Powl - a web based platform for collaborative semantic web
+  development.
+\newblock In {\em Proceeding of 1st Workshop Scripting for the Semantic Web
+  (SFSW'05), Hersonissos, Greece, May 30}. CEUR Workshop Proceedings, May 2005.
 
-\bibitem{JunZhai}
-Jun Zhai, Jianfeng Li, and Qinglian Wang.
-\newblock Using ontology and xml for semantic integration of electricity
-  information systems.
-\newblock In {\em Electric Utility Deregulation and Restructuring and Power
-  Technologies, 2008. DRPT 2008. Third International Conference on}, pages
-  2197--2201, 2008.
+\bibitem[BCP12]{SurvSemWeb2012}
+S.~Bouzid, C.~Cauvet, and J.~Pinaton.
+\newblock A survey of semantic web standards to representing knowledge in
+  problem solving situations.
+\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
+  International Conference on}, pages 121--125, 2012.
 
-\bibitem{Accommodation}
-Kai Yang and R.~Steele.
-\newblock A semantic integration solution for online accommodation information
-  integration.
-\newblock In {\em Industrial Electronics and Applications (ICIEA), 2011 6th
-  IEEE Conference on}, pages 1105--1110, 2011.
+\bibitem[Bea10]{RecYPres}
+J.~Beall.
+\newblock Measuring duplicate metadata records in library databases.
+\newblock In {\em Library Hi Tech News}, volume~27, pages 10--12, 2010.
 
-\bibitem{Tuan-Dung2011}
-Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
-\newblock An ontology based approach to data representation and information
-  search in smart tourist guide system.
-\newblock In {\em Knowledge and Systems Engineering (KSE), 2011 Third
-  International Conference on}, pages 171--175, 2011.
+\bibitem[BKH02]{Sesame}
+Jeen Broekstra, Arjohn Kampman, and Frank~van Harmelen.
+\newblock Sesame: A generic architecture for storing and querying rdf and rdf
+  schema.
+\newblock In {\em Proceedings of the First International Semantic Web
+  Conference on The Semantic Web}, ISWC '02, pages 54--68, London, UK, UK,
+  2002. Springer-Verlag.
 
-\bibitem{Inay2011}
-Inay Ha, Kyeong-Jin Oh, and Geun-Sik Jo.
-\newblock Ontology-driven visualization system for semantic search.
-\newblock In {\em Information Science and Applications (ICISA), 2011
-  International Conference on}, pages 1--6, 2011.
+\bibitem[BLFM05]{rfc3986}
+Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
+\newblock Uniform resource identifier ({URI}): Generic syntax.
+\newblock RFC 3986, RFC Editor, January 2005.
 
-\bibitem{Suganyakala2013}
-R.~Suganyakala and R.R. Rajalaxmi.
-\newblock Movie related information retrieval using ontology based semantic
-  search.
-\newblock In {\em Information Communication and Embedded Systems (ICICES), 2013
-  International Conference on}, pages 421--424, 2013.
+\bibitem[BP98]{MBSPap}
+Sergey Brin and Lawrence Page.
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock In {\em Proceedings of the seventh international conference on World
+  Wide Web 7}, WWW7, pages 107--117, Amsterdam, The Netherlands, The
+  Netherlands, 1998. Elsevier Science Publishers B. V.
 
-\bibitem{Salam2013}
-F.~Salam.
-\newblock New semantic indexing and search system based on ontology.
-\newblock In {\em Emerging Intelligent Data and Web Technologies (EIDWT), 2013
-  Fourth International Conference on}, pages 313--318, 2013.
+\bibitem[CBL{\etalchar{+}}12]{stardog}
+Karlis Cerans, Guntis Barzdins, Renars Liepins, Julija Ovcinnikova, Sergejs
+  Rikacovs, and Arturs Sprogis.
+\newblock Graphical schema editing for stardog owl/rdf databases using
+  owlgred/s.
+\newblock In Pavel Klinov and Matthew Horridge, editors, {\em OWLED}, volume
+  849 of {\em CEUR Workshop Proceedings}. CEUR-WS.org, 2012.
 
-\bibitem{WangXin}
-Wang Xin and Xiong Guangleng.
-\newblock Design rationale as part of corporate technical memory.
-\newblock In {\em Systems, Man, and Cybernetics, 2001 IEEE International
-  Conference on}, volume~3, pages 1904--1908 vol.3, 2001.
-
-\bibitem{Behja}
+\bibitem[CBM11]{Behja}
 R.~Chakhmoune, H.~Behja, and A.~Marzak.
 \newblock Building corporate memories in collaborative way using ontologies:
   Case study of a ssii.
 \newblock In {\em Next Generation Networks and Services (NGNS), 2011 3rd
   International Conference on}, pages 23--28, 2011.
 
-\bibitem{Uren:2006}
-Victoria Uren, Philipp Cimiano, Jos{\'e} Iria, Siegfried Handschuh, Maria
-  Vargas-Vera, Enrico Motta, and Fabio Ciravegna.
-\newblock Semantic annotation for knowledge management: Requirements and a
-  survey of the state of the art.
-\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
-  Web}, 4(1):14--28, January 2006.
+\bibitem[CK68]{Cleverdon68}
+Cyril Cleverdon and Michael Keen.
+\newblock {Methods and Tools for Corporate Knowledge Management}.
+\newblock Technical report, 1968.
 
-\bibitem{OntoBasDoc}
-Oscar Corcho.
-\newblock {Ontology based document annotation: trends and open research
-  problems}.
-\newblock {\em Int. J. Metadata Semant. Ontologies}, 1(1):47--57, 2006.
-
-\bibitem{Cunningham2011a}
+\bibitem[CMB{\etalchar{+}}11]{Cunningham2011a}
 Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
   Aswani, Ian Roberts, Genevieve Gorrell, Adam Funk, Angus Roberts, Danica
   Damljanovic, Thomas Heitz, Mark~A. Greenwood, Horacio Saggion, Johann Petrak,
@@ -247,13 +88,101 @@ Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
 \newblock {\em {Text Processing with GATE (Version 6)}}.
 \newblock 2011.
 
-\bibitem{Tode}
+\bibitem[Cor06]{OntoBasDoc}
+Oscar Corcho.
+\newblock {Ontology based document annotation: trends and open research
+  problems}.
+\newblock {\em Int. J. Metadata Semant. Ontologies}, 1(1):47--57, 2006.
+
+\bibitem[CPN11]{Tuan-Dung2011}
+Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
+\newblock An ontology based approach to data representation and information
+  search in smart tourist guide system.
+\newblock In {\em Knowledge and Systems Engineering (KSE), 2011 Third
+  International Conference on}, pages 171--175, 2011.
+
+\bibitem[Daf07]{TeoOrg-Richard}
+Richard~L. Daft.
+\newblock {\em Teor\'\i{}a Y Dise\~no Organizacional}.
+\newblock Cengage Learning, 09 edition, 2007.
+
+\bibitem[DCGR98]{Corpmem98}
+Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
+\newblock {Methods and Tools for Corporate Knowledge Management}.
+\newblock Technical Report RR-3485, INRIA, September 1998.
+
+\bibitem[DKDA07]{LiDing}
+Li~Ding, Pranam Kolari, Zhongli Ding, and Sasikanth Avancha.
+\newblock Using ontologies in the semantic web: A survey.
+\newblock In Raj Sharman, Rajiv Kishore, and Ram Ramesh, editors, {\em
+  Ontologies}, volume~14 of {\em Integrated Series in Information Systems},
+  pages 79--113. Springer US, 2007.
+
+\bibitem[FF12]{SPARQL}
+T.~Fujino and N.~Fukuta.
+\newblock A sparql query rewriting approach on heterogeneous ontologies with
+  mapping reliability.
+\newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
+  International Conference on}, pages 230--235, 2012.
+
+\bibitem[Gan02]{Ontoinra2002}
+L.~Gandon, Fabien.
+\newblock {Ontology Engineering: a Survey and a Return on Experience}.
+\newblock Technical Report RR-4396, INRIA, March 2002.
+
+\bibitem[GHM{\etalchar{+}}08]{Grau}
+Bernardo~Cuenca Grau, Ian Horrocks, Boris Motik, Bijan Parsia, Peter
+  Patel-Schneider, and Ulrike Sattler.
+\newblock Owl 2: The next step for owl.
+\newblock {\em Web Semant.}, 6(4):309--322, November 2008.
+
+\bibitem[Gil07]{DisOrg-Gilli}
+Juan~J. Gilli.
+\newblock {\em Dise\~no organizativo: estructura y procesos}.
+\newblock Granica, 2007.
+
+\bibitem[GOS09]{Staab}
+Nicola Guarino, Daniel Oberle, and Steffen Staab.
+\newblock What is an ontology?
+\newblock In Steffen Staab and Rudi Studer, editors, {\em Handbook on
+  Ontologies}, International Handbooks on Information Systems, pages 1--17.
+  Springer Berlin Heidelberg, 2009.
+
+\bibitem[Gru93]{Gruber}
+Thomas~R. Gruber.
+\newblock A translation approach to portable ontology specifications.
+\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
+
+\bibitem[GSD{\etalchar{+}}12]{SwarmComp}
+C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
+\newblock Evolutionary and swarm computing for the semantic web.
+\newblock {\em Computational Intelligence Magazine, IEEE}, 7(2):16--31, 2012.
+
+\bibitem[HKR{\etalchar{+}}04]{protegeManual}
+Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
+  Wroe.
+\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
+  Plugin and CO-ODE Tools Edition 1.0}.
+\newblock August 2004.
+
+\bibitem[HOJ11]{Inay2011}
+Inay Ha, Kyeong-Jin Oh, and Geun-Sik Jo.
+\newblock Ontology-driven visualization system for semantic search.
+\newblock In {\em Information Science and Applications (ICISA), 2011
+  International Conference on}, pages 1--6, 2011.
+
+\bibitem[ISS10]{Tode}
 N.~Islam, M.S. Siddiqui, and Z.A. Shaikh.
 \newblock Tode : A dot net based tool for ontology development and editing.
 \newblock In {\em Computer Engineering and Technology (ICCET), 2010 2nd
   International Conference on}, volume~6, pages V6--229--V6--233, 2010.
 
-\bibitem{protege}
+\bibitem[JRB01]{UML}
+Ivar Jacobson, James Rumbaugh, and Grady Booch.
+\newblock {\em El lenguaje unificado de modelado}.
+\newblock ADDISON-WESLEY, 2001.
+
+\bibitem[KFNM04]{protege}
 Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
 \newblock {The Prot\'{e}g\'{e} OWL Plugin: An Open Development Environment for
   Semantic Web Applications}.
@@ -262,27 +191,39 @@ Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
   Lecture Notes in Computer Science}, chapter~17, pages 229--243. Springer
   Berlin / Heidelberg, Berlin, Heidelberg, 2004.
 
-\bibitem{pow}
-S{\"o}ren Auer.
-\newblock Powl - a web based platform for collaborative semantic web
-  development.
-\newblock In {\em Proceeding of 1st Workshop Scripting for the Semantic Web
-  (SFSW'05), Hersonissos, Greece, May 30}. CEUR Workshop Proceedings, May 2005.
-
-\bibitem{OntologyManagement}
-Walter Waterfeld, Moritz Weiten, and Peter Haase.
-\newblock Ontology management infrastructures.
-\newblock In Martin Hepp, Pieter Leenheer, Aldo Moor, and York Sure, editors,
-  {\em Ontology Management}, volume~7 of {\em Computing for Human Experience},
-  pages 59--87. Springer US, 2008.
-
-\bibitem{swoop}
+\bibitem[KPS{\etalchar{+}}06]{swoop}
 Aditya Kalyanpur, Bijan Parsia, Evren Sirin, Bernardo~Cuenca Grau, and James
   Hendler.
 \newblock Swoop: A web ontology editing browser.
 \newblock {\em Web Semant.}, 4(2):144--153, June 2006.
 
-\bibitem{dbpedia_2012}
+\bibitem[KSH12]{Markus2012DLprimer}
+Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
+\newblock A description logic primer.
+\newblock {\em Computing Research Repository (CoRR)}, abs/1201.4089, 2012.
+
+\bibitem[LK10]{YunLin}
+Yun Lin and John Krogstie.
+\newblock Semantic annotation of process models for facilitating process
+  knowledge management.
+\newblock {\em Int. J. Inf. Syst. Model. Des.}, 1(3):45--67, July 2010.
+
+\bibitem[Lyo97]{SemLyons}
+John Lyons.
+\newblock {\em Sem\'{a}ntica Ling\"{u}\'\i{}stica: Una Introducci\'on}.
+\newblock Paidos Iberica, 1997.
+
+\bibitem[McB02]{McBride}
+B.~McBride.
+\newblock Jena: a semantic web toolkit.
+\newblock {\em Internet Computing, IEEE}, 6(6):55--59, 2002.
+
+\bibitem[MK11]{Mishra2011}
+R.~B. Mishra and Sandeep Kumar.
+\newblock Semantic web reasoners and languages.
+\newblock {\em Artif. Intell. Rev.}, 35(4):339--368, April 2011.
+
+\bibitem[MLA{\etalchar{+}}12]{dbpedia_2012}
 Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
   Hellmann.
 \newblock {DB}pedia and the {L}ive {E}xtraction of {S}tructured {D}ata from
@@ -290,54 +231,114 @@ Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
 \newblock {\em Program: electronic library and information systems}, 46:27,
   2012.
 
-\bibitem{McBride}
-B.~McBride.
-\newblock Jena: a semantic web toolkit.
-\newblock {\em Internet Computing, IEEE}, 6(6):55--59, 2002.
+\bibitem[MMB{\etalchar{+}}06]{Archetype}
+David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
+  P.J. Vivancos, and M.~Robles.
+\newblock Archetype-based semantic integration and standardization of clinical
+  data.
+\newblock In {\em Engineering in Medicine and Biology Society, 2006. EMBS '06.
+  28th Annual International Conference of the IEEE}, pages 5141--5144, 2006.
 
-\bibitem{stardog}
-Karlis Cerans, Guntis Barzdins, Renars Liepins, Julija Ovcinnikova, Sergejs
-  Rikacovs, and Arturs Sprogis.
-\newblock Graphical schema editing for stardog owl/rdf databases using
-  owlgred/s.
-\newblock In Pavel Klinov and Matthew Horridge, editors, {\em OWLED}, volume
-  849 of {\em CEUR Workshop Proceedings}. CEUR-WS.org, 2012.
+\bibitem[MSG87]{TeoOrg-James}
+James~G. March, Herbert~A. Simon, and Harold~S. Guetzkow.
+\newblock {\em Teor\'\i{}a de la Organizaci\'on}.
+\newblock Ariel, 1987.
 
-\bibitem{Fstore}
-M.~Salvadores, G.~Correndo, T.~Omitola, N.~Gibbins, S.~Harris, and N.~Shadbolt.
-\newblock 4s-reasoner: Rdfs backward chained reasoning support in 4store.
-\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
-  2010 IEEE/WIC/ACM International Conference on}, volume~3, pages 261--264,
-  2010.
+\bibitem[NYC10]{Norta}
+A.~Norta, R.~Yangarber, and L.~Carlson.
+\newblock Utility evaluation of tools for collaborative development and
+  maintenance of ontologies.
+\newblock In {\em Enterprise Distributed Object Computing Conference Workshops
+  (EDOCW), 2010 14th IEEE International}, pages 207--214, 2010.
 
-\bibitem{Sesame}
-Jeen Broekstra, Arjohn Kampman, and Frank~van Harmelen.
-\newblock Sesame: A generic architecture for storing and querying rdf and rdf
-  schema.
-\newblock In {\em Proceedings of the First International Semantic Web
-  Conference on The Semantic Web}, ISWC '02, pages 54--68, London, UK, UK,
-  2002. Springer-Verlag.
-
-\bibitem{UML}
-Ivar Jacobson, James Rumbaugh, and Grady Booch.
-\newblock {\em El lenguaje unificado de modelado}.
-\newblock ADDISON-WESLEY, 2001.
-
-\bibitem{Nasraoui}
+\bibitem[NZ10]{Nasraoui}
 O.~Nasraoui and L.~Zhuhadar.
 \newblock Improving recall and precision of a personalized semantic search
   engine for e-learning.
 \newblock In {\em Digital Society, 2010. ICDS '10. Fourth International
   Conference on}, pages 216--221, 2010.
 
-\bibitem{RecYPres}
-J.~Beall.
-\newblock Measuring duplicate metadata records in library databases.
-\newblock In {\em Library Hi Tech News}, volume~27, pages 10--12, 2010.
+\bibitem[Ort09]{Magdalena}
+Magdalena Ortiz.
+\newblock {Introducci\'on a las L\'ogicas Descriptivas}.
+\newblock Technical report, Vienna University of Technology, 2009.
 
-\bibitem{Cleverdon68}
-Cyril Cleverdon and Michael Keen.
-\newblock {Methods and Tools for Corporate Knowledge Management}.
-\newblock Technical report, 1968.
+\bibitem[PVL11]{OntoTecRrpKnw}
+Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
+  Luna.
+\newblock Ontologias: una tecnica de representacion de conocimiento.
+\newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
+
+\bibitem[RC04]{SGBDDIA}
+Peter Rob and Carlos Coronel.
+\newblock {\em Sistemas de bases de datos: dise\~{n}o, implementaci\'{o}n y
+  administraci\'{o}n}.
+\newblock Thomson, 05 edition, 2004.
+
+\bibitem[Sal13]{Salam2013}
+F.~Salam.
+\newblock New semantic indexing and search system based on ontology.
+\newblock In {\em Emerging Intelligent Data and Web Technologies (EIDWT), 2013
+  Fourth International Conference on}, pages 313--318, 2013.
+
+\bibitem[SBLH06]{SemWebTim}
+Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
+\newblock The semantic web revisited.
+\newblock {\em IEEE Intelligent Systems}, 21(3):96--101, May 2006.
+
+\bibitem[SCO{\etalchar{+}}10]{Fstore}
+M.~Salvadores, G.~Correndo, T.~Omitola, N.~Gibbins, S.~Harris, and N.~Shadbolt.
+\newblock 4s-reasoner: Rdfs backward chained reasoning support in 4store.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
+  2010 IEEE/WIC/ACM International Conference on}, volume~3, pages 261--264,
+  2010.
+
+\bibitem[Sil02]{TeoAdmon-Reinaldo}
+Reinaldo~O. Silva.
+\newblock {\em Teor\'\i{}as de la administraci\'on}.
+\newblock Thomson, 01 edition, 2002.
+
+\bibitem[SR13]{Suganyakala2013}
+R.~Suganyakala and R.R. Rajalaxmi.
+\newblock Movie related information retrieval using ontology based semantic
+  search.
+\newblock In {\em Information Communication and Embedded Systems (ICICES), 2013
+  International Conference on}, pages 421--424, 2013.
+
+\bibitem[UCI{\etalchar{+}}06]{Uren:2006}
+Victoria Uren, Philipp Cimiano, Jos{\'e} Iria, Siegfried Handschuh, Maria
+  Vargas-Vera, Enrico Motta, and Fabio Ciravegna.
+\newblock Semantic annotation for knowledge management: Requirements and a
+  survey of the state of the art.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 4(1):14--28, January 2006.
+
+\bibitem[WWH08]{OntologyManagement}
+Walter Waterfeld, Moritz Weiten, and Peter Haase.
+\newblock Ontology management infrastructures.
+\newblock In Martin Hepp, Pieter Leenheer, Aldo Moor, and York Sure, editors,
+  {\em Ontology Management}, volume~7 of {\em Computing for Human Experience},
+  pages 59--87. Springer US, 2008.
+
+\bibitem[XG01]{WangXin}
+Wang Xin and Xiong Guangleng.
+\newblock Design rationale as part of corporate technical memory.
+\newblock In {\em Systems, Man, and Cybernetics, 2001 IEEE International
+  Conference on}, volume~3, pages 1904--1908 vol.3, 2001.
+
+\bibitem[YS11]{Accommodation}
+Kai Yang and R.~Steele.
+\newblock A semantic integration solution for online accommodation information
+  integration.
+\newblock In {\em Industrial Electronics and Applications (ICIEA), 2011 6th
+  IEEE Conference on}, pages 1105--1110, 2011.
+
+\bibitem[ZLW08]{JunZhai}
+Jun Zhai, Jianfeng Li, and Qinglian Wang.
+\newblock Using ontology and xml for semantic integration of electricity
+  information systems.
+\newblock In {\em Electric Utility Deregulation and Restructuring and Power
+  Technologies, 2008. DRPT 2008. Third International Conference on}, pages
+  2197--2201, 2008.
 
 \end{thebibliography}

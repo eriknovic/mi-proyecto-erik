@@ -1,7 +1,7 @@
 \select@language {spanish}
-\contentsline {chapter}{Lista de Tablas}{\es@scroman {xi}}
-\contentsline {chapter}{Lista de Figuras}{\es@scroman {xiii}}
-\contentsline {chapter}{Acr\'onimos}{\es@scroman {xviii}}
+\contentsline {chapter}{Lista de Tablas}{\es@scroman {xiii}}
+\contentsline {chapter}{Lista de Figuras}{\es@scroman {xv}}
+\contentsline {chapter}{Acr\'onimos}{\es@scroman {xx}}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}
 \contentsline {chapter}{\numberline {2}Descripci\'on del Problema}{7}
 \contentsline {section}{\numberline {2.1}Memoria Corporativa}{8}
@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {3.2}Marco de Descripci\'on de Recursos}{17}
 \contentsline {section}{\numberline {3.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{21}
 \contentsline {section}{\numberline {3.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{21}
-\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{25}
+\contentsline {section}{\numberline {3.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{26}
 \contentsline {chapter}{\numberline {4}Estado del arte}{31}
 \contentsline {section}{\numberline {4.1}Integraci\'on sem\'antica de recursos de informaci\'on}{31}
 \contentsline {section}{\numberline {4.2}Herramientas para la integraci\'on sem\'antica de recursos}{35}
@@ -34,16 +34,16 @@
 \contentsline {subsection}{\numberline {5.2.3}Dominio y rango de propiedades}{61}
 \contentsline {subsection}{\numberline {5.2.4}Simetr\IeC {\'\i }a en las propiedades}{65}
 \contentsline {section}{\numberline {5.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{68}
-\contentsline {chapter}{\numberline {6}Prototipo}{81}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{107}
-\contentsline {section}{\numberline {7.1}Observaciones}{107}
-\contentsline {section}{\numberline {7.2}Hip\'otesis}{107}
-\contentsline {section}{\numberline {7.3}Experimentaci\'on}{108}
-\contentsline {section}{\numberline {7.4}Sujetos de experimentaci\'on}{108}
-\contentsline {section}{\numberline {7.5}Metodolog\IeC {\'\i }a}{110}
-\contentsline {section}{\numberline {7.6}Resultados}{117}
-\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{123}
-\contentsline {chapter}{Appendices}{127}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Algoritmos para le generaci\'on de datos simulados}{129}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Transformaci\'on de preguntas a consultas SPARQL}{137}
-\contentsline {chapter}{Bibliograf\'{\i }a}{149}
+\contentsline {chapter}{\numberline {6}Prototipo}{83}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on experimental}{109}
+\contentsline {section}{\numberline {7.1}Observaciones}{109}
+\contentsline {section}{\numberline {7.2}Hip\'otesis}{109}
+\contentsline {section}{\numberline {7.3}Experimentaci\'on}{110}
+\contentsline {section}{\numberline {7.4}Sujetos de experimentaci\'on}{110}
+\contentsline {section}{\numberline {7.5}Metodolog\IeC {\'\i }a}{112}
+\contentsline {section}{\numberline {7.6}Resultados}{119}
+\contentsline {chapter}{\numberline {8}Conclusiones y Trabajo Futuro}{125}
+\contentsline {chapter}{Appendices}{129}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Algoritmos para le generaci\'on de datos simulados}{131}
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Transformaci\'on de preguntas a consultas SPARQL}{139}
+\contentsline {chapter}{Bibliograf\'{\i }a}{151}
