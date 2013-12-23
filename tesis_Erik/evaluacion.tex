@@ -351,7 +351,7 @@ Este script (Algoritmo \ref{alg:mod}) se ejecuta para cada una de las consultas 
 Los scripts asociados a los Algoritmos \ref{alg:srinf} y \ref{alg:mod}, se corrieron en una computadora con un procesador Intel Core I7 a 2.3GHz con 8Gb en RAM y 8 núcleos de procesamiento. La versión del Apache Jena es la 2.7.4 para Windows 7 (64bits). Estos scripts se construyeron con el IDE Eclipse y se ejecutaron con la versión 1.7.0\_05 de Java.
 
 \section{Resultados}
-Los resultados para la \textit{evaluación de la calidad de los resultados} se presentan en dos etapas. Estas dos etapas tienen relación con las dos fases del cuarto paso de esta evaluación. La primera etapa presenta la cantidad de resultados (relevantes y el total) que fueron recuperados por el script del Algoritmo \ref{alg:srinf}. La segunda etapa presenta los valores calculados para la exhaustividad y precisión. Este cálculo se hace para cada consulta de la experimentación.
+Los resultados para la \textit{evaluación de la calidad de los resultados} se presentan en dos etapas. La primera etapa muestra el número de \textit{recursos relevantes recuperados} con el script del Algoritmo \ref{alg:srinf}, así como el total de \textit{recursos relevantes}, para las preguntas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La segunda etapa presenta los valores calculados para la exhaustividad y precisión. Este cálculo se hace para cada consulta de la experimentación.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.92}
@@ -404,9 +404,9 @@ Q1.19 & 0 & 13 & 13\\
 \label{tab:rrRP}
 \end{table}
 
-En la Tabla \ref{tab:rrRP} se presentan los números de recursos relevantes y totales en la primera etapa. Estos valores son para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna presenta el identificador de consulta. La segunda columna muestra la cantidad de recursos relevantes recuperados cuando no se emplea inferencia. La cuarta columna presenta el número de recursos relevantes recuperados al emplear inferencia. La cuarta columna muestra el número total de recursos relevantes que responden las consultas.
+En la Tabla \ref{tab:rrRP}, \textit{se presenta el número de recursos relevantes} recuperados y el número total de \textit{recursos relevantes}, para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna de la Tabla \ref{tab:rrRP} presenta el identificador de consulta. La segunda columna muestra el número de \textit{recursos relevantes recuperados} cuando no se emplea inferencia. La tercera columna presenta el número de \textit{recursos relevantes recuperados} al emplear inferencia. La cuarta columna muestra el número total de recursos relevantes que responden a las consultas.
 
-De la misma manera, la Tabla \ref{tab:rrRD} presenta la cantidad de recursos relevantes y total de recursos recuperados cuando se emplea y no inferencia en los \textit{recursos digitales}. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es igual a la Tabla \ref{tab:rrRP}.
+De la misma manera, la Tabla \ref{tab:rrRD} presenta el número de \textit{recursos relevantes} recuperados cuando 1) \textit{no se emplea inferencia} y 2) \textit{sí se emplea inferencia}, en la ontología de \textit{recursos digitales}. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es la misma de la Tabla \ref{tab:rrRP}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.94}
@@ -441,7 +441,7 @@ Q2.10 & 3 & 4 & 4\\
 \label{tab:rrRD}
 \end{table}
 
-Los resultados para la segunda etapa de la \textit{evaluación de la calidad de resultados}, son los valores que fueron calculados para la exhaustividad (Ecuación \ref{ec:exa}) y precisión (Ecuaciones \ref{ec:pre}) de Jena con nuestras ontologías. El objetivo de esta \textit{segunda etapa} es comparar estas dos métricas de \textit{recuperación de la información} para un modelo con inferencia y otro que no usa ésta, donde estos modelos son procesados por Jena.
+Los resultados en la segunda etapa de la \textit{evaluación de la calidad de resultados}, son los valores que son calculados para la exhaustividad (Ecuación \ref{ec:exa}) y precisión (Ecuaciones \ref{ec:pre}) de Jena con nuestras ontologías. El objetivo de esta \textit{segunda etapa} es comparar estas dos métricas de \textit{recuperación de la información} para un modelo con inferencia y otro que no usa ésta, donde estos modelos son procesados por Jena.
 
 La Tabla \ref{tab:exprRP} muestra los valores de exhaustividad y precisión para las consultas en la Tabla \ref{tab:qrynoRP}. En esta Tabla \ref{tab:exprRP}, la primer columna muestra el identificador de la consulta. La segunda y tercera columna muestran los valores de exhaustividad y precisión para un modelo sin inferencia. La cuarta y quinta columna presentan los valores de las mismas métricas para un modelo con inferencia.
 
@@ -627,9 +627,14 @@ Q2.10 & 11 & 3398\\
 \label{tab:tiempRD}
 \end{table}
 
-El análisis de las Tablas \ref{tab:rrRP}, \ref{tab:rrRD}, \ref{tab:tiempRP} y \ref{tab:tiempRD} arroja varios aspectos significativo con relación a los \textit{recursos relevantes recuperados}. En el caso del uso de modelos sin inferencia se tiene los siguientes hechos. 1) En algunos casos, una consulta al conocimiento explícito recupera todos los recursos relevantes y los tiempos de respuesta son pequeños (no pasan del segundo). 2) En otros casos, algunas consultas descartan varios recursos que sí responden la consulta. Esto se debe a que algunos recursos carecen un determinado tripleta.
+El análisis de las Tablas \ref{tab:rrRP}, \ref{tab:rrRD}, \ref{tab:tiempRP} y \ref{tab:tiempRD} arroja varios aspectos significativos en relación a los \textit{recursos relevantes recuperados}. Si no se emplea inferencia, entonces se tienen los siguientes hechos. 1) En algunos casos, una consulta al conocimiento explícito recupera todos los recursos relevantes y los tiempos de respuesta son pequeños (menores a un segundo). 2) En otros casos, algunas consultas descartan varios recursos que sí responden la consulta. Esto se debe a que algunos recursos carecen un determinado tripleta.
 
-En el caso de uso de inferencia, Jena permite recuperar todos los recursos esperados, porque el motor de inferencia permite inferir algunos triples en \textit{nuestras ontologías}. Estos triples inferidos son criterios de búsqueda las consultas de nuestra experimentación. Pero, el uso de inferencia consume mayor tiempo, porque el \textit{motor de búsqueda} invierte mayor tiempo en inferir más tripletas de nuestros grafos RDF.
+Si se emplea inferencia, entonces Jena puede recuperar todos los recursos esperados, porque el motor de inferencia permite inferir algunos triples en \textit{nuestras ontologías}. Estos triples inferidos son criterios de búsqueda las consultas de nuestra experimentación. Pero, el uso de inferencia consume mayor tiempo, porque el \textit{motor de búsqueda} invierte mayor tiempo en inferir más tripletas de nuestros grafos RDF.
+
+Nosotros concluimos que el uso de inferencia mejora la búsqueda y recuperación de información sobre una ontología, ya que si se emplea la inferencia con fines de materialización de información, entonces tripletas que no están en el modelo 
+
+ porque al emplear la inferencia con fines , se puede completar el conocimiento 
+, las cuales completen el conocimiento en nuestros modelos.
 
 %%%%%---------------------> Aquí hay que responder
 %¿Cuál es la conclusión? ¿Vale la pena pagar el precio del razonamiento? ¿Cuándo será mejor hacer el razonamiento? ¿Al momento de ejecutar la consulta? ¿No será mejor tal vez materializar todo desde el principio y olvidarnos?

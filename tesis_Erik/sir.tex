@@ -1,11 +1,11 @@
 \chapter{Integración semántica de recursos de información en una memoria corporativa}
 \label{cap:sir}
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
-La \textit{integración de los recursos} es el proceso de búsqueda y recuperación significativa de información existente en los recursos, para responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
+El proceso de \textit{integración de los recursos de información} consiste en la representación del conocimiento acerca de los \textit{recursos de información}, con fines de busqueda y recuperación de \textit{información significativa}. En esta integración, el objetivo es responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
 La \textit{integración semántica de recursos} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-El desarrollo de la \textit{integración semántica de recursos} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
+El desarrollo de la \textit{integración semántica de recursos de información} se hace con base en una \textbf{\textit{secuencia ordenada de métodos (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
 
 La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
 
@@ -25,7 +25,7 @@ Esta metodología está organizada en tres etapas principales:
 
 La primera y segunda etapa de esta metodología es para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
-La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan a lo largo de nuestra de metodología.
+La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan a lo largo de nuestra de metodología.
 
 \begin{figure}[!htb]
 \centering
@@ -878,7 +878,7 @@ Al darse por hecho el uso de inferencia, la consulta \ref{fig:consultaGrafo} pue
 \label{fig:consSimpGrafo}
 \end{figure}
 
-Finalmente, la Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL para la consulta de la Figura \ref{fig:consSimpGrafo} y empleando el grafo de la Figura \ref{fig:grafoCR}. En esta Tabla, todos los identificadores de los recursos son los recursos que se esperan para responder esta pregunta.
+La Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL para la consulta de la Figura \ref{fig:consSimpGrafo} y empleando el grafo de la Figura \ref{fig:grafoCR}. En esta Tabla, todos los identificadores de los recursos son los recursos que se esperan para responder esta pregunta.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.9}
@@ -920,6 +920,16 @@ Finalmente, la Tabla \ref{tab:resCR} presenta los resultados arrojados por un mo
 \caption{Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de información.}
 \label{tab:resCR}
 \end{table}
+
+En síntesis, este Capítulo describe nuestro \textit{marco de trabajo} para la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. El objetivo de este \textit{marco de trabajo} es analizar e implementar un \textit{modelo semántico}, para buscar y recuperar información sobre éste.
+
+Nuestro \textit{marco de trabajo} está dividido en tres etapas. La primera etapa es representar el \textit{conocimiento explícito} de los \textit{recursos de información} en un \textit{modelo semántico} con un formato estándar. Segundo, representar el \textit{conocimiento implícito} mediante la introducir axiomas que enriquezcan el \textit{modelo semántico}. Tercero, buscar y recuperar la información en un modelo semántico, para responder las preguntas de los usuario.
+
+Este \textit{marco de trabajo} implementa el uso de las \textit{tecnologías semánticas}, para desarrollar las tres etapas de éste. En la representación del conocimiento, el \textit{marco de descripción recursos} (RDF) es el mecanismo para describir a los \textit{recursos de información} y las características de éstos en un \textbf{\textit{formato estándar (tripletas)}}. En el enriquecimiento de conocimiento, se emplean al esquema RDF (RDF(S)) y el lenguaje de ontologías (OWL) como lenguajes para escribir las reglas de inferencia. En la búsqueda y recuperación, las consultas son escritas con el lenguaje de consulta SPARQL, el cual está basado en las tripletas de nuestro modelo.
+
+En este trabajo, el \textit{principal objetivo} es utilizar \textit{inferencia} sobre nuestras \textit{ontologías}, para mejorar la búsqueda y recuperación de la información. Por un lado, la inferencia permite materializar \textit{tripletas RDF} en nuestros modelos, de esta manera, se tiene un mayor o igual número de tripletas que un motor de consulta va a comparar para una consulta dada. Por otro lado, el uso de inferencia permite reducir la complejidad de las consultas SPARQL, ya que éstas pueden ser construidas a partir de tripletas inferidas.
+
+%a diferencia de otros que se revisaron en el estado del arte, está 
 
 %%%------------------->Revisa Aquí
 %Hay que dar un párrafo final diciendo qué se presentó.

@@ -1,16 +1,20 @@
 \chapter{Prototipo}
 \label{cap:piu}
-La finalidad de la \textit{integración semántica de recursos} es la \textit{búsqueda y recuperación de información} en un modelo semántico, para responder las consultas de los usuarios del área de redes y telecomunicaciones. Aunque, un aspecto importante en esta \textit{búsqueda y recuperación} es éste: \textit{un usuario puede consultar información en un modelo, si éste tiene conocimientos en las \textbf{tecnologías semánticas} y en los \textbf{vocabularios de las ontologías}}. En concreto, él debe tener estas nociones:
+La finalidad de la \textit{integración semántica de recursos} es la \textit{búsqueda y recuperación de información} en un modelo semántico, para responder las consultas de los usuarios del área de redes y telecomunicaciones. 
 
-\begin{itemize}
-\item \textbf{Tecnologías semánticas}: tripletas rdf, axiomas, consultas SPARQL, patrones, variables resultado o auxiliares, inferencia.
-\item \textbf{Herramientas y operaciones de gestión de tripletas}: triplestore, motor de inferencia, motor de consulta, carga de modelo, forma de recuperación de la información, inferencia en un modelo.
-\item \textbf{Representación del dominio}: vocabularios (URIs), propiedades(URIs), tripletas de los axiomas, prefijos.
-\end{itemize}
+La \textit{búsqueda y recuperación} en este modelo no son sencillas, porque se requiere que un usuario tenga un grado especializado de conocimientos en el uso de las \textbf{tecnologías semánticas} y los \textbf{vocabularios en las ontologías}. Dicho lo anterior, se busca que los \textit{profesores-investigadores} y \textit{estudiantes}, pueda consultar un modelo semántico.
 
-Sin embargo, no todos los \textit{profesores-investigadores} y \textit{estudiantes} tienen estos conocimientos. Ésto significa que no todos los usuarios del área de redes y telecomunicaciones utilizan la \textit{integración semántica de recursos}. Por esta razón, se propone construir un prototipo de \textit{interfaz gráfica de usuario} (GUI).
+%Aunque, un aspecto importante en esta  es éste: \textit{un usuario puede consultar información en un modelo, si éste tiene conocimientos en }. En concreto, él debe tener estas nociones:
+%
+%\begin{itemize}
+%\item \textbf{Tecnologías semánticas}: tripletas rdf, axiomas, consultas SPARQL, patrones, variables resultado o auxiliares, inferencia.
+%\item \textbf{Herramientas y operaciones de gestión de tripletas}: triplestore, motor de inferencia, motor de consulta, carga de modelo, forma de recuperación de la información, inferencia en un modelo.
+%\item \textbf{Representación del dominio}: vocabularios (URIs), propiedades(URIs), tripletas de los axiomas, prefijos.
+%\end{itemize}
 
-La finalidad de nuestro prototipo es proporcionar una manera fácil, sencilla y amigable de interacción entre un usuario y la \textit{integración semántica de los recursos}. De esta forma, un usuario puede consultar y visualizar la información que responde a su consulta, sin que éste tenga conocimientos en las tecnologías semántica o los modelos.
+%Sin embargo, no todos los \textit{profesores-investigadores} y \textit{estudiantes} tienen estos conocimientos. Ésto significa que no todos los usuarios del área de redes y telecomunicaciones utilizan la \textit{integración semántica de recursos}.
+
+Para ello, se propone una \textit{interfaz gráfica} entre el usuario y el modelo, con la finalidad de proporcionar una manera fácil, sencilla y amigable de interacción entre un usuario y la \textit{integración semántica de los recursos}. De esta forma, un usuario puede consultar y visualizar la información que responde a su consulta, sin que éste tenga conocimientos en las tecnologías semántica o los modelos.
 
 \textit{Nuestro \textbf{prototipo} es una \textbf{aplicación Web} para \textbf{consultar} y \textbf{visualizar información} de los recursos de información}. Estos \textit{recursos} pertenecen a nuestros dos \textit{casos de uso}: cartografía de competencias y búsqueda de recursos digitales.
 
@@ -556,6 +560,14 @@ La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \t
 \caption{Interfaces Web: mostrar detalles de un recurso de información.}
 \label{fig:iwfdet}
 \end{figure}
+
+Nuestra interfaz Web es un prototipo y como tal requiere varios aspectos que se deben hacer y mejorar en ésta. Estas son las actividades por hacer en nuestra interfaz:
+
+\begin{itemize}
+\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}.
+\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}.
+\item Agregar un recuadro en las \textit{páginas Web} para que los usuarios puedan hacer búsquedas basadas en \textit{palabras clave}, donde estas \textit{búsquedas de texto} se hacen dentro de consultas SPARQL. Esta búsqueda se hace mediante el uso de la Lucene Index\footnote{The Apache Software Foundation, ``LARQ,'' Available: \url{http://jena.apache.org/documentation/larq/index.html}}.
+\end{itemize}
 
 %%%%--------------------------> Reviza aquí
 %Tal vez estaría bien terminar el capítulo con cosas por hacer con respecto al prototipo.
