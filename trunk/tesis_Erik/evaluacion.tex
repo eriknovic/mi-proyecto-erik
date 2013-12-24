@@ -631,10 +631,11 @@ El análisis de las Tablas \ref{tab:rrRP}, \ref{tab:rrRD}, \ref{tab:tiempRP} y \r
 
 Si se emplea inferencia, entonces Jena puede recuperar todos los recursos esperados, porque el motor de inferencia permite inferir algunos triples en \textit{nuestras ontologías}. Estos triples inferidos son criterios de búsqueda las consultas de nuestra experimentación. Pero, el uso de inferencia consume mayor tiempo, porque el \textit{motor de búsqueda} invierte mayor tiempo en inferir más tripletas de nuestros grafos RDF.
 
-Nosotros concluimos que el uso de inferencia mejora la búsqueda y recuperación de información sobre una ontología, ya que si se emplea la inferencia con fines de materialización de información, entonces tripletas que no están en el modelo 
+Como bien lo indica nuestra experimentación, para cada consulta el número de recursos relevantes recuperados con inferencia es igual al número de recursos relevantes esperados. Por lo tanto, nosotros concluimos que el \textit{uso de inferencia} en una ontología puede mejorar la búsqueda y recuperación de \textit{recursos relevantes}, ya que al emplear la inferencia con fines de materialización, se puede completar y mejorar el conocimiento en nuestros modelos, de esta manera, un motor de búsqueda SPARQL puede comparar este conocimiento y recuperar recursos significativos.
 
- porque al emplear la inferencia con fines , se puede completar el conocimiento 
-, las cuales completen el conocimiento en nuestros modelos.
+Respecto a los \textit{tiempos de procesamiento} con inferencia, se tiene que éstos son mayores en comparación con los \textit{tiempos sin inferencia}, pero estos \textit{tiempos con inferencia} son aceptables para la búsqueda y recuperación de información.
+
+Aunque, estos tiempos pueden mejorarse por distintas estrategias. Una estrategia es invocar un razonador cuando sea necesario, si la consulta es sobre el conocimiento explícito, entonces éste no se invoca, en el otro caso, sí se invoca el razonador. Otra estrategia es materializar desde el principio todo el conocimiento de una ontología, posteriormente se guarda el modelo y sobre éste hacer consultas.
 
 %%%%%---------------------> Aquí hay que responder
 %¿Cuál es la conclusión? ¿Vale la pena pagar el precio del razonamiento? ¿Cuándo será mejor hacer el razonamiento? ¿Al momento de ejecutar la consulta? ¿No será mejor tal vez materializar todo desde el principio y olvidarnos?
