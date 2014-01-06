@@ -137,6 +137,7 @@ Imagen & 77 & 77\\
 \end{table}
 
 \section{Metodología}
+\label{sec:metoexp} 
 Esta experimentación se ha dividido en dos actividades. La primera actividad consiste en la \textit{evaluación de la calidad de los resultados} que proporciona el triplestore Jena. Mientras, la segunda actividad consiste en medir los \textit{tiempos promedios} que toma Jena para: consultar los modelos con/sin inferencia y mostrar los resultados al usuario.
 
 El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es identificar un conjunto básico de consultas para interrogar las ontologías \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. En la Sección \ref{sec:byrKrec} se hizo un análisis e identificación de preguntas base que posteriormente se transformaron a consultas SPARQL. Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
@@ -268,7 +269,7 @@ Imprimir $noRes$ en pantalla\;
 
 El \textit{cuarto paso} es comparar los \textit{resultados que proporciona (recursos recuperados) el script (Algoritmo \ref{alg:srinf})} con los \textit{resultados que sabemos responden (total de recursos relevantes)} a las consultas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La finalidad de este paso, es \textit{evaluar} la calidad de resultados de Jena, para un modelo con inferencia y otro sin ésta. El cuarto paso, se hace en dos fases: 1) \textit{encontrar los recursos relevantes} de las respuestas dadas por el script, y 2) usar (\textit{métricas de recuperación de la información}) para comparar la calidad de los resultados con y sin inferencia. 
 
-La \textit{fase uno} consiste en comparar y anotar las cantidades totaales de \textit{recursos relevantes} para cada consulta. En esta fase se considera el modelo de uso: con inferencia o sin ésta. Esta comparación y anotación se hizo de forma manual. El primer criterio de comparación es ver la cantidad de recursos de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD} con el número de respuestas que proporciona el script. Posteriormente, se hace la comparación \textit{identificador} a \textit{identificador} de \textit{los recursos que son proporcionados por el script} con \textit{los recursos que se saben responden a la consulta}.
+La \textit{fase uno} consiste en comparar y anotar las cantidades totales de \textit{recursos relevantes} para cada consulta. En esta fase se considera el modelo, ya sea con inferencia o sin ésta. Esta comparación y anotación se hizo de forma manual. El primer criterio de comparación es ver la cantidad de recursos de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD} con el número de respuestas que proporciona el script. Posteriormente, se hace la comparación \textit{identificador} a \textit{identificador} de \textit{los recursos que son proporcionados por el script} con \textit{los recursos que se saben responden a la consulta}.
 
 La segunda fase, consiste en emplear dos métricas de \textit{recuperación de la información (RI\label{sym:ri})}:
 
@@ -351,6 +352,7 @@ Este script (Algoritmo \ref{alg:mod}) se ejecuta para cada una de las consultas 
 Los scripts asociados a los Algoritmos \ref{alg:srinf} y \ref{alg:mod}, se corrieron en una computadora con un procesador Intel Core I7 a 2.3GHz con 8Gb en RAM y 8 núcleos de procesamiento. La versión del Apache Jena es la 2.7.4 para Windows 7 (64bits). Estos scripts se construyeron con el IDE Eclipse y se ejecutaron con la versión 1.7.0\_05 de Java.
 
 \section{Resultados}
+\label{sec:result} 
 Los resultados para la \textit{evaluación de la calidad de los resultados} se presentan en dos etapas. La primera etapa muestra el número de \textit{recursos relevantes recuperados} con el script del Algoritmo \ref{alg:srinf}, así como el total de \textit{recursos relevantes}, para las preguntas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La segunda etapa presenta los valores calculados para la exhaustividad y precisión. Este cálculo se hace para cada consulta de la experimentación.
 
 \begin{table}[!htb]

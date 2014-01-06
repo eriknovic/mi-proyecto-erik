@@ -1,5 +1,33 @@
 \chapter{Conclusiones y Recomendaciones}
 \label{cap:concl}
+Con base en lo realizado y descrito en nuestro proyecto, nosotros concluimos los siguiente:
+
+\begin{itemize}
+\item Los objetivos particulares se alcanzaron:
+	\begin{itemize}
+	\item Desarrollamos una \textit{marco de referencia} para la \textit{integración semántica} de los \textit{recursos de información} existentes en una \textit{memoria corporativa}.
+	\item Implementamos un \textit{modelo semántico} que representa el conocimiento explícito e implícito de los \textit{recursos de información}.
+	\item Implementamos un prototipo de interfaz gráfica de usuario que permita a éstos últimos una interacción amigable para la integración semántica de los recursos.
+	\item Evaluamos los resultados y tiempos de procesamiento en en la integración semántica para el dominio de redes y telecomunicaciones.
+	\end{itemize}
+\item Con respecto a nuestro objetivo principal, decimos que al alcanzar nuestros objetivos particulares, nosotros contribuimos a la \textit{integración semántica} de los \textit{recursos de información} existentes en una memoria corporativa.
+\item La hipótesis \textbf{El uso de las \textit{tecnologías semánticas} es adecuada para lograr la \textit{integración semántica} de \textit{recursos de información} en una \textit{memoria corporativa}}, se acepta porque las tecnologías semánticas son herramientas, estándares, metodologías y aplicaciones que permiten:
+	\begin{itemize}
+	\item Representar el conocimiento explícito (características y/o relaciones) de los \textit{recursos de información} en un modelo semántico; solucionando las dificultades de heterogeneidad en formato, contenido y estructura.
+	\item Enriquecer el conocimiento, mediante la introducción de \textit{reglas de inferencia} (Ver Sección y \ref{sec:enrKrec}) en el modelo semántico, para representar el conocimiento implícito en los recursos y el dominio de aplicación (Redes y Telecomunicaciones).
+	\item Extender o modificar un modelo semántico, gracias a que el conocimiento explícito e implícito están escritos en un lenguaje estándar (Ver Secciones \ref{sec:rdf} y \ref{sec:reginf}). De esta manera, los modelos semánticos pueden adaptarse al conocimiento cambiante o explosivo de la memoria corporativa.
+	\item Compartir un modelo semántico, gracias a que éste está escrito en un lenguaje estándar y puede utilizarse en cualquier plataforma (Linux, Mac y Windows). De esta manera, mediante el uso aplicaciones genéricas se puede visualizar o modificar la información en el modelo.
+	\item Buscar y recuperar información en un modelo semántico, mediante el uso de un lenguaje estándar (Ver Sección \ref{sec:lsparql}). Así como, el uso de un proceso para hacer explícito el conocimiento implícito de un modelo semántico, con la finalidad de mejorar los resultados de la búsqueda en el modelo (Ver Sección \ref{sec:result}).
+	\end{itemize}
+\item Las aportaciones de nuestra investigación son:
+	\begin{itemize}
+	\item Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
+	\item Un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa (Redes y Telecomunicaciones).
+	\item Un prototipo para la búsqueda y consulta de información, 4) los resultados de nuestra evaluación experimental.
+	\item Un par de scripts para la generación automática y controlada de descripciones RDF, para poblar la base de conocimiento.
+	\end{itemize}
+\end{itemize}
+
 %%%Qué hicimos
 En este documento presentamos un estudio y aplicación sobre el uso de las \textit{tecnologías semánticas} (TS) para realizar la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. Por \textit{integración semántica} debe entenderse la \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos recursos son documentos basados en texto y archivos multimedia en diferentes formatos, con contenido variado y con distintas estructuras (estructurado, semi-estructurado, sin estructura), también otros recursos de información en este trabajo son las personas que andan de un lugar a otro.
 
@@ -56,9 +84,7 @@ Los resultados en nuestra experimentación indican lo siguiente. El \textit{tiemp
 Respecto a los tiempos, se tiene lo siguiente: el proceso de consulta sin inferencia arroja tiempos menores a un segundo, mientras los tiempos en la consulta con inferencia son de al rededor de dos o tres segundos. Aunque, estos tiempos con inferencia son mayores en comparación de los tiempos sin inferencia, éstos tiempos (con inferencia) con Jena son aceptables para la búsqueda de información basada en ontologías.
 
 %%%Conclusión final, es factible o no es factible el uso de las TS y describir porqué
-Por lo descrito hasta el momento consideramos como aportación de nuestra investigación: 1) un \textit{marco de referencia} para lograr la integración semántica de recursos de información, 2) un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa (Redes y Telecomunicaciones), 3) un prototipo para la búsqueda y consulta de información, 4) los resultados de nuestra evaluación experimental y 5) un par de scripts para la generación automática y controlada de descripciones RDF, para poblar la base de conocimiento.
 
-\textbf{El uso de las \textit{tecnologías semánticas} es adecuada para lograr la \textit{integración semántica} de \textit{recursos de información} en una \textit{memoria corporativa}}.
 %En este trabajo presentamos nuestro \textit{marco de trabajo}, un prototipo para la consulta de información, los resultados en nuestra evaluación experimental, así como las ventajas de las tecnologías semánticas, y con base en éstos, nosotros hacemos esta conclusión. 
 
 %%% Trabajos futuros
@@ -66,49 +92,54 @@ Por lo descrito hasta el momento consideramos como aportación de nuestra investi
 En esta investigación, nosotros identificamos varias actividades que consideramos como trabajos futuros:
 
 \begin{itemize}
-\item Introducir más \textit{casos de uso}, por ejemplo, administración del inventario en los distintos laboratorios que componen el departamento de IE de la UAM
-\item Actualizar los \textit{recursos de información} en la \textit{memoria corporativa} del área de RyT y describir a estos recursos con el \textit{estándar RDF}.
-\item Mejorar la interfaz gráfica de usuario del prototipo para que éste pueda describir los \textit{recursos de información}. El objetivo es que los usuarios empleen esta aplicación como una del estilo ``red social''. Algunas funcionalidades de esta interfaz son:
+\item \textbf{A corto plazo:}
 	\begin{itemize}
-		\item Describir un nuevo \textit{recurso de información}.
+	\item Introducir más \textit{casos de uso}, por ejemplo, la administración del inventario en los distintos laboratorios que componen el departamento de ingeniería eléctrica de la UAM.
+	\item Actualizar los \textit{recursos de información} y las descripciones de éstos, para tener una buena representación de la memoria corporativa del área de Redes y Telecomunicaciones.
+	\item Evaluar la introducción de \textit{reglas de inferencia} más complejas en la ontología, mediante el análisis de los reglas existentes y el uso de reglas del lenguaje \textit{Semantic Web Rule Language}\footnote{W3C, ``SWRL: A Semantic Web Rule Language Combining OWL and RuleML,'' Disponible en: \url{http://www.w3.org/Submission/SWRL/}} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
+	\item Mejorar el prototipo de integración semántica de recursos:
 		\begin{itemize}
-			\item Asignar un URI al nuevo recurso
-			\item Construir un conjunto de tripletas RDF, asociadas al nuevo recurso.
-			\item Guardar las tripletas en un archivo o agregar éstas al modelo inmediatamente.
-		\end{itemize}
-		\item Actualizar la información de un \textit{recurso de información}.
-		\begin{itemize}
-			\item Ver la información vieja del recurso.
-			\item Corregir la información en el modelo.
-			\item Guardar el nuevo modelo.
-		\end{itemize}
-		\item Eliminar las descripciones de un \textit{recurso de información}.
-		\begin{itemize}
-			\item Ver la información del recurso a eliminar.
-			\item Eliminar las tripletas en el modelo, donde el recurso es el sujeto.
-			\item Guardar el nuevo modelo.
-		\end{itemize}
-	\end{itemize}
-\item Evaluar la introducción de axiomas más complejos en las ontologías, a través de un análisis a los axiomas propuestos y el uso de reglas de lenguaje \textit{Semantic Web Rule Language} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
-\item Utilizar otro triplestore, por ejemplo Stardog\footnote{Clark \& Parsia, LLC, ``Stardog,''  Disponible en: \url{http://stardog.com/}} o Sesame\footnote{Aduna, ``Sesame,''  Disponible en: \url{http://www.openrdf.org/index.jsp}}, y hacer una evaluación del mismo.
-	\begin{itemize}
-	\item Cargar, inferir y consultar nuestras ontologías con el \textit{triplestore electo}.
-	\item Hacer nuestra evaluación experimental con este triplestore.
-	\item Comparar el desempeño y resultados de experimentación del \textit{triplestore electo} contra \textit{Jena}.
-	\end{itemize}
-\item Dar mantenimiento a la ontología del vocabulario de Redes y Telecomunicaciones.
-	\begin{itemize}
-	\item Introducir nuevos conceptos, como radios cognitivos, computación en la nube, computación móvil, por mencionar algunos.
-	\item Introducir tripletas para traducir los conceptos de nuestra ontología a otros idiomas, por ejemplo, semantic web, web semántica, web sem\^{a}ntica, semantisch web, anlamsal web, web semantikoa. De esta manera, en una búsqueda se pueden enriquecer los resultados, recuperando recursos que están en otros idiomas.
-	\end{itemize}
-\item Mejorar el prototipo de integración semántica de recursos.
-	\begin{itemize}
-		\item Mejorar la seguridad en el prototipo.
-		\item Mejorar la visualización de la información en las interfaces.
 		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index\footnote{The Apache Software Foundation, ``adding free text searches to SPARQL,''  Disponible en: \url{http://jena.apache.org/documentation/larq/}}.
 		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, materializando desde el inicio las tripletas y almacenándolas en u nuevo modelo.
 		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}
 		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}
+	\end{itemize}
+	\end{itemize}
+\item \textbf{A mediano plazo:}
+	\begin{itemize}
+	\item Automatizar la descripción (características y relaciones) de los \textit{recursos de información}, mediante la minería de texto.
+	\item Mejorar la interfaz gráfica de usuario del prototipo para que éste pueda describir los \textit{recursos de información}. El objetivo es que los usuarios empleen esta aplicación como una del estilo ``red social''. Algunas funcionalidades de esta interfaz son:
+		\begin{itemize}
+			\item Describir un nuevo \textit{recurso de información}.
+			\begin{itemize}
+				\item Asignar un identificador único de recurso al nuevo recurso de información.
+				\item Construir un conjunto de tripletas RDF, asociadas al nuevo recurso de información.
+				\item Guardar las tripletas en un archivo o agregar inmediatamente éstas al modelo semántico.
+			\end{itemize}
+			\item Actualizar la información de un \textit{recurso de información}.
+			\begin{itemize}
+				\item Ver la información vieja del recurso.
+				\item Corregir la información en el modelo.
+				\item Guardar el nuevo modelo.
+			\end{itemize}
+			\item Eliminar las descripciones de un \textit{recurso de información}.
+			\begin{itemize}
+				\item Ver la información del recurso a eliminar.
+				\item Eliminar las tripletas en el modelo, donde el recurso es el sujeto.
+				\item Guardar el nuevo modelo.
+			\end{itemize}
+		\end{itemize}
+	\item Utilizar otro triplestore, por ejemplo Stardog\footnote{Clark \& Parsia, LLC, ``Stardog,''  Disponible en: \url{http://stardog.com/}} o Sesame\footnote{Aduna, ``Sesame,''  Disponible en: \url{http://www.openrdf.org/index.jsp}}, y hacer una evaluación del mismo.
+		\begin{itemize}
+		\item Cargar, inferir y consultar nuestras ontologías con el \textit{triplestore electo}.
+		\item Hacer nuestra evaluación experimental con este triplestore.
+		\item Comparar el desempeño y resultados de experimentación del \textit{triplestore electo} contra \textit{Jena}.
+		\end{itemize}
+	\item Dar mantenimiento a la ontología del vocabulario de Redes y Telecomunicaciones.
+		\begin{itemize}
+		\item Introducir nuevos conceptos, como radios cognitivos, computación en la nube, computación móvil, por mencionar algunos.
+		\item Introducir tripletas para traducir los conceptos de nuestra ontología a otros idiomas, por ejemplo, semantic web, web semántica, web sem\^{a}ntica, semantisch web, anlamsal web, web semantikoa. De esta manera, en una búsqueda se pueden enriquecer los resultados, recuperando recursos que están en otros idiomas.
+		\end{itemize}
 	\end{itemize}
 \end{itemize}
 

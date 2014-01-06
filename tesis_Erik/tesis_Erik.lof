@@ -1,77 +1,77 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama de casos de uso para la integraci\'on de los recursos de una memoria corporativa.}}{12}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama de casos de uso para la integraci\'on de los recursos de una memoria corporativa.}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplos de tripletas asociadas a las declaraciones para los recursos Juan y libro de matem\'aticas discretas.}}{17}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ejemplo de un grafo RDF o grafo de conocimientos.}}{18}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Estructura b\'asica de una consulta SPARQL.}}{19}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Regla para indicar que un Metal-Liquido pertenece a las clases Metal y L\IeC {\'\i }quido.}}{23}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{27}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{27}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{27}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplos de tripletas asociadas a las declaraciones para los recursos Juan y libro de matem\'aticas discretas.}}{19}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ejemplo de un grafo RDF o grafo de conocimientos.}}{20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Estructura b\'asica de una consulta SPARQL.}}{21}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Regla para indicar que un Metal-Liquido pertenece a las clases Metal y L\IeC {\'\i }quido.}}{25}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{29}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{29}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura general para la Integraci\'on Sem\'antica de Recurso en una Memoria Corporativa.}}{43}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Recursos de informaci\'on agrupados por casos de uso para nuestra memoria corporativa.}}{45}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama de clases para la cartograf\IeC {\'\i }a competencias.}}{46}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de clases para la b\'usqueda de recursos digitales.}}{47}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Declaraciones del Dr. Ricardo Marcelin Jim\'enez en forma de tripletas RDF}}{50}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Declaraciones de v\IeC {\'\i }deo ``What is Linked Data?'' en forma de tripletas RDF}}{51}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{53}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{54}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{55}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{55}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{56}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para el lugar de trabajo.}}{56}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las relaciones profesionales entre personas.}}{57}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{57}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para indicar el a\~no de un recurso digital.}}{58}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para vincular a una organizaci\'on con un recurso digital.}}{58}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{59}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{62}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{62}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{63}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{63}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del \'area.}}{64}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{64}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{65}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{65}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.1 de la cartograf\IeC {\'\i }a de competencias.}}{69}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}}{70}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunci\'on de emplear razonamiento.}}{71}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}}{71}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunci\'on de emplear razonamiento.}}{72}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{73}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{75}
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{76}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{77}
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{78}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura general para la Integraci\'on Sem\'antica de Recurso en una Memoria Corporativa.}}{45}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Recursos de informaci\'on agrupados por casos de uso para nuestra memoria corporativa.}}{47}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama de clases para la cartograf\IeC {\'\i }a competencias.}}{48}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de clases para la b\'usqueda de recursos digitales.}}{49}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Declaraciones del Dr. Ricardo Marcelin Jim\'enez en forma de tripletas RDF}}{52}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Declaraciones de v\IeC {\'\i }deo ``What is Linked Data?'' en forma de tripletas RDF}}{53}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{55}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{56}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{57}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{57}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{58}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para el lugar de trabajo.}}{58}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las relaciones profesionales entre personas.}}{59}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{59}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para indicar el a\~no de un recurso digital.}}{60}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para vincular a una organizaci\'on con un recurso digital.}}{60}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{61}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{64}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{64}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{65}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{65}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del \'area.}}{66}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{66}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{67}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{67}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.1 de la cartograf\IeC {\'\i }a de competencias.}}{71}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}}{72}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunci\'on de emplear razonamiento.}}{73}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}}{73}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunci\'on de emplear razonamiento.}}{74}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{75}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{77}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{78}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{79}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{80}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{83}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{86}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{86}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{86}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{88}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{88}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{88}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{88}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Interfaces Web: filtrar los recursos por subclases de Persona, Documento y Multimedia.}}{91}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: filtrar personas por estudiantes}}}{91}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: filtrar documentos por art\IeC {\'\i }culos cient\IeC {\'\i }ficos}}}{91}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: filtrar recursos multimedia por v\IeC {\'\i }deos}}}{91}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Formulario Web: b\'usqueda avanzada de personas.}}{94}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de personas.}}{95}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Formulario Web: b\'usqueda avanzada de documentos.}}{97}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de documentos.}}{98}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Formulario Web: b\'usqueda avanzada de multimedia.}}{100}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de multimedia.}}{101}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{103}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{103}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{103}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Interfaces Web: mostrar detalles de un recurso de informaci\'on.}}{105}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: mostrar detalles de la profesora \textit {Amelia Alles Estrada}}}}{105}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: mostrar detalles del libro Using \textit {Ontologies in the Semantic Web: A Survey}}}}{105}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: mostrar detalles del v\IeC {\'\i }deo \textit {The Semantic Web - An Overview}}}}{105}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{85}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{88}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: Validar al usuario}}}{88}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: Home}}}{88}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Interfaces Web: navegaci\'on entre personas/documentos/multimedia.}}{90}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: navegaci\'on entre personas del \'area RyT}}}{90}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: navegaci\'on entre documentos de la memoria corporativa del \'area RyT}}}{90}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: navegaci\'on entre recursos multimedia de la memoria corporativa del \'area RyT}}}{90}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Interfaces Web: filtrar los recursos por subclases de Persona, Documento y Multimedia.}}{93}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: filtrar personas por estudiantes}}}{93}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: filtrar documentos por art\IeC {\'\i }culos cient\IeC {\'\i }ficos}}}{93}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: filtrar recursos multimedia por v\IeC {\'\i }deos}}}{93}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Formulario Web: b\'usqueda avanzada de personas.}}{96}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de personas.}}{97}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Formulario Web: b\'usqueda avanzada de documentos.}}{99}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de documentos.}}{100}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Formulario Web: b\'usqueda avanzada de multimedia.}}{102}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces P\'agina Din\'amica: Resultados de b\'usqueda avanzada de multimedia.}}{103}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Formulario Web para la b\'usqueda por temas en todos los recursos de informaci\'on y la p\'agina Web mostrando los resultados de esta b\'usqueda.}}{105}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Formulario Web: b\'usqueda por t\'opicos}}}{105}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P\'agina Din\'amica: Resultados de b\'usqueda}}}{105}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Interfaces Web: mostrar detalles de un recurso de informaci\'on.}}{107}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interfaz Web: mostrar detalles de la profesora \textit {Amelia Alles Estrada}}}}{107}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: mostrar detalles del libro Using \textit {Ontologies in the Semantic Web: A Survey}}}}{107}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: mostrar detalles del v\IeC {\'\i }deo \textit {The Semantic Web - An Overview}}}}{107}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
