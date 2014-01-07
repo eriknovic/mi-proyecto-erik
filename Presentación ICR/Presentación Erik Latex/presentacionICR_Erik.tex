@@ -1,0 +1,183 @@
+\documentclass[10pt,a4paper]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{beamerthemesplit}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{subfigure}
+\usepackage{timing}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+%\setbeamertemplate{subsubsection in sidebar shaded}
+%{\tableofcontents[subsubsectionstyle=hide]}
+
+%\usetheme{Montpellier}
+\usetheme{Warsaw}
+\decimalpoint
+\renewcommand{\contentsname}{Contenido}
+
+\begin{document}
+
+\title{Integración semántica de \\ los recursos de información en \\ una memoria corporativa}
+\author{Erik Alarcón Zamora}
+\date{Enero 2014. México, D.F.}
+
+\begin{frame}
+\titlepage
+\centering
+Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
+\\
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido}
+\setcounter{tocdepth}{2}  
+\begin{scriptsize}\tableofcontents[]\end{scriptsize}
+\end{frame}
+
+\section{Marco Introductorio} 
+\subsection{Pregunta Investigación}
+\begin{frame}
+	\frametitle{Pregunta Investigación} 
+	\begin{exampleblock}{}
+	\justifying 
+	\textit{¿Las \textbf{tecnologías semánticas} son viables para solucionar la \textbf{integración} de los \textbf{recursos de información} de una \textbf{memoria corporativa}?}
+	\end{exampleblock}
+%\begin{figure}
+%\includegraphics[scale=0.4]{CDA.jpg} 
+%\end{figure}
+\end{frame}
+
+\subsection{Objetivos}
+\begin{frame}
+	\frametitle{Objetivos} 
+	\begin{alertblock}{Objetivo Principal}
+	\justifying 
+	Contribuir a la integración semántica de los recursos de información existentes en una memoria corporativa, mediante el uso de las tecnologías semánticas.
+	\end{alertblock}
+	
+	\begin{block}{Objetivos Particulares}
+	\begin{enumerate}
+	\item \justifying Desarrollar una \textbf{\textit{marco de referencia}} para la \textit{integración semántica} de los \textit{recursos de información} existentes en una \textit{memoria corporativa}.
+	\item \justifying Implementar un \textbf{\textit{modelo semántico}} que representa el \textit{conocimiento explícito e implícito} de los \textit{recursos de información}.
+	\item \justifying Implementar un \textbf{\textit{prototipo de interfaz gráfica de usuario}} que permita a los usuarios una interacción amigable para la integración semántica de los recursos de información.
+	\item \justifying Evaluar los \textbf{\textit{resultados devueltos}} y \textbf{\textit{tiempos de procesamiento}} en la \textit{integración semántica} para el dominio de redes y telecomunicaciones.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\subsection{Metodología}
+\begin{frame}
+	\frametitle{Metodología}
+	\begin{block}{Marco de Referencia}
+	\begin{enumerate}
+	\item \justifying  Identificar los \textit{casos de uso} para encontrar los principales \textit{recursos de información} existentes en la memoria, así como los criterios de búsqueda asociados a éstos.
+	\item \justifying  Construir el diagrama de casos de uso.
+	\item \justifying  Evaluar herramientas semánticas para: edición de descripciones semánticas, edición de reglas de inferencia, gestión de modelos semánticos.
+	\item \justifying  Recopilar los recursos de información de acuerdo a los casos de uso.
+	\item \justifying  Adquirir el conocimiento o información de los recursos de información con base en las características y relaciones de los mismos.
+	\item \justifying  Construir el diagrama de clases.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metodología}
+	\begin{block}{Marco de Referencia}
+	
+	\begin{exampleblock}{Modelo Semántico}
+	\begin{enumerate}
+	\setcounter{enumi}{6}
+	\item \justifying  Describir el conocimiento explícito de los \textit{recursos de información} recopilados en un modelo semántico.
+	\item \justifying  Identificar las reglas de inferencia a introducir en el modelo, con base en el diagrama de clases.
+	\item \justifying  Escribir las reglas de inferencia para enriquecer el modelo semántico con conocimiento implícito, mediante el uso del editor de reglas de inferencia.
+	\end{enumerate}
+	\end{exampleblock}
+	
+	\begin{enumerate}
+	\setcounter{enumi}{9}
+	\item \justifying  Identificar las preguntas en lenguaje natural a partir de los casos de uso. \label{item:preguntas}
+	\item \justifying  Diseñar las consultas en el \textit{lenguaje estándar de búsqueda} que correspondan a las preguntas en lenguaje natural.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metodología}
+	\begin{block}{Marco de Referencia}	
+	\begin{enumerate}
+	\setcounter{enumi}{11}
+	\item \justifying  Emplear un proceso que permita hacer explícito el conocimiento implícito.
+	\item \justifying  Buscar y recuperar información en la memoria corporativa, interrogando el modelo semántico.
+	\end{enumerate}
+	\end{block}
+	
+	\begin{block}{Prototipo de interfaz gráfica de usuario}	
+	\begin{enumerate}
+	\setcounter{enumi}{13}
+	\item \justifying  Diseñar un prototipo para interacción (búsqueda y navegación) amigable y trasparente de los usuarios de la memoria con el modelo semántico.
+	\item \justifying  Proponer funcionalidades básicas del prototipo.
+	\item \justifying  Indicar cuáles son las interfaces para los usuarios (pantallas).
+	\item \justifying  Describir las especificaciones de estas interfaces.
+	\item \justifying  Implementar el prototipo y realizar pruebas del mismo.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metodología}
+	\begin{block}{Evaluar los resultados devueltos}
+	\begin{enumerate}
+	\setcounter{enumi}{18}
+	\item \justifying  Evaluar la calidad de los resultados (recursos relevantes recuperados) con y sin inferencia, mediante el uso de métricas que se emplean en la recuperación de la información: exhaustividad y precisión.
+	\item \justifying  Identificar aquellos recursos (total de recursos relevantes) que responden las preguntas del paso \ref{item:preguntas} de este listado. \label{item:identrec}
+	\item \justifying  Consultar al modelo semántico y comparar los recursos relevantes recuperados con los recursos relevantes que se identificaron en el paso \ref{item:identrec} de este listado.
+	\item \justifying  Calcular la exhaustividad y precisión.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metodología}
+	\begin{block}{Evaluar los tiempos de procesamiento}
+	\begin{enumerate}
+	\setcounter{enumi}{22}
+	\item \justifying  Evaluar los \textit{tiempos promedios} que toma la herramienta electa de gestión de los modelos semánticos, para consultar los modelos con/sin inferencia.
+	\item \justifying  Elaborar un script que calcule `\textbf{\textit{n}}' veces el \textit{tiempo de procesamiento} al consultar un modelo semántico (con o sin inferencia). Las consultas se hacen a las preguntas identificadas del paso \ref{item:preguntas} de este listado.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\subsection{Hipótesis}
+\begin{frame}
+	\frametitle{Hipótesis}
+	\begin{block}{}
+	\justifying 
+	\textit{¿Las \textbf{tecnologías semánticas} son viables para solucionar la \textbf{integración} de los \textbf{recursos de información} de una \textbf{memoria corporativa}?}
+	\end{block}
+\end{frame}
+
+\subsection{Aportaciones}
+\begin{frame}
+	\frametitle{Aportaciones}
+	\begin{enumerate}
+	\item \justifying  Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
+    \item \justifying  Un modelo semántico que representa el conocimiento de una memoria corporativa, el cual tiene tres ramas principales (Personas, Recursos Digitales y Conceptos del Redes y Telecomunicaciones).
+    \item \justifying  Un prototipo (interfaz gráfica de usuario) para la interacción amigable (búsqueda y consulta de información) de los usuarios al modelo semántico.
+    \item \justifying  Los resultados de nuestra evaluación experimental.
+    \item \justifying  Un par de scripts para la generación automática y controlada de descripciones (conocimiento explícito) de los \textit{recursos de información}, con el fin de poblar la base de conocimiento.
+	\end{enumerate}
+\end{frame}
+
+\end{document}
