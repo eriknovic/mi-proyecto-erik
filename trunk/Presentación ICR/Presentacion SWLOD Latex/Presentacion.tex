@@ -1,0 +1,308 @@
+\documentclass[spanish]{beamer}
+
+\usepackage{float}
+
+\usepackage{beamerthemesplit}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{ragged2e}
+
+\setbeamertemplate{subsubsection in sidebar shaded}
+{\tableofcontents[subsubsectionstyle=hide]}
+\usepackage{subfigure}
+
+\usepackage{amsfonts}
+
+\usepackage{timing}%paquete para el tiempo actual 
+
+\decimalpoint
+
+\usetheme{Montpellier}%este es el templete que se usa a lo largo de la presentacion
+
+\setbeamertemplate{bibliography item}[text]
+\setbeamertemplate{footline}{{\footnotesize \insertframenumber/\inserttotalframenumber}}
+
+\mode<presentation>%tipo de 
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Uso de Tecnologías Semánticas para \\la Integración de Recursos de Información \\en una Memoria Corporativa}
+%\insertframenumber/\inserttotalframenumber
+\author{Erik Alarcón-Zamora \\ R. Carolina Medina-Ramírez  \\ Héctor Pérez-Urbina}
+\institute{Universidad Autónoma Metropolitana\\ Departamento de Ingeniería Eléctrica\\ Iztapalapa, México\\}
+\date{\today}%para que ponga la fecha de hoy 
+
+\frame{\titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contenido}%nombre de la seccion 
+
+\begin{frame}
+
+\frametitle{Contenido}%titulo que se mustra 
+
+\begin{itemize}%comienzan los items o puntos a tratar 
+	\item Introducción.
+	\item Integración semántica de recursos:
+	\begin{itemize}
+		\item Casos de uso.		
+		\item Representación del conocimiento. 
+ 		\item Explotación del conocimiento. 
+ 		\item Consulta del conocimiento. 
+	\end{itemize}
+	\item Prototipo de interfaz de usuario gráfica.
+	\item Experimentación.
+	\item Conclusiones.
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+
+\begin{frame}
+\frametitle{Memoria Corporativa}
+\justifying 
+%El grupo de investigación del área de Redes y Telecomunicaciones (RyT) de la Universidad Autónoma Metropolitana (UAM) genera, adquiere, intercambia diferentes recursos de información.
+\textit{Una \textbf{memoria corporativa} (MC) es una representación explícita, consistente y persistente del conocimiento en una organización} \cite{Corpmem98}.
+
+\begin{figure}[htbp]
+\centering
+\subfigure[Conocimiento]{
+\includegraphics[scale=0.17]{ConocimientoRyT} 
+}
+\subfigure[Memoria Corporativa]{
+\includegraphics[scale=0.18]{EjemploMC} 
+}
+\end{figure}
+
+%\begin{figure}
+%\includegraphics[scale=0.20]{ConocimientoRyT} 
+%\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Integración de los Recursos de Información}
+\justifying
+La \textbf{\textit{integración de los recursos}} es el proceso de búsqueda y recuperación significativa de información existente en los recursos, para responder una consulta dada por un usuario.
+
+Las actividades básicas para la integración de los recursos son:
+\begin{itemize}
+\item Representar el conocimiento de los recursos en un modelo.
+\item Consultar información en el modelo.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tecnologías Semánticas}
+\justifying
+\textit{Las \textbf{tecnologías semánticas} son un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos.}
+
+\begin{figure}
+\includegraphics[scale=0.25]{TecSem} 
+\end{figure}
+
+\end{frame}
+
+%Estas son las razones del uso de estas tecnologías para la integración de los recursos.
+%\begin{enumerate}
+%\item La representación del conocimiento explícito de los recursos en un formato estándar.
+%\item El enriquecimiento del conocimiento implícito mediante la introducción de axiomas.
+%\item La búsqueda y recuperación la información en la representación para responder una pregunta dada.
+%\end{enumerate}
+
+\section{Integración semántica de recursos}
+\begin{frame}
+\frametitle{Integración semántica de recursos}
+\justifying
+El uso de las tecnologías semánticas para realizar el proceso de integración de información para los recursos de una memoria corporativa.
+
+Las etapas de esta integración semántica son:
+ 
+\begin{enumerate}
+\item \justifying representar el conocimiento explícito de los recursos en un formato estándar.
+\item \justifying enriquecer el conocimiento implícito mediante la introducción de axiomas.
+\item \justifying buscar y recuperar la información en este modelo para responder una pregunta dada.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Arquitectura}
+\begin{figure}
+\includegraphics[scale=0.4]{Arquitectura} 
+\end{figure}
+\end{frame}
+
+\subsection{Casos de uso}
+\begin{frame}
+\frametitle{Caso de uso}
+\justifying
+\begin{itemize}
+	\item \justifying \textbf{\textit{Cartografía de Competencias}} consiste en la búsqueda y recuperación de información significativa de las personas, a partir de las características personales y profesionales de las mismas.
+	\item \justifying \textbf{\textit{Búsqueda de Recursos Digitales}} consiste en la búsqueda y recuperación de información significativa de los documentos y archivos multimedia a partir del contenido de los mismos
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Ontología}
+\justifying
+\textit{Una \textbf{ontología} es una especificación formal y explícita de una conceptualización compartida} \cite{Gruber}.
+
+\begin{figure}
+\includegraphics[scale=0.3]{OntologiasDiagrama} 
+\end{figure}
+\end{frame}
+
+\subsection{Representación del Conocimiento}
+\begin{frame}
+\frametitle{Representación del Conocimiento}
+\justifying
+Representación del conocimiento explícito a partir de las características significativas y relaciones de los mismos.
+
+\begin{figure}[htbp]
+\centering
+\subfigure{
+\includegraphics[scale=0.2]{RecursoPDF} 
+}
+\subfigure{
+\includegraphics[scale=0.20]{RecDigGrafoRDF} 
+}
+\end{figure}
+
+Las herramientas para la transformación de información a triples es una combinación de Formularios y Scripts.
+\end{frame}
+
+\subsection{Enriquecimiento del Conocimiento}
+\begin{frame}
+\frametitle{Enriquecimiento del Conocimiento}
+\justifying
+Introducción de axiomas para enriquecer el conocimiento explícito en el grafo RDF.
+\begin{figure}[htbp]
+\centering
+\subfigure[Jerarquía de Clases]{
+\includegraphics[scale=0.22]{Clases} 
+}
+\subfigure[Dominio y Rango de las propiedades]{
+\includegraphics[scale=0.22]{DomainyRange} 
+}
+\end{figure}
+Protégé es la herramienta que se emplea para representar los axiomas.
+\end{frame}
+
+\begin{frame}
+\frametitle{Inferencia}
+\justifying
+Un razonador es un programa para inferir hechos o asociaciones a partir del conocimiento existente (axiomas y propiedades).
+\begin{figure}
+\includegraphics[scale=0.25]{InferenciaGrafo} 
+\end{figure}
+\end{frame}
+
+\subsection{Consulta de información}
+\begin{frame}
+\frametitle{Consulta de información}
+\justifying
+Lenguaje SPARQL es la especificación para consultar, recuperar y modificar la información de ternas RDF.
+
+\begin{figure}[htbp]
+\centering
+\subfigure[Consulta sin razonamiento]{
+\includegraphics[scale=0.25]{Qrysraz} 
+}
+\subfigure[Consulta con razonamiento]{
+\includegraphics[scale=0.25]{Qrycraz} 
+}
+\end{figure}
+Apache Jena es una librería que permite el almacenamiento, carga, indexación, inferencia y consulta de/en tripletas RDF.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prototipo}
+\begin{frame}
+\frametitle{Prototipo}
+\justifying
+La interfaz gráfica de usuario permite la interacción transparente y
+amigable del usuario con el modelo semántico.
+
+\begin{figure}[htbp]
+\centering
+\subfigure{
+\includegraphics[scale=0.22]{InterfazBusqueda} 
+}
+\subfigure{
+\includegraphics[scale=0.22]{Interfaz} 
+}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experimenación}
+
+\begin{frame}
+
+\frametitle{Criterios de evaluación}
+\justifying
+En la integración semántica de recursos, se tienen dos
+criterios de evaluación para el triplestore Jena:
+\begin{itemize}
+	\item Calidad de los resultados (sin inferencia vs con inferencia).
+	\item Tiempo medio de procesamiento (sin inferencia vs con inferencia). 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Preguntas}
+\justifying
+\begin{figure}
+\includegraphics[scale=0.50]{Preguntas} 
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resultados}
+\justifying
+\begin{figure}
+\includegraphics[scale=0.48]{Resultados} 
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusiones}
+
+\begin{frame}
+\frametitle{Conclusiones}
+\begin{itemize}
+\item \justifying Beneficios en el uso de las tecnologías semánticas para la integración de los recursos de información en una memoria corporativa.
+\item \justifying Modelo con inferencia se tienen mejores resultados, pero el tiempo de procesamiento se incrementa.
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Referencias}
+
+\begin{frame}
+
+\frametitle{Referencias}
+
+%\begin{itemize}
+%	\item \text{los corchetes de donde lo pusimos --> [1]} Autores , Iñaki Inza. \textit{Titulo o nombre del articulo                           }  País de donde se elaboró , revista en donde se publico ,año de publicación 2007.
+%	
+%  
+%\end{itemize}
+\bibliographystyle{unsrt}
+{\small\bibliography{bibliografia}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end {document}

@@ -19,29 +19,29 @@
 \contentsline {subsection}{\numberline {1.2.7}Metodolog\IeC {\'\i }a}{14}
 \contentsline {subsection}{\numberline {1.2.8}Aportaciones}{15}
 \contentsline {chapter}{\numberline {2}Tecnolog\IeC {\'\i }as Sem\'anticas}{17}
-\contentsline {section}{\numberline {2.1}Introducci\'on y definiciones}{17}
+\contentsline {section}{\numberline {2.1}Introducci\'on y Definiciones}{17}
 \contentsline {section}{\numberline {2.2}Marco de Descripci\'on de Recursos}{17}
-\contentsline {section}{\numberline {2.3}Lenguaje de consulta sobre grafos RDF (SPARQL)}{21}
-\contentsline {section}{\numberline {2.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{21}
-\contentsline {section}{\numberline {2.5}Ventajas de las tecnolog\IeC {\'\i }as Sem\'anticas}{26}
+\contentsline {section}{\numberline {2.3}Lenguaje de Consulta sobre Grafos RDF (SPARQL)}{21}
+\contentsline {section}{\numberline {2.4}Reglas de Inferencia (RDF(S)/OWL) y Razonadores}{21}
+\contentsline {section}{\numberline {2.5}Ventajas de las Tecnolog\IeC {\'\i }as Sem\'anticas}{26}
 \contentsline {chapter}{\numberline {3}Estado del arte}{31}
-\contentsline {section}{\numberline {3.1}Integraci\'on sem\'antica de recursos de informaci\'on}{31}
-\contentsline {section}{\numberline {3.2}Herramientas para la integraci\'on sem\'antica de recursos}{35}
+\contentsline {section}{\numberline {3.1}Integraci\'on Sem\'antica de Recursos de Informaci\'on}{31}
+\contentsline {section}{\numberline {3.2}Herramientas para la Integraci\'on Sem\'antica de Recursos de Informaci\'on}{35}
 \contentsline {section}{\numberline {3.3}Resumen y Discusi\'on}{38}
 \contentsline {chapter}{\numberline {4}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{43}
-\contentsline {section}{\numberline {4.1}Representaci\'on del conocimiento en los recursos}{46}
-\contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{54}
-\contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{55}
-\contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{58}
-\contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{61}
-\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{65}
-\contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{68}
+\contentsline {section}{\numberline {4.1}Representaci\'on del Conocimiento en los Recursos de Informaci\'on}{46}
+\contentsline {section}{\numberline {4.2}Enriquecimiento del Conocimiento en el Modelo}{54}
+\contentsline {subsection}{\numberline {4.2.1}Herencia de Clases}{55}
+\contentsline {subsection}{\numberline {4.2.2}Herencia de Propiedades}{57}
+\contentsline {subsection}{\numberline {4.2.3}Dominio y Rango de Propiedades}{61}
+\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las Propiedades}{64}
+\contentsline {section}{\numberline {4.3}B\'usqueda y Recuperaci\'on de Informaci\'on en el Modelo}{68}
 \contentsline {chapter}{\numberline {5}Prototipo}{83}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on experimental}{109}
-\contentsline {section}{\numberline {6.1}Observaciones}{109}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{109}
+\contentsline {section}{\numberline {6.1}Objetivo de la Experimentaci\'on}{109}
 \contentsline {section}{\numberline {6.2}Hip\'otesis}{109}
 \contentsline {section}{\numberline {6.3}Experimentaci\'on}{110}
-\contentsline {section}{\numberline {6.4}Sujetos de experimentaci\'on}{110}
+\contentsline {section}{\numberline {6.4}Sujetos de Experimentaci\'on}{110}
 \contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{112}
 \contentsline {section}{\numberline {6.6}Resultados}{119}
 \contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{125}

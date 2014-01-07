@@ -3,9 +3,9 @@
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
 El proceso de \textit{integración de los recursos de información} consiste en la representación del conocimiento acerca de los \textit{recursos de información}, con fines de busqueda y recuperación de \textit{información significativa}. En esta integración, el objetivo es responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
-La \textit{integración semántica de recursos} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de recursos de información, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
+La \textit{integración semántica} de \textit{recursos de información} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de \textit{recursos de información}, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos de información y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos de información}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
-El desarrollo de la \textit{integración semántica de recursos de información} se hace con base en una \textbf{\textit{secuencia ordenada de actividades (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
+El desarrollo de la \textit{integración semántica de recursos de información} se hace con base en una \textbf{\textit{secuencia ordenada de actividades (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos de información en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
 
 La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
 
@@ -72,7 +72,7 @@ En ambos casos de uso, un aspecto importante es que tanto personas como recursos
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 
-\section{Representación del conocimiento en los recursos}
+\section{Representación del Conocimiento en los Recursos de Información}
 \label{sec:repKrec} 
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
@@ -295,7 +295,7 @@ Este es el procedimiento de generación de tripletas RDF mediante el uso de formu
 
 Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los recursos persona, conforman el \textit{componente asertivo} de la ontología \textit{cartografía de competencias}. De igual manera, todas las \textit{tripletas RDF} asociadas a las declaraciones de los documentos y archivos multimedia, constituyen el \textit{componente asertivo} de la ontología \textit{búsqueda de recursos digitales}.
 
-\section{Enriquecimiento del conocimiento en el modelo}
+\section{Enriquecimiento del Conocimiento en el Modelo}
 \label{sec:enrKrec} 
 La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia. Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
 
@@ -303,7 +303,7 @@ Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axioma
 
 Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle\footnote{W3C, ``OWL 2 Web Ontology Language Document Overview (Second Edition),''  Disponible en: \url{http://www.w3.org/TR/owl2-overview/}}).
 
-\subsection{Herencia de clases}
+\subsection{Herencia de Clases}
 El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
 
 A continuación, se describen las dos \textit{jerarquías de clases} para la cartografía de competencias y recursos digitales.
@@ -348,7 +348,7 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 \label{fig:exHerClasDigi}
 \end{figure}
 
-\subsection{Herencia de propiedades}
+\subsection{Herencia de Propiedades}
 Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos en los caso de uso; averiguando que propiedades tienen un significado común.
 
 La siguiente lista describe las \textit{jerarquías de propiedades} que se identificaron para la \textit{cartografía de competencias}. Para cada item de esta lista, se presenta un diagrama que muestra esta jerarquía en forma de un grafo.
@@ -426,8 +426,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 \label{fig:HerPropInst}
 \end{figure}
 
-\subsection{Dominio y rango de propiedades}
-
+\subsection{Dominio y Rango de Propiedades}
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio es el conjunto formado por \textit{los valores que puede tomar una función}. Mientras, el rango es el conjunto de \textit{los valores que resultan de evaluar la función}.
 
 La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} de las propiedades que pertenecen a la cartografía de competencias. En esta Tabla, la primer columna enuncia las propiedades de la cartografía, la segunda columna muestra las clases para el dominio y la tercera columna enuncia las clases o tipo de literales del rango. De la misma manera, la Tabla \ref{tab:dyrrd} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} para las propiedades en el TBox de la \textit{búsqueda de recursos digitales}. La primera columna enuncia las propiedades, la segunda las clases del dominio y la tercera las literales o clases del rango.
@@ -556,7 +555,7 @@ En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación pr
 \end{figure}
 %height=3.0in
 
-\subsection{Simetría en las propiedades}
+\subsection{Simetría en las Propiedades}
 \label{cap:simprop} 
 Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{individuo p} y termina en \textit{individuo q}. En la Figura\ref{fig:unidirecc} se ejemplifica este comportamiento unidireccional, donde la relación \textit{p tiene género q}, indica que todos los \textit{individuos p} se relacionan con un \textit{individuo q}.
 
@@ -625,7 +624,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \end{figure}
 \end{itemize}
 
-\section{Búsqueda y recuperación de información en el modelo}
+\section{Búsqueda y Recuperación de Información en el Modelo}
 \label{sec:byrKrec} 
 Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
 
