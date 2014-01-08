@@ -3,9 +3,10 @@
 \beamer@sectionintoc {1}{Marco Introductorio}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Memoria Corporativa}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{5}{0}{1}
-\beamer@subsectionintoc {1}{3}{Pregunta Investigaci\'on}{6}{0}{1}
-\beamer@subsectionintoc {1}{4}{Objetivos}{7}{0}{1}
-\beamer@subsectionintoc {1}{5}{Metodolog\IeC {\'\i }a}{8}{0}{1}
-\beamer@subsectionintoc {1}{6}{Hip\'otesis}{13}{0}{1}
-\beamer@subsectionintoc {1}{7}{Aportaciones}{14}{0}{1}
-\beamer@sectionintoc {2}{Referencias}{15}{0}{2}
+\beamer@subsectionintoc {1}{3}{Integraci\'on Sem\'antica de Recursos de Informaci\'on (ISR)}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Pregunta Investigaci\'on}{7}{0}{1}
+\beamer@subsectionintoc {1}{5}{Objetivos}{8}{0}{1}
+\beamer@subsectionintoc {1}{6}{Metodolog\IeC {\'\i }a}{9}{0}{1}
+\beamer@subsectionintoc {1}{7}{Hip\'otesis}{14}{0}{1}
+\beamer@subsectionintoc {1}{8}{Aportaciones}{15}{0}{1}
+\beamer@sectionintoc {2}{Referencias}{16}{0}{2}
