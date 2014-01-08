@@ -1,12 +1,16 @@
 \beamer@endinputifotherversion {3.26pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Marco Introductorio}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Memoria Corporativa}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{5}{0}{1}
-\beamer@subsectionintoc {1}{3}{Integraci\'on Sem\'antica de Recursos de Informaci\'on (ISR)}{6}{0}{1}
-\beamer@subsectionintoc {1}{4}{Pregunta Investigaci\'on}{7}{0}{1}
-\beamer@subsectionintoc {1}{5}{Objetivos}{8}{0}{1}
-\beamer@subsectionintoc {1}{6}{Metodolog\IeC {\'\i }a}{9}{0}{1}
-\beamer@subsectionintoc {1}{7}{Hip\'otesis}{14}{0}{1}
-\beamer@subsectionintoc {1}{8}{Aportaciones}{15}{0}{1}
-\beamer@sectionintoc {2}{Referencias}{16}{0}{2}
+\beamer@subsectionintoc {1}{1}{Contexto y Motivaci\'on}{3}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{1}{Memoria Corporativa}{3}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{3}{Integraci\'on Sem\'antica}{7}{0}{1}
+\beamer@subsectionintoc {1}{2}{Descripci\'on del Problema}{8}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{1}{Pregunta Investigaci\'on}{8}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{2}{Objetivos}{9}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{3}{Metodolog\IeC {\'\i }a}{10}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{4}{Hip\'otesis}{15}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{5}{Aportaciones}{16}{0}{1}
+\beamer@sectionintoc {2}{Integraci\'on Sem\'antica de Recursos de informaci\'on}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Casos de Uso}{17}{0}{2}
+\beamer@sectionintoc {3}{Referencias}{18}{0}{3}
