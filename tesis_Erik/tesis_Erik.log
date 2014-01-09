@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  7 JAN 2014 21:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  8 JAN 2014 22:05
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -436,9 +436,8 @@ Package pdftex.def Info: uam.pdf used on input line 5.
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
 oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
-k\abstract.tex)
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex
-Overfull \hbox (12.79752pt too wide) in paragraph at lines 7--1
+k\abstract.tex
+Overfull \hbox (12.79752pt too wide) in paragraph at lines 7--8
 []\T1/cmr/bx/n/12 Keywords: \T1/cmr/m/it/12 Se-man-tic tech-no-lo-gies\T1/cmr/m
 /n/12 , \T1/cmr/m/it/12 in-for-ma-tion re-sour-ces\T1/cmr/m/n/12 , \T1/cmr/m/it
 /12 know-led-ge re-pre-sen-ta-tion\T1/cmr/m/n/12 , \T1/cmr/m/it/12 axioms\T1/cm
@@ -446,21 +445,20 @@ r/m/n/12 ,
  []
 
 
-Overfull \hbox (1.97241pt too wide) in paragraph at lines 7--1
+Overfull \hbox (1.97241pt too wide) in paragraph at lines 7--8
 \T1/cmr/m/it/12 search and in-for-ma-tion re-trie-val\T1/cmr/m/n/12 , \T1/cmr/m
 /it/12 cor-po-ra-te me-mory\T1/cmr/m/n/12 , \T1/cmr/m/it/12 on-to-logy\T1/cmr/m
 /n/12 , \T1/cmr/m/it/12 RDF\T1/cmr/m/n/12 , \T1/cmr/m/it/12 RDF(S)\T1/cmr/m/n/1
-2 , \T1/cmr/m/it/12 OWL\T1/cmr/m/n/12 , \T1/cmr/m/it/12 SPARQL\T1/cmr/m/n/12 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--1
+2 , \T1/cmr/m/it/12 OWL\T1/cmr/m/n/12 , \T1/cmr/m/it/12 SPARQL\T1/cmr/m/n/12 . 
 
  []
 
-[3
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex [3
 
-] [4]
+]
+[4
+
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 8.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -469,9 +467,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [5
-
-] [6
+)) [5] [6
 
 ]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.toc [7])
@@ -1408,7 +1404,7 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (173 pages, 4588218 bytes).
+Output written on tesis_Erik.pdf (173 pages, 4588211 bytes).
 PDF statistics:
  1391 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -44,19 +44,35 @@
 \headcommand {\beamer@subsubsectionentry {0}{1}{2}{5}{16}{Aportaciones}}
 \headcommand {\slideentry {1}{2}{9}{16/16}{Descripci\'on del Problema}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\sectionentry {2}{Integraci\'on Sem\'antica de Recursos de informaci\'on}{17}{Integraci\'on Sem\'antica de Recursos de informaci\'on}{0}}
+\headcommand {\sectionentry {2}{Integraci\'on Sem\'antica de una Memoria Corporativa}{17}{Integraci\'on Sem\'antica de una Memoria Corporativa}{0}}
 \headcommand {\beamer@sectionpages {3}{16}}
 \headcommand {\beamer@subsectionpages {8}{16}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{17}{Casos de Uso}}\headcommand {\beamer@subsectionpages {17}{16}}
-\headcommand {\slideentry {2}{1}{1}{17/17}{Casos de Uso}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{17}{Marco de Referencia}}\headcommand {\beamer@subsectionpages {17}{16}}
+\headcommand {\slideentry {2}{1}{1}{17/17}{Marco de Referencia}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\sectionentry {3}{Referencias}{18}{Referencias}{0}}
-\headcommand {\beamer@sectionpages {17}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\slideentry {3}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{18}{Arquitectura de la Integraci\'on Sem\'antica}}\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {2}{2}{1}{18/18}{Arquitectura de la Integraci\'on Sem\'antica}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\beamer@sectionpages {18}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\def \inserttotalframenumber {18}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{19}{Casos de Uso}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {2}{3}{1}{19/19}{Casos de Uso}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{20}{Representaci\'on del Conocimiento}}\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{1}{20}{Identificar los principales recursos de informaci\'on}}
+\headcommand {\slideentry {2}{4}{1}{20/20}{Representaci\'on del Conocimiento}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{2}{21}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}}
+\headcommand {\slideentry {2}{4}{2}{21/21}{Representaci\'on del Conocimiento}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{3}{22}{Representar del conocimiento e informaci\'on mediante el est\'andar RDF}}
+\headcommand {\slideentry {2}{4}{3}{22/22}{Representaci\'on del Conocimiento}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\sectionentry {3}{Referencias}{23}{Referencias}{0}}
+\headcommand {\beamer@sectionpages {17}{22}}
+\headcommand {\beamer@subsectionpages {20}{22}}
+\headcommand {\slideentry {3}{0}{4}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\def \inserttotalframenumber {23}}
