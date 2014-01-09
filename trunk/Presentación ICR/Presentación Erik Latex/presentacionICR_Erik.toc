@@ -11,6 +11,12 @@
 \beamer@subsubsectionintoc {1}{2}{3}{Metodolog\IeC {\'\i }a}{10}{0}{1}
 \beamer@subsubsectionintoc {1}{2}{4}{Hip\'otesis}{15}{0}{1}
 \beamer@subsubsectionintoc {1}{2}{5}{Aportaciones}{16}{0}{1}
-\beamer@sectionintoc {2}{Integraci\'on Sem\'antica de Recursos de informaci\'on}{17}{0}{2}
-\beamer@subsectionintoc {2}{1}{Casos de Uso}{17}{0}{2}
-\beamer@sectionintoc {3}{Referencias}{18}{0}{3}
+\beamer@sectionintoc {2}{Integraci\'on Sem\'antica de una Memoria Corporativa}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Marco de Referencia}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Arquitectura de la Integraci\'on Sem\'antica}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{Casos de Uso}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{Representaci\'on del Conocimiento}{20}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{1}{Identificar los principales recursos de informaci\'on}{20}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{21}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{3}{Representar del conocimiento e informaci\'on mediante el est\'andar RDF}{22}{0}{2}
+\beamer@sectionintoc {3}{Referencias}{23}{0}{3}

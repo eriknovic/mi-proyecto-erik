@@ -16,6 +16,7 @@
 \usepackage{latexsym}
 \usepackage{subfigure}
 \usepackage{timing}
+\usepackage{url}
 
 \setbeamertemplate{footline}[frame number]
 \setbeamertemplate{bibliography item}[text]
@@ -275,7 +276,31 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Integración Semántica de Recursos de información}
+\section{Integración Semántica de una Memoria Corporativa}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Marco de Referencia}
+\begin{frame}
+	\frametitle{Marco de Referencia}
+	\begin{block}{Etapas}
+		\begin{enumerate}
+		\item \justifying \textbf{\textit{Representación del conocimiento explicito de los recursos}} consiste en identificar los recursos de información de la memoria corporativa, así como representar las características y relaciones (conocimiento explícito) de estos recursos en un modelo semántico.
+		\item \justifying \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir reglas de inferencia (axiomas) para completar y enriquecer el modelo semántico con conocimiento implícito del dominio de la memoria corporativa.
+		\item \justifying \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios, así como interrogar el modelo semántico para recuperar la información que responda a estas consultas.
+		\end{enumerate}
+	\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Arquitectura de la Integración Semántica}
+\begin{frame}
+	\frametitle{Arquitectura de la Integración Semántica}	
+	\begin{figure}
+	\includegraphics[scale=0.35]{Arquitectura} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Casos de Uso}
 \begin{frame}
@@ -294,6 +319,35 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Representación del Conocimiento}
+\subsubsection{Identificar los principales recursos de información}
+\begin{frame}
+	\frametitle{Identificar los principales recursos de información}	
+	\begin{figure}
+	\includegraphics[scale=0.35]{CasosUsoMC} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Adquirir y expresar el conocimiento de los recursos de información}
+\begin{frame}
+	\frametitle{Adquirir y expresar el conocimiento de los recursos de información}	
+	\begin{figure}
+	\includegraphics[scale=0.415]{CasoUsoCartComp} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Representar del conocimiento e información mediante el estándar RDF}
+\begin{frame}
+	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\begin{block}{Resource Description Framework (RDF)}
+	RDF es un estándar para representar el conocimiento e información de los recursos en un formato estándar. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\end{block}
+	
+
+\end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Referencias}
 \begin{frame}[allowframebreaks]
 \frametitle{Referencias}
@@ -302,3 +356,19 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \end{frame}
 
 \end{document}
+
+%	\begin{itemize}
+%	\item \justifying \textbf{\textit{Recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que tiene un identificador único de recursos (URI). \\ Por ejemplo, UAM $=>$ \url{http://www.mi-ejemplo.com/UAM} 
+%	\item \justifying \textbf{\textit{Propiedad}} es un aspecto significativo, característica, o relación que se describe de un recurso.
+%	\begin{itemize}
+%		\item Propiedad Objeto: describe una relación entre dos recursos.
+%		\item Propiedad Objeto: describe una relación entre un objeto y una literal (cadena, entero, flotante, fecha).
+%	\end{itemize}	
+%	Por ejemplo, nombre $=>$ \url{http://www.mi-ejemplo.com/tiene-nombre} 
+%	\item \justifying \textbf{\textit{Declaración}} es una afirmación de un hecho explícito de un recurso, en términos de una propiedad y el valor asignado a ésta (otro recurso o literal). La forma básica para escribir una declaración, es la \textbf{\textit{tripleta}} \cite{SemWebTim}.
+%	\begin{enumerate}
+%	\item \textbf{\textit{Sujeto}} es el recurso que se describe.
+%	\item \textbf{\textit{Predicado}} es la propiedad.
+%	\item \textbf{\textit{Objeto}} es otro recurso o una literal (cadena o entero) que describe el predicado.
+%	\end{enumerate}
+%	\end{itemize}
