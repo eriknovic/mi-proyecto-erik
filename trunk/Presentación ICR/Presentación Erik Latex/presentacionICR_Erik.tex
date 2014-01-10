@@ -111,50 +111,126 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	\begin{block}{Definición}
 	\justifying 
 	\textit{Un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}. \begin{scriptsize}\cite{SemTecRetr}\end{scriptsize}
-	
 	\end{block}
+	
 	\begin{figure}
 	\includegraphics[scale=0.52]{TSWords} 
 	\end{figure}
 \end{frame}
 
-\subsubsection{Resource Description Framework}
 \begin{frame}
-	\frametitle{Resource Description Framework (RDF)} 
-	\begin{block}{Definición}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Ontología}
+	\justifying 
+	Una especificación formal y explícita de una conceptualización compartida. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
+	\end{block}
+	
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Objetivos de una ontología}
+	\begin{enumerate}
+	\item \justifying Construir un vocabulario conceptual, formal y consensuado para un dominio dado.
+	\item \justifying Tener un conjunto de reglas para combinar los conceptos y relaciones, así como para componer expresiones complejas en el vocabulario.
+	\item \justifying Un vocabulario para construir descripciones y comunicar hechos.
+	\item \justifying Interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado.
+	\item \justifying Intercambiar y reutilizar el conocimiento para diferentes propósitos.
+	\item \justifying Inferir información a partir de un programa especializado (razonador) y los hechos en una ontología.
+	\end{enumerate}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Componente Asertivo (ABox)}
+	\justifying 
+	Representa el conocimiento e información explícita en los recursos del dominio. Este componente está constituido por las declaraciones (descripciones o hechos verdaderos) de los recursos que afirman que los individuos son instancias de una clase o propiedad.
+	\end{block}
+	
+	\begin{block}{Componente Terminológico (TBox)}
+	\justifying 
+	Representa el conocimiento implícito en los recursos del dominio. Este componente describe las clases y propiedades relevantes, así como los axiomas que permiten aprovechar la manera en que las instancias se relacionan entre sí.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Resource Description Framework (RDF)}
 	\justifying 
 	\textit{Marco de trabajo} para \textit{representar el conocimiento e información de los recursos en un formato estándar}. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
 	\end{block}
 	
-	\begin{itemize}
-	\item \justifying \textbf{\textit{Recurso}} es cualquier \textit{persona, lugar, documento, objeto abstracto o físico} que tiene un identificador único de recursos (URI). \\ Por ejemplo, UAM $=>$ \url{http://www.mi-ejemplo.com/UAM} 
-	\item \justifying \textbf{\textit{Propiedad}} es un aspecto significativo, característica, o relación que se describe de un recurso. \\ Por ejemplo, nombre $=>$ \url{http://www.mi-ejemplo.com/tiene-nombre}
-	\item \justifying \textbf{\textit{Declaración}} es una afirmación de un hecho explícito de un recurso, en términos de una propiedad y el valor asignado a ésta (otro recurso o literal). Esta declaración con RDF se denomina tripleta RDF.
-	\end{itemize}
+	\begin{block}{Recurso}
+	\justifying 
+	Cualquier \textit{persona, lugar, documento, objeto abstracto o físico} que tiene un identificador único de recursos (URI).
+	\end{block}
+	
+	\begin{block}{Propiedad}
+	\justifying 
+	Un aspecto significativo, característica, o relación que se describe de un recurso (relación binarias).
+	\end{block}
+	
+	\begin{block}{Clase}
+	\justifying 
+	Una colección de objetos que comparten características comunes.
+	\end{block}
+	
 \end{frame}
 
 \begin{frame}
-	\frametitle{Resource Description Framework (RDF)} 
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Declaración}
+	\justifying 
+	Una afirmación de un hecho explícito de un recurso, en términos de una propiedad y el valor asignado a ésta.
+	\end{block}
+	
 	\begin{block}{Tripleta RDF}
 	\justifying 
-	 La forma básica para representa una declaración en un modelo semántico.
-	 \end{block}
-	 
+	La forma básica para representa una declaración en un modelo semántico.
+	\end{block}
+	
 	\begin{figure}
-	\includegraphics[scale=0.5]{Tripletas} 
+	\includegraphics[scale=0.45]{Tripletas} 
 	\end{figure}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Resource Description Framework (RDF)}
 	\begin{block}{Grafo RDF}
 	\justifying 
 	 Un grafo estructurado y dirigido compuesto por nodos, aristas y etiquetas para representar las tripletas.
-	 \end{block}
+	\end{block}
 	
 	\begin{figure}
 	\includegraphics[scale=0.43]{GrafoRDF} 
 	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{SPARQL}
+	\justifying 
+	\textit{Lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}, para la búsqueda y recuperación de la información en un grafo RDF.
+	\end{block}
+	
+	\begin{block}{Motor de Búsqueda}
+	\justifying 
+	Programa que interpreta una consulta SPARQL, compara la consulta con el grafo RDF y recupera los valores de la consulta.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Reglas de inferencia o Axiomas}
+	\justifying 
+	 Los \textit{axiomas} o \textit{reglas de inferencia} \cite{Gruber} son expresiones para enriquecer el conocimiento explícito en un grafo RDF.
+	\end{block} 
+	
+	\begin{exampleblock}{Funcionalidad Axiomas}
+	\justifying 
+	Describir relaciones entre clases, definir propiedades en términos de otras, definir relaciones entre conceptos, definir restricciones de cómo las propiedades se relacionan, por mencionar algunos.
+	\end{exampleblock} 
+	
+	\begin{block}{Razonador}
+	Un programa que deduce declaraciones a partir de los axiomas y declaraciones explícitas en la ontología.
+	\end{block} 
 \end{frame}
 
 \subsubsection{Integración Semántica}
@@ -162,7 +238,7 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	\frametitle{Integración Semántica}
 	\begin{block}{Definición}
 	\justifying
-	La búsqueda y recuperación significativa de información existente en los recursos de información mediante el uso de las tecnologías semánticas, para responder una consulta dada por un usuario.
+	La búsqueda y recuperación significativa de información existente en los recursos de información para responder una consulta dada por un usuario.
 	\end{block}
 	
 	\begin{exampleblock}{Etapas}
@@ -306,11 +382,11 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \begin{frame}
 	\frametitle{Aportaciones}
 	\begin{enumerate}
-	\item \justifying  Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
-    \item \justifying  Un modelo semántico que representa el conocimiento de una memoria corporativa, el cual tiene tres ramas principales (Personas, Recursos Digitales y Conceptos del Redes y Telecomunicaciones).
+	\item \justifying Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
+    \item \justifying Un modelo semántico que representa el conocimiento de una memoria corporativa, el cual tiene tres ramas principales (Personas, Recursos Digitales y Conceptos del Redes y Telecomunicaciones).
     \item \justifying  Un prototipo (interfaz gráfica de usuario) para la interacción amigable (búsqueda y consulta de información) de los usuarios al modelo semántico.
-    \item \justifying  Los resultados de nuestra evaluación experimental.
-    \item \justifying  Un par de scripts para la generación automática y controlada de descripciones (conocimiento explícito) de los \textit{recursos de información}, con el fin de poblar la base de conocimiento.
+    \item \justifying Los resultados de nuestra evaluación experimental.
+    \item \justifying Un par de scripts para la generación automática y controlada de descripciones (conocimiento explícito) de los \textit{recursos de información}, con el fin de poblar la base de conocimiento.
 	\end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -359,7 +435,7 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Representación del Conocimiento}
+\subsection{Representación el Conocimiento}
 \subsubsection{Identificar los principales recursos de información}
 \begin{frame}
 	\frametitle{Identificar los principales recursos de información}	
@@ -376,9 +452,9 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	\end{figure}
 \end{frame}
 
-\subsubsection{Representar del conocimiento e información mediante el estándar RDF}
+\subsubsection{Representar el conocimiento e información mediante el estándar RDF}
 \begin{frame}
-	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\frametitle{Representar el conocimiento e información mediante el estándar RDF}
 	\begin{block}{Resource Description Framework (RDF)}
 	RDF es un estándar para representar el conocimiento e información de los recursos en un formato estándar. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
 	\end{block}
@@ -395,7 +471,7 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \end{frame} 
 
 \begin{frame}
-	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\frametitle{Representar el conocimiento e información mediante el estándar RDF}
 	\justifying
 	\begin{figure}
 	\includegraphics[scale=0.35]{Person2RDF}
@@ -404,7 +480,7 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 \end{frame} 
 
 \begin{frame}
-	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\frametitle{Representar el conocimiento e información mediante el estándar RDF}
 	\justifying
 	\begin{figure}
 	\includegraphics[scale=0.35]{Vid2RDF}
