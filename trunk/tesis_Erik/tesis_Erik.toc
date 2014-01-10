@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{Integraci\'on del Conocimiento}{10}
 \contentsline {subsection}{\numberline {1.2.2}Casos de uso}{10}
 \contentsline {subsubsection}{Cartograf\IeC {\'\i }a de Competencias}{11}
-\contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{12}
+\contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{11}
 \contentsline {subsection}{\numberline {1.2.3}Pregunta de investigaci\'on}{12}
 \contentsline {subsection}{\numberline {1.2.4}Justificaci\'on}{12}
 \contentsline {subsection}{\numberline {1.2.5}Objetivos}{13}
