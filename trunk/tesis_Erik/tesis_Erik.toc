@@ -47,6 +47,6 @@
 \contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{125}
 \contentsline {section}{\numberline {7.1}Recomendaciones}{128}
 \contentsline {chapter}{Appendices}{131}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Algoritmos para le generaci\'on de datos simulados}{133}
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Transformaci\'on de preguntas a consultas SPARQL}{141}
+\contentsline {chapter}{Ap\'endice \numberline {A}Algoritmos para le generaci\'on de datos simulados}{133}
+\contentsline {chapter}{Ap\'endice \numberline {B}Transformaci\'on de preguntas a consultas SPARQL}{141}
 \contentsline {chapter}{Bibliograf\'{\i }a}{153}
