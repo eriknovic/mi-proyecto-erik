@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  10 JAN 2014 02:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  10 JAN 2014 11:07
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -397,18 +397,18 @@ Package color Info: Redefining color black on input line 35.
 LaTeX Warning: Label `sym:ide' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
@@ -423,7 +423,7 @@ LaTeX Font Info:    ... okay on input line 69.
 \makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks34
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 69.
+LaTeX Info: Redefining \selectfont on input line 74.
 
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\caratula.tex
 <uam.pdf, id=1, 1471.4975pt x 399.4925pt>
@@ -436,31 +436,15 @@ Package pdftex.def Info: uam.pdf used on input line 5.
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
 oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
-k\abstract.tex
-Overfull \hbox (12.79752pt too wide) in paragraph at lines 6--7
-[]\T1/cmr/bx/n/12 Keywords: \T1/cmr/m/it/12 Se-man-tic tech-no-lo-gies\T1/cmr/m
-/n/12 , \T1/cmr/m/it/12 in-for-ma-tion re-sour-ces\T1/cmr/m/n/12 , \T1/cmr/m/it
-/12 know-led-ge re-pre-sen-ta-tion\T1/cmr/m/n/12 , \T1/cmr/m/it/12 axioms\T1/cm
-r/m/n/12 ,
- []
+k\abstract.tex)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex [3
 
-
-Overfull \hbox (1.97241pt too wide) in paragraph at lines 6--7
-\T1/cmr/m/it/12 search and in-for-ma-tion re-trie-val\T1/cmr/m/n/12 , \T1/cmr/m
-/it/12 cor-po-ra-te me-mory\T1/cmr/m/n/12 , \T1/cmr/m/it/12 on-to-logy\T1/cmr/m
-/n/12 , \T1/cmr/m/it/12 RDF\T1/cmr/m/n/12 , \T1/cmr/m/it/12 RDF(S)\T1/cmr/m/n/1
-2 , \T1/cmr/m/it/12 OWL\T1/cmr/m/n/12 , \T1/cmr/m/it/12 SPARQL\T1/cmr/m/n/12 . 
-
- []
-
-) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex [3
-
-]
-[4
+] [4
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 8.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 8.
@@ -1305,7 +1289,7 @@ Cap\'{\i }tulo 7.
 
 ] [132]
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex
-Ap\'{e}ndice A.
+Ap\'endice A.
 
 Overfull \hbox (13.43709pt too wide) in paragraph at lines 31--32
 []\T1/cmr/m/n/12 Literal: \T1/cmr/m/it/12 nom-bre $\OMS/cmsy/m/n/12  $ \T1/cmr/
@@ -1359,7 +1343,7 @@ Overfull \hbox (0.1972pt too wide) in paragraph at lines 204--205
 [138]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendB.tex [139] [140
 
 ]
-Ap\'{e}ndice B.
+Ap\'endice B.
 [141] [142] [143] [144] [145])
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [146
 
@@ -1375,11 +1359,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6808 strings out of 493944
  93864 string characters out of 3148281
- 193734 words of memory out of 3000000
+ 193767 words of memory out of 3000000
  9820 multiletter control sequences out of 15000+200000
  29605 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,18n,43p,3018b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,3008b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
@@ -1406,7 +1390,7 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (173 pages, 4588472 bytes).
+Output written on tesis_Erik.pdf (173 pages, 4588575 bytes).
 PDF statistics:
  1391 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

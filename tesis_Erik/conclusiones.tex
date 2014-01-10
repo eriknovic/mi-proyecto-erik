@@ -1,29 +1,30 @@
 \chapter{Conclusiones y Recomendaciones}
 \label{cap:concl}
-Con base en lo realizado y descrito en este documento, nosotros concluimos los siguiente:
+Con base en lo realizado y descrito en este documento, nosotros concluimos lo siguiente:
 
 \begin{itemize}
 \item Los objetivos particulares se alcanzaron:
 	\begin{itemize}
 	\item Desarrollamos un \textit{marco de referencia} para la \textit{integración semántica} de los \textit{recursos de información} existentes en una \textit{memoria corporativa}.
 	\item Implementamos un \textit{modelo semántico} que representa el conocimiento explícito e implícito de los \textit{recursos de información}.
-	\item Implementamos un prototipo de interfaz gráfica de usuario que permita a los usuarios una interacción amigable para la integración semántica de los recursos de información.
-	\item Evaluamos los resultados devueltos y tiempos de procesamiento en en la integración semántica para el dominio de redes y telecomunicaciones.
+	\item Implementamos un prototipo de interfaz gráfica de usuario que permite a los usuarios una interacción amigable para la integración semántica de los recursos de información.
+	\item Evaluamos los resultados devueltos y tiempos de procesamiento en la integración semántica para el dominio de redes y telecomunicaciones.
 	\end{itemize}
 \item Con respecto a nuestro objetivo principal, decimos que al alcanzar nuestros objetivos particulares, nosotros contribuimos a la \textit{integración semántica} de los \textit{recursos de información} existentes en una memoria corporativa.
-\item La hipótesis \textbf{El uso de las \textit{tecnologías semánticas} es adecuada para lograr la \textit{integración semántica} de \textit{recursos de información} en una \textit{memoria corporativa}}, se acepta porque las tecnologías semánticas son herramientas, estándares, metodologías y aplicaciones que permiten:
+\item La hipótesis \textbf{El uso de las \textit{tecnologías semánticas} es adecuado para lograr la \textit{integración semántica} de \textit{recursos de información} en una \textit{memoria corporativa}}, se acepta porque las tecnologías semánticas son herramientas, estándares, metodologías y aplicaciones que permiten:
 	\begin{itemize}
 	\item Representar el conocimiento explícito (características y/o relaciones) de los \textit{recursos de información} en un modelo semántico; solucionando las dificultades de heterogeneidad en formato, contenido y estructura.
-	\item Enriquecer el conocimiento, mediante la introducción de \textit{reglas de inferencia} (Ver Sección y \ref{sec:enrKrec}) en el modelo semántico, para representar el conocimiento implícito en los recursos y el dominio de aplicación (Redes y Telecomunicaciones).
+	\item Enriquecer el conocimiento, mediante la introducción de \textit{reglas de inferencia} (Ver Sección \ref{sec:reginf} y \ref{sec:enrKrec}) en el modelo semántico, para representar el conocimiento implícito en los recursos y el dominio de aplicación (Redes y Telecomunicaciones).
 	\item Extender o modificar un modelo semántico, gracias a que el conocimiento explícito e implícito están escritos en un lenguaje estándar (Ver Secciones \ref{sec:rdf} y \ref{sec:reginf}). De esta manera, los modelos semánticos pueden adaptarse al conocimiento cambiante o explosivo de la memoria corporativa.
-	\item Compartir un modelo semántico, gracias a que éste está escrito en un lenguaje estándar y puede utilizarse en cualquier plataforma (Linux, Mac y Windows). De esta manera, mediante el uso aplicaciones genéricas se puede visualizar o modificar la información en el modelo.
+	\item Compartir un modelo semántico, gracias a que éste está escrito en un lenguaje estándar y puede utilizarse en cualquier plataforma (Linux, Mac y Windows). De esta manera, mediante el uso de aplicaciones genéricas se puede visualizar o modificar la información en el modelo.
 	\item Buscar y recuperar información en un modelo semántico, mediante el uso de un lenguaje estándar (Ver Sección \ref{sec:lsparql}). Así como, el uso de un proceso para hacer explícito el conocimiento implícito de un modelo semántico, con la finalidad de mejorar los resultados de la búsqueda en el modelo (Ver Sección \ref{sec:result}).
 	\end{itemize}
 \item Las aportaciones de nuestra investigación son:
 	\begin{itemize}
 	\item Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
 	\item Un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa (Redes y Telecomunicaciones).
-	\item Un prototipo para la búsqueda y consulta de información, 4) los resultados de nuestra evaluación experimental.
+	\item Un prototipo para la búsqueda y consulta de información.
+	\item Los resultados de nuestra evaluación experimental.
 	\item Un par de scripts para la generación automática y controlada de descripciones RDF, para poblar la base de conocimiento.
 	\end{itemize}
 \end{itemize}
@@ -100,9 +101,9 @@ En esta investigación, nosotros identificamos varias actividades que consideramo
 	\item Mejorar el prototipo de integración semántica de recursos:
 		\begin{itemize}
 		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index\footnote{The Apache Software Foundation, ``adding free text searches to SPARQL,''  Disponible en: \url{http://jena.apache.org/documentation/larq/}}.
-		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, materializando desde el inicio las tripletas y almacenándolas en u nuevo modelo.
-		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}
-		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}
+		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, materializando desde el inicio las tripletas y almacenándolas en un nuevo modelo.
+		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}.
+		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}.
 	\end{itemize}
 	\end{itemize}
 \item \textbf{A mediano plazo:}
