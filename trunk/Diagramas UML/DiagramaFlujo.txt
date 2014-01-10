@@ -1,0 +1,25 @@
+@startuml
+
+partition pre-consulta {
+(*) --> "Acceder a un formulario: usuario"
+--> "Escribir los valores en el formulario: usuario"
+-->[enviar] "Recopilar los valores del formulario: servlet"
+--> "Transformar los valores a una consulta SPARQL: servlet"
+--> "Cargar ABox y TBox: servlet"
+--> "Construir un modelo inferido: servlet"
+}
+partition in-consulta #LightSteelBlue  {
+--> "Consultar el modelo inferido: servlet"
+--> if "hay resultados" then
+	-->[Verdadero] "Recupera la información: servlet"
+	--> "Construir página Web dinámica: servlet"
+	--> "Entregar resultados: servlet"
+	-right--> (*)
+else
+	-right->[Falso] "No se han encontrado\n resultados: servlet" 
+	--> (*)
+endif
+}
+
+@enduml
+        

@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor usuario as usu1
+actor profesor as usu2
+actor estudiante as usu3
+
+usu3 -left--|> usu1
+usu2 -right--|> usu1
+
+rectangle interfazWeb {
+	usecase "Validación usuario" as Login
+	usecase "Navegación entre\n personas/documentos/multimedia" as Nav
+	usecase "Búsqueda por topico" as Bpt
+	usecase "Búsqueda Avanzada de\n personas/documentos/multimedia" as Bar
+	usecase "Más detalles del recurso de información" as detRec
+	usecase "Filtrar por tipo\n persona/documento/multimedia" as Filt
+	usecase "Más detalles de\n persona/documento/multimedia" as detPDM
+	
+	usu1 -- Login
+	
+	Bpt -right.> Login: <<include>>
+	Nav -left.> Login: <<include>>
+	
+	Bar -up.> Nav: <<include>>
+	Filt -up.> Nav: <<extend>>
+	
+	detPDM -up.> Filt: <<include>>
+	detPDM -up.> Bar: <<include>>
+	detPDM -up.> Nav: <<include>>
+	
+	detRec -up.> Bpt: <<include>>	
+}
+@enduml

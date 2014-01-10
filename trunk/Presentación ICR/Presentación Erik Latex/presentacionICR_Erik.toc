@@ -4,19 +4,20 @@
 \beamer@subsectionintoc {1}{1}{Contexto y Motivaci\'on}{3}{0}{1}
 \beamer@subsubsectionintoc {1}{1}{1}{Memoria Corporativa}{3}{0}{1}
 \beamer@subsubsectionintoc {1}{1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
-\beamer@subsubsectionintoc {1}{1}{3}{Integraci\'on Sem\'antica}{7}{0}{1}
-\beamer@subsectionintoc {1}{2}{Descripci\'on del Problema}{8}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{1}{Pregunta Investigaci\'on}{8}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{2}{Objetivos}{9}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{3}{Metodolog\IeC {\'\i }a}{10}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{4}{Hip\'otesis}{15}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{5}{Aportaciones}{16}{0}{1}
-\beamer@sectionintoc {2}{Integraci\'on Sem\'antica de una Memoria Corporativa}{17}{0}{2}
-\beamer@subsectionintoc {2}{1}{Marco de Referencia}{17}{0}{2}
-\beamer@subsectionintoc {2}{2}{Arquitectura de la Integraci\'on Sem\'antica}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Casos de Uso}{19}{0}{2}
-\beamer@subsectionintoc {2}{4}{Representaci\'on del Conocimiento}{20}{0}{2}
-\beamer@subsubsectionintoc {2}{4}{1}{Identificar los principales recursos de informaci\'on}{20}{0}{2}
-\beamer@subsubsectionintoc {2}{4}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{21}{0}{2}
-\beamer@subsubsectionintoc {2}{4}{3}{Representar del conocimiento e informaci\'on mediante el est\'andar RDF}{22}{0}{2}
-\beamer@sectionintoc {3}{Referencias}{23}{0}{3}
+\beamer@subsubsectionintoc {1}{1}{3}{Resource Description Framework}{7}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{4}{Integraci\'on Sem\'antica}{10}{0}{1}
+\beamer@subsectionintoc {1}{2}{Descripci\'on del Problema}{11}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{1}{Pregunta Investigaci\'on}{11}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{2}{Objetivos}{12}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{3}{Metodolog\IeC {\'\i }a}{13}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{4}{Hip\'otesis}{18}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{5}{Aportaciones}{19}{0}{1}
+\beamer@sectionintoc {2}{Integraci\'on Sem\'antica de una Memoria Corporativa}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{Marco de Referencia}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Arquitectura de la Integraci\'on Sem\'antica}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Casos de Uso}{22}{0}{2}
+\beamer@subsectionintoc {2}{4}{Representaci\'on del Conocimiento}{23}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{1}{Identificar los principales recursos de informaci\'on}{23}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{24}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{3}{Representar del conocimiento e informaci\'on mediante el est\'andar RDF}{25}{0}{2}
+\beamer@sectionintoc {3}{Referencias}{28}{0}{3}

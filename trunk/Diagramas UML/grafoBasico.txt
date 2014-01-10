@@ -1,0 +1,33 @@
+@startuml
+interface "exp:Juan_Lopez" as juan
+interface "exp:Jorge_Martinez" as jorge
+interface "exp:Karla_Guzman" as karla
+interface "exp:Carlos_Urbina" as carlos
+interface "exp:Jose_Zambrano" as jose
+interface "exp:Salvador_Sosa" as salvador
+interface "exp:UAM" as uam
+
+() karla -down-> uam : "exp:estudia-en"
+karla -up-> (exp:Estudiante) : "rdf:type"
+
+juan -down-> ["Juan Lopez Martinez"] : "exp:tiene-nombre"
+juan -down-> uam : "exp:estudia-en"
+juan -up-> (exp:Estudiante) : "rdf:type"
+
+jorge -down-> uam : "exp:trabaja-en"
+jorge -up-> (exp:Profesor) : "rdf:type"
+
+carlos -down-> uam : "exp:trabaja-en"
+carlos -up-> (exp:Profesor) : "rdf:type"
+
+jose -down-> (exp:Investigador) : "rdf:type"
+
+salvador -up-> uam : "exp:trabaja-en"
+salvador -right-> (exp:Investigador) : "rdf:type"
+
+juan -> jorge : "exp:es-alumno"
+karla -> jorge : "exp:es-alumno"
+
+carlos -down-> jose : "exp:es-colega"
+
+@enduml

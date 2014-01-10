@@ -1,6 +1,6 @@
 @startuml
 
-"sird:has-institutionInvolved" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
+"sird:publishedByUniversity" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
 "sird:has-publishingHouse" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
 "sird:publishedInJournal" -up-> "sird:publishedIn" : rdfs:subPropertyOf 
 
