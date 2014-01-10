@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  8 JAN 2014 22:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  10 JAN 2014 02:39
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -437,7 +437,7 @@ Package pdftex.def Info: uam.pdf used on input line 5.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
 oogleSVN/tesis_Erik/uam.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Eri
 k\abstract.tex
-Overfull \hbox (12.79752pt too wide) in paragraph at lines 7--8
+Overfull \hbox (12.79752pt too wide) in paragraph at lines 6--7
 []\T1/cmr/bx/n/12 Keywords: \T1/cmr/m/it/12 Se-man-tic tech-no-lo-gies\T1/cmr/m
 /n/12 , \T1/cmr/m/it/12 in-for-ma-tion re-sour-ces\T1/cmr/m/n/12 , \T1/cmr/m/it
 /12 know-led-ge re-pre-sen-ta-tion\T1/cmr/m/n/12 , \T1/cmr/m/it/12 axioms\T1/cm
@@ -445,7 +445,7 @@ r/m/n/12 ,
  []
 
 
-Overfull \hbox (1.97241pt too wide) in paragraph at lines 7--8
+Overfull \hbox (1.97241pt too wide) in paragraph at lines 6--7
 \T1/cmr/m/it/12 search and in-for-ma-tion re-trie-val\T1/cmr/m/n/12 , \T1/cmr/m
 /it/12 cor-po-ra-te me-mory\T1/cmr/m/n/12 , \T1/cmr/m/it/12 on-to-logy\T1/cmr/m
 /n/12 , \T1/cmr/m/it/12 RDF\T1/cmr/m/n/12 , \T1/cmr/m/it/12 RDF(S)\T1/cmr/m/n/1
@@ -515,13 +515,13 @@ ies, Dis-po-ni-ble en: $\T1/cmtt/m/n/10 http : / / www .$
 
 [3]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [4]
 [5]
-Overfull \hbox (21.48975pt too wide) in paragraph at lines 25--26
+Overfull \hbox (21.48975pt too wide) in paragraph at lines 24--25
 []\T1/cmr/m/n/12 Una me-mo-ria cor-po-ra-ti-va con-ser-va y man-tie-ne el co-no
 -ci-mien-to de una or-ga-ni-za-ción [DCGR98],
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
@@ -529,7 +529,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 File: CasosUso.pdf Graphic file (type pdf)
 
 <use CasosUso.pdf>
-Package pdftex.def Info: CasosUso.pdf used on input line 114.
+Package pdftex.def Info: CasosUso.pdf used on input line 113.
 (pdftex.def)             Requested size: 377.62642pt x 205.8709pt.
  [10] [11 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUso.pdf>] [12] [13
 ] [14] [15]))
@@ -625,9 +625,11 @@ File: TripletasInferidas.pdf Graphic file (type pdf)
 
 <use TripletasInferidas.pdf>
 Package pdftex.def Info: TripletasInferidas.pdf used on input line 348.
-(pdftex.def)             Requested size: 472.04022pt x 142.26309pt.
- [29 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/
-Gatito/Desktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf
+(pdftex.def)             Requested size: 472.04022pt x 133.72536pt.
+)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estadoNew.tex [29 <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/Gatito/Desktop/Googl
+eSVN/tesis_Erik/SparqlExmpReaz.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Spa
 rqlExmpReaz.pdf): PDF inclusion: multiple pdfs with page group included in a si
@@ -637,11 +639,11 @@ ngle page
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Tri
 pletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
->]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estadoNew.tex [30]
-Cap\'{\i }tulo 3.
-[31
+>] [30
 
-] [32] [33] [34] [35]
+]
+Cap\'{\i }tulo 3.
+[31] [32] [33] [34] [35]
 Overfull \hbox (25.51575pt too wide) in paragraph at lines 117--118
 []\T1/cmr/bx/it/12 MnM \T1/cmr/m/n/12 [UCI$[]$06] es una he-rra-mien-ta que pro
 -por-cio-na apo-yo au-to-ma-ti-za-do y semi-automatizado
@@ -1377,7 +1379,7 @@ Here is how much of TeX's memory you used:
  9820 multiletter control sequences out of 15000+200000
  29605 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,18n,43p,2849b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,43p,3018b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
@@ -1404,7 +1406,7 @@ r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (173 pages, 4588211 bytes).
+Output written on tesis_Erik.pdf (173 pages, 4588472 bytes).
 PDF statistics:
  1391 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
