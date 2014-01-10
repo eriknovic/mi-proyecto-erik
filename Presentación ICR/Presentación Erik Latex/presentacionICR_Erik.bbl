@@ -24,4 +24,9 @@ Gandon, Fabien, L. (2002).
 \newblock {Ontology Engineering: a Survey and a Return on Experience}.
 \newblock Technical Report RR-4396, INRIA.
 
+\bibitem[Gruber, 1993]{Gruber}
+Gruber, T.~R. (1993).
+\newblock A translation approach to portable ontology specifications.
+\newblock {\em Knowl. Acquis.}, 5(2):199--220.
+
 \end{thebibliography}
