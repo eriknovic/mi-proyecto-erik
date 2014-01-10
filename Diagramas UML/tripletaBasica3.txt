@@ -1,0 +1,7 @@
+@startuml
+interface "http://www.mi-ejemplo.com/Juan_Lopez" as juan
+
+() juan -> (http://www.mi-ejemplo.com/Estudiante) : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+
+
+@enduml

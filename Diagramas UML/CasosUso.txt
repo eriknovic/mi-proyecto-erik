@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+skinparam packageStyle rect
+
+actor profesor as usu1
+actor estudiante as usu2
+
+rectangle Integración_Semántica_Recursos {
+	usecase "Cartografía de Competencias" as Carto
+	usecase "Búsqueda de Recursos Digitales" as BRD
+	
+	usu1 -- Carto
+	usu2 -- Carto
+	
+	usu1 -- BRD
+	usu2 -- BRD
+}
+@enduml

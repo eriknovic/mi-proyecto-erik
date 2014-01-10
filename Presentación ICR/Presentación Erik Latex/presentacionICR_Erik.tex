@@ -80,7 +80,7 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	
 	\begin{figure}[htbp]
 	\centering
-		\subfigure[Conocimiento del área de RyT]{
+	\subfigure[Conocimiento del área de RyT]{
 	\includegraphics[scale=0.17]{ConocimientoRyT} 
 	}
 	\subfigure[Memoria Corporativa del área de RyT]{
@@ -115,6 +115,45 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	\end{block}
 	\begin{figure}
 	\includegraphics[scale=0.52]{TSWords} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Resource Description Framework}
+\begin{frame}
+	\frametitle{Resource Description Framework (RDF)} 
+	\begin{block}{Definición}
+	\justifying 
+	\textit{Marco de trabajo} para \textit{representar el conocimiento e información de los recursos en un formato estándar}. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\end{block}
+	
+	\begin{itemize}
+	\item \justifying \textbf{\textit{Recurso}} es cualquier \textit{persona, lugar, documento, objeto abstracto o físico} que tiene un identificador único de recursos (URI). \\ Por ejemplo, UAM $=>$ \url{http://www.mi-ejemplo.com/UAM} 
+	\item \justifying \textbf{\textit{Propiedad}} es un aspecto significativo, característica, o relación que se describe de un recurso. \\ Por ejemplo, nombre $=>$ \url{http://www.mi-ejemplo.com/tiene-nombre}
+	\item \justifying \textbf{\textit{Declaración}} es una afirmación de un hecho explícito de un recurso, en términos de una propiedad y el valor asignado a ésta (otro recurso o literal). Esta declaración con RDF se denomina tripleta RDF.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Resource Description Framework (RDF)} 
+	\begin{block}{Tripleta RDF}
+	\justifying 
+	 La forma básica para representa una declaración en un modelo semántico.
+	 \end{block}
+	 
+	\begin{figure}
+	\includegraphics[scale=0.5]{Tripletas} 
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Resource Description Framework (RDF)}
+	\begin{block}{Grafo RDF}
+	\justifying 
+	 Un grafo estructurado y dirigido compuesto por nodos, aristas y etiquetas para representar las tripletas.
+	 \end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.43]{GrafoRDF} 
 	\end{figure}
 \end{frame}
 
@@ -344,7 +383,33 @@ Asesores:\\ Dra. Reyna Carolina Medina Ramírez \\Dr. Héctor Pérez Urbina
 	RDF es un estándar para representar el conocimiento e información de los recursos en un formato estándar. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
 	\end{block}
 	
+	\begin{block}{Actividades en la representación del conocimiento}
+	\begin{enumerate}
+	\item Asignar un identificador único de recursos para cada recurso de información en la memoria corporativa.
+	\item Asignar los identificadores únicos de recursos a las propiedades.
+	\item Reconocer los valores de las propiedades: otro recurso o literal.
+	\item Generar las tripletas RDF asociadas a las descripciones de los recursos de información.
+	\end{enumerate}
+	\end{block}
 
+\end{frame} 
+
+\begin{frame}
+	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\justifying
+	\begin{figure}
+	\includegraphics[scale=0.35]{Person2RDF}
+	\caption{Ejemplo de declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
+	\end{figure}
+\end{frame} 
+
+\begin{frame}
+	\frametitle{Representar del conocimiento e información mediante el estándar RDF}
+	\justifying
+	\begin{figure}
+	\includegraphics[scale=0.35]{Vid2RDF}
+	\caption{Ejemplo de declaraciones del vídeo ``What is Linked Data?'' en forma de tripletas RDF}
+	\end{figure}
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
