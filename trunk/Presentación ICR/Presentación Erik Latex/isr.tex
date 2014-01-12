@@ -1,0 +1,93 @@
+\section{Integración Semántica de una Memoria Corporativa}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Marco de Referencia}
+\begin{frame}
+	\frametitle{Marco de Referencia}
+	\begin{block}{Etapas}
+		\begin{enumerate}
+		\item \justifying \textbf{\textit{Representación del conocimiento explicito de los recursos}} consiste en identificar los recursos de información de la memoria corporativa, así como representar las características y relaciones (conocimiento explícito) de estos recursos en un modelo semántico.
+		\item \justifying \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir reglas de inferencia (axiomas) para completar y enriquecer el modelo semántico con conocimiento implícito del dominio de la memoria corporativa.
+		\item \justifying \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios, así como interrogar el modelo semántico para recuperar la información que responda a estas consultas.
+		\end{enumerate}
+	\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Arquitectura de la Integración Semántica}
+\begin{frame}
+	\frametitle{Arquitectura de la Integración Semántica}	
+	\begin{figure}
+	\includegraphics[scale=0.35]{Arquitectura} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Casos de Uso}
+\begin{frame}
+	\frametitle{Casos de Uso}
+	
+	\begin{block}{}
+		\begin{itemize}
+		\item \justifying \textbf{\textit{Cartografía de Competencias}} consiste en la búsqueda y recuperación de información significativa de las personas a partir de las características personales y profesionales de las mismas.
+		\item \justifying \textbf{\textit{Búsqueda de Recursos Digitales}} consiste en la búsqueda y recuperación de información significativa de los documentos y archivos multimedia a partir del contenido de los mismos.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.65]{CasosUso} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Representación el Conocimiento}
+\subsubsection{Identificar los principales recursos de información}
+\begin{frame}
+	\frametitle{Identificar los principales recursos de información}	
+	\begin{figure}
+	\includegraphics[scale=0.35]{CasosUsoMC} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Adquirir y expresar el conocimiento de los recursos de información}
+\begin{frame}
+	\frametitle{Adquirir y expresar el conocimiento de los recursos de información}	
+	\begin{figure}
+	\includegraphics[scale=0.415]{CasoUsoCartComp} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Representar el conocimiento e información mediante el estándar RDF}
+\begin{frame}[allowframebreaks]
+	\frametitle{Representar el conocimiento e información mediante el estándar RDF}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Actividades en la representación del conocimiento}
+	\begin{enumerate}
+	\item \justifying Asignar un identificador único de recursos para cada recurso de información en la memoria corporativa.
+	\item \justifying Asignar los identificadores únicos de recursos a las propiedades.
+	\item \justifying Reconocer los valores de las propiedades: otro recurso o literal.
+	\item \justifying Generar las tripletas RDF asociadas a las descripciones de los recursos de información.
+	\end{enumerate}
+	\end{block}
+
+	\begin{figure}
+	\includegraphics[scale=0.4]{Prefijos} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.35]{Person2RDF}
+	%\caption{Ejemplo de declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.35]{Vid2RDF}
+	%\caption{Ejemplo de declaraciones del vídeo ``What is Linked Data?'' en forma de tripletas RDF}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
