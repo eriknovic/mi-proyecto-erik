@@ -19,6 +19,13 @@ Dieng, R., Corby, O., Giboin, A., and Ribi{\`e}re, M. (1998).
 \newblock {Methods and Tools for Corporate Knowledge Management}.
 \newblock Technical Report RR-3485, INRIA.
 
+\bibitem[Fujino and Fukuta, 2012]{SPARQL}
+Fujino, T. and Fukuta, N. (2012).
+\newblock A sparql query rewriting approach on heterogeneous ontologies with
+  mapping reliability.
+\newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
+  International Conference on}, pages 230--235.
+
 \bibitem[Gandon, 2002]{Ontoinra2002}
 Gandon, Fabien, L. (2002).
 \newblock {Ontology Engineering: a Survey and a Return on Experience}.
