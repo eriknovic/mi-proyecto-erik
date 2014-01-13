@@ -1,0 +1,18 @@
+@startuml
+interface "sirp:ErikAlarconZamora" as () Erik
+interface "sirp:RicardoMarcelinJimenez" as Ricardo
+interface "sirp:HectorPerezUrbina" as Hector
+interface "sirp:CarolinaMedinaRamirez" as Carolina
+interface "sirp:English" as Ingles
+
+Erik -up-> Ingles : sirp:reads
+Ricardo -right-> Ingles : sirp:speaks
+Carolina -left-> Ingles : sirp:writes
+Hector -down-> Ingles : sirp:speaks
+
+Erik -[#Blue]-> Ingles : <color #Blue>sirp:has-language</color>
+Ricardo -[#Blue]-> Ingles : <color #Blue>sirp:has-language</color>
+Carolina -[#Blue]-> Ingles : <color #Blue>sirp:has-language</color>
+Hector -[#Blue]-> Ingles : <color #Blue>sirp:has-language</color>
+
+@enduml

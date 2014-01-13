@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  12 JAN 2014 00:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  12 JAN 2014 22:40
 entering extended mode
 **presentacionICR_Erik.tex
 
@@ -1072,19 +1072,19 @@ presentacionICR_Erik.toc") [2
 
 ])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik Latex\
-marcointro.tex" <ConocimientoRyT.pdf, id=124, 770.88pt x 621.32124pt>
+marcointro.tex" <ConocimientoRyT.pdf, id=128, 770.88pt x 621.32124pt>
 File: ConocimientoRyT.pdf Graphic file (type pdf)
 
 <use ConocimientoRyT.pdf>
 Package pdftex.def Info: ConocimientoRyT.pdf used on input line 45.
 (pdftex.def)             Requested size: 131.04787pt x 105.62321pt.
- <EjemploMC.pdf, id=125, 756.8275pt x 502.87875pt>
+ <EjemploMC.pdf, id=129, 756.8275pt x 502.87875pt>
 File: EjemploMC.pdf Graphic file (type pdf)
 
 <use EjemploMC.pdf>
 Package pdftex.def Info: EjemploMC.pdf used on input line 45.
 (pdftex.def)             Requested size: 136.22307pt x 90.51427pt.
- <NatMC.pdf, id=126, 1019.81pt x 599.23875pt>
+ <NatMC.pdf, id=130, 1019.81pt x 599.23875pt>
 File: NatMC.pdf Graphic file (type pdf)
 
 <use NatMC.pdf>
@@ -1097,7 +1097,11 @@ Overfull \hbox (29.24847pt too wide) in paragraph at lines 45--45
 
 [3
 
-] [4
+]
+Overfull \vbox (4.71953pt too high) detected at line 45
+ []
+
+[4
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
@@ -1108,20 +1112,20 @@ pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación
 ICR/Presentación Erik Latex/EjemploMC.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
 >]
-Overfull \vbox (3.0834pt too high) detected at line 45
+Overfull \vbox (14.32022pt too high) detected at line 45
  []
 
 [5
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-NatMC.pdf>] <TSWords.pdf, id=401, 332.24126pt x 246.9225pt>
+NatMC.pdf>] <TSWords.pdf, id=405, 332.24126pt x 246.9225pt>
 File: TSWords.pdf Graphic file (type pdf)
 
 <use TSWords.pdf>
 Package pdftex.def Info: TSWords.pdf used on input line 167.
 (pdftex.def)             Requested size: 139.54036pt x 103.70673pt.
- <Tripletas.pdf, id=404, 644.4075pt x 253.94875pt>
+ <Tripletas.pdf, id=408, 644.4075pt x 253.94875pt>
 File: Tripletas.pdf Graphic file (type pdf)
 
 <use Tripletas.pdf>
@@ -1132,19 +1136,19 @@ Overfull \hbox (14.91309pt too wide) in paragraph at lines 167--167
  [] 
  []
 
-<GrafoRDF.pdf, id=405, 625.33624pt x 383.4325pt>
+<GrafoRDF.pdf, id=409, 625.33624pt x 383.4325pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
  <use GrafoRDF.pdf>
 Package pdftex.def Info: GrafoRDF.pdf used on input line 167.
 (pdftex.def)             Requested size: 237.63023pt x 145.70586pt.
 
-<FormaSPARQL.pdf, id=406, 402.50375pt x 182.6825pt>
+<FormaSPARQL.pdf, id=410, 402.50375pt x 182.6825pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
 Package pdftex.def Info: FormaSPARQL.pdf used on input line 167.
 (pdftex.def)             Requested size: 160.99864pt x 73.07169pt.
 
-<grafoInfBasico.pdf, id=410, 589.20125pt x 319.1925pt>
+<grafoInfBasico.pdf, id=414, 589.20125pt x 319.1925pt>
 File: grafoInfBasico.pdf Graphic file (type pdf)
 
 <use grafoInfBasico.pdf>
@@ -1171,159 +1175,513 @@ TSWords.pdf>] [7
 Tripletas.pdf>] [10
 
 
- <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-GrafoRDF.pdf>] [11
+] [11
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-FormaSPARQL.pdf>] [12
+GrafoRDF.pdf>] [12
 
 
-] [13
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+FormaSPARQL.pdf>] [13
 
 
 ] [14
 
 
+] [15
+
+
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-grafoInfBasico.pdf>] [15
+grafoInfBasico.pdf>] [16
 
 ]
-<PreguntaInv.pdf, id=796, 196.735pt x 337.26pt>
+<PreguntaInv.pdf, id=828, 196.735pt x 337.26pt>
 File: PreguntaInv.pdf Graphic file (type pdf)
  <use PreguntaInv.pdf>
 Package pdftex.def Info: PreguntaInv.pdf used on input line 200.
 (pdftex.def)             Requested size: 78.6926pt x 134.9016pt.
- [16
+ [17
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-PreguntaInv.pdf>] [17
-
-] [18
+PreguntaInv.pdf>] [18
 
 ] [19
 
-] [20
+]
+Overfull \vbox (7.34723pt too high) detected at line 254
+ []
 
-] [21
+[20
+
+]
+Overfull \vbox (4.19862pt too high) detected at line 276
+ []
+
+[21
 
 ] [22
 
-]
-<hipotesis.pdf, id=1035, 322.20375pt x 320.19624pt>
+] [23
+
+] <hipotesis.pdf, id=1067, 322.20375pt x 320.19624pt>
 File: hipotesis.pdf Graphic file (type pdf)
- <use hipotesis.pdf>
+
+<use hipotesis.pdf>
 Package pdftex.def Info: hipotesis.pdf used on input line 313.
 (pdftex.def)             Requested size: 157.88121pt x 156.89752pt.
 
-[23
+Overfull \vbox (7.66278pt too high) detected at line 313
+ []
+
+[24
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-hipotesis.pdf>] [24
+hipotesis.pdf>] [25
 
 ])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik Latex\
-isr.tex" [25
+isr.tex" [26
 
-] <Arquitectura.pdf, id=1137, 561.09625pt x 582.175pt>
+] <Arquitectura.pdf, id=1171, 561.09625pt x 582.175pt>
 File: Arquitectura.pdf Graphic file (type pdf)
 
 <use Arquitectura.pdf>
 Package pdftex.def Info: Arquitectura.pdf used on input line 23.
 (pdftex.def)             Requested size: 196.38663pt x 203.7643pt.
 
-Overfull \vbox (4.09831pt too high) detected at line 23
+Overfull \vbox (15.33513pt too high) detected at line 23
  []
 
-[26
+[27
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-Arquitectura.pdf>] <CasosUso.pdf, id=1196, 310.15875pt x 180.675pt>
+Arquitectura.pdf>] <CasosUso.pdf, id=1232, 310.15875pt x 180.675pt>
 File: CasosUso.pdf Graphic file (type pdf)
 
 <use CasosUso.pdf>
 Package pdftex.def Info: CasosUso.pdf used on input line 41.
 (pdftex.def)             Requested size: 201.6008pt x 117.43735pt.
 
-Overfull \vbox (7.96579pt too high) detected at line 41
+Overfull \vbox (19.2026pt too high) detected at line 41
  []
 
-[27
+[28
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-CasosUso.pdf>] <CasosUsoMC.pdf, id=1234, 764.8575pt x 571.13374pt>
+CasosUso.pdf>] <CasosUsoMC.pdf, id=1272, 764.8575pt x 571.13374pt>
 File: CasosUsoMC.pdf Graphic file (type pdf)
 
 <use CasosUsoMC.pdf>
 Package pdftex.def Info: CasosUsoMC.pdf used on input line 52.
 (pdftex.def)             Requested size: 267.70413pt x 199.8998pt.
 
-Overfull \vbox (0.23381pt too high) detected at line 52
- []
-
-[28
-
- <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-CasosUsoMC.pdf>] <CasoUsoCartComp.pdf, id=1371, 733.74126pt x 460.72125pt>
-File: CasoUsoCartComp.pdf Graphic file (type pdf)
-
-<use CasoUsoCartComp.pdf>
-Package pdftex.def Info: CasoUsoCartComp.pdf used on input line 60.
-(pdftex.def)             Requested size: 304.49695pt x 191.19576pt.
-
-Overfull \vbox (9.52977pt too high) detected at line 60
+Overfull \vbox (11.47063pt too high) detected at line 52
  []
 
 [29
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-CasoUsoCartComp.pdf>] <Prefijos.pdf, id=1410, 777.90625pt x 108.405pt>
-File: Prefijos.pdf Graphic file (type pdf)
+CasosUsoMC.pdf>] <CasoUsoCartComp.pdf, id=1412, 733.74126pt x 460.72125pt>
+File: CasoUsoCartComp.pdf Graphic file (type pdf)
 
-<use Prefijos.pdf>
-Package pdftex.def Info: Prefijos.pdf used on input line 92.
-(pdftex.def)             Requested size: 311.15698pt x 43.36122pt.
+<use CasoUsoCartComp.pdf>
+Package pdftex.def Info: CasoUsoCartComp.pdf used on input line 60.
+(pdftex.def)             Requested size: 293.4913pt x 184.28523pt.
 
-Overfull \hbox (3.86711pt too wide) in paragraph at lines 92--92
- [] 
- []
-
-<Person2RDF.pdf, id=1411, 948.54375pt x 443.6575pt>
-File: Person2RDF.pdf Graphic file (type pdf)
- <use Person2RDF.pdf>
-Package pdftex.def Info: Person2RDF.pdf used on input line 92.
-(pdftex.def)             Requested size: 331.99529pt x 155.28244pt.
-
-Overfull \hbox (24.70541pt too wide) in paragraph at lines 92--92
- [] 
- []
-
-<Vid2RDF.pdf, id=1412, 992.70876pt x 347.2975pt>
-File: Vid2RDF.pdf Graphic file (type pdf)
- <use Vid2RDF.pdf>
-Package pdftex.def Info: Vid2RDF.pdf used on input line 92.
-(pdftex.def)             Requested size: 347.45328pt x 121.55594pt.
-
-Overfull \hbox (40.1634pt too wide) in paragraph at lines 92--92
- [] 
+Overfull \vbox (13.85606pt too high) detected at line 60
  []
 
 [30
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-Prefijos.pdf>] [31
+CasoUsoCartComp.pdf>] <Prefijos.pdf, id=1453, 777.90625pt x 108.405pt>
+File: Prefijos.pdf Graphic file (type pdf)
 
+<use Prefijos.pdf>
+Package pdftex.def Info: Prefijos.pdf used on input line 204.
+(pdftex.def)             Requested size: 272.27126pt x 37.9423pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 204.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 204.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 204.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (5.79012pt too wide) in paragraph at lines 204--204
+ [] 
+ []
+
+<Person2RDF.pdf, id=1454, 903.375pt x 436.63126pt>
+File: Person2RDF.pdf Graphic file (type pdf)
+ <use Person2RDF.pdf>
+Package pdftex.def Info: Person2RDF.pdf used on input line 204.
+(pdftex.def)             Requested size: 316.18599pt x 152.82323pt.
+
+Overfull \hbox (8.89612pt too wide) in paragraph at lines 204--204
+ [] 
+ []
+
+<Vid2RDF.pdf, id=1455, 844.15375pt x 320.19624pt>
+File: Vid2RDF.pdf Graphic file (type pdf)
+ <use Vid2RDF.pdf>
+Package pdftex.def Info: Vid2RDF.pdf used on input line 204.
+(pdftex.def)             Requested size: 320.78175pt x 121.67583pt.
+
+Overfull \hbox (13.49188pt too wide) in paragraph at lines 204--204
+ [] 
+ []
+
+[31
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-Person2RDF.pdf>] [32
+Prefijos.pdf>] [32
 
 
- <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
-Vid2RDF.pdf>])
-("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik Latex\
-presentacionICR_Erik.bbl") [33
+] [33
+
 
 ] [34
+
+
+] [35
+
+
+] [36
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+Person2RDF.pdf>] [37
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+Vid2RDF.pdf>]
+<PrefijosRDFSOWL.pdf, id=1732, 776.9025pt x 75.28125pt>
+File: PrefijosRDFSOWL.pdf Graphic file (type pdf)
+
+<use PrefijosRDFSOWL.pdf>
+Package pdftex.def Info: PrefijosRDFSOWL.pdf used on input line 231.
+(pdftex.def)             Requested size: 271.91994pt x 26.34882pt.
+ [38
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+PrefijosRDFSOWL.pdf>]
+<HerenClassCartComp.pdf, id=1780, 421.575pt x 210.7875pt>
+File: HerenClassCartComp.pdf Graphic file (type pdf)
+
+<use HerenClassCartComp.pdf>
+Package pdftex.def Info: HerenClassCartComp.pdf used on input line 260.
+(pdftex.def)             Requested size: 210.78697pt x 105.3935pt.
+
+<HerenClassRecDigi.pdf, id=1781, 483.8075pt x 143.53625pt>
+File: HerenClassRecDigi.pdf Graphic file (type pdf)
+
+<use HerenClassRecDigi.pdf>
+Package pdftex.def Info: HerenClassRecDigi.pdf used on input line 260.
+(pdftex.def)             Requested size: 319.31393pt x 94.7342pt.
+
+Overfull \hbox (12.02406pt too wide) in paragraph at lines 260--260
+ [] 
+ []
+
+<EjmpInfSubClass.pdf, id=1782, 587.19376pt x 228.855pt>
+File: EjmpInfSubClass.pdf Graphic file (type pdf)
+
+<use EjmpInfSubClass.pdf>
+Package pdftex.def Info: EjmpInfSubClass.pdf used on input line 260.
+(pdftex.def)             Requested size: 334.70392pt x 130.4487pt.
+
+Overfull \hbox (27.41405pt too wide) in paragraph at lines 260--260
+ [] 
+ []
+
+[39
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+HerenClassCartComp.pdf>] [40
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+HerenClassRecDigi.pdf>] [41
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+EjmpInfSubClass.pdf>] <HerPropLang.pdf, id=1901, 336.25626pt x 114.4275pt>
+File: HerPropLang.pdf Graphic file (type pdf)
+ <use HerPropLang.pdf>
+Package pdftex.def Info: HerPropLang.pdf used on input line 296.
+(pdftex.def)             Requested size: 168.12772pt x 57.21361pt.
+
+<HerPropKno.pdf, id=1902, 233.87375pt x 117.43875pt>
+File: HerPropKno.pdf Graphic file (type pdf)
+ <use HerPropKno.pdf>
+Package pdftex.def Info: HerPropKno.pdf used on input line 296.
+(pdftex.def)             Requested size: 116.93657pt x 58.71922pt.
+
+<HerPropCompe.pdf, id=1903, 233.87375pt x 117.43875pt>
+File: HerPropCompe.pdf Graphic file (type pdf)
+ <use HerPropCompe.pdf>
+Package pdftex.def Info: HerPropCompe.pdf used on input line 296.
+(pdftex.def)             Requested size: 116.93657pt x 58.71922pt.
+
+<HerPropInst.pdf, id=1904, 405.515pt x 115.43124pt>
+File: HerPropInst.pdf Graphic file (type pdf)
+ <use HerPropInst.pdf>
+Package pdftex.def Info: HerPropInst.pdf used on input line 296.
+(pdftex.def)             Requested size: 202.75699pt x 57.71547pt.
+
+<EjmpInfProp.pdf, id=1905, 552.0625pt x 229.85875pt>
+File: EjmpInfProp.pdf Graphic file (type pdf)
+ <use EjmpInfProp.pdf>
+Package pdftex.def Info: EjmpInfProp.pdf used on input line 296.
+(pdftex.def)             Requested size: 331.24005pt x 137.91629pt.
+
+Overfull \hbox (23.95018pt too wide) in paragraph at lines 296--296
+ [] 
+ []
+
+[42
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+HerPropLang.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentac
+ión Erik Latex/HerPropKno.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación 
+ICR/Presentación Erik Latex/HerPropKno.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] [43
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+HerPropCompe.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presenta
+ción Erik Latex/HerPropInst.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación 
+ICR/Presentación Erik Latex/HerPropInst.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+>] [44
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+EjmpInfProp.pdf>] <exAxDyRPer.pdf, id=2035, 348.30125pt x 136.51pt>
+File: exAxDyRPer.pdf Graphic file (type pdf)
+
+<use exAxDyRPer.pdf>
+Package pdftex.def Info: exAxDyRPer.pdf used on input line 320.
+(pdftex.def)             Requested size: 202.01486pt x 79.17584pt.
+ <exInfDyRPer.pdf, id=2036, 723.70375pt x 310.15875pt>
+File: exInfDyRPer.pdf Graphic file (type pdf)
+
+<use exInfDyRPer.pdf>
+Package pdftex.def Info: exInfDyRPer.pdf used on input line 320.
+(pdftex.def)             Requested size: 325.66368pt x 139.57014pt.
+
+Overfull \hbox (18.37381pt too wide) in paragraph at lines 320--320
+ [] 
+ []
+
+[45
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+exAxDyRPer.pdf>] [46
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+exInfDyRPer.pdf>]
+<infSymColl.pdf, id=2117, 644.4075pt x 232.87pt>
+File: infSymColl.pdf Graphic file (type pdf)
+ <use infSymColl.pdf>
+Package pdftex.def Info: infSymColl.pdf used on input line 334.
+(pdftex.def)             Requested size: 322.20296pt x 116.43471pt.
+
+Overfull \hbox (14.91309pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+
+Overfull \vbox (5.16281pt too high) detected at line 334
+ []
+
+[47
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+infSymColl.pdf>] [48
+
+] [49
+
+] [50
+
+
+] [51
+
+
+] [52
+
+
+]
+<q112rql.pdf, id=2332, 818.05624pt x 372.39125pt>
+File: q112rql.pdf Graphic file (type pdf)
+ <use q112rql.pdf>
+Package pdftex.def Info: q112rql.pdf used on input line 427.
+(pdftex.def)             Requested size: 327.21669pt x 148.95386pt.
+
+Overfull \hbox (19.92682pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+<q2rqlSR.pdf, id=2333, 930.47626pt x 431.6125pt>
+File: q2rqlSR.pdf Graphic file (type pdf)
+ <use q2rqlSR.pdf>
+Package pdftex.def Info: q2rqlSR.pdf used on input line 427.
+(pdftex.def)             Requested size: 325.67157pt x 151.06664pt.
+
+Overfull \hbox (18.3817pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+<q2rqlCR.pdf, id=2334, 819.06pt x 343.2825pt>
+File: q2rqlCR.pdf Graphic file (type pdf)
+ <use q2rqlCR.pdf>
+Package pdftex.def Info: q2rqlCR.pdf used on input line 427.
+(pdftex.def)             Requested size: 327.6182pt x 137.31056pt.
+
+Overfull \hbox (20.32832pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+<q2torqlSR.pdf, id=2335, 885.3075pt x 482.80376pt>
+File: q2torqlSR.pdf Graphic file (type pdf)
+ <use q2torqlSR.pdf>
+Package pdftex.def Info: q2torqlSR.pdf used on input line 427.
+(pdftex.def)             Requested size: 309.86226pt x 168.98384pt.
+
+Overfull \hbox (2.57239pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+<q2torqlCR.pdf, id=2336, 878.28125pt x 353.32pt>
+File: q2torqlCR.pdf Graphic file (type pdf)
+ <use q2torqlCR.pdf>
+Package pdftex.def Info: q2torqlCR.pdf used on input line 427.
+(pdftex.def)             Requested size: 307.40305pt x 123.66385pt.
+
+Overfull \hbox (0.11317pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+[53
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+q112rql.pdf>] [54
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+q2rqlSR.pdf>] [55
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+q2rqlCR.pdf>] [56
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+q2torqlSR.pdf>] [57
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+q2torqlCR.pdf>] <exMBS.pdf, id=2564, 870.25125pt x 621.32124pt>
+File: exMBS.pdf Graphic file (type pdf)
+ <use exMBS.pdf>
+Package pdftex.def Info: exMBS.pdf used on input line 445.
+(pdftex.def)             Requested size: 287.18379pt x 205.03664pt.
+
+[58
+
+]
+Overfull \vbox (10.60747pt too high) detected at line 445
+ []
+
+[59
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+exMBS.pdf>] <grafoSR.pdf, id=2658, 721.69624pt x 393.47pt>
+File: grafoSR.pdf Graphic file (type pdf)
+
+<use grafoSR.pdf>
+Package pdftex.def Info: grafoSR.pdf used on input line 472.
+(pdftex.def)             Requested size: 281.4604pt x 153.45267pt.
+ <consultaGrafo.pdf, id=2659, 685.56125pt x 338.26375pt>
+File: consultaGrafo.pdf Graphic file (type pdf)
+
+<use consultaGrafo.pdf>
+Package pdftex.def Info: consultaGrafo.pdf used on input line 472.
+(pdftex.def)             Requested size: 171.3899pt x 84.56572pt.
+ <RespQrySI.pdf, id=2660, 324.21124pt x 252.945pt>
+File: RespQrySI.pdf Graphic file (type pdf)
+
+<use RespQrySI.pdf>
+Package pdftex.def Info: RespQrySI.pdf used on input line 472.
+(pdftex.def)             Requested size: 90.77852pt x 70.82411pt.
+ <grafoCR.pdf, id=2661, 718.685pt x 473.77pt>
+File: grafoCR.pdf Graphic file (type pdf)
+
+<use grafoCR.pdf>
+Package pdftex.def Info: grafoCR.pdf used on input line 472.
+(pdftex.def)             Requested size: 265.90929pt x 175.29214pt.
+ [60
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+grafoSR.pdf>] [61
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+consultaGrafo.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Present
+ación Erik Latex/RespQrySI.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación 
+ICR/Presentación Erik Latex/RespQrySI.pdf): PDF inclusion: multiple pdfs with 
+page group included in a single page
+>]
+Overfull \vbox (8.61255pt too high) detected at line 472
+ []
+
+[62
+
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+grafoCR.pdf>] <consSimpGrafo.pdf, id=2797, 682.55pt x 174.6525pt>
+File: consSimpGrafo.pdf Graphic file (type pdf)
+
+<use consSimpGrafo.pdf>
+Package pdftex.def Info: consSimpGrafo.pdf used on input line 486.
+(pdftex.def)             Requested size: 170.63708pt x 43.66301pt.
+ <RespQryCI.pdf, id=2798, 324.21124pt x 437.635pt>
+File: RespQryCI.pdf Graphic file (type pdf)
+
+<use RespQryCI.pdf>
+Package pdftex.def Info: RespQryCI.pdf used on input line 486.
+(pdftex.def)             Requested size: 90.77852pt x 122.53696pt.
+ [63
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik Latex/
+consSimpGrafo.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Present
+ación Erik Latex/RespQryCI.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación 
+ICR/Presentación Erik Latex/RespQryCI.pdf): PDF inclusion: multiple pdfs with 
+page group included in a single page
+>])
+("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik Latex\
+presentacionICR_Erik.bbl") [64
+
+] [65
 
 
 ]
@@ -1347,28 +1705,29 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 17247 strings out of 493944
- 320348 string characters out of 3148281
- 443463 words of memory out of 3000000
- 19969 multiletter control sequences out of 15000+200000
- 13216 words of font info for 30 fonts, out of 3000000 for 9000
+ 17596 strings out of 493944
+ 325580 string characters out of 3148281
+ 447745 words of memory out of 3000000
+ 20200 multiletter control sequences out of 15000+200000
+ 17431 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,19n,63p,439b,1117s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Navigation35} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi0700.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1000.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfso1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfss0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfss1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss14
-40.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0500.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0700.pfb>
-Output written on presentacionICR_Erik.pdf (34 pages, 1801322 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/cm-super/sfsi0700.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfsi1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/cm-super/sfso1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
+-super/sfss0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+ss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss0900.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1000.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0500.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfsx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfsx1000.pfb>
+Output written on presentacionICR_Erik.pdf (65 pages, 3111923 bytes).
 PDF statistics:
- 1655 PDF objects out of 1728 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2987 PDF objects out of 3580 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 

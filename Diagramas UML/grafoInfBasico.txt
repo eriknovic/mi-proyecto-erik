@@ -1,0 +1,27 @@
+@startuml
+interface "exp:Juan_Lopez" as juan
+interface "exp:Jorge_Martinez" as jorge
+interface "exp:Karla_Guzman" as karla
+interface "exp:Carlos_Urbina" as carlos
+interface "exp:Jose_Zambrano" as jose
+interface "exp:Salvador_Sosa" as salvador
+
+() karla -up--> (exp:Estudiante) : "rdf:type"
+juan -up--> (exp:Estudiante) : "rdf:type"
+jorge -up--> (exp:Profesor) : "rdf:type"
+carlos -up--> (exp:Profesor) : "rdf:type"
+jose -up--> (exp:Investigador) : "rdf:type"
+salvador -up--> (exp:Investigador) : "rdf:type"
+
+(exp:Estudiante) -up--> (exp:Persona) : <color #Blue>rdfs:subClassOf</color>
+(exp:Profesor) -up--> (exp:Persona) : <color #Blue>rdfs:subClassOf</color>
+(exp:Investigador) -up--> (exp:Persona) : <color #Blue>rdfs:subClassOf</color>
+
+karla -up--> (exp:Persona) : <color #Red>rdf:type</color>
+juan -up--> (exp:Persona) : <color #Red>rdf:type</color>
+jorge -up--> (exp:Persona) : <color #Red>rdf:type</color>
+carlos -up--> (exp:Persona) : <color #Red>rdf:type</color>
+jose -up--> (exp:Persona) : <color #Red>rdf:type</color>
+salvador -up--> (exp:Persona) : <color #Red>rdf:type</color>
+
+@enduml

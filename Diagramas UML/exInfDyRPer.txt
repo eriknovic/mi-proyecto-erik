@@ -15,12 +15,12 @@ Ricardo -down-> Carolina : sirp:has-colleague
 Enrique -> Carolina : sirp:has-colleague
 Carolina -up-> Hector : sirp:has-colleague
 
-Ricardo -up-> (sirp:Professional) : <color #0000FF>rdf:type</color>
-Enrique -up-> (sirp:Professional) : <color #0000FF>rdf:type</color>
-Carolina -up-> (sirp:Professional) : <color #0000FF>rdf:type</color>
-Hector -> (sirp:Professional) : <color #0000FF>rdf:type</color>
+Ricardo -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+Enrique -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+Carolina -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+Hector -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
 
-Laura -down-> (sirp:Student) : <color #0000FF>rdf:type</color>
-Erik -down-> (sirp:Student) : <color #0000FF>rdf:type</color>
+Laura -[#Blue]-> (sirp:Student) : <color #Blue>rdf:type</color>
+Erik -[#Blue]-> (sirp:Student) :<color #Blue>rdf:type</color>
 
 @enduml
