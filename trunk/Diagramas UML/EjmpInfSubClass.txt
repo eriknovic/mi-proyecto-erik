@@ -1,0 +1,27 @@
+@startuml
+
+interface "sirp:ErikAlarconZamora" as () Erik
+interface "sirp:RicardoMarcelinJimenez" as Ricardo
+interface "sirp:HectorPerezUrbina" as Hector
+interface "sirp:CarolinaMedinaRamirez" as Carolina
+
+Erik -up-> (sirp:Student) : rdf:type
+Ricardo -up-> (sirp:Teacher) : rdf:type
+Carolina -up-> (sirp:Teacher) : rdf:type
+Hector -up-> (sirp:Employee) : rdf:type
+
+Ricardo  -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+Carolina -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+Hector -[#Blue]-> (sirp:Professional) : <color #Blue>rdf:type</color>
+
+Erik -[#Blue]-> (sirp:Person) : <color #Blue>rdf:type</color>
+Ricardo  -[#Blue]-> (sirp:Person) : <color #Blue>rdf:type</color>
+Carolina -[#Blue]-> (sirp:Person) : <color #Blue>rdf:type</color>
+Hector -[#Blue]-> (sirp:Person) : <color #Blue>rdf:type</color>
+
+(sirp:Teacher) -up-> (sirp:Professional) : rdfs:subClassOf
+(sirp:Employee) -up-> (sirp:Professional) : rdfs:subClassOf
+
+(sirp:Professional) -up-> (sirp:Person) : rdfs:subClassOf
+(sirp:Student) -up-> (sirp:Person) : rdfs:subClassOf
+@enduml
