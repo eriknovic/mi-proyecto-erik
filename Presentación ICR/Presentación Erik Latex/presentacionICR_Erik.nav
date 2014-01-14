@@ -159,15 +159,20 @@
 \headcommand {\beamer@subsubsectionentry {0}{2}{6}{5}{63}{Ejemplo de consulta en un modelo IV}}
 \headcommand {\slideentry {2}{6}{6}{63/63}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\sectionentry {3}{Referencias}{64}{Referencias}{0}}
+\headcommand {\sectionentry {3}{Prototipo (Aplicaci\'on)}{64}{Prototipo (Aplicaci\'on)}{0}}
 \headcommand {\beamer@sectionpages {26}{63}}
 \headcommand {\beamer@subsectionpages {48}{63}}
 \headcommand {\slideentry {3}{0}{7}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {3}{0}{7}{64/65}{}{0}}
-\headcommand {\beamer@framepages {64}{65}}
-\headcommand {\beamer@partpages {1}{65}}
-\headcommand {\beamer@subsectionpages {64}{65}}
-\headcommand {\beamer@sectionpages {64}{65}}
-\headcommand {\beamer@documentpages {65}}
-\headcommand {\def \inserttotalframenumber {65}}
+\headcommand {\sectionentry {4}{Referencias}{65}{Referencias}{0}}
+\headcommand {\beamer@sectionpages {64}{64}}
+\headcommand {\beamer@subsectionpages {64}{64}}
+\headcommand {\slideentry {4}{0}{8}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {4}{0}{8}{65/66}{}{0}}
+\headcommand {\beamer@framepages {65}{66}}
+\headcommand {\beamer@partpages {1}{66}}
+\headcommand {\beamer@subsectionpages {65}{66}}
+\headcommand {\beamer@sectionpages {65}{66}}
+\headcommand {\beamer@documentpages {66}}
+\headcommand {\def \inserttotalframenumber {66}}

@@ -30,4 +30,5 @@
 \beamer@subsubsectionintoc {2}{6}{3}{Ejecutar las consultas mediante un motor de b\'usqueda. SPARQL}{58}{0}{2}
 \beamer@subsubsectionintoc {2}{6}{4}{Ejemplo de consulta en un modelo}{60}{0}{2}
 \beamer@subsubsectionintoc {2}{6}{5}{Ejemplo de consulta en un modelo IV}{63}{0}{2}
-\beamer@sectionintoc {3}{Referencias}{64}{0}{3}
+\beamer@sectionintoc {3}{Prototipo (Aplicaci\'on)}{64}{0}{3}
+\beamer@sectionintoc {4}{Referencias}{65}{0}{4}
