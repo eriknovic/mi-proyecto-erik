@@ -1,0 +1,149 @@
+\section{Contexto y Motivación}
+
+\subsection{Memoria Corporativa}
+\begin{frame}[allowframebreaks]
+	\frametitle{Memoria Corporativa}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Definición}
+	\justifying 
+	La representación explícita, tácita, consistente y persistente del conocimiento de una organización. \cite{Ontoinra2002}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.2]{ConocimientoRyT} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{block}{Recurso de Información}
+	\justifying 
+	Un elemento que representa y encapsula una parte del conocimiento de una organización (investigaciones, colaboraciones, proyectos, cursos, temas de interés, objetos e ideas).
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.23]{EjemploMC} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.32]{NatMC} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+\subsection{Tecnologías Semánticas}
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Definición}
+	\justifying 
+	\textit{Un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}. \begin{scriptsize}\cite{SemTecRetr}\end{scriptsize}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.42]{TSWords} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Resource Description Framework (RDF)}
+\begin{frame}[allowframebreaks]
+	\frametitle{Resource Description Framework (RDF)}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Definición}
+	\justifying 
+	Marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\end{block}
+	
+	\begin{block}{Recurso}
+	\justifying 
+	Puede ser cualquier cosa (persona, documento, entidad del mundo real o concepto abstracto) que tiene un identificador único de recursos (URI).
+	\end{block}
+	
+	\begin{block}{Declaración}
+	\justifying 
+	Una afirmación de un hecho explícito sobre un recurso.
+	\begin{itemize}
+	\item \justifying Juan se llama ``Juan López Martíez''.
+	\item \justifying Juan estudia en la UAM.
+	\item \justifying Juan es un estudiante.
+	\end{itemize}
+	\end{block}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Tripleta RDF}
+	\justifying 
+	La forma básica para representa una descripción en un modelo semántico.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.5]{Tripletas} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.5]{GrafoRDF} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{SPARQL}
+\begin{frame}[allowframebreaks]
+	\frametitle{SPARQL}
+	\begin{block}{Definición}
+	\justifying 
+	Lenguaje de consulta y protocolo de acceso a RDF, para la búsqueda y recuperación de la información en un grafo RDF.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.52]{FormaSPARQL} 
+	\end{figure}
+\end{frame}
+
+\subsubsection{Ontología}
+\begin{frame}[allowframebreaks]
+	\frametitle{Ontología}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{alertblock}{Definición}
+	\justifying 
+	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
+	\end{alertblock}
+	
+	\begin{block}{Componentes}
+	\begin{itemize}
+	\item Componente Asertivo (ABox) está constituido por descripciones que afirman que los individuos son instancias de una clase o propiedad.
+	\item Componente Terminológico (TBox) describe las clases y propiedades relevantes, así como las reglas de inferencia que permiten aprovechar la manera en que las instancias se relacionan entre sí.
+	\end{itemize}
+	\end{block}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{block}{Reglas de inferencia o Axiomas}
+	\justifying 
+	Expresiones para enriquecer un grafo RDF con conocimiento implícito.\\
+	\textit{Algo que es evidente para una persona, no lo es para una maquina}.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.42]{GrafoAxiomBasico} 
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{block}{Razonador}
+	Un programa que deduce declaraciones a partir de los axiomas y declaraciones explícitas en la ontología.
+	\end{block} 
+	
+	\begin{figure}
+	\includegraphics[scale=0.4]{grafoInfBasico} 
+	\end{figure}
+\end{frame}
+
+\subsection{Integración Semántica}
+\begin{frame}
+	\frametitle{Integración Semántica}
+	\begin{block}{Definición}
+	\justifying
+	La búsqueda y recuperación significativa de información existente en los recursos de información para responder una consulta dada por un usuario.
+	\end{block}
+	
+	\begin{exampleblock}{Etapas}
+	\justifying
+	Representar el \textit{conocimiento} de los \textit{recursos de información} en un \textit{modelo semántico}.
+	
+	Buscar y recuperar información existente en la memoria corporativa mediante la interrogación del modelo semántico.
+	\end{exampleblock}
+\end{frame}
