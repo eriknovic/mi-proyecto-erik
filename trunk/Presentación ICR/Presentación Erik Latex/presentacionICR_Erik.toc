@@ -1,33 +1,39 @@
 \beamer@endinputifotherversion {3.26pt}
 \select@language {spanish}
-\beamer@sectionintoc {1}{Contexto y Motivaci\'on}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Memoria Corporativa}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{1}{Resource Description Framework (RDF)}{7}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{2}{SPARQL}{10}{0}{1}
-\beamer@subsubsectionintoc {1}{2}{3}{Ontolog\IeC {\'\i }a}{11}{0}{1}
-\beamer@subsectionintoc {1}{3}{Integraci\'on Sem\'antica}{14}{0}{1}
-\beamer@sectionintoc {2}{Descripci\'on del Problema}{15}{0}{2}
-\beamer@subsectionintoc {2}{1}{Pregunta Investigaci\'on}{15}{0}{2}
-\beamer@subsectionintoc {2}{2}{Objetivos}{16}{0}{2}
-\beamer@subsectionintoc {2}{3}{Metodolog\IeC {\'\i }a}{17}{0}{2}
-\beamer@subsectionintoc {2}{4}{Hip\'otesis}{20}{0}{2}
-\beamer@subsectionintoc {2}{5}{Aportaciones}{21}{0}{2}
-\beamer@sectionintoc {3}{Integraci\'on Sem\'antica de una Memoria Corporativa}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{Marco de Referencia}{22}{0}{3}
-\beamer@subsectionintoc {3}{2}{Arquitectura de la Integraci\'on Sem\'antica}{23}{0}{3}
-\beamer@subsectionintoc {3}{3}{Casos de Uso}{24}{0}{3}
-\beamer@subsectionintoc {3}{4}{Representaci\'on el Conocimiento}{25}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Identificar los principales recursos de informaci\'on}{25}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{26}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{3}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}{27}{0}{3}
-\beamer@subsectionintoc {3}{5}{Enriquecer el conocimiento en el modelo sem\'antico}{30}{0}{3}
-\beamer@subsubsectionintoc {3}{5}{1}{Herencia de Clases}{31}{0}{3}
-\beamer@subsubsectionintoc {3}{5}{2}{Herencia de Propiedades}{34}{0}{3}
-\beamer@subsubsectionintoc {3}{5}{3}{Dominio y Rango en las Propiedades}{36}{0}{3}
-\beamer@subsubsectionintoc {3}{5}{4}{Caracter\IeC {\'\i }sticas en las Propiedades}{38}{0}{3}
-\beamer@subsectionintoc {3}{6}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{39}{0}{3}
-\beamer@subsubsectionintoc {3}{6}{1}{Transformar las preguntas a una consultas SPARQL}{40}{0}{3}
-\beamer@subsubsectionintoc {3}{6}{2}{Uso de inferencia}{41}{0}{3}
-\beamer@sectionintoc {4}{Prototipo (Aplicaci\'on)}{44}{0}{4}
-\beamer@sectionintoc {5}{Referencias}{45}{0}{5}
+\beamer@sectionintoc {1}{Contexto y Motivaci\'on}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Memoria Corporativa}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Tecnolog\IeC {\'\i }as Sem\'anticas}{7}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{1}{Resource Description Framework (RDF)}{8}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{2}{SPARQL}{11}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{3}{Ontolog\IeC {\'\i }a}{12}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{4}{Inferencia}{14}{0}{1}
+\beamer@subsectionintoc {1}{3}{Integraci\'on Sem\'antica}{15}{0}{1}
+\beamer@sectionintoc {2}{Descripci\'on del Problema}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Pregunta Investigaci\'on}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{Objetivos}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Metodolog\IeC {\'\i }a}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Hip\'otesis}{21}{0}{2}
+\beamer@subsectionintoc {2}{5}{Aportaciones}{22}{0}{2}
+\beamer@sectionintoc {3}{Estado del Arte}{23}{0}{3}
+\beamer@subsectionintoc {3}{1}{Integraci\'on de la Informaci\'on}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{B\'usqueda y Recuperaci\'on de la Informaci\'on}{25}{0}{3}
+\beamer@subsectionintoc {3}{3}{Gesti\'on de una Memoria Corporativa}{27}{0}{3}
+\beamer@sectionintoc {4}{Integraci\'on Sem\'antica de una Memoria Corporativa}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Marco de Referencia}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Arquitectura de la Integraci\'on Sem\'antica}{29}{0}{4}
+\beamer@subsectionintoc {4}{3}{Casos de Uso}{30}{0}{4}
+\beamer@subsectionintoc {4}{4}{Representaci\'on el Conocimiento}{31}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Identificar los principales recursos de informaci\'on}{31}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{32}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{3}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}{33}{0}{4}
+\beamer@subsectionintoc {4}{5}{Enriquecer el conocimiento en el modelo sem\'antico}{36}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{1}{Herencia de Clases}{37}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{2}{Herencia de Propiedades}{40}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{3}{Dominio y Rango en las Propiedades}{42}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{4}{Caracter\IeC {\'\i }sticas en las Propiedades}{44}{0}{4}
+\beamer@subsectionintoc {4}{6}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{45}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{1}{Transformar las preguntas a una consultas SPARQL}{46}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{2}{Uso de inferencia}{47}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{3}{Uso de inferencia IV}{50}{0}{4}
+\beamer@sectionintoc {5}{Prototipo (Aplicaci\'on)}{51}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{52}{0}{6}
