@@ -1,7 +1,7 @@
 @startuml
-interface "http://www.mi-ejemplo.com/Juan_Lopez" as juan
+interface "sirp:RicardoMarcelinJimenez" as ricardo
 
-() juan -> ["Juan Lopez Martinez"] : "http://www.mi-ejemplo.com/tiene-nombre"
+() ricardo -> ["Ricardo Marcelin Jiménez"] : "sirp:has-name"
 
 
 @enduml

@@ -1,8 +1,8 @@
 @startuml
-interface "http://www.mi-ejemplo.com/Juan_Lopez" as juan
-interface "http://www.mi-ejemplo.com/UAM" as uam
+interface "sirp:RicardoMarcelinJimenez" as ricardo
+interface "sirp:UAM" as uam
 
-() juan -> uam: "http://www.mi-ejemplo.com/estudia-en"
+() ricardo -> uam: "sirp:worksIn"
 
 
 @enduml
