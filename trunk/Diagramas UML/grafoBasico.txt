@@ -1,33 +1,33 @@
 @startuml
-interface "exp:Juan_Lopez" as juan
-interface "exp:Jorge_Martinez" as jorge
-interface "exp:Karla_Guzman" as karla
-interface "exp:Carlos_Urbina" as carlos
-interface "exp:Jose_Zambrano" as jose
-interface "exp:Salvador_Sosa" as salvador
+interface "sirp:ErikAlarconZamora" as erik
+interface "sirp:CarolinaMedinaRamirez" as carolina
+interface "sirp:LauraMendez" as laura
+interface "sirp:RicardoMarcelinJimenez" as ricardo
+interface "sirp:EnriqueRodriguez" as enrique
+interface "sirp:MiguelLopez" as miguel
 interface "exp:UAM" as uam
 
-() karla -down-> uam : "exp:estudia-en"
-karla -up-> (exp:Estudiante) : "rdf:type"
+() laura -down-> uam : "sirp:studiesIn"
+laura -up-> (exp:Estudiante) : "rdf:type"
 
-juan -down-> ["Juan Lopez Martinez"] : "exp:tiene-nombre"
-juan -down-> uam : "exp:estudia-en"
-juan -up-> (exp:Estudiante) : "rdf:type"
+erik -down-> ["Erik Alarcón Zamora"] : "sirp:has-name"
+erik -down-> uam : "sirp:studiesIn"
+erik -up-> (exp:Estudiante) : "rdf:type"
 
-jorge -down-> uam : "exp:trabaja-en"
-jorge -up-> (exp:Profesor) : "rdf:type"
+carolina -down-> uam : "sirp:worksIn"
+carolina -up-> (exp:Profesor) : "rdf:type"
 
-carlos -down-> uam : "exp:trabaja-en"
-carlos -up-> (exp:Profesor) : "rdf:type"
+ricardo -down-> uam : "sirp:worksIn"
+ricardo -up-> (exp:Profesor) : "rdf:type"
 
-jose -down-> (exp:Investigador) : "rdf:type"
+enrique -down-> (exp:Investigador) : "rdf:type"
 
-salvador -up-> uam : "exp:trabaja-en"
-salvador -right-> (exp:Investigador) : "rdf:type"
+miguel -up-> uam : "sirp:worksIn"
+miguel -right-> (exp:Investigador) : "rdf:type"
 
-juan -> jorge : "exp:es-alumno"
-karla -> jorge : "exp:es-alumno"
+erik -> carolina : "sirp:has-advisor"
+laura -> carolina : "sirp:has-advisor"
 
-carlos -down-> jose : "exp:es-colega"
+ricardo -down-> enrique : "sirp:has-colleague"
 
 @enduml

@@ -18,67 +18,60 @@
 	\frametitle{Objetivos} 
 	\begin{alertblock}{Objetivo Principal}
 	\justifying 
-	Contribuir a la integración semántica de los recursos de información en una memoria corporativa, mediante el uso de las tecnologías semánticas.
+	Contribuir a la \textit{integración semántica} de los \textit{recursos de información} en \textit{una memoria corporativa}, mediante el uso de las \textit{tecnologías semánticas}.
 	\end{alertblock}
 	
 	\begin{block}{Objetivos Particulares}
 	\begin{enumerate}
-	\item \justifying Desarrollar una \textbf{\textit{marco de referencia}} para la \textit{integración semántica} de los \textit{recursos de información} existentes en una \textit{memoria corporativa}.
-	\item \justifying Implementar un \textbf{\textit{modelo semántico}} que representa el \textit{conocimiento explícito e implícito} de los \textit{recursos de información}.
-	\item \justifying Implementar un \textbf{\textit{prototipo de interfaz gráfica de usuario}} que permita a los usuarios una interacción amigable para la integración semántica de los recursos de información.
-	\item \justifying Evaluar los \textbf{\textit{resultados devueltos}} y \textbf{\textit{tiempos de procesamiento}} en la \textit{integración semántica} para el dominio de redes y telecomunicaciones.
+	\item \justifying \small Un \textbf{\textit{marco de referencia}} para la \textit{integración semántica} de los \textit{recursos de información}.
+	\item \justifying \small Un \textbf{\textit{modelo semántico}} que representa el \textit{conocimiento explícito e implícito} de los \textit{recursos de información}.
+	\item \justifying \small Un \textbf{\textit{prototipo de interfaz gráfica de usuario}} que permita a los usuarios consultar y visualizar la información de los recursos de información, interrogando un modelo semántico.
+	\item \justifying \small La evaluación de la calidad de los \textbf{\textit{resultados recuperados}} y los \textbf{\textit{tiempos de procesamiento}} de la \textit{integración semántica}.
 	\end{enumerate}
 	\end{block}
 \end{frame}
 
 \subsection{Metodología}
 \begin{frame}
-	\frametitle{Metodología}
+	\frametitle{Metodología I}
 	\begin{block}{Marco de Referencia}
 	\begin{enumerate}
-	\item \justifying Identificar los \textit{casos de uso} para encontrar los principales \textit{recursos de información} existentes en la memoria, así como los criterios de búsqueda asociados a éstos.
-	\item \justifying Evaluar las herramientas semánticas para la edición de descripciones semánticas, edición de reglas de inferencia, gestión de modelos semánticos.
-	\item \justifying Recopilar los recursos de información de acuerdo a los casos de uso.
+	\item \justifying \small Identificar los \textit{casos de uso}.
+	\item \justifying \small Evaluar las \textit{herramientas semánticas}.
+	\item \justifying \small Conformar los \textit{recurso de información} de la \textit{memoria corporativa}.
 	\end{enumerate}
 	
 	\begin{exampleblock}{Modelo Semántico}
 	\begin{enumerate}
 	\setcounter{enumi}{3}
-	\item \justifying Describir el conocimiento explícito de los \textit{recursos de información} recopilados en un modelo semántico (ontología).
-	\item \justifying Identificar y construir las reglas de inferencia, con base en el diagrama de clases.
+	\item \justifying \small Representar el \textit{conocimiento explícito} de los \textit{recursos de información} en un \textit{modelo semántico} (ontología).
+	\item \justifying \small Enriquecer el \textit{modelo semántico} con \textit{reglas de inferencia}.
 	\end{enumerate}
 	\end{exampleblock}
+	
+	\begin{enumerate}
+	\setcounter{enumi}{5}
+	\item \justifying \small Escribir las principales \textit{consultas} en la sintaxis correspondiente.
+	\item \justifying \small Emplear un razonador para hacer explícito el conocimiento implícito.
+	\item \justifying \small Buscar y recuperar información en la memoria corporativa, interrogando el modelo semántico inferido.
+	\end{enumerate}
 	\end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Metodología I}
-	\begin{block}{Marco de Referencia}
-	\begin{enumerate}
-	\setcounter{enumi}{5}
-	\item \justifying Identificar las preguntas en lenguaje natural y transformarlas a \textit{consultas SPARQL}.
-	\item \justifying Emplear un razonador para hacer explícito el conocimiento implícito.
-	\item \justifying Buscar y recuperar información en la memoria corporativa, interrogando el modelo semántico (ontología).
-	\end{enumerate}
-	\end{block}
-	
 	\frametitle{Metodología II}	
 	\begin{block}{Prototipo de interfaz gráfica de usuario}	
 	\begin{enumerate}
 	\setcounter{enumi}{8}
-	\item \justifying Diseñar un prototipo para interacción (búsqueda y navegación) amigable y trasparente de los usuarios de la memoria con la ontología.
-	\item \justifying Implementar el prototipo y realizar pruebas del mismo.
+	\item \justifying \small Construir el \textit{prototipo de interfaz de usuario} para la (búsqueda y navegación) de los usuarios en un modelo semántico.
 	\end{enumerate}
 	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Metodología III}
+	
 	\begin{block}{Evaluación}
 	\begin{enumerate}
-	\setcounter{enumi}{10}
-	\item \justifying Evaluar la calidad de los resultados con y sin inferencia, comparando los \textit{recursos relevantes recuperados} para una pregunta con los recursos que realmente responden la pregunta.
-	\item \justifying Evaluar los \textit{tiempos promedios} que toma la herramienta electa de gestión de los modelos semánticos, para consultar los modelos con/sin inferencia.
+	\setcounter{enumi}{9}
+	\item \justifying \small Evaluar la calidad de los resultados con y sin inferencia.
+	\item \justifying \small Evaluar los \textit{tiempos promedios} de consulta sobre modelos con/sin inferencia.
 	\end{enumerate}
 	\end{block}
 \end{frame}
@@ -100,11 +93,11 @@
 \begin{frame}
 	\frametitle{Aportaciones}
 	\begin{enumerate}
-	\item \justifying Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
-    \item \justifying Un modelo semántico que representa el conocimiento de una memoria corporativa, el cual tiene tres ramas principales (Personas, Recursos Digitales y Conceptos del Redes y Telecomunicaciones).
-    \item \justifying  Un prototipo (interfaz gráfica de usuario) para la interacción amigable (búsqueda y consulta de información) de los usuarios al modelo semántico.
+	\item \justifying Un \textit{marco de referencia} para lograr la \textit{integración semántica} de \textit{recursos de información}.
+    \item \justifying Un modelo semántico que representa el conocimiento de una memoria corporativa.
+    \item \justifying  Un prototipo (interfaz gráfica de usuario) para la interacción amigable (búsqueda y consulta de información) de los usuarios con el modelo semántico.
     \item \justifying Los resultados de nuestra evaluación experimental.
-    \item \justifying Un par de scripts para la generación automática y controlada de descripciones (conocimiento explícito) de los \textit{recursos de información}, con el fin de poblar la base de conocimiento.
+    \item \justifying Un par de scripts para la generación automática y controlada de descripciones (conocimiento explícito) de los \textit{recursos de información}.
 	\end{enumerate}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

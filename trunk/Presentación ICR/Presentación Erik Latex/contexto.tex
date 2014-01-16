@@ -1,7 +1,7 @@
 \section{Contexto y Motivación}
 
 \subsection{Memoria Corporativa}
-\begin{frame}[allowframebreaks]
+\begin{frame}
 	\frametitle{Memoria Corporativa}
 	%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{block}{Definición}
@@ -19,96 +19,6 @@
 	}
 	\end{figure}
 	%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\begin{figure}
-	\includegraphics[scale=0.32]{NatMC} 
-	\end{figure}
-	%%%%%%%%%%%%%%%%%%%%%%%
-\end{frame}
-
-\subsection{Tecnologías Semánticas}
-\begin{frame}
-	\frametitle{Tecnologías Semánticas}
-	\begin{block}{Definición}
-	\justifying 
-	\textit{Un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}. \begin{scriptsize}\cite{SemTecRetr}\end{scriptsize}
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.42]{TSWords} 
-	\end{figure}
-\end{frame}
-
-\subsubsection{Resource Description Framework (RDF)}
-\begin{frame}[allowframebreaks]
-	\frametitle{Resource Description Framework (RDF)}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{block}{Definición}
-	\justifying 
-	Marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.45]{Tripletas} 
-	\end{figure}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\begin{figure}
-	\includegraphics[scale=0.48]{GrafoRDF} 
-	\end{figure}
-\end{frame}
-
-\subsubsection{SPARQL}
-\begin{frame}[allowframebreaks]
-	\frametitle{SPARQL}
-	\begin{block}{Definición}
-	\justifying 
-	Lenguaje de consulta y protocolo de acceso a RDF, para la búsqueda y recuperación de la información en un grafo RDF.
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.52]{FormaSPARQL} 
-	\end{figure}
-\end{frame}
-
-\subsubsection{Ontología}
-\begin{frame}[allowframebreaks]
-	\frametitle{Ontología}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{alertblock}{Definición}
-	\justifying 
-	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
-	\end{alertblock}
-	
-	\begin{block}{Componentes}
-	\begin{itemize}
-	\item \textbf{\textit{Componente Asertivo (ABox)}} está constituido por descripciones que afirman que los individuos son instancias de una clase o propiedad.
-	\item \textbf{\textit{Componente Terminológico (TBox)}} describe las clases y propiedades relevantes, así como las reglas de inferencia que permiten aprovechar la manera en que las instancias se relacionan entre sí.
-	\end{itemize}
-	\end{block}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\begin{block}{Reglas de inferencia o Axiomas}
-	\justifying 
-	Expresiones para enriquecer un grafo RDF con conocimiento implícito.\\
-	\textit{-Algo que es evidente para una persona, no lo es para una maquina-}.
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.39]{GrafoAxiomBasico} 
-	\end{figure}
-\end{frame}
-
-\subsubsection{Inferencia}
-\begin{frame}
-	\frametitle{Inferencia}
-	\begin{block}{Razonador}
-	Un programa que deduce declaraciones a partir de los axiomas y declaraciones explícitas en la ontología.
-	\end{block} 
-	
-	\begin{figure}
-	\includegraphics[scale=0.52]{grafoInfBasico} 
-	\end{figure}
 \end{frame}
 
 \subsection{Integración Semántica}
@@ -125,4 +35,24 @@
 	
 	Buscar y recuperar información existente en la memoria corporativa mediante la interrogación del modelo semántico.
 	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Heterogeneidad y Significado de la Información}
+	\begin{figure}
+	\includegraphics[scale=0.30]{NatMC} 
+	\end{figure}
+\end{frame}
+
+\subsection{Tecnologías Semánticas}
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	\begin{block}{Definición}
+	\justifying 
+	\textit{Un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}. \begin{scriptsize}\cite{SemTecRetr}\end{scriptsize}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.42]{TSWords} 
+	\end{figure}
 \end{frame}
