@@ -3,31 +3,31 @@
 \beamer@sectionintoc {1}{Contexto y Motivaci\'on}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Memoria Corporativa}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Integraci\'on Sem\'antica}{4}{0}{1}
-\beamer@subsectionintoc {1}{3}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
-\beamer@sectionintoc {2}{Estado del Arte}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{8}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{1}{Integraci\'on a partir del uso de tecnolog\IeC {\'\i }as sem\'anticas}{8}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{2}{B\'usqueda y Recuperaci\'on de la Informaci\'on}{9}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{3}{Gesti\'on de una Memoria Corporativa}{10}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{4}{Comparativa}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Herramientas para la Integraci\'on Sem\'antica de Recursos de Informaci\'on}{12}{0}{2}
-\beamer@sectionintoc {3}{Propuesta}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Objetivos}{14}{0}{3}
-\beamer@subsectionintoc {3}{2}{Metodolog\IeC {\'\i }a}{15}{0}{3}
-\beamer@subsectionintoc {3}{3}{Aportaciones}{17}{0}{3}
-\beamer@sectionintoc {4}{Integraci\'on Sem\'antica de una Memoria Corporativa}{18}{0}{4}
-\beamer@subsectionintoc {4}{1}{Representaci\'on el Conocimiento}{21}{0}{4}
-\beamer@subsubsectionintoc {4}{1}{1}{Identificar los principales recursos de informaci\'on}{21}{0}{4}
-\beamer@subsubsectionintoc {4}{1}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{22}{0}{4}
-\beamer@subsubsectionintoc {4}{1}{3}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}{23}{0}{4}
-\beamer@subsectionintoc {4}{2}{Enriquecer el conocimiento en el modelo sem\'antico}{27}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{1}{Herencia de Clases}{29}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{2}{Herencia de Propiedades}{31}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{3}{Dominio y Rango en las Propiedades}{33}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{4}{Caracter\IeC {\'\i }sticas en las Propiedades}{35}{0}{4}
-\beamer@subsectionintoc {4}{3}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{36}{0}{4}
-\beamer@subsectionintoc {4}{4}{B\'usqueda + inferencia}{37}{0}{4}
-\beamer@sectionintoc {5}{Prototipo (Aplicaci\'on)}{41}{0}{5}
-\beamer@sectionintoc {6}{Evaluaci\'on}{45}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones y Recomendaciones}{49}{0}{7}
-\beamer@sectionintoc {8}{Referencias}{63}{0}{8}
+\beamer@subsectionintoc {1}{3}{Tecnolog\IeC {\'\i }as Sem\'anticas}{7}{0}{1}
+\beamer@sectionintoc {2}{Estado del Arte}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{9}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Integraci\'on a partir del uso de tecnolog\IeC {\'\i }as sem\'anticas}{9}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{B\'usqueda y Recuperaci\'on de la Informaci\'on}{10}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{3}{Gesti\'on de una Memoria Corporativa}{11}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{4}{Comparativa}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Herramientas para la Integraci\'on Sem\'antica de Recursos de Informaci\'on}{13}{0}{2}
+\beamer@sectionintoc {3}{Propuesta}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Objetivos}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Metodolog\IeC {\'\i }a}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Aportaciones}{21}{0}{3}
+\beamer@sectionintoc {4}{Integraci\'on Sem\'antica de una Memoria Corporativa}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Representaci\'on el Conocimiento}{32}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{1}{Identificar los principales recursos de informaci\'on}{32}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{2}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}{33}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{3}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}{34}{0}{4}
+\beamer@subsectionintoc {4}{2}{Enriquecer el conocimiento en el modelo sem\'antico}{40}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Herencia de Clases}{42}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Herencia de Propiedades}{44}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Dominio y Rango en las Propiedades}{46}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{4}{Caracter\IeC {\'\i }sticas en las Propiedades}{48}{0}{4}
+\beamer@subsectionintoc {4}{3}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{49}{0}{4}
+\beamer@subsectionintoc {4}{4}{B\'usqueda + inferencia}{50}{0}{4}
+\beamer@sectionintoc {5}{Prototipo (Aplicaci\'on)}{54}{0}{5}
+\beamer@sectionintoc {6}{Evaluaci\'on}{58}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones y Recomendaciones}{62}{0}{7}
+\beamer@sectionintoc {8}{Referencias}{76}{0}{8}
