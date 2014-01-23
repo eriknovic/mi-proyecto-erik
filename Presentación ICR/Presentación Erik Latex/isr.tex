@@ -1,14 +1,17 @@
 \section{Integración Semántica de una Memoria Corporativa}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\frametitle{Marco de Referencia}
+	\frametitle{Integración Semántica de una Memoria Corporativa}
 	\begin{block}{Etapas}
 		\begin{enumerate}
-		\item \justifying Representar las características y/o relaciones de los \textit{recursos de información} mediante el estándar RDF, para construir un modelo semántico.
-		\item \justifying Introducir \textit{reglas de inferencia} en el modelo semántico, para enriquecer con \textit{conocimiento implícito} de los \textit{recursos de información} y del dominio de la memoria.
-		\item \justifying Buscar y recuperar información en el modelo semántico para responder un conjunto consultas SPARQL.
+		\item \justifying Representar las características y/o relaciones de los \textit{recursos de información}, para construir un modelo semántico.
+		\item \justifying Introducir \textit{reglas de inferencia} en el modelo, para enriquecer con \textit{conocimiento implícito} de los \textit{recursos de información} y del dominio de la memoria.
+		\item \justifying Buscar y recuperar información en el modelo semántico para responder un conjunto consultas.
 		\end{enumerate}
 	\end{block}
+	\begin{figure}
+	\includegraphics[scale=0.25]{semtec} 
+	\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -169,9 +172,9 @@
 	\end{figure}
 	%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\begin{figure}
-	\includegraphics[scale=0.68]{HerenClassRecDigi}
-	\end{figure}
+%	\begin{figure}
+%	\includegraphics[scale=0.68]{HerenClassRecDigi}
+%	\end{figure}
 	%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\begin{figure}
@@ -265,16 +268,22 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Búsqueda + Inferencia}
-\begin{frame}[allowframebreaks]
-	\frametitle{Uso de inferencia}
-		
+\subsection{Búsqueda + inferencia}
+\begin{frame}
+	\frametitle{Búsqueda sin inferencia}
+
+	\begin{block}{SPARQL}
+	\justifying 
+	Grafo RDF sin inferencia
+	\end{block}
+	
 	\begin{figure}
 	\includegraphics[scale=0.3]{grafoSR}
-	\caption{Grafo RDF sin inferencia}
 	\end{figure}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Búsqueda sin inferencia}
 	\begin{figure}[htbp]
 	\centering
 	\subfigure[Consulta sin inferencia]{
@@ -284,18 +293,22 @@
 	\includegraphics[scale=0.28]{RespQrySI} 
 	}
 	\end{figure}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+\begin{frame}
+	\frametitle{Búsqueda con inferencia}
+	\begin{block}{SPARQL}
+	\justifying 
+	Grafo RDF con inferencia
+	\end{block}	
 	
 	\begin{figure}
 	\includegraphics[scale=0.37]{grafoCR}
-	\caption{Grafo RDF con inferencia}
 	\end{figure}	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{frame}
 
-\subsubsection{Uso de inferencia IV}
 \begin{frame}
-	\frametitle{Uso de inferencia IV}
+	\frametitle{Búsqueda con inferencia}
 	\begin{figure}[htbp]
 	\centering
 	\subfigure[Consulta con inferencia]{
