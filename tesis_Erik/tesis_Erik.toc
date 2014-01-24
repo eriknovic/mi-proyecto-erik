@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {2.1}Introducci\'on y Definiciones}{17}
 \contentsline {section}{\numberline {2.2}Marco de Descripci\'on de Recursos}{17}
 \contentsline {section}{\numberline {2.3}Lenguaje de Consulta sobre Grafos RDF (SPARQL)}{21}
-\contentsline {section}{\numberline {2.4}Reglas de Inferencia (RDF(S)/OWL) y Razonadores}{21}
+\contentsline {section}{\numberline {2.4}Reglas de Inferencia (RDF(S)/OWL) y Razonadores}{22}
 \contentsline {section}{\numberline {2.5}Ventajas de las Tecnolog\IeC {\'\i }as Sem\'anticas}{26}
 \contentsline {chapter}{\numberline {3}Estado del arte}{31}
 \contentsline {section}{\numberline {3.1}Integraci\'on Sem\'antica de Recursos de Informaci\'on}{31}

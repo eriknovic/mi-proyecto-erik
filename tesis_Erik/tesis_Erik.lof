@@ -7,8 +7,8 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Estructura b\'asica de una consulta SPARQL.}}{21}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Regla para indicar que un Metal-Liquido pertenece a las clases Metal y L\IeC {\'\i }quido.}}{25}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces ABox y TBox para ejemplificar el beneficio de utilizar un razonador y un motor de b\'usqueda.}}{29}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{29}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{29}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Consulta SPARQL para recuperar todos los individuos que son personas.}}{30}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Ontolog\IeC {\'\i }a con tripletas que han sido inferidas mediante un razonador.}}{30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura general para la Integraci\'on Sem\'antica de Recurso en una Memoria Corporativa.}}{45}
@@ -44,8 +44,8 @@
 \contentsline {figure}{\numberline {4.31}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{76}
 \contentsline {figure}{\numberline {4.32}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{77}
 \contentsline {figure}{\numberline {4.33}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{78}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{79}
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{80}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{80}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{81}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{85}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{88}

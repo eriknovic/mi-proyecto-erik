@@ -45,7 +45,7 @@ A continuación se describen los elementos que están en las tres capas de nuestra
 
 Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Los principales usuarios en la integración son los \textbf{\textit{profesores-investigadores}} del núcleo del área de Redes y Telecomunicaciones, así como los \textbf{\textit{estudiantes}} que realizan algún proyecto o servicios social y están a cargo de profesor del núcleo.
 
-En esta metodología, el \textit{elemento clave} es el \textbf{\textit{caso de uso}}. Porque un caso de uso encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: 1) \textit{qué características y relaciones son significativas}, 2) \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}. Los \textit{casos de uso} básicos en esta metodología son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}.
+En esta metodología, el \textit{elemento clave} es el \textbf{\textit{caso de uso}}. Porque un caso de uso encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: \textit{qué características y relaciones son significativas}, \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}. Los \textit{casos de uso} básicos en esta metodología son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}.
 
 \begin{enumerate}
 \item La cartografía de competencias es la búsqueda y recuperación de las personas a partir de las características personales y profesionales (competencias, capacidades, conocimientos en los temas del dominio).
@@ -124,7 +124,7 @@ La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores 
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
-\textbf{Nombre} & \textbf{Identificador}\\
+\textbf{Nombres} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Alfonso Prieto & \textit{\textbf{sirp:}AlfonsoPrieto}  \\
@@ -150,14 +150,14 @@ Enrique Rodriguez & \textit{\textbf{sirp:}EnriqueRodriguez} \\
 \label{tab:uriper}
 \end{table}
 
-La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales pertenecientes a los profesores de RyT. En la primer columna de esta tabla se enuncia el nombre completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
+La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales pertenecientes a los profesores de RyT. En la primer columna de esta tabla se enuncia el título completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.2in}}
 \hline
-\textbf{Nombre} & \textbf{Identificador}\\
+\textbf{Títulos} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Ontology engineering & \textit{\textbf{sird:}RR-4396-2002-pdf}  \\
@@ -184,7 +184,7 @@ La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades qu
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
 \hline
-\textbf{Característica o relación} & \textbf{Identificador}\\
+\textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Nombre & \textit{\textbf{sirp:}has-name}  \\
@@ -213,7 +213,7 @@ La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades d
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
-\textbf{Característica o relación} & \textbf{Identificador}\\
+\textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Título & \textit{\textbf{sird:}has-title}  \\
@@ -436,7 +436,7 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
-\textbf{Propiedad} & \textbf{Dominio} & \textbf{Rango}\\
+\textbf{Propiedades} & \textbf{Dominios} & \textbf{Rangos}\\
 \hline
 \hline
 \textit{\textbf{sirp:}has-name} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}string} \\
@@ -479,7 +479,7 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \centering
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
-\textbf{Propiedad} & \textbf{Dominio} & \textbf{Rango}\\
+\textbf{Propiedades} & \textbf{Dominios} & \textbf{Rangos}\\
 \hline
 \hline
 \textit{\textbf{sird:}has-title} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{xsd:}string} \\
@@ -628,9 +628,15 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \label{sec:byrKrec} 
 Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
 
-En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT). Esta búsqueda y recuperación se hace a partir de tres puntos clave: 1) \textit{identificar las preguntas en lenguaje natural}, 2) \textit{transformar las preguntas a una consultas SPARQL} y 3) \textit{ejecutar las consultas mediante un motor de búsqueda SPARQL}.
+En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT). Esta búsqueda y recuperación se hace a partir de tres puntos clave:
 
-La \textbf{\textit{identificación de las preguntas en lenguaje natural}} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
+\begin{enumerate}
+\item Identificar las preguntas en lenguaje natural.
+\item Transformar las preguntas a una consultas SPARQL
+\item Ejecutar las consultas mediante un motor de búsqueda SPARQL
+\end{enumerate}
+
+La \textit{identificación de las preguntas en lenguaje natural} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
 
 Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textit{la búsqueda de recursos digitales} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
 
@@ -649,25 +655,25 @@ Los parámetros de búsqueda en la cartografía competencias son:
 A partir de estos parámetros de búsqueda, se hallaron un conjunto de preguntas básicas. El siguiente listado presenta las diecinueve preguntas básicas para la \textit{cartografía de competencias}, donde cada pregunta tiene un respectivo \textit{identificador de consulta}.
 
 \begin{itemize}
-\item \textbf{\textit{Q1.1}}.- ¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?
-\item \textbf{\textit{Q1.2}}.- ¿Cuáles son los nombres, sitios web y los lugares donde laboran las personas del RyT?
-\item \textbf{\textit{Q1.3}}.- ¿Quiénes son mayores de 20 años y menores de 45 años?
-\item \textbf{\textit{Q1.4}}.- ¿Cuáles son los nombres y sitios web de los profesionistas del área de RyT?
-\item \textbf{\textit{Q1.5}}.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
-\item \textbf{\textit{Q1.6}}.- ¿Quiénes son estudiantes y leen en inglés?
-\item \textbf{\textit{Q1.7}}.- ¿Quienes hablan, leen y escriben en inglés?
-\item \textbf{\textit{Q1.8}}.- ¿Qué estudiantes saben algo de inglés?
-\item \textbf{\textit{Q1.9}}.- ¿Qué profesores tienen la capacidad de síntesis?
-\item \textbf{\textit{Q1.10}}.- ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?
-\item \textbf{\textit{Q1.11}}.- ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?
-\item \textbf{\textit{Q1.12}}.- ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?
-\item \textbf{\textit{Q1.13}}.- ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?
-\item \textbf{\textit{Q1.14}}.- ¿Quiénes trabajan en una Universidad?
-\item \textbf{\textit{Q1.15}}.- ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?
-\item \textbf{\textit{Q1.16}}.- ¿Qué personas tienen como asesor a Carolina Medina?
-\item \textbf{\textit{Q1.17}}.- ¿Quiénes son los colegas de Ricardo Marcelin?
-\item \textbf{\textit{Q1.18}}.- ¿Cuáles son los nombres y correos de las personas que conocen a Carolina Medina Ramírez?
-\item \textbf{\textit{Q1.19}}.- ¿Qué personas son profesores-investigadores?
+\item[ ] \textbf{Q1.1}.- ¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?
+\item[ ] \textbf{Q1.2}.- ¿Cuáles son los nombres, sitios web y los lugares donde laboran las personas del RyT?
+\item[ ] \textbf{Q1.3}.- ¿Quiénes son mayores de 20 años y menores de 45 años?
+\item[ ] \textbf{Q1.4}.- ¿Cuáles son los nombres y sitios web de los profesionistas del área de RyT?
+\item[ ] \textbf{Q1.5}.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
+\item[ ] \textbf{Q1.6}.- ¿Quiénes son estudiantes y leen en inglés?
+\item[ ] \textbf{Q1.7}.- ¿Quienes hablan, leen y escriben en inglés?
+\item[ ] \textbf{Q1.8}.- ¿Qué estudiantes saben algo de inglés?
+\item[ ] \textbf{Q1.9}.- ¿Qué profesores tienen la capacidad de síntesis?
+\item[ ] \textbf{Q1.10}.- ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica?
+\item[ ] \textbf{Q1.11}.- ¿Qué profesores tienen conocimientos en Sistemas Distribuidos?
+\item[ ] \textbf{Q1.12}.- ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP?
+\item[ ] \textbf{Q1.13}.- ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos?
+\item[ ] \textbf{Q1.14}.- ¿Quiénes trabajan en una Universidad?
+\item[ ] \textbf{Q1.15}.- ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica?
+\item[ ] \textbf{Q1.16}.- ¿Qué personas tienen como asesor a Carolina Medina?
+\item[ ] \textbf{Q1.17}.- ¿Quiénes son los colegas de Ricardo Marcelin?
+\item[ ] \textbf{Q1.18}.- ¿Cuáles son los nombres y correos de las personas que conocen a Carolina Medina Ramírez?
+\item[ ] \textbf{Q1.19}.- ¿Qué personas son profesores-investigadores?
 \end{itemize}
 
 De la misma manera que la cartografía, los principales criterios de búsqueda para los recursos digitales son: 
@@ -684,16 +690,16 @@ De la misma manera que la cartografía, los principales criterios de búsqueda par
 Estos parámetros de búsqueda dieron pauta a la búsqueda de las principales preguntas para este \textit{caso de uso}. A continuación, se listan las diez preguntas principales que se hallaron para la búsqueda de recursos digitales.
 
 \begin{itemize}
-\item \textbf{\textit{Q2.1}}.- ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?
-\item \textbf{\textit{Q2.2}}.- ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?
-\item \textbf{\textit{Q2.3}}.- ¿Qué recursos fueron publicados por la UAM?
-\item \textbf{\textit{Q2.4}}.- ¿Qué documentos sirven para dar un curso de Sistemas P2P?
-\item \textbf{\textit{Q2.5}}.- ¿Qué recursos multimedia son mayores al año 2009?
-\item \textbf{\textit{Q2.6}}.- ¿Cuáles documentos tratan sobre Ontologías?
-\item \textbf{\textit{Q2.7}}.- ¿Qué recursos fueron publicados en una Revista científica?
-\item \textbf{\textit{Q2.8}}.- ¿Qué recursos tienen en su descripción las palabras "linked data"?
-\item \textbf{\textit{Q2.9}}.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
-\item \textbf{\textit{Q2.10}}.- ¿Cuál son las tesis de Samuel Hernandez Maza?
+\item[ ] \textbf{Q2.1}.- ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT?
+\item[ ] \textbf{Q2.2}.- ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos?
+\item[ ] \textbf{Q2.3}.- ¿Qué recursos fueron publicados por la UAM?
+\item[ ] \textbf{Q2.4}.- ¿Qué documentos sirven para dar un curso de Sistemas P2P?
+\item[ ] \textbf{Q2.5}.- ¿Qué recursos multimedia son mayores al año 2009?
+\item[ ] \textbf{Q2.6}.- ¿Cuáles documentos tratan sobre Ontologías?
+\item[ ] \textbf{Q2.7}.- ¿Qué recursos fueron publicados en una Revista científica?
+\item[ ] \textbf{Q2.8}.- ¿Qué recursos tienen en su descripción las palabras ``linked data''?
+\item[ ] \textbf{Q2.9}.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
+\item[ ] \textbf{Q2.10}.- ¿Cuál son las tesis de Samuel Hernandez Maza?
 \end{itemize}
 
 Las preguntas para los dos casos de uso fueron electas, porque algunas utilizan el conocimiento explícito y otras aprovechan el conocimiento implícito.

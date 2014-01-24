@@ -3,11 +3,16 @@
 
 \section{Introducción y Definiciones}
 \label{sec:intTS}
-La \textbf{\textit{semántica}} \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de éstas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
+La semántica \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de éstas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
 
-Las \textbf{\textit{tecnologías semánticas}} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías: 1) \textbf{\textit{mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje}} y 2) \textbf{\textit{técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado}}.
+Las \textit{tecnologías semánticas} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías:
 
-La categoría para la integración de la información (búsqueda) es la segunda (\textit{técnicas para describir formalmente el conocimiento}), porque al describir formalmente la información y el conocimiento en los recursos, se crea una \textbf{\textit{capa de conocimiento}} en los recursos. La finalidad de esta capa es que los procesos automáticos puedan \textit{acceder, procesar, razonar, combinar, reutilizar y compartir la información y su significado} \cite{OntoTecRrpKnw}. De esta manera, se podrá mejorar la búsqueda de información, ya que se evitan problemas de ambigüedad y las personas obtendrán resultados más significativos de acuerdo al contexto del dominio dado.
+\begin{enumerate}
+\item Mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje.
+\item Técnicas para describir formalmente las palabras, información y el conocimiento para un dominio especializado
+\end{enumerate}
+
+La categoría para la \textit{integración semántica} es la segunda (técnicas para describir formalmente el conocimiento), porque al describir formalmente la información y el conocimiento en los recursos, se crea una capa de conocimiento en los recursos de información. La finalidad de esta capa es que los procesos automáticos puedan \textit{acceder, procesar, razonar, combinar, reutilizar y compartir la información y su significado} \cite{OntoTecRrpKnw}. De esta manera, se podrá mejorar la búsqueda de información, ya que se evitan problemas de ambigüedad y las personas obtendrán resultados más significativos de acuerdo al contexto del dominio dado.
 
 %Las herramientas, metodologías y estándares para construir esta capa, se describen en las siguientes secciones de este presente Capítulo \ref{cap:ets}.
 
@@ -22,11 +27,11 @@ La categoría para la integración de la información (búsqueda) es la segunda (\te
 
 \section{Marco de Descripción de Recursos}
 \label{sec:rdf} 
-Las \textit{tecnologías semánticas} proponen al \textbf{\textit{marco de descripción de recursos}} (RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}}\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de \textit{expresar este conocimiento} (\textbf{\textit{modelar}}) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
+Las \textit{tecnologías semánticas} proponen al \textbf{marco de descripción de recursos} (\textit{Resource Description Framework} RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}}\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de esta representación (modelo) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
 
-En el marco RDF se tienen tres conceptos claves \cite{SwarmComp}: \textbf{\textit{1) Recurso, 2) Propiedad y 3) Sentencia}}.
+En el marco RDF se tienen tres conceptos claves \cite{SwarmComp}: \textbf{Recurso}, \textbf{Propiedad} y \textbf{Sentencia}.
 
-El \textbf{\textit{recurso}} es cualquier \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se quiera representar. Cualquier recurso en rdf debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otros. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. En la Tabla \ref{tab:rec}, se muestran algunos identificadores URI para cinco recursos.
+El \textit{recurso} es una \textit{persona, lugar, documento, página web, objeto abstracto o físico} que se está representado. Cualquier recurso en RDF debe tener un identificador único de recursos (URI\label{sym:uri}), para distinguirlo de otros. Un URI es ``\textit{una cadena compacta de caracteres que proporciona un medio simple y extensible para la identificación de un recurso}'' \cite{rfc3986}. En la Tabla \ref{tab:rec}, se muestran algunos identificadores URI para cinco recursos.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -51,7 +56,7 @@ Mamífero & \url{http://www.mi-ejemplo.com/mamifero}\\
 \label{tab:rec}
 \end{table}
 
-La \textbf{\textit{propiedad}} es un \textit{aspecto significativo, característica, metadato (datos de datos)o relación} que se describe del recurso. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
+La \textit{propiedad} es un \textit{aspecto significativo, característica, metadato (datos de datos) o relación} que se describe de un recurso. Por ejemplo, en una persona los metadatos y relaciones interesantes son: \textit{nombre, edad, teléfono, correo electrónico, habilidad lingüística, nivel de estudios o relación amistad}; en un libro los metadatos interesantes son: \textit{título, autor, isbn, resumen, edición, editorial, año de publicación, volumen o referencia}.
 
 Estas propiedades indican acción entre dos recursos, por ello, es común que el \textit{nombre de una propiedad} empiece por un verbo. Estas propiedades se identifican con URI y deben tener un significado bien definido, para expresar sin ambigüedad su funcionalidad. En la Tabla \ref{tab:prop} se ejemplifican las propiedades asociadas a determinados metadatos.
 
@@ -76,7 +81,7 @@ referencia & \url{http://www.mi-ejemplo.com/refiere-a}\\
 \label{tab:prop}
 \end{table}
 
-Los identificadores URI de los recursos y propiedades son cadenas con una longitud larga. Para abreviar estas cadenas se emplea un \textbf{\textit{prefijo}}. Un prefijo sustituye la secuencia de caracteres desde \textbf{\textit{\url{http://}}} hasta el comienzo del  \textbf{\textit{nombre del recurso o propiedad}} por una \textbf{\textit{abreviación}}. Por ejemplo, el prefijo ``\textit{exp}'' es la abreviación de esta URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades \textit{Juan Lopez, Mamífero, nombre y conocido} de las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente manera.
+Los identificadores URI de los recursos y propiedades son cadenas con una longitud larga. Para abreviar estas cadenas se emplea un \textit{prefijo}. Un prefijo sustituye la secuencia de caracteres desde \textit{\url{http://}} hasta el comienzo del \textit{nombre del recurso o propiedad}, por una abreviación. Por ejemplo, el prefijo ``\textit{exp}'' es la abreviación de esta URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades \textit{Juan Lopez, Mamífero, nombre y conocido} de las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente manera.
 
 \begin{itemize}
 \item exp:Juan\_Lopez
@@ -85,12 +90,12 @@ Los identificadores URI de los recursos y propiedades son cadenas con una longit
 \item exp:conoce-a
 \end{itemize}
 
-La \textbf{\textit{declaración}} \cite{SurvSemWeb2012} (sentencia o descripción) es una \textbf{\textit{afirmación de un hecho explícito}} de un recurso, en términos de una \textit{propiedad de objeto o dato} y el \textit{valor} asignado a ella (otro recurso o literal). Estas declaraciones representan el conocimiento o información explícita de los recurso. La forma básica para escribir una declaración, es la \textbf{\textit{tripleta}} \cite{SemWebTim}. La notación de una tripleta es: \textit{sujeto-predicado-objeto}. 
+La \textit{declaración} \cite{SurvSemWeb2012} (sentencia o descripción) es una \textit{afirmación de un hecho explícito} de un recurso, en términos de una propiedad (objeto o dato) y el \textit{valor} asignado a ella (otro recurso o literal). Estas declaraciones representan el conocimiento o información explícita de los recurso. La forma básica para escribir una declaración, es la \textbf{tripleta} \cite{SemWebTim}. La notación de una tripleta es: \textit{sujeto-predicado-objeto}. 
 
 \begin{enumerate}
-\item \textbf{\textit{Sujeto}} es el recurso que se describe.
-\item \textbf{\textit{Predicado}} es la propiedad.
-\item \textbf{\textit{Objeto}} es otro recurso o una literal (cadena o entero) que describe el predicado.
+\item \textbf{Sujeto} es el recurso que se describe.
+\item \textbf{Predicado} es la propiedad.
+\item \textbf{Objeto} es otro recurso o una literal (cadena o entero) que describe el predicado.
 \end{enumerate}
 
 En la Figura \ref{fig:triple} se ejemplifican las tripletas que están asociadas a las siguientes declaraciones: 1) \textit{Juan estudia en la UAM}, 2)\textit{Juan tiene como mascota a kitty}, 3) \textit{Juan es conocido de Jorge}, 4) \textit{Jorge tiene 28 años} y 5) \textit{El libro de matemáticas discretas fue escrito por Jorge}.
@@ -102,7 +107,7 @@ En la Figura \ref{fig:triple} se ejemplifican las tripletas que están asociadas 
 \label{fig:triple}
 \end{figure}
 
-El marco RDF proporciona la propiedad \textbf{\textit{tipo (type)}} para indicar que \textit{un recurso pertenece a una determinada clase}. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir y hacer declaraciones sobre los recursos, porque nos permite clasificar a los recursos. La tripleta asociada a esta descripción es: \textit{prefijo:recurso \textbf{rdf:type} prefijo:Clase}. Para ejemplificar esto: los recursos Jorge, Juan, y Pablo son personas, mientras los recursos fido, kitty, orión son mascotas. Las respectivas tripletas de estos se muestran en la Tabla \ref{tab:asign}.
+El marco RDF proporciona la propiedad \textbf{tipo (type)} para indicar que un recurso pertenece a una determinada clase. Esta propiedad tiene el siguiente URI \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#type} o en su forma compacta ``\textit{rdf:type}''. La propiedad rdf:type es una de las más importantes para describir y hacer declaraciones sobre los recursos, porque nos permite clasificar a los recursos. La tripleta asociada a esta descripción es: \textit{prefijo:recurso} \textbf{rdf:type} \textit{prefijo:Clase}. Para ejemplificar esto: los recursos Jorge, Juan, y Pablo son personas, mientras los recursos fido, kitty, orión son mascotas. Las respectivas tripletas de estos se muestran en la Tabla \ref{tab:asign}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -123,9 +128,9 @@ exp:Pablo rdf:type exp:Persona & exp:orion rdf:type exp:Mascota\\
 \label{tab:asign}
 \end{table}
 
-Un \textbf{\textit{grafo estructurado y dirigido}} es la estructura para visualizar las tripletas. Este \textbf{\textit{grafo RDF}} \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar las tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
+Un \textit{grafo estructurado y dirigido} es la estructura para visualizar las tripletas. Este grafo RDF \cite{SwarmComp} está compuesto por nodos, aristas y etiquetas para representar las tripletas. El nodo origen es el sujeto, el nodo destino es objeto, mientras la etiqueta de la arista es la propiedad que vincula al nodo origen y al nodo destino.
 
-La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a las tripletas de la Figura \ref{fig:triple}. En este grafo, los nodos circulares son recursos y los nodos rectangulares son literales, el nodo destino es aquel a quien apunta la \textit{punta de flecha}, mientras el otro nodo es el origen.
+La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a las tripletas de la Figura \ref{fig:triple}. En este grafo, los nodos circulares son recursos y los nodos rectangulares son literales, el nodo destino es aquel a quien apunta la punta de flecha, mientras el otro nodo es el origen.
 
 \begin{figure}[!htb]
 \centering
@@ -155,9 +160,9 @@ En el marco RDF, existen distintas sintaxis para escribir y almacenar las triple
 
 \section{Lenguaje de Consulta sobre Grafos RDF (SPARQL)}
 \label{sec:lsparql}
-Las tecnologías semánticas proponen al lenguaje \textbf{\textit{SPARQL}} como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}, para la búsqueda y recuperación de la información en un grafo RDF. 
+Las tecnologías semánticas proponen al lenguaje SPARQL (\textit{Protocol and RDF Query Language}) como \textit{lenguaje de consulta y protocolo de acceso a RDF} \cite{SPARQL}, para la búsqueda y recuperación de la información en un grafo RDF. 
 
-La idea básica de una \textbf{\textit{consulta SPARQL}} es encontrar conjuntos de tripletas en el grafo RDF que coincidan con un \textbf{\textit{patrón tripleta}}. Un \textit{patrón tripleta} es parecido a una \textit{tripleta RDF}, \textit{excepto que el sujeto, predicado y objeto pueden ser una variable}. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
+La idea básica de una \textit{consulta SPARQL} es encontrar conjuntos de tripletas en el grafo RDF que coincidan con un patrón tripleta. Un \textit{patrón tripleta} es parecido a una tripleta RDF, excepto que el sujeto, predicado y objeto pueden ser una variable. La estructura genérica de una consulta SPARQL se presenta en la Figura \ref{fig:sparql}.
 
 \begin{figure}[!htb]
 \centering
@@ -166,31 +171,47 @@ La idea básica de una \textbf{\textit{consulta SPARQL}} es encontrar conjuntos d
 \label{fig:sparql}
 \end{figure}
 
-Un motor de consulta SPARQL a partir de estas consultas básicas, realiza las siguientes operaciones: 1) interpretar una consulta SPARQL, 2) comparar los \textit{patrones tripleta} con el \textit{grafo RDF}, y 3) recuperar los valores asociados a las variables de la cláusula SELECT. Los resultados que proporciona este motor son \textit{conjuntos de datos}.
+Un motor de consulta SPARQL a partir de estas consultas básicas, realiza las siguientes operaciones:
 
+\begin{enumerate}
+\item Interpretar una consulta SPARQL.
+\item Comparar los \textit{patrones tripleta} con las tripletas del \textit{grafo RDF}.
+\item Recuperar los valores asociados a las variables de la cláusula SELECT.
+\end{enumerate}
+
+%Los resultados que proporciona este motor son \textit{conjuntos de datos}.
 \section{Reglas de Inferencia (RDF(S)/OWL) y Razonadores}
 \label{sec:reginf} 
 %En esta sección hay que describir de manera general a las tecnologías semánticas. Empezamos diciendo que todo tiene identificadores únicos (URIs), luego introducimos RDF y decimos que el modelo de datos está basado en triples, que pueden ser utilizados para describir nuestro dominio (:Juan :conoce-a :María). Posteriormente, describimos SPARQL y mostramos algunas consultas que podemos utilizar para recuperar información contenida en un conjunto de triples en RDF almacenado en un triplestore. Luego, mencionamos que los grafos en RDF pueden ser enriquecidos con reglas de inferencia o axiomas a través de lenguajes como RDFS, OWL, y SWRL, que nos permiten modelar conocimiento de nuestro dominio, y damos ejemplos básicos. Finalmente, mencionamos que existen razonadores genéricos que nos permiten explotar los axiomas en nuestros modelos u ontologías.
 %\section{Ontología}
 %\label{sec:onto}
-En las tecnologías semánticas, el concepto clave es la \textbf{\textit{ontología}} para representar (modelar) y gestionar el conocimiento de un dominio particular. Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
+En las tecnologías semánticas, el concepto clave es la \textit{ontología} para representar (modelar) y gestionar el conocimiento de un dominio particular. Varios investigadores en las TI, como: Newell, Genesereth y Nilsson, Neches y Gruber, han definido este concepto. Nosotros elegimos la siguiente definición: ``\textit{Una ontología es una especificación formal y explícita de una conceptualización compartida}\cite{Gruber}. En esta definición se tienen las siguiente características \cite{OntoTecRrpKnw}, \cite{Staab}.
 
 \begin{itemize}
-\item \textit{\textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de los conceptos, funciones, relaciones, restricciones y otros objetos relevantes en dicho fenómeno}.
-\item \textit{\textbf{Explícita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos}.
-\item \textit{\textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sea comprensible por los procesos automáticos}.
-\item \textit{\textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas}.
+\item \textbf{Conceptualización} es una visión simplificada de algún fenómeno en el mundo que queremos representar a partir de los conceptos, funciones, relaciones, restricciones y otros objetos relevantes en dicho fenómeno.
+\item \textbf{Explícita} consiste en definir expresa y claramente los conceptos así como las restricciones sobre ellos.
+\item \textbf{Formal} significa que los elementos de una conceptualización deben ser representados en un lenguaje para que sea comprensible por los procesos automáticos.
+\item \textbf{Compartida} se refiere a que la conceptualización debe ser consensuada y aceptada por el grupo de personas.
 \end{itemize}
 
-La finalidad de una \textbf{\textit{ontología de un área investigación}} es \textit{permitir encontrar información pertinente sobre temas especializados para los grupos de investigación}. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor pasen más tiempo en realizar sus actividades de investigación.
+La finalidad de una \textit{ontología de un área investigación} es permitir encontrar información pertinente sobre temas especializados para los grupos de investigación. De esta manera, estas personas en vez de dedicar tiempo en la búsqueda, mejor pasen más tiempo en realizar sus actividades de investigación.
 
-Los principales objetivos en el uso de una ontología son \cite{Gruber}: \textit{1) La construcción de un vocabulario conceptual formal y consensuado para un dominio dado}. \textit{2) Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario}. \textit{3) Un vocabulario para construir descripciones y comunicar hechos.} \textit{4) Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado}.  \textit{5) Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos}. \textit{6) La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología}. \textit{7) Personas y procesos consulten información mediante motores de búsqueda y razonadores}
+Los principales objetivos en el uso de una ontología son \cite{Gruber}:
+\begin{enumerate}
+\item La construcción de un vocabulario conceptual formal y consensuado para un dominio dado.
+\item Un conjunto de reglas para combinar los conceptos y relaciones, de esta manera, componer expresiones complejas en el vocabulario.
+\item Un vocabulario para construir descripciones y comunicar hechos.
+\item Personas y procesos automáticos interpreten sin ambigüedad el conocimiento y vocabulario de un dominio dado.
+\item Personas y procesos intercambien y reutilicen el conocimiento para diferentes propósitos.
+\item La inferencia de información a partir de un programa especializado (razonador) y los hechos en una ontología.
+\item Personas y procesos consulten información mediante motores de búsqueda y razonadores.
+\end{enumerate}
 
 Una ontología tiene tres elementos clave \cite{Markus2012DLprimer}, \cite{protegeManual}:
 \begin{itemize}
-\item[$-$] Clase (Class) representa una colección de objetos que comparten características comunes. 
-\item[$-$] Individuo (Individual) es el nombre de un objeto específico que pertenece a alguna clase. 
-\item[$-$] Propiedad (Property) describe relaciones binarias entre los objetos.
+\item[$-$] \textbf{Clase} (Class) representa una colección de objetos que comparten características comunes. 
+\item[$-$] \textbf{Individuo} (Individual) es el nombre de un objeto específico que pertenece a alguna clase. 
+\item[$-$] \textbf{Propiedad} (Property) describe relaciones binarias entre los objetos.
 \begin{itemize}
 \item Propiedad de Objeto (Object Property) son relaciones entre objetos.
 \item Propiedad de Dato (Data Property) son relaciones entre un objeto y una literal (cadena, entero).
@@ -199,38 +220,38 @@ Una ontología tiene tres elementos clave \cite{Markus2012DLprimer}, \cite{proteg
 
 Una ontología tiene dos componentes \cite{Magdalena}:
 \begin{itemize}
-\item Un componente asertivo (ABox\label{sym:abox}) representa el conocimiento e información explícita en los recursos del dominio. Este componente está constituido por las declaraciones (descripciones o hechos verdaderos) de los recursos que afirman que los individuos son instancias de una clase o propiedad. Por ejemplo, puede afirmarse que: \textit{el curso \textbf{Temas Selectos de Bases de Datos} pertenece al plan de estudios de la \textbf{Licenciatura en Computación}, el alumno \textbf{Jorge Aparicio} está cursando \textbf{Temas Selectos de Bases de Datos} o el \textbf{Laboratorio de Análisis y Rendimiento de Teleservicios} está en la \textbf{Universidad Autónoma Metropolitana Unidad Iztapalapa}}.
-\item Un componente terminológico (TBox\label{sym:tbox}) representa el conocimiento implícito en los recursos del dominio. Este componente describe las clases y propiedades relevantes, así como los axiomas que permiten aprovechar la manera en que las instancias se relacionan entre sí. Por ejemplo, se puede afirmar que: 1) \textit{todo \textbf{alumno} está inscrito a un \textbf{curso} y pertenece a una \textbf{universidad}, 2) toda \textbf{universidad} es una \textbf{institución educativa} o 3) todo \textbf{estudiante de universidad} pertenece a la \textbf{comunidad universitaria}}.
+\item El \textbf{componente asertivo} (ABox\label{sym:abox}) representa el conocimiento e información explícita en los recursos del dominio. Este componente está constituido por las declaraciones (descripciones o hechos verdaderos) de los recursos que afirman que los individuos son instancias de una clase o propiedad. Por ejemplo, puede afirmarse que: el curso \textit{Temas Selectos de Bases de Datos} pertenece al plan de estudios de la \textit{Licenciatura en Computación}, el alumno \textit{Jorge Aparicio} está cursando \textit{Temas Selectos de Bases de Datos} o el \textit{Laboratorio de Análisis y Rendimiento de Teleservicios} está en la \textit{Universidad Autónoma Metropolitana Unidad Iztapalapa}.
+\item Un \textbf{componente terminológico} (TBox\label{sym:tbox}) representa el conocimiento implícito en los recursos del dominio. Este componente describe las clases y propiedades relevantes, así como los axiomas que permiten aprovechar la manera en que las instancias se relacionan entre sí. Por ejemplo, se puede afirmar que: todo \textit{alumno} cursa una \textit{asignatura} y está inscrito en una \textit{universidad}, toda \textit{universidad} es una \textit{institución educativa} y todo \textit{estudiante de universidad} pertenece a la \textit{comunidad universitaria}.
 \end{itemize}
 
 Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explícito en el grafo RDF. Estos axiomas tienen diferentes propósitos \cite{Magdalena}, como son: describir relaciones entre clases, definir propiedades en términos de otras, definir relaciones entre conceptos, definir restricciones de cómo las propiedades se relacionan, por mencionar algunos.
 
-Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} (RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y el \textit{Lenguaje de Ontologias Web} (OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
+Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} (\textit{RDF Schema} RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y el \textit{Lenguaje de Ontologias Web} (\textit{Web Ontology Language} OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
 
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en la construcción y mantenimiento de ontologías \cite{YunLin}, \cite{protegeManual}.
 
 \begin{itemize}
-\item \textbf{\textit{Subclase}} (\textit{rdfs:subClassOf}) afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal} y \textbf{Planta} son subclases de la clase \textbf{Ser vivo}}.
-\item \textbf{\textit{Clases equivalente}} (\textit{owl:equivalentClass}) afirma que la \textit{clase A} y \textit{clase B} representan al mismo conjunto de individuos y el significado de ambas clases es el mismo, es decir, son sinónimas. Por ejemplo, \textit{todas las personas son humanos y todos los humanos son personas, esto significa que todas las instancias de la clase \textbf{Persona} deben ser instancias de la clase \textbf{Humano} y viceversa}.
-\item \textbf{\textit{Clases disjuntas}} (\textit{owl:disjointWith}) afirma que la \textit{clase A} y \textit{clase B} no tienen instancias en común. Por ejemplo, \textit{ninguna mujer es hombre, esto significa que ninguna instancia de la clase \textbf{Mujer} debe pertenecer a la clase \textbf{Hombre} y viceversa}.
+\item \textbf{Subclase} (\textit{rdfs:subClassOf}) afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B. Este axioma permite especificar la jerarquía entre clases. Por ejemplo, \textit{todo animal o planta es un ser vivo. esto significa que, las clases \textbf{Animal} y \textbf{Planta} son subclases de la clase \textbf{Ser vivo}}.
+\item \textbf{Clases equivalente} (\textit{owl:equivalentClass}) afirma que la \textit{clase A} y \textit{clase B} representan al mismo conjunto de individuos y el significado de ambas clases es el mismo, es decir, son sinónimas. Por ejemplo, \textit{todas las personas son humanos y todos los humanos son personas, esto significa que todas las instancias de la clase \textbf{Persona} deben ser instancias de la clase \textbf{Humano} y viceversa}.
+\item \textbf{Clases disjuntas} (\textit{owl:disjointWith}) afirma que la \textit{clase A} y \textit{clase B} no tienen instancias en común. Por ejemplo, \textit{ninguna mujer es hombre, esto significa que ninguna instancia de la clase \textbf{Mujer} debe pertenecer a la clase \textbf{Hombre} y viceversa}.
 \end{itemize}
 
 Las funcionalidades de los axiomas \textit{para definir propiedades en términos de otras}, se listan a continuación.
 
 \begin{itemize}
-\item \textbf{\textit{Subpropiedad}} (\textit{rdfs:subPropertyOf}) afirma que todos los recursos que se relacionan por la \textit{propiedad X}, también se relacionan por la \textit{propiedad Y}. Este axioma permite especificar la jerarquía entre propiedades. Por ejemplo, \textit{la propiedad \textit{es padre} es un caso particular de la propiedad \textit{es familiar}, de esta manera, si Juan es padre de Pedro, entonces Juan es familiar de Pedro}.
-\item \textbf{\textit{Propiedad equivalente}} (\textit{owl:equivalentProperty}) afirma que la \textit{propiedad X} y la \textit{propiedad Y} relacionan a los mismos recursos y éstas tienen el mismo significado. Por ejemplo, \textit{las propiedad \textbf{tienen automóvil} es sinónimo de la propiedad  \textbf{tienen carro}, por ello, si Juan tiene un automóvil tipo sedan, entonces Juan tiene un carro tipo sedan y viceversa}.
-\item \textbf{\textit{Propiedad inversa}} (\textit{owl:inverseOf}) afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces hay una \textit{propiedad Y} que relaciona al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{la propiedad inversa de \textbf{es abuelo}, es la propiedad \textbf{es nieto}, por ello, si Juan es abuelo de Antonio, entonces Antonio es nieto de Juan}.
-\item \textbf{\textit{Propiedad transitiva}} (\textit{owl:TransitiveProperty}) afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B} y también ésta relaciona al \textit{individuo B} con el \textit{individuo C}, entonces debe relacionar a los \textit{individuos A y C}. Por ejemplo, \textit{si Juan tiene parentesco de consanguinidad con Pedro y Pedro tiene parentesco de consanguinidad con Arturo, entonces Juan tiene parentesco de consanguinidad con Arturo}.
-\item \textbf{\textit{Propiedad simétrica}} (\textit{owl:SymmetricProperty}) afirma que la \textit{propiedad X} es su propia propiedad inversa, es decir, si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces, esta propiedad debe relacionar al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{si Juan es familiar de Pedro, entonces Pedro es familiar de Juan}.
-\item \textbf{\textit{Propiedad reflexiva}} (\textit{owl:ReflexiveProperty}) afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
+\item \textbf{Subpropiedad} (\textit{rdfs:subPropertyOf}) afirma que todos los recursos que se relacionan por la \textit{propiedad X}, también se relacionan por la \textit{propiedad Y}. Este axioma permite especificar la jerarquía entre propiedades. Por ejemplo, \textit{la propiedad \textit{es padre} es un caso particular de la propiedad \textit{es familiar}, de esta manera, si Juan es padre de Pedro, entonces Juan es familiar de Pedro}.
+\item \textbf{Propiedad equivalente} (\textit{owl:equivalentProperty}) afirma que la \textit{propiedad X} y la \textit{propiedad Y} relacionan a los mismos recursos y éstas tienen el mismo significado. Por ejemplo, \textit{las propiedad \textbf{tienen automóvil} es sinónimo de la propiedad  \textbf{tienen carro}, por ello, si Juan tiene un automóvil tipo sedan, entonces Juan tiene un carro tipo sedan y viceversa}.
+\item \textbf{Propiedad inversa} (\textit{owl:inverseOf}) afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces hay una \textit{propiedad Y} que relaciona al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{la propiedad inversa de \textbf{es abuelo}, es la propiedad \textbf{es nieto}, por ello, si Juan es abuelo de Antonio, entonces Antonio es nieto de Juan}.
+\item \textbf{Propiedad transitiva} (\textit{owl:TransitiveProperty}) afirma que si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B} y también ésta relaciona al \textit{individuo B} con el \textit{individuo C}, entonces debe relacionar a los \textit{individuos A y C}. Por ejemplo, \textit{si Juan tiene parentesco de consanguinidad con Pedro y Pedro tiene parentesco de consanguinidad con Arturo, entonces Juan tiene parentesco de consanguinidad con Arturo}.
+\item \textbf{Propiedad simétrica} (\textit{owl:SymmetricProperty}) afirma que la \textit{propiedad X} es su propia propiedad inversa, es decir, si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces, esta propiedad debe relacionar al \textit{individuo B} con el \textit{individuo A}. Por ejemplo, \textit{si Juan es familiar de Pedro, entonces Pedro es familiar de Juan}.
+\item \textbf{Propiedad reflexiva} (\textit{owl:ReflexiveProperty}) afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
 \end{itemize}
 
 Las funcionalidades de los axiomas \textit{para asociar restricciones a las propiedades}, se listan a continuación.
 
 \begin{itemize}
-\item \textbf{\textit{Dominio}} (\textit{rdfs:domain}) especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que emplea la propiedad \textbf{es madre}, debe ser una \textbf{Mujer}, por ello, si Rocío es madre de Arturo, entonces Rocio es una instancia de la clase \textbf{Mujer}}.
-\item \textbf{\textit{Rango}} (\textit{rdfs:range}) especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuelo} debe vincularse con un individuo de la clase \textbf{Hombre}}, esto es, si María tiene por abuelo a Ramón, entonces Ramón es una instancia de la clase \textbf{Hombre}.
+\item \textbf{Dominio} (\textit{rdfs:domain}) especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que emplea la propiedad \textbf{es madre}, debe ser una \textbf{Mujer}, por ello, si Rocío es madre de Arturo, entonces Rocio es una instancia de la clase \textbf{Mujer}}.
+\item \textbf{Rango} (\textit{rdfs:range}) especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuelo} debe vincularse con un individuo de la clase \textbf{Hombre}}, esto es, si María tiene por abuelo a Ramón, entonces Ramón es una instancia de la clase \textbf{Hombre}.
 \end{itemize}
 
 El vocabulario OWL ofrece otros axiomas que tienen otras funcionalidades\footnote{W3C,``OWL 2 Web Ontology Language Primer,'' Disponible en: \url{http://www.w3.org/TR/2012/REC-owl2-primer-20121211/}} (restricciones cardinalidad, valores de literales, existenciales o universales) para enriquecer el conocimiento en un dominio \cite{Grau}. Los axiomas en los lenguajes OWL y RDF(S) pueden ser combinados para construir clases y propiedades complejas \cite{Magdalena}, \cite{Grau}. Un ejemplo de esta combinación es el siguiente. \textit{Todo \textbf{metal líquido} es aquel elemento que pertenece a la intersección de la clase \textbf{Metal} y la clase \textbf{Líquido}}. Este ejemplo, se representa en la Figura \ref{fig:combax}.
@@ -270,12 +291,23 @@ En las tecnologías semánticas, un \textit{razonador} \cite{YunLin}, \cite{Mishra
 
 \section{Ventajas de las Tecnologías Semánticas}
 \label{sec:vents}
-Las tecnologías semánticas proporcionan varias características y funcionalidades que benefician la representación y gestión del conocimiento. Algunos de estos beneficios son \textit{facilitar la percepción y representación de dominios particulares}, \textit{integrar el conocimiento de fuentes heterogéneas (formato, contenido, estructura) de información}, \textit{compartir y reutilizar el conocimiento a partir modelos dados} e \textit{inferir conocimiento a partir de los axiomas}. A continuación, se describen estos y otros beneficios que ofrecen las tecnologías semánticas.
+Las tecnologías semánticas proporcionan varias características y funcionalidades que benefician la representación y gestión del conocimiento. Algunos de estos beneficios son: \textit{facilitar la percepción y representación de dominios particulares}, \textit{integrar el conocimiento de fuentes heterogéneas (formato, contenido, estructura) de información}, \textit{compartir y reutilizar el conocimiento a partir modelos dados} e \textit{inferir conocimiento a partir de los axiomas}. A continuación, se describen estos y otros beneficios que ofrecen las tecnologías semánticas.
 
 %%Flexibilidad en el uso de las tecnologías semánticas
-Las tecnologías semánticas proporcionan una \textbf{\textit{manera fácil y sencilla}} de \textit{representar el conocimiento de un dominio particular} en una ontología. Esta facilidad para modelar, se debe a los siguientes hechos: 1) \textit{todo recurso debe tener un URI}, 2) \textit{las características y relaciones en los recursos se representan en forma de tripletas}, 3) \textit{una tripleta se compone por un sujeto, verbo y un objeto}, 4) \textit{las definiciones de clases, propiedades y axiomas se representan en forma de tripletas}, 5) \textit{las tripletas del conocimiento explícito e implícito pueden ser visualizadas en un grafo (nodos, etiquetas y arcos)} y 6) \textit{el grafo de conocimiento constituye la ontología de dominio}. De esta manera, dominios particulares con una gran cantidad de objetos pueden representarse a partir de elementos básicos y sencillos en un formato estándar (tripletas). Esta \textbf{\textit{facilidad}} en la construcción y mantenimiento de una ontología, se denomina \textbf{\textit{flexibilidad de las tecnologías semánticas}} \cite{Ontoinra2002}, \cite{Namiy}, \cite{Norta}.\\
+Las tecnologías semánticas proporcionan una manera fácil y sencilla de \textit{representar el conocimiento de un dominio particular} en una ontología. Esta facilidad para modelar, se debe a los siguientes hechos:
 
-En una ontología el conocimiento no se limita a unas cuantas características sobre un recurso, sino que toda información significativa puede describirse para un determinado recurso. Por ejemplo, se desea modelar las personas dependientes de un empleado en una BD relacional de una organización. En esta BD pueden realizarse dos cosas: 1) \textit{para cada empleado se asigna un determinado número de dependientes en la tabla de información personal de lo empleados}, o bien, 2) \textit{se construye una nueva tabla con todos los dependientes de los empleados y se hace una relación entre esta tabla y la tabla de los empleados}. Ahora bien, \textit{en una ontología para cada recurso empleado se representan los dependientes en forma de tripleta}. Esta propiedad de desarrollar ontologías de forma creciente, se denomina \textbf{\textit{extensibilidad en una ontología}} \cite{Ontoinra2002}, \cite{LiDing}.
+\begin{enumerate}
+\item Todo recurso debe tener un URI.
+\item Las características y relaciones en los recursos se representan en forma de tripletas.
+\item Una tripleta se compone por un sujeto, verbo y un objeto.
+\item Las definiciones de clases, propiedades y axiomas se representan en forma de tripletas.
+\item las tripletas del conocimiento explícito e implícito pueden ser visualizadas en un grafo (nodos, etiquetas y arcos).
+\item El grafo de conocimiento constituye la ontología de dominio.
+\end{enumerate}
+
+De esta manera, dominios particulares con una gran cantidad de objetos pueden representarse a partir de elementos básicos y sencillos en un formato estándar (tripletas). Esta \textit{facilidad} en la construcción y mantenimiento de una ontología, se denomina \textit{flexibilidad de las tecnologías semánticas} \cite{Ontoinra2002}, \cite{Namiy}, \cite{Norta}.\\
+
+En una ontología el conocimiento no se limita a unas cuantas características sobre un recurso, sino que toda información significativa puede describirse para un determinado recurso. Por ejemplo, se desea modelar las personas dependientes de un empleado en una BD relacional de una organización. En esta BD pueden realizarse dos cosas: para cada empleado se asigna un determinado número de dependientes en la tabla de información personal de lo empleados, o bien, se construye una nueva tabla con todos los dependientes de los empleados y se hace una relación entre esta tabla y la tabla de los empleados. Ahora bien, en una ontología a cada recurso empleado se representan los dependientes en forma de tripleta. Esta propiedad de desarrollar ontologías de forma creciente, se denomina \textbf{extensibilidad en una ontología} \cite{Ontoinra2002}, \cite{LiDing}.\\
 
 %% Solucion a la heterogeneidad
 El marco RDF es una herramienta para \textit{solucionar la heterogeneidad en formato, contenido y estructura} en los recursos. Porque este marco permite representar cualquier recurso a partir de sus características significativas y relaciones con otros recursos. En concreto, el marco RDF permite realizar las siguientes actividades para cada tipo de heterogeneidad.
@@ -287,37 +319,42 @@ El marco RDF es una herramienta para \textit{solucionar la heterogeneidad en for
 \end{itemize}
 
 %%%Eliminar problemas de ambiguedad con una ontología
-Las tecnologías semánticas solucionan problemas de \textbf{\textit{ambigüedad}} en la representación de un dominio. Para empezar, una ontología soluciona el problema de homonimia. Porque todo recurso, clase y propiedad tiene un \textbf{\textit{identificador único}}. Esto significa que si un recurso o propiedad tiene distintos significados, entonces para cada significado se le asigna un identificador único. Por ejemplo, el término \textbf{radio} tiene un significado distinto para cada uno de estos cuatro dominios: \textit{Matemáticas, Anatomía, Geometría o Telecomunicaciones}. Este término por cada dominio se asigna un identificador único, es decir, \textit{mat:radio}, \textit{anat:radio}, \textit{geo:radio} y \textit{tel:radio}. De esta manera, si se emplea el recurso \textit{mat:radio} en una tripleta, entonces, esta tripleta describe un objeto del dominio de Matemáticas.
+Las tecnologías semánticas solucionan problemas de \textit{ambigüedad} en la representación de un dominio. Para empezar, una ontología soluciona el problema de homonimia. Porque todo recurso, clase y propiedad tiene un \textit{identificador único}. Esto significa que si un recurso o propiedad tiene distintos significados, entonces para cada significado se le asigna un identificador único. Por ejemplo, el término \textbf{radio} tiene un significado distinto para cada uno de estos cuatro dominios: \textit{Matemáticas, Anatomía, Geometría o Telecomunicaciones}. Este término por cada dominio se asigna un identificador único, es decir, \textit{mat:radio}, \textit{anat:radio}, \textit{geo:radio} y \textit{tel:radio}. De esta manera, si se emplea el recurso \textit{mat:radio} en una tripleta, entonces, esta tripleta describe un objeto del dominio de Matemáticas.
 
-En una ontología, puede definirse que un recurso, clase o propiedad es \textbf{\textit{sinónimo}} de otro objeto del mismo tipo. Esta propiedad de sinonimia se hace con base en el uso de \textbf{\textit{axiomas}}. Estos son los axiomas para definir objetos sinónimos: \textit{clase equivalente (\textbf{owl:equivalentClass})}, \textit{propiedad equivalente (\textbf{owl:equivalentProperty})} e \textit{individuos idénticos (\textbf{owl:sameAs})}. Esta propiedad de sinonimia es importante para fines de búsqueda. Porque, al hacer una consulta mediante un objeto que tiene un sinónimo, puede recuperarse mayor información del otro objeto, o bien, puede simplificarse la consulta. Por ejemplo, el recurso \textit{computadora} tiene los siguientes sinónimos: \textit{computador, ordenador, equipo de cómputo, por mencionar algunos}. Al hacer una consulta sobre alguna característica de una computadora, es importante, recuperar también la información de los recursos: computador, ordenador y equipo de cómputo. Si se emplea el axioma de equivalencia de clase entre estos recursos y un razonador, entonces, la información de estos recursos es recuperada por el motor de búsqueda.
+En una ontología, puede definirse que un recurso, clase o propiedad es \textit{sinónimo} de otro objeto del mismo tipo. Esta propiedad de sinonimia se hace con base en el uso de \textit{axiomas}. Estos son los axiomas para definir objetos sinónimos: clase equivalente (\textit{owl:equivalentClass}), propiedad equivalente (\textit{owl:equivalentProperty}) e individuos idénticos (\textit{owl:sameAs}). Esta propiedad de sinonimia es importante para fines de búsqueda. Porque, al hacer una consulta mediante un objeto que tiene un sinónimo, puede recuperarse mayor información del otro objeto, o bien, puede simplificarse la consulta. Por ejemplo, el recurso \textit{computadora} tiene los siguientes sinónimos: \textit{computador, ordenador, equipo de cómputo, por mencionar algunos}. Al hacer una consulta sobre alguna característica de una computadora, es importante, recuperar también la información de los recursos: computador, ordenador y equipo de cómputo. Si se emplea el axioma de equivalencia de clase entre estos recursos y un razonador, entonces, la información de estos recursos es recuperada por el motor de búsqueda.\\
 
 %%utiliación de distintos estandares para representar el conocimiento
-Una utilidad importante en las tecnologías semánticas es la \textbf{\textit{interoperabilidad}}\cite{SurvOnto}, \cite{Norta}. Este concepto se refiere a \textit{la facilidad de reutilizar y compartir las ontologías entre personas o aplicaciones, gracias a que una ontología emplea y se elabora con varios estándares}. En concreto, el marco RDF propone la \textit{estructura estándar} para describir el conocimiento, RDF(S) y OWL proponen los \textit{lenguajes estándares} para escribir los axiomas, y SPARQL el \textit{lenguaje de consulta estándar} sobre grafos de conocimiento.
+Una utilidad importante en las tecnologías semánticas es la \textit{interoperabilidad} \cite{SurvOnto}, \cite{Norta}. Este concepto se refiere a \textit{la facilidad de reutilizar y compartir las ontologías entre personas o aplicaciones, gracias a que una ontología emplea y se elabora con varios estándares}. En concreto, el marco RDF propone la \textit{estructura estándar} para describir el conocimiento, RDF(S) y OWL proponen los \textit{lenguajes estándares} para escribir los axiomas, y SPARQL el \textit{lenguaje de consulta estándar} sobre grafos de conocimiento.
 
-Ejemplos de ontologías\footnote{W3C,``Good Ontologies,'' Disponible en: \url{http://www.w3.org/wiki/Good_Ontologies}} (modelo de referencia) que proporcionan interoperabilidad son: 1) \textbf{\textit{Dublin Core}} es un vocabulario genérico de metadatos que proporciona información descriptiva de cualquier documento en un sistema de información\footnote{Dublin Core Semantic Initiative,``Dublin Core,'' Disponible en: \url{http://dublincore.org/}}, y 2) \textbf{\textit{Friend Of A Friend}} (FOAF\label{sym:foaf}) es un vocabulario para describir a las personas y las relaciones de éstas en la Web\footnote{FOAF project,``The Friend of a Friend (FOAF) project,'' Disponible en: \url{http://www.foaf-project.org/}}.
+Ejemplos de ontologías\footnote{W3C,``Good Ontologies,'' Disponible en: \url{http://www.w3.org/wiki/Good_Ontologies}} (modelo de referencia) que proporcionan interoperabilidad son:
+
+\begin{enumerate}
+\item \textit{Dublin Core} es un vocabulario genérico de metadatos que proporciona información descriptiva de cualquier documento en un sistema de información\footnote{Dublin Core Semantic Initiative,``Dublin Core,'' Disponible en: \url{http://dublincore.org/}}.
+\item \textit{Friend Of A Friend} (FOAF\label{sym:foaf}) es un vocabulario para describir a las personas y las relaciones de éstas en la Web\footnote{FOAF project,``The Friend of a Friend (FOAF) project,'' Disponible en: \url{http://www.foaf-project.org/}}.
+\end{enumerate}
 
 La interoperabilidad promueve la realización de diversas actividades para mejorar de manera eficiente y eficaz la gestión del conocimiento. Estas actividades se listan a continuación:
 
 \begin{itemize}
-\item integrar el conocimiento desde distintas fuentes de información.
-\item independizar el uso de una única herramienta o sobre determinado sistema operativo.
-\item realizar tareas de inferencia a partir de los vocabularios OWL y RDF(S).
-\item recuperar información o construir subgrafos mediante consultas en una ontología.
-\item liberar a las organizaciones del uso de formatos propietarios que tienen un costo económico o de propiedad intelectual. 
-\item producir ontologías genéricas para dominios particulares, como: Biomédica, Economía, Matemáticas, Ciencias de la Computación, Física, etc.
-\item construir rápidamente modelos de conocimiento a partir de ontologías básicas.
-\item mezclar ontologías y construir modelos de conocimiento complejos.
+\item Integrar el conocimiento desde distintas fuentes de información.
+\item Independizar el uso de una única herramienta o sobre determinado sistema operativo.
+\item Realizar tareas de inferencia a partir de los vocabularios OWL y RDF(S).
+\item Recuperar información o construir subgrafos mediante consultas en una ontología.
+\item Liberar a las organizaciones del uso de formatos propietarios que tienen un costo económico o de propiedad intelectual. 
+\item Producir ontologías genéricas para dominios particulares, como: Biomédica, Economía, Matemáticas, Ciencias de la Computación, Física, etc.
+\item Construir rápidamente modelos de conocimiento a partir de ontologías básicas.
+\item Mezclar ontologías y construir modelos de conocimiento complejos.
 \end{itemize}
 
 %Las tecnologías semánticas son un instrumento que permite adaptarse a la naturaleza cambiante del conocimiento. Objetos, ideas y conceptos están en constante cambio; algo que ahora es verdadero, en el futuro se vuelve falso. Estos cambios modifican la estructura del conocimiento. Una ontología 
 
 %%%Aplicaciones genericas
-Una ventaja de tener un modelo flexible y estándar es desarrollar \textbf{\textit{aplicaciones genéricas}} para aprovechar estos modelos. Los objetivos de estas herramientas son: \textit{procesar datos, facilitar la visualización del grafo de conocimiento a los usuarios, incrementar el conocimiento en las ontologías mediante la introducción de descripciones o axiomas, facilitar el mantenimiento a una ontología, proporcionar tareas de inferencia en una ontología, mejorar la búsqueda de la información, integrar y mezclar ontologías, facilitar de uso y mejorar la integración de los usuarios}.
+Una ventaja de tener un modelo flexible y estándar es desarrollar \textit{aplicaciones genéricas} para aprovechar estos modelos. Los objetivos de estas herramientas son: procesar datos, facilitar la visualización del grafo de conocimiento a los usuarios, incrementar el conocimiento en las ontologías mediante la introducción de descripciones o axiomas, facilitar el mantenimiento a una ontología, proporcionar tareas de inferencia en una ontología, mejorar la búsqueda de la información, integrar y mezclar ontologías, facilitar de uso y mejorar la integración de los usuarios.
 
 Estas herramientas genéricas posibilitan que personas expertas en el dominio sean las principales constructoras del grafo de conocimiento. De esta manera, la información en el grafo será confiable, ya que estas personas son las que tienen los conocimientos en el dominio. Mientras, los desarrolladores son los encargados de construir de estas aplicaciones genéricas.
 
 %%%mejorar la busqueda de información
-En esta tesis, el beneficio más interesante es el \textbf{\textit{uso de un razonador y un motor de búsqueda}} para \textit{mejorar la búsqueda y recuperación de la información}. Un \textit{razonador} a partir de los axiomas, expande el grafo RDF con las declaraciones inferidas, donde esta expansión puede ser o no ser explícita. A partir de este grafo de conocimiento, un motor de consulta puede compararlo para responder una consulta dada.
+En esta tesis, el beneficio más interesante es el \textbf{uso de un razonador y un motor de búsqueda} para mejorar la búsqueda y recuperación de la información. Un \textit{razonador} a partir de los axiomas, expande el grafo RDF con las declaraciones inferidas, donde esta expansión puede ser o no ser explícita. A partir de este grafo de conocimiento, un motor de consulta puede compararlo para responder una consulta dada.
 
 %Si la expansión es explícita, entonces, hay mayor posibilidad de encontrar mejores resultados. Porque al expenderse el grafo, el motor comparara más tripletas.
 
@@ -350,7 +387,7 @@ Esta ontología implícitamente tiene las tripletas que indican que un recurso per
 \label{fig:trinf}
 \end{figure}
 
-Si de nuevo se hace la consulta de la Figura \ref{fig:csr} con el motor de consulta en la ontología de la Figura \ref{fig:trinf}, se obtienen los siguientes resultados: \textbf{\textit{exp:Juan, exp:Laura}} y \textbf{\textit{exp:Luis}}. Por esta razón, la combinación de un razonador y motor de consulta es un mecanismo que permite recuperar más respuestas porque el conocimiento implícito se vuelve explícito.
+Si de nuevo se hace la consulta de la Figura \ref{fig:csr} con el motor de consulta en la ontología de la Figura \ref{fig:trinf}, se obtienen los siguientes resultados: \textbf{exp:Juan}, \textbf{exp:Laura} y \textbf{exp:Luis}. Por esta razón, la combinación de un razonador y motor de consulta es un mecanismo que permite recuperar más respuestas porque el conocimiento implícito se vuelve explícito.
 
 
 %%%todos los beneficios
