@@ -1,23 +1,23 @@
 \select@language {spanish}
 \contentsline {chapter}{Lista de Tablas}{\es@scroman {ix}}
 \contentsline {chapter}{Lista de Figuras}{\es@scroman {xi}}
-\contentsline {chapter}{Acr\'onimos}{\es@scroman {xvi}}
+\contentsline {chapter}{Acr\'onimos}{\es@scroman {xiii}}
 \contentsline {chapter}{\numberline {1}Marco Introductorio}{1}
 \contentsline {section}{\numberline {1.1}Introducci\'on}{1}
-\contentsline {section}{\numberline {1.2}Descripci\'on del Problema}{4}
+\contentsline {section}{\numberline {1.2}Descripci\'on del Problema}{5}
 \contentsline {subsection}{\numberline {1.2.1}Memoria Corporativa}{6}
 \contentsline {subsubsection}{Administraci\'on de una Memoria Corporativa}{7}
-\contentsline {subsubsection}{Naturaleza de una Memoria Corporativa}{8}
+\contentsline {subsubsection}{Naturaleza de una Memoria Corporativa}{9}
 \contentsline {subsubsection}{Integraci\'on del Conocimiento}{10}
-\contentsline {subsection}{\numberline {1.2.2}Casos de uso}{10}
+\contentsline {subsection}{\numberline {1.2.2}Casos de uso}{11}
 \contentsline {subsubsection}{Cartograf\IeC {\'\i }a de Competencias}{11}
-\contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{11}
+\contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{12}
 \contentsline {subsection}{\numberline {1.2.3}Pregunta de investigaci\'on}{12}
-\contentsline {subsection}{\numberline {1.2.4}Justificaci\'on}{12}
-\contentsline {subsection}{\numberline {1.2.5}Objetivos}{13}
+\contentsline {subsection}{\numberline {1.2.4}Justificaci\'on}{13}
+\contentsline {subsection}{\numberline {1.2.5}Objetivos}{14}
 \contentsline {subsection}{\numberline {1.2.6}Hip\'otesis}{14}
 \contentsline {subsection}{\numberline {1.2.7}Metodolog\IeC {\'\i }a}{14}
-\contentsline {subsection}{\numberline {1.2.8}Aportaciones}{15}
+\contentsline {subsection}{\numberline {1.2.8}Aportaciones}{16}
 \contentsline {chapter}{\numberline {2}Tecnolog\IeC {\'\i }as Sem\'anticas}{17}
 \contentsline {section}{\numberline {2.1}Introducci\'on y Definiciones}{17}
 \contentsline {section}{\numberline {2.2}Marco de Descripci\'on de Recursos}{17}
@@ -47,6 +47,7 @@
 \contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{125}
 \contentsline {section}{\numberline {7.1}Recomendaciones}{128}
 \contentsline {chapter}{Appendices}{131}
-\contentsline {chapter}{Ap\'endice \numberline {A}Algoritmos para le generaci\'on de datos simulados}{133}
-\contentsline {chapter}{Ap\'endice \numberline {B}Transformaci\'on de preguntas a consultas SPARQL}{141}
-\contentsline {chapter}{Bibliograf\'{\i }a}{153}
+\contentsline {chapter}{Ap\'endice \numberline {A}Acr\'onimos}{133}
+\contentsline {chapter}{Ap\'endice \numberline {B}Algoritmos para le generaci\'on de datos simulados}{135}
+\contentsline {chapter}{Ap\'endice \numberline {C}Transformaci\'on de preguntas a consultas SPARQL}{143}
+\contentsline {chapter}{Bibliograf\'{\i }a}{155}
