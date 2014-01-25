@@ -36,7 +36,31 @@
 	\end{block}
 	
 	\begin{figure}
-	\includegraphics[scale=0.56]{CasosUso} 
+	\includegraphics[scale=0.4]{CasosUso} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Ontología}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{alertblock}{Definición}
+	\justifying 
+	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
+	\end{alertblock}
+	
+	\begin{block}{Componentes}
+	\begin{itemize}
+	\item \justifying Componente Asertivo (ABox)
+	%está constituido por descripciones que afirman que los individuos son instancias de una clase o propiedad.
+	\item \justifying Componente Terminológico (TBox)
+	%describe las clases y propiedades relevantes, así como las reglas de inferencia que permiten aprovechar la manera en que las instancias se relacionan entre sí.
+	\end{itemize}
+	\end{block}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.4]{DominioK} 
 	\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,45 +130,36 @@
 
 \subsection{Enriquecer el conocimiento en el modelo semántico}
 \begin{frame}
-	\frametitle{Ontología}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{alertblock}{Definición}
-	\justifying 
-	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
-	\end{alertblock}
-	
-	\begin{block}{Componentes}
-	\begin{itemize}
-	\item \justifying \textbf{\textit{Componente Asertivo (ABox)}} está constituido por descripciones que afirman que los individuos son instancias de una clase o propiedad.
-	\item \justifying \textbf{\textit{Componente Terminológico (TBox)}} describe las clases y propiedades relevantes, así como las reglas de inferencia que permiten aprovechar la manera en que las instancias se relacionan entre sí.
-	\end{itemize}
-	\end{block}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{frame}
-
-\begin{frame}
 	\frametitle{Axiomatización}	
 	\begin{block}{Reglas de inferencia o Axiomas}
 	\justifying 
-	Expresiones para enriquecer un grafo RDF con conocimiento implícito.\\
+	Expresiones para enriquecer un grafo RDF con conocimiento implícito de las clases y relaciones.
 	\end{block}
 	
-	\begin{block}{Lenguajes}
-	Especificaciones para describir clases, propiedades e individuos.
+	\begin{block}{Reglas de inferencia o Axiomas}
 	\begin{itemize}
-	\item \justifying \textit{RDF Schema \textbf{RDF(S)}}
-	\item \justifying \textit{Web Ontology Language \textbf{OWL}} 
+	\item \justifying Jerarquía de clases y propiedades.
+	\item \justifying Dominio y Rango.
+	\item \justifying Propiedad simétrica, transitiva, reflexiva.
 	\end{itemize}
 	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.4]{PrefijosRDFSOWL}
-	\end{figure}
 	
 	\begin{block}
 	\justifying
 	\textit{Lo que es obvio para un humano, no lo es para una maquina}.
 	\end{block}
+	
+%	\begin{block}{Lenguajes}
+%	Especificaciones para describir clases, propiedades e individuos.
+%	\begin{itemize}
+%	\item \justifying \textit{RDF Schema \textbf{RDF(S)}}
+%	\item \justifying \textit{Web Ontology Language \textbf{OWL}} 
+%	\end{itemize}
+%	\end{block}
+	
+%	\begin{figure}
+%	\includegraphics[scale=0.4]{PrefijosRDFSOWL}
+%	\end{figure}
 \end{frame}
 
 %\begin{frame}
@@ -159,7 +174,7 @@
 %	\end{figure}
 %\end{frame}
 	
-\subsubsection{Herencia de Clases}
+\subsubsection{Jerarquía de Clases}
 \begin{frame}[allowframebreaks]
 	\frametitle{Herencia de Clases}
 	\begin{block}{Subclase (rdfs:subClassOf)}
@@ -183,7 +198,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%
 \end{frame}
 
-\subsubsection{Herencia de Propiedades}
+\subsubsection{Jerarquía de Propiedades}
 \begin{frame}[allowframebreaks]
 	\frametitle{Herencia de Propiedades}
 	\begin{block}{Subpropiedad (rdfs:subPropertyOf)}
@@ -268,54 +283,3 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Búsqueda + inferencia}
-\begin{frame}
-	\frametitle{Búsqueda sin inferencia}
-
-	\begin{block}{SPARQL}
-	\justifying 
-	Grafo RDF sin inferencia
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.32]{grafoSR}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Búsqueda sin inferencia}
-	\begin{figure}[htbp]
-	\centering
-	\subfigure[Consulta sin inferencia]{
-	\includegraphics[scale=0.25]{consultaGrafo} 
-	}
-	\subfigure[Resultados de la consulta]{
-	\includegraphics[scale=0.28]{RespQrySI} 
-	}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Búsqueda con inferencia}
-	\begin{block}{SPARQL}
-	\justifying 
-	Grafo RDF con inferencia
-	\end{block}	
-	
-	\begin{figure}
-	\includegraphics[scale=0.32]{grafoCR}
-	\end{figure}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Búsqueda con inferencia}
-	\begin{figure}[htbp]
-	\centering
-	\subfigure[Consulta con inferencia]{
-	\includegraphics[scale=0.25]{consSimpGrafo} 
-	}
-	\subfigure[Resultados de la consulta]{
-	\includegraphics[scale=0.28]{RespQryCI} 
-	}
-	\end{figure}
-\end{frame}
