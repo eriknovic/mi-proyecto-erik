@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  24 JAN 2014 23:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  25 JAN 2014 12:56
 entering extended mode
 **presentacionICR_Erik.tex
 
@@ -1240,12 +1240,6 @@ Package pdftex.def Info: semtec.pdf used on input line 15.
 Overfull \vbox (8.38287pt too high) detected at line 15
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [26
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
@@ -1256,12 +1250,6 @@ Package pdftex.def Info: semtec.pdf used on input line 15.
 (pdftex.def)             Requested size: 92.09383pt x 67.25108pt.
 
 Overfull \vbox (8.38287pt too high) detected at line 15
- []
-
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
  []
 
 [27
@@ -1275,12 +1263,6 @@ Package pdftex.def Info: semtec.pdf used on input line 15.
 Overfull \vbox (8.38287pt too high) detected at line 15
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [28
 
 ] <Arquitectura.pdf, id=1372, 561.09625pt x 582.175pt>
@@ -1291,12 +1273,6 @@ Package pdftex.def Info: Arquitectura.pdf used on input line 24.
 (pdftex.def)             Requested size: 185.16232pt x 192.11835pt.
 
 Overfull \vbox (14.926pt too high) detected at line 24
- []
-
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
  []
 
 [29
@@ -1312,12 +1288,6 @@ Package pdftex.def Info: CasosUso.pdf used on input line 41.
 Overfull \vbox (11.36783pt too high) detected at line 41
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [30
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
@@ -1330,12 +1300,6 @@ Package pdftex.def Info: CasosUso.pdf used on input line 41.
 Overfull \vbox (11.36783pt too high) detected at line 41
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [31
 
 ] <CasosUsoMC.pdf, id=1528, 764.8575pt x 571.13374pt>
@@ -1345,12 +1309,6 @@ Package pdftex.def Info: CasosUsoMC.pdf used on input line 52.
 (pdftex.def)             Requested size: 252.40375pt x 188.47472pt.
 
 Overfull \vbox (11.28236pt too high) detected at line 52
- []
-
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
  []
 
 [32
@@ -1366,40 +1324,17 @@ Package pdftex.def Info: CasoUsoCartComp.pdf used on input line 60.
 Overfull \vbox (15.88353pt too high) detected at line 60
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [33
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-CasoUsoCartComp.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
+CasoUsoCartComp.pdf>] [34
 
-[34
+] [35
+
+] [36
 
 ]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[35
-
-]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[36
-
-] <Person2RDF.pdf, id=1831, 903.375pt x 436.63126pt>
+<Person2RDF.pdf, id=1831, 903.375pt x 436.63126pt>
 File: Person2RDF.pdf Graphic file (type pdf)
  <use Person2RDF.pdf>
 Package pdftex.def Info: Person2RDF.pdf used on input line 89.
@@ -1413,12 +1348,6 @@ Overfull \hbox (8.89612pt too wide) in paragraph at lines 89--89
 Overfull \vbox (5.63087pt too high) detected at line 89
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [37
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
@@ -1428,43 +1357,26 @@ File: Tripletas.pdf Graphic file (type pdf)
 <use Tripletas.pdf>
 Package pdftex.def Info: Tripletas.pdf used on input line 96.
 (pdftex.def)             Requested size: 243.90898pt x 143.63528pt.
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[38
+ [38
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-Tripletas.pdf>] <GrafoRDF.pdf, id=1952, 621.32124pt x 392.46625pt>
+Tripletas.pdf>]
+<GrafoRDF.pdf, id=1952, 621.32124pt x 392.46625pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
-
-<use GrafoRDF.pdf>
+ <use GrafoRDF.pdf>
 Package pdftex.def Info: GrafoRDF.pdf used on input line 103.
 (pdftex.def)             Requested size: 298.2308pt x 188.38165pt.
 
 Overfull \vbox (29.1893pt too high) detected at line 103
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [39
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-GrafoRDF.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
+GrafoRDF.pdf>] [40
 
-[40
-
-] <HerenClassCartComp.pdf, id=2043, 421.575pt x 210.7875pt>
+]
+<HerenClassCartComp.pdf, id=2043, 421.575pt x 210.7875pt>
 File: HerenClassCartComp.pdf Graphic file (type pdf)
 
 <use HerenClassCartComp.pdf>
@@ -1482,66 +1394,43 @@ Overfull \hbox (27.41405pt too wide) in paragraph at lines 175--175
  [] 
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [41
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-HerenClassCartComp.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[42
+HerenClassCartComp.pdf>] [42
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-EjmpInfSubClass.pdf>] <HerPropLang.pdf, id=2130, 336.25626pt x 114.4275pt>
+EjmpInfSubClass.pdf>]
+<HerPropLang.pdf, id=2130, 336.25626pt x 114.4275pt>
 File: HerPropLang.pdf Graphic file (type pdf)
-
-<use HerPropLang.pdf>
+ <use HerPropLang.pdf>
 Package pdftex.def Info: HerPropLang.pdf used on input line 193.
 (pdftex.def)             Requested size: 191.66805pt x 65.22435pt.
- <EjmpInfProp.pdf, id=2131, 552.0625pt x 229.85875pt>
-File: EjmpInfProp.pdf Graphic file (type pdf)
 
-<use EjmpInfProp.pdf>
+<EjmpInfProp.pdf, id=2131, 552.0625pt x 229.85875pt>
+File: EjmpInfProp.pdf Graphic file (type pdf)
+ <use EjmpInfProp.pdf>
 Package pdftex.def Info: EjmpInfProp.pdf used on input line 193.
 (pdftex.def)             Requested size: 303.6353pt x 126.42268pt.
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
 
 [43
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-HerPropLang.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[44
+HerPropLang.pdf>] [44
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-EjmpInfProp.pdf>] <exAxDyRPer.pdf, id=2218, 348.30125pt x 136.51pt>
+EjmpInfProp.pdf>]
+<exAxDyRPer.pdf, id=2218, 348.30125pt x 136.51pt>
 File: exAxDyRPer.pdf Graphic file (type pdf)
-
-<use exAxDyRPer.pdf>
+ <use exAxDyRPer.pdf>
 Package pdftex.def Info: exAxDyRPer.pdf used on input line 217.
 (pdftex.def)             Requested size: 181.11769pt x 70.9856pt.
- <exInfDyRPer.pdf, id=2219, 723.70375pt x 310.15875pt>
-File: exInfDyRPer.pdf Graphic file (type pdf)
 
-<use exInfDyRPer.pdf>
+<exInfDyRPer.pdf, id=2219, 723.70375pt x 310.15875pt>
+File: exInfDyRPer.pdf Graphic file (type pdf)
+ <use exInfDyRPer.pdf>
 Package pdftex.def Info: exInfDyRPer.pdf used on input line 217.
 (pdftex.def)             Requested size: 325.66368pt x 139.57014pt.
 
@@ -1549,29 +1438,17 @@ Overfull \hbox (18.37381pt too wide) in paragraph at lines 217--217
  [] 
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [45
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-exAxDyRPer.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
-[46
+exAxDyRPer.pdf>] [46
 
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-exInfDyRPer.pdf>] <infSymColl.pdf, id=2306, 644.4075pt x 232.87pt>
+exInfDyRPer.pdf>]
+<infSymColl.pdf, id=2306, 644.4075pt x 232.87pt>
 File: infSymColl.pdf Graphic file (type pdf)
-
-<use infSymColl.pdf>
+ <use infSymColl.pdf>
 Package pdftex.def Info: infSymColl.pdf used on input line 231.
 (pdftex.def)             Requested size: 322.20296pt x 116.43471pt.
 
@@ -1581,12 +1458,6 @@ Overfull \hbox (14.91309pt too wide) in paragraph at lines 231--231
 
 
 Overfull \vbox (16.39963pt too high) detected at line 231
- []
-
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
  []
 
 [47
@@ -1602,22 +1473,10 @@ Package pdftex.def Info: q2rqlSR.pdf used on input line 258.
 Overfull \vbox (13.20605pt too high) detected at line 258
  []
 
-
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- []\T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de In
-formaci髇[]  
- []
-
 [48
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentaci贸n ICR/Presentaci贸n Erik Latex/
-q2rqlSR.pdf>]
-Overfull \hbox (10.08133pt too wide) has occurred while \output is active
- \T1/cmss/bx/n/5 Herramientas para la Integraci髇 Sem醤tica de Recursos de Info
-rmaci髇  
- []
-
-[49
+q2rqlSR.pdf>] [49
 
 ])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentaci贸n ICR\Presentaci贸n Erik Latex\
@@ -1827,7 +1686,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
 Here is how much of TeX's memory you used:
  17560 strings out of 493944
  325501 string characters out of 3148281
- 409322 words of memory out of 3000000
+ 409266 words of memory out of 3000000
  20143 multiletter control sequences out of 15000+200000
  16396 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1845,7 +1704,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0500.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfsx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/cm-super/sfsx1000.pfb>
-Output written on presentacionICR_Erik.pdf (78 pages, 3637976 bytes).
+Output written on presentacionICR_Erik.pdf (78 pages, 3637348 bytes).
 PDF statistics:
  3608 PDF objects out of 4296 (max. 8388607)
  199 named destinations out of 1000 (max. 500000)
