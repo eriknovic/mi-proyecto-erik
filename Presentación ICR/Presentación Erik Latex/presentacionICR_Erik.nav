@@ -17,31 +17,28 @@
 \headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Tecnolog\IeC {\'\i }as Sem\'anticas}}\headcommand {\beamer@subsectionpages {4}{6}}
 \headcommand {\slideentry {1}{3}{1}{7/7}{Tecnolog\IeC {\'\i }as Sem\'anticas}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\sectionentry {2}{Estado del Arte}{8}{Estado del Arte}{0}}
-\headcommand {\beamer@sectionpages {3}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
+\headcommand {\slideentry {1}{3}{2}{8/8}{Tecnolog\IeC {\'\i }as Sem\'anticas}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{1}{9}{Integraci\'on a partir del uso de tecnolog\IeC {\'\i }as sem\'anticas}}
-\headcommand {\slideentry {2}{1}{1}{9/9}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{0}}
+\headcommand {\sectionentry {2}{Estado del Arte}{9}{Estado del Arte}{0}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{2}{10}{B\'usqueda y Recuperaci\'on de la Informaci\'on}}
-\headcommand {\slideentry {2}{1}{2}{10/10}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{Integraci\'on a partir del uso de tecnolog\IeC {\'\i }as sem\'anticas}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {2}{1}{1}{10/10}{Integraci\'on a partir del uso de tecnolog\IeC {\'\i }as sem\'anticas}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{3}{11}{Gesti\'on de una Memoria Corporativa}}
-\headcommand {\slideentry {2}{1}{3}{11/11}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{11}{B\'usqueda y Recuperaci\'on de la Informaci\'on}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {2}{2}{1}{11/11}{B\'usqueda y Recuperaci\'on de la Informaci\'on}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{4}{12}{Comparativa}}
-\headcommand {\slideentry {2}{1}{4}{12/12}{Integraci\'on Sem\'antica de Recursos de Informaci\'on}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Gesti\'on de una Memoria Corporativa}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {2}{3}{1}{12/12}{Gesti\'on de una Memoria Corporativa}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{13}{Herramientas para la Integraci\'on Sem\'antica de Recursos de Informaci\'on}}\headcommand {\beamer@subsectionpages {9}{12}}
-\headcommand {\slideentry {2}{2}{1}{13/13}{Herramientas para la Integraci\'on Sem\'antica de Recursos de Informaci\'on}{0}}
+\headcommand {\slideentry {2}{3}{2}{13/13}{Gesti\'on de una Memoria Corporativa}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\sectionentry {3}{Propuesta}{14}{Propuesta}{0}}
-\headcommand {\beamer@sectionpages {8}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
+\headcommand {\beamer@sectionpages {9}{13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\slideentry {3}{0}{3}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\beamer@subsectionentry {0}{3}{1}{15}{Objetivos}}\headcommand {\beamer@subsectionpages {14}{14}}
 \headcommand {\slideentry {3}{1}{1}{15/18}{Objetivos}{0}}
@@ -63,47 +60,48 @@
 \headcommand {\beamer@framepages {29}{29}}
 \headcommand {\slideentry {4}{0}{4}{30/31}{}{0}}
 \headcommand {\beamer@framepages {30}{31}}
-\headcommand {\slideentry {4}{0}{5}{32/32}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{32}{Representaci\'on el Conocimiento}}\headcommand {\beamer@subsectionpages {26}{31}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{1}{1}{32}{Identificar los principales recursos de informaci\'on}}
+\headcommand {\slideentry {4}{1}{1}{32/32}{Representaci\'on el Conocimiento}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{33}{Representaci\'on el Conocimiento}}\headcommand {\beamer@subsectionpages {26}{32}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{1}{1}{33}{Identificar los principales recursos de informaci\'on}}
-\headcommand {\slideentry {4}{1}{1}{33/33}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{1}{2}{33}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}}
+\headcommand {\slideentry {4}{1}{2}{33/33}{Representaci\'on el Conocimiento}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{1}{2}{34}{Adquirir y expresar el conocimiento de los recursos de informaci\'on}}
-\headcommand {\slideentry {4}{1}{2}{34/34}{Representaci\'on el Conocimiento}{0}}
-\headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{1}{3}{35}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}}
-\headcommand {\slideentry {4}{1}{3}{35/37}{Representaci\'on el Conocimiento}{0}}
-\headcommand {\beamer@framepages {35}{37}}
-\headcommand {\slideentry {4}{1}{4}{38/38}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{1}{3}{34}{Representar el conocimiento e informaci\'on mediante el est\'andar RDF}}
+\headcommand {\slideentry {4}{1}{3}{34/36}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\beamer@framepages {34}{36}}
+\headcommand {\slideentry {4}{1}{4}{37/37}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {4}{1}{5}{38/38}{Representaci\'on el Conocimiento}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {4}{1}{5}{39/39}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\slideentry {4}{1}{6}{39/39}{Representaci\'on el Conocimiento}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{1}{6}{40/40}{Representaci\'on el Conocimiento}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{40}{Enriquecer el conocimiento en el modelo sem\'antico}}\headcommand {\beamer@subsectionpages {32}{39}}
+\headcommand {\slideentry {4}{2}{1}{40/40}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{41}{Enriquecer el conocimiento en el modelo sem\'antico}}\headcommand {\beamer@subsectionpages {33}{40}}
-\headcommand {\slideentry {4}{2}{1}{41/41}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{1}{41}{Jerarqu\IeC {\'\i }a de Clases}}
+\headcommand {\slideentry {4}{2}{2}{41/41}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{1}{42}{Jerarqu\IeC {\'\i }a de Clases}}
-\headcommand {\slideentry {4}{2}{2}{42/42}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{2}{2}{42/43}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {42}{43}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{2}{44}{Jerarqu\IeC {\'\i }a de Propiedades}}
-\headcommand {\slideentry {4}{2}{3}{44/44}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {4}{2}{3}{44/45}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {44}{45}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{3}{46}{Dominio y Rango en las Propiedades}}
-\headcommand {\slideentry {4}{2}{4}{46/46}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {4}{2}{4}{46/47}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
-\headcommand {\beamer@framepages {46}{47}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{4}{48}{Caracter\IeC {\'\i }sticas en las Propiedades}}
-\headcommand {\slideentry {4}{2}{5}{48/48}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\slideentry {4}{2}{2}{41/42}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {41}{42}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{2}{43}{Jerarqu\IeC {\'\i }a de Propiedades}}
+\headcommand {\slideentry {4}{2}{3}{43/43}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {4}{2}{3}{43/44}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {43}{44}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{3}{45}{Dominio y Rango en las Propiedades}}
+\headcommand {\slideentry {4}{2}{4}{45/45}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {4}{2}{4}{45/46}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {45}{46}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{4}{47}{Caracter\IeC {\'\i }sticas en las Propiedades}}
+\headcommand {\slideentry {4}{2}{5}{47/47}{Enriquecer el conocimiento en el modelo sem\'antico}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{48}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}}\headcommand {\beamer@subsectionpages {40}{47}}
+\headcommand {\slideentry {4}{3}{1}{48/48}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{49}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}}\headcommand {\beamer@subsectionpages {41}{48}}
-\headcommand {\slideentry {4}{3}{1}{49/49}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{49}{Herramientas para la Integraci\'on Sem\'antica}}\headcommand {\beamer@subsectionpages {48}{48}}
+\headcommand {\slideentry {4}{4}{1}{49/49}{Herramientas para la Integraci\'on Sem\'antica}{0}}
 \headcommand {\beamer@framepages {49}{49}}
 \headcommand {\sectionentry {5}{Prototipo (Aplicaci\'on)}{50}{Prototipo (Aplicaci\'on)}{0}}
 \headcommand {\beamer@sectionpages {26}{49}}

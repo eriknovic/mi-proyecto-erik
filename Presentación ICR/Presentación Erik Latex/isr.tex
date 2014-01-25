@@ -41,30 +41,6 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-	\frametitle{Ontología}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{alertblock}{Definición}
-	\justifying 
-	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
-	\end{alertblock}
-	
-	\begin{block}{Componentes}
-	\begin{itemize}
-	\item \justifying Componente Asertivo (ABox)
-	%está constituido por descripciones que afirman que los individuos son instancias de una clase o propiedad.
-	\item \justifying Componente Terminológico (TBox)
-	%describe las clases y propiedades relevantes, así como las reglas de inferencia que permiten aprovechar la manera en que las instancias se relacionan entre sí.
-	\end{itemize}
-	\end{block}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\begin{figure}
-	\includegraphics[scale=0.4]{DominioK} 
-	\end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Representación el Conocimiento}
 \subsubsection{Identificar los principales recursos de información}
@@ -279,7 +255,25 @@
 %	\item \justifying Ejecutar las consultas mediante un motor de búsqueda SPARQL.
 %	\end{enumerate}
 %	\end{block}
+\end{frame}
 
+\subsection{Herramientas para la Integración Semántica}
+\begin{frame}
+	\frametitle{Herramientas para la Integración Semántica}
+	\begin{block}{Descriptor Semántico de Recursos}
+	\justifying
+	\small Herramienta para crear y almacenar tripletas RDF, en varias sintaxis de serialización, a partir de la información explícita de los recursos de información. \textbf{\textit{OntoMat Annotizer}}, \textbf{\textit{MnM}}, \textbf{\textit{GATE}} y \textbf{\textit{Aktive Media}}.
+	\end{block}
+	
+	\begin{block}{Editor de Ontologías}
+	\justifying
+	\small Herramienta que proporciona una serie de interfaces amigables para la construcción y mantenimiento de ontologías. \textbf{\textit{Protégé}}, \textbf{\textit{pOWL}}, \textbf{\textit{TopBraid Composer}} y \textbf{\textit{SWOOP}}.
+	\end{block}
+	
+	\begin{block}{Triplestore}
+	\justifying
+	\small Programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas. \textbf{\textit{Apache Jena}}, \textbf{\textit{Stardog}}, \textbf{\textit{4store}} y \textbf{\textit{Sesame}}.
+	\end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
