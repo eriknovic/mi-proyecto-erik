@@ -4,7 +4,7 @@
 \contentsline {chapter}{Acr\'onimos}{\es@scroman {xiii}}
 \contentsline {chapter}{\numberline {1}Marco Introductorio}{1}
 \contentsline {section}{\numberline {1.1}Introducci\'on}{1}
-\contentsline {section}{\numberline {1.2}Descripci\'on del Problema}{5}
+\contentsline {section}{\numberline {1.2}Descripci\'on del Problema}{4}
 \contentsline {subsection}{\numberline {1.2.1}Memoria Corporativa}{6}
 \contentsline {subsubsection}{Administraci\'on de una Memoria Corporativa}{7}
 \contentsline {subsubsection}{Naturaleza de una Memoria Corporativa}{9}
@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {2.1}Introducci\'on y Definiciones}{17}
 \contentsline {section}{\numberline {2.2}Marco de Descripci\'on de Recursos}{17}
 \contentsline {section}{\numberline {2.3}Lenguaje de Consulta sobre Grafos RDF (SPARQL)}{21}
-\contentsline {section}{\numberline {2.4}Reglas de Inferencia (RDF(S)/OWL) y Razonadores}{22}
+\contentsline {section}{\numberline {2.4}Reglas de Inferencia (RDF(S)/OWL) y Razonadores}{21}
 \contentsline {section}{\numberline {2.5}Ventajas de las Tecnolog\IeC {\'\i }as Sem\'anticas}{26}
 \contentsline {chapter}{\numberline {3}Estado del arte}{31}
 \contentsline {section}{\numberline {3.1}Integraci\'on Sem\'antica de Recursos de Informaci\'on}{31}
@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {4.1}Representaci\'on del Conocimiento en los Recursos de Informaci\'on}{46}
 \contentsline {section}{\numberline {4.2}Enriquecimiento del Conocimiento en el Modelo}{54}
 \contentsline {subsection}{\numberline {4.2.1}Herencia de Clases}{55}
-\contentsline {subsection}{\numberline {4.2.2}Herencia de Propiedades}{57}
+\contentsline {subsection}{\numberline {4.2.2}Herencia de Propiedades}{58}
 \contentsline {subsection}{\numberline {4.2.3}Dominio y Rango de Propiedades}{61}
-\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las Propiedades}{64}
+\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las Propiedades}{65}
 \contentsline {section}{\numberline {4.3}B\'usqueda y Recuperaci\'on de Informaci\'on en el Modelo}{68}
 \contentsline {chapter}{\numberline {5}Prototipo}{83}
 \contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{109}

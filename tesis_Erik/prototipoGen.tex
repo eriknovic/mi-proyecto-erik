@@ -36,7 +36,7 @@ Este prototipo está constituido por un conjunto de servlets y páginas dinámicas.
 
 El motivo de usar formularios, es proporcionar al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
 
-La interfaz Web al implementarse a partir del uso de servlets y páginas estáticas, requiere un servidor apropiado que soporte estos dos elementos. Apache Tomcat\footnote{The Apache Software Foundation, ``Apache Tomcat,'' Available: \url{http://tomcat.apache.org/}} es una servidor que soporta el uso de servlets Java y páginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras páginas estáticas y dinámicas. Otra razón del uso de Tomcat, éste es un software open source e implementado bajo la licencia ``Apache License version 2''.
+La interfaz Web al implementarse a partir del uso de servlets y páginas estáticas, requiere un servidor apropiado que soporte estos dos elementos. Apache Tomcat \cite{Tomcat} es una servidor que soporta el uso de servlets Java y páginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras páginas estáticas y dinámicas. Otra razón del uso de Tomcat, éste es un software open source e implementado bajo la licencia ``Apache License version 2''.
 
 La Figura \ref{fig:fbes} muestra de manera general la interacción de un usuario con una interfaz web del prototipo (formularios y servlets). En esta Figura, también se presentan los procesos internos del servlet para: cargar, inferir, consultar en un modelo semántico, así como la visualización de los resultados en una página dinámica.
 
@@ -564,9 +564,9 @@ La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \t
 Nuestra interfaz Web es un prototipo y como tal requiere varios aspectos que se deben hacer y mejorar en ésta. Estas son las actividades por hacer en nuestra interfaz:
 
 \begin{itemize}
-\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}.
-\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}.
-\item Agregar un recuadro en las \textit{páginas Web} para que los usuarios puedan hacer búsquedas basadas en \textit{palabras clave}, donde estas \textit{búsquedas de texto} se hacen dentro de consultas SPARQL. Esta búsqueda se hace mediante el uso de la Lucene Index\footnote{The Apache Software Foundation, ``LARQ,'' Available: \url{http://jena.apache.org/documentation/larq/index.html}}.
+\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro \cite{Shiro}.
+\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables \cite{DataTables}.
+\item Agregar un recuadro en las \textit{páginas Web} para que los usuarios puedan hacer búsquedas basadas en \textit{palabras clave}, donde estas \textit{búsquedas de texto} se hacen dentro de consultas SPARQL. Esta búsqueda se hace mediante el uso de la Lucene Index \cite{Lucene}.
 \end{itemize}
 
 %%%%--------------------------> Reviza aquí

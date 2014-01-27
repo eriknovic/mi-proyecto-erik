@@ -253,7 +253,7 @@ El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\tex
 \item En el primer recuadro, la tripleta RDF establece que este recurso pertenece a la clase Profesor.
 \item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
 \item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
-\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica\footnote{L. Victorino y G. Medina , ``Educación basda en competencias y el proyecto tuning en Europa y Latinoámerica,'' Disponible en: \url{http://www.observatorio.org/colaboraciones/2007/TuningEuropayAL-LiberoVictorionoRamirez}\%\url{2011oct07.pdf}}.
+\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica \cite{Victorino}.
 \item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}.
 \item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
 \end{itemize}
@@ -285,7 +285,7 @@ Este es el procedimiento de generación de tripletas RDF mediante el uso de formu
 
 \begin{enumerate}
 \item Identificar la información que debe ser adquirida en los recursos con base en los diagramas de clases.
-\item Construir los formularios para los recursos de información (persona, documento y multimedia) mediante Google Form\footnote{Google, ``Formularios,''  Disponible en: \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}}, con el propósito de agilizar el proceso de recopilación de la información en los recursos.
+\item Construir los formularios para los recursos de información (persona, documento y multimedia) mediante Google Form \cite{GooForm}, con el propósito de agilizar el proceso de recopilación de la información en los recursos.
 \item Enviar los formularios vía email a los profesores o alumnos, para que ellos escriban la información sobre las características y relaciones de los recursos.
 \item Recuperar y almacenar las respuestas de cada formulario en una de tres \textit{hojas de cálculo} (persona, documento y multimedia).
 \item Descargar la información de cada \textit{hoja de cálculo} en un archivo CSV\label{sym:csv} (persona, documento y multimedia).
@@ -301,7 +301,7 @@ La etapa de representación del conocimiento, nos permite describir el conocimien
 
 Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan todos los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
-Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle\footnote{W3C, ``OWL 2 Web Ontology Language Document Overview (Second Edition),''  Disponible en: \url{http://www.w3.org/TR/owl2-overview/}}).
+Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización \cite{SintaxisRDF} (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle).
 
 \subsection{Herencia de Clases}
 El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
@@ -797,7 +797,7 @@ En la recuperación de la información, el \textit{tercer punto clave} es la \text
 \label{fig:exMBS}
 \end{figure}
 
-Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena\footnote{The Apache Software Foundation, ``Apache Jena,''  Disponible en: \url{http://jena.apache.org/}} posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
+Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
 
 Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo que se tomo de la ontología \textit{búsqueda de recursos digitales}.
 

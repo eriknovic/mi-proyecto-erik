@@ -5,7 +5,7 @@
 \label{sec:intTS}
 La semántica \cite{SemLyons} es un subcampo de la lingüística que determina la relación entre palabras y el significado de éstas; así como el estudio de cómo las palabras, frases y otros símbolos lingüísticos, se relacionan entre sí para formar un significado estructurado.
 
-Las \textit{tecnologías semánticas} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}\footnote{L. Feigenbaum, ``Semantic Web vs. Semantic Technologies,''  Disponible en: \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies}}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías:
+Las \textit{tecnologías semánticas} (TS\label{sym:TS}) \cite{SemTecRetr} son \textit{un conjunto de metodologías, lenguajes, aplicaciones, herramientas y estándares para suministrar u obtener el significado de las palabras, información y las relaciones entre éstos}\cite{Feigenbaum}. En estas tecnologías existen varios enfoques para la aplicación del concepto. Estos enfoques se agrupan en dos categorías:
 
 \begin{enumerate}
 \item Mejorar las capacidades de los procesos automáticos para analizar y comprender el lenguaje.
@@ -27,7 +27,7 @@ La categoría para la \textit{integración semántica} es la segunda (técnicas para
 
 \section{Marco de Descripción de Recursos}
 \label{sec:rdf} 
-Las \textit{tecnologías semánticas} proponen al \textbf{marco de descripción de recursos} (\textit{Resource Description Framework} RDF\footnote{W3C,``RDF 1.1 Concepts and Abstract Syntax,'' Disponible en: \url{http://www.w3.org/TR/rdf11-concepts/}}\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de esta representación (modelo) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
+Las \textit{tecnologías semánticas} proponen al \textbf{marco de descripción de recursos} \cite{RDF11} (\textit{Resource Description Framework} RDF\label{sym:rdf}) como \textit{marco de trabajo} para \textit{representar el conocimiento e información acerca de los recursos en un formato estándar} \cite{SurvSemWeb2012}. La finalidad de esta representación (modelo) es \textit{proveer a los recursos con un significado que sea comprensible por los procesos automáticos}. Mientras, la finalidad de un \textit{formato estándar} es tener un formato compatible y universal para que los procesos automáticos interpreten, mezclen y compartan la información.
 
 En el marco RDF se tienen tres conceptos claves \cite{SwarmComp}: \textbf{Recurso}, \textbf{Propiedad} y \textbf{Sentencia}.
 
@@ -139,7 +139,7 @@ La Figura \ref{fig:ejmrep} muestra un grafo RDF asociado a las tripletas de la F
 \label{fig:ejmrep}
 \end{figure}
 
-En el marco RDF, existen distintas sintaxis para escribir y almacenar las tripletas. Estas sintaxis son: N3\footnote{W3C,``Notation3 (N3),'' Disponible en: \url{http://www.w3.org/TeamSubmission/n3/}}, turtle\footnote{W3C,``Turtle,'' Disponible en: \url{http://www.w3.org/TR/2013/CR-turtle-20130219/}}, RDF/XML\footnote{W3C,``RDF/XML Syntax Specification,'' Disponible en: \url{http://www.w3.org/TR/rdf-syntax-grammar/}}, N-triples\footnote{W3C,``N-Triples,'' Disponible en: \url{http://www.w3.org/2001/sw/RDFCore/ntriples/}}. El Consorcio de la Web (W3C\label{sym:wwwc}) establece como sintaxis estándar al RDF/XML. Aunque, la sintaxis Turtle es equivalente a las tripletas de la Figura \ref{fig:triple}.
+En el marco RDF, existen distintas sintaxis para escribir y almacenar las tripletas. Estas sintaxis son: N3 \cite{sinN3}, turtle \cite{sinTurt}, RDF/XML \cite{sinRDF}, N-triples \cite{sinNtriple}. El Consorcio de la Web (W3C\label{sym:wwwc}) establece como sintaxis estándar al RDF/XML. Aunque, la sintaxis Turtle es equivalente a las tripletas de la Figura \ref{fig:triple}.
 
 %%%que es RDF
 
@@ -226,7 +226,7 @@ Una ontología tiene dos componentes \cite{Magdalena}:
 
 Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explícito en el grafo RDF. Estos axiomas tienen diferentes propósitos \cite{Magdalena}, como son: describir relaciones entre clases, definir propiedades en términos de otras, definir relaciones entre conceptos, definir restricciones de cómo las propiedades se relacionan, por mencionar algunos.
 
-Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} (\textit{RDF Schema} RDF(S)\label{sym:rdfs}\footnote{W3C, ``RDF Vocabulary Description Language 1.0: RDF Schema,'' Dispoible en: \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}}) y el \textit{Lenguaje de Ontologias Web} (\textit{Web Ontology Language} OWL\label{sym:owl}\footnote{W3C,``OWL 2 Web Ontology Language Structural Specification and Functional Style Syntax,'' Disponible en: \url{http://www.w3.org/TR/owl2-syntax/}}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
+Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} \cite{RDFS10} (\textit{RDF Schema} RDF(S)\label{sym:rdfs}) y el \textit{Lenguaje de Ontologias Web} \cite{OWL2} (\textit{Web Ontology Language} OWL\label{sym:owl}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
 
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en la construcción y mantenimiento de ontologías \cite{YunLin}, \cite{protegeManual}.
 
@@ -254,7 +254,7 @@ Las funcionalidades de los axiomas \textit{para asociar restricciones a las prop
 \item \textbf{Rango} (\textit{rdfs:range}) especifica los valores (clase o tipo de literal) que puede asumir una propiedad. Por ejemplo, \textit{toda persona que \textbf{tiene abuelo} debe vincularse con un individuo de la clase \textbf{Hombre}}, esto es, si María tiene por abuelo a Ramón, entonces Ramón es una instancia de la clase \textbf{Hombre}.
 \end{itemize}
 
-El vocabulario OWL ofrece otros axiomas que tienen otras funcionalidades\footnote{W3C,``OWL 2 Web Ontology Language Primer,'' Disponible en: \url{http://www.w3.org/TR/2012/REC-owl2-primer-20121211/}} (restricciones cardinalidad, valores de literales, existenciales o universales) para enriquecer el conocimiento en un dominio \cite{Grau}. Los axiomas en los lenguajes OWL y RDF(S) pueden ser combinados para construir clases y propiedades complejas \cite{Magdalena}, \cite{Grau}. Un ejemplo de esta combinación es el siguiente. \textit{Todo \textbf{metal líquido} es aquel elemento que pertenece a la intersección de la clase \textbf{Metal} y la clase \textbf{Líquido}}. Este ejemplo, se representa en la Figura \ref{fig:combax}.
+El vocabulario OWL ofrece otros axiomas que tienen otras funcionalidades \cite{OWLprimer} (restricciones cardinalidad, valores de literales, existenciales o universales) para enriquecer el conocimiento en un dominio \cite{Grau}. Los axiomas en los lenguajes OWL y RDF(S) pueden ser combinados para construir clases y propiedades complejas \cite{Magdalena}, \cite{Grau}. Un ejemplo de esta combinación es el siguiente. \textit{Todo \textbf{metal líquido} es aquel elemento que pertenece a la intersección de la clase \textbf{Metal} y la clase \textbf{Líquido}}. Este ejemplo, se representa en la Figura \ref{fig:combax}.
 
 \begin{figure}[!htb]
 \centering
@@ -315,7 +315,7 @@ El marco RDF es una herramienta para \textit{solucionar la heterogeneidad en for
 \begin{itemize}
 \item \textbf{\textit{Formato}} El marco RDF permite modelar cualquier recurso, sin importar si es un documento con extensión doc, pdf, odp, html, xml, o un archivo multimedia con extensión ppt, mp3, mpeg, jpg, o incluso si es una persona, organización o cualquier otro recurso físico. De hecho, una característica importante en un documento y archivo multimedia es la extensión del archivo. Otra característica importante es indicar a cuál clase pertenece un recurso, por ejemplo, Documento, Multimedia, Persona, Organización, por mencionar algunas.
 \item \textbf{\textit{Contenido}} Por definición el marco describe las características en torno o en los recursos. De esta manera, si los recursos hacen referencia a distintos temas, el marco RDF permite establecer las tripletas que vinculan a un recurso con uno o varios temas.
-\item \textbf{\textit{Estructura}} La flexibilidad del marco, permite representar cualquier recurso, sin importar que este recurso sea estructurado, semi-estructurado o sin estructura. De hecho, el estándar R2RML\footnote{W3C, ``R2RML: RDB to RDF Mapping Language,''  Disponible en: \url{http://www.w3.org/TR/r2rml/}} es el lenguaje estándar para trasladar BD relacionales a modelos con tripletas RDF.
+\item \textbf{\textit{Estructura}} La flexibilidad del marco, permite representar cualquier recurso, sin importar que este recurso sea estructurado, semi-estructurado o sin estructura. De hecho, el estándar R2RML \cite{R2RML} es el lenguaje estándar para trasladar BD relacionales a modelos con tripletas RDF.
 \end{itemize}
 
 %%%Eliminar problemas de ambiguedad con una ontología
@@ -326,11 +326,11 @@ En una ontología, puede definirse que un recurso, clase o propiedad es \textit{s
 %%utiliación de distintos estandares para representar el conocimiento
 Una utilidad importante en las tecnologías semánticas es la \textit{interoperabilidad} \cite{SurvOnto}, \cite{Norta}. Este concepto se refiere a \textit{la facilidad de reutilizar y compartir las ontologías entre personas o aplicaciones, gracias a que una ontología emplea y se elabora con varios estándares}. En concreto, el marco RDF propone la \textit{estructura estándar} para describir el conocimiento, RDF(S) y OWL proponen los \textit{lenguajes estándares} para escribir los axiomas, y SPARQL el \textit{lenguaje de consulta estándar} sobre grafos de conocimiento.
 
-Ejemplos de ontologías\footnote{W3C,``Good Ontologies,'' Disponible en: \url{http://www.w3.org/wiki/Good_Ontologies}} (modelo de referencia) que proporcionan interoperabilidad son:
+Ejemplos de ontologías\cite{GoodOnto} (modelo de referencia) que proporcionan interoperabilidad son:
 
 \begin{enumerate}
-\item \textit{Dublin Core} es un vocabulario genérico de metadatos que proporciona información descriptiva de cualquier documento en un sistema de información\footnote{Dublin Core Semantic Initiative,``Dublin Core,'' Disponible en: \url{http://dublincore.org/}}.
-\item \textit{Friend Of A Friend} (FOAF\label{sym:foaf}) es un vocabulario para describir a las personas y las relaciones de éstas en la Web\footnote{FOAF project,``The Friend of a Friend (FOAF) project,'' Disponible en: \url{http://www.foaf-project.org/}}.
+\item \textit{Dublin Core} es un vocabulario genérico de metadatos que proporciona información descriptiva de cualquier documento en un sistema de información \cite{Dublin}.
+\item \textit{Friend Of A Friend} (FOAF\label{sym:foaf}) es un vocabulario para describir a las personas y las relaciones de éstas en la Web \cite{Foaf}.
 \end{enumerate}
 
 La interoperabilidad promueve la realización de diversas actividades para mejorar de manera eficiente y eficaz la gestión del conocimiento. Estas actividades se listan a continuación:
@@ -371,21 +371,21 @@ Ahora bien, un usuario desea recuperar \textit{todos los individuos que son pers
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.6\textwidth]{SparqlExmpReaz}
+\includegraphics[width=0.55\textwidth]{SparqlExmpReaz}
 \caption{Consulta SPARQL para recuperar todos los individuos que son personas.}
 \label{fig:csr}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[height=4.6cm, width=1.0\textwidth]{TripletasInferidas}
+\caption{Ontología con tripletas que han sido inferidas mediante un razonador.}
+\label{fig:trinf}
 \end{figure}
 
 Un motor de consulta SPARQL procesa esta consulta, seguido de esto, el motor no arroja ningún resultado. Porque en la ontología (Figura \ref{fig:otxp}) no hay una tripleta explícita que establezca que un recurso pertenece a la clase Persona.
 
 Esta ontología implícitamente tiene las tripletas que indican que un recurso pertenece a la clase Persona. Porque los axiomas establecen que los individuo de las clases Mujer, Hombre y Estudiante son instancias de la clase Persona. Ahora bien, un razonador infiere las tripletas a partir de los axiomas y descripciones en la ontología de la Figura \ref{fig:otxp}. La Figura \ref{fig:trinf} muestra la ontología con las tripletas materializadas.
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[height=4.7cm, width=1.0\textwidth]{TripletasInferidas}
-\caption{Ontología con tripletas que han sido inferidas mediante un razonador.}
-\label{fig:trinf}
-\end{figure}
 
 Si de nuevo se hace la consulta de la Figura \ref{fig:csr} con el motor de consulta en la ontología de la Figura \ref{fig:trinf}, se obtienen los siguientes resultados: \textbf{exp:Juan}, \textbf{exp:Laura} y \textbf{exp:Luis}. Por esta razón, la combinación de un razonador y motor de consulta es un mecanismo que permite recuperar más respuestas porque el conocimiento implícito se vuelve explícito.
 

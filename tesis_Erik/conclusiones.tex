@@ -97,13 +97,13 @@ En esta investigación, nosotros identificamos varias actividades que consideramo
 	\begin{itemize}
 	\item Introducir más \textit{casos de uso}, por ejemplo, la administración del inventario en los distintos laboratorios que componen el departamento de ingeniería eléctrica de la UAM.
 	\item Actualizar los \textit{recursos de información} y las descripciones de éstos, para tener una buena representación de la memoria corporativa del área de Redes y Telecomunicaciones.
-	\item Evaluar la introducción de \textit{reglas de inferencia} más complejas en la ontología, mediante el análisis de los reglas existentes y el uso de reglas del lenguaje \textit{Semantic Web Rule Language}\footnote{W3C, ``SWRL: A Semantic Web Rule Language Combining OWL and RuleML,'' Disponible en: \url{http://www.w3.org/Submission/SWRL/}} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
+	\item Evaluar la introducción de \textit{reglas de inferencia} más complejas en la ontología, mediante el análisis de los reglas existentes y el uso de reglas del lenguaje \textit{Semantic Web Rule Language} \cite{SWRL} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
 	\item Mejorar el prototipo de integración semántica de recursos:
 		\begin{itemize}
-		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index\footnote{The Apache Software Foundation, ``adding free text searches to SPARQL,''  Disponible en: \url{http://jena.apache.org/documentation/larq/}}.
+		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index \cite{Lucene}.
 		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, materializando desde el inicio las tripletas y almacenándolas en un nuevo modelo.
-		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables\footnote{SpryMedia, ``DataTables,'' Available: \url{http://datatables.net/}}.
-		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro\footnote{The Apache Software Foundation, ``Apache Shiro,'' Available: \url{http://shiro.apache.org/}}.
+		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables \cite{DataTables}.
+		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro \cite{Shiro}.
 	\end{itemize}
 	\end{itemize}
 \item \textbf{A mediano plazo:}
@@ -130,7 +130,7 @@ En esta investigación, nosotros identificamos varias actividades que consideramo
 				\item Guardar el nuevo modelo.
 			\end{itemize}
 		\end{itemize}
-	\item Utilizar otro triplestore, por ejemplo Stardog\footnote{Clark \& Parsia, LLC, ``Stardog,''  Disponible en: \url{http://stardog.com/}} o Sesame\footnote{Aduna, ``Sesame,''  Disponible en: \url{http://www.openrdf.org/index.jsp}}, y hacer una evaluación del mismo.
+	\item Utilizar otro triplestore, por ejemplo Stardog \cite{Clark} o Sesame \cite{Aduna}, y hacer una evaluación del mismo.
 		\begin{itemize}
 		\item Cargar, inferir y consultar nuestras ontologías con el \textit{triplestore electo}.
 		\item Hacer nuestra evaluación experimental con este triplestore.
