@@ -30,7 +30,7 @@ La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.8\textwidth]{Arquitectura}
+\fbox{\includegraphics[width=0.8\textwidth]{Arquitectura}}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
@@ -95,7 +95,7 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos(características
 %%%Diagrama de clases Personas
 \begin{figure}[hp]
 \centering
-\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}
+\fbox{\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}}
 \caption{Diagrama de clases para la cartografía competencias.}
 \label{fig:dccarc}
 \end{figure}
@@ -103,7 +103,7 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos(características
 %%% Diagrama de clases recursos digitales
 \begin{figure}[hp]
 \centering
-\includegraphics[angle=90,scale=0.85]{CasoUsoRecDig}
+\fbox{\includegraphics[angle=90,scale=0.85]{CasoUsoRecDig}}
 \caption{Diagrama de clases para la búsqueda de recursos digitales.}
 \label{fig:dcbrd}
 \end{figure}
@@ -122,6 +122,7 @@ La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
+\caption{Ejemplos de identificadores URI asociados a los recursos persona para la cartografía de competencias.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
 \textbf{Nombres} & \textbf{Identificadores (URI)}\\
@@ -146,7 +147,6 @@ Cesar Jalpa & \textit{\textbf{sirp:}CesarJalpa} \\
 Enrique Rodriguez & \textit{\textbf{sirp:}EnriqueRodriguez} \\
 \hline
 \end{tabular}
-\caption{Ejemplos de identificadores URI asociados a los recursos persona para la cartografía de competencias.}
 \label{tab:uriper}
 \end{table}
 
@@ -155,6 +155,7 @@ La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos dig
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
+\caption{Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la búsqueda de recursos digitales.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.2in}}
 \hline
 \textbf{Títulos} & \textbf{Identificadores (URI)}\\
@@ -171,7 +172,6 @@ The Semantic Web - An Overview & \textit{\textbf{sird:}TheSemanticWeb-AnOverview
 What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
 \hline
 \end{tabular}
-\caption{Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la búsqueda de recursos digitales.}
 \label{tab:urird}
 \end{table}
 
@@ -182,6 +182,7 @@ La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades qu
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
+\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
 \hline
 \textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
@@ -202,7 +203,6 @@ Competencias & \textit{\textbf{sirp:}competentIn} \\
 Habilidades en temas de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
 \hline
 \end{tabular}
-\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
 \label{tab:ccprop}
 \end{table}
 
@@ -211,6 +211,7 @@ La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades d
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
+\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la búsqueda de recursos digitales.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
 \textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
@@ -229,7 +230,6 @@ Lenguaje Fuente & \textit{\textbf{sird:}has-languageSource} \\
 Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
 \hline 
 \end{tabular}
-\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la búsqueda de recursos digitales.}
 \label{tab:brdprop}
 \end{table}
 
@@ -242,7 +242,7 @@ En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcel
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=3.3in,width=1.0\textwidth]{Person2RDF}
+\fbox{\includegraphics[height=3.3in,width=1.0\textwidth]{Person2RDF}}
 \caption{Declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
 \label{fig:drper}
 \end{figure}
@@ -262,7 +262,7 @@ La Figura \ref{fig:drdig} presenta la representación del vídeo ``\textit{What is
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.7in,width=1.0\textwidth]{Vid2RDF}
+\fbox{\includegraphics[height=2.7in,width=1.0\textwidth]{Vid2RDF}}
 \caption{Declaraciones de vídeo ``What is Linked Data?'' en forma de tripletas RDF}
 \label{fig:drdig}
 \end{figure}
@@ -314,7 +314,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.72\textwidth]{HerenClassCartComp}
+\fbox{\includegraphics[width=0.72\textwidth]{HerenClassCartComp}}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -323,7 +323,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.86\textwidth]{ExpInfsubClassPer}
+\fbox{\includegraphics[width=0.86\textwidth]{ExpInfsubClassPer}}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
 \label{fig:exHerClasPer}
 \end{figure}
@@ -334,7 +334,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}
+\fbox{\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
@@ -343,7 +343,7 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.83\textwidth]{ExpInfsubClassDigi}
+\fbox{\includegraphics[width=0.83\textwidth]{ExpInfsubClassDigi}}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso What is Linked Data?}
 \label{fig:exHerClasDigi}
 \end{figure}
@@ -359,7 +359,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.62\textwidth]{HerPropLang}
+\fbox{\includegraphics[width=0.62\textwidth]{HerPropLang}}
 \caption{Jerarquía de propiedades para las habilidades lingüísticas.}
 \label{fig:HerPropLang}
 \end{figure}
@@ -370,7 +370,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.45\textwidth]{HerPropLoW}
+\fbox{\includegraphics[width=0.45\textwidth]{HerPropLoW}}
 \caption{Jerarquía de propiedades para el lugar de trabajo.}
 \label{fig:HerPropLoW}
 \end{figure}
@@ -381,7 +381,7 @@ La siguiente lista describe las \textit{jerarquías de propiedades} que se identi
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.48\textwidth]{HerPropKno}
+\fbox{\includegraphics[width=0.48\textwidth]{HerPropKno}}
 \caption{Jerarquía de propiedades para las relaciones profesionales entre personas.}
 \label{fig:HerPropKno}
 \end{figure}
@@ -399,7 +399,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.45\textwidth]{HerPropCompe}
+\fbox{\includegraphics[width=0.45\textwidth]{HerPropCompe}}
 \caption{Jerarquía de propiedades para describir el contenido de un recurso digital.}
 \label{fig:HerPropCompe}
 \end{figure}
@@ -410,7 +410,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.98\textwidth]{HerPropYr}
+\fbox{\includegraphics[width=0.98\textwidth]{HerPropYr}}
 \caption{Jerarquía de propiedades para indicar el año de un recurso digital.}
 \label{fig:HerPropYr}
 \end{figure}
@@ -421,7 +421,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.7\textwidth]{HerPropInst}
+\fbox{\includegraphics[width=0.7\textwidth]{HerPropInst}}
 \caption{Jerarquía de propiedades para vincular a una organización con un recurso digital.}
 \label{fig:HerPropInst}
 \end{figure}
@@ -434,6 +434,7 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \begin{table}[hp]
 \renewcommand{\arraystretch}{1.9}
 \centering
+\caption{Dominio y Rango para las propiedades asociadas a la cartografía de competencias.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
 \textbf{Propiedades} & \textbf{Dominios} & \textbf{Rangos}\\
@@ -470,13 +471,13 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \textit{\textbf{sirp:}worksIn} & \textit{\textbf{sirp:}Professional} & \textit{\textbf{sirp:}Organization} \\
 \hline
 \end{tabular}
-\caption{Dominio y Rango para las propiedades asociadas a la cartografía de competencias.}
 \label{tab:dyrcc}
 \end{table}
 
 \begin{table}[hp]
 \renewcommand{\arraystretch}{1.7}
 \centering
+\caption{Dominio y Rango para las propiedades asociadas a la búsqueda de recursos digitales.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in} >{\centering\arraybackslash}m{2.0in}}
 \hline
 \textbf{Propiedades} & \textbf{Dominios} & \textbf{Rangos}\\
@@ -521,7 +522,6 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Paper} & \textit{\textbf{xsd:}integer} \\
 \hline
 \end{tabular}
-\caption{Dominio y Rango para las propiedades asociadas a la búsqueda de recursos digitales.}
 \label{tab:dyrrd}
 \end{table}
 
@@ -531,7 +531,7 @@ En la Figura \ref{fig:exAxDyRPer} se presentan los axiomas de dominio y rango pa
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.55\textwidth]{exAxDyRPer}
+\fbox{\includegraphics[width=0.55\textwidth]{exAxDyRPer}}
 \caption{Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exAxDyRPer}
 \end{figure}
@@ -540,7 +540,7 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.76\textwidth]{exTriplDyRPer}
+\fbox{\includegraphics[width=0.76\textwidth]{exTriplDyRPer}}
 \caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exTriplDyRPer}
 \end{figure}
@@ -549,7 +549,7 @@ En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación pr
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=4.0in, width=0.90\textwidth]{exInfDyRPer}
+\fbox{\includegraphics[height=4.0in, width=0.90\textwidth]{exInfDyRPer}}
 \caption{Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartografía de competencias.}
 \label{fig:exInfDyRPer}
 \end{figure}
@@ -561,7 +561,7 @@ Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{i
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.33\textwidth]{unidirecc}
+\fbox{\includegraphics[width=0.33\textwidth]{unidirecc}}
 \caption{Ejemplo del comportamiento unidireccional de una propiedad.}
 \label{fig:unidirecc}
 \end{figure}
@@ -570,7 +570,7 @@ Sin embargo, existen algunas propiedades que requieren tener un comportamiento b
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.39\textwidth]{bidirecc}
+\fbox{\includegraphics[width=0.39\textwidth]{bidirecc}}
 \caption{Ejemplo de simetría en una propiedad genérica.}
 \label{fig:bidirecc}
 \end{figure}
@@ -584,7 +584,7 @@ La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tie
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.77\textwidth]{axSymColl}
+\fbox{\includegraphics[width=0.77\textwidth]{axSymColl}}
 \caption{Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del área.}
 \label{fig:axSymColl}
 \end{figure}
@@ -595,7 +595,7 @@ La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo s
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=2.54in,width=0.95\textwidth]{infSymColl}
+\fbox{\includegraphics[height=2.54in,width=0.95\textwidth]{infSymColl}}
 \caption{Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad simétrica.}
 \label{fig:infSymColl}
 \end{figure}
@@ -609,7 +609,7 @@ La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relac
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=1.7in,width=0.85\textwidth]{triplKnows}
+\fbox{\includegraphics[height=1.7in,width=0.85\textwidth]{triplKnows}}
 \caption{Subgrafo RDF de las relaciones conoce-a entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:triplKnows}
 \end{figure}
@@ -618,7 +618,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[height=1.8in,width=0.95\textwidth]{InfKnows}
+\fbox{\includegraphics[height=1.8in,width=0.95\textwidth]{InfKnows}}
 \caption{Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad simétrica.}
 \label{fig:InfKnows}
 \end{figure}
@@ -719,7 +719,7 @@ La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la p
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{q112rql}
+\fbox{\includegraphics[width=0.9\textwidth]{q112rql}}
 \caption{Consulta SPARQL asociada a la pregunta Q1.1 de la cartografía de competencias.}
 \label{fig:q112rql}
 \end{figure}
@@ -740,7 +740,7 @@ En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones 
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{q2rqlSR}
+\fbox{\includegraphics[width=0.9\textwidth]{q2rqlSR}}
 \caption{Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}
 \label{fig:q2rqlSR}
 \end{figure}
@@ -749,7 +749,7 @@ La consulta de la pregunta Q1.18, puede simplificarse mediante la asunción de em
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{q2rqlCR}
+\fbox{\includegraphics[width=0.8\textwidth]{q2rqlCR}}
 \caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunción de emplear razonamiento.}
 \label{fig:q2rqlCR}
 \end{figure}
@@ -760,7 +760,7 @@ La Figura \ref{fig:q2torqlSR} presenta la consulta asociada a la pregunta (Q2.6)
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.8\textwidth]{q2torqlSR}
+\fbox{\includegraphics[width=0.8\textwidth]{q2torqlSR}}
 \caption{Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}
 \label{fig:q2torqlSR}
 \end{figure} 
@@ -781,7 +781,7 @@ La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{q2torqlCR}
+\fbox{\includegraphics[width=0.9\textwidth]{q2torqlCR}}
 \caption{Simplificación de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunción de emplear razonamiento.}
 \label{fig:q2torqlCR}
 \end{figure}
@@ -792,7 +792,7 @@ En la recuperación de la información, el \textit{tercer punto clave} es la \text
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.9\textwidth]{exMBS}
+\fbox{\includegraphics[width=0.9\textwidth]{exMBS}}
 \caption{Proceso básico de consulta de información para un motor de búsqueda SPARQL.}
 \label{fig:exMBS}
 \end{figure}
@@ -803,7 +803,7 @@ Los resultados proporcionados por un motor SPARQL, dependen del uso o no del pro
 
 \begin{figure}[hp]
 \centering
-\includegraphics[angle=90,scale=0.84]{grafoSR}
+\fbox{\includegraphics[angle=90,scale=0.84]{grafoSR}}
 \caption{Ejemplo de modelo sin inferencia para el proceso de consulta de información.}
 \label{fig:grafoSR}
 \end{figure}
@@ -837,6 +837,7 @@ Un motor SPARQL interpreta esta consulta, compara estos patrones con el grafo de
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
+\caption{Identificadores de los recursos resultantes sin inferencia para la consulta de información.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in}}
 \hline
 \textbf{?x} \\
@@ -855,7 +856,6 @@ Un motor SPARQL interpreta esta consulta, compara estos patrones con el grafo de
 \textit{sird:paper02-odp} \\
 \hline 
 \end{tabular}
-\caption{Identificadores de los recursos resultantes sin inferencia para la consulta de información.}
 \label{tab:resSC}
 \end{table}
 
@@ -863,7 +863,7 @@ Esta \textit{ejecución de la consulta} por un motor SPARQL arrojó seis resultado
 
 \begin{figure}[!hp]
 \centering
-\includegraphics[angle=90,scale=0.83]{grafoCR}
+\fbox{\includegraphics[angle=90,scale=0.83]{grafoCR}}
 \caption{Ejemplo de modelo con inferencia para el proceso de consulta de información.}
 \label{fig:grafoCR}
 \end{figure}
@@ -888,6 +888,7 @@ La Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL p
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.9}
 \centering
+\caption{Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de información.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.0in}}
 \hline
 \textbf{?x} \\
@@ -922,7 +923,6 @@ La Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL p
 \textit{sird:paper04-docx} \\
 \hline 
 \end{tabular}
-\caption{Identificadores de los recursos resultantes a partir del uso de inferencia para la consulta de información.}
 \label{tab:resCR}
 \end{table}
 
