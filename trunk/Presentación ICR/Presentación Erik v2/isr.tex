@@ -1,0 +1,193 @@
+\section{Metodología}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Integración Semántica mediante tecnologías semánticas}
+	\begin{block}{Etapas}
+		\begin{enumerate}[<+-| alert@+>]
+		\item \justifying Representar las características y/o relaciones de los \textit{recursos de información}, para construir un modelo semántico.
+		\item \justifying Introducir \textit{reglas de inferencia} en el modelo, para enriquecer con \textit{conocimiento implícito} de los \textit{recursos de información} y del dominio de la memoria.
+		\item \justifying Buscar y recuperar información en el modelo semántico para responder un conjunto consultas.
+		\end{enumerate}
+	\end{block}
+	\begin{figure}
+	\includegraphics[scale=0.25]{semtec} 
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Arquitectura}	
+	\begin{figure}
+	\includegraphics[scale=0.33]{Arquitectura} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Casos de Uso}
+	
+	\begin{block}{}
+		\begin{itemize}%[<+-| alert@+>]
+		\item \justifying \textbf{\textit{Cartografía de Competencias}} es la búsqueda y recuperación de información significativa de las personas a partir de las características personales y profesionales de las mismas.
+		\item \justifying \textbf{\textit{Búsqueda de Recursos Digitales}} es la búsqueda y recuperación de información significativa de los documentos y archivos multimedia a partir del contenido de los mismos.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.4]{CasosUso} 
+	\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Representación del conocimiento}
+\begin{frame}
+	\frametitle{Representación del conocimiento}
+	
+	\begin{block}{Definición}
+	\justifying 
+	\small Marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.30]{Person2RDF}
+	\end{figure}
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Representar el conocimiento e información mediante el estándar RDF}
+%	\begin{figure}
+%	\includegraphics[scale=0.45]{Tripletas} 
+%	\end{figure}
+%\end{frame}
+
+\begin{frame}
+	\frametitle{Grafo RDF}
+	\begin{figure}
+	\includegraphics[scale=0.48]{GrafoRDF} 
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Enriquecer el conocimiento en el modelo semántico}
+\begin{frame}
+	\frametitle{Introducir reglas de inferencia}	
+	\begin{block}{Reglas de inferencia o Axiomas}
+	\justifying 
+	\small Expresiones para enriquecer un grafo RDF con conocimiento implícito de las clases y relaciones.
+	\end{block}
+	
+	\begin{figure}[htbp]
+	\centering
+	\subfigure[Jerarquía de Clases]{
+	\includegraphics[scale=0.37]{HerenClassCartComp} 
+	}
+	\subfigure[Dominio y rango]{
+	\includegraphics[scale=0.37]{exAxDyRPer} 
+	}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Emplear un programa para inferir conocimiento}	
+	\begin{block}{Razonador}
+	\justifying 
+	\small Un programa que deduce conocimiento a partir de los axiomas y declaraciones explícitas en un modelos semántico.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.50]{EjmpInfSubClass}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Emplear un programa para inferir conocimiento}	
+	\begin{figure}
+	\includegraphics[scale=0.45]{exInfDyRPer}
+	\end{figure}
+\end{frame}
+
+%\subsubsection{Simetría en las propiedades}
+%\begin{frame}
+%	\begin{figure}
+%	\includegraphics[scale=0.5]{infSymColl}
+%	\end{figure}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Buscar y recuperar la información en el modelo semántico}
+\begin{frame}
+	\frametitle{Buscar y recuperar la información en el modelo semántico}
+%	\begin{block}{Objetivo}
+%	\justifying
+%	La búsqueda y recuperación de la información para responder las preguntas o necesidades informativas de los usuarios del área de Redes y Telecomunicaciones (RyT).
+%	\end{block}
+	
+	\begin{block}{SPARQL}
+	\justifying 
+	Lenguaje de consulta y protocolo de acceso a RDF, para la búsqueda y recuperación de la información en un grafo RDF.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.32]{q2rqlSR}
+	\end{figure}
+\end{frame}
+
+\subsection{Herramientas para la Integración Semántica}
+\begin{frame}
+	\frametitle{Herramientas para la Integración Semántica}
+	\begin{block}{Descriptor Semántico de Recursos}
+	\justifying
+	\small Herramienta para crear y almacenar tripletas RDF, en varias sintaxis de serialización, a partir de la información explícita de los recursos de información. \textbf{\textit{OntoMat Annotizer}}, \textbf{\textit{MnM}}, \textbf{\textit{GATE}} y \textbf{\textit{Aktive Media}}.
+	\end{block}
+	
+	\begin{block}{Editor de Ontologías}
+	\justifying
+	\small Herramienta que proporciona una serie de interfaces amigables para la construcción y mantenimiento de ontologías. \textbf{\textit{Protégé}}, \textbf{\textit{pOWL}}, \textbf{\textit{TopBraid Composer}} y \textbf{\textit{SWOOP}}.
+	\end{block}
+	
+	\begin{block}{Triplestore}
+	\justifying
+	\small Programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas. \textbf{\textit{Apache Jena}}, \textbf{\textit{Stardog}}, \textbf{\textit{4store}} y \textbf{\textit{Sesame}}.
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Construir un Prototipo (Aplicación)}
+\begin{frame}%[allowframebreaks]
+	\frametitle{Construir un Prototipo (Aplicación)}
+	\begin{block}
+	\justifying 
+	\small Una aplicación Web para que los usuarios puedan consultar y visualizar la información de los \textit{recursos de información}, proveniente de un modelo semántico.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.28]{IntWebNavPer} 
+	\end{figure}
+\end{frame}
+
+\begin{frame}%[allowframebreaks]
+	\frametitle{Construir un Prototipo (Aplicación)}
+	\begin{figure}
+	\includegraphics[scale=0.23]{FormBusMult} 
+	\end{figure}
+\end{frame}
+
+\subsection{Evaluar la integración semántica}
+\begin{frame}%[allowframebreaks]
+	\frametitle{Evaluar la integración semántica}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Evaluar la calidad de los resultados}
+	\justifying
+	Esta evaluación consiste en comparar los \textit{recursos relevantes recuperados} por Jena (con/sin inferencia) para una consulta dada, con los resultados que de antemano se sabe responden a esta consulta (total de recursos relevantes).
+	\end{block}
+	
+	\begin{block}{Medir los tiempos promedio de procesamiento de Jena}
+	\justifying
+	Esta evaluación consiste en comparar los tiempos de consulta para un modelo con inferencia y otro que no emplea ésta; estos tiempos se toman desde la ejecución de la consulta hasta la presentación de los resultados.
+	\end{block}
+\end{frame}
