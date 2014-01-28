@@ -1,18 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  27 JAN 2014 20:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  28 JAN 2014 01:25
 entering extended mode
 **tesis_Erik.tex
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
+lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
+m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
+i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
+ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
+ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
@@ -393,7 +392,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 )
 Package color Info: Redefining color black on input line 35.
 
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux
 
 LaTeX Warning: Label `sym:ide' multiply defined.
 
@@ -426,7 +425,7 @@ LaTeX Font Info:    ... okay on input line 74.
 ) ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 74.
 
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\jurado.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\jurado.tex
 <logoUAM.pdf, id=1, 721.69624pt x 437.635pt>
 File: logoUAM.pdf Graphic file (type pdf)
  <use logoUAM.pdf>
@@ -444,47 +443,46 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/ARTE/Desktop/Tes
-isErikSVN/tesis_Erik/logoUAM.pdf>]) [2]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\caratula.tex
-<uam.pdf, id=19, 1471.4975pt x 399.4925pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Gatito/Desktop/G
+oogleSVN/tesis_Erik/logoUAM.pdf>]) [2] (C:\Users\Gatito\Desktop\GoogleSVN\tesis
+_Erik\caratula.tex <uam.pdf, id=19, 1471.4975pt x 399.4925pt>
 File: uam.pdf Graphic file (type pdf)
  <use uam.pdf>
 Package pdftex.def Info: uam.pdf used on input line 5.
 (pdftex.def)             Requested size: 283.22162pt x 76.89186pt.
  [1
 
- <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/uam.pdf>]) [2]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\abstract.tex)
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\agradecimientos.tex [3
+ <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/uam.pdf>]) [2]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\abstract.tex)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\agradecimientos.tex [3
 
 ] [4
 
 ])
 [5] [6
 
-] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.toc [7])
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.toc [7])
 \tf@toc=\write4
 
-[8] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lot [9
+[8] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lot [9
 
 ])
 \tf@lot=\write5
  [10]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.lof [11
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.lof [11
 
 ] [12])
 \tf@lof=\write6
 
 [13] [14
 
-] (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\marcointroductorio.tex
+] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\marcointroductorio.tex
 Cap\'{\i }tulo 1.
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\introduccion.tex [1
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\introduccion.tex [1
 
-] [2]
-[3]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\problematica.tex [4]
-[5] [6] [7]
+] [2] [3])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\problematica.tex [4] [5] [6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -495,18 +493,18 @@ File: CasosUso.pdf Graphic file (type pdf)
 <use CasosUso.pdf>
 Package pdftex.def Info: CasosUso.pdf used on input line 125.
 (pdftex.def)             Requested size: 377.62642pt x 193.95847pt.
- [11 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/CasosUso.pdf>] [12] [13] [1
-4] [15]))
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\semanticas.tex [16]
+ [11 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUso.pdf>] [12] [13] [14
+] [15]))
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\semanticas.tex [16]
 Cap\'{\i }tulo 2.
 [17
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 44.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 45.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (5.69904pt too wide) in paragraph at lines 68--68
+Overfull \hbox (5.69904pt too wide) in paragraph at lines 69--69
  []|\T1/cmr/bx/n/12 Metadato/Relación| 
  []
 
@@ -516,20 +514,20 @@ File: EjmpTripleta.pdf Graphic file (type pdf)
 Package pdftex.def Info: EjmpTripleta.pdf used on input line 105.
 (pdftex.def)             Requested size: 283.22162pt x 100.70065pt.
 
-[19 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/EjmpTripleta.pdf>]
+[19 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/EjmpTripleta.pdf>]
 <GrafoRDF.pdf, id=173, 861.2175pt x 581.17125pt>
 File: GrafoRDF.pdf Graphic file (type pdf)
  <use GrafoRDF.pdf>
 Package pdftex.def Info: GrafoRDF.pdf used on input line 137.
 (pdftex.def)             Requested size: 377.62642pt x 254.83821pt.
- [20 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/GrafoRDF.pdf>]
+ [20 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/GrafoRDF.pdf>]
 <FormaSPARQL.pdf, id=188, 402.50375pt x 221.82875pt>
 File: FormaSPARQL.pdf Graphic file (type pdf)
  <use FormaSPARQL.pdf>
 Package pdftex.def Info: FormaSPARQL.pdf used on input line 169.
 (pdftex.def)             Requested size: 283.22162pt x 156.08801pt.
 
-[21 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormaSPARQL.pdf>]
+[21 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormaSPARQL.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 216.
 
 
@@ -544,7 +542,7 @@ File: CombAxiom.pdf Graphic file (type pdf)
  <use CombAxiom.pdf>
 Package pdftex.def Info: CombAxiom.pdf used on input line 261.
 (pdftex.def)             Requested size: 377.62642pt x 48.00522pt.
- [25 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/CombAxiom.pdf>]
+ [25 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CombAxiom.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
@@ -565,10 +563,15 @@ File: OntoexmpReaz.pdf Graphic file (type pdf)
 <use OntoexmpReaz.pdf>
 Package pdftex.def Info: OntoexmpReaz.pdf used on input line 365.
 (pdftex.def)             Requested size: 472.0187pt x 105.27818pt.
- [28]
-<SparqlExmpReaz.pdf, id=238, 401.5pt x 145.54375pt>
+
+Overfull \hbox (6.78746pt too wide) in paragraph at lines 365--366
+ [][] 
+ []
+
+[28] <SparqlExmpReaz.pdf, id=238, 401.5pt x 145.54375pt>
 File: SparqlExmpReaz.pdf Graphic file (type pdf)
- <use SparqlExmpReaz.pdf>
+
+<use SparqlExmpReaz.pdf>
 Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 374.
 (pdftex.def)             Requested size: 259.6186pt x 94.11816pt.
 
@@ -578,18 +581,23 @@ File: TripletasInferidas.pdf Graphic file (type pdf)
 <use TripletasInferidas.pdf>
 Package pdftex.def Info: TripletasInferidas.pdf used on input line 381.
 (pdftex.def)             Requested size: 472.04022pt x 130.88286pt.
- [29 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users
-/ARTE/Desktop/TesisErikSVN/tesis_Erik/SparqlExmpReaz.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Sp
-arqlExmpReaz.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
-> <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/TripletasInferidas.pdf
+Overfull \hbox (6.80898pt too wide) in paragraph at lines 381--382
+ [][] 
+ []
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Tr
-ipletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in
- a single page
->]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\estadoNew.tex [30]
+[29 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/G
+atito/Desktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Spa
+rqlExmpReaz.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/TripletasInferidas.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Tri
+pletasInferidas.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\estadoNew.tex [30]
 Cap\'{\i }tulo 3.
 [31
 
@@ -625,7 +633,7 @@ Overfull \hbox (10.88815pt too wide) in paragraph at lines 236--237
 o-mo: Turtle, Man-ches-ter, OWL/XML
  []
 
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\sir.tex [41] [42
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex [41] [42
 
 ]
 Cap\'{\i }tulo 4.
@@ -642,7 +650,7 @@ Package Fancyhdr Warning: \headheight is too small (18.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Arquitectura.pdf>]
+[45 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Arquitectura.pdf>]
 <CasosUsoMC.pdf, id=358, 764.8575pt x 571.13374pt>
 File: CasosUsoMC.pdf Graphic file (type pdf)
  <use CasosUsoMC.pdf>
@@ -662,22 +670,31 @@ File: CasoUsoRecDig.pdf Graphic file (type pdf)
 Package pdftex.def Info: CasoUsoRecDig.pdf used on input line 106.
 (pdftex.def)             Requested size: 656.4509pt x 312.16548pt.
 
-[47 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/CasosUsoMC.pdf>] [48 <C:/Use
-rs/ARTE/Desktop/TesisErikSVN/tesis_Erik/CasoUsoCartComp.pdf>] [49 <C:/Users/ART
-E/Desktop/TesisErikSVN/tesis_Erik/CasoUsoRecDig.pdf>] [50]
+[47 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/CasosUsoMC.pdf>] [48 <C:/User
+s/Gatito/Desktop/GoogleSVN/tesis_Erik/CasoUsoCartComp.pdf>] [49 <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/CasoUsoRecDig.pdf>] [50]
 <Person2RDF.pdf, id=536, 1013.7875pt x 457.71pt>
 File: Person2RDF.pdf Graphic file (type pdf)
  <use Person2RDF.pdf>
 Package pdftex.def Info: Person2RDF.pdf used on input line 245.
 (pdftex.def)             Requested size: 472.02509pt x 238.49248pt.
- [51]
-<Vid2RDF.pdf, id=541, 992.70876pt x 347.2975pt>
+
+Overfull \hbox (6.79384pt too wide) in paragraph at lines 245--246
+ [][] 
+ []
+
+[51] <Vid2RDF.pdf, id=541, 992.70876pt x 347.2975pt>
 File: Vid2RDF.pdf Graphic file (type pdf)
  <use Vid2RDF.pdf>
 Package pdftex.def Info: Vid2RDF.pdf used on input line 265.
 (pdftex.def)             Requested size: 472.02629pt x 195.13708pt.
- [52 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Person2RDF.pdf>] [53 <C:/Us
-ers/ARTE/Desktop/TesisErikSVN/tesis_Erik/Vid2RDF.pdf>] [54]
+
+Overfull \hbox (6.79504pt too wide) in paragraph at lines 265--266
+ [][] 
+ []
+
+[52 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Person2RDF.pdf>] [53 <C:/User
+s/Gatito/Desktop/GoogleSVN/tesis_Erik/Vid2RDF.pdf>] [54]
 <HerenClassCartComp.pdf, id=590, 421.575pt x 210.7875pt>
 File: HerenClassCartComp.pdf Graphic file (type pdf)
 
@@ -691,7 +708,7 @@ File: ExpInfsubClassPer.pdf Graphic file (type pdf)
 <use ExpInfsubClassPer.pdf>
 Package pdftex.def Info: ExpInfsubClassPer.pdf used on input line 326.
 (pdftex.def)             Requested size: 405.94714pt x 224.84569pt.
- [55 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/HerenClassCartComp.pdf>]
+ [55 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassCartComp.pdf>]
 <HerenClassRecDigi.pdf, id=600, 483.8075pt x 143.53625pt>
 File: HerenClassRecDigi.pdf Graphic file (type pdf)
 
@@ -705,13 +722,16 @@ File: ExpInfsubClassDigi.pdf Graphic file (type pdf)
 <use ExpInfsubClassDigi.pdf>
 Package pdftex.def Info: ExpInfsubClassDigi.pdf used on input line 346.
 (pdftex.def)             Requested size: 391.78679pt x 229.48764pt.
- [56 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/ExpInfsubClassPer.pdf>] [57
- <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/HerenClassRecDigi.pdf> <C:/User
-s/ARTE/Desktop/TesisErikSVN/tesis_Erik/ExpInfsubClassDigi.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/Ex
-pInfsubClassDigi.pdf): PDF inclusion: multiple pdfs with page group included in
- a single page
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/ExpInfsubClassPer.pdf>] [57 
+<C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerenClassRecDigi.pdf> <C:/Users/
+Gatito/Desktop/GoogleSVN/tesis_Erik/ExpInfsubClassDigi.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Exp
+InfsubClassDigi.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
 >] <HerPropLang.pdf, id=627, 336.25626pt x 114.4275pt>
 File: HerPropLang.pdf Graphic file (type pdf)
  <use HerPropLang.pdf>
@@ -730,12 +750,12 @@ File: HerPropKno.pdf Graphic file (type pdf)
 Package pdftex.def Info: HerPropKno.pdf used on input line 384.
 (pdftex.def)             Requested size: 226.57297pt x 113.77924pt.
 
-[58 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/HerPropLang.pdf> <C:/Users/A
-RTE/Desktop/TesisErikSVN/tesis_Erik/HerPropLoW.pdf
+[58 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropLang.pdf> <C:/Users/Ga
+tito/Desktop/GoogleSVN/tesis_Erik/HerPropLoW.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/He
-rPropLoW.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+PropLoW.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
 >] <HerPropCompe.pdf, id=642, 233.87375pt x 117.43875pt>
 File: HerPropCompe.pdf Graphic file (type pdf)
 
@@ -748,24 +768,24 @@ File: HerPropYr.pdf Graphic file (type pdf)
 <use HerPropYr.pdf>
 Package pdftex.def Info: HerPropYr.pdf used on input line 413.
 (pdftex.def)             Requested size: 462.5886pt x 104.98193pt.
- [59 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/HerPropKno.pdf> <C:/Users/A
-RTE/Desktop/TesisErikSVN/tesis_Erik/HerPropCompe.pdf
+ [59 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropKno.pdf> <C:/Users/Ga
+tito/Desktop/GoogleSVN/tesis_Erik/HerPropCompe.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/He
-rPropCompe.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+PropCompe.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
 >] <HerPropInst.pdf, id=656, 405.515pt x 115.43124pt>
 File: HerPropInst.pdf Graphic file (type pdf)
  <use HerPropInst.pdf>
 Package pdftex.def Info: HerPropInst.pdf used on input line 424.
 (pdftex.def)             Requested size: 330.42041pt x 94.05713pt.
 
-[60 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/HerPropYr.pdf> <C:/Users/ART
-E/Desktop/TesisErikSVN/tesis_Erik/HerPropInst.pdf
+[60 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/HerPropYr.pdf> <C:/Users/Gati
+to/Desktop/GoogleSVN/tesis_Erik/HerPropInst.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/He
-rPropInst.pdf): PDF inclusion: multiple pdfs with page group included in a sing
-le page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Her
+PropInst.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
 >] [61] [62] <exAxDyRPer.pdf, id=677, 348.30125pt x 136.51pt>
 File: exAxDyRPer.pdf Graphic file (type pdf)
 
@@ -778,12 +798,12 @@ File: exTriplDyRPer.pdf Graphic file (type pdf)
 <use exTriplDyRPer.pdf>
 Package pdftex.def Info: exTriplDyRPer.pdf used on input line 543.
 (pdftex.def)             Requested size: 358.74113pt x 171.50977pt.
- [63 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/exAxDyRPer.pdf> <C:/Users/A
-RTE/Desktop/TesisErikSVN/tesis_Erik/exTriplDyRPer.pdf
+ [63 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exAxDyRPer.pdf> <C:/Users/Ga
+tito/Desktop/GoogleSVN/tesis_Erik/exTriplDyRPer.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/ex
-TriplDyRPer.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exT
+riplDyRPer.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
 >] <exInfDyRPer.pdf, id=694, 509.905pt x 408.52625pt>
 File: exInfDyRPer.pdf Graphic file (type pdf)
  <use exInfDyRPer.pdf>
@@ -795,13 +815,13 @@ File: unidirecc.pdf Graphic file (type pdf)
  <use unidirecc.pdf>
 Package pdftex.def Info: unidirecc.pdf used on input line 564.
 (pdftex.def)             Requested size: 155.77116pt x 43.66037pt.
-
-<bidirecc.pdf, id=696, 321.2pt x 80.3pt>
+ [64 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exInfDyRPer.pdf>]
+<bidirecc.pdf, id=704, 321.2pt x 80.3pt>
 File: bidirecc.pdf Graphic file (type pdf)
  <use bidirecc.pdf>
 Package pdftex.def Info: bidirecc.pdf used on input line 573.
 (pdftex.def)             Requested size: 184.09189pt x 46.02386pt.
- [64 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/exInfDyRPer.pdf>]
+
 <axSymColl.pdf, id=705, 347.2975pt x 166.6225pt>
 File: axSymColl.pdf Graphic file (type pdf)
  <use axSymColl.pdf>
@@ -813,43 +833,43 @@ File: infSymColl.pdf Graphic file (type pdf)
  <use infSymColl.pdf>
 Package pdftex.def Info: infSymColl.pdf used on input line 598.
 (pdftex.def)             Requested size: 448.44698pt x 183.57085pt.
- [65 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/unidirecc.pdf> <C:/Users/AR
-TE/Desktop/TesisErikSVN/tesis_Erik/bidirecc.pdf
+ [65 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/unidirecc.pdf> <C:/Users/Gat
+ito/Desktop/GoogleSVN/tesis_Erik/bidirecc.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/bi
-direcc.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/bid
+irecc.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] <triplKnows.pdf, id=719, 516.93124pt x 137.51375pt>
 File: triplKnows.pdf Graphic file (type pdf)
  <use triplKnows.pdf>
 Package pdftex.def Info: triplKnows.pdf used on input line 612.
 (pdftex.def)             Requested size: 401.2407pt x 122.86316pt.
 
-[66 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/axSymColl.pdf> <C:/Users/ART
-E/Desktop/TesisErikSVN/tesis_Erik/infSymColl.pdf
+[66 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/axSymColl.pdf> <C:/Users/Gati
+to/Desktop/GoogleSVN/tesis_Erik/infSymColl.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/in
-fSymColl.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/inf
+SymColl.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
 >] <InfKnows.pdf, id=732, 601.24625pt x 155.58125pt>
 File: InfKnows.pdf Graphic file (type pdf)
  <use InfKnows.pdf>
 Package pdftex.def Info: InfKnows.pdf used on input line 621.
 (pdftex.def)             Requested size: 448.44734pt x 130.08673pt.
 
-[67 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/triplKnows.pdf> <C:/Users/AR
-TE/Desktop/TesisErikSVN/tesis_Erik/InfKnows.pdf
+[67 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/triplKnows.pdf> <C:/Users/Gat
+ito/Desktop/GoogleSVN/tesis_Erik/InfKnows.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-fKnows.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Inf
+Knows.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [68] [69] [70] <q112rql.pdf, id=755, 818.05624pt x 372.39125pt>
 File: q112rql.pdf Graphic file (type pdf)
 
 <use q112rql.pdf>
 Package pdftex.def Info: q112rql.pdf used on input line 722.
 (pdftex.def)             Requested size: 424.82523pt x 193.38885pt.
- [71 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/q112rql.pdf>]
+ [71 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q112rql.pdf>]
 Overfull \hbox (52.02544pt too wide) in paragraph at lines 734--735
 []\T1/cmr/m/n/12 Propiedades: \T1/cmr/m/it/12 tie-ne nom-bre (sirp:has-name)\T1
 /cmr/m/n/12 , \T1/cmr/m/it/12 tie-ne co-le-ga (sirp:has-colleague) tie-ne aseso
@@ -867,30 +887,30 @@ File: q2rqlCR.pdf Graphic file (type pdf)
  <use q2rqlCR.pdf>
 Package pdftex.def Info: q2rqlCR.pdf used on input line 752.
 (pdftex.def)             Requested size: 377.62642pt x 158.27328pt.
- [72 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/q2rqlSR.pdf>]
+ [72 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlSR.pdf>]
 <q2torqlSR.pdf, id=786, 885.3075pt x 482.80376pt>
 File: q2torqlSR.pdf Graphic file (type pdf)
  <use q2torqlSR.pdf>
 Package pdftex.def Info: q2torqlSR.pdf used on input line 763.
 (pdftex.def)             Requested size: 377.62642pt x 205.944pt.
- [73 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/q2rqlCR.pdf> <C:/Users/ARTE
-/Desktop/TesisErikSVN/tesis_Erik/q2torqlSR.pdf
+ [73 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2rqlCR.pdf> <C:/Users/Gatit
+o/Desktop/GoogleSVN/tesis_Erik/q2torqlSR.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/q2
-torqlSR.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2t
+orqlSR.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
 >] <q2torqlCR.pdf, id=811, 878.28125pt x 353.32pt>
 File: q2torqlCR.pdf Graphic file (type pdf)
  <use q2torqlCR.pdf>
 Package pdftex.def Info: q2torqlCR.pdf used on input line 784.
 (pdftex.def)             Requested size: 424.82523pt x 170.90173pt.
- [74 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/q2torqlCR.pdf>]
+ [74 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/q2torqlCR.pdf>]
 <exMBS.pdf, id=826, 870.25125pt x 621.32124pt>
 File: exMBS.pdf Graphic file (type pdf)
  <use exMBS.pdf>
 Package pdftex.def Info: exMBS.pdf used on input line 795.
 (pdftex.def)             Requested size: 424.82523pt x 303.31241pt.
- [75 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/exMBS.pdf>]
+ [75 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/exMBS.pdf>]
 <grafoSR.pdf, id=855, 721.69624pt x 393.47pt>
 File: grafoSR.pdf Graphic file (type pdf)
  <use grafoSR.pdf>
@@ -898,7 +918,7 @@ Package pdftex.def Info: grafoSR.pdf used on input line 806.
 (pdftex.def)             Requested size: 721.69449pt x 393.46902pt.
 
 
-LaTeX Warning: Float too large for page by 13.7683pt on input line 809.
+LaTeX Warning: Float too large for page by 17.16829pt on input line 809.
 
 
 Overfull \hbox (2.16399pt too wide) in paragraph at lines 815--816
@@ -920,7 +940,7 @@ File: consultaGrafo.pdf Graphic file (type pdf)
 Package pdftex.def Info: consultaGrafo.pdf used on input line 830.
 (pdftex.def)             Requested size: 330.42041pt x 163.03574pt.
 
-[76] [77 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/grafoSR.pdf>]
+[76] [77 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/grafoSR.pdf>]
 <grafoCR.pdf, id=870, 718.685pt x 473.77pt>
 File: grafoCR.pdf Graphic file (type pdf)
  <use grafoCR.pdf>
@@ -928,7 +948,7 @@ Package pdftex.def Info: grafoCR.pdf used on input line 866.
 (pdftex.def)             Requested size: 718.68324pt x 473.76884pt.
 
 
-LaTeX Warning: Float too large for page by 4.05597pt on input line 869.
+LaTeX Warning: Float too large for page by 7.45596pt on input line 869.
 
 
 Overfull \hbox (19.28206pt too wide) in paragraph at lines 874--875
@@ -943,16 +963,16 @@ Overfull \hbox (16.21747pt too wide) in paragraph at lines 874--875
 hesis)
  []
 
-[78 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/consultaGrafo.pdf>] [79 <C:/
-Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/grafoCR.pdf>]
+[78 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/consultaGrafo.pdf>] [79 <C:/U
+sers/Gatito/Desktop/GoogleSVN/tesis_Erik/grafoCR.pdf>]
 <consSimpGrafo.pdf, id=895, 682.55pt x 174.6525pt>
 File: consSimpGrafo.pdf Graphic file (type pdf)
  <use consSimpGrafo.pdf>
 Package pdftex.def Info: consSimpGrafo.pdf used on input line 881.
 (pdftex.def)             Requested size: 339.86305pt x 86.96625pt.
 
-[80 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/consSimpGrafo.pdf>])
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\prototipoGen.tex [81] [82
+[80 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/consSimpGrafo.pdf>])
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\prototipoGen.tex [81] [82
 
 ]
 Cap\'{\i }tulo 5.
@@ -962,8 +982,8 @@ File: DiagramaFlujo.pdf Graphic file (type pdf)
 <use DiagramaFlujo.pdf>
 Package pdftex.def Info: DiagramaFlujo.pdf used on input line 46.
 (pdftex.def)             Requested size: 236.01561pt x 555.14973pt.
- [84] [85 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/DiagramaFlujo.pdf>] [8
-6]
+ [84] [85 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/DiagramaFlujo.pdf>] [86
+]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -986,12 +1006,12 @@ File: IntWebHome.pdf Graphic file (type pdf)
 Package pdftex.def Info: IntWebHome.pdf used on input line 131.
 (pdftex.def)             Requested size: 338.90622pt x 247.71028pt.
 
-[87] [88 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormLogin.pdf> <C:/User
-s/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebHome.pdf
+[87] [88 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormLogin.pdf> <C:/Users
+/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebHome.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebHome.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebHome.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
@@ -1022,17 +1042,17 @@ LaTeX Warning: Float too large for page by 14.7965pt on input line 175.
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
  [89]
-[90 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebNavPer.pdf> <C:/Users/
-ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebNavDoc.pdf
+[90 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebNavPer.pdf> <C:/Users/G
+atito/Desktop/GoogleSVN/tesis_Erik/IntWebNavDoc.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebNavDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebNavDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebNavMult.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebNavMult.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
-> <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebNavMult.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebNavMult.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
@@ -1064,17 +1084,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
-[92] [93 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebFilPer.pdf> <C:/U
-sers/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebFilDoc.pdf
+[92] [93 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebFilPer.pdf> <C:/Us
+ers/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebFilDoc.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebFilDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebFilDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebFilMult.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebFilMult.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
-> <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebFilMult.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebFilMult.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
 >] [94] <FormBusPer.pdf, id=1024, 747.79375pt x 994.71625pt>
 File: FormBusPer.pdf Graphic file (type pdf)
 
@@ -1092,8 +1112,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
-[95] [96 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormBusPer.pdf>]
-[97 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebResPer.pdf>]
+[95] [96 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormBusPer.pdf>]
+[97 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebResPer.pdf>]
 <FormBusDoc.pdf, id=1049, 761.84625pt x 1048.91875pt>
 File: FormBusDoc.pdf Graphic file (type pdf)
  <use FormBusDoc.pdf>
@@ -1106,12 +1126,12 @@ File: IntWebResDoc.pdf Graphic file (type pdf)
 Package pdftex.def Info: IntWebResDoc.pdf used on input line 393.
 (pdftex.def)             Requested size: 283.22162pt x 206.42564pt.
 
-[98] [99 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormBusDoc.pdf>]
+[98] [99 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormBusDoc.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
-[100 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebResDoc.pdf>]
+[100 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebResDoc.pdf>]
 <FormBusMult.pdf, id=1075, 749.80125pt x 822.07124pt>
 File: FormBusMult.pdf Graphic file (type pdf)
  <use FormBusMult.pdf>
@@ -1124,12 +1144,12 @@ File: IntWebResMult.pdf Graphic file (type pdf)
 Package pdftex.def Info: IntWebResMult.pdf used on input line 462.
 (pdftex.def)             Requested size: 283.22162pt x 206.18631pt.
 
-[101] [102 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormBusMult.pdf>]
+[101] [102 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormBusMult.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
-[103 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebResMult.pdf>]
+[103 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebResMult.pdf>]
 <FormAllRes.pdf, id=1100, 749.80125pt x 527.9725pt>
 File: FormAllRes.pdf Graphic file (type pdf)
  <use FormAllRes.pdf>
@@ -1146,12 +1166,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
-[104] [105 <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/FormAllRes.pdf> <C:/U
-sers/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebNavAll.pdf
+[104] [105 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/FormAllRes.pdf> <C:/Us
+ers/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebNavAll.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebNavAll.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebNavAll.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
 >] <IntWebDetPer.pdf, id=1122, 746.79pt x 546.04pt>
 File: IntWebDetPer.pdf Graphic file (type pdf)
  <use IntWebDetPer.pdf>
@@ -1173,18 +1193,18 @@ Package pdftex.def Info: IntWebDetMult.pdf used on input line 559.
 
 LaTeX Warning: Float too large for page by 20.95348pt on input line 562.
 
-) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\evaluacion.tex [106] [107 <C:/
-Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebDetPer.pdf> <C:/Users/ARTE/Des
-ktop/TesisErikSVN/tesis_Erik/IntWebDetDoc.pdf
+) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\evaluacion.tex [106] [107 <C:/U
+sers/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebDetPer.pdf> <C:/Users/Gatito/Des
+ktop/GoogleSVN/tesis_Erik/IntWebDetDoc.pdf
 
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebDetDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebDetDoc.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/IntWebDetMult.pdf
+
+pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Int
+WebDetMult.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
-> <C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/IntWebDetMult.pdf
-
-pdfTeX warning: pdflatex (file C:/Users/ARTE/Desktop/TesisErikSVN/tesis_Erik/In
-tWebDetMult.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
 >] [108
 
 ]
@@ -1209,17 +1229,17 @@ Underfull \vbox (badness 1062) has occurred while \output is active []
 LaTeX Warning: Float too large for page by 2.6487pt on input line 198.
 
 [113] [114] [115] [116] [117] [118] [119]
-Overfull \hbox (0.87743pt too wide) in paragraph at lines 455--455
+Overfull \hbox (0.87743pt too wide) in paragraph at lines 456--456
  []|[]| 
  []
 
 
-Overfull \hbox (0.87743pt too wide) in paragraph at lines 510--510
+Overfull \hbox (0.87743pt too wide) in paragraph at lines 511--511
  []|[]| 
  []
 
 [120] [121] [122])
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\conclusiones.tex [123] [124
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\conclusiones.tex [123] [124
 
 ]
 Cap\'{\i }tulo 7.
@@ -1227,7 +1247,7 @@ Cap\'{\i }tulo 7.
 
 
 ] [132]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\acronimos.tex
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\acronimos.tex
 Ap\'endice A.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1235,7 +1255,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [133
 
 ])
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\appendA.tex [134]
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendA.tex [134]
 Ap\'endice B.
 
 Overfull \hbox (13.43709pt too wide) in paragraph at lines 31--32
@@ -1287,28 +1307,27 @@ Overfull \hbox (0.1972pt too wide) in paragraph at lines 204--205
 2 con-ca-te-nar el in-di-vi-duo, la pro-pie-dad ``tiene-
  []
 
-[140]) (C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\appendB.tex [141]
-[142
+[140]) (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\appendB.tex [141] [142
 
 ]
 Ap\'endice C.
 [143] [144] [145] [146] [147])
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.bbl [148
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.bbl [148
 
 ] [149]
 [150] [151] [152] [153] [154
 
 ] [155] [156] [157] [158] [159]) [160]
-(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\tesis_Erik.aux)
+(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6890 strings out of 493921
- 94722 string characters out of 3147330
- 194043 words of memory out of 3000000
- 9910 multiletter control sequences out of 15000+200000
+ 6890 strings out of 493944
+ 94675 string characters out of 3148281
+ 194042 words of memory out of 3000000
+ 9899 multiletter control sequences out of 15000+200000
  27783 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,18n,43p,3008b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1337,7 +1356,7 @@ c/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (176 pages, 4692082 bytes).
+Output written on tesis_Erik.pdf (176 pages, 4694483 bytes).
 PDF statistics:
  1411 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
