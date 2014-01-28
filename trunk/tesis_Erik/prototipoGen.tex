@@ -34,7 +34,7 @@ Nosotros para alcanzar estos objetivos, construimos este prototipo como un aplic
 
 Este prototipo está constituido por un conjunto de servlets y páginas dinámicas. Las páginas estáticas son formularios que permiten estructurar las consultas de los usuarios. Estos formularios reciben la información de los usuarios y la proporcionan a los servlets. Mientras, los servlets son los encargados de: recopilar la información para la consulta, así como procesar y ejecutar la consulta en el modelo semántico, recuperar la información de ésta, publicar la información en el navegador del usuario.
 
-El motivo de usar formularios, es proporcionar al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
+En este prototipo, los formaularios proporcionan al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
 
 La interfaz Web al implementarse a partir del uso de servlets y páginas estáticas, requiere un servidor apropiado que soporte estos dos elementos. Apache Tomcat \cite{Tomcat} es una servidor que soporta el uso de servlets Java y páginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras páginas estáticas y dinámicas. Otra razón del uso de Tomcat, éste es un software open source e implementado bajo la licencia ``Apache License version 2''.
 
@@ -78,7 +78,7 @@ Nuestro prototipo proporciona estas interfaces Web para los usuarios:
 \item Más detalles del Recurso de Información. \label{itm:detri}
 \end{enumerate}
 
-Las especificaciones de estas interfaces son descritas en las siguientes Secciones de este Capítulo \ref{cap:piu}. Las interfaces asociadas a las \textit{navegaciones} (ítem \ref{itm:np}, \ref{itm:nd} \ref{itm:nm} del listado de interfaces), se unieron en una sola especificación, porque el funcionamiento es similar entre estas tres navegaciones. Las diferencias son: la elección de los \textit{recursos de información} (persona, documento, multimedia) y la \textit{recuperación de información} para estos recursos.
+Las especificaciones de estas interfaces son descritas en las siguientes secciones de este Capítulo \ref{cap:piu}. Las interfaces asociadas a las \textit{navegaciones} (ítem \ref{itm:np}, \ref{itm:nd} \ref{itm:nm} del listado de interfaces), se unieron en una sola especificación, porque el funcionamiento es similar entre estas tres navegaciones. Las diferencias son: la elección de los \textit{recursos de información} (persona, documento, multimedia) y la \textit{recuperación de información} para estos recursos.
 
 De la misma manera, las especificaciones de las interfaces \textit{Filtrar por subclases de Persona} (ítem \ref{itm:fp}), \textit{Documento} (ítem \ref{itm:fd}) y \textit{Multimedia} (ítem \ref{itm:fm}) se unieron en una especificación. Esta misma situación sucede para las interfaces de \textit{Más detalles del Recurso de Información} (ítem \ref{itm:detp}), \textit{Persona}, \textit{Documento} (ítem \ref{itm:detd}) y \textit{Multimedia} (ítem \ref{itm:detm}).
 
@@ -93,7 +93,7 @@ De la misma manera, las especificaciones de las interfaces \textit{Filtrar por s
 %\renewcommand{\theenumv}{\arabic{enumv}}
 %\renewcommand{\labelenumv}{\theenumi.\theenumii.\theenumiii.\theenumiv.\theenumv.}
 
-\section*{Especificación para Validar a un Usuario}
+\section*{Especificación para validar a un usuario}
 
 \textbf{Objetivo:} Validar a un usuario para el uso de la interfaz Web de la integración semántica de recursos.
 
@@ -101,7 +101,7 @@ De la misma manera, las especificaciones de las interfaces \textit{Filtrar por s
 
 \textbf{Pre-condición:} El usuario debe estar registrado en el prototipo.
 
-\textbf{Post-condición:} El usuario es valido y la interfaz Web presenta la página Web principal.\\
+\textbf{Post-condición:} El usuario es válido y la interfaz Web presenta la página Web principal.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
@@ -116,7 +116,7 @@ De la misma manera, las especificaciones de las interfaces \textit{Filtrar por s
 \item[$4'.$] La interfaz Web recarga la página Web \textit{Login} y borra los datos de los campos \textit{nombre de usuario} y \textit{contraseña}.
 \end{itemize}
 
-La Figura \ref{fig:iwbxt} muestra dos interfaces del prototipo de integración semántica. La interfaz \ref{fig:iwfl} presenta el \textit{Login} para que un usuario escriba su nombre y contraseña. Mientras, la interfaz \ref{fig:iwwh0} muestra la página Home, como interfaz de presentación para el usuario valido.
+La Figura \ref{fig:iwbxt} muestra dos interfaces del prototipo de integración semántica. La interfaz \ref{fig:iwfl} presenta el \textit{Login} para que un usuario escriba su nombre y contraseña. Mientras, la interfaz \ref{fig:iwwh0} muestra la página Home, como interfaz de presentación para el usuario válido.
 
 %%%%%Figura formulario para validar%%%%%
 \begin{figure}[hp]
@@ -133,14 +133,14 @@ La Figura \ref{fig:iwbxt} muestra dos interfaces del prototipo de integración se
 \label{fig:iwbxt}
 \end{figure}
 
-\section*{Especificación para la Navegación entre Personas, Documentos o Multimedia}
+\section*{Especificación para la navegación entre personas, socumentos o multimedia}
 \textbf{Objetivo:} Desplazarse y visualizar las \textit{características significativas} de las \textit{personas}, \textit{documentos} o \textit{recursos multimedia} del área de Redes y Telecomunicaciones.
 
 \textbf{Actor:} Usuario.
 
 \textbf{Pre-condición:} El usuario está en la página \textit{Home}.
 
-\textbf{Post-condición:} La interfaz Web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos. También, dependiendo la clase Persona, Documento o Multimedia, la \textit{interfaz Web} muestra un botón de \textit{búsqueda avanzada por clase (Advanced Search Person, Document, Multimedia)}, y para cada \textit{recurso de información} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condición:} La interfaz Web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos. También, dependiendo de la clase Persona, Documento o Multimedia, la \textit{interfaz Web} muestra un botón de \textit{búsqueda avanzada por clase (Advanced Search Person, Document, Multimedia)}, y para cada \textit{recurso de información} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
@@ -175,7 +175,7 @@ La Figura \ref{fig:iwnav} muestra las tres interfaces para la navegación entre l
 \end{figure}
 
 %%%%%Filtrar por subclases de las clases Persona, Documento o Multimedia%%%%%
-\section*{Especificación para filtrar los Recursos por subclases de Persona, Documento o Multimedia}
+\section*{Especificación para filtrar los recursos por subclases de persona, documento o multimedia}
 \textbf{Objetivo:} Buscar los \textit{recursos de información} a partir de las subclases de Persona, Documento o Multimedia y mostrar un conjunto de \textit{características significativas} de éstos.
 
 \textbf{Actor:} Usuario.
@@ -184,7 +184,7 @@ La Figura \ref{fig:iwnav} muestra las tres interfaces para la navegación entre l
 
 \textbf{Post-condiciones:}
 
-Si los recursos son persona, entonces la interfaz Web muestra la sección para filtrar los recursos persona, también la interfaz muestra muestra un botón de \textit{búsqueda avanzada de personas (Advanced Search Person)}.
+Si los recursos son persona, entonces la interfaz Web muestra la sección para filtrar los recursos persona, también la interfaz muestra un botón de \textit{búsqueda avanzada de personas (Advanced Search Person)}.
 
 Si los recursos son documentos, entonces la interfaz Web muestra la sección para filtrar los recursos documento, también la interfaz muestra muestra un botón de \textit{búsqueda avanzada de documentos (Advanced Search Document)}.
 
@@ -209,7 +209,7 @@ Además, la interfaz muestra para cada \textit{recurso respuesta} un botón de \te
 \end{enumerate}
 
 %%%Figura filtrar recursos de información%%%
-En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \textit{recursos de información} a partir de las subclases de Persona, Documento y Multimedia. La interfaz \ref{fig:iwfilrp} presenta las \textit{fichas descriptivas} de los \textit{recursos persona} que pertenecen a la clase \textit{Estudiante (Student)}. La interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos documentos} que pertenecen a la clase \textit{Artículo (Paper)}. De la misma manera, la interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos multimedía} que son Vídeos.
+En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \textit{recursos de información} a partir de las subclases de Persona, Documento y Multimedia. La interfaz \ref{fig:iwfilrp} presenta las \textit{fichas descriptivas} de los \textit{recursos persona} que pertenecen a la clase \textit{Estudiante (Student)}. La interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos documentos} que pertenecen a la clase \textit{Artículo (Paper)}. De la misma manera, la interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos multimedia} que son Vídeos.
 
 \begin{figure}[hp]
 \centering
@@ -230,7 +230,7 @@ En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \text
 \end{figure}
 
 %%%%% Búsqueda Avanzada de Personas%%%%
-\section*{Especificación para la Búsqueda Avanzada de Personas}
+\section*{Especificación para la búsqueda avanzada de personas}
 \textbf{Objetivos:} Estructurar la consulta de un usuario, así como buscar y recuperar \textit{información significativa} de las personas del \textit{área de RyT} para responder esta consulta.
 
 \textbf{Actor:} Usuario.
@@ -315,7 +315,7 @@ La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un
 \end{figure}
 
 %%%%% Búsqueda Avanzada de Documentos%%%%
-\section*{Especificación para la Búsqueda Avanzada de Documentos}
+\section*{Especificación para la búsqueda avanzada de documentos}
 \textbf{Objetivos:} Estructurar la consulta de un usuario, así como buscar y recuperar \textit{información significativa} de los documentos del \textit{área de RyT} para responder esta consulta.
 
 \textbf{Actor:} Usuario.
@@ -396,7 +396,7 @@ La Figura \ref{fig:iwforbad} muestra los distintos parámetros de búsqueda que un
 \end{figure}
 
 %%%%% Búsqueda Avanzada de Multimeda%%%%
-\section*{Especificación para la Búsqueda Avanzada de Multimedia}
+\section*{Especificación para la búsqueda avanzada de multimedia}
 \textbf{Objetivos:} Estructurar la consulta de un usuario, así como buscar y recuperar \textit{información significativa} de los \textit{recursos multimedia} del \textit{área de RyT} para responder esta consulta.
 
 \textbf{Actor:} Usuario.
@@ -465,7 +465,7 @@ La Figura \ref{fig:iwforbam} muestra los distintos parámetros de búsqueda que un
 \end{figure}
 
 %%%%% Caso de uso búsqueda por topicos%%%%%
-\section*{Especificación para la Búsqueda por Tópico(s) de Redes y Telecomunicaciones}
+\section*{Especificación para la búsqueda por tópico(s) de redes y telecomunicaciones}
 \textbf{Objetivo:} Buscar \textit{información significativa} en los \textit{recursos de información} a partir de los tópicos de redes y telecomunicaciones.
 
 \textbf{Actor:} Usuario.
@@ -515,7 +515,7 @@ La Figura \ref{fig:iwbpt} muestra dos interfaces. La interfaz \ref{fig:iwforbpt}
 \end{figure}
 
 %%%%% Caso de uso búsqueda por topicos%%%%%
-\section*{Especificación para Mostrar los Detalles de los Recursos de Información}
+\section*{Especificación para mostrar los detalles de los recursos de información}
 
 \textbf{Objetivo:} Mostrar toda la \textit{información descriptiva} de un determinado recurso de información: \textit{persona}, \textit{documento} o \textit{multimedia}.
 
