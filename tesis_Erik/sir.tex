@@ -1,13 +1,13 @@
 \chapter{Integración semántica de recursos de información en una memoria corporativa}
 \label{cap:sir}
 %revizar este documento C:\Users\Gatito\Dropbox\Gestión Semántica\Tarea12O\Integracion Semántica de los recursos.doc
-El proceso de \textit{integración de los recursos de información} consiste en la representación del conocimiento acerca de los \textit{recursos de información}, con fines de busqueda y recuperación de \textit{información significativa}. En esta integración, el objetivo es responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
+El proceso de \textit{integración de los recursos de información} consiste en la representación del conocimiento acerca de los \textit{recursos de información}, con fines de búsqueda y recuperación de \textit{información significativa}. En esta integración, el objetivo es responder una consulta dada por un usuario. Si esta integración se hace mediante el uso de herramientas, estándares, metodologías y aplicaciones pertenecientes a las \textit{tecnologías semánticas}, entonces, se dice que ésta es una \textbf{\textit{integración semántica de los recursos (ISR\label{sym:isr})}}.
 
-La \textit{integración semántica} de \textit{recursos de información} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de \textit{recursos de información}, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos de información y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante o explosivo en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos de información}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
+La \textit{integración semántica} de \textit{recursos de información} puede implementarse en una \textit{memoria corporativa (MC)}, porque una memoria tiene un conjunto diverso de \textit{recursos de información}, los cuales representan el conocimiento en una organización (dominio particular). Estas son las principales razones de esta \textit{integración en una memoria corporativa}: 1) \textit{solucionar la heterogeneidad de los recursos de información y la ambigüedad de la información en una memoria corporativa}, 2) \textit{adaptar el conocimiento cambiante en los recursos}, 3) \textit{extender y mantener un modelo (representación) del conocimiento}, 4) \textit{permitir consultas específicas a partir de las características y relaciones de los recursos de información}, 5) \textit{recuperar información significativa de los recursos para que respondan las preguntas de las personas adscritas en la organización} y 6) \textit{emplear herramientas, aplicaciones, vocabularios y formatos estándar}.
 
 El desarrollo de la \textit{integración semántica de recursos de información} se hace con base en una \textbf{\textit{secuencia ordenada de actividades (metodología)}}. Esta tesis describe una \textbf{\textit{propuesta de metodología}} para la \textit{integración semántica de recursos de información en una memoria corporativa}, la cual está guiada por dos \textit{casos de uso}.
 
-La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otologías) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
+La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a los desarrolladores en estas dos tareas: 1) construir un modelo semántico (otología) y 2) consultar información en este modelo}. Mientras, los principales objetivos de esta integración semántica son:
 
 \begin{itemize}
 \item Realizar la ISR en cualquier memoria corporativa, por ejemplo \textit{Biomédica, Química, Biología, Computación, Economía, Zoología, por mencionar algunas}.
@@ -18,14 +18,14 @@ La \textbf{\textit{finalidad}} de esta propuesta es \textit{facilitar y guiar a 
 
 Esta metodología está organizada en tres etapas principales:
 \begin{enumerate}
-\item \textbf{\textit{Representación del conocimiento}} de los \textit{recursos de información} consiste en identificar los recursos de la memoria corporativa, así como representar las características y relaciones (conocimiento explícito) de estos recursos en un modelo semántico, mediante el marco RDF.
-\item \textbf{\textit{Enriquecimiento del conocimiento en el modelo}} consiste en introducir reglas de inferencia (axiomas) en OWL y RDF(S) para extender, completar y adaptar el conocimiento explícito de los recursos.
-\item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}} consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
+\item \textbf{\textit{Representación del conocimiento}} de los \textit{recursos de información}.- consiste en identificar los recursos de la memoria corporativa, así como representar las características y relaciones (conocimiento explícito) de estos recursos en un modelo semántico, mediante el marco RDF.
+\item \textbf{\textit{Enriquecimiento del conocimiento en el modelo}}.- consiste en introducir reglas de inferencia (axiomas) en OWL y RDF(S) para extender, completar y adaptar el conocimiento explícito de los recursos.
+\item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}}.- consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
 
 La primera y segunda etapa de esta metodología es para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
-La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan a lo largo de nuestra de metodología.
+La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan en este \textit{marco de referencia}.
 
 \begin{figure}[!htb]
 \centering
@@ -39,20 +39,20 @@ A continuación se describen los elementos que están en las tres capas de nuestra
 
 \begin{itemize}
 \item En la capa de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario. La Sección \ref{cap:piu} muestra los detalles de esta interfaz gráfica de usuario para nuestros modelos semánticos.
-\item En la capa de negocios: una aplicación transforma la información recopilada de las páginas estáticas en patrones tripletas y construir una consulta SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
-\item En la capa de datos (conocimiento): la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
+\item En la capa de negocios: una aplicación transforma la información recopilada de las páginas estáticas a una consulta en lenguaje SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
+\item En la capa de datos: la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
 \end{itemize}
 
 Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Los principales usuarios en la integración son los \textbf{\textit{profesores-investigadores}} del núcleo del área de Redes y Telecomunicaciones, así como los \textbf{\textit{estudiantes}} que realizan algún proyecto o servicios social y están a cargo de profesor del núcleo.
 
-En esta metodología, el \textit{elemento clave} es el \textbf{\textit{caso de uso}}. Porque un caso de uso encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: \textit{qué características y relaciones son significativas}, \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}. Los \textit{casos de uso} básicos en esta metodología son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}.
+En esta metodología, el \textit{elemento clave} es el \textbf{\textit{caso de uso}}, porque un caso de uso encamina en el desarrollo de la integración semántica. En concreto, los \textit{casos de uso} permiten encontrar: \textit{qué características y relaciones son significativas}, \textit{qué reglas de inferencia son necesarias} y 3) \textit{cuáles consultas son importantes}. Los \textit{casos de uso} básicos en esta metodología son \textit{la cartografía de competencias} y \textit{la búsqueda de recursos digitales}.
 
 \begin{enumerate}
 \item La cartografía de competencias es la búsqueda y recuperación de las personas a partir de las características personales y profesionales (competencias, capacidades, conocimientos en los temas del dominio).
 \item La búsqueda de recursos digitales es la búsqueda y recuperación de los documentos y archivos multimedia a partir del contenido de éstos (temas del dominio, autor, año).
 \end{enumerate}
 
-Estos dos \textit{casos de uso} son independientes entre ellos, por tal razón, cada uno tiene una respectiva ontología. La ontología de la cartografía de competencias modela el conocimiento explícito e implícito de los recursos persona, con base en las características personales y profesionales de éstos. Mientras, la ontología de los recursos digitales modela el conocimiento explícito e implícito del contenido y acerca de éstos.
+Estos dos \textit{casos de uso} son independientes entre sí, por tal razón, cada uno tiene una respectiva ontología. La ontología de la cartografía de competencias modela el conocimiento explícito e implícito de los recursos persona, con base en las características personales y profesionales de éstos. Mientras, la ontología de los recursos digitales modela el conocimiento explícito e implícito del contenido y acerca de éstos.
 
 En ambos casos de uso, un aspecto importante es que tanto personas como recursos digitales se vinculan con los temas del área de Redes y Telecomunicaciones(RyT). Específicamente, los conocimientos de las personas son relaciones entre personas y temas de RyT. Mientras, los tópicos pertenecientes en los recursos digitales son las relaciones entre recursos digitales y temas de RyT. Por tal razón, se construye una tercera ontología para modelar el vocabulario consensual del área de Redes y Telecomunicaciones.
 
@@ -72,7 +72,7 @@ En ambos casos de uso, un aspecto importante es que tanto personas como recursos
 %%%La integración integración semántica se efectúa en una memoria corporativa (MC), porque esta integración considera algunas características importantes de una memoria corporativa como: 1) el crecimiento explosivo de recursos, 2) heterogeneidad en formato, contenido y estructura de los recursos, 3) ambigüedades en la información, 4) evolución del conocimiento en los recursos (agregar, eliminar, modificar o renovar), entre otras.
 %Pero, para casos prácticos, nuestra propuesta se pone en práctica para el grupo de investigación en el área de Redes y Telecomunicaciones del depto. de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Mientras, los casos de uso son: la cartografía de competencias y la búsqueda de recursos digitales.
 
-\section{Representación del Conocimiento en los Recursos de Información}
+\section{Representación del conocimiento en los recursos de información}
 \label{sec:repKrec} 
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
@@ -82,7 +82,7 @@ La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
 \includegraphics[width=0.75\textwidth]{CasosUsoMC}
-\caption{Recursos de información agrupados por casos de uso para nuestra memoria corporativa.}
+\caption{Esquema de la memoria corporativa de área de Redes y Telecomunicaciones}
 \label{fig:mccu}
 \end{figure}
 
@@ -175,9 +175,9 @@ What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
 \label{tab:urird}
 \end{table}
 
-El siguiente paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
+El segundo paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
 
-La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas característica.
+La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas características.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
@@ -233,9 +233,9 @@ Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
 \label{tab:brdprop}
 \end{table}
 
-El siguiente paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
+El tercer paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
 
-En esta representación, el siguiente paso es recopilar la información y conocimiento en los recursos, para salvarla mediante el uso de RDF. A continuación, se presentan dos ejemplos que describen a dos \textit{recursos de información} mediante el marco RDF.
+El cuarto paso es recopilar la información y conocimiento en los recursos, para salvarla mediante el uso de RDF. A continuación, se presentan dos ejemplos que describen a dos \textit{recursos de información} mediante el marco RDF.
 
 %%Dibujo proceso de generación de tripletas.
 En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF. En la parte izquierda de esta figura, se presenta una foto representativa del Dr. Ricardo. Mientras, la parte derecha se dan a conocer las tripletas RDF en formato de serialización Turtle que describen las características y relaciones básicas de esta persona.
@@ -253,7 +253,7 @@ El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\tex
 \item En el primer recuadro, la tripleta RDF establece que este recurso pertenece a la clase Profesor.
 \item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
 \item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
-\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en latinoamérica \cite{Victorino}.
+\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en Latinoamérica \cite{Victorino}.
 \item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}.
 \item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
 \end{itemize}
@@ -295,21 +295,21 @@ Este es el procedimiento de generación de tripletas RDF mediante el uso de formu
 
 Todas las \textit{tripletas RDF} que están asociadas a las declaraciones de los recursos persona, conforman el \textit{componente asertivo} de la ontología \textit{cartografía de competencias}. De igual manera, todas las \textit{tripletas RDF} asociadas a las declaraciones de los documentos y archivos multimedia, constituyen el \textit{componente asertivo} de la ontología \textit{búsqueda de recursos digitales}.
 
-\section{Enriquecimiento del Conocimiento en el Modelo}
+\section{Enriquecimiento del conocimiento en el modelo}
 \label{sec:enrKrec} 
 La etapa de representación del conocimiento, nos permite describir el conocimiento explícito en los \textit{recursos de información}. Ahora bien, este conocimiento puede ser enriquecido mediante la introducción de axiomas o reglas de inferencia. Los axiomas permiten representar el conocimiento implícito sobre: los recursos y las relaciones de éstos. Por ejemplo, los profesores, empleados y estudiantes son personas, por ello, deben tenerse tres axiomas que establezcan que un profesor es una persona, un empleado es una persona y un estudiante es una persona.
 
 Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox). Este proceso de búsqueda de axiomas debe guiarse a partir de los siguientes elementos: 1) \textit{diagramas de clase}, 2) \textit{cualidades en las relaciones} y 3) \textit{operaciones de la teoría de grupos}. A continuación, se describen y argumentan todos los \textbf{\textit{axiomas}} que se identificaron para las ontologías de \textit{cartografía de competencias y recursos digitales}.
 
-Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontologías. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización \cite{SintaxisRDF} (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle).
+Protégé es el editor que se emplea, para construir, visualizar y manipular los axiomas (TBox) en nuestra ontología. Esta herramienta permite a los usuarios manipular las clases, propiedades y axiomas desde una interfaz gráfica de usuario. También, esta herramienta permite escribir a los axiomas en distintas sintaxis de serialización \cite{SintaxisRDF} (XML/RDF, Sintaxis Manchester, OWL/XML, Sintaxis Funcional o Turtle).
 
-\subsection{Herencia de Clases}
-El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:dccarc} y \ref{fig:mccu}.
+\subsection{Herencia de clases}
+El primer \textit{conocimiento implícito} a representar, es la jerarquía de clases para cada \textit{caso de uso}. El objetivo de ésto es construir modelos de organización jerárquicos del conocimiento para la cartografía de competencias y los recursos digitales. La búsqueda y construcción de las jerarquías se hace mediante el análisis de los \textit{diagramas de clases} de las Figuras \ref{fig:mccu} y \ref{fig:dccarc}.
 
 A continuación, se describen las dos \textit{jerarquías de clases} para la cartografía de competencias y recursos digitales.
 
 \begin{itemize}
-\item En el área RyT, las personas pueden agruparse en cuatro clases básicas: \textbf{\textit{Estudiante (Student)}}, \textbf{\textit{Profesor (Teacher)}}, \textbf{\textit{Investigador (Researcher)}} y \textbf{\textit{Empleado (Employee)}}. Las personas pueden pertenecer a más de una clase, por ejemplo, un profesor puede ser un investigador o un empleado, así como un estudiante puede ser un profesor o un empleado. Los profesores y empleados son profesionistas, por ello, la clase \textbf{\textit{Profesionista (Professional)}} es super-clase de \textbf{\textit{Profesor}} y \textbf{\textit{Empleado}}. Finalmente, cualquier individuo perteneciente a una de estas cinco clases, pertenece es una persona. De esta manera, las cinco clases tienen como super-clase la clase \textbf{\textit{Persona (Person)}}. La Figura \ref{fig:jdc} muestra la jerarquía de clases para los recursos persona.
+\item En el área RyT, las personas pueden agruparse en cuatro clases básicas: \textbf{\textit{Estudiante (Student)}}, \textbf{\textit{Profesor (Teacher)}}, \textbf{\textit{Investigador (Researcher)}} y \textbf{\textit{Empleado (Employee)}}. Las personas pueden pertenecer a más de una clase, por ejemplo, un profesor puede ser un investigador o un empleado, así como un estudiante puede ser un profesor o un empleado. Los profesores y empleados son profesionistas, por ello, la clase \textbf{\textit{Profesionista (Professional)}} es super-clase de \textbf{\textit{Profesor}} y \textbf{\textit{Empleado}}. Finalmente, cualquier individuo perteneciente a una de estas cinco clases, es una persona. De esta manera, las cinco clases tienen como super-clase la clase \textbf{\textit{Persona (Person)}}. La Figura \ref{fig:jdc} muestra la jerarquía de clases para los recursos persona.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -319,7 +319,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 \label{fig:jdc}
 \end{figure}
 
-En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a partir del uso de axiomas de \textit{jerarquía de clases}. En la parte izquierda de la Figura \ref{fig:exHerClasPer}, se muestra una rama de la ontología \textit{cartografía de competencias}. Esta rama tiene dos axiomas que establecen que un \textit{Profesor es un Profesionista} y un \textit{Profesionista es una Persona}. Esta rama también indica que el recurso Ricardo Marcelin Jiménez pertenece a la clase Profesor. Mientras, en la parte de la derecha de la Figura \ref{fig:exHerClasPer}, se muestra la misma rama con inferencia, la cual indica que el recurso Ricardo Marcelin Jiménez pertenece  las clases: Profesor, Profesionista y Persona.
+En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a partir del uso de axiomas de \textit{jerarquía de clases}. En la parte izquierda de la Figura \ref{fig:exHerClasPer}, se muestra una rama de la ontología \textit{cartografía de competencias}. Esta rama tiene dos axiomas que establecen que un \textit{Profesor es un Profesionista} y un \textit{Profesionista es una Persona}. Esta rama también indica que el recurso Ricardo Marcelin Jiménez pertenece a la clase Profesor. Mientras, en la parte de la derecha de la Figura \ref{fig:exHerClasPer}, se muestra la rama con inferencia, la cual indica que el recurso Ricardo Marcelin Jiménez pertenece a las clases: Profesor, Profesionista y Persona.
 
 \begin{figure}[!htb]
 \centering
@@ -329,7 +329,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 \end{figure}
 
 \begin{itemize}
-\item En el área RyT, los principales recursos digitales se pueden agrupar en ocho clases básicas: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documento (Document)}} y \textbf{\textit{Mutimedia (Multimedia)}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
+\item En el área RyT, los principales recursos digitales se pueden agrupar en nueve clases básicas: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documento (Document)}} y \textbf{\textit{Multimedia (Multimedia)}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -339,7 +339,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 \label{fig:jdrd}
 \end{figure}
 %height=2.3in,
-En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a partir de axiomas de \textit{jerarquía de clases}. En esta figura, los axiomas son tomados de la ontología \textit{búsqueda de recursos digitales}. La parte izquierda de esta Figura \ref{fig:exHerClasDigi} ilustra una rama de la \textit{ontología recursos digitales}. En esta rama, se exalta la asignación del recurso \textit{What is Linked Data?} a la clase Video. Mientras, la parte derecha de la Figura \ref{fig:exHerClasDigi}, se presenta esta rama después de realizar inferencia. En esta rama, el recurso \textit{What is Linked Data?} está asignado a estas clases: \textit{Video, Multimedia} y \textit{Recurso Digital}.
+En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a partir de axiomas de \textit{jerarquía de clases}. En esta figura, los axiomas son tomados de la ontología \textit{búsqueda de recursos digitales}. La parte izquierda de esta Figura \ref{fig:exHerClasDigi} ilustra una rama de la \textit{ontología recursos digitales}, en la cual el recurso \textit{What is Linked Data?} es instancia de la clase Video. Mientras, la parte derecha de la Figura \ref{fig:exHerClasDigi}, se presenta esta rama después de realizar inferencia. En esta rama, el recurso \textit{What is Linked Data?} es instancia de estas clases: \textit{Video, Multimedia} y \textit{Recurso Digital}.
 
 \begin{figure}[!htb]
 \centering
@@ -348,13 +348,13 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 \label{fig:exHerClasDigi}
 \end{figure}
 
-\subsection{Herencia de Propiedades}
+\subsection{Herencia de propiedades}
 Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos en los caso de uso; averiguando que propiedades tienen un significado común.
 
 La siguiente lista describe las \textit{jerarquías de propiedades} que se identificaron para la \textit{cartografía de competencias}. Para cada item de esta lista, se presenta un diagrama que muestra esta jerarquía en forma de un grafo.
 
 \begin{itemize}
-\item \textbf{\textit{Lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son propiedades para indicar las habilidades lingüísticas de una persona. Estas propiedades pueden generalizarse a partir de la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüísticos en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}. En la Figura \ref{fig:HerPropLang} se muestra la jerarquía de propiedades para describir las habilidades lingüísticas de las personas.
+\item \textbf{\textit{Lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son propiedades para indicar las habilidades lingüísticas de una persona. Estas propiedades pueden generalizarse a partir de la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüístico en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}. En la Figura \ref{fig:HerPropLang} se muestra la jerarquía de propiedades para describir las habilidades lingüísticas de las personas.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -426,7 +426,7 @@ De la misma manera que en la cartografía de competencias, el siguiente listado p
 \label{fig:HerPropInst}
 \end{figure}
 
-\subsection{Dominio y Rango de Propiedades}
+\subsection{Dominio y rango de propiedades}
 Los axiomas de \textbf{\textit{Dominio}} y \textbf{\textit{Rango}} permiten definir qué recursos o recurso-literal pueden relacionarse en una propiedad. Esta idea es parecida a una función matemática, donde el dominio es el conjunto formado por \textit{los valores que puede tomar una función}. Mientras, el rango es el conjunto de \textit{los valores que resultan de evaluar la función}.
 
 La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} de las propiedades que pertenecen a la cartografía de competencias. En esta Tabla, la primer columna enuncia las propiedades de la cartografía, la segunda columna muestra las clases para el dominio y la tercera columna enuncia las clases o tipo de literales del rango. De la misma manera, la Tabla \ref{tab:dyrrd} presenta el \textbf{\textit{dominio}} y \textbf{\textit{rango}} para las propiedades en el TBox de la \textit{búsqueda de recursos digitales}. La primera columna enuncia las propiedades, la segunda las clases del dominio y la tercera las literales o clases del rango.
@@ -555,7 +555,7 @@ En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación pr
 \end{figure}
 %height=3.0in
 
-\subsection{Simetría en las Propiedades}
+\subsection{Simetría en las propiedades}
 \label{cap:simprop} 
 Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{individuo p} y termina en \textit{individuo q}. En la Figura\ref{fig:unidirecc} se ejemplifica este comportamiento unidireccional, donde la relación \textit{p tiene género q}, indica que todos los \textit{individuos p} se relacionan con un \textit{individuo q}.
 
@@ -578,7 +578,7 @@ Sin embargo, existen algunas propiedades que requieren tener un comportamiento b
 A continuación, se describen las propiedades simétricas que se identificaron para la \textit{cartografía de competencias}. Con respecto al caso de la búsqueda de recursos digitales, no se identificó alguna propiedad que tenga la característica simétrica.
 
 \begin{itemize}
-\item La propiedad \textbf{\textit{tiene colega (sir:has-colleague)}} es una relación del tipo laboral que vincula a dos Profesionistas (Profesor o Empleado). La idea básica de esta relación es indicar quiénes son los colegas de trabajo o con quiénes ha hecho colaboración un \textit{Profesionista}.
+\item La propiedad \textbf{\textit{tiene colega (sir:has-colleague)}} es una relación del tipo laboral que vincula a dos Profesionistas (Profesor o Empleado). La idea básica de esta relación es indicar quiénes son los colegas de trabajo o quiénes pueden colaborar.
 
 La Figura \ref{fig:axSymColl} muestra un subgrafo RDF con relaciones \textit{tiene colega} entre cuatro profesores del área de Redes y Telecomunicaciones (RyT). En este subgrafo las tripletas indican las siguientes declaraciones: \textit{el Dr. Ricardo Marcelin tiene por colegas a la Dra. Carolina Medina, Dr. Enrique Rodrígez y Dr. Miguel López}, \textit{el Dr. Enrique Rodrígez tiene por colegas a la Dra. Carolina Medina y al Dr. Miguel López} y \textit{la Dr. Carolina Medina tiene por colega al Dr. Miguel López}.
 
@@ -624,7 +624,7 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \end{figure}
 \end{itemize}
 
-\section{Búsqueda y Recuperación de Información en el Modelo}
+\section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
 Las etapas \textit{representación y enriquecimiento del conocimiento} permiten construir nuestras bases de conocimiento, es decir, las ontologías para la cartografía de competencias, búsqueda de recursos digitales, así como el vocabulario de Redes y Telecomunicaciones. Estas ontologías son contenedores de conocimiento con un significado bien definido.
 
@@ -638,27 +638,27 @@ En esta tesis, las ontologías tienen como finalidad la búsqueda y recuperación d
 
 La \textit{identificación de las preguntas en lenguaje natural} es el proceso de análisis y hallazgo de las principales preguntas a partir de los casos de uso.
 
-Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textit{la búsqueda de recursos digitales} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
+Nuestros \textit{casos de uso} son: 1) la \textit{cartografía de competencias} que es la búsqueda de personas a partir de sus habilidades profesionales y conocimientos en RyT, así como 2) \textit{escribir las preguntas (lenguaje natural) a consultas SPARQL} que es el hallazgo de documentos y archivos multimedia a partir de los metadatos de éstos y los temas que están vinculados con el área de RyT.
 
-Los parámetros de búsqueda en la cartografía competencias son:
+Los parámetros de búsqueda de la cartografía competencias son:
 \begin{itemize}
 \item Habilidades profesionales como trabajo en equipo, creatividad, liderazgo, administración de proyectos, auto-aprendizaje, toma de decisiones, por mencionar algunas.
 \item Habilidades lingüísticas como hablar en español, inglés y francés; escribir en español, inglés y japones; leer en español y francés, entre otros idiomas.
-\item Conocimientos de Redes y Telecomunicaciones como sabiduría en sistemas operativos, capa enlace, filtros, ontologías, hilos de procesamiento, radios cognitivos, datos ligados, por mencionar algunos.
+\item Conocimientos de Redes y Telecomunicaciones como pericia en sistemas operativos, capa enlace, filtros, ontologías, hilos de procesamiento, radios cognitivos, datos ligados, por mencionar algunos.
 \item Relaciones profesionales como conoce a la Dra. Carolina, Dr. Héctor, Dr. Ricardo, Dr. Miguel, Erik, Laura, entre otros.
 \item Clase de persona en RyT como profesionista, profesor, estudiante o empleado.
-\item Intervalo de edad como como 18 a 40, < 40, > 18, 18 a 18, por mencionar.
+\item Intervalo de edad como como 18 a 40, < 40, > 18, = 18.
 \item Lugar de trabajo como la Universidad Autónoma Metropolitana, Clark \& Parsia LLC, Infotec, Canonical Ltd, entre otras.
-\item Género, masculino, femenino, hombre y mujer. 
+\item Género se refiere al sexo de la persona: masculino, femenino, hombre y mujer. 
 \end{itemize}
 
 A partir de estos parámetros de búsqueda, se hallaron un conjunto de preguntas básicas. El siguiente listado presenta las diecinueve preguntas básicas para la \textit{cartografía de competencias}, donde cada pregunta tiene un respectivo \textit{identificador de consulta}.
 
 \begin{itemize}
-\item[ ] \textbf{Q1.1}.- ¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?
-\item[ ] \textbf{Q1.2}.- ¿Cuáles son los nombres, sitios web y los lugares donde laboran las personas del RyT?
+\item[ ] \textbf{Q1.1}.- ¿Cuáles son los nombres, correos, sitios Web, géneros y edades de las personas del área de RyT?
+\item[ ] \textbf{Q1.2}.- ¿Cuáles son los nombres, sitios Web y los lugares donde laboran las personas del RyT?
 \item[ ] \textbf{Q1.3}.- ¿Quiénes son mayores de 20 años y menores de 45 años?
-\item[ ] \textbf{Q1.4}.- ¿Cuáles son los nombres y sitios web de los profesionistas del área de RyT?
+\item[ ] \textbf{Q1.4}.- ¿Cuáles son los nombres y sitios Web de los profesionistas del área de RyT?
 \item[ ] \textbf{Q1.5}.- ¿Quiénes trabajan en la Clark \& Parsia y son del sexo Masculino?
 \item[ ] \textbf{Q1.6}.- ¿Quiénes son estudiantes y leen en inglés?
 \item[ ] \textbf{Q1.7}.- ¿Quienes hablan, leen y escriben en inglés?
@@ -697,9 +697,9 @@ Estos parámetros de búsqueda dieron pauta a la búsqueda de las principales pregu
 \item[ ] \textbf{Q2.5}.- ¿Qué recursos multimedia son mayores al año 2009?
 \item[ ] \textbf{Q2.6}.- ¿Cuáles documentos tratan sobre Ontologías?
 \item[ ] \textbf{Q2.7}.- ¿Qué recursos fueron publicados en una Revista científica?
-\item[ ] \textbf{Q2.8}.- ¿Qué recursos tienen en su descripción las palabras ``linked data''?
+\item[ ] \textbf{Q2.8}.- ¿Qué recursos tienen en su descripción las palabras ``linked data'' ?
 \item[ ] \textbf{Q2.9}.- ¿Cuáles documentos en Inglés y mayores al año 2000 son de autoría de Erik Alarcon Zamora?
-\item[ ] \textbf{Q2.10}.- ¿Cuál son las tesis de Samuel Hernandez Maza?
+\item[ ] \textbf{Q2.10}.- ¿Cuál son las tesis de Samuel Hernández Maza?
 \end{itemize}
 
 Las preguntas para los dos casos de uso fueron electas, porque algunas utilizan el conocimiento explícito y otras aprovechan el conocimiento implícito.
@@ -715,7 +715,7 @@ Con base en las preguntas de ambos listados, el siguiente paso es \textbf{\texti
 
 A continuación, se presentan y describen algunos ejemplos para transformar las preguntas en \textit{lenguaje natural} a sus respectivas consultas SPARQL. Estas preguntas son electas del listado de preguntas para la cartografía de competencias y la búsqueda de recursos digitales.
 
-La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la pregunta (Q1.1) \textit{¿Cuáles son los nombres, correos, sitios web, géneros y edades de las personas del área de RyT?}. En esta pregunta, los valores de recuperación son: \textit{nombre}, \textit{correo}, \textit{sitio Web}, \textit{género} y \textit{edad} para cualquier recurso persona. Cada valor tiene asociado una respectiva variable: \textit{?name}, \textit{?mail}, \textit{?ws}, \textit{?gender} y \textit{?age}. Las propiedades asociadas a estos valores son: \textit{tiene nombre (sirp:has-name)}, \textit{tiene email (sirp:has-email)}, \textit{tiene sitio Web (sirp:has-webSite)} y \textit{tiene género (sirp:has-gender)}. Finalmente, la variable auxiliar ``\textit{?x}'' establece que sin importar el identificador URI del recurso, deben recuperarse los valores de las variables respuesta.
+La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la pregunta (Q1.1) \textit{¿Cuáles son los nombres, correos, sitios Web, géneros y edades de las personas del área de RyT?}. En esta pregunta, los valores de recuperación son: \textit{nombre}, \textit{correo}, \textit{sitio Web}, \textit{género} y \textit{edad} para cualquier recurso persona. Cada valor tiene asociado una respectiva variable: \textit{?name}, \textit{?mail}, \textit{?ws}, \textit{?gender} y \textit{?age}. Las propiedades asociadas a estos valores son: \textit{tiene nombre (sirp:has-name)}, \textit{tiene email (sirp:has-email)}, \textit{tiene sitio Web (sirp:has-webSite)} y \textit{tiene género (sirp:has-gender)}. Finalmente, la variable auxiliar ``\textit{?x}'' establece que sin importar el identificador URI del recurso, deben recuperarse los valores de las variables respuesta.
 
 \begin{figure}[!htb]
 \centering
@@ -725,7 +725,7 @@ La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la p
 \end{figure}
 %height=1.8in,
 
-La consulta asociada a la pregunta Q1.1, es un ejemplo sencillo de construcción de consultas SPARQL. Ahora bien, existen preguntas que al transformarse a consultas SPARQL, emplean varios \textit{patrones tripleta}. Pero, estas consultas pueden reducirse a una menor cantidad de \textit{patrones tripleta}, si se da por hecho que hay razonamiento en la ontología.  Un ejemplo de este tipo de consultas se da para la pregunta (Q1.18) \textit{¿Cuáles son los nombres y sitios Web de las personas que conocen a Carolina Medina Ramírez?}. La Figura \ref{fig:q2rqlSR} muestra la consulta asociada a la pregunta Q1.18, en la cual no se da por hecho el uso de razonamiento. Mientras, la Figura \ref{fig:q2rqlCR} presenta la consulta para la misma pregunta, donde se da por hecho el uso del razonamiento.
+La consulta asociada a la pregunta Q1.1, es un ejemplo sencillo de construcción de consultas SPARQL. Ahora bien, existen preguntas que al transformarse a consultas SPARQL, emplean varios \textit{patrones tripleta}. Pero, estas consultas pueden reducirse a una menor cantidad de \textit{patrones tripleta}, si se da por hecho que hay razonamiento en la ontología.  Un ejemplo de este tipo de consultas se da para la pregunta (Q1.18) \textit{¿Cuáles son los nombres y sitios Web de las personas que conocen a Carolina Medina Ramírez?}. La Figura \ref{fig:q2rqlSR} muestra la consulta asociada a la pregunta Q1.18, en la cual no se da por hecho el uso de razonamiento. Mientras, la Figura \ref{fig:q2rqlCR} presenta la consulta simplificada que esta asociada a la pregunta Q1.18. En esta consulta simplificada se da por hecho el uso del razonamiento.
 
 A continuación, se listan los elementos de la consulta que están asociados a la pregunta Q1.18 de la Figura \ref{fig:q2rqlSR}.
 
@@ -736,7 +736,7 @@ A continuación, se listan los elementos de la consulta que están asociados a la 
 \item Valores específicos: \textit{sirp:CarolinaMedinaRamirez} - identificador de la Dra. Carolina Medina Ramírez.
 \end{itemize}
 
-En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones tripleta} que indican las relaciones profesionales de cualquier individuo con la Dra. Carolina. Porque, para indicar \textit{a quiénes conoce} o \textit{quiénes conocen a} la Dra. Carolina se deben emplear cinco \textit{patrones tripleta}, los cuales aparecen en el recuadro con el símbolo del asterisco.
+En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones tripleta} que indican las relaciones profesionales de cualquier individuo con la Dra. Carolina, porque, para indicar \textit{a quiénes conoce} o \textit{quiénes conocen a} la Dra. Carolina se deben emplear cinco \textit{patrones tripleta}, los cuales aparecen en el recuadro con el símbolo del asterisco.
 
 \begin{figure}[!htb]
 \centering
@@ -745,7 +745,7 @@ En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones 
 \label{fig:q2rqlSR}
 \end{figure}
 
-La consulta de la pregunta Q1.18, puede simplificarse mediante la asunción de emplear razonamiento en la ontología. La Figura \ref{fig:q2rqlCR} presenta esta consulta SPARQL simplificada. En la cual, el número de patrones tripletas del recuadro con asterisco de la Figura \ref{fig:q2rqlSR} se reduce a un solo patrón marcado con el símbolo más. Porque, se da por hecho que las propiedades \textit{tiene colega (has-colleague)} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a(knows)}, además esta superpropiedad tiene la característica simétrica.
+La consulta de la pregunta Q1.18, puede simplificarse mediante la asunción de emplear razonamiento en la ontología. La Figura \ref{fig:q2rqlCR} presenta esta consulta SPARQL simplificada, donde, el número de patrones tripletas del recuadro con asterisco de la Figura \ref{fig:q2rqlSR} se reduce a un solo patrón marcado con el símbolo más, porque, se da por hecho que las propiedades \textit{tiene colega (has-colleague)} y \textit{tiene asesor} son subpropiedades de la propiedad \textit{conoce a(knows)}, además esta superpropiedad tiene la característica simétrica.
 
 \begin{figure}[!htb]
 \centering
@@ -754,7 +754,7 @@ La consulta de la pregunta Q1.18, puede simplificarse mediante la asunción de em
 \label{fig:q2rqlCR}
 \end{figure}
 
-En el caso de uso \textit{búsqueda de recursos digitales}, existen consultas que mediante la inferencia en una ontologia, pueden reducirse el número de patrones en sus respectivas clausulas WHERE.  A continuación, se presenta un ejemplo de este tipo de consultas. Este ejemplo esta dividido en dos partes: 1) \textit{la consulta se construye sin dar por hecho el uso de un razonador} y 2) la consulta se construye a partir de la aseveración de emplear razonamiento en una ontología.
+En el caso de uso \textit{búsqueda de recursos digitales}, existen consultas que mediante la inferencia en una ontología, pueden reducirse el número de patrones en sus respectivas clausulas WHERE.  A continuación, se presenta un ejemplo de este tipo de consultas. Este ejemplo esta dividido en dos partes: 1) \textit{la consulta se construye sin dar por hecho el uso de un razonador} y 2) la consulta se construye a partir de la aseveración de emplear razonamiento en una ontología.
 
 La Figura \ref{fig:q2torqlSR} presenta la consulta asociada a la pregunta (Q2.6) \textit{¿Cuáles documentos tratan sobre Ontologías?}. Esta consulta se construye a partir de las tripletas explícitas en la ontología de \textit{recursos digitales}.
 
@@ -775,9 +775,9 @@ Los elementos importantes en la consulta (Q2.6) de la Figura \ref{fig:q2torqlSR}
 TechnicalReport} - identificador de la clase Reporte Técnico, \textit{sird:Document} - identificador de la clase Documento y \textit{redes:Ontology} identificador del tema Ontología.
 \end{itemize}
 
-En esta consulta SPARQL, se resaltan los patrones del recuadro marcado con dos asteriscos. Estos seis patrones indican los recursos que son documentos. Porque, si solamente se emplea un patrón (\textit{?x rdf:type sird:Document}), entonces se omiten artículos, libros, reportes técnicos, tesis y páginas Web que no tienen la asignación a la clase \textit{Documento (sird:Document)}.
+En esta consulta SPARQL, se resaltan los patrones del recuadro marcado con dos asteriscos. Estos seis patrones indican los recursos que son documentos, porque, si solamente se emplea un patrón (\textit{?x rdf:type sird:Document}), entonces se omiten artículos, libros, reportes técnicos, tesis y páginas Web que no tienen la asignación a la clase \textit{Documento (sird:Document)}.
 
-La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante la asunción de emplear el proceso de inferencia en la ontología de recursos digitales. La Figura \ref{fig:q2torqlCR} presenta la consulta simplificada para la pregunta Q2.6. En esta consulta los seis patrones son reducidos a un patrón que está marcado con el doble signo de más. Porque, se da por hecho que los \textit{individuos} de las clases \textit{Artículo (sird:Paper)}, \textit{Libro (sird:Book)}, \textit{Reporte Técnico (sird:TechnicalReport)}, \textit{Tesis (sird:Thesis)} y Página Web (sird:Webpage) son individuos de la clase \textit{Documento (sird:Document)}.
+La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante la asunción de emplear el proceso de inferencia en la ontología de recursos digitales. La Figura \ref{fig:q2torqlCR} presenta la consulta simplificada para la pregunta Q2.6. En esta consulta los seis patrones son reducidos a un patrón que está marcado con el doble signo de más, porque, se da por hecho que los \textit{individuos} de las clases \textit{Artículo (sird:Paper)}, \textit{Libro (sird:Book)}, \textit{Reporte Técnico (sird:TechnicalReport)}, \textit{Tesis (sird:Thesis)} y Página Web (sird:Webpage) son individuos de la clase \textit{Documento (sird:Document)}.
 
 \begin{figure}[!htb]
 \centering
@@ -788,7 +788,7 @@ La consulta SPARQL de la Figura \ref{fig:q2torqlSR} puede simplificarse mediante
 
 Estos son cinco ejemplos de transformación de preguntas a consultas SPARQL. Algunas consultas se construyen mediante tripletas del ABox, porque la información a recuperar pertenece al conocimiento explícito; por ejemplo, la consulta de la Figura \ref{fig:q112rql}. Otras consultas se construyen mediante la agrupación de varios patrones, porque éstos permiten recuperar mejor información en el grafo RDF; por ejemplo las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}. Finalmente, existen consultas que aprovechan el uso de inferencia, para reducir el número de patrones y obtener mejores resultados; por ejemplo, las consultas SPARQL de las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}.
 
-En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de inferencia o razonador hace el proceso de inferencia sobre las descripciones y axiomas de una ontología. De este proceso de inferencia, se genera un grafo RDF de inferencia. Ahora bien, un motor de consulta SPARQL a partir de una consulta SPARQL y este modelo de inferencia, interpreta esta consulta SPARQL; posteriormente, éste compara los patrones de la cláusula WHERE con todos los triples en el \textit{modelo}. Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
+En la recuperación de la información, el \textit{tercer punto clave} es la \textbf{\textit{ejecución de las consultas}}. Esta ejecución se basa en el uso de un \textit{motor de búsqueda} SPARQL, para buscar y recuperar la información en los grafos RDF de nuestras ontologías. El funcionamiento general de un motor SPARQL es el siguiente. Un motor de inferencia o razonador hace el proceso de inferencia sobre las descripciones y axiomas de una ontología. De este proceso de inferencia, se genera un grafo RDF de inferencia. Ahora bien, un motor de consulta SPARQL a partir de una consulta SPARQL y este modelo de inferencia, interpreta esta consulta SPARQL; posteriormente, éste compara los patrones de la cláusula WHERE con todas las tripletas en el \textit{modelo}. Aquellas tripletas que concuerdan con los patrones, el motor recupera la información de las \textit{variables resultado}. Finalmente, el motor regresa la información de estas variables al usuario. Esta información comúnmente se presenta forma de tabla. En la Figura \ref{fig:exMBS} se presenta este funcionamiento de un motor SPARQL.
 
 \begin{figure}[!htb]
 \centering
@@ -799,7 +799,7 @@ En la recuperación de la información, el \textit{tercer punto clave} es la \text
 
 Un motor SPARQL puede encontrarse en un triplestore. El triplestore Jena posee el motor de consulta (ARQ), el cual soporta el lenguaje SPARQL. Este motor ARQ permite recuperar los resultados de una consulta para mostrarlos en pantalla en forma de una tabla u obtenerlos de forma iterativa mediante JAVA.
 
-Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo que se tomo de la ontología \textit{búsqueda de recursos digitales}.
+Los resultados proporcionados por un motor SPARQL, dependen del uso o no del proceso de inferencia en una ontología. Si el motor emplea una ontología sin inferencia, entonces los resultados pueden ser menores a los esperados. Para ejemplificar ésto, supongamos que el grafo en la Figura \ref{fig:grafoSR} es el modelo de entrada para el motor SPARQL. Este modelo es un subgrafo que se tomó de la ontología \textit{búsqueda de recursos digitales}.
 
 \begin{figure}[hp]
 \centering
@@ -818,12 +818,12 @@ A continuación, se listan las declaraciones que están asociadas a las tripletas 
 \item El recurso \textit{libro 02 (sird:book02-doc)} es un recurso que pertenece a la clase \textit{libro (sird:Book)} y la editorial de éste es \textit{Mc Graw Hill (sirp:McgrawHill)}.
 \item El recurso \textit{libro 04 (sird:book04-docx)} tiene estas declaraciones. Este recurso pertenece a la clase \textit{libro (sird:Book)} y \textit{Oceano (sirp:Oceano)} es la editorial de éste.
 \item Los recursos \textit{artículo 01 (sird:paper01-pdf)} y \textit{artículo 02 (sird:paper02-odp)} son publicados en la \textit{IEEE (sirp:IEEE)} y la \textit{ACM (sirp:ACM)} respectivamente.
-\item El recurso \textit{artículo 03 (sird:paper03-doc)} tiene dos declaraciones. La primera establece que este recurso se publico en la \textit{IEEE (sirp:IEEE)}. Mientras, la segunda indica que éste pertenece a la clase \textit{Artículo (sird:Paper)}.
+\item El recurso \textit{artículo 03 (sird:paper03-doc)} tiene dos declaraciones. La primera establece que este recurso se publicó en la \textit{IEEE (sirp:IEEE)}. Mientras, la segunda indica que éste pertenece a la clase \textit{Artículo (sird:Paper)}.
 \item El recurso \textit{artículo 04 (sird:paper04-docx)} pertenece a la clase \textit{artículo (sird:Paper)} y se publico en la \textit{ACM (sirp:ACM)}.
 \item La clase \textit{Documento (sird:Document)} es superclse de las clases \textit{artículo (sird:Paper)}, \textit{libro (sird:Book)} y \textit{Tesis (sird:Thesis)}.
 \end{itemize}
 
-La consulta a interpretar por el motor SPARQL, es la asociada a la pregunta \textit{¿Cuáles son los recursos que son documentos?}. Esta consulta se presenta en la Figura \ref{fig:consultaGrafo} y emplea seis patrones para establecer cuales recursos son documentos (artículos, libros, tesis, reportes técnicos, páginas web).
+La consulta a interpretar por el motor SPARQL, es la asociada a la pregunta \textit{¿Cuáles son los recursos que son documentos?}. Esta consulta se presenta en la Figura \ref{fig:consultaGrafo} y emplea seis patrones para establecer cuales recursos son documentos (artículos, libros, tesis, reportes técnicos, páginas Web).
 
 \begin{figure}[!htb]
 \centering
@@ -871,10 +871,10 @@ Esta \textit{ejecución de la consulta} por un motor SPARQL arrojó seis resultado
 \begin{itemize}
 \item Todos los recursos que pertenecen a las clases \textit{artículo (sird:Paper)}, \textit{libro (sird:Book)} y \textit{tesis (Thesis)}, también pertenecen a la clase \textit{documento (Documento)} , por los axiomas de jerarquía (rdfs:subClassOf).
 \item La propiedad \textit{publicado en la revista (publishedInJournal)} tiene por \textit{dominio} la clase \textit{artículo (sird:Paper)}. Por ello, los recursos que utilizan esta propiedad, pertenecen a la clase Artículo, además la clase \textit{artículo} es subclase de \textit{documento}.
-\item De igual manera, las propiedades \textit{tiene institución involucrada (sird:has-institutionInvolved)} y \textit{tiene editorial (sird:has-publishingHouse)} tienen por dominio las clases \textit{Tesis (sird:Thesis)} y \textit{libro (sird:Book)} respectivamente. Estas dos clases son subclases de \textit{documento}.
+\item De igual manera, las propiedades \textit{tiene institución involucrada (sird:has-institutionInvolved)} y \textit{tiene editorial (sird:has-publishingHouse)} tienen por dominio las clases \textit{Tesis (sird:Thesis)} y \textit{libro (sird:Book)}, respectivamente. Estas dos clases son subclases de \textit{documento}.
 \end{itemize}
 
-Al darse por hecho el uso de inferencia, la consulta \ref{fig:consultaGrafo} puede simplificarse a un solo \textit{patrón tripleta}. Este patrón  indica que se busca cualquier recurso que sea del tipo \textit{documento (sird:Document)}. En la Figura \ref{fig:consSimpGrafo} se presenta la consulta simplifica para la pregunta \textit{¿Cuáles son los recursos que son documentos?}.
+Al darse por hecho el uso de inferencia, la consulta \ref{fig:consultaGrafo} puede simplificarse a un solo \textit{patrón tripleta}. Este patrón  indica que se busca cualquier recurso que sea del tipo \textit{documento (sird:Document)}. En la Figura \ref{fig:consSimpGrafo} se presenta la consulta simplificada para la pregunta \textit{¿Cuáles son los recursos que son documentos?}.
 
 \begin{figure}[!htb]
 \centering
@@ -928,11 +928,11 @@ La Tabla \ref{tab:resCR} presenta los resultados arrojados por un motor SPARQL p
 
 En síntesis, este Capítulo describe nuestro \textit{marco de referencia} para la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. El objetivo de este \textit{marco} es analizar e implementar un \textit{modelo semántico}, para buscar y recuperar información sobre éste.
 
-Nuestro \textit{marco} está dividido en tres etapas. La primera etapa es representar el \textit{conocimiento explícito} de los \textit{recursos de información} en un \textit{modelo semántico} con un formato estándar. Segundo, representar el \textit{conocimiento implícito} mediante la introducir axiomas que enriquezcan el \textit{modelo semántico}. Tercero, buscar y recuperar la información en un modelo semántico, para responder las preguntas de los usuario.
+Nuestro \textit{marco} está dividido en tres etapas. La primera etapa es representar el \textit{conocimiento explícito} de los \textit{recursos de información} en un \textit{modelo semántico} con un formato estándar. Segundo, representar el \textit{conocimiento implícito} mediante la introducción de axiomas que enriquezcan el \textit{modelo semántico}. Tercero, buscar y recuperar la información en un modelo semántico, para responder las preguntas de los usuario.
 
-Este \textit{marco de referencia} implementa el uso de las \textit{tecnologías semánticas}, para desarrollar las tres etapas de éste. En la representación del conocimiento, el \textit{marco de descripción recursos} (RDF) es el mecanismo para describir a los \textit{recursos de información} y las características de éstos en un \textbf{\textit{formato estándar (tripletas)}}. En el enriquecimiento de conocimiento, se emplean al esquema RDF (RDF(S)) y el lenguaje de ontologías (OWL) como lenguajes para escribir las reglas de inferencia. En la búsqueda y recuperación, las consultas son escritas con el lenguaje de consulta SPARQL, el cual está basado en las tripletas de nuestro modelo.
+Este \textit{marco de referencia} implementa el uso de las \textit{tecnologías semánticas}, para desarrollar las tres etapas de éste. En la representación del conocimiento, el \textit{marco de descripción de recursos} (RDF) es el mecanismo para describir a los \textit{recursos de información} y las características de éstos en un \textbf{\textit{formato estándar (tripletas)}}. En el enriquecimiento de conocimiento, se emplean al esquema RDF (RDF(S)) y el lenguaje de ontologías (OWL) como lenguajes para escribir las reglas de inferencia. En la búsqueda y recuperación, las consultas son escritas con el lenguaje de consulta SPARQL, el cual está basado en las tripletas de nuestro modelo.
 
-En este trabajo, el \textit{principal objetivo} es utilizar \textit{inferencia} sobre nuestras \textit{ontologías}, para mejorar la búsqueda y recuperación de la información. Por un lado, la inferencia permite materializar \textit{tripletas RDF} en nuestros modelos, de esta manera, se tiene un mayor o igual número de tripletas que un motor de consulta va a comparar para una consulta dada. Por otro lado, el uso de inferencia permite reducir la complejidad de las consultas SPARQL, ya que éstas pueden ser construidas a partir de tripletas inferidas.
+En este trabajo, el \textit{principal objetivo} es utilizar \textit{inferencia} sobre nuestras \textit{ontologías}, para mejorar la búsqueda y recuperación de la información. Por un lado, la inferencia permite materializar \textit{tripletas RDF} en nuestros modelos, de esta manera, se tiene un mayor o igual número de tripletas, las cuales son comparadas por un motor de consulta para responder una consulta dada. Por otro lado, el uso de inferencia permite reducir la complejidad de las consultas SPARQL, ya que éstas pueden ser construidas a partir de tripletas inferidas.
 
 %a diferencia de otros que se revisaron en el estado del arte, está 
 
