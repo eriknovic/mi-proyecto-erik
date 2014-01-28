@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{beamerthemesplit}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{subfigure}
+\usepackage{timing}
+\usepackage{url}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+%\setbeamertemplate{subsubsection in sidebar shaded}
+%{\tableofcontents[subsubsectionstyle=hide]}
+
+%\usetheme{Montpellier}
+\usetheme{Warsaw}
+\decimalpoint
+\renewcommand{\contentsname}{Contenido}
+
+\begin{document}
+
+\input{caratula}
+\input{contenido}
+\input{contexto}
+\input{descripcion}
+\input{isr}
+\input{evaluacion}
+\input{conclusiones}
+
+\section{Referencias}
+
+
+\begin{frame}[allowframebreaks]
+\frametitle{Referencias}
+\begin{scriptsize} \bibliographystyle{apalike}
+\justifying \bibliography{bibliografia}\end{scriptsize}
+\end{frame}
+
+\end{document}

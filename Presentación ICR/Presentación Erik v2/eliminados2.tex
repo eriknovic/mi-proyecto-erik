@@ -1,0 +1,251 @@
+\begin{frame}
+	\frametitle{Tecnologías Semánticas}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{alertblock}{Ontología}
+	\justifying 
+	Una definición formal, explícita y compartida de los conceptos, así como las relaciones de un determinado dominio. \begin{scriptsize}\cite{Gruber}\end{scriptsize}
+	\end{alertblock}
+	
+	\begin{figure}
+	\includegraphics[scale=0.25]{OntoGraph} 
+	\end{figure}
+\end{frame}
+
+\subsection{Representación el conocimiento}
+%\subsubsection{Identificar los principales recursos de información}
+%\begin{frame}
+%	\frametitle{Identificar los principales recursos de información}	
+%	\begin{figure}
+%	\includegraphics[scale=0.33]{CasosUsoMC} 
+%	\end{figure}
+%\end{frame}
+
+%\subsubsection{Adquirir y expresar el conocimiento de los recursos de información}
+%\begin{frame}
+%	\frametitle{Adquirir y expresar el conocimiento de los recursos de información}	
+%	\begin{figure}
+%	\includegraphics[scale=0.38]{CasoUsoCartComp} 
+%	\end{figure}
+%\end{frame}
+\begin{frame}
+	\frametitle{Representación el conocimiento}
+	
+	\begin{block}{Definición}
+	\justifying 
+	\small Marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\end{block}
+	
+%	\begin{block}{Actividades en la representación del conocimiento}
+%	\begin{enumerate}[<+-| alert@+>]
+%	\item \justifying Asignar un \textit{identificador único de recursos} (URI) a cada \textit{recurso de información} en la \textit{memoria corporativa}.
+%	\item \justifying Asignar un URI a cada característica y/o relación (propiedad) de de los \textit{recursos de información}.
+%	\item \justifying Generar las tripletas RDF asociadas a las descripciones de los recursos de información.
+%	\end{enumerate}
+%	\end{block}
+	
+%	\begin{figure}
+%	\includegraphics[scale=0.38]{Vid2RDF}
+%	\end{figure}
+\end{frame}
+
+\subsection{Enriquecer el conocimiento en el modelo semántico}
+\begin{frame}
+	\frametitle{Introducir reglas de inferencia}	
+	\begin{block}{Reglas de inferencia o Axiomas}
+	\justifying 
+	\small Expresiones para enriquecer un grafo RDF con conocimiento implícito de las clases y relaciones.
+	\end{block}
+	
+	\begin{block}{Reglas de inferencia o Axiomas}
+	\begin{itemize}
+	\item \justifying Jerarquía de clases y propiedades.
+	\item \justifying Dominio y Rango.
+	\item \justifying Propiedad simétrica, transitiva, reflexiva.
+	\end{itemize}
+	\end{block}
+	
+	\begin{block}
+	\justifying
+	\textit{Lo que es obvio para un humano, no lo es para una maquina}.
+	\end{block}
+	
+%	\begin{block}{Lenguajes}
+%	Especificaciones para describir clases, propiedades e individuos.
+%	\begin{itemize}
+%	\item \justifying \textit{RDF Schema \textbf{RDF(S)}}
+%	\item \justifying \textit{Web Ontology Language \textbf{OWL}} 
+%	\end{itemize}
+%	\end{block}
+	
+%	\begin{figure}
+%	\includegraphics[scale=0.4]{PrefijosRDFSOWL}
+%	\end{figure}
+\end{frame}
+
+\subsubsection{Jerarquía de Clases}
+\begin{frame}[allowframebreaks]
+%	\frametitle{Herencia de Clases}
+%	\begin{block}{Subclase (rdfs:subClassOf)}
+%	\justifying
+%	Afirma que una \textit{clase A} se subsume por una \textit{clase B}, es decir, la clase A es un caso particular de la \textit{clase B}. En este caso, las instancias de la clase A son instancias de la clase B.
+%	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.5]{HerenClassCartComp}
+	\end{figure}
+	
+%	\begin{figure}
+%	\includegraphics[scale=0.57]{EjmpInfSubClass}
+%	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+\subsubsection{Jerarquía de Propiedades}
+\begin{frame}[allowframebreaks]
+	\frametitle{Herencia de Propiedades}
+	\begin{block}{Subpropiedad (rdfs:subPropertyOf)}
+	\justifying
+	Afirma que todos los recursos que se relacionan por la \textit{propiedad X}, también se relacionan por la \textit{propiedad Y}.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.57]{HerPropLang}
+	\end{figure}
+		
+	\begin{figure}
+	\includegraphics[scale=0.55]{EjmpInfProp}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+%\begin{frame}
+%	\frametitle{Enriquecer el conocimiento en el modelo semántico}
+%	\begin{block}{}
+%	\justifying
+%	Para cada \textit{caso de uso} debe encontrarse el respectivo conjunto de axiomas (TBox).
+%	\end{block}
+%	
+%	\begin{figure}
+%	\includegraphics[scale=0.4]{PrefijosRDFSOWL}
+%	\end{figure}
+%\end{frame}
+
+\subsubsection{Dominio y Rango en las Propiedades}
+\begin{frame}[allowframebreaks]
+	\frametitle{Dominio y Rango en las Propiedades}
+	\begin{block}{Dominio (rdfs:domain)}
+	\justifying
+	Especifica qué clase se aplica a una propiedad.
+	\end{block}
+	
+	\begin{block}{Rango (rdfs:range)}
+	\justifying
+	Especifica los valores (clase o tipo de literal) que puede asumir una propiedad.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.52]{exAxDyRPer}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{figure}
+	\includegraphics[scale=0.45]{exInfDyRPer}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+\subsubsection{Simetría en las propiedades}
+\begin{frame}
+	\frametitle{Simetría en las propiedades}
+	\begin{block}{Propiedad simétrica (owl:SymmetricProperty)}
+	\justifying
+	Afirma que la \textit{propiedad X} es su propia propiedad inversa, es decir, si la \textit{propiedad X} relaciona al \textit{individuo A} con el \textit{individuo B}, entonces, esta propiedad debe relacionar al \textit{individuo B} con el \textit{individuo A}.
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.5]{infSymColl}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+\section{Prototipo (Aplicación)}
+\begin{frame}%[allowframebreaks]
+	\frametitle{Prototipo (Aplicación)}
+	%%%%%%%%%%%%%%%%%%%%%%%
+%	\begin{block}{Dificultad}
+%	\justifying 
+%	La búsqueda y recuperación en un modelo semántico no son actividades sencillas, porque se requiere que un usuario tenga conocimientos en el 
+%uso de las tecnologías semánticas y los vocabularios en las ontologías.
+%	\end{block}
+%	
+	\begin{block}
+	\justifying 
+	\small Una aplicación Web para que los usuarios puedan consultar y visualizar la información de los \textit{recursos de información}, proveniente de un modelo semántico.
+	\end{block}
+\end{frame}
+
+\begin{frame}%[allowframebreaks]
+	\frametitle{Evaluación}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{Evaluar la calidad de los resultados}
+	\justifying
+	Esta evaluación consiste en comparar los \textit{recursos relevantes recuperados} por Jena (con/sin inferencia) para una consulta dada, con los resultados que de antemano se sabe responden a esta consulta (total de recursos relevantes).
+	\end{block}
+	
+	\begin{block}{Medir los tiempos promedio de procesamiento de Jena}
+	\justifying
+	Esta evaluación consiste en comparar los tiempos de consulta para un modelo con inferencia y otro que no emplea ésta; estos tiempos se toman desde la ejecución de la consulta hasta la presentación de los resultados.
+	\end{block}
+\end{frame}
+
+\subsection{Búsqueda + inferencia}
+\begin{frame}
+	\frametitle{Búsqueda sin inferencia}
+
+	\begin{block}{}
+	\justifying 
+	Grafo RDF sin inferencia
+	\end{block}
+	
+	\begin{figure}
+	\includegraphics[scale=0.32]{grafoSR}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Búsqueda sin inferencia}
+	\begin{figure}[htbp]
+	\centering
+	\subfigure[Consulta sin inferencia]{
+	\includegraphics[scale=0.25]{consultaGrafo} 
+	}
+	\subfigure[Resultados de la consulta]{
+	\includegraphics[scale=0.28]{RespQrySI} 
+	}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Búsqueda con inferencia}
+	\begin{block}{}
+	\justifying 
+	Grafo RDF con inferencia
+	\end{block}	
+	
+	\begin{figure}
+	\includegraphics[scale=0.32]{grafoCR}
+	\end{figure}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Búsqueda con inferencia}
+	\begin{figure}[htbp]
+	\centering
+	\subfigure[Consulta con inferencia]{
+	\includegraphics[scale=0.25]{consSimpGrafo} 
+	}
+	\subfigure[Resultados de la consulta]{
+	\includegraphics[scale=0.28]{RespQryCI} 
+	}
+	\end{figure}
+\end{frame}
