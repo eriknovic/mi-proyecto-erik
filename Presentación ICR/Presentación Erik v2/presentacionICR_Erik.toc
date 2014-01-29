@@ -1,23 +1,22 @@
 \beamer@endinputifotherversion {3.26pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Contexto y motivaci\'on}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Memoria corporativa}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Integraci\'on de la informaci\'on de los recursos de informaci\'on}{4}{0}{1}
-\beamer@subsectionintoc {1}{3}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
-\beamer@subsectionintoc {1}{4}{Integraci\'on sem\'antica de recursos de informaci\'on}{7}{0}{1}
+\beamer@subsectionintoc {1}{1}{Integraci\'on Sem\'antica de los Recursos de Informaci\'on en una Memoria Corporativa}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Memoria corporativa}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Recurso de Informaci\'on}{5}{0}{1}
+\beamer@subsectionintoc {1}{4}{Tecnolog\IeC {\'\i }as Sem\'anticas}{6}{0}{1}
 \beamer@subsectionintoc {1}{5}{Estado del Arte}{8}{0}{1}
 \beamer@sectionintoc {2}{Problema}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Pregunta investigaci\'on}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Objetivo General}{11}{0}{2}
 \beamer@subsectionintoc {2}{2}{Objetivos}{12}{0}{2}
-\beamer@sectionintoc {3}{Metodolog\IeC {\'\i }a}{16}{0}{3}
-\beamer@subsectionintoc {3}{1}{Representaci\'on del conocimiento}{21}{0}{3}
-\beamer@subsectionintoc {3}{2}{Enriquecer el conocimiento en el modelo sem\'antico}{23}{0}{3}
-\beamer@subsectionintoc {3}{3}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{26}{0}{3}
-\beamer@subsectionintoc {3}{4}{Herramientas para la Integraci\'on Sem\'antica}{27}{0}{3}
-\beamer@subsectionintoc {3}{5}{Construir un Prototipo (Aplicaci\'on)}{28}{0}{3}
-\beamer@subsectionintoc {3}{6}{Evaluar la integraci\'on sem\'antica}{30}{0}{3}
-\beamer@sectionintoc {4}{Resultados}{31}{0}{4}
-\beamer@subsectionintoc {4}{1}{Resultados de la evaluaci\'on}{31}{0}{4}
-\beamer@subsectionintoc {4}{2}{Aportaciones}{34}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{39}{0}{5}
-\beamer@sectionintoc {6}{Referencias}{51}{0}{6}
+\beamer@sectionintoc {3}{Metodolog\IeC {\'\i }a}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Representaci\'on del conocimiento}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Enriquecer el conocimiento en el modelo sem\'antico}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Buscar y recuperar la informaci\'on en el modelo sem\'antico}{20}{0}{3}
+\beamer@subsectionintoc {3}{4}{Herramientas para la Integraci\'on Sem\'antica}{21}{0}{3}
+\beamer@subsectionintoc {3}{5}{Construir un Prototipo (Aplicaci\'on)}{22}{0}{3}
+\beamer@subsectionintoc {3}{6}{Evaluar la integraci\'on sem\'antica}{24}{0}{3}
+\beamer@sectionintoc {4}{Resultados}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Resultados de la evaluaci\'on}{25}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aportaciones}{28}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{29}{0}{5}
