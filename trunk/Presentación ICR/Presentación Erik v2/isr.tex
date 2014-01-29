@@ -2,11 +2,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\frametitle{Integración Semántica mediante tecnologías semánticas}
-	\begin{block}{Etapas}
-		\begin{enumerate}[<+-| alert@+>]
+	\begin{block}{Metodología}
+		\begin{enumerate}%[<+-| alert@+>]
 		\item \justifying Representar las características y/o relaciones de los \textit{recursos de información}, para construir un modelo semántico.
-		\item \justifying Introducir \textit{reglas de inferencia} en el modelo, para enriquecer con \textit{conocimiento implícito} de los \textit{recursos de información} y del dominio de la memoria.
-		\item \justifying Buscar y recuperar información en el modelo semántico para responder un conjunto consultas.
+		\item \justifying Introducir \textit{reglas de inferencia} en el modelo, para generar y obtener conocimiento implícito.
+		\item \justifying Buscar y recuperar conocimiento en el modelo semántico para responder un conjunto consultas que lleven a un \textit{recurso de información}.
 		\end{enumerate}
 	\end{block}
 	\begin{figure}
@@ -25,30 +25,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\frametitle{Casos de Uso}
-	
-	\begin{block}{}
-		\begin{itemize}%[<+-| alert@+>]
-		\item \justifying \textbf{\textit{Cartografía de Competencias}} es la búsqueda y recuperación de información significativa de las personas a partir de las características personales y profesionales de las mismas.
-		\item \justifying \textbf{\textit{Búsqueda de Recursos Digitales}} es la búsqueda y recuperación de información significativa de los documentos y archivos multimedia a partir del contenido de los mismos.
-		\end{itemize}
-	\end{block}
-	
-	\begin{figure}
-	\includegraphics[scale=0.4]{CasosUso} 
-	\end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Representación del conocimiento}
 \begin{frame}
 	\frametitle{Representación del conocimiento}
 	
-	\begin{block}{Definición}
+	\begin{block}{Resource Description Framework}
 	\justifying 
-	\small Marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones. \begin{scriptsize}\cite{SurvSemWeb2012}\end{scriptsize}
+	\small Es un marco genérico para describir el conocimiento e información explícita de los recursos mediante sus características y relaciones.
 	\end{block}
 	
 	\begin{figure}
@@ -77,7 +60,7 @@
 	\frametitle{Introducir reglas de inferencia}	
 	\begin{block}{Reglas de inferencia o Axiomas}
 	\justifying 
-	\small Expresiones para enriquecer un grafo RDF con conocimiento implícito de las clases y relaciones.
+	\small Son expresiones para enriquecer un grafo RDF con conocimiento implícito de las clases y relaciones.
 	\end{block}
 	
 	\begin{figure}[htbp]
@@ -95,7 +78,7 @@
 	\frametitle{Emplear un programa para inferir conocimiento}	
 	\begin{block}{Razonador}
 	\justifying 
-	\small Un programa que deduce conocimiento a partir de los axiomas y declaraciones explícitas en un modelos semántico.
+	\small Es un programa que deduce conocimiento a partir de los axiomas y declaraciones explícitas en un modelos semántico.
 	\end{block}
 	
 	\begin{figure}
@@ -128,7 +111,7 @@
 	
 	\begin{block}{SPARQL}
 	\justifying 
-	Lenguaje de consulta y protocolo de acceso a RDF, para la búsqueda y recuperación de la información en un grafo RDF.
+	Es un lenguaje de consulta y protocolo de acceso a RDF, para la búsqueda y recuperación de la información en un grafo RDF.
 	\end{block}
 	
 	\begin{figure}
@@ -151,7 +134,7 @@
 	
 	\begin{block}{Triplestore}
 	\justifying
-	\small Programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas. \textbf{\textit{Apache Jena}}, \textbf{\textit{Stardog}}, \textbf{\textit{4store}} y \textbf{\textit{Sesame}}.
+	\small Programa para el almacenamiento e indexación de tripletas RDF, con el fin de permitir la consulta eficiente de información sobre estas tripletas. \textbf{\textit{Jena}}, \textbf{\textit{Stardog}}, \textbf{\textit{4store}} y \textbf{\textit{Sesame}}.
 	\end{block}
 \end{frame}
 
@@ -162,7 +145,7 @@
 	\frametitle{Construir un Prototipo (Aplicación)}
 	\begin{block}
 	\justifying 
-	\small Una aplicación Web para que los usuarios puedan consultar y visualizar la información de los \textit{recursos de información}, proveniente de un modelo semántico.
+	\small Es una aplicación Web que permite a los usuarios puedan estructurar su pregunta, para posteriormente consultar un modelo semántico y recuperar los \textit{recursos de información}, así como las caracterizaciones de los mismos.
 	\end{block}
 	
 	\begin{figure}
