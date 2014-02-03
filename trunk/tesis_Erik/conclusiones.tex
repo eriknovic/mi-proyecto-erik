@@ -30,7 +30,7 @@ Con base en lo realizado y descrito en este documento, nosotros concluimos lo si
 \end{itemize}
 
 %%%Qué hicimos
-En este documento presentamos un estudio y aplicación sobre el uso de las \textit{tecnologías semánticas} (TS) para realizar la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. Por \textit{integración semántica} debe entenderse la \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos recursos son documentos basados en texto y archivos multimedia en diferentes formatos, con contenido variado y con distintas estructuras (estructurado, semi-estructurado, sin estructura), también otros recursos de información en este trabajo son las personas que andan de un lugar a otro.
+En este documento presentamos un estudio y aplicación sobre el uso de las \textit{tecnologías semánticas} (TS) para realizar la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. Por \textit{integración semántica} debe entenderse la \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos recursos son documentos basados en texto y archivos multimedia en diferentes formatos, con contenido variado y con distintas estructuras (estructurado, semi-estructurado, sin estructura), también otros recursos de información en este trabajo son las personas.
 
 %%%Por qué hicimos ésto
 Este trabajo tiene dos finalidades. Por un lado, esta investigación propone un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa, correspondiente al dominio de aplicación de Redes y Telecomunicaciones. Conocimiento residente en personas y recursos digitales. Por otro lado, hacer la \textit{búsqueda y recuperación inteligente de información} para responder las preguntas de los usuarios de la memoria.
@@ -46,9 +46,9 @@ Nosotros decidimos explorar las \textit{tecnologías semánticas} para la integrac
 \begin{itemize}
 \item El \textit{estándar RDF} permite representar cualquier recurso, sea un ser vivo, un archivo digital, un país, ciudad, un edificio, una organización o un concepto abstracto. De esta manera, se contribuye a la integración de información de \textit{recursos de información} que son heterogéneos en formato, contenido y estructura.
 \item El \textit{estándar RDF} establece que los recursos tengan un identificador único de recurso (URI), para identificar de manera única a un recurso. De esta forma, se solucionan problemas de homonimia con respecto a los nombres de los recursos.
-\item La representación del contenido (características) de los \textit{recursos de información} de una memoria corporativa no se limita a un pequeño número de características sobre éstos; sino que pueden vincularse estos recursos con otros a través de relaciones o características más especificas.
+\item La representación del contenido (características) de los \textit{recursos de información} de una memoria corporativa no se limita a un pequeño número de características sobre éstos; sino que pueden vincularse estos recursos con otros a través de relaciones o características más específicas.
 \item La introducción de \textit{reglas de inferencia} en la ontología para enriquecer el conocimiento representado a través de ella, ya que un razonador a partir de estas reglas puede hacer explícito el conocimiento implícito.
-\item Una \textit{ontología} puede ser extendida con el fin de \textit{incorporar mayor conocimiento} o \textit{adaptarse a cambios en el conocimiento}. De esta manera, si nuevos recursos se describen, entonces éstos pueden incorporarse a la ontología. De la misma manera, si cambia el conocimiento en algunas ramas de la ontología, entonces éstas pueden ser sustituidas por otras.
+\item Una \textit{ontología} puede ser extendida con el fin de \textit{incorporar mayor conocimiento} o \textit{adaptarse a cambios en el conocimiento}. De esta manera, si nuevos recursos se describen, entonces éstos pueden incorporarse a la ontología. Ahora bien, si cambia el conocimiento en algunas ramas de la ontología, entonces éstas pueden ser sustituidas por otras.
 \item Una \textit{ontología} está escrita en un lenguaje estándar (OWL o RDF(S)) y representan un vocabulario consensuado por los expertos. Por esta razón, éstas se pueden intercambiar y reutilizar entre personas y/o aplicaciones.
 \item Una \textit{ontología} puede representarse de varias formas: a través de un grafo dirigido o \textit{tripletas} (sujeto predicado objeto), cualquiera de ellas permite comprender los recursos así como las reglas de inferencia.
 \item Una \textit{ontología} fomenta el desarrollo de aplicaciones genéricas para aprovechar estos modelos. Ejemplos de estas aplicaciones son editores de ontologías, interfaces gráficas para describir semánticamente los recursos, navegadores sobre ontologías, por mencionar algunas. Estas herramientas genéricas posibilitan que personas expertas en el dominio sean las principales constructoras del grafo de conocimiento. De esta manera, la información en el grafo será confiable, ya que estas personas son las que tienen los conocimientos en el dominio.
@@ -73,7 +73,7 @@ Nosotros decidimos explorar las \textit{tecnologías semánticas} para la integrac
 %%% que ventajas tiene nuestro prototipo en relacion con otros que se han examinado
 La tarea de búsqueda y recuperación de información son actividades que no cualquier usuario puede llevar a cabo, porque es necesario que tenga conocimientos sobre las tecnologías semánticas, así como estar familiarizado en el dominio de conocimiento. Por esta razón, nosotros proponemos en esta investigación un modelo (ontología de Redes y Telecomunicaciones) y un prototipo (aplicación) para permitir la interacción de cualquier usuario con el modelo, con fines de búsqueda y recuperación de información en la memoria corporativa de trabajo (Redes y Telecomunicaciones).
 
-La interfaz de nuestro prototipo está orientada al usuario, es decir, un ambiente visual que permite a éstos una manera agradable para consultar la información de los recursos en nuestra ontología. Esta característica es importante, porque en los trabajos de nuestro \textit{estado del arte} (Ver Sección \ref{sec:eoaisr}), ninguna aplicación está orientada al usuario.
+La interfaz de nuestro prototipo está orientada al usuario, es decir, un ambiente visual que permite una manera agradable para consultar la información de los recursos en nuestra ontología. Esta característica es importante, porque en los trabajos de nuestro \textit{estado del arte} (Ver Sección \ref{sec:eoaisr}), ninguna aplicación está orientada al usuario.
 
 Este prototipo establece las siguientes funcionalidades: 1) permitir a los usuarios, navegar a través de la información básica en los \textit{recursos de información}, 2) permitir a los usuarios, estructurar sus preguntas y hacer búsquedas específicas de los recursos, 3) publicar los resultados de la búsqueda y navegación en un formato visual agradable, 4) transformar la preguntas a consultas SPARQL, 5) cargar las ontologías en memoria, 6) emplear un razonador para hacer explícito el conocimiento implícito de nuestro modelo semántico.
 
@@ -82,7 +82,7 @@ Nosotros llevamos a cabo una evaluación experimental. Los objetivos de esta eval
 
 Los resultados en nuestra experimentación indican lo siguiente. El \textit{tiempo de consulta} es mayor en un \textit{modelo con inferencia} en comparación con un \textit{modelo sin inferencia}. Sin embargo, los resultados de las búsquedas en un modelo sin inferencia son variados. En algunos casos, todos los \textit{resultados} que se sabe responden la consulta, son recuperados cuando la consulta es sobre el conocimiento explícito. En otros casos, recursos que responden la consulta, son descartados dado que estos recursos carecen de su descripción (tripleta) en la base de conocimiento. En cambio, los resultados de búsquedas sobre un \textit{modelo con inferencia} son buenos, porque estas consultas recuperan todos los recursos que de antemano sabemos que responden a las consultas; a pesar de no tener una descripción (tripleta) en la base de conocimiento.
 
-Respecto a los tiempos, se tiene lo siguiente: el proceso de consulta sin inferencia arroja tiempos menores a un segundo, mientras los tiempos en la consulta con inferencia son de al rededor de dos o tres segundos. Aunque, estos tiempos con inferencia son mayores en comparación de los tiempos sin inferencia, éstos tiempos (con inferencia) con Jena son aceptables para la búsqueda de información basada en ontologías.
+Respecto a los tiempos, se tiene lo siguiente: el proceso de consulta sin inferencia arroja tiempos menores a un segundo, mientras los tiempos en la consulta con inferencia son de al rededor de dos o tres segundos. Aunque, los tiempos con inferencia son mayores en comparación de los tiempos sin inferencia, aún estos tiempos con inferencia son aceptables para la búsqueda de información basada en ontologías.
 
 %%%Conclusión final, es factible o no es factible el uso de las TS y describir porqué
 
@@ -97,18 +97,18 @@ En esta investigación, nosotros identificamos varias actividades que consideramo
 	\begin{itemize}
 	\item Introducir más \textit{casos de uso}, por ejemplo, la administración del inventario en los distintos laboratorios que componen el departamento de ingeniería eléctrica de la UAM.
 	\item Actualizar los \textit{recursos de información} y las descripciones de éstos, para tener una buena representación de la memoria corporativa del área de Redes y Telecomunicaciones.
-	\item Evaluar la introducción de \textit{reglas de inferencia} más complejas en la ontología, mediante el análisis de los reglas existentes y el uso de reglas del lenguaje \textit{Semantic Web Rule Language} \cite{SWRL} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
+	\item Evaluar la introducción de \textit{reglas de inferencia} más complejas en la ontología, mediante el análisis de las reglas existentes y el uso de reglas del lenguaje \textit{Semantic Web Rule Language} \cite{SWRL} (SWRL), por ejemplo, si X es pariente de Z y Y tiene como hermano a K, entonces X es sobrino de K.
 	\item Mejorar el prototipo de integración semántica de recursos:
 		\begin{itemize}
 		\item Agregar un cuadro para hacer búsquedas por palabras clave, mediante Lucene Index \cite{Lucene}.
-		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, materializando desde el inicio las tripletas y almacenándolas en un nuevo modelo.
+		\item Optimizar los \textit{tiempos de procesamiento} en la búsqueda, por ejemplo, generando nuevas tripletas (materializando) desde el inicio las tripletas y almacenándolas en un nuevo modelo.
 		\item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables \cite{DataTables}.
 		\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro \cite{Shiro}.
 	\end{itemize}
 	\end{itemize}
 \item \textbf{A mediano plazo:}
 	\begin{itemize}
-	\item Automatizar la descripción (características y relaciones) de los \textit{recursos de información}, mediante la minería de texto.
+	\item Automatizar la caracterización de los \textit{recursos de información}, mediante el uso de minería de texto.
 	\item Mejorar la interfaz gráfica de usuario del prototipo para que éste pueda describir los \textit{recursos de información}. El objetivo es que los usuarios empleen esta aplicación como una del estilo ``red social''. Algunas funcionalidades de esta interfaz son:
 		\begin{itemize}
 			\item Describir un nuevo \textit{recurso de información}.
@@ -119,7 +119,6 @@ En esta investigación, nosotros identificamos varias actividades que consideramo
 			\end{itemize}
 			\item Actualizar la información de un \textit{recurso de información}.
 			\begin{itemize}
-				\item Ver la información vieja del recurso.
 				\item Corregir la información en el modelo.
 				\item Guardar el nuevo modelo.
 			\end{itemize}

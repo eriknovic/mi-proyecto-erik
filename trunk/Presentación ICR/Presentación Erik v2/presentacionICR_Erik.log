@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  30 JAN 2014 00:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  2 FEB 2014 20:44
 entering extended mode
 **presentacionICR_Erik.tex
 
@@ -1350,36 +1350,49 @@ Overfull \vbox (0.64323pt too high) detected at line 141
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/For
 mBusMult.pdf>] [24
 
-] <ViewOnto.pdf, id=1298, 1002.74625pt x 548.0475pt>
+] <NoRec.pdf, id=1298, 443.6575pt x 431.6125pt>
+File: NoRec.pdf Graphic file (type pdf)
+
+<use NoRec.pdf>
+Package pdftex.def Info: NoRec.pdf used on input line 164.
+(pdftex.def)             Requested size: 199.64401pt x 194.22382pt.
+
+Overfull \vbox (5.79465pt too high) detected at line 164
+ []
+
+[25
+
+ <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/NoR
+ec.pdf>] <ViewOnto.pdf, id=1344, 1002.74625pt x 548.0475pt>
 File: ViewOnto.pdf Graphic file (type pdf)
 
 <use ViewOnto.pdf>
-Package pdftex.def Info: ViewOnto.pdf used on input line 164.
+Package pdftex.def Info: ViewOnto.pdf used on input line 172.
 (pdftex.def)             Requested size: 300.82619pt x 164.41551pt.
- [25
+ [26
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Vie
 wOnto.pdf>]
-<Preguntas.pdf, id=1375, 439.6425pt x 370.38374pt>
+<Preguntas.pdf, id=1420, 439.6425pt x 370.38374pt>
 File: Preguntas.pdf Graphic file (type pdf)
  <use Preguntas.pdf>
-Package pdftex.def Info: Preguntas.pdf used on input line 172.
+Package pdftex.def Info: Preguntas.pdf used on input line 180.
 (pdftex.def)             Requested size: 219.82071pt x 185.1914pt.
- [26
+ [27
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Pre
 guntas.pdf>])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik v2\eva
-luacion.tex" <Calidad.pdf, id=1420, 623.32875pt x 313.17pt>
+luacion.tex" <Calidad.pdf, id=1465, 623.32875pt x 313.17pt>
 File: Calidad.pdf Graphic file (type pdf)
  <use Calidad.pdf>
 Package pdftex.def Info: Calidad.pdf used on input line 14.
 (pdftex.def)             Requested size: 280.49535pt x 140.92519pt.
 
-[27
+[28
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Cal
-idad.pdf>] <ExahuPrecQ2.pdf, id=1466, 684.5575pt x 261.97874pt>
+idad.pdf>] <ExahuPrecQ2.pdf, id=1511, 684.5575pt x 261.97874pt>
 File: ExahuPrecQ2.pdf Graphic file (type pdf)
 
 <use ExahuPrecQ2.pdf>
@@ -1390,10 +1403,10 @@ Overfull \hbox (0.75815pt too wide) in paragraph at lines 26--26
  [] 
  []
 
-[28
+[29
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Exa
-huPrecQ2.pdf>] <Tiempos.pdf, id=1507, 710.655pt x 263.98625pt>
+huPrecQ2.pdf>] <Tiempos.pdf, id=1552, 710.655pt x 263.98625pt>
 File: Tiempos.pdf Graphic file (type pdf)
 
 <use Tiempos.pdf>
@@ -1404,23 +1417,23 @@ Overfull \hbox (12.50192pt too wide) in paragraph at lines 39--39
  [] 
  []
 
-[29
+[30
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Tie
-mpos.pdf>] <ConclusionesObj.pdf, id=1548, 468.75125pt x 229.85875pt>
+mpos.pdf>] <ConclusionesObj.pdf, id=1593, 468.75125pt x 229.85875pt>
 File: ConclusionesObj.pdf Graphic file (type pdf)
 
 <use ConclusionesObj.pdf>
 Package pdftex.def Info: ConclusionesObj.pdf used on input line 47.
 (pdftex.def)             Requested size: 290.62276pt x 142.51094pt.
- [30
+ [31
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/Con
 clusionesObj.pdf>])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik v2\con
-clusiones.tex" [31
+clusiones.tex" [32
 
-] [32
+] [33
 
 ])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik v2\car
@@ -1429,32 +1442,32 @@ atula.tex"
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 2.
 
-[33
+[34
 
 ])
 ("C:\Users\Gatito\Desktop\GoogleSVN\Presentación ICR\Presentación Erik v2\ane
-xos.tex" <grafoSR.pdf, id=1702, 721.69624pt x 393.47pt>
+xos.tex" <grafoSR.pdf, id=1747, 721.69624pt x 393.47pt>
 File: grafoSR.pdf Graphic file (type pdf)
  <use grafoSR.pdf>
 Package pdftex.def Info: grafoSR.pdf used on input line 13.
 (pdftex.def)             Requested size: 230.94751pt x 125.91296pt.
 
-[34
+[35
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/gra
-foSR.pdf>] <consultaGrafo.pdf, id=1742, 685.56125pt x 338.26375pt>
+foSR.pdf>] <consultaGrafo.pdf, id=1787, 685.56125pt x 338.26375pt>
 File: consultaGrafo.pdf Graphic file (type pdf)
 
 <use consultaGrafo.pdf>
 Package pdftex.def Info: consultaGrafo.pdf used on input line 26.
 (pdftex.def)             Requested size: 171.3899pt x 84.56572pt.
- <RespQrySI.pdf, id=1743, 324.21124pt x 252.945pt>
+ <RespQrySI.pdf, id=1788, 324.21124pt x 252.945pt>
 File: RespQrySI.pdf Graphic file (type pdf)
 
 <use RespQrySI.pdf>
 Package pdftex.def Info: RespQrySI.pdf used on input line 26.
 (pdftex.def)             Requested size: 90.77852pt x 70.82411pt.
- [35
+ [36
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/con
 sultaGrafo.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentaci
@@ -1463,26 +1476,26 @@ sultaGrafo.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentaci
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/Presentación 
 ICR/Presentación Erik v2/RespQrySI.pdf): PDF inclusion: multiple pdfs with pag
 e group included in a single page
->] <grafoCR.pdf, id=1792, 718.685pt x 473.77pt>
+>] <grafoCR.pdf, id=1837, 718.685pt x 473.77pt>
 File: grafoCR.pdf Graphic file (type pdf)
  <use grafoCR.pdf>
 Package pdftex.def Info: grafoCR.pdf used on input line 38.
 (pdftex.def)             Requested size: 229.98389pt x 151.6095pt.
- [36
+ [37
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/gra
-foCR.pdf>] <consSimpGrafo.pdf, id=1830, 682.55pt x 174.6525pt>
+foCR.pdf>] <consSimpGrafo.pdf, id=1876, 682.55pt x 174.6525pt>
 File: consSimpGrafo.pdf Graphic file (type pdf)
  <use consSimpGrafo.pdf>
 Package pdftex.def Info: consSimpGrafo.pdf used on input line 51.
 (pdftex.def)             Requested size: 170.63708pt x 43.66301pt.
 
-<RespQryCI.pdf, id=1831, 324.21124pt x 437.635pt>
+<RespQryCI.pdf, id=1877, 324.21124pt x 437.635pt>
 File: RespQryCI.pdf Graphic file (type pdf)
  <use RespQryCI.pdf>
 Package pdftex.def Info: RespQryCI.pdf used on input line 51.
 (pdftex.def)             Requested size: 90.77852pt x 122.53696pt.
- [37
+ [38
 
  <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentación Erik v2/con
 sSimpGrafo.pdf> <C:/Users/Gatito/Desktop/GoogleSVN/Presentación ICR/Presentaci
@@ -1512,10 +1525,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 17288 strings out of 493944
- 320218 string characters out of 3148281
- 397019 words of memory out of 3000000
- 19984 multiletter control sequences out of 15000+200000
+ 17297 strings out of 493944
+ 320319 string characters out of 3148281
+ 397091 words of memory out of 3000000
+ 19990 multiletter control sequences out of 15000+200000
  15569 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,19n,63p,439b,812s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1531,9 +1544,9 @@ uper/sfss0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss
 am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0500.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/cm-super/sfsx0700.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfsx0900.pfb>
-Output written on presentacionICR_Erik.pdf (37 pages, 2844731 bytes).
+Output written on presentacionICR_Erik.pdf (38 pages, 2912639 bytes).
 PDF statistics:
- 1942 PDF objects out of 2073 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1988 PDF objects out of 2073 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
