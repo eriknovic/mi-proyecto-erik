@@ -42,8 +42,8 @@
 \contentsline {section}{\numberline {6.2}Hip\'otesis}{109}
 \contentsline {section}{\numberline {6.3}Experimentaci\'on}{110}
 \contentsline {section}{\numberline {6.4}Sujetos de experimentaci\'on}{110}
-\contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{112}
-\contentsline {section}{\numberline {6.6}Resultados}{119}
+\contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{113}
+\contentsline {section}{\numberline {6.6}Resultados}{118}
 \contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{125}
 \contentsline {section}{\numberline {7.1}Recomendaciones}{128}
 \contentsline {chapter}{Appendices}{131}

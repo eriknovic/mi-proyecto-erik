@@ -16,7 +16,7 @@
 \beamer@subsectionintoc {3}{4}{Herramientas para la Integraci\'on Sem\'antica}{21}{0}{3}
 \beamer@subsectionintoc {3}{5}{Construir un Prototipo (Aplicaci\'on)}{22}{0}{3}
 \beamer@subsectionintoc {3}{6}{Evaluar la integraci\'on sem\'antica}{24}{0}{3}
-\beamer@sectionintoc {4}{Resultados}{27}{0}{4}
-\beamer@subsectionintoc {4}{1}{Resultados de la evaluaci\'on}{27}{0}{4}
-\beamer@subsectionintoc {4}{2}{Aportaciones}{30}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{31}{0}{5}
+\beamer@sectionintoc {4}{Resultados}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Resultados de la evaluaci\'on}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aportaciones}{31}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{32}{0}{5}
