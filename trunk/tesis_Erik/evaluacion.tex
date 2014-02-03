@@ -62,17 +62,17 @@ En nuestra experimentación, algunos \textit{recursos persona} tienen la declarac
 
 En resumen, se tienen estas \textit{cantidades de recursos} por clase: 51 recursos son profesionistas y 23 son \textit{estudiantes}. Los 51 recursos persona mediante inferencia son asignados a la clase \textit{Profesionista (sirp:Professional)}. De estos 51 profesionistas se tiene que 19 son profesores y 9 son empleados. Por otro lado, de los 23 estudiantes se tiene que 9 recursos están asignados a la clase \textit{Estudiante} y los 14 restantes por inferencia son asignados a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
 
-La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} agrupados por clase (\textit{Persona, Documento, Multimedia}) y subclases (\textit{Estudiante, Empleado, Profesor, Investigador, Vídeo, Imagen, Audio, Presentación, Artículo, Tesis, Reporte, Página Web, Libro}). La \textit{primera columna} presenta el nombre de las clases, la segunda presenta el nombre de las subclases, la \textit{tercera} el número de recursos que tienen la declaración que los asigna explícitamente a una clase y la \textit{cuarta columna} el número de recursos que por inferencia tienen la declaración para asignarlos a una clase.
+La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} agrupados por clase (\textit{Persona, Documento, Multimedia}) y subclases (\textit{Estudiante, Empleado, Profesor, Investigador, Vídeo, Imagen, Audio, Presentación, Artículo, Tesis, Reporte, Página Web, Libro}). La \textit{primera columna} presenta el nombre de las clases, la segunda presenta el nombre de las subclases, la \textit{tercera} el número de recursos que tienen la declaración que los asigna explícitamente a una clase o subclase, la \textit{cuarta columna} presenta el número de recursos que mediante inferencia obtienen la declaración de asignación a una clase o subclase; en esta columna también se cuentan los recursos que tienen la tripleta explícita.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.2}
 \centering
 \caption{Número de recursos de información por clases y subclases.}
-\begin{tabular}{ | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1.2in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
+\begin{tabular}{ | >{\centering\arraybackslash}m{1.1in} | >{\centering\arraybackslash}m{1.1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
 \hline 
 \multirow{2}{*}{\textbf{Clase}} & \multirow{2}{*}{\textbf{Subclase}} & \multicolumn{2}{c|}{\textbf{Número de Recursos}} \\
 \cline{3-4} 
- & & \textbf{Asignación por tripleta explícita} & \textbf{Asignación por tripleta inferida}\\
+ & & \textbf{Asignación por tripleta explícita} & \textbf{Asignación por tripleta inferida} \\
 \hline 
 \hline
 \textbf{Recurso de Información} & & 0 & \textbf{1403}\\
@@ -387,7 +387,7 @@ Los resultados para la \textit{evaluación de la calidad de los resultados} se pr
 \caption{Recursos relevantes y no relevantes asociados a las preguntas de la cartografía de competencias.}
 \begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
 \hline 
-\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
+\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados a partir de tripletas explícitas} & \textbf{Recursos relevantes recuperados a partir de tripletas inferidas} & \textbf{Total recursos relevantes}\\
 \hline 
 \hline
 Q1.1 & 73 & 73 & 73\\
@@ -442,7 +442,7 @@ De la misma manera, la Tabla \ref{tab:rrRD} presenta el número de \textit{recurs
 \caption{Recursos relevantes y no relevantes asociados a las preguntas de la búsqueda de recursos digitales.}
 \begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
 \hline 
-\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
+\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados a partir de tripletas explícitas} & \textbf{Recursos relevantes recuperados a partir de tripletas inferidas} & \textbf{Total recursos relevantes}\\
 \hline 
 \hline
 Q2.1 & 1330 & 1330 & 1330\\
