@@ -10,14 +10,15 @@ S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
 
 \bibitem[Adu]{Aduna}
 Aduna.
-\newblock Sesame {@ONLINE}.
+\newblock Sesame.
+\newblock \url{http://www.openrdf.org/index.jsp}.
 
 \bibitem[ANM09]{Namiy}
 A.Q. Al-Namiy and F.S. Majeed.
 \newblock Towards automatic extracted semantic annotation (esa) for web
   documents.
-\newblock In {\em Information Processing, 2009. APCIP 2009. Asia-Pacific
-  Conference on}, volume~2, pages 614--617, 2009.
+\newblock In {\em Information Processing, Asia-Pacific Conference on},
+  volume~2, pages 614--617. IEEE Computer Society, 2009.
 
 \bibitem[ASB11]{SurvOnto}
 T.~Aruna, K.~Saranya, and C.~Bhandari.
@@ -27,7 +28,8 @@ T.~Aruna, K.~Saranya, and C.~Bhandari.
 
 \bibitem[Aue]{Auer}
 S\"{o}ren Auer.
-\newblock powl {@ONLINE}.
+\newblock powl.
+\newblock \url{http://aksw.org/Projects/Powl.html}.
 
 \bibitem[Aue05]{pow}
 S{\"o}ren Auer.
@@ -40,8 +42,9 @@ S{\"o}ren Auer.
 S.~Bouzid, C.~Cauvet, and J.~Pinaton.
 \newblock A survey of semantic web standards to representing knowledge in
   problem solving situations.
-\newblock In {\em Information Retrieval Knowledge Management (CAMP), 2012
-  International Conference on}, pages 121--125, 2012.
+\newblock In {\em Information Retrieval Knowledge Management, 2012
+  International Conference on Information Retrieval {\&} Knowledge Management},
+  pages 121--125, 2012.
 
 \bibitem[Bea10]{RecYPres}
 J.~Beall.
@@ -64,7 +67,7 @@ Tim Berners-Lee, Roy~T. Fielding, and Larry Masinter.
 \bibitem[BP98]{MBSPap}
 Sergey Brin and Lawrence Page.
 \newblock The anatomy of a large-scale hypertextual web search engine.
-\newblock In {\em Proceedings of the seventh international conference on World
+\newblock In {\em Proceedings of the Seventh International Conference on World
   Wide Web 7}, WWW7, pages 107--117, Amsterdam, The Netherlands, The
   Netherlands, 1998. Elsevier Science Publishers B. V.
 
@@ -90,7 +93,8 @@ Cyril Cleverdon and Michael Keen.
 
 \bibitem[CLC]{Aktive}
 A.~Chakravarthy, V.~Lanfranchi, and F.~Ciravegna.
-\newblock Aktive media {@ONLINE}.
+\newblock Aktive media.
+\newblock \url{http://www.aktors.org/technologies/aktivemedia/index.html}.
 
 \bibitem[CMB{\etalchar{+}}11]{Cunningham2011a}
 Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
@@ -110,8 +114,8 @@ Oscar Corcho.
 Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
 \newblock An ontology based approach to data representation and information
   search in smart tourist guide system.
-\newblock In {\em Knowledge and Systems Engineering (KSE), 2011 Third
-  International Conference on}, pages 171--175, 2011.
+\newblock In {\em Knowledge and Systems Engineering, 2011 Third International
+  Conference on}, pages 171--175, 2011.
 
 \bibitem[Daf07]{TeoOrg-Richard}
 Richard~L. Daft.
@@ -132,11 +136,14 @@ Li~Ding, Pranam Kolari, Zhongli Ding, and Sasikanth Avancha.
 
 \bibitem[fBIR]{StanfordCenter}
 Stanford~Center for Biomedical Informatics~Research.
-\newblock Prot\'{e}g\'{e} {@ONLINE}.
+\newblock Prot\'{e}g\'{e}.
+\newblock \url{http://protege.stanford.edu/}.
 
 \bibitem[Fei]{Feigenbaum}
 Lee Feigenbaum.
-\newblock Semantic web vs. semantic technologies {@ONLINE}.
+\newblock Semantic web vs. semantic technologies.
+\newblock
+  \url{http://www.cambridgesemantics.com/semantic-university/semantic-web-vs-semantic-technologies/}.
 
 \bibitem[FF12]{SPARQL}
 T.~Fujino and N.~Fukuta.
@@ -147,31 +154,38 @@ T.~Fujino and N.~Fukuta.
 
 \bibitem[Foua]{Lucene}
 The Apache~Software Foundation.
-\newblock Adding free text searches to sparql {@ONLINE}.
+\newblock Adding free text searches to sparql.
+\newblock \url{http://jena.apache.org/documentation/larq/index.html}.
 
 \bibitem[Foub]{Jena}
 The Apache~Software Foundation.
-\newblock Apache jena {@ONLINE}.
+\newblock Apache jena.
+\newblock \url{http://jena.apache.org/}.
 
 \bibitem[Fouc]{Shiro}
 The Apache~Software Foundation.
-\newblock Apache shiro {@ONLINE}.
+\newblock Apache shiro.
+\newblock \url{http://shiro.apache.org/}.
 
 \bibitem[Foud]{Tomcat}
 The Apache~Software Foundation.
-\newblock Apache tomcat {@ONLINE}.
+\newblock Apache tomcat.
+\newblock \url{http://tomcat.apache.org/}.
 
 \bibitem[Foue]{Apache20}
 The Apache~Software Foundation.
-\newblock Licencia apache v. 2.0 {@ONLINE}.
+\newblock Licencia apache v. 2.0.
+\newblock \url{http://www.apache.org/licenses/LICENSE-2.0.html}.
 
 \bibitem[Fouf]{OWLcoverage}
 The Apache~Software Foundation.
-\newblock Owl coverage {@ONLINE}.
+\newblock Owl coverage.
+\newblock \url{http://jena.apache.org/documentation/inference/index.html}.
 
 \bibitem[Foug]{Eclipse}
 The~Eclipse Foundation.
-\newblock Eclipse ide {@ONLINE}.
+\newblock Eclipse ide.
+\newblock \url{http://www.eclipse.org/}.
 
 \bibitem[Gan02]{Ontoinra2002}
 L.~Gandon, Fabien.
@@ -180,13 +194,14 @@ L.~Gandon, Fabien.
 
 \bibitem[Gar]{Garlik}
 Garlik.
-\newblock 4store {@ONLINE}.
+\newblock 4store.
+\newblock \url{http://4store.org/}.
 
 \bibitem[GHM{\etalchar{+}}08]{Grau}
 Bernardo~Cuenca Grau, Ian Horrocks, Boris Motik, Bijan Parsia, Peter
   Patel-Schneider, and Ulrike Sattler.
 \newblock Owl 2: The next step for owl.
-\newblock {\em Web Semant.}, 6(4):309--322, November 2008.
+\newblock {\em Web Semantics}, 6(4):309--322, November 2008.
 
 \bibitem[Gil07]{DisOrg-Gilli}
 Juan~J. Gilli.
@@ -195,7 +210,9 @@ Juan~J. Gilli.
 
 \bibitem[Goo]{GooForm}
 Google.
-\newblock Formularios {@ONLINE}.
+\newblock Formularios.
+\newblock
+  \url{https://support.google.com/drive/topic/1360904?hl=es&ref_topic=2811744}.
 
 \bibitem[GOS09]{Staab}
 Nicola Guarino, Daniel Oberle, and Steffen Staab.
@@ -207,7 +224,7 @@ Nicola Guarino, Daniel Oberle, and Steffen Staab.
 \bibitem[Gru93]{Gruber}
 Thomas~R. Gruber.
 \newblock A translation approach to portable ontology specifications.
-\newblock {\em Knowl. Acquis.}, 5(2):199--220, June 1993.
+\newblock {\em Knowledge Acquisition}, 5(2):199--220, June 1993.
 
 \bibitem[GSD{\etalchar{+}}12]{SwarmComp}
 C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
@@ -217,8 +234,8 @@ C.~Gueret, S.~Schlobach, K.~Dentler, M.~Schut, and G.~Eiben.
 \bibitem[HKR{\etalchar{+}}04]{protegeManual}
 Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
   Wroe.
-\newblock {A Practical Guide To Building OWL Ontologies Using The Protege-OWL
-  Plugin and CO-ODE Tools Edition 1.0}.
+\newblock {A Practical Guide To Building OWL Ontologies Using The
+  Prot\'{e}g\'{e}-OWL Plugin and CO-ODE Tools Edition 1.0}.
 \newblock August 2004.
 
 \bibitem[HOJ11]{Inay2011}
@@ -229,21 +246,23 @@ Inay Ha, Kyeong-Jin Oh, and Geun-Sik Jo.
 
 \bibitem[Inc]{TopQuadrant}
 TopQuadrant Inc.
-\newblock Topbraid composer {@ONLINE}.
+\newblock Topbraid composer.
+\newblock \url{http://www.topquadrant.com/products/TB_Composer.html}.
 
 \bibitem[Ini]{Dublin}
 Dublin Core~Semantic Initiative.
-\newblock Dublin core {@ONLINE}.
+\newblock Dublin core.
+\newblock \url{http://dublincore.org/}.
 
 \bibitem[ISS10]{Tode}
 N.~Islam, M.S. Siddiqui, and Z.A. Shaikh.
 \newblock Tode : A dot net based tool for ontology development and editing.
-\newblock In {\em Computer Engineering and Technology (ICCET), 2010 2nd
-  International Conference on}, volume~6, pages V6--229--V6--233, 2010.
+\newblock In {\em Computer Engineering and Technology, 2010 2nd International
+  Conference on}, volume~6, pages V6--229--V6--233, 2010.
 
 \bibitem[JRB01]{UML}
 Ivar Jacobson, James Rumbaugh, and Grady Booch.
-\newblock {\em El lenguaje unificado de modelado}.
+\newblock {\em El Lenguaje Unificado de Modelado (Segunda Edición)}.
 \newblock ADDISON-WESLEY, 2001.
 
 \bibitem[KFNM04]{protege}
@@ -259,7 +278,7 @@ Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
 Aditya Kalyanpur, Bijan Parsia, Evren Sirin, Bernardo~Cuenca Grau, and James
   Hendler.
 \newblock Swoop: A web ontology editing browser.
-\newblock {\em Web Semant.}, 4(2):144--153, June 2006.
+\newblock {\em Web Semantics}, 4(2):144--153, June 2006.
 
 \bibitem[KSH12]{Markus2012DLprimer}
 Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
@@ -270,15 +289,18 @@ Markus Kr\"{o}tzsch, Franti\v{s}ek Siman\v{c}\'{i}k, and Ian Horrocks.
 Yun Lin and John Krogstie.
 \newblock Semantic annotation of process models for facilitating process
   knowledge management.
-\newblock {\em Int. J. Inf. Syst. Model. Des.}, 1(3):45--67, July 2010.
+\newblock {\em International Journal of Information System Modeling and
+  Design}, 1(3):45--67, July 2010.
 
 \bibitem[LLCa]{Pellet}
 Clark \&~Parsia LLC.
-\newblock Pellet {@ONLINE}.
+\newblock Pellet.
+\newblock \url{http://clarkparsia.com/pellet/}.
 
 \bibitem[LLCb]{Clark}
 Clark \&~Parsia LLC.
-\newblock Stardog {@ONLINE}.
+\newblock Stardog.
+\newblock \url{http://stardog.com/}.
 
 \bibitem[Lyo97]{SemLyons}
 John Lyons.
@@ -293,7 +315,7 @@ B.~McBride.
 \bibitem[MK11]{Mishra2011}
 R.~B. Mishra and Sandeep Kumar.
 \newblock Semantic web reasoners and languages.
-\newblock {\em Artif. Intell. Rev.}, 35(4):339--368, April 2011.
+\newblock {\em Artificial Intelligence Review}, 35(4):339--368, April 2011.
 
 \bibitem[MLA{\etalchar{+}}12]{dbpedia_2012}
 Mohamed Morsey, Jens Lehmann, S{\"o}ren Auer, Claus Stadler, and Sebastian
@@ -313,7 +335,8 @@ David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
 
 \bibitem[Moz]{Mozilla}
 Mozilla.
-\newblock Mozilla public license {@ONLINE}.
+\newblock Mozilla public license.
+\newblock \url{http://www.mozilla.org/MPL/}.
 
 \bibitem[MSG87]{TeoOrg-James}
 James~G. March, Herbert~A. Simon, and Harold~S. Guetzkow.
@@ -331,12 +354,13 @@ A.~Norta, R.~Yangarber, and L.~Carlson.
 O.~Nasraoui and L.~Zhuhadar.
 \newblock Improving recall and precision of a personalized semantic search
   engine for e-learning.
-\newblock In {\em Digital Society, 2010. ICDS '10. Fourth International
-  Conference on}, pages 216--221, 2010.
+\newblock In {\em Digital Society, 2010. '10. Fourth International Conference
+  on}, pages 216--221, 2010.
 
 \bibitem[oM]{Maryland}
 University of~Maryland.
-\newblock Swoop {@ONLINE}.
+\newblock Swoop.
+\newblock \url{https://code.google.com/p/swoop/downloads/list}.
 
 \bibitem[Ort09]{Magdalena}
 Magdalena Ortiz.
@@ -345,16 +369,18 @@ Magdalena Ortiz.
 
 \bibitem[oS]{GATE}
 The~University of~Sheffield.
-\newblock Gate {@ONLINE}.
+\newblock Gate.
+\newblock \url{http://gate.ac.uk/}.
 
 \bibitem[pro]{Foaf}
 FOAF project.
-\newblock The friend of a friend (foaf) project {@ONLINE}.
+\newblock The friend of a friend (foaf) project.
+\newblock \url{http://www.foaf-project.org/}.
 
 \bibitem[PVL11]{OntoTecRrpKnw}
 Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
   Luna.
-\newblock Ontologias: una tecnica de representacion de conocimiento.
+\newblock Ontolog\'{i}as: una t\'{e}cnica de representacion de conocimiento.
 \newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
 
 \bibitem[RC04]{SGBDDIA}
@@ -377,9 +403,8 @@ Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \bibitem[SCO{\etalchar{+}}10]{Fstore}
 M.~Salvadores, G.~Correndo, T.~Omitola, N.~Gibbins, S.~Harris, and N.~Shadbolt.
 \newblock 4s-reasoner: Rdfs backward chained reasoning support in 4store.
-\newblock In {\em Web Intelligence and Intelligent Agent Technology (WI-IAT),
-  2010 IEEE/WIC/ACM International Conference on}, volume~3, pages 261--264,
-  2010.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology, 2010
+  International Conference on}, volume~3, pages 261--264, 2010.
 
 \bibitem[Sil02]{TeoAdmon-Reinaldo}
 Reinaldo~O. Silva.
@@ -388,11 +413,13 @@ Reinaldo~O. Silva.
 
 \bibitem[Sir]{OntoMat}
 M.~Siroker.
-\newblock Ontomat annotizer {@ONLINE}.
+\newblock Ontomat annotizer.
+\newblock \url{http://projects.semwebcentral.org/projects/ontomat/}.
 
 \bibitem[Spr]{DataTables}
 SpryMedia.
-\newblock Datatables {@ONLINE}.
+\newblock Datatables.
+\newblock \url{http://datatables.net/}.
 
 \bibitem[SR13]{Suganyakala2013}
 R.~Suganyakala and R.R. Rajalaxmi.
@@ -403,7 +430,8 @@ R.~Suganyakala and R.R. Rajalaxmi.
 
 \bibitem[TH]{Fact}
 Dmitry Tsarkov and Ian Horrocks.
-\newblock Fact++ {@ONLINE}.
+\newblock Fact++.
+\newblock \url{http://owl.man.ac.uk/factplusplus/}.
 
 \bibitem[UCI{\etalchar{+}}06]{Uren:2006}
 Victoria Uren, Philipp Cimiano, Jos{\'e} Iria, Siegfried Handschuh, Maria
@@ -415,71 +443,86 @@ Victoria Uren, Philipp Cimiano, Jos{\'e} Iria, Siegfried Handschuh, Maria
 
 \bibitem[Unia]{HermiT}
 Oxford University.
-\newblock Hermit {@ONLINE}.
+\newblock Hermit.
+\newblock \url{http://hermit-reasoner.com/}.
 
 \bibitem[Unib]{MnM}
 The~Open University.
-\newblock Mnm {@ONLINE}.
+\newblock Mnm.
+\newblock \url{http://projects.kmi.open.ac.uk/akt/MnM/}.
 
 \bibitem[VM]{Victorino}
 L.~Victorino and G.~Medina.
 \newblock Educaci\'{o}n basda en competencias y el proyecto tuning en europa y
-  latino\'{a}merica {@ONLINE}.
+  latino\'{a}merica.
+\newblock
+  \url{http://www.observatorio.org/colaboraciones/2007/TuningEuropayAL-LiberoVictorionoRamirez%2011oct07.pdf}.
 
 \bibitem[W3Ca]{GoodOnto}
 W3C.
-\newblock Good ontologies {@ONLINE}.
+\newblock Good ontologies.
+\newblock \url{http://www.w3.org/wiki/Good_Ontologies}.
 
 \bibitem[W3Cb]{sinNtriple}
 W3C.
-\newblock N-triples {@ONLINE}.
+\newblock N-triples.
+\newblock \url{http://www.w3.org/2001/sw/RDFCore/ntriples/}.
 
 \bibitem[W3Cc]{sinN3}
 W3C.
-\newblock Notation3 (n3) {@ONLINE}.
+\newblock Notation3 (n3).
+\newblock \url{http://www.w3.org/TeamSubmission/n3/}.
 
 \bibitem[W3Cd]{SintaxisRDF}
 W3C.
-\newblock Owl 2 web ontology language document overview (second edition)
-  {@ONLINE}.
+\newblock Owl 2 web ontology language document overview (second edition).
+\newblock \url{http://www.w3.org/TR/owl2-overview/}.
 
 \bibitem[W3Ce]{OWLprimer}
 W3C.
-\newblock Owl 2 web ontology language primer {@ONLINE}.
+\newblock Owl 2 web ontology language primer.
+\newblock \url{http://www.w3.org/TR/2012/REC-owl2-primer-20121211/}.
 
 \bibitem[W3Cf]{OWL2}
 W3C.
 \newblock Owl 2 web ontology language structural specification and functional
-  style syntax {@ONLINE}.
+  style syntax.
+\newblock \url{http://www.w3.org/TR/owl2-syntax/}.
 
 \bibitem[W3Cg]{R2RML}
 W3C.
-\newblock R2rml: Rdb to rdf mapping language {@ONLINE}.
+\newblock R2rml: Rdb to rdf mapping language.
+\newblock \url{http://www.w3.org/TR/r2rml/}.
 
 \bibitem[W3Ch]{RDF11}
 W3C.
-\newblock Rdf 1.1 concepts and abstract syntax {@ONLINE}.
+\newblock Rdf 1.1 concepts and abstract syntax.
+\newblock \url{http://www.w3.org/TR/rdf11-concepts/}.
 
 \bibitem[W3Ci]{RDFS10}
 W3C.
-\newblock Rdf vocabulary description language 1.0: Rdf schema {@ONLINE}.
+\newblock Rdf vocabulary description language 1.0: Rdf schema.
+\newblock \url{http://www.w3.org/TR/2004/REC-rdf-schema-20040210/}.
 
 \bibitem[W3Cj]{sinRDF}
 W3C.
-\newblock Rdf/xml syntax specification {@ONLINE}.
+\newblock Rdf/xml syntax specification.
+\newblock \url{http://www.w3.org/TR/rdf-syntax-grammar/}.
 
 \bibitem[W3Ck]{SWRL}
 W3C.
-\newblock Swrl: A semantic web rule language combining owl and ruleml
-  {@ONLINE}.
+\newblock Swrl: A semantic web rule language combining owl and ruleml.
+\newblock \url{http://www.w3.org/Submission/SWRL/}.
 
 \bibitem[W3Cl]{Triplestore}
 W3C.
-\newblock Triple store {@ONLINE}.
+\newblock Triple store.
+\newblock \url{http://www.w3.org/2001/sw/wiki/Category:Triple_Store}.
 
 \bibitem[W3Cm]{sinTurt}
 W3C.
-\newblock Turtle {@ONLINE}.
+\newblock Turtle.
+\newblock \url{http://www.w3.org/TR/2013/CR-turtle-20130219/}.
 
 \bibitem[WWH08]{OntologyManagement}
 Walter Waterfeld, Moritz Weiten, and Peter Haase.
@@ -506,7 +549,7 @@ Jun Zhai, Jianfeng Li, and Qinglian Wang.
 \newblock Using ontology and xml for semantic integration of electricity
   information systems.
 \newblock In {\em Electric Utility Deregulation and Restructuring and Power
-  Technologies, 2008. DRPT 2008. Third International Conference on}, pages
-  2197--2201, 2008.
+  Technologies, 2008. Third International Conference on}, pages 2197--2201,
+  2008.
 
 \end{thebibliography}
