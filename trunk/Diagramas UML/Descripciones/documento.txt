@@ -1,0 +1,24 @@
+@startuml
+interface "sird:A-DescriptionLogicPrimer-2012-pdf" as DLP
+interface "sird:pdf" as pdf
+interface "sirp:English" as eng
+interface "redes:Ontology" as onto
+interface "redes:Description_logics" as DL
+interface "redes:Axiom" as axiom
+
+DLP -up-> ["A Description Logic Primer"] : "sird:has-title"
+DLP --up-> (sird:Paper) : "rdf:type"
+DLP -up-> ["Markus Krotzsch"] : "sird:has-author"
+DLP -up-> ["http://arxiv.org/pdf/1201.4089.pdf"] : "sird:has-filePath"
+DLP -right-> ["This paper provides a self-contained first introduction to description logics (DLs)."] : "sird:has-abstract"
+
+DLP -left-> ["16"] : "sird:has-numberOfPages"
+DLP -down-> ["2012"] : "sird:has-yearOfPublication"
+
+DLP -down-> pdf : "sird:has-fileExtension"
+DLP -down-> eng : "sird:has-languageSource"
+DLP -down-> onto : "sird:has-topic"
+DLP -down-> DL : "sird:has-topic"
+DLP -down-> axiom : "sird:has-topic"
+
+@enduml

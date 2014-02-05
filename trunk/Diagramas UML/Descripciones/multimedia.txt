@@ -1,0 +1,23 @@
+@startuml
+interface "TheSemanticWeb-AnOverview-2011-flv" as overview
+interface "sird:flv" as flv
+interface "sirp:English" as eng
+interface "redes:OWL" as owl
+interface "redes:Semantic_Web" as sw
+interface "redes:RDF_triples" as rdf
+
+overview -up-> ["The Semantic Web - An Overview"] : "sird:has-title"
+overview --up-> (sird:Video) : "rdf:type"
+overview -up-> ["Peter WebExplorations"] : "sird:has-author"
+overview -up-> ["http://www.youtube.com/watch?v=rhgUDGtT2EM"] : "sird:has-filePath"
+overview -right-> ["Find out what the Semantic Web is all about and how it might be structured."] : "sird:has-synopsis"
+
+overview -down-> ["2011"] : "sird:has-yearOfPublication"
+
+overview -down-> flv : "sird:has-fileExtension"
+overview -down-> eng : "sird:has-languageSource"
+overview -down-> owl : "sird:has-topic"
+overview -down-> sw : "sird:has-topic"
+overview -down-> rdf : "sird:has-topic"
+
+@enduml
