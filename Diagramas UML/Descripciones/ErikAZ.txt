@@ -1,0 +1,36 @@
+@startuml
+interface "sirp:CarolinaMedinaRamirez" as caro
+interface "sirp:UAM" as uam
+interface "sirp:Female" as female
+interface "redes:Ontology" as onto
+interface "redes:XML" as xml
+interface "sirp:Abstraction_Skills" as abs
+interface "sirp:Synthesis_Skills" as syn
+interface "sirp:RicardoMarcelinJimenez" as richard
+interface "sirp:MiguelLopez" as milo
+interface "sirp:French" as fr
+
+caro -up-> ["Reyna Carolina Medina Ramirez"] : "sirp:has-name"
+caro -up-> ["cmed@xanum.uam.mx"] : "sirp:has-email"
+caro --up-> (sirp:Teacher): "rdf:type"
+
+caro -up-> ["http://cbi.izt.uam.mx/electrica/profs/cmed.html"] : "sirp:has-webSite"
+caro -left-> ["5804-4600, ext 2309"] : "sirp:has-phoneNo"
+caro -up-> ["Corporate Semantic Memories"] : "sirp:researchesOn"
+
+caro -down-> female : "sirp:has-gender"
+caro -right-> uam : "sirp:worksIn"
+
+caro --> fr : "sirp:reads"
+caro --> fr : "sirp:writes"
+caro --> fr : "sirp:speaks"
+
+caro -down-> onto : "sirp:expertiseIn"
+caro -down-> xml : "sirp:expertiseIn"
+caro -down-> abs : "sirp:competentIn"
+caro -down-> syn : "sirp:competentIn"
+
+caro -down-> richard : "sirp:has-colleague"
+caro -down-> milo : "sirp:has-colleague"
+
+@enduml
