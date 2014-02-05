@@ -1,0 +1,495 @@
+@prefix : <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sird: <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#> .
+@prefix sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl#> .
+@prefix redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl#> .
+@base <http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl> .
+
+<http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl> rdf:type owl:Ontology ;
+                                                        
+                                                        rdfs:comment "La propuesta de conceptos, relaciones y metadatos se tomo partir de los formatos del CONACYT."^^xsd:string .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-fileExtension
+
+:has-fileExtension rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:domain :DigitalResource ;
+                   
+                   rdfs:range :Extension .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-institutionInvolved
+
+:has-institutionInvolved rdf:type owl:ObjectProperty ;
+                         
+                         rdfs:domain :Thesis ;
+                         
+                         rdfs:subPropertyOf :publishedIn ;
+                         
+                         rdfs:range sirp:University .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-languageSource
+
+:has-languageSource rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:domain :DigitalResource ;
+                    
+                    rdfs:range sirp:Language .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-publishingHouse
+
+:has-publishingHouse rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:domain :Book ;
+                     
+                     rdfs:subPropertyOf :publishedIn ;
+                     
+                     rdfs:range sirp:PublishingHouse .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-topic
+
+:has-topic rdf:type owl:ObjectProperty ;
+           
+           rdfs:domain :DigitalResource ;
+           
+           rdfs:range sirp:TopicRyT .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#isTypeOfArticle
+
+:isTypeOfArticle rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:domain :Paper ;
+                 
+                 rdfs:range :TypeArticle .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#publishedIn
+
+:publishedIn rdf:type owl:ObjectProperty ;
+             
+             rdfs:range sirp:Organization .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#publishedInJournal
+
+:publishedInJournal rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:domain :Paper ;
+                    
+                    rdfs:subPropertyOf :publishedIn ;
+                    
+                    rdfs:range sirp:Journal .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-abstract
+
+:has-abstract rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Document ;
+              
+              rdfs:subPropertyOf :has-compendium ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-author
+
+:has-author rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :DigitalResource ;
+            
+            rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-compendium
+
+:has-compendium rdf:type owl:DatatypeProperty .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-edition
+
+:has-edition rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Book ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-filePath
+
+:has-filePath rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :DigitalResource ;
+              
+              rdfs:range xsd:anyURI .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-keyword
+
+:has-keyword rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Paper ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-numberOfPages
+
+:has-numberOfPages rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Document ;
+                   
+                   rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-synopsis
+
+:has-synopsis rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Multimedia ;
+              
+              rdfs:subPropertyOf :has-compendium ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-title
+
+:has-title rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :DigitalResource ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-year
+
+:has-year rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :DigitalResource ;
+          
+          rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-yearOfConclusion
+
+:has-yearOfConclusion rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:domain :Thesis ;
+                      
+                      rdfs:subPropertyOf :has-year ;
+                      
+                      rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-yearOfCreation
+
+:has-yearOfCreation rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:subPropertyOf :has-year ;
+                    
+                    owl:equivalentProperty :has-yearOfElaboration ;
+                    
+                    rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-yearOfElaboration
+
+:has-yearOfElaboration rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:subPropertyOf :has-year ;
+                       
+                       rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-yearOfLastView
+
+:has-yearOfLastView rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:domain :Webpage ;
+                    
+                    rdfs:subPropertyOf :has-year ;
+                    
+                    rdfs:range xsd:int .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#has-yearOfPublication
+
+:has-yearOfPublication rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:domain :Publication ;
+                       
+                       rdfs:subPropertyOf :has-year ;
+                       
+                       rdfs:range xsd:int .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Audio
+
+:Audio rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Multimedia .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Book
+
+:Book rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Publication .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#DigitalResource
+
+:DigitalResource rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Document
+
+:Document rdf:type owl:Class ;
+          
+          rdfs:subClassOf :DigitalResource .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Extension
+
+:Extension rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Image
+
+:Image rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Multimedia .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Multimedia
+
+:Multimedia rdf:type owl:Class ;
+            
+            rdfs:subClassOf :DigitalResource .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Paper
+
+:Paper rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Publication .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Presentation
+
+:Presentation rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Multimedia .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Publication
+
+:Publication rdf:type owl:Class ;
+             
+             rdfs:subClassOf :Document .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#TechnicalReport
+
+:TechnicalReport rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf :Document .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Thesis
+
+:Thesis rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Document .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#TypeArticle
+
+:TypeArticle rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Video
+
+:Video rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Multimedia .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Webpage
+
+:Webpage rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Document .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Journal
+
+sirp:Journal rdf:type owl:Class ;
+             
+             rdfs:subClassOf sirp:Organization .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Language
+
+sirp:Language rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Organization
+
+sirp:Organization rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Person
+
+sirp:Person rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#PublishingHouse
+
+sirp:PublishingHouse rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf sirp:Organization .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#TopicRyT
+
+sirp:TopicRyT rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#University
+
+sirp:University rdf:type owl:Class ;
+                
+                rdfs:subClassOf sirp:Organization .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Erik
+
+:Erik rdf:type owl:NamedIndividual .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#Survey
+
+:Survey rdf:type owl:NamedIndividual .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl#article
+
+:article rdf:type owl:NamedIndividual ;
+         
+         :has-title "Semanticannotation forknowledge management Requirements and a survey of the state of the art"^^xsd:string .
+
+
+
+
+###  Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net
+
