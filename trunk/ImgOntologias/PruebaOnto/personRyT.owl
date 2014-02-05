@@ -1,0 +1,346 @@
+@prefix : <http://arte.izt.uam.mx/ontologies/personRyT.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sirp: <http://arte.izt.uam.mx/ontologies/personRyT.owl#> .
+@prefix redes: <http://mcyti.izt.uam.mx/arios/odaryt.owl#> .
+@base <http://arte.izt.uam.mx/ontologies/personRyT.owl> .
+
+<http://arte.izt.uam.mx/ontologies/personRyT.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#competentIn
+
+:competentIn rdf:type owl:ObjectProperty ;
+             
+             rdfs:range :Competence ;
+             
+             rdfs:domain :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#expertiseIn
+
+:expertiseIn rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :Person ;
+             
+             rdfs:range :TopicRyT .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-advisor
+
+:has-advisor rdf:type owl:ObjectProperty ;
+             
+             rdfs:range :Professional ;
+             
+             rdfs:domain :Student ;
+             
+             rdfs:subPropertyOf :knows .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-colleague
+
+:has-colleague rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ;
+               
+               rdfs:range :Professional ;
+               
+               rdfs:domain :Professional ;
+               
+               rdfs:subPropertyOf :knows .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-gender
+
+:has-gender rdf:type owl:FunctionalProperty ,
+                     owl:ObjectProperty ;
+            
+            rdfs:range :Gender ;
+            
+            rdfs:domain :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-language
+
+:has-language rdf:type owl:ObjectProperty .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-workplace
+
+:has-workplace rdf:type owl:ObjectProperty ;
+               
+               rdfs:range :Organization ;
+               
+               rdfs:domain :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#knows
+
+:knows rdf:type owl:ObjectProperty ;
+       
+       rdfs:domain :Person ;
+       
+       rdfs:range :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#reads
+
+:reads rdf:type owl:ObjectProperty ;
+       
+       rdfs:range :Language ;
+       
+       rdfs:domain :Person ;
+       
+       rdfs:subPropertyOf :has-language .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#speaks
+
+:speaks rdf:type owl:ObjectProperty ;
+        
+        rdfs:range :Language ;
+        
+        rdfs:domain :Person ;
+        
+        rdfs:subPropertyOf :has-language .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#studiesIn
+
+:studiesIn rdf:type owl:ObjectProperty ;
+           
+           rdfs:domain :Student ;
+           
+           rdfs:range :University ;
+           
+           rdfs:subPropertyOf :has-workplace .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#worksIn
+
+:worksIn rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :Organization ;
+         
+         rdfs:domain :Professional ;
+         
+         rdfs:subPropertyOf :has-workplace .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#writes
+
+:writes rdf:type owl:ObjectProperty ;
+        
+        rdfs:range :Language ;
+        
+        rdfs:domain :Person ;
+        
+        rdfs:subPropertyOf :has-language .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-age
+
+:has-age rdf:type owl:DatatypeProperty ;
+         
+         rdfs:domain :Person ;
+         
+         rdfs:range xsd:integer .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-email
+
+:has-email rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Person ;
+           
+           rdfs:range xsd:anyURI .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-name
+
+:has-name rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Person ;
+          
+          rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-nameOrg
+
+:has-nameOrg rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Organization ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-occupation
+
+:has-occupation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#has-webSite
+
+:has-webSite rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Person ;
+             
+             rdfs:range xsd:anyURI .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#researchesOn
+
+:researchesOn rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Researcher ;
+              
+              rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Competence
+
+:Competence rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Employee
+
+:Employee rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Professional .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Gender
+
+:Gender rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Language
+
+:Language rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Organization
+
+:Organization rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Person
+
+:Person rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Professional
+
+:Professional rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Researcher
+
+:Researcher rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Person .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Student
+
+:Student rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Person ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has-occupation ;
+                           owl:hasValue "Student"
+                         ] .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#Teacher
+
+:Teacher rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Professional .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#TopicRyT
+
+:TopicRyT rdf:type owl:Class .
+
+
+
+###  http://arte.izt.uam.mx/ontologies/personRyT.owl#University
+
+:University rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Organization .
+
+
+
+
+###  Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net
+
