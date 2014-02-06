@@ -27,7 +27,7 @@
 \contentsline {chapter}{\numberline {3}Estado del arte}{31}
 \contentsline {section}{\numberline {3.1}Integraci\'on Sem\'antica de recursos de informaci\'on}{31}
 \contentsline {section}{\numberline {3.2}Herramientas para la integraci\'on sem\'antica de recursos de informaci\'on}{35}
-\contentsline {section}{\numberline {3.3}Resumen y discusi\'on}{38}
+\contentsline {section}{\numberline {3.3}Resumen y discusi\'on}{37}
 \contentsline {chapter}{\numberline {4}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{43}
 \contentsline {section}{\numberline {4.1}Representaci\'on del conocimiento en los recursos de informaci\'on}{46}
 \contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{54}
