@@ -25,7 +25,7 @@ Esta metodología está organizada en tres etapas principales:
 
 La primera y segunda etapa de esta metodología es para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
-La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en el modelo de tres capas: (\textit{usuario, negocio y datos}). El objetivo de ésta es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan en este \textit{marco de referencia}.
+La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en cuatro módulos: \textit{memoria corporativa}, \textit{descripciones de los recursos de información}, \textit{motor de búsqueda} e \textit{interfaz gráfica de usuario}. El objetivo de nuestra arquitectura es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan en este \textit{marco de referencia}.
 
 \begin{figure}[!htb]
 \centering
@@ -35,12 +35,16 @@ La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración
 \label{fig:arq}
 \end{figure}
 
-A continuación se describen los elementos que están en las tres capas de nuestra arquitectura.
+A continuación se describen los elementos que están en los cuatro módulos de nuestra arquitectura.
 
 \begin{itemize}
-\item En la capa de usuario: se tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario. La Sección \ref{cap:piu} muestra los detalles de esta interfaz gráfica de usuario para nuestros modelos semánticos.
-\item En la capa de negocios: una aplicación transforma la información recopilada de las páginas estáticas a una consulta en lenguaje SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar la ontología, 2) hacer inferencia en una ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
-\item En la capa de datos: la ontología modela el conocimiento de los recursos de una memoria corporativa en un formato estándar y con un vocabulario consensual. El componente asertivo contiene las descripciones de las características y relaciones explícitas de los recursos. Mientras, el componente terminológico contiene los axiomas que definen y restringen la manera en que se relacionan los recursos.
+\item El módulo \textit{interfaz gráfica de usuario} tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario. La Sección \ref{cap:piu} muestra los detalles de esta interfaz gráfica de usuario para nuestros modelos semánticos.
+
+\item El módulo \textit{motor de búsqueda} tiene una aplicación que transforma la información recopilada de las páginas estáticas a una consulta en lenguaje SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar las descripciones de los recursos, 2) cargar la ontología (Clases, Propiedades, Axiomas y Reglas de inferencia), 3) hacer inferencia en la ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
+
+\item El módulo \textit{descripciones de los recursos de información} tiene un conjunto de afirmaciones (conocimiento explícito) que representan las características y/o relaciones explícitas de los recursos de información.
+
+\item El módulo \textit{memoria corporativa} está conformado por recursos de información (personas, personas, documentos y archivos multimedia) obtenidos a partir de los casos de uso.
 \end{itemize}
 
 Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Los principales usuarios en la integración son los \textbf{\textit{profesores-investigadores}} del núcleo del área de Redes y Telecomunicaciones, así como los \textbf{\textit{estudiantes}} que realizan algún proyecto o servicios social y están a cargo de profesor del núcleo.
@@ -76,13 +80,13 @@ En ambos casos de uso, un aspecto importante es que tanto personas como recursos
 \label{sec:repKrec} 
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
-La Figura \ref{fig:mccu} muestra el esquema de la memoria corporativa de área de Redes y Telecomunicaciones, donde los \textit{recursos de información} están clasificados por caso de uso.
+La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área de Redes y Telecomunicaciones. La parte superior de esta imagen muestra el conocimiento generado de manera individual de los profesores del área de Redes y Telecomunicaciones (RyT); este conocimiento se materializa en los recursos de información. Mientras, la parte inferior muestra la unión de recursos de información del área RyT.
 
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.75\textwidth]{CasosUsoMC}
-\caption{Esquema de la memoria corporativa de área de Redes y Telecomunicaciones}
+\includegraphics[width=0.95\textwidth]{CasosUsoMC}
+\caption{Diagrama de la memoria corporativa de área de Redes y Telecomunicaciones}
 \label{fig:mccu}
 \end{figure}
 

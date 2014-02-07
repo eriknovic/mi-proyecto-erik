@@ -1,36 +1,36 @@
-\chapter{Estado del arte}
+\chapter{Estado del Arte}
 \label{cap:soa}
 En este apartado se presenta la \textit{revisión actual} de aquellos trabajos que están relacionados con la \textit{integración semántica de recursos}. Esta revisión se basa en estos \textit{ejes claves de investigación}:
 
 \begin{enumerate}
-\item Integración del conocimiento a partir del uso de tecnologías semánticas.
-\item Búsqueda, recuperación y publicación de la información desde un modelo semántico.
-\item Gestión de una memoria corporativa.
+\item Representación del conocimiento mediante modelos semánticos.
+\item Búsqueda, recuperación y/o publicación de información empleando tecnologías semánticas.
+\item Gestión semántica de una memoria corporativa.
 \end{enumerate}
 
 \section{Integración Semántica de recursos de información}
 \label{sec:eoaisr}
-La \textit{integración semántica}  de \textit{recursos de información} tiene por objetivo la búsqueda y recuperación de información en los recursos, para responder las necesidades informativas de las personas. Esta integración emplea las tecnologías semánticas para representar, enriquecer y consultar la información, también el conocimiento en los recursos de un dominio dado. El uso de una \textit{memoria corporativa} se traduce en información y conocimiento de los recursos bajo un dominio particular.
+La \textit{integración semántica} de \textit{recursos de información} tiene por objetivo buscar y recuperar información significativa existente en los recursos de información. Los principales elementos de esta integración son: recursos de información, memoria corporativa y tecnologías semánticas. Un recurso de información es el elemento básico en una organización y representa conocimiento explícito para ésta. Por otro lado, una memoria corporativa representa conocimiento implícito de una organización. Mientras, las tecnologías semánticas se utilizan para buscar y recuperar conocimiento existente en un modelo semántico.
 %Algunos trabajos exploran o emplean el enfoque de las \textit{tecnologías semánticas} para fines de \textit{integración del conocimiento}, representación de una memoria corporativa o búsqueda de información. A continuación, se describe el estado actual del conocimiento referente a estos trabajos.
 
-\subsection*{Integración del conocimiento a partir del uso de tecnologías semánticas}
-El elemento clave en estos trabajos es la utilización de \textit{tecnologías semánticas} para representar las características y relaciones de los \textit{recursos de información} en un \textit{modelo semántico} (formato estándar). Esta \textit{representación semántica} permite la \textit{integración de información} (IdI) desde los diversos \textit{recursos de información}, con el fin de solucionar las dificultades de heterogeneidad en formato, contenido y estructura de los recursos.
+\subsection*{Representación del conocimiento mediante modelos semánticos}
+El elemento clave en estos trabajos es la utilización de modelos para representar las características y relaciones de los \textit{recursos de información}. Esta \textit{representación semántica} permite la \textit{integración de información} (IdI) desde los diversos \textit{recursos de información}, con el fin de solucionar las dificultades de heterogeneidad en formato, contenido y estructura de los recursos.
 
 \textbf{\textit{Moner et al.}} \cite{Archetype} proponen una \textit{arquitectura dual} para la representación consistente y comprensible de la información clínica de cualquier persona. La finalidad es que profesionales de la salud puedan acceder al historial clínico de los pacientes. La \textit{arquitectura dual} se basa en un modelo que representa la información y el conocimiento. Por un lado, la información se describe en estructuras de datos comunes de los \textit{historiales clínicos} que están distribuidos en varios sistemas independientes y heterogéneos. Por otro lado, en la representación del conocimiento se emplean arquetipos para describir el conocimiento formal de conceptos clínicos. En este trabajo, la \textit{información de los historiales} se representa en un modelo orientado a objetos. Mientras, el conocimiento se representa en arquetipos mediante el uso de un lenguaje de definición de arquetipos. Esta arquitectura presentan a LinkEHR-Ed, una herramienta para desarrollar arquetipos de datos clínicos. La finalidad de LinkEHR-Ed es que los profesionales de la salud sean los constructores del conocimiento.
 
 \textbf{\textit{Jun Zhai et al.}} \cite{JunZhai} proponen una arquitectura basada en ontologías y el \textit{lenguaje de marcado extensible} (XML\label{sym:xml}), para la \textit{integración semántica} en \textit{sistemas de información de energía eléctrica}, donde estos sistemas son heterogéneos con funciones y organizaciones descentralizadas. En esta arquitectura, el lenguaje XML se emplea como medio para el intercambio de datos entre los \textit{sistemas de información de la electricidad}. Sin embargo, XML no expresa semántica, sino más bien la estructura. Por ello, esta arquitectura emplea una ontología para describir formalmente el conocimiento, a nivel conceptual, en el dominio de la electricidad. También, esta ontología permite compartir, reutilizar y usar el conocimiento. La arquitectura está dividida en tres capas. La primera capa está constituida por varios \textit{sistemas heterogéneos de información de electricidad}. La segunda genera ontologías locales y una ontología global a partir de la unión de las locales. La tercera capa es el desarrollo de sistemas para el consumo y uso de datos que provienen de la \textit{integración semántica}.
 
-\textbf{\textit{K. Yang y R. Steele}} \cite{Accommodation} proponen un \textit{marco de integración semántica} como solución eficaz y flexible para la integración de la información en el dominio del alojamiento en-línea. El objetivo de este trabajo es reunir y compartir la información en constante cambio que procede de páginas web del alojamiento en-línea. Este marco propone lo siguiente para representar e integrar el conocimiento procedente de distintos servidores. Primero, emplear un \textit{proceso automático} para resolver la naturaleza dinámica de las fuentes de información. Segundo, emplear \textit{ontologías} locales para facilitar el acceso a la \textit{información integrada} y solucionar la heterogeneidad en la estructura de la información. Tercero, emplear un conjunto de \textit{esquemas}, basados en la ontologías locales, para el intercambio de información. Finalmente, permitir a los \textit{propietarios de la información} verificar la información que es integrada.
+\textbf{\textit{K. Yang y R. Steele}} \cite{Accommodation} proponen un \textit{marco de integración semántica} como solución eficaz y flexible para la integración de la información en el dominio del alojamiento en-línea. El objetivo de este trabajo es reunir y compartir la información en constante cambio que procede de páginas web del alojamiento en-línea. Este marco propone lo siguiente para representar e integrar el conocimiento procedente de distintos servidores. Primero, emplear un \textit{proceso automático} para resolver la naturaleza dinámica de las fuentes de información. Segundo, emplear \textit{ontologías} locales para facilitar el acceso a la \textit{información integrada} y solucionar la heterogeneidad en la estructura de la información. Tercero, emplear un conjunto de \textit{esquemas}, basados en la ontologías locales, para el intercambio de información. Finalmente, permitir a los propietarios de la información verificar que la información esté integrada.
 
-\subsection*{Búsqueda y recuperación de la información en un modelo semántico}
-Un \textit{modelo semántico} permite la realización de diversas actividades, para aprovechar el conocimiento que está residente en este modelo. Por ejemplo, visualización de la información, búsqueda y recuperación de la información, acceso a los recursos de información, tareas de inferencia, agregar y extender el conocimiento, compartir la información, por mencionar algunas.
+\subsection*{Búsqueda, recuperación y/o publicación de información empleando tecnologías semánticas}
+Un \textit{modelo semántico} permite aprovechar el conocimiento que está representado en él. Por ejemplo, agregar y extender el conocimiento (inferencia); búsqueda, recuperación y visualización de conceptos, así como el acceso a los recursos de información correspondientes, por mencionar algunas.
 
 En particular, \textit{la búsqueda y recuperación de información} son actividades de mucha importancia para las personas, porque esas actividades permiten entregar los resultados que satisfagan las \textit{necesidades informativas} de estas personas. La búsqueda y recuperación se hace a partir del \textit{uso del lenguaje de consulta SPARQL} y un \textit{motor de búsqueda para modelos semánticos}.
 
-A continuación, se presentan los trabajos para la búsqueda y recuperación de información en un \textit{modelo semántico}, con la finalidad de responder las \textit{necesidades informativas} de las personas.
+A continuación, se presentan los trabajos para la búsqueda y recuperación de información a partir del uso de tecnologías semánticas.
 
 %%%2011------->
-\textbf{\textit{Tuan-Dung et al.}} \cite{Tuan-Dung2011} proponen desarrollar un sistema para la \textit{recomendación y acceso a la información turística semántica} (STAAR\label{sym:staar}). El propósito de este trabajo es utilizar las tecnologías semánticas para la búsqueda de información turística, donde esta información es accesible a través de un smart-phone con Internet.
+\textbf{\textit{Tuan-Dung et al.}} \cite{Tuan-Dung2011} proponen el desarollo de un aplicación para la \textit{recomendación y acceso a la información turística semántica} (STAAR\label{sym:staar}). El propósito de este trabajo es buscar información turística a través de un smart-phone con Internet.
 
 El sistema STAAR emplea una ontología para definir conceptos y propiedades asociadas a la información y conocimiento sobre el turismo. La ontología tiene un diseño abierto y para interoperar con repositorios que tienen grandes conjuntos de tripletas.
 
@@ -55,47 +55,45 @@ El enfoque de Salam se denomina MIRO, el cual está implementado en un \textit{mo
 
 El trabajo de Salam es una parte de un proyecto global sobre la investigación de información médica en la web para una clínica especialista en urología. Por ello, él y su grupo de investigación desarrollaron y construyeron una ontología para el dominio de Urología.
 
-\subsection*{Gestión de una memoria corporativa}
-Una \textit{memoria corporativa} es un elemento de vital importancia para las personas en una organización, porque ésta \textit{conserva y mantiene}  el conocimiento de la organización, expresado mediante los \textit{recursos de información}, para facilitar el acceso, intercambio y difusión del conocimiento por parte de las personas.
+\subsection*{Gestión semántica de una memoria corporativa}
+Una \textit{memoria corporativa} es un elemento de vital importancia para las personas en una organización, porque ésta \textit{conserva y mantiene}  el conocimiento de la organización, expresado mediante los \textit{recursos de información} (personas, documentos y archivos multimedia), para facilitar el acceso, intercambio y difusión del conocimiento por parte de las personas.
 
-La \textit{gestión de una memoria corporativa} consiste en diversas actividades para aprovechar los \textit{recursos de información} de manera eficiente y eficaz. El propósito de esta gestión es determinar y alcanzar los objetivos en la organización.
+La \textit{gestión de una memoria corporativa} consiste en diversas actividades para aprovechar los \textit{recursos de información} de manera eficiente.
 
 A continuación, se presenta la revisión de trabajos que utilizan una \textit{memoria corporativa} para gestionar el conocimiento en una organización.
 
 \textbf{\textit{Xin y Guangleng}} \cite{WangXin} proponen el uso de una \textit{memoria corporativa} para \textit{capturar y proporcionar} información sobre la \textit{justificación del diseño (design rationale)}. Donde, la \textit{justificación del diseño} es un conocimiento que permite explicar: \textit{qué y cómo se diseña un producto}. Esta \textit{justificación} apoya la reutilización, comunicación y verificación de diseños en empresas manufactureras. Este conocimiento se encuentra en los \textit{recursos de información} heterogéneos.
 
-En esta propuesta, Xin y Guangleng utilizan un enfoque basado en las \textbf{ontologías}, con el objetivo de describir los \textit{objetos de justificación del diseño}. También, ellos emplean una ontología, porque permiten acceder de manera uniforme e inteligente a los \textit{recursos de información} heterogéneos.
+En esta propuesta, Xin y Guangleng utilizan un enfoque basado en \textbf{ontologías}, con el objetivo de describir los objetos que permitan justificar el diseño. También, ellos emplean una ontología, para acceder de manera inteligente a los \textit{recursos de información} heterogéneos.
 
-Esta propuesta también proporciona un sistema que tiene estas tres funcionalidades: capturar, navegar y consultar en \textit{justificación de diseño}. La \textit{captura} es grabar e indexar la información de la \textit{justificación del diseño}. La \textit{navegación} es presentar aspectos del contenido, estructura y contexto sobre la \textit{justificación del diseño}. Finalmente, la \textit{consulta} es encontrar información de las instancias.
+Por otro lado, proporcionan un sistema que tiene estas tres funcionalidades: capturar, navegar y consultar. La \textit{captura} es grabar e indexar la información de la \textit{justificación del diseño}. La \textit{navegación} es presentar aspectos del contenido, estructura y contexto sobre la \textit{justificación del diseño}. Finalmente, la \textit{consulta} es encontrar información de las instancias correspondientes.
 
 \textbf{\textit{Chakhmoune et al.}} \cite{Behja} proponen un entorno de colaboración para la gestión de memorias corporativas. La importancia de una \textit{memoria corporativa} es para fines de representación, así como gestión del conocimiento y documentos en forma colaborativa.
 
 En este trabajo se presenta al entorno colaborativo PCOGEME, cuya función es construir una \textit{memoria corporativa} a partir de \textit{lluvia de ideas} y un \textit{mecanismo de toma de decisiones consensuadas}.
 
-PCOGEME emplea una ontología como medio para crear y gestionar el conocimiento de una memoria corporativa. En particular, PCOGEME permite a los usuarios: 1) construir ontologías, 2) almacenar documentos indexados a partir de los conceptos de las ontologías, 3) realizar preguntas en sintaxis SPARQL y 4) navegar por las diferentes representaciones
+PCOGEME emplea una ontología como medio para crear y gestionar el conocimiento de una memoria corporativa. En particular, PCOGEME permite a los usuarios: 1) construir ontologías, 2) almacenar documentos indexados a partir de los conceptos de las ontologías, 3) realizar preguntas en sintaxis SPARQL y 4) navegar por las diferentes representaciones.
 
-En este entorno, las ontologías juegan un papel importante. Éstas pueden resolver la falta de comunicación y comprensión en una organización, porque una ontología da detalles más precisos y proporciona menos ambigüedades de la terminología. De esta manera, se propicia la reutilización, división y interfuncionamiento del conocimiento en una memoria.
+En este entorno, las ontologías juegan un papel importante. Éstas pueden resolver la falta de comunicación y comprensión en una organización, porque una ontología da detalles precisos y evita ambigüedades en la terminología del dominio.
 
 \section{Herramientas para la integración semántica de recursos de información}
 \label{sec:eoats}
-Esta \textit{revisión de la literatura} establece el estudio de aplicaciones y herramientas para desarrollar la \textit{integración semántica de recursos de información en una memoria corporativa}. Esta \textit{revisión de herramientas} se hace con base en estas funcionalidades:
+Esta \textit{revisión de literatura} contempla el análisis de aplicaciones y herramientas para alcanzar la \textit{integración semántica de recursos de información en una memoria corporativa}.
 
-\begin{enumerate}
-\item Escribir y guardar automáticamente \textit{tripletas RDF} en alguna sintaxis de serialización RDF.
-\item Escribir, guardar y visualizar los axiomas con los vocabularios OWL y RDF(S).
-\item Gestionar las \textit{tripletas RDF} con fines de almacenamiento, carga en memoria, búsqueda e inferencia a partir de éstas.
-\end{enumerate}
+%Esta \textit{revisión de herramientas} se hace con base en estas funcionalidades:
+%
+%\begin{enumerate}
+%\item Escribir y guardar automáticamente \textit{tripletas RDF} en alguna sintaxis de serialización RDF.
+%\item Escribir, guardar y visualizar los axiomas con los vocabularios OWL y RDF(S).
+%\item Gestionar las \textit{tripletas RDF} con fines de almacenamiento, carga en memoria, búsqueda e inferencia a partir de éstas.
+%\end{enumerate}
 
 \subsection*{Descriptor semántico de recursos}
 Un \textit{descriptor semántico de recursos} \cite{Uren:2006} es una herramienta que permite crear y almacenar tripletas RDF a partir de la \textit{información explícita} de los recursos de información. El principal objetivo de un \textit{descriptor} es construir instancias y relacionar éstas con determinados valores u otras instancias (\textit{concepto de tripleta}).
 
-Un descriptor proporciona una \textit{interfaz gráfica de usuario} (GUI\label{sym:gui}) para simplificar a los usuarios la creación y modificación de las declaraciones. En estos descriptores, las tripletas están escritas en una de las siguientes sintaxis: \textit{RDF/XML, Turtle, N-triple y N3}.
+Un descriptor cuenta con una \textit{interfaz gráfica de usuario} (GUI\label{sym:gui}) que simplifica a los usuarios la creación y modificación de las declaraciones. En estos descriptores, las tripletas están escritas en una de las siguientes sintaxis: \textit{RDF/XML, Turtle, N-triple y N3}.
 
-Algunos descriptores requieren un TBox como \textit{criterio de entrada}, con el fin de indicar a éstos \textit{cuáles clases y propiedades pueden emplearse para la generación de tripletas}. 
-
-Pocos descriptores hacen sugerencias de la información para generar declaraciones. Ésto se hace mediante un proceso de aprendizaje en un corpus documental o de imágenes.
-
-A continuación, se presentan los descriptores semánticos que nosotros estudiamos.
+Algunos descriptores requieren un TBox como \textit{criterio de entrada}, con el fin de indicar a éstos \textit{cuáles clases y propiedades pueden emplearse para la generación de tripletas}. Pocos descriptores hacen sugerencias de la información para generar declaraciones. Ésto se hace mediante un proceso de aprendizaje en un corpus documental o de imágenes. A continuación, se presentan los descriptores semánticos que nosotros estudiamos.
 % Estas interfaces tienen un editor de documentos para que un usuario: \textit{1) visualice el contenido de estos, 2) seleccione los datos (literales: cadenas, enteros, flotantes) y 3) asocie los datos a una propiedad}.
 
 \textbf{OntoMat Annotizer} \cite{OntoBasDoc}, \cite{OntoMat} es una herramienta para hacer anotaciones semánticas de páginas web, documentos basados en texto plano y lenguajes de marcado.
@@ -158,47 +156,80 @@ Nuestro trabajo establece seis características básicas para realizar la \textit{
 En la revisión de la literatura, varios trabajos asociados a la \textit{integración semántica de recursos}, cumplen con alguna de nuestras seis características básicas. Nosotros sintetizamos estos trabajos, mostrando los valores de esas seis características. Esta información se presenta en la Tabla \ref{tab:soasi}.
 
 \begin{table}[hp]
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.3}
   \centering
   \smallskip 
+  \caption{Características relevantes para la integración semántica de recursos en una memoria corporativa.}
   \begin{sideways}
-  \begin{threeparttable}
-      \begin{tabular}{>{\centering\arraybackslash}m{1.0in} >{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.4in} >{\centering\arraybackslash}m{0.3in} >{\centering\arraybackslash}m{0.4in} >{\centering\arraybackslash}m{0.4in}}
+	\begin{tabular}{>{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{1.4in} >{\centering\arraybackslash}m{1.2in} >{\centering\arraybackslash}m{0.9in}}
 		\hline
 		\hline
-		\textbf{Autor} & \textbf{Objetivo} & \textbf{Dominio} & \textbf{Modelo} & \textbf{TS}\tnote{a} & \textbf{IdI}\tnote{b} & \textbf{ByRI}\tnote{c} & \textbf{MBeI}\tnote{d} \\
+		\textbf{Autor} & \textbf{Dominio} & \textbf{Modelo} & \textbf{Tecnologías Semánticas} & \textbf{Representación del conocimiento} & \textbf{Búsqueda y recuperación de información} & \textbf{Motor de búsqueda e inferencia} \\
 		\hline
-		Moner et al. & Arquitectura para representar la información clínica de las personas & Salud & Orientado a objetos y Arquetipos & No & Sí & No & No \\
+		Moner et al. & Salud & Orientado a objetos y Arquetipos & No & Sí & No & No\\
 		\hline
-		K. Yang y R. Steele & Marco de integración semántica para la información del alojamiento en-línea. & Alojamiento en-línea & Ontología & Sí & Sí & No & No \\
+		K. Yang y R. Steele & Alojamiento en-línea & Ontología & Sí & Sí & No & No\\
 		\hline
-		Jun Zhai et al. & Arquitectura basada en ontologías para la IdI en SIdEE\tnote{e} & Electricidad & Ontología & Sí & Sí & No & No \\
+		Jun Zhai et al. & Electricidad & Ontología & Sí & Sí & No & No\\
 		\hline
-		Tuan-Dung et al. & Sistema de recomendación y acceso a la información turística & Turismo & Ontología & Sí & No & Sí & No \\
+		Tuan-Dung et al. & Turismo & Ontología & Sí & No & Sí & No\\
 		\hline
-		Ha Inay et al. & Herramienta para visualizar la información en una ontología & Mantenimiento de aeronaves & Ontología & Sí & No & Sí & No \\
+		Ha Inay et al. & Mantenimiento de aeronaves & Ontología & Sí & No & Sí & No\\
 		\hline
-		Suganyakala y Rajalaxmi & Marco de trabajo para la recuperación de información basado en ontologías & Películas & Ontología & Sí & No & Sí & No \\
+		Suganyakala y Rajalaxmi & Películas & Ontología & Sí & No & Sí & No \\
 		\hline
-		Salam & Método basado en ontologías para la recuperación de información & Urología & Ontología & Sí & No & Sí & No \\
+		Salam  & Urología & Ontología & Sí & No & Sí & No\\
 		\hline
-		Xin y Guangleng & Uso de una memoria corporativa para capturar y proporcionar información & Justificación del diseño & Ontología & Sí & Sí & Sí & No \\
+		Xin y Guangleng & Justificación del diseño (Ing. Soft.) & Ontología & Sí & Sí & Sí & No\\
 		\hline
-		Chakhmoune et al. & Entorno de colaboración para la gestión de memorias corporativas & Memoria Documental & Ontología & Sí & Sí & No & No \\
+		Chakhmoune et al. & Memoria Documental & Ontología & Sí & Sí & No & No \\
 		\hline
      \end{tabular}
-     \begin{tablenotes}
-       \item[a] \scriptsize Tecnologías Semánticas. 
-       \item[b] \scriptsize Integración de la Información. 
-       \item[c] \scriptsize Búsqueda y Recuperación de la Información. 
-       \item[d] \scriptsize Motor de Búsqueda e Inferencia. 
-       \item[e] \scriptsize Sistemas de Información de Energía Eléctrica. 
-     \end{tablenotes}
-  \end{threeparttable}
-  \end{sideways}
-  \caption{Características relevantes para la integración semántica de recursos en una memoria corporativa.}
-  \label{tab:soasi}
+   \end{sideways}
 \end{table}
+
+%\begin{table}[hp]
+%\renewcommand{\arraystretch}{1.2}
+%  \centering
+%  \smallskip 
+%  \begin{sideways}
+%  \begin{threeparttable}
+%      \begin{tabular}{>{\centering\arraybackslash}m{1.0in} >{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{0.9in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.4in} >{\centering\arraybackslash}m{0.3in} >{\centering\arraybackslash}m{0.4in} >{\centering\arraybackslash}m{0.4in}}
+%		\hline
+%		\hline
+%		\textbf{Autor} & \textbf{Objetivo} & \textbf{Dominio} & \textbf{Modelo} & \textbf{TS}\tnote{a} & \textbf{IdI}\tnote{b} & \textbf{ByRI}\tnote{c} & \textbf{MBeI}\tnote{d} \\
+%		\hline
+%		Moner et al. & Arquitectura para representar la información clínica de las personas & Salud & Orientado a objetos y Arquetipos & No & Sí & No & No \\
+%		\hline
+%		K. Yang y R. Steele & Marco de integración semántica para la información del alojamiento en-línea. & Alojamiento en-línea & Ontología & Sí & Sí & No & No \\
+%		\hline
+%		Jun Zhai et al. & Arquitectura basada en ontologías para la IdI en SIdEE\tnote{e} & Electricidad & Ontología & Sí & Sí & No & No \\
+%		\hline
+%		Tuan-Dung et al. & Sistema de recomendación y acceso a la información turística & Turismo & Ontología & Sí & No & Sí & No \\
+%		\hline
+%		Ha Inay et al. & Herramienta para visualizar la información en una ontología & Mantenimiento de aeronaves & Ontología & Sí & No & Sí & No \\
+%		\hline
+%		Suganyakala y Rajalaxmi & Marco de trabajo para la recuperación de información basado en ontologías & Películas & Ontología & Sí & No & Sí & No \\
+%		\hline
+%		Salam & Método basado en ontologías para la recuperación de información & Urología & Ontología & Sí & No & Sí & No \\
+%		\hline
+%		Xin y Guangleng & Uso de una memoria corporativa para capturar y proporcionar información & Justificación del diseño & Ontología & Sí & Sí & Sí & No \\
+%		\hline
+%		Chakhmoune et al. & Entorno de colaboración para la gestión de memorias corporativas & Memoria Documental & Ontología & Sí & Sí & No & No \\
+%		\hline
+%     \end{tabular}
+%     \begin{tablenotes}
+%       \item[a] \scriptsize Tecnologías Semánticas. 
+%       \item[b] \scriptsize Integración de la Información. 
+%       \item[c] \scriptsize Búsqueda y Recuperación de la Información. 
+%       \item[d] \scriptsize Motor de Búsqueda e Inferencia. 
+%       \item[e] \scriptsize Sistemas de Información de Energía Eléctrica. 
+%     \end{tablenotes}
+%  \end{threeparttable}
+%  \end{sideways}
+%  
+%  \label{tab:soasi}
+%\end{table}
 
 La estructura de la Tabla \ref{tab:soasi} es: la primera columna tiene los autores de la \textit{revisión de literatura}, la segunda tiene los objetivos finales de los trabajos, la tercera indica los dominios estudiados para cada trabajo, la cuarta tiene los modelos empleados para representar el conocimiento e información de su dominio, la quinta indica el uso o no de las \textit{tecnologías semánticas}, la sexta indica la realización de la \textit{integración de la información}, la séptima indica la realización de la \textit{búsqueda y recuperación de información} y la octava indica el uso de un motor de búsqueda con razonamiento.
 
