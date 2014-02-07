@@ -8,10 +8,12 @@
 (sird:Image) -up-> (sird:Multimedia) : rdfs:subClassOf
 (sird:Presentation) -up-> (sird:Multimedia) : rdfs:subClassOf
 
-(sird:Paper) -up-> (sird:Document) : rdfs:subClassOf
-(sird:Book) -up-> (sird:Document) : rdfs:subClassOf
+(sird:Publication) -up-> (sird:Document) : rdfs:subClassOf
 (sird:Thesis) -up-> (sird:Document) : rdfs:subClassOf
 (sird:TechnicalReport) -up-> (sird:Document) : rdfs:subClassOf
 (sird:Webpage) -up-> (sird:Document) : rdfs:subClassOf
+
+(sird:Paper) -up-> (sird:Publication) : rdfs:subClassOf
+(sird:Book) -up-> (sird:Publication) : rdfs:subClassOf
 
 @enduml

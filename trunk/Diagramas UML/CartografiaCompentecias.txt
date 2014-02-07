@@ -15,6 +15,7 @@ class Persona #PaleGreen {
   Número telefónico: String
   Email: URL
   Sitio Web: URL
+  Imagen: URL
 }
 
 class Profesionista #PaleGreen
