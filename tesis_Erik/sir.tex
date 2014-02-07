@@ -23,7 +23,7 @@ Esta metodología está organizada en tres etapas principales:
 \item \textbf{\textit{Búsqueda y recuperación de la información en el modelo}}.- consisten en identificar las principales consultas de los usuarios en el dominio y ejecutar éstas mediante el uso de un \textit{motor de búsqueda SPARQL} junto con un \textit{razonador}, para recuperar información de los recursos.
 \end{enumerate}
 
-La primera y segunda etapa de esta metodología es para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
+En esta metodología, la primera y segunda etapa son para construir el \textit{modelo semántico} a partir del conocimiento explícito e implícito en los \textit{recursos de información}. La tercera etapa consiste en identificar y efectuar las principales consultas sobre el modelo semántico.
 
 La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta arquitectura se diseñó con base en cuatro módulos: \textit{memoria corporativa}, \textit{descripciones de los recursos de información}, \textit{motor de búsqueda} e \textit{interfaz gráfica de usuario}. El objetivo de nuestra arquitectura es poder desarrollarla e implementarla en cualquier memoria corporativa. Los componentes de esta arquitectura se construyen, utilizan e implementan en este \textit{marco de referencia}.
 
@@ -39,12 +39,9 @@ A continuación se describen los elementos que están en los cuatro módulos de nue
 
 \begin{itemize}
 \item El módulo \textit{interfaz gráfica de usuario} tiene un conjunto de páginas Web dinámicas y estáticas que proporcionan la interfaz visual. Esta interfaz proporciona una manera fácil y sencilla de estructurar las preguntas de los usuarios, así como la visualización de los resultados vinculados a estas preguntas. Las páginas estáticas proporcionan los formularios para que los usuarios \textit{estructuren las preguntas} y \textit{capturen la información} a buscar en la MC. Mientras, las páginas dinámicas proporcionan la información que responde las preguntas en un formato visual agradable al usuario. La Sección \ref{cap:piu} muestra los detalles de esta interfaz gráfica de usuario para nuestros modelos semánticos.
-
 \item El módulo \textit{motor de búsqueda} tiene una aplicación que transforma la información recopilada de las páginas estáticas a una consulta en lenguaje SPARQL. Posteriormente, esta aplicación invoca al triplestore para efectuar estas actividades: 1) solicitar y cargar las descripciones de los recursos, 2) cargar la ontología (Clases, Propiedades, Axiomas y Reglas de inferencia), 3) hacer inferencia en la ontología mediante el uso de un razonador y 3) buscar y recuperar la información en el modelo inferido mediante el uso de motor de búsqueda SPARQL y la consulta SPARQL.
-
-\item El módulo \textit{descripciones de los recursos de información} tiene un conjunto de afirmaciones (conocimiento explícito) que representan las características y/o relaciones explícitas de los recursos de información.
-
-\item El módulo \textit{memoria corporativa} está conformado por recursos de información (personas, personas, documentos y archivos multimedia) obtenidos a partir de los casos de uso.
+\item El módulo \textit{descripciones de los recursos de información} se constituye por un conjunto de afirmaciones (conocimiento explícito) que representan las características y/o relaciones explícitas de los recursos de información.
+\item El módulo \textit{memoria corporativa} se compone por recursos de información (personas, personas, documentos y archivos multimedia) que materializan el conocimiento del dominio.
 \end{itemize}
 
 Esta propuesta de metodología se pone en práctica para la \textit{memoria corporativa} del grupo de investigación perteneciente al área de Redes y Telecomunicaciones del departamento de Ingeniería Eléctrica de la Universidad Autónoma Metropolitana Unidad Iztapalapa. Los principales usuarios en la integración son los \textbf{\textit{profesores-investigadores}} del núcleo del área de Redes y Telecomunicaciones, así como los \textbf{\textit{estudiantes}} que realizan algún proyecto o servicios social y están a cargo de profesor del núcleo.
@@ -85,21 +82,22 @@ La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área 
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\includegraphics[width=0.95\textwidth]{CasosUsoMC}
-\caption{Diagrama de la memoria corporativa de área de Redes y Telecomunicaciones}
+\includegraphics[width=0.73\textwidth]{CasosUsoMC}
+\caption{Diagrama de la memoria corporativa del área de Redes y Telecomunicaciones}
 \label{fig:mccu}
 \end{figure}
 
-La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}''. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
+La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}'' \cite{SurvSemWeb2012}. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
 
-Un \textbf{\textit{diagrama de clases}} es una manera visual para mostrar un conjunto de clases, colaboraciones y sus relaciones \cite{UML}. Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones y sus relaciones en un momento dado.
+Para representar estas características y/o relaciones en una forma visual, se emplea un diagrama de clases. Por diagrama de clases debe entenderse una manera visual para mostrar un conjunto de clases, características y relaciones \cite{UML}. Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones, así como sus relaciones en un momento dado. En los diagramas de clase, la notación del \textit{Lenguaje de Modelo Unificado} (UML) se utiliza para representar clases, atributos y propiedades.
+%Esta notación se utilizó porque permite modelar conocimiento con cualquier enfoque de las tecnologías de la información, por ejemplo, una base de datos relacional, un modelo orientado a objetos o una ontología.
 
-En la Figura \ref{fig:dccarc} se presentan las clases, atributos(características) y relaciones entre éstas para visualizar y especificar el comportamiento de los \textit{recursos de información} que pertenecen a la cartografía de competencias. Mientras, la Figura \ref{fig:dcbrd} muestra las clases y sus relaciones para los documentos y archivos multimedia pertenecientes a la búsqueda de recursos digitales.
+En la Figura \ref{fig:dccarc} se presentan las clases, atributos (características) y relaciones para el caso de uso cartografía de competencias. Mientras, la Figura \ref{fig:dcbrd} muestra las clases, atributos y relaciones para los documentos y archivos multimedia correspondientes a la búsqueda de recursos digitales.
 
 %%%Diagrama de clases Personas
 \begin{figure}[hp]
 \centering
-\fbox{\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}}
+\fbox{\includegraphics[angle=90,scale=0.8]{CasoUsoCartComp}}
 \caption{Diagrama de clases para la cartografía competencias.}
 \label{fig:dccarc}
 \end{figure}
@@ -107,18 +105,18 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos(características
 %%% Diagrama de clases recursos digitales
 \begin{figure}[hp]
 \centering
-\fbox{\includegraphics[angle=90,scale=0.85]{CasoUsoRecDig}}
+\fbox{\includegraphics[angle=90,scale=1.2]{CasoUsoRecDig}}
 \caption{Diagrama de clases para la búsqueda de recursos digitales.}
 \label{fig:dcbrd}
 \end{figure}
 
-La siguiente actividad es la \textbf{\textit{representación del conocimiento}} e información mediante el \textbf{\textit{marco de trabajo RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
+La siguiente actividad es la \textbf{\textit{representación del conocimiento}} e información mediante el \textbf{\textit{marco de referencia RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
 
 El primer paso, es asignar un URI para cada recurso de información. Esta asignación de identificadores URI se hace con base en los casos de uso:
 
 \begin{itemize}
-\item Los identificadores de los recursos en la cartografía de competencia emplean el prefijo ``\url{http://arte.izt.uam.mx/ontologies/personRyT.owl}\#'', el cual se abrevia ``\textit{sirp}''.
-\item Los identificadores de los recursos pertenecientes a la búsqueda de recursos digitales, utilizan el prefijo ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'', el cual se abrevia ``\textit{sird}''.
+\item En la \textit{cartografía de competencias} se emplea el prefijo ``\url{http://arte.izt.uam.mx/ontologies/personRyT.owl}\#'', el cual se abrevia ``\textit{sirp}''.
+\item En la búsqueda de recursos digitales se utiliza el prefijo ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'', el cual se abrevia ``\textit{sird}''.
 \end{itemize}
 
 La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
@@ -318,7 +316,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.72\textwidth]{HerenClassCartComp}}
+\fbox{\includegraphics[width=0.82\textwidth]{HerenClassCartComp}}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -327,7 +325,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.86\textwidth]{ExpInfsubClassPer}}
+\fbox{\includegraphics[width=0.9\textwidth]{ExpInfsubClassPer}}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
 \label{fig:exHerClasPer}
 \end{figure}
@@ -338,7 +336,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[height=2.3in, width=0.95\textwidth]{HerenClassRecDigi}}
+\fbox{\includegraphics[height=3.2in, width=0.95\textwidth]{HerenClassRecDigi}}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
@@ -347,7 +345,7 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.83\textwidth]{ExpInfsubClassDigi}}
+\fbox{\includegraphics[width=0.85\textwidth]{ExpInfsubClassDigi}}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso What is Linked Data?}
 \label{fig:exHerClasDigi}
 \end{figure}

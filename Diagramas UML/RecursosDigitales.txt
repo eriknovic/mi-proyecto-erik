@@ -2,11 +2,13 @@
 skinparam stereotypeCBackgroundColor YellowGreen
 
 RecursoDigital <|-- Documento : es un
-Documento <|-- Artículo : es un
-Documento <|-- Libro : es un
+Documento <|-- Publicación : es un
 Documento <|-- Tesis : es un
 Documento <|-- ReporteTécnico : es un
 Documento <|-- PáginaWeb : es un
+
+Publicación <|-- Artículo : es un
+Publicación <|-- Libro : es un
 
 RecursoDigital <|-- Multimedia : es un
 Multimedia <|-- Audio : es un
@@ -21,7 +23,7 @@ class RecursoDigital #PaleGreen {
 }
 
 RecursoDigital -left-- Lenguaje : tiene idioma >
-RecursoDigital -down-- Extensión : tiene formato >
+RecursoDigital -right-- Extensión : tiene formato >
 RecursoDigital -right-- TemaODARyT : tiene topico >
 
 class Documento #PaleGreen {
@@ -38,19 +40,21 @@ class Tesis #PaleGreen {
   Año de conclusión: Int
 }
 
+class Publicación #PaleGreen {
+  Año de publicación: Int
+}
+
+class Artículo #PaleGreen {
+  Keyword: String
+}
+
 Tesis -- Universidad : institución\n involucrada >
 
 class Libro #PaleGreen {
   Edición: Int
-  Año de publicación: Int
 }
 
 Libro -- CasaEditorial : tiene editorial >
-
-class Artículo #PaleGreen {
-  Keyword: String
-  Año de publicación: Int
-}
 
 Artículo -- RevistaCientifica : publicado en\n revista >
 Artículo -up-- TipoArtículo : es tipo >
