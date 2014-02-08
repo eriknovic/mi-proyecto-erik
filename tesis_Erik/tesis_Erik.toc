@@ -30,24 +30,24 @@
 \contentsline {section}{\numberline {3.3}Resumen y discusi\'on}{37}
 \contentsline {chapter}{\numberline {4}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{43}
 \contentsline {section}{\numberline {4.1}Representaci\'on del conocimiento en los recursos de informaci\'on}{46}
-\contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{55}
-\contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{55}
+\contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{56}
+\contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{56}
 \contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{58}
-\contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{61}
-\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{65}
-\contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{68}
-\contentsline {chapter}{\numberline {5}Prototipo}{83}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{109}
-\contentsline {section}{\numberline {6.1}Objetivo de la experimentaci\'on}{109}
-\contentsline {section}{\numberline {6.2}Hip\'otesis}{109}
-\contentsline {section}{\numberline {6.3}Experimentaci\'on}{110}
-\contentsline {section}{\numberline {6.4}Sujetos de experimentaci\'on}{110}
-\contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{113}
-\contentsline {section}{\numberline {6.6}Resultados}{118}
-\contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{125}
-\contentsline {section}{\numberline {7.1}Recomendaciones}{128}
-\contentsline {chapter}{Appendices}{131}
-\contentsline {chapter}{Ap\'endice \numberline {A}Acr\'onimos}{133}
-\contentsline {chapter}{Ap\'endice \numberline {B}Algoritmos para le generaci\'on de datos simulados}{135}
-\contentsline {chapter}{Ap\'endice \numberline {C}Transformaci\'on de preguntas a consultas SPARQL}{143}
-\contentsline {chapter}{Bibliograf\'{\i }a}{155}
+\contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{62}
+\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{66}
+\contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{69}
+\contentsline {chapter}{\numberline {5}Prototipo}{85}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{111}
+\contentsline {section}{\numberline {6.1}Objetivo de la experimentaci\'on}{111}
+\contentsline {section}{\numberline {6.2}Hip\'otesis}{111}
+\contentsline {section}{\numberline {6.3}Experimentaci\'on}{112}
+\contentsline {section}{\numberline {6.4}Sujetos de experimentaci\'on}{112}
+\contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{115}
+\contentsline {section}{\numberline {6.6}Resultados}{120}
+\contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{127}
+\contentsline {section}{\numberline {7.1}Recomendaciones}{130}
+\contentsline {chapter}{Appendices}{133}
+\contentsline {chapter}{Ap\'endice \numberline {A}Acr\'onimos}{135}
+\contentsline {chapter}{Ap\'endice \numberline {B}Algoritmos para le generaci\'on de datos simulados}{137}
+\contentsline {chapter}{Ap\'endice \numberline {C}Transformaci\'on de preguntas a consultas SPARQL}{145}
+\contentsline {chapter}{Bibliograf\'{\i }a}{157}

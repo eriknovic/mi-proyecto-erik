@@ -30,7 +30,7 @@ La Figura \ref{fig:arq} muestra nuestra arquitectura para la \textit{integración
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
-\fbox{\includegraphics[width=0.8\textwidth]{Arquitectura}}
+\fbox{\includegraphics[width=0.75\textwidth]{Arquitectura}}
 \caption{Arquitectura general para la Integración Semántica de Recurso en una Memoria Corporativa.}
 \label{fig:arq}
 \end{figure}
@@ -77,8 +77,6 @@ En ambos casos de uso, un aspecto importante es que tanto personas como recursos
 \label{sec:repKrec} 
 La primera actividad es \textbf{\textit{identificar los principales recursos de información}} para construir la memoria corporativa. Esta identificación se hace a partir del análisis de los \textit{casos de uso}. Los recursos asociados al primer caso de uso son: profesores adscritos al área de RyT, estudiantes asociados a uno de éstos profesores, empleados de otras organizaciones que colaboran con los profesores. Mientras, los recursos digitales son: artículos científicos relacionados a los temas de investigación, libros y páginas Web de referencia, tesis de maestría y doctorado de los alumnos, reportes técnicos de los profesores y sus estudiantes, presentaciones de cursos o congresos, audios de reuniones o clases, vídeo tutoriales e imágenes de referencia.
 
-La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área de Redes y Telecomunicaciones. La parte superior de esta imagen muestra el conocimiento generado de manera individual de los profesores del área de Redes y Telecomunicaciones (RyT); este conocimiento se materializa en los recursos de información. Mientras, la parte inferior muestra la unión de recursos de información del área RyT.
-
 \begin{figure}[!htb]
 \centering
 %\includegraphics[width=3.2in]{Arquitectura}
@@ -87,17 +85,18 @@ La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área 
 \label{fig:mccu}
 \end{figure}
 
+La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área de Redes y Telecomunicaciones. La parte superior de esta imagen muestra el conocimiento generado de manera individual de los profesores del área de Redes y Telecomunicaciones (RyT); este conocimiento se materializa en los recursos de información. Mientras, la parte inferior muestra la unión de recursos de información del área RyT.
+
 La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}'' \cite{SurvSemWeb2012}. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
 
 Para representar estas características y/o relaciones en una forma visual, se emplea un diagrama de clases. Por diagrama de clases debe entenderse una manera visual para mostrar un conjunto de clases, características y relaciones \cite{UML}. Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones, así como sus relaciones en un momento dado. En los diagramas de clase, la notación del \textit{Lenguaje de Modelo Unificado} (UML) se utiliza para representar clases, atributos y propiedades.
-%Esta notación se utilizó porque permite modelar conocimiento con cualquier enfoque de las tecnologías de la información, por ejemplo, una base de datos relacional, un modelo orientado a objetos o una ontología.
 
 En la Figura \ref{fig:dccarc} se presentan las clases, atributos (características) y relaciones para el caso de uso cartografía de competencias. Mientras, la Figura \ref{fig:dcbrd} muestra las clases, atributos y relaciones para los documentos y archivos multimedia correspondientes a la búsqueda de recursos digitales.
 
 %%%Diagrama de clases Personas
 \begin{figure}[hp]
 \centering
-\fbox{\includegraphics[angle=90,scale=0.8]{CasoUsoCartComp}}
+\fbox{\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}}
 \caption{Diagrama de clases para la cartografía competencias.}
 \label{fig:dccarc}
 \end{figure}
@@ -110,7 +109,17 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos (característica
 \label{fig:dcbrd}
 \end{figure}
 
-La siguiente actividad es la \textbf{\textit{representación del conocimiento}} e información mediante el \textbf{\textit{marco de referencia RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
+Estos diagramas de clases representan de manera gráfica y genérica la estructura del conocimiento de los \textit{recursos de información} existentes en la \textit{memoria corporativa}. La finalidad de estos diagramas genéricos es permitir representar o modelar este conocimiento con cualquier enfoque de las tecnologías información, por ejemplo, una \textit{base de datos relacional}, un \textit{modelo orientado a objetos} o una \textit{ontología}.
+
+En este marco de referencia, las estructuras del conocimiento (diagramas de clase) se trasladan a modelos semánticos. A continuación, se presentan las equivalencias entre elementos de diagramas de clase a elementos de modelos semánticos.
+
+\begin{itemize}
+\item Las clases de un diagrama de clases son clases para un modelo semántico.
+\item Los atributos de un diagrama de clases son propiedades de dato en un modelo semántico.
+\item Las relaciones entre clases de un diagrama de clases son propiedades de objeto en un modelo semántico.
+\end{itemize}
+
+La siguiente actividad es \textbf{\textit{representar el conocimiento explícito}} a partir del uso del \textbf{\textit{marco de referencia RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
 
 El primer paso, es asignar un URI para cada recurso de información. Esta asignación de identificadores URI se hace con base en los casos de uso:
 
@@ -119,51 +128,51 @@ El primer paso, es asignar un URI para cada recurso de información. Esta asignac
 \item En la búsqueda de recursos digitales se utiliza el prefijo ``\url{http://arte.izt.uam.mx/ontologies/digiResourceRyT.owl}\#'', el cual se abrevia ``\textit{sird}''.
 \end{itemize}
 
-La Tabla \ref{tab:uriper} enuncia los identificadores URI de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna enuncia los identificadores URI de éstos.
+La Tabla \ref{tab:uriper} muestra los identificadores para los recursos persona de algunos profesores del área de RyT. En esta Tabla, la primera columna tiene los nombres de los profesores y la segunda columna el correspondiente identificador.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
-\caption{Ejemplos de identificadores URI asociados a los recursos persona para la cartografía de competencias.}
+\caption{Identificadores de los profesores del área RyT.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
 \textbf{Nombres} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
-Alfonso Prieto & \textit{\textbf{sirp:}AlfonsoPrieto}  \\
+Alfonso Prieto Guerrero & \textit{\textbf{sirp:}AlfonsoPrieto}  \\
 \hline
-Michael Pascoe & \textit{\textbf{sirp:}MichaelPascoe} \\
+Michael Pascoe Chalke & \textit{\textbf{sirp:}MichaelPascoe} \\
 \hline
-Reyna Carolina Medina & \textit{\textbf{sirp:}CarolinaMedinaRamirez} \\
+Reyna Carolina Medina Ramirez & \textit{\textbf{sirp:}CarolinaMedinaRamirez} \\
 \hline
-Ricardo Marcelin & \textit{\textbf{sirp:}RicardoMarcelinJimenez} \\
+Ricardo Marcelin Jimenez & \textit{\textbf{sirp:}RicardoMarcelinJimenez} \\
 \hline
-Miguel Lopez & \textit{\textbf{sirp:}MiguelLopez} \\
+Miguel Lopez Guerrero & \textit{\textbf{sirp:}MiguelLopez} \\
 \hline 
-Victor Manuel Ramos & \textit{\textbf{sirp:}VictorRamosVictorRamos} \\
+Victor Manuel Ramos Ramos & \textit{\textbf{sirp:}VictorRamos} \\
 \hline 
-Fausto Marcos Casco & \textit{\textbf{sirp:}FaustoCasco} \\
+Fausto Marcos Casco Sanchez & \textit{\textbf{sirp:}FaustoCasco} \\
 \hline 
-Cesar Jalpa & \textit{\textbf{sirp:}CesarJalpa} \\
+Cesar Jalpa Villanueva & \textit{\textbf{sirp:}CesarJalpa} \\
 \hline 
-Enrique Rodriguez & \textit{\textbf{sirp:}EnriqueRodriguez} \\
+Enrique Rodriguez de la Colina & \textit{\textbf{sirp:}EnriqueRodriguez} \\
 \hline
 \end{tabular}
 \label{tab:uriper}
 \end{table}
 
-La Tabla \ref{tab:urird} enuncia los identificadores URI de algunos recursos digitales pertenecientes a los profesores de RyT. En la primer columna de esta tabla se enuncia el título completo del recursos digital y la segunda columna presenta los identificadores (URI) de estos recursos.
+La Tabla \ref{tab:urird} muestra algunos recursos digitales: tres documentos y dos archivos multimedia. En la primera columna se muestra el título completo del recursos digital y la segunda columna presenta su identificador.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
-\caption{Ejemplos de identificadores URI asociados a los documentos y archivos multimedia para la búsqueda de recursos digitales.}
+\caption{Identificadores de recursos digitales existentes en la memoria de RyT.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.2in}}
 \hline
 \textbf{Títulos} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
-Ontology engineering & \textit{\textbf{sird:}RR-4396-2002-pdf}  \\
+Ontology engineering: a survey and a return on experience & \textit{\textbf{sird:}RR-4396-2002-pdf}  \\
 \hline
 A Description Logic Primer & \textit{\textbf{sird:}A-DescriptionLogicPrimer-2012-pdf} \\
 \hline
@@ -177,62 +186,130 @@ What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
 \label{tab:urird}
 \end{table}
 
-El segundo paso es asignar un identificador URI para cada propiedad. Estos identificadores so construidos con base en las características y relaciones en los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los identificadores URI de estas propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
+El segundo paso es asignar un identificador URI para cada propiedad. Estos identificadores se construyen con base en los atributos y relaciones de los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los atributos de las clases son propiedades de dato, mientras las relaciones entre clases son propiedades de objeto. Los identificadores de las propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
 
-La Tabla \ref{tab:ccprop} presenta algunos identificadores de las propiedades que pertenecen a la cartografía de competencias. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas características.
+La Tabla \ref{tab:ccprop} presenta los identificadores para las \textit{propiedades de dato} del caso de uso \textit{cartografía de competencias}. Mientras, la Tabla \ref{tab:ccpropObj} muestra los identificadores de las \textit{propiedades objeto} para el mismo caso de uso. Para ambas tablas se tiene la siguiente estructura: la primera columna muestra el atributo o relación y la segunda columna presenta su identificador. 
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
-\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la cartografía de competencias.}
+\caption{Identificadores para las propiedades de dato del caso de uso cartografía de competencias.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
 \hline
-\textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
+\textbf{Atributos} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Nombre & \textit{\textbf{sirp:}has-name}  \\
 \hline
+Edad & \textit{\textbf{sirp:}has-age}  \\
+\hline
+Número telefónico & \textit{\textbf{sirp:}has-phoneNo}  \\
+\hline
+Email & \textit{\textbf{sirp:}has-email}  \\
+\hline
 Sitio Web & \textit{\textbf{sirp:}has-webSite} \\
 \hline
-Lugar de trabajo & \textit{\textbf{sirp:}worksIn} \\
+Imagen & \textit{\textbf{sirp:}has-image}  \\
 \hline
 Línea de investigación & \textit{\textbf{sirp:}researchesOn} \\
 \hline 
-Colega & \textit{\textbf{sirp:}has-colleague} \\
-\hline
-Competencias & \textit{\textbf{sirp:}competentIn} \\
-\hline
-Habilidades en temas de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
-\hline
 \end{tabular}
 \label{tab:ccprop}
 \end{table}
 
-La Tabla \ref{tab:brdprop} presenta algunos identificadores de las propiedades de la búsqueda de recursos digitales. La primera columna enuncia las características o relaciones, mientras la segunda columna presenta los identificadores URI de estas características.
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.1}
+\centering
+\caption{Identificadores para las propiedades de objeto del caso de uso cartografía de competencias.}
+\begin{tabular}{>{\centering\arraybackslash}m{2.7in} >{\centering\arraybackslash}m{3.0in}}
+\hline
+\textbf{Relaciones} & \textbf{Identificadores (URI)}\\
+\hline
+\hline
+Género & \textit{\textbf{sirp:}has-gender}  \\
+\hline
+Habla & \textit{\textbf{sirp:}speaks}  \\
+\hline
+Escribe & \textit{\textbf{sirp:}writes}  \\
+\hline
+Lee & \textit{\textbf{sirp:}reads}  \\
+\hline
+Lugar de Trabajo & \textit{\textbf{sirp:}worksIn} \\
+\hline
+Lugar de Estudio & \textit{\textbf{sirp:}studiesIn}  \\
+\hline
+Habilidades en temas de Redes y Telecom. & \textit{\textbf{sirp:}expertiseIn} \\
+\hline 
+Competencias & \textit{\textbf{sirp:}competentIn} \\
+\hline 
+Colega & \textit{\textbf{sirp:}has-colleague} \\
+\hline
+Asesor & \textit{\textbf{sirp:}has-advisor} \\
+\hline
+\end{tabular}
+\label{tab:ccpropObj}
+\end{table}
+
+De la misma manera, la Tabla \ref{tab:brdprop} presenta algunos identificadores para las \textit{propiedades de dato} del caso de uso \textit{cartografía de competencias} y la Tabla \ref{tab:brpropObj} muestra los identificadores de las \textit{propiedades objeto} para el mismo caso de uso.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.1}
 \centering
-\caption{Ejemplos de identificadores URI de las propiedades pertenecientes a la búsqueda de recursos digitales.}
+\caption{Identificadores para las propiedades de dato del caso de uso búsqueda de recursos digitales.}
 \begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
 \hline
-\textbf{Características o relaciones} & \textbf{Identificadores (URI)}\\
+\textbf{Atributos} & \textbf{Identificadores (URI)}\\
 \hline
 \hline
 Título & \textit{\textbf{sird:}has-title}  \\
 \hline
 Autor & \textit{\textbf{sird:}has-author} \\
 \hline
-Ruta Archivo& \textit{\textbf{sird:}has-filePath} \\
+Ruta Archivo & \textit{\textbf{sird:}has-filePath} \\
+\hline
+Resumen & \textit{\textbf{sird:}has-abstract} \\
+\hline
+Número de páginas & \textit{\textbf{sird:}has-numberOfPages} \\
+\hline
+Keywords & \textit{\textbf{sird:}has-keyword} \\
+\hline
+Edición & \textit{\textbf{sird:}has-edition} \\
 \hline
 Año de creación & \textit{\textbf{sird:}has-yearOfCreation} \\
 \hline
-Lenguaje Fuente & \textit{\textbf{sird:}has-languageSource} \\
-\hline 
-Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
-\hline 
+Año de última visita & \textit{\textbf{sird:}has-yearOfLastView} \\
+\hline
 \end{tabular}
 \label{tab:brdprop}
+\end{table}
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.1}
+\centering
+\caption{Identificadores para las propiedades de objeto del caso de uso búsqueda de recursos digitales.}
+\begin{tabular}{>{\centering\arraybackslash}m{2.5in} >{\centering\arraybackslash}m{3.0in}}
+\hline
+\textbf{Relaciones} & \textbf{Identificadores (URI)}\\
+\hline
+\hline
+Lenguaje Fuente & \textit{\textbf{sird:}has-languageSource} \\
+\hline 
+Extensión & \textit{\textbf{sird:}has-fileExtension} \\
+\hline
+Temas de Redes y Telecom. & \textit{\textbf{sird:}has-topic} \\
+\hline 
+Ruta Archivo & \textit{\textbf{sird:}has-filePath} \\
+\hline
+Tipo de Artículo & \textit{\textbf{sird:}isTypeOfArticle} \\
+\hline
+Revista de publicación & \textit{\textbf{sird:}publishedInJournal} \\
+\hline
+Editorial & \textit{\textbf{sird:}has-publishingHouse} \\
+\hline
+Institución involucrada & \textit{\textbf{sird:}has-institutionInvolved} \\
+\hline
+\end{tabular}
+\label{tab:brpropObj}
 \end{table}
 
 El tercer paso es \textbf{\textit{identificar el tipo de valor}} de las características en el \textit{diagrama de clases}. Por un lado, si el \textit{objeto} es una cadena o un número, entonces es una \textit{literal}. Por otro lado, si el \textit{objeto} es otro recurso, entonces es un \textit{identificador URI}. En el caso de las \textbf{\textit{relaciones}}, los valores son otros recursos, por ello, éstos deben ser \textit{identificadores URI}.
@@ -244,7 +321,7 @@ En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcel
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[height=3.3in,width=1.0\textwidth]{Person2RDF}}
+\fbox{\includegraphics[height=3.5in,width=1.0\textwidth]{Person2RDF}}
 \caption{Declaraciones del Dr. Ricardo Marcelin Jiménez en forma de tripletas RDF}
 \label{fig:drper}
 \end{figure}
@@ -256,7 +333,7 @@ El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\tex
 \item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
 \item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
 \item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en Latinoamérica \cite{Victorino}.
-\item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}.
+\item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}. Esta tripleta se utiliza solamente para Profesores y Empleados.
 \item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
 \end{itemize}
 
@@ -331,7 +408,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 \end{figure}
 
 \begin{itemize}
-\item En el área RyT, los principales recursos digitales se pueden agrupar en nueve clases básicas: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Los recursos digitales se agrupan en dos clases generales: \textbf{\textit{Documento (Document)}} y \textbf{\textit{Multimedia (Multimedia)}}. Las primeras cinco clases Artículo, Libro, Tesis, Página Web, Reporte Técnico tienen como super-clase a la clase \textbf{\textit{Documento}}. Mientras las otras cuatro clases básicas tienen como super-clase a la clase \textbf{\textit{Multimedia}}. Finalmente, cualquier individuo de estas once clases es un recurso digital, por ello, las once clases son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
+\item En el área RyT, los principales recursos digitales se pueden agrupar en nueve clases básicas: \textbf{\textit{Artículo (Paper)}}, \textbf{\textit{Libro (Book)}}, \textbf{\textit{Tesis (Thesis)}}, \textbf{\textit{Página Web (Webpage)}}, \textbf{\textit{Reporte Técnico (TechnicalReport)}}, \textbf{\textit{Audio (Audio)}}, \textbf{\textit{Vídeo (Video)}}, \textbf{\textit{Presentación (Presentation)}} e \textbf{\textit{Imagen (Image)}}. Estas nueve clases son disjuntos, por ello, no tienen individuos en común. Las clases Artículo y Libro son agrupadas en la clase \textbf{\textit{Publicación (Publication)}}. Las clases Tesis, Página Web, Reporte Técnico y Publicación tienen como super-clase a la clase \textbf{\textit{Documento (Document)}}. Mientras las clases Audio, Vídeo, Imagen y Presentación tienen como super-clase a la clase \textbf{\textit{Multimedia (Multimedia)}}. Finalmente, cualquier individuo, sea Documento o Multimedia, es un recurso digital, por ello, las clases Documento y Multimedia son subclases de la clase \textbf{\textit{Recurso Digital (DigitalResource)}}. La Figura \ref{fig:jdrd} muestra la jerarquía de clases para los recursos digitales.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -341,6 +418,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 \label{fig:jdrd}
 \end{figure}
 %height=2.3in,
+
 En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a partir de axiomas de \textit{jerarquía de clases}. En esta figura, los axiomas son tomados de la ontología \textit{búsqueda de recursos digitales}. La parte izquierda de esta Figura \ref{fig:exHerClasDigi} ilustra una rama de la \textit{ontología recursos digitales}, en la cual el recurso \textit{What is Linked Data?} es instancia de la clase Video. Mientras, la parte derecha de la Figura \ref{fig:exHerClasDigi}, se presenta esta rama después de realizar inferencia. En esta rama, el recurso \textit{What is Linked Data?} es instancia de estas clases: \textit{Video, Multimedia} y \textit{Recurso Digital}.
 
 \begin{figure}[!htb]
@@ -450,7 +528,11 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sirp:}has-webSite} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}anyURI} \\
 \hline
-\textit{\textbf{sirp:}competentIn} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}Competence} \\
+\textit{\textbf{sirp:}has-phoneNo} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sirp:}has-image} & \textit{\textbf{sirp:}Person} & \textit{\textbf{xsd:}anyURI} \\
+\hline
+\textit{\textbf{sirp:}competentIn} & \textit{\textbf{sirp:}Person} & \textit{\textbf{sirp:}Competence} \\
 \hline
 \textit{\textbf{sirp:}expertiseIn} & \textit{\textbf{sirp:}Person} & \textit{\textbf{redes:}TopicRyT} \\
 \hline
@@ -513,15 +595,15 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}TypeArticle} \\
 \hline
+\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Publication} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfCreation} & \textit{\textbf{sird:}Multimedia} & \textit{\textbf{xsd:}integer} \\
+\hline
 \textit{\textbf{sird:}has-yearOfConclusion} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{xsd:}integer} \\
 \hline
-\textit{\textbf{sird:}has-yearOfElaboration} & \textit{\textbf{ }} & \textit{\textbf{xsd:}integer} \\
+\textit{\textbf{sird:}has-yearOfElaboration} & \textit{\textbf{sird:}TechnicalReport} & \textit{\textbf{xsd:}integer} \\
 \hline
 \textit{\textbf{sird:}has-yearOfLastView} & \textit{\textbf{sird:}Webpage} & \textit{\textbf{xsd:}integer} \\
-\hline
-\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Book} & \textit{\textbf{xsd:}integer} \\
-\hline
-\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Paper} & \textit{\textbf{xsd:}integer} \\
 \hline
 \end{tabular}
 \label{tab:dyrrd}
