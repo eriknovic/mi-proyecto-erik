@@ -17,35 +17,36 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de clases para la b\'usqueda de recursos digitales.}}{50}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Declaraciones del Dr. Ricardo Marcelin Jim\'enez en forma de tripletas RDF}}{54}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Declaraciones de v\IeC {\'\i }deo ``What is Linked Data?'' en forma de tripletas RDF}}{55}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{57}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{58}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{59}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{59}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{60}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para el lugar de trabajo.}}{60}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las relaciones profesionales entre personas.}}{61}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{61}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para indicar el a\~no de un recurso digital.}}{62}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para vincular a una organizaci\'on con un recurso digital.}}{62}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{65}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{65}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{66}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{67}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{67}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del \'area.}}{68}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{68}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{69}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{69}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.1 de la cartograf\IeC {\'\i }a de competencias.}}{73}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}}{74}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunci\'on de emplear razonamiento.}}{75}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}}{75}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunci\'on de emplear razonamiento.}}{76}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{77}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{79}
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{80}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{81}
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{82}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Fragmento de la jerarqu\IeC {\'\i }a de la ontolog\IeC {\'\i }a ODARyT4SIR.}}{56}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{58}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{59}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{59}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{60}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{60}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para el lugar de trabajo.}}{61}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las relaciones profesionales entre personas.}}{61}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{62}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para indicar el a\~no de un recurso digital.}}{62}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para vincular a una organizaci\'on con un recurso digital.}}{63}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Axiomas de dominio y rango para modelar las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{66}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Tripletas RDF que describen las relaciones profesionales entre personas del \'area de Redes y Telecomunicaciones.}}{66}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartograf\IeC {\'\i }a de competencias.}}{67}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Ejemplo del comportamiento unidireccional de una propiedad.}}{67}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Ejemplo de simetr\IeC {\'\i }a en una propiedad gen\'erica.}}{68}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Subgrafo RDF con tripletas que indican las relaciones profesionales entre profesores del \'area.}}{68}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Ejemplo de inferencia a partir de la propiedad tiene-colega como propiedad sim\'etrica.}}{69}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Subgrafo RDF de las relaciones conoce-a entre personas del \'area de Redes y Telecomunicaciones.}}{69}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Ejemplo de inferencia a partir de la propiedad conoce-a como propiedad sim\'etrica.}}{70}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.1 de la cartograf\IeC {\'\i }a de competencias.}}{74}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}}{75}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q1.18 mediante la asunci\'on de emplear razonamiento.}}{75}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Consulta SPARQL asociada a la pregunta Q2.6, en la cual no se da por hecho el uso del razonamiento.}}{76}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Simplificaci\'on de la Consulta SPARQL asociada a la pregunta Q2.6 mediante la asunci\'on de emplear razonamiento.}}{77}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Proceso b\'asico de consulta de informaci\'on para un motor de b\'usqueda SPARQL.}}{78}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Ejemplo de modelo sin inferencia para el proceso de consulta de informaci\'on.}}{79}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Consulta de ejemplo para el proceso de consulta de informaci\'on.}}{81}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Ejemplo de modelo con inferencia para el proceso de consulta de informaci\'on.}}{82}
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Consulta simplificada para el proceso de consulta de informaci\'on.}}{83}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Flujo b\'asico de la interacci\'on de un usuario con un servlet.}}{87}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Validaci\'on del acceso de un usuario al prototipo de integraci\'on sem\'antica de recursos.}}{90}

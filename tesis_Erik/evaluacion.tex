@@ -60,58 +60,60 @@ Las cantidades de \textit{recursos persona} son 60 recursos artificiales y 13 re
 
 En nuestra experimentación, algunos \textit{recursos persona} tienen la declaración que los asignan explícitamente a una de estas clases: \textit{Estudiante (sirp:Student)}, \textit{Empleado (sird:Employee)} y \textit{Profesor (sirp:Teacher)}. Otros recursos persona carecen de esta asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de la \textit{ontología cartografía de competencias}. De esta manera, se ve el impacto de hacer razonamiento.
 
-En resumen, se tienen estas \textit{cantidades de recursos} por clase: 51 recursos son profesionistas y 23 son \textit{estudiantes}. Los 51 recursos persona mediante inferencia son asignados a la clase \textit{Profesionista (sirp:Professional)}. De estos 51 profesionistas se tiene que 19 son profesores y 9 son empleados. Por otro lado, de los 23 estudiantes se tiene que 9 recursos están asignados a la clase \textit{Estudiante} y los 14 restantes por inferencia son asignados a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
+En resumen, se tienen estas \textit{cantidades de recursos} por clase: 51 recursos son profesionistas y 23 son \textit{estudiantes}. Los 51 recursos persona mediante inferencia tienen la tripleta que los asigna a la clase \textit{Profesionista (sirp:Professional)}. De estos 51 profesionistas se tiene que 29 son profesores y 21 son empleados. Por otro lado, de los 23 estudiantes se tiene que 11 recursos tienen la tripleta que los asigna a la clase \textit{Estudiante} y los 12 restantes por inferencia tienen la tripleta que los asigna a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
 
-La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} agrupados por clase (\textit{Persona, Documento, Multimedia}) y subclases (\textit{Estudiante, Empleado, Profesor, Investigador, Vídeo, Imagen, Audio, Presentación, Artículo, Tesis, Reporte, Página Web, Libro}). La \textit{primera columna} presenta el nombre de las clases, la segunda presenta el nombre de las subclases, la \textit{tercera} el número de recursos que tienen la declaración que los asigna explícitamente a una clase o subclase, la \textit{cuarta columna} presenta el número de recursos que mediante inferencia obtienen la declaración de asignación a una clase o subclase; en esta columna también se cuentan los recursos que tienen la tripleta explícita.
+La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} agrupados por clase (\textit{Persona, Documento, Multimedia}) y subclases (\textit{Estudiante, Empleado, Profesor, Investigador, Vídeo, Imagen, Audio, Presentación, Artículo, Tesis, Reporte, Página Web, Libro}). La \textit{primera columna} presenta el nombre de las clases, la segunda presenta el nombre de las subclases, la \textit{tercera columna} muestra el número total de recursos que pertenecen a la clase o subclase, la \textit{cuarta columna} muestra el número de recursos que tienen la declaración que los asigna explícitamente a una clase o subclase, la \textit{quita columna} muestra el número de recursos que mediante inferencia obtienen la declaración de asignación a una clase o subclase.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.2}
 \centering
 \caption{Número de recursos de información por clases y subclases.}
-\begin{tabular}{ | >{\centering\arraybackslash}m{1.1in} | >{\centering\arraybackslash}m{1.1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | }
+\begin{tabular}{ | >{\centering\arraybackslash}m{1.0in} | >{\centering\arraybackslash}m{1.0in} | >{\centering\arraybackslash}m{1.0in} | >{\centering\arraybackslash}m{1.0in} | >{\centering\arraybackslash}m{1.0in} | }
 \hline 
-\multirow{2}{*}{\textbf{Clase}} & \multirow{2}{*}{\textbf{Subclase}} & \multicolumn{2}{c|}{\textbf{Número de Recursos}} \\
-\cline{3-4} 
- & & \textbf{Asignación por tripleta explícita} & \textbf{Asignación por tripleta inferida} \\
+\multirow{2}{*}{\textbf{Clase}} & \multirow{2}{*}{\textbf{Subclase}} & \multicolumn{3}{c|}{\textbf{Número de Recursos de Información}} \\
+\cline{3-5} 
+ & & \textbf{Total} & \textbf{Tripleta explícita} & \textbf{Tripleta inferida} \\
 \hline 
 \hline
-\textbf{Recurso de Información} & & 0 & \textbf{1403}\\
+\textbf{Recurso de Información} & & \textbf{1403} & 0 & 1403\\
 \hline
-\textbf{Persona} & & 0 & \textbf{73}\\
+\textbf{Persona} & & \textbf{73} & 0 & 73\\
 \hline
-& Investigador & 0 & 13\\
+& Investigador & 13 & 0 & 13\\
 \hline
-& Profesionista & 0 & 51\\
+& Estudiante & 23 & 11 & 12\\
 \hline
-& Estudiante & 11 & 23\\
+& Profesionista & 51 & 0 & 51\\
 \hline
-& Profesor & 19 & 19\\
+& Profesor & 29 & 29 & 0\\
 \hline
-& Empleado & 9 & 9\\
+& Empleado & 21 & 21 & 0\\
 \hline
-\textbf{Recurso Digital} & & 0 & \textbf{1330}\\
+\textbf{Recurso Digital} & & \textbf{1330} & 0 & 1330\\
 \hline
-\textit{\textbf{Documento}} & & 0 & \textit{\textbf{815}}\\
+\textit{\textbf{Documento}} & & \textit{\textbf{815}} & 0 & 815\\
 \hline
-& Artículo & 89 & 156\\
+& Reporte Técnico & 73 & 34 & 39\\
 \hline
-& Reporte Técnico & 34 & 34\\
+& Página Web & 146 & 79 & 67\\
 \hline
-& Página Web & 79 & 146\\
+& Tesis & 73 & 31 & 42\\
 \hline
-& Tesis & 31 & 73\\
+& Publicación & 523 & 0 & 523\\
 \hline
-& Libro & 185 & 366\\
+& Artículo & 156 & 89 & 67\\
 \hline
-\textit{\textbf{Multimedia}} & & 0 & \textit{\textbf{515}}\\
+& Libro & 366 & 185 & 181\\
 \hline
-& Presentación & 112 & 112\\
+\textit{\textbf{Multimedia}} & & \textit{\textbf{515}} & 0 & 515\\
 \hline
-& Audio & 42 & 42\\
+& Presentación & 112 & 112 & 0\\
 \hline
-& Vídeo & 42 & 42\\
+& Audio & 42 & 42 & 0\\
 \hline
-& Imagen & 77 & 77\\
+& Vídeo & 42 & 42 & 0\\
+\hline
+& Imagen & 77 & 77 & 0\\
 \hline
 \end{tabular}
 \label{tab:noRP}
@@ -166,8 +168,12 @@ Los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 art
 \label{sec:metoexp} 
 Esta experimentación se ha dividido en dos actividades. La primera actividad consiste en la \textit{evaluación de la calidad de los resultados} que proporciona el triplestore Jena. Mientras, la segunda actividad consiste en medir los \textit{tiempos promedios} que toma Jena para: consultar los modelos con/sin inferencia y mostrar los resultados al usuario.
 
-El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es identificar un conjunto básico de consultas para interrogar las ontologías \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. En la Sección \ref{sec:byrKrec} se hizo un análisis e identificación de preguntas base que posteriormente se transformaron a consultas SPARQL. Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
+El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es \textbf{encontrar un conjunto básico de preguntas base} para interrogar nuestro modelo semántico. Esta búsqueda se hace a partir de los dos \textbf{casos de uso}: \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}.
 
+En la Sección \ref{sec:byrKrec} se hizo un análisis y búsqueda de las \textit{principales preguntas} para la integración semántica de recursos de información. Las preguntas identificadas en este análisis, son reutilizadas para nuestra experimentación.
+% se hizo un análisis y búsqueda de las \textit{preguntas básicas}. Estas \textit{preguntas básicas} posteriormente se transforman a consultas SPARQL, de esta manera, se obtiene nuestro conjunto básico de consultas SPARQL.
+
+%Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
 El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, realizamos una \textit{búsqueda manual} de los \textit{recursos relevantes} que responden a las \textit{consultas de experimentación}. Esta búsqueda se hace sobre los recursos de nuestra \textit{memoria corporativa} que está guiada por los \textit{casos de uso}. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
 
 La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número total de recursos que responden a ésta (total de recursos relevantes). De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas (total de recursos relevantes), para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes.
