@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{MMB{\etalchar{+}}06}
+\begin{thebibliography}{RARMJ09}
 
 \bibitem[AALS10]{SemTecRetr}
 S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
@@ -382,6 +382,13 @@ Torcoroma~Vel\'asquez P\'erez, Andr\'es~Puentes Vel\'asquez, and Jaime~Guzm\'an
   Luna.
 \newblock Ontolog\'{i}as: una t\'{e}cnica de representacion de conocimiento.
 \newblock {\em Avances en Sistemas e Inform\'atica}, 8(2), 2011.
+
+\bibitem[RARMJ09]{Rios-alvarado_asemantic}
+Ana~B. Rios-Alvarado, R.~Carolina~Medina Ram\'{\i}rez, and Ricardo
+  Marcel\'{\i}n-Jim{\'e}nez.
+\newblock A semantic web approach to represent and retrieve information in a
+  corporate memory.
+\newblock In {\em OWL: Experiences and Directions Workshop (OWLED)}, 2009.
 
 \bibitem[RC04]{SGBDDIA}
 Peter Rob and Carlos Coronel.

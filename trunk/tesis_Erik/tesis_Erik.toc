@@ -30,12 +30,12 @@
 \contentsline {section}{\numberline {3.3}Resumen y discusi\'on}{37}
 \contentsline {chapter}{\numberline {4}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{43}
 \contentsline {section}{\numberline {4.1}Representaci\'on del conocimiento en los recursos de informaci\'on}{46}
-\contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{56}
-\contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{56}
-\contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{58}
-\contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{62}
+\contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{57}
+\contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{57}
+\contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{59}
+\contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{63}
 \contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{66}
-\contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{69}
+\contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{70}
 \contentsline {chapter}{\numberline {5}Prototipo}{85}
 \contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{111}
 \contentsline {section}{\numberline {6.1}Objetivo de la experimentaci\'on}{111}

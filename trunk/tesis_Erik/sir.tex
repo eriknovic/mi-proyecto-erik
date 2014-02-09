@@ -89,8 +89,9 @@ La Figura \ref{fig:mccu} muestra el diagrama de la memoria corporativa del área 
 
 La siguiente actividad es \textbf{\textit{adquirir el conocimiento o información}} en los recursos de información, mediante la utilización de los dos \textit{casos de uso}. En esta adquisición debe considerarse un hecho importante del \textbf{\textit{marco de trabajo RDF}}, el cual es ``\textit{cualquier persona, lugar, documento, objeto abstracto o físico se representa a partir de una serie de características y relaciones significativas de éste}'' \cite{SurvSemWeb2012}. Por esta razón, la \textit{adquisición del conocimiento} se hace con base en las características y relaciones de los \textit{recursos de información}.
 
-Para representar estas características y/o relaciones en una forma visual, se emplea un diagrama de clases. Por diagrama de clases debe entenderse una manera visual para mostrar un conjunto de clases, características y relaciones \cite{UML}. Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones, así como sus relaciones en un momento dado. En los diagramas de clase, la notación del \textit{Lenguaje de Modelo Unificado} (UML) se utiliza para representar clases, atributos y propiedades.
+Para representar estas características y/o relaciones se emplea un \textit{diagrama de clases} que se define como una forma visual y genérica, para representar la estructura del conocimiento (clases, características y relaciones) de los \textit{recursos de información} existentes en una \textit{memoria corporativa} \cite{UML}. La finalidad de estos diagramas genéricos es permitir representar o modelar este conocimiento con cualquier enfoque de las tecnologías información, por ejemplo, una \textit{base de datos relacional}, un \textit{modelo orientado a objetos} o una \textit{ontología}. La notación empleada para representar clases, atributos y propiedades es el \textit{Lenguaje de Modelo Unificado} (UML).
 
+%Los diagramas de clases se utilizan para especificar y formalizar (modelar) las abstracciones, así como sus relaciones en un momento dado. 
 En la Figura \ref{fig:dccarc} se presentan las clases, atributos (características) y relaciones para el caso de uso cartografía de competencias. Mientras, la Figura \ref{fig:dcbrd} muestra las clases, atributos y relaciones para los documentos y archivos multimedia correspondientes a la búsqueda de recursos digitales.
 
 %%%Diagrama de clases Personas
@@ -109,9 +110,7 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos (característica
 \label{fig:dcbrd}
 \end{figure}
 
-Estos diagramas de clases representan de manera gráfica y genérica la estructura del conocimiento de los \textit{recursos de información} existentes en la \textit{memoria corporativa}. La finalidad de estos diagramas genéricos es permitir representar o modelar este conocimiento con cualquier enfoque de las tecnologías información, por ejemplo, una \textit{base de datos relacional}, un \textit{modelo orientado a objetos} o una \textit{ontología}.
-
-En este marco de referencia, las estructuras del conocimiento (diagramas de clase) se trasladan a modelos semánticos. A continuación, se presentan las equivalencias entre elementos de diagramas de clase a elementos de modelos semánticos.
+En este marco de referencia, las \textit{estructuras del conocimiento} en los \textit{diagramas de clase} se trasladan a \textit{modelos semánticos}. A continuación, se presentan las equivalencias entre elementos de diagramas de clase a elementos de modelos semánticos.
 
 \begin{itemize}
 \item Las clases de un diagrama de clases son clases para un modelo semántico.
@@ -186,7 +185,7 @@ What is Linked Data? & \textit{\textbf{sird:}What-isLinkedData-2012-flv} \\
 \label{tab:urird}
 \end{table}
 
-El segundo paso es asignar un identificador URI para cada propiedad. Estos identificadores se construyen con base en los atributos y relaciones de los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los atributos de las clases son propiedades de dato, mientras las relaciones entre clases son propiedades de objeto. Los identificadores de las propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
+El segundo paso es asignar un identificador (URI) para cada propiedad. Estos identificadores se construyen con base en los atributos y relaciones de los diagramas de clases (Figuras \ref{fig:dccarc} y \ref{fig:dcbrd}). Los atributos de las clases son propiedades de dato, mientras las relaciones entre clases son propiedades de objeto. Los identificadores de las propiedades dependen del caso de uso. Por un lado, si éstas pertenecen a la cartografía de competencias, entonces emplean el prefijo ``\textit{sirp}''. Por otro lado, si pertenecen a la búsqueda de recursos digitales, entonces emplean el prefijo ``\textit{sird}''.
 
 La Tabla \ref{tab:ccprop} presenta los identificadores para las \textit{propiedades de dato} del caso de uso \textit{cartografía de competencias}. Mientras, la Tabla \ref{tab:ccpropObj} muestra los identificadores de las \textit{propiedades objeto} para el mismo caso de uso. Para ambas tablas se tiene la siguiente estructura: la primera columna muestra el atributo o relación y la segunda columna presenta su identificador. 
 
@@ -329,12 +328,13 @@ En la Figura \ref{fig:drper} se muestra la representación del Dr. Ricardo Marcel
 El identificador asociado al recurso \textit{Ricardo Marcelin Jiménez} es ``\textit{\textbf{sirp:}RicardoMarcelin Jimenez}''. En la Figura \ref{fig:drper}, el conjunto de tripletas RDF  indican las siguientes declaraciones:
 
 \begin{itemize}
-\item En el primer recuadro, la tripleta RDF establece que este recurso pertenece a la clase Profesor.
-\item En el segundo recuadro, las tripletas establecen los valores para los atributos \textit{nombre}, \textit{email} y \textit{sitio Web}.
-\item En el tercer recuadro, la tripleta RDF indica el tema o línea de investigación del Dr. Ricardo.
-\item En el cuarto recuadro, se establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en Latinoamérica \cite{Victorino}.
-\item El quito recuadro indica las tripletas RDF que vinculan al Dr. Ricardo con sus colegas: \textit{Miguel López} y \textit{Carolina Medina}. Esta tripleta se utiliza solamente para Profesores y Empleados.
-\item El sexto recuadro establece las habilidades lingüísticas (\textit{lee, habla y escribe}) para distintos idiomas.
+\item La tripleta RDF del primer recuadro indica que este recurso de información es una instancia de la clase Profesor.
+\item Las cuatro tripletas del segundo recuadro establecen los valores para los atributos \textit{nombre}, \textit{email}, \textit{sitio Web} e \textit{imagen}.
+\item Las tripletas del tercer recuadro indican dos relaciones para el Dr. Ricardo Marcelin; la primera tripleta muestra su género y la segunda tripleta muestra su lugar de trabajo. 
+\item La tripleta del cuarto recuadro indica el tema o línea de investigación del Dr. Ricardo.
+\item Las tripletas del del quinto recuadro establecen las habilidades en los temas de Redes y Telecomunicaciones, así como las competencias profesionales que se obtienen a partir de las competencias propuestas en el proyecto Tuning en Latinoamérica \cite{Victorino}.
+\item Las tripletas del sexto recuadro establecen los vínculos profesionales (colegas) del Dr. Ricardo: \textit{Miguel López} y \textit{Carolina Medina}. Estas tripletas de vinculación profesional se utilizan solamente para Profesores y Empleados.
+\item Las tripletas del séptimo recuadro establecen las habilidades lingüísticas (\textit{lee, habla y escribe}).
 \end{itemize}
 
 La Figura \ref{fig:drdig} presenta la representación del vídeo ``\textit{What is Linked Data?}'' en forma de tripletas RDF. La parte izquierda de esta figura, muestra una captura de pantalla de éste vídeo, mientras la parte derecha muestra las declaraciones de este vídeo en forma de tripletas RDF.
@@ -355,6 +355,19 @@ Las tripletas RDF de la Figura \ref{fig:drdig} establecen las siguientes caracte
 \item En el cuarto recuadro, se establecen los temas de Redes y Telecomunicaciones que están  en el contenido de este recurso digital.
 \item En el quinto recuadro, se establecen las tripletas para indicar la sinopsis y el año de creación de este vídeo.
 \end{itemize}
+
+En las descripciones de los recursos de información, un aspecto importante es la relación entre recursos con temas del área de Redes y Telecomunicaciones. Para las personas son las habilidades en los temas de RyT, y para los recursos digitales son los contenidos asociados a los temas de RyT. Estos temas de Redes y Telecomunicaciones están agrupados y jerarquizados en una ontología de dominio (vocabulario de RyT).
+
+Esta ontología vocabulario se hizo a partir de la reutilización y mantenimiento de la Ontología del Dominio del Área de Redes y Telecomunicaciones (ODARyT). ODARyT fue implementada por la \textbf{Ma. Ana Bertha Rios Alvarado}, quien describe a su ontología como un conjunto de 315 conceptos y definiciones de éstos, agrupados semánticamente en los grupos de Redes y Servicios de Telecomunicaciones, Sistemas Distribuidos, Sistemas de Comunicaron Digital y Documento \cite{Rios-alvarado_asemantic}.
+
+La ontología vocabulario, denominada ODARyT4SIR, es parecida a ODARyT, pero ODARyT4SIR no tiene el grupo semántico Documento y tiene una nuevo grupo semántico con los conceptos de Web Semántica. En la Figura \ref{fig:odaryt4sir} se muestra un fragmento de ODARyT4SIR que presenta las cuatro ramas principales de los conceptos del área de RyT: \textit{Redes y Servicios de Telecomunicaciones} (\textbf{N\_and\_ST}), \textit{Sistemas Distribuidos} (\textbf{Distributed\_Systems}), \textit{Sistemas de Comunicaron Digital} (\textbf{Digital\_Communication\_System}) y \textit{Web Semántica} (\textbf{Semantic\_Web}).
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.95\textwidth]{ODARyT4SIR}
+\caption{Fragmento de la jerarquía de la ontología ODARyT4SIR.}
+\label{fig:odaryt4sir}
+\end{figure}
 
 El último paso en la \textit{representación del conocimiento} es la \textbf{\textit{generación}} de \textit{tripletas RDF}, las cuales están asociadas a las declaraciones de los recursos.
 
@@ -546,13 +559,13 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sirp:}researchesOn} & \textit{\textbf{sirp:}Researcher} & \textit{\textbf{xsd:}string} \\
 \hline
-\textit{\textbf{sirp:}has-advisor} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}Professional} \\
-\hline
 \textit{\textbf{sirp:}has-colleague} & \textit{\textbf{sirp:}Professional} & \textit{\textbf{sirp:}Professional} \\
 \hline
-\textit{\textbf{sirp:}studiesIn} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}University} \\
-\hline
 \textit{\textbf{sirp:}worksIn} & \textit{\textbf{sirp:}Professional} & \textit{\textbf{sirp:}Organization} \\
+\hline
+\textit{\textbf{sirp:}has-advisor} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}Professional} \\
+\hline
+\textit{\textbf{sirp:}studiesIn} & \textit{\textbf{sirp:}Student} & \textit{\textbf{sirp:}University} \\
 \hline
 \end{tabular}
 \label{tab:dyrcc}
@@ -585,6 +598,10 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sird:}has-description} & \textit{\textbf{sird:}Multimedia} & \textit{\textbf{xsd:}string} \\
 \hline
+\textit{\textbf{sird:}has-yearOfCreation} & \textit{\textbf{sird:}Multimedia} & \textit{\textbf{xsd:}integer} \\
+\hline
+\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Publication} & \textit{\textbf{xsd:}integer} \\
+\hline
 \textit{\textbf{sird:}has-edition} & \textit{\textbf{sird:}Book} & \textit{\textbf{xsd:}integer} \\
 \hline
 \textit{\textbf{sird:}has-publishingHouse} & \textit{\textbf{sird:}Book} & \textit{\textbf{sirp:}PublishingHouse} \\
@@ -594,10 +611,6 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \textit{\textbf{sird:}publishedByUniversity} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
 \hline
 \textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}TypeArticle} \\
-\hline
-\textit{\textbf{sird:}has-yearOfPublication} & \textit{\textbf{sird:}Publication} & \textit{\textbf{xsd:}integer} \\
-\hline
-\textit{\textbf{sird:}has-yearOfCreation} & \textit{\textbf{sird:}Multimedia} & \textit{\textbf{xsd:}integer} \\
 \hline
 \textit{\textbf{sird:}has-yearOfConclusion} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{xsd:}integer} \\
 \hline
