@@ -1,17 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  9 FEB 2014 16:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.17)  10 FEB 2014 15:25
 entering extended mode
 **sir.tex
-(C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\sir.tex
+(C:\Users\ARTE\Desktop\TesisErikSVN\tesis_Erik\sir.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, greek, gujarati, hindi, hungarian, icelandic, indonesian, inter
-lingua, irish, italian, kannada, kurmanji, latin, latvian, lithuanian, malayala
-m, marathi, mongolian, mongolianlmc, monogreek, ngerman, nynorsk, oriya, panjab
-i, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sl
-ovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukengl
-ish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ! Undefined control sequence.
 l.1 \chapter
             {Integración semántica de recursos de información en una memoria...
@@ -11217,8 +11218,8 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 <argument> \includegraphics 
-                            [angle=90,scale=0.7]{CasoUsoCartComp}
-l.100 ...ics[angle=90,scale=0.7]{CasoUsoCartComp}}
+                            [angle=90,scale=0.8]{CasoUsoCartComp}
+l.100 ...ics[angle=90,scale=0.8]{CasoUsoCartComp}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11244,7 +11245,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 8 in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -13184,10 +13185,10 @@ the matching `\fi'. I've inserted a `\fi'; this might work.
 
  
 Here is how much of TeX's memory you used:
- 34 strings out of 493944
- 476 string characters out of 3148281
- 68988 words of memory out of 3000000
- 3411 multiletter control sequences out of 15000+200000
+ 34 strings out of 493921
+ 479 string characters out of 3147330
+ 69031 words of memory out of 3000000
+ 3422 multiletter control sequences out of 15000+200000
  4653 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  19i,5n,30p,1188b,134s stack positions out of 5000i,500n,10000p,200000b,50000s
