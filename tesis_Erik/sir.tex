@@ -110,12 +110,12 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos (característica
 \label{fig:dcbrd}
 \end{figure}
 
-En este marco de referencia, las \textit{estructuras del conocimiento} en los \textit{diagramas de clase} se trasladan a \textit{modelos semánticos}. A continuación, se presentan las equivalencias entre elementos de diagramas de clase a elementos de modelos semánticos.
+En este marco de referencia, las \textit{estructuras del conocimiento} en los \textit{diagramas de clase} se trasladan a \textit{modelos semánticos}. A continuación, se presentan las equivalencias entre elementos de un diagramas de clase a elementos de un modelos semánticos.
 
 \begin{itemize}
-\item Las clases de un diagrama de clases son clases para un modelo semántico.
-\item Los atributos de un diagrama de clases son propiedades de dato en un modelo semántico.
-\item Las relaciones entre clases de un diagrama de clases son propiedades de objeto en un modelo semántico.
+\item Las clases en un diagrama de clases son clases para un modelo semántico.
+\item Los atributos en un diagrama de clases son propiedades de dato para un modelo semántico.
+\item Las relaciones entre clases en un diagrama de clases son propiedades de objeto para un modelo semántico.
 \end{itemize}
 
 La siguiente actividad es \textbf{\textit{representar el conocimiento explícito}} a partir del uso del \textbf{\textit{marco de referencia RDF}}. Esta representación tiene cuatro pasos: 1) \textit{asignar identificadores a los recursos}, 2) \textit{asignar identificadores a las propiedades}, 3) \textit{reconocer si los valores de las propiedades son otros recursos o literales} y 4) \textit{construir tripletas}.
@@ -364,7 +364,7 @@ La ontología vocabulario, denominada ODARyT4SIR, es parecida a ODARyT, pero ODAR
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.95\textwidth]{ODARyT4SIR}
+\includegraphics[width=0.99\textwidth]{ODARyT4SIR}
 \caption{Fragmento de la jerarquía de la ontología ODARyT4SIR.}
 \label{fig:odaryt4sir}
 \end{figure}
@@ -406,7 +406,7 @@ A continuación, se describen las dos \textit{jerarquías de clases} para la carto
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.82\textwidth]{HerenClassCartComp}}
+\fbox{\includegraphics[width=0.8\textwidth]{HerenClassCartComp}}
 \caption{Jerarquía de clases para los recursos persona}
 \label{fig:jdc}
 \end{figure}
@@ -415,8 +415,8 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.9\textwidth]{ExpInfsubClassPer}}
-\caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso Ricardo Marcelin.}
+\fbox{\includegraphics[width=0.82\textwidth]{ExpInfsubClassPer}}
+\caption{Ejemplo de inferencia a partir de los axiomas de jerarquía de clases y el recurso Ricardo Marcelin.}
 \label{fig:exHerClasPer}
 \end{figure}
 
@@ -426,7 +426,7 @@ En la Figura \ref{fig:exHerClasPer} se presenta un ejemplo de inferencia a parti
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[height=3.2in, width=0.95\textwidth]{HerenClassRecDigi}}
+\fbox{\includegraphics[height=3.6in, width=0.99\textwidth]{HerenClassRecDigi}}
 \caption{Jerarquía de clases para los recursos digitales}
 \label{fig:jdrd}
 \end{figure}
@@ -436,15 +436,13 @@ En la Figura \ref{fig:exHerClasDigi} se presenta un ejemplo para la inferencia a
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.85\textwidth]{ExpInfsubClassDigi}}
+\fbox{\includegraphics[width=0.9\textwidth]{ExpInfsubClassDigi}}
 \caption{Ejemplo de inferencia para los axiomas de jerarquía de clases y el uso del recurso What is Linked Data?}
 \label{fig:exHerClasDigi}
 \end{figure}
 
 \subsection{Herencia de propiedades}
-Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos en los caso de uso; averiguando que propiedades tienen un significado común.
-
-La siguiente lista describe las \textit{jerarquías de propiedades} que se identificaron para la \textit{cartografía de competencias}. Para cada item de esta lista, se presenta un diagrama que muestra esta jerarquía en forma de un grafo.
+Las propiedades al igual que las clases, pueden generalizarse mediante propiedades comunes. Esta jerarquización se hace mediante el análisis de los atributos y relaciones de los caso de uso; averiguando que propiedades tienen un significado común. La siguiente lista describe las \textit{jerarquías de propiedades} que se identificaron para la \textit{cartografía de competencias}. Para cada item de esta lista, se presenta un diagrama que muestra esta jerarquía en forma de un grafo.
 
 \begin{itemize}
 \item \textbf{\textit{Lee}}, \textbf{\textit{habla}} y \textbf{\textit{escribe}} son propiedades para indicar las habilidades lingüísticas de una persona. Estas propiedades pueden generalizarse a partir de la propiedad \textbf{\textit{tiene lenguaje}}, con el fin de indicar que una persona tiene algún conocimiento lingüístico en un idioma. Por ello, las propiedades \textit{lee, habla y escribe} son subpropiedades de la propiedad \textit{tiene lenguaje}. En la Figura \ref{fig:HerPropLang} se muestra la jerarquía de propiedades para describir las habilidades lingüísticas de las personas.
@@ -637,7 +635,7 @@ En la Figura \ref{fig:exTriplDyRPer} se muestra un grafo RDF, en el cual las tri
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.76\textwidth]{exTriplDyRPer}}
+\fbox{\includegraphics[width=0.8\textwidth]{exTriplDyRPer}}
 \caption{Tripletas RDF que describen las relaciones profesionales entre personas del área de Redes y Telecomunicaciones.}
 \label{fig:exTriplDyRPer}
 \end{figure}
@@ -646,7 +644,7 @@ En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación pr
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[height=4.0in, width=0.90\textwidth]{exInfDyRPer}}
+\fbox{\includegraphics[height=4.2in, width=0.90\textwidth]{exInfDyRPer}}
 \caption{Ejemplo de inferencia para los axiomas de Dominio y Rango que pertenecen a la cartografía de competencias.}
 \label{fig:exInfDyRPer}
 \end{figure}
@@ -654,7 +652,7 @@ En la Figura \ref{fig:exInfDyRPer}, se presentan las tripletas de vinculación pr
 
 \subsection{Simetría en las propiedades}
 \label{cap:simprop} 
-Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{individuo p} y termina en \textit{individuo q}. En la Figura\ref{fig:unidirecc} se ejemplifica este comportamiento unidireccional, donde la relación \textit{p tiene género q}, indica que todos los \textit{individuos p} se relacionan con un \textit{individuo q}.
+Una tripleta RDF es una relación unidireccional, es decir, parte de un \textit{individuo p} y termina en \textit{individuo q}. En la Figura \ref{fig:unidirecc} se ejemplifica este comportamiento unidireccional, donde la relación \textit{p tiene género q}, indica que todos los \textit{individuos p} se relacionan con un \textit{individuo q}.
 
 \begin{figure}[!htb]
 \centering
@@ -702,8 +700,6 @@ La Figura \ref{fig:infSymColl} muestra el subgrafo RDF inferido. Este subgrafo s
 \begin{itemize}
 \item La propiedad \textbf{\textit{conoce a (sirp:knows)}} es una relación profesional para la interacción entre las personas (profesor, empleado o estudiante) del área de Redes y Telecomunicaciones. Esta propiedad, al igual que la propiedad \textit{tiene colega}, tiene un comportamiento bidireccional. Por ello, la propiedad \textit{conoce a} es una propiedad simétrica.
 
-La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relaciones \textit{conoce a} tienen solo una dirección. En esta Figura, las tripletas indican lo siguiente: \textit{Erik Alarcón conoce a la Dra. Carolina Medina, Dr. Héctor Pérez y Laura Méndez}, \textit{Laura Méndez conoce a la Dra. Carolina Medina y Dr. Enrique Rodríguez}, la \textit{Dra. Carolina conoce al Dr. Héctor Pérez} y el \textit{Dr. Enrique Rodríguez conoce a la Dra. Carolina Medina}.
-
 \begin{figure}[!htb]
 \centering
 \fbox{\includegraphics[height=1.7in,width=0.85\textwidth]{triplKnows}}
@@ -711,7 +707,7 @@ La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relac
 \label{fig:triplKnows}
 \end{figure}
 
-La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKnows} después de realizar el proceso de inferencia, donde la propiedad \textit{conoce a} tiene la característica de ser simétrica. En esta Figura \ref{fig:InfKnows}, todos los recursos (personas) son sujeto y objeto en las tripletas RDF. Por ejemplo, el Dr. Héctor Pérez en la Figura \ref{fig:triplKnows} no tiene sus propias declaraciones que indican a quienes conoce. Mientras, el Dr. Héctor Pérez en la Figura \ref{fig:InfKnows} sí tiene sus propias declaraciones que indican que conoce a la Dra. Carolina Medina y Erik Alarcón.
+La Figura \ref{fig:triplKnows} ejemplifica un subgrafo RDF, en el cual las relaciones \textit{conoce a} tienen solo una dirección. En esta Figura, las tripletas indican lo siguiente: \textit{Erik Alarcón conoce a la Dra. Carolina Medina, Dr. Héctor Pérez y Laura Méndez}, \textit{Laura Méndez conoce a la Dra. Carolina Medina y Dr. Enrique Rodríguez}, la \textit{Dra. Carolina conoce al Dr. Héctor Pérez} y el \textit{Dr. Enrique Rodríguez conoce a la Dra. Carolina Medina}.
 
 \begin{figure}[!htb]
 \centering
@@ -720,6 +716,8 @@ La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKno
 \label{fig:InfKnows}
 \end{figure}
 \end{itemize}
+
+La Figura \ref{fig:InfKnows} presenta el subgrafo de la Figura \ref{fig:triplKnows} después de realizar el proceso de inferencia, donde la propiedad \textit{conoce a} tiene la característica de ser simétrica. En esta Figura \ref{fig:InfKnows}, todos los recursos (personas) son sujeto y objeto en las tripletas RDF. Por ejemplo, el Dr. Héctor Pérez en la Figura \ref{fig:triplKnows} no tiene sus propias declaraciones que indican a quienes conoce. Mientras, el Dr. Héctor Pérez en la Figura \ref{fig:InfKnows} sí tiene sus propias declaraciones que indican que conoce a la Dra. Carolina Medina y Erik Alarcón.
 
 \section{Búsqueda y recuperación de información en el modelo}
 \label{sec:byrKrec} 
@@ -816,7 +814,7 @@ La Figura \ref{fig:q112rql} presenta la consulta SPARQL que está asociada a la p
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.9\textwidth]{q112rql}}
+\fbox{\includegraphics[width=0.85\textwidth]{q112rql}}
 \caption{Consulta SPARQL asociada a la pregunta Q1.1 de la cartografía de competencias.}
 \label{fig:q112rql}
 \end{figure}
@@ -837,7 +835,7 @@ En esta consulta SPARQL, la parte importante es el conjunto de \textit{patrones 
 
 \begin{figure}[!htb]
 \centering
-\fbox{\includegraphics[width=0.9\textwidth]{q2rqlSR}}
+\fbox{\includegraphics[width=0.85\textwidth]{q2rqlSR}}
 \caption{Consulta SPARQL asociada a la pregunta Q1.18, en la cual no se da por hecho el uso del razonamiento.}
 \label{fig:q2rqlSR}
 \end{figure}

@@ -7,7 +7,7 @@ Con base en lo realizado y descrito en este documento, nosotros concluimos lo si
 	\begin{itemize}
 	\item Desarrollamos un \textit{marco de referencia} para la \textit{integración semántica} de los \textit{recursos de información} existentes en una \textit{memoria corporativa}.
 	\item Implementamos un \textit{modelo semántico} que representa el conocimiento explícito e implícito de los \textit{recursos de información}.
-	\item Implementamos un prototipo de interfaz gráfica de usuario que permite a los usuarios una interacción amigable para la integración semántica de los recursos de información.
+	\item Implementamos un prototipo con interfaz gráfica de usuario que permite a los mismos una interacción amigable para la integración semántica de los recursos de información.
 	\item Evaluamos los resultados devueltos y tiempos de procesamiento en la integración semántica para el dominio de redes y telecomunicaciones.
 	\end{itemize}
 \item Con respecto a nuestro objetivo principal, decimos que al alcanzar nuestros objetivos particulares, nosotros contribuimos a la \textit{integración semántica} de los \textit{recursos de información} existentes en una memoria corporativa.
@@ -15,33 +15,32 @@ Con base en lo realizado y descrito en este documento, nosotros concluimos lo si
 	\begin{itemize}
 	\item Representar el conocimiento explícito (características y/o relaciones) de los \textit{recursos de información} en un modelo semántico; solucionando las dificultades de heterogeneidad en formato, contenido y estructura.
 	\item Enriquecer el conocimiento, mediante la introducción de \textit{reglas de inferencia} (Ver Sección \ref{sec:reginf} y \ref{sec:enrKrec}) en el modelo semántico, para representar el conocimiento implícito en los recursos y el dominio de aplicación (Redes y Telecomunicaciones).
-	\item Extender o modificar un modelo semántico, gracias a que el conocimiento explícito e implícito están escritos en un lenguaje estándar (Ver Secciones \ref{sec:rdf} y \ref{sec:reginf}). De esta manera, los modelos semánticos pueden adaptarse al conocimiento cambiante o explosivo de la memoria corporativa.
-	\item Compartir un modelo semántico, gracias a que éste está escrito en un lenguaje estándar y puede utilizarse en cualquier plataforma (Linux, Mac y Windows). De esta manera, mediante el uso de aplicaciones genéricas se puede visualizar o modificar la información en el modelo.
+	\item Extender o modificar un modelo semántico, gracias a que el conocimiento explícito e implícito están escritos en un lenguaje estándar (Ver Secciones \ref{sec:rdf} y \ref{sec:reginf}). De esta manera, el modelo semántico propuesto puede adaptarse al conocimiento cambiante y/o explosivo de la memoria corporativa.
+	\item Compartir el modelo semántico, gracias a que éste está escrito en un lenguaje estándar y puede utilizarse en cualquier plataforma (Linux, Mac y Windows). De esta manera, mediante el uso de aplicaciones genéricas se puede visualizar o modificar la información en el modelo.
 	\item Buscar y recuperar información en un modelo semántico, mediante el uso de un lenguaje estándar (Ver Sección \ref{sec:lsparql}). Así como, el uso de un proceso para hacer explícito el conocimiento implícito de un modelo semántico, con la finalidad de mejorar los resultados de la búsqueda en el modelo (Ver Sección \ref{sec:result}).
 	\end{itemize}
 \item Las aportaciones de nuestra investigación son:
 	\begin{itemize}
-	\item Un \textit{marco de referencia} para lograr la integración semántica de recursos de información.
+	\item Un \textit{marco de referencia} para lograr la integración semántica de recursos de información en una memoria corporativa.
 	\item Un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa (Redes y Telecomunicaciones).
 	\item Un prototipo para la búsqueda y consulta de información.
-	\item Los resultados de nuestra evaluación experimental.
 	\item Un par de scripts para la generación automática y controlada de descripciones RDF, para poblar la base de conocimiento.
 	\end{itemize}
 \end{itemize}
 
 %%%Qué hicimos
-En este documento presentamos un estudio y aplicación sobre el uso de las \textit{tecnologías semánticas} (TS) para realizar la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. Por \textit{integración semántica} debe entenderse la \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos recursos son documentos basados en texto y archivos multimedia en diferentes formatos, con contenido variado y con distintas estructuras (estructurado, semi-estructurado, sin estructura), también otros recursos de información en este trabajo son las personas.
+En este documento presentamos un estudio sobre el uso de las \textit{tecnologías semánticas} (TS) para la \textit{integración semántica} de los \textit{recursos de información} en una \textit{memoria corporativa}. Por \textit{integración semántica} debe entenderse la \textit{búsqueda y recuperación} significativa de información existente en los \textit{recursos de información}. Estos recursos son documentos basados en texto y archivos multimedia en diferentes formatos, con contenido variado y con distintas estructuras (estructurado, semi-estructurado, sin estructura). Otros recursos de información en este trabajo son las personas.
 
 %%%Por qué hicimos ésto
-Este trabajo tiene dos finalidades. Por un lado, esta investigación propone un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa, correspondiente al dominio de aplicación de Redes y Telecomunicaciones. Conocimiento residente en personas y recursos digitales. Por otro lado, hacer la \textit{búsqueda y recuperación inteligente de información} para responder las preguntas de los usuarios de la memoria.
+Por un lado, esta investigación propone un modelo semántico (ontología) que representa el conocimiento de una memoria corporativa, correspondiente al dominio de aplicación de Redes y Telecomunicaciones. Conocimiento residente en personas y recursos digitales. Por otro lado, hacer la \textit{búsqueda y recuperación inteligente de información} para responder las preguntas de los usuarios de la memoria.
 
 %%Nuestro prototipo realmente fácilita la interacción entre usuarios y un modelo semántico.
-Así mismo, nuestro trabajo propone un \textit{marco de referencia} para lograr la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta propuesta comprende tres actividades. La primera actividad es construir un modelo para representar el \textit{conocimiento explícito} de los \textit{recursos de información} existentes en una memoria corporativa. La segunda actividad es introducir \textit{reglas de inferencia} para enriquecer al modelo con conocimiento implícito existente en la memoria corporativa. La tercera actividad es \textit{buscar y recuperar información} existente en la memoria corporativa mediante la interrogación del modelo semántico.
+Se propone un \textit{marco de referencia} para lograr la \textit{integración semántica de recursos} en una \textit{memoria corporativa}. Esta propuesta comprende tres actividades. La primera actividad es proponer un modelo para representar el conocimiento existente en los \textit{recursos de información} pertenecientes a una memoria corporativa. La segunda actividad es introducir \textit{reglas de inferencia} para enriquecer al modelo con conocimiento implícito existente en la memoria corporativa. La tercera actividad es \textit{buscar y recuperar información} existente en la memoria corporativa mediante la interrogación del modelo semántico.
 
 %%%Qué hicimos en cada etapa con las tecnologías semánticas
 %%%Ventajas del uso de las tecnologías semánticas
 
-Nosotros decidimos explorar las \textit{tecnologías semánticas} para la integración de \textit{recursos de información} dadas las ventajas siguientes:
+Se exploraron las \textit{tecnologías semánticas} para la integración de \textit{recursos de información} dadas las ventajas siguientes:
 
 \begin{itemize}
 \item El \textit{estándar RDF} permite representar cualquier recurso, sea un ser vivo, un archivo digital, un país, ciudad, un edificio, una organización o un concepto abstracto. De esta manera, se contribuye a la integración de información de \textit{recursos de información} que son heterogéneos en formato, contenido y estructura.

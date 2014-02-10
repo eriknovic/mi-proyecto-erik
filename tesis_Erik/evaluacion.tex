@@ -58,9 +58,7 @@ La finalidad del uso de \textit{información simulada} es tener rápidamente un vo
 
 Las cantidades de \textit{recursos persona} son 60 recursos artificiales y 13 recursos reales, dando un total de 73 personas. Mientras, las cantidades para los \textit{recursos digitales} son 16 recursos reales y 1314 recursos simulados, un total de 1330 recursos digitales.
 
-En nuestra experimentación, algunos \textit{recursos persona} tienen la declaración que los asignan explícitamente a una de estas clases: \textit{Estudiante (sirp:Student)}, \textit{Empleado (sird:Employee)} y \textit{Profesor (sirp:Teacher)}. Otros recursos persona carecen de esta asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de la \textit{ontología cartografía de competencias}. De esta manera, se ve el impacto de hacer razonamiento.
-
-En resumen, se tienen estas \textit{cantidades de recursos} por clase: 51 recursos son profesionistas y 23 son \textit{estudiantes}. Los 51 recursos persona mediante inferencia tienen la tripleta que los asigna a la clase \textit{Profesionista (sirp:Professional)}. De estos 51 profesionistas se tiene que 29 son profesores y 21 son empleados. Por otro lado, de los 23 estudiantes se tiene que 11 recursos tienen la tripleta que los asigna a la clase \textit{Estudiante} y los 12 restantes por inferencia tienen la tripleta que los asigna a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
+En esta experimentación, algunos \textit{recursos de información} (persona y digitales) tienen la declaración que los asignan explícitamente a una clase (Estudiante, Empleado, Profesor, Vídeo, Imagen, Audio, Presentación, Artículo, Libro, Tesis, Reporte Técnico o Página Web). Mientras, otros \textit{recursos de información} carecen de esta tripleta de asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de nuestros modelos semánticos (cartografía de competencias y búsqueda de recursos digitales). 
 
 La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} agrupados por clase (\textit{Persona, Documento, Multimedia}) y subclases (\textit{Estudiante, Empleado, Profesor, Investigador, Vídeo, Imagen, Audio, Presentación, Artículo, Tesis, Reporte, Página Web, Libro}). La \textit{primera columna} presenta el nombre de las clases, la segunda presenta el nombre de las subclases, la \textit{tercera columna} muestra el número total de recursos que pertenecen a la clase o subclase, la \textit{cuarta columna} muestra el número de recursos que tienen la declaración que los asigna explícitamente a una clase o subclase, la \textit{quita columna} muestra el número de recursos que mediante inferencia obtienen la declaración de asignación a una clase o subclase.
 
@@ -119,9 +117,18 @@ La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} ag
 \label{tab:noRP}
 \end{table}
 
-De la misma manera que los \textit{recursos persona}, algunos \textit{recursos digitales} tienen la declaración que los asignan explícitamente a una clase. Otros recursos carecen de esta asignación, pero con inferencia éstos pueden clasificarse en una o varias clases de la \textit{ontología búsqueda de recursos digitales}.
+En esta Tabla \ref{tab:noRP}, los 73 recursos persona se clasifican en: 51 \textit{profesionistas} y 23 \textit{estudiantes}. De los 51 profesionistas, ninguno tiene la tripleta que los asigna a la clase \textit{Profesionista (sirp:Professional)}, esta asignación se hace mediante inferencia. Los 51 profesionistas están agrupados en 29 \textit{profesores} y 21 \textit{empleados}, los cuales tienen la tripleta explícita de asignación a las clases \textit{Estudiante (Student)} o \textit{Empleado (Employee)}. El otro profesionista es un estudiante que realiza actividades laborales en la UAM, y por ello este recurso pertenece a la clase Profesionista. Por otro lado, de los 23 estudiantes se tiene que 11 recursos tienen la tripleta que los asigna a la clase \textit{Estudiante} y los 12 restantes por inferencia obtienen la tripleta que los asigna a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
 
-Los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 artículos, 366 libros, 73 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. De los 156 artículos, 89 recursos tienen la declaración explícita a la clase \textit{Artículo (sird:Paper)}, mientras los otros 67 recursos a partir de inferencia, se generan las respectivas tripleta que los asigna a la clase \textit{Artículo (sird:Paper)}. En los libros, 185 recursos tienen la declaración explícita y 181 recursos mediante inferencia tienen la declaración a la clase \textit{Libro (sird:Book)}. De la misma manera, 79 recursos tienen la declaración explícita a la clase \textit{Página Web (sird:PageWeb)} y 31 recursos a la clase \textit{Tesis (sird:Thesis)}. Mientras, 67 recursos mediante inferencia pertenecen a la clase  \textit{Página Web} y 42 a la clase \textit{Tesis}. Por último, los 1330 recursos se clasifican en 815 \textit{Documentos (sird:Document)} y 515 \textit{Multimedia (sird:Multimedia)}. Las declaraciones a estas dos clases se obtienen mediante inferencia.
+Mientras, los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 artículos, 366 libros, 73 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. De los 156 artículos, 89 recursos tienen la declaración explícita a la clase \textit{Artículo (sird:Paper)}, mientras los otros 67 recursos a partir de inferencia, se generan las respectivas tripleta que los asigna a la clase \textit{Artículo (sird:Paper)}. En los libros, 185 recursos tienen la declaración explícita y 181 recursos mediante inferencia tienen la declaración a la clase \textit{Libro (sird:Book)}. De la misma manera, 79 recursos tienen la declaración explícita a la clase \textit{Página Web (sird:PageWeb)} y 31 recursos a la clase \textit{Tesis (sird:Thesis)}. Mientras, 67 recursos mediante inferencia pertenecen a la clase  \textit{Página Web} y 42 a la clase \textit{Tesis}. Por último, los 1330 recursos se clasifican en 815 \textit{Documentos (sird:Document)} y 515 \textit{Multimedia (sird:Multimedia)}. Las declaraciones a estas dos clases se obtienen mediante inferencia.
+
+Con base en estas cantidades de \textit{recursos de información}, se construye el diagrama de Venn que muestra gráficamente las clases, subclases y recursos de nuestro modelo semántico. La Figura \ref{fig:venn} muestra este diagrama de Venn, en el cual, los círculos representan las clases y subclases, mientras los puntos representan los recurso de información. En esta Figura, los recursos que están en los círculos con tonalidad amarilla, son recursos que mediante inferencia se clasifican en las siguientes clases: \textit{Estudiante}, \textit{Investigador}, \textit{Profesionista}, \textit{Artículo}, \textit{Libro}, \textit{Tesis}, \textit{Página Web} o \textit{Reporte Técnico}.
+
+\begin{figure}[hp]
+\centering
+\fbox{\includegraphics[angle=90,scale=0.54]{DiagramaVenn}}
+\caption{Diagrama de Venn de los recursos de información existentes en el modelo semántico.}
+\label{fig:venn}
+\end{figure}
 
 %La Tabla \ref{tab:noRD} presenta las cantidades de recursos digitales por clases de la \textit{ontología recursos digitales}. Esta Tabla \ref{tab:noRD} presenta la misma estructura de la Tabla \ref{tab:noRP}.
 
@@ -309,7 +316,7 @@ La segunda fase, consiste en emplear dos métricas de \textit{recuperación de la 
 \item La \textbf{\textit{exhaustividad (recall)}} \cite{Nasraoui} es ``\textit{el número de recursos relevantes que han sido recuperados, entre el número total de recursos relevantes en la base de conocimientos}'' \cite{RecYPres}. La exhaustividad se presenta en la Ecuación \ref{ec:exa}.
 
 \begin{equation}
-	Exhaustividad = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\: recursos\: relevantes}
+	Exhaustividad = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\: recursos\: relevantes\: existentes}
 	\label{ec:exa}
 \end{equation}
 
@@ -319,17 +326,17 @@ La segunda fase, consiste en emplear dos métricas de \textit{recuperación de la 
 \item La \textbf{\textit{precisión (precision)}} \cite{Nasraoui} es ``\textit{el número de recursos relevantes que han sido recuperados, entre el número de recursos recuperados}'' \cite{RecYPres}. La precisión se presenta en la Ecuación \ref{ec:pre}.
 
 \begin{equation}
-	Precisi\acute{o}n = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\:recursos\: recuperados\:}
+	Precisi\acute{o}n = \frac{N\acute{u}mero\: de\: recursos\: relevantes\: recuperados}{Total\: de\:recursos\: recuperados}
 	\label{ec:pre}
 \end{equation}
 \end{itemize}
 
-En las ecuaciones de la exhaustividad y precisión, los divisores y dividendos son elementos que se han encontrado en esta primer actividad. En resumen, éstos son los elementos en las dos ecuaciones:
+%En las ecuaciones de la exhaustividad y precisión, los divisores y dividendos son elementos que se han encontrado en esta primer actividad. En resumen, éstos son los elementos en las dos ecuaciones
 
-\begin{itemize}
-\item \textit{Exhaustividad}: La \textit{cantidad de elementos relevantes recuperados} es el \textit{número de recursos relevantes que proporciona el script para una consulta}; esta información se obtiene en el etapa uno de este cuarto paso. Mientras, el número de \textit{elementos relevantes en la base de conocimiento} es la \textit{cantidad de resultados de nuestra búsqueda manual} que están en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
-\item \textit{Precisión}: La \textit{cantidad de elementos relevantes recuperados} es el \textit{número de recursos relevantes que proporciona el script para una consulta}. Mientras, \textit{el total de elementos recuperados en la base de conocimiento} es la cantidad de \textit{recursos dados por el script, sin el análisis de los recursos relevantes}.
-\end{itemize}
+%\begin{itemize}
+%\item \textit{Exhaustividad}: La \textit{cantidad de elementos relevantes recuperados} es el \textit{número de recursos relevantes que proporciona el script para una consulta}; esta información se obtiene en el etapa uno de este cuarto paso. Mientras, el número de \textit{elementos relevantes en la base de conocimiento} es la \textit{cantidad de resultados de nuestra búsqueda manual} que están en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
+%\item \textit{Precisión}: La \textit{cantidad de elementos relevantes recuperados} es el \textit{número de recursos relevantes que proporciona el script para una consulta}. Mientras, \textit{el total de elementos recuperados en la base de conocimiento} es la cantidad de \textit{recursos dados por el script, sin el análisis de los recursos relevantes}.
+%\end{itemize}
 
 El objetivo de emplear estas dos métricas, es evaluar las capacidades de \textit{sistemas de recuperación de la información}, en particular, nosotros evaluamos al triplestores Jena. La \textit{exhaustividad} evalúa la habilidad de Jena para encontrar los recursos relevantes en una ontología, mientras la \textit{precisión} evalúa la habilidad de Jena para filtrar los recursos relevantes \cite{Cleverdon68}.
 
@@ -664,7 +671,7 @@ Q2.10 & 11 & 3398\\
 
 El análisis de las Tablas \ref{tab:rrRP}, \ref{tab:rrRD}, \ref{tab:tiempRP} y \ref{tab:tiempRD} arroja varios aspectos significativos en relación a los \textit{recursos relevantes recuperados}. Si no se emplea inferencia, entonces se tienen los siguientes hechos. 1) En algunos casos, una consulta al conocimiento explícito recupera todos los recursos relevantes y los tiempos de respuesta son pequeños (menores a un segundo). 2) En otros casos, algunas consultas descartan varios recursos que sí responden la consulta. Esto se debe a que algunos recursos carecen de una determinada tripleta.
 
-Si se emplea inferencia, entonces Jena puede recuperar todos los recursos esperados, porque el motor de inferencia permite inferir algunas tripletas en \textit{nuestras ontologías}. Estas tripletas inferidas son criterios de búsqueda en nuestra experimentación. Pero, el uso de inferencia consume mayor tiempo, porque el \textit{motor de búsqueda} invierte mayor tiempo en inferir más tripletas de nuestros grafos RDF.
+\textbf{Si se emplea inferencia, entonces nuestro buscador recupera más recursos pertinentes}, porque el motor de inferencia permite inferir algunas tripletas en \textit{nuestras ontologías}. Estas tripletas inferidas son criterios de búsqueda en nuestra experimentación. Pero, el uso de inferencia consume mayor tiempo, porque el \textit{motor de búsqueda} invierte mayor tiempo en inferir más tripletas de nuestros grafos RDF.
 
 Como bien lo indica nuestra experimentación, para cada consulta el número de recursos relevantes recuperados con inferencia es igual al número de recursos relevantes esperados. Por lo tanto, nosotros concluimos que el \textit{uso de inferencia} en una ontología puede mejorar la búsqueda y recuperación de \textit{recursos relevantes}, ya que al emplear la inferencia para generar nuevas tripletas (materialización), se puede completar y mejorar el conocimiento en nuestros modelos, de esta manera, un motor de búsqueda SPARQL puede comparar este conocimiento y recuperar recursos significativos.
 

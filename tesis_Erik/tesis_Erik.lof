@@ -19,10 +19,10 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Declaraciones de v\IeC {\'\i }deo ``What is Linked Data?'' en forma de tripletas RDF}}{55}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Fragmento de la jerarqu\IeC {\'\i }a de la ontolog\IeC {\'\i }a ODARyT4SIR.}}{56}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos persona}}{58}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso Ricardo Marcelin.}}{59}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ejemplo de inferencia a partir de los axiomas de jerarqu\IeC {\'\i }a de clases y el recurso Ricardo Marcelin.}}{58}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Jerarqu\IeC {\'\i }a de clases para los recursos digitales}}{59}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Ejemplo de inferencia para los axiomas de jerarqu\IeC {\'\i }a de clases y el uso del recurso What is Linked Data?}}{60}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{60}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las habilidades ling\"u\IeC {\'\i }sticas.}}{61}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para el lugar de trabajo.}}{61}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para las relaciones profesionales entre personas.}}{61}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Jerarqu\IeC {\'\i }a de propiedades para describir el contenido de un recurso digital.}}{62}
@@ -74,6 +74,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interfaz Web: mostrar detalles del libro Using \textit {Ontologies in the Semantic Web: A Survey}}}}{109}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Interfaz Web: mostrar detalles del v\IeC {\'\i }deo \textit {The Semantic Web - An Overview}}}}{109}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Venn de los recursos de informaci\'on existentes en el modelo sem\'antico.}}{116}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

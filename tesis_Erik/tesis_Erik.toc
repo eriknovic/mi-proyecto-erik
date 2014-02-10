@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {4.1}Representaci\'on del conocimiento en los recursos de informaci\'on}{46}
 \contentsline {section}{\numberline {4.2}Enriquecimiento del conocimiento en el modelo}{57}
 \contentsline {subsection}{\numberline {4.2.1}Herencia de clases}{57}
-\contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{59}
+\contentsline {subsection}{\numberline {4.2.2}Herencia de propiedades}{60}
 \contentsline {subsection}{\numberline {4.2.3}Dominio y rango de propiedades}{63}
-\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{66}
+\contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{67}
 \contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{70}
 \contentsline {chapter}{\numberline {5}Prototipo}{85}
 \contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{111}
@@ -43,11 +43,11 @@
 \contentsline {section}{\numberline {6.3}Experimentaci\'on}{112}
 \contentsline {section}{\numberline {6.4}Sujetos de experimentaci\'on}{112}
 \contentsline {section}{\numberline {6.5}Metodolog\IeC {\'\i }a}{115}
-\contentsline {section}{\numberline {6.6}Resultados}{120}
-\contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{127}
-\contentsline {section}{\numberline {7.1}Recomendaciones}{130}
-\contentsline {chapter}{Appendices}{133}
-\contentsline {chapter}{Ap\'endice \numberline {A}Acr\'onimos}{135}
-\contentsline {chapter}{Ap\'endice \numberline {B}Algoritmos para le generaci\'on de datos simulados}{137}
-\contentsline {chapter}{Ap\'endice \numberline {C}Transformaci\'on de preguntas a consultas SPARQL}{145}
-\contentsline {chapter}{Bibliograf\'{\i }a}{157}
+\contentsline {section}{\numberline {6.6}Resultados}{121}
+\contentsline {chapter}{\numberline {7}Conclusiones y Recomendaciones}{129}
+\contentsline {section}{\numberline {7.1}Recomendaciones}{132}
+\contentsline {chapter}{Appendices}{135}
+\contentsline {chapter}{Ap\'endice \numberline {A}Acr\'onimos}{137}
+\contentsline {chapter}{Ap\'endice \numberline {B}Algoritmos para le generaci\'on de datos simulados}{139}
+\contentsline {chapter}{Ap\'endice \numberline {C}Transformaci\'on de preguntas a consultas SPARQL}{147}
+\contentsline {chapter}{Bibliograf\'{\i }a}{159}
