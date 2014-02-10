@@ -97,7 +97,7 @@ En la Figura \ref{fig:dccarc} se presentan las clases, atributos (característica
 %%%Diagrama de clases Personas
 \begin{figure}[hp]
 \centering
-\fbox{\includegraphics[angle=90,scale=0.7]{CasoUsoCartComp}}
+\fbox{\includegraphics[angle=90,scale=0.8]{CasoUsoCartComp}}
 \caption{Diagrama de clases para la cartografía competencias.}
 \label{fig:dccarc}
 \end{figure}
@@ -586,7 +586,7 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sird:}has-fileExtension} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{sird:}Extension} \\
 \hline
-\textit{\textbf{sird:}has-languageSource} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{sird:}Language} \\
+\textit{\textbf{sird:}has-languageSource} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{sirp:}Language} \\
 \hline
 \textit{\textbf{sird:}has-topic} & \textit{\textbf{sird:}DigitalResource} & \textit{\textbf{redes:}TopicRyT} \\
 \hline
@@ -604,11 +604,13 @@ La Tabla \ref{tab:dyrcc} presenta el \textbf{\textit{dominio}} y \textbf{\textit
 \hline
 \textit{\textbf{sird:}has-publishingHouse} & \textit{\textbf{sird:}Book} & \textit{\textbf{sirp:}PublishingHouse} \\
 \hline
+\textit{\textbf{sird:}has-keyword} & \textit{\textbf{sird:}Paper} & \textit{\textbf{xsd:}string} \\
+\hline
+\textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sird:}TypeArticle} \\
+\hline
 \textit{\textbf{sird:}publishedInJournal} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}Journal} \\
 \hline
-\textit{\textbf{sird:}publishedByUniversity} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
-\hline
-\textit{\textbf{sird:}isTypeOfArticle} & \textit{\textbf{sird:}Paper} & \textit{\textbf{sirp:}TypeArticle} \\
+\textit{\textbf{sird:}has-institutionInvolved} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{sirp:}University} \\
 \hline
 \textit{\textbf{sird:}has-yearOfConclusion} & \textit{\textbf{sird:}Thesis} & \textit{\textbf{xsd:}integer} \\
 \hline
