@@ -1,10 +1,11 @@
 \chapter{Evaluación del Sistema}
 \label{cap:exp}
 %%%% Observación consiste en la medida y registro de hechos observables.
-La \textit{integración semántica} de los \textit{recursos de información} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}; las razones de la elección de Jena son presentadas en la Sección \ref{sec:eoats}. Jena proporciona dos componentes importantes: 1) \textit{un motor de búsqueda} para tripletas RDF y 2) \textit{un motor de inferencia} que soporta los axiomas en nuestras ontologías, los cuales son descritos en la Sección \ref{sec:enrKrec}.
+La \textit{integración semántica} de los \textit{recursos de información} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}; las razones de la elección de Jena son presentadas en la Sección \ref{sec:eoats}.
+%Jena proporciona dos componentes importantes: 1) \textit{un motor de búsqueda} para tripletas RDF y 2) \textit{un motor de inferencia} que soporta los axiomas en nuestras ontologías, los cuales son descritos en la Sección \ref{sec:enrKrec}.
 
 \section{Objetivo de la experimentación}
-El \textit{número de los resultados} depende del uso o no de inferencia en nuestros modelos semánticos. Si Jena no hace uso de \textit{inferencia}, como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el \textit{motor de búsqueda} puede proporcionar todos, varios o ningún resultado. Esta variedad en la entrega de resultados, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, si Jena emplea inferencia, entonces puede entregar mejores resultados con respecto a la ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
+El \textit{número de los resultados} depende del uso o no de inferencia, para nuestro modelo semántico. Si Jena no hace uso de \textit{inferencia}, como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el \textit{motor de búsqueda} puede proporcionar todos, varios o ningún resultado. Esta variedad en la recuperación de recursos, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, si Jena emplea inferencia, entonces puede entregar mejores resultados con respecto a la ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
 
 Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} de \textit{Jena} para responder las consultas. Por un lado, se ha observado que el \textit{tiempo de consulta} de Jena es pequeño, menor a medio segundo, cuando usa un \textit{modelo sin inferencia}. Mientras, el \textit{tiempo de consulta} de Jena para un \textit{modelo con inferencia} es mayor en comparación con el tiempo del \textit{modelo sin inferencia}.
 
@@ -35,7 +36,7 @@ En esta tesis, el proceso de \textit{integración semántica} está asociado a dos 
 \label{sec:subexp} 
 Los sujetos de nuestra experimentación son un conjunto descripciones RDF asociados a personas, documentos y archivos multimedia, los cuales son generados artificialmente. Esta \textit{generación artificial} consiste en el uso de scripts para: 1) \textit{asignar un identificador URI para un conjunto de \textbf{recursos de información ficticios}} y 2) \textit{generar tripletas RDF para estos recursos con base en las \textbf{propiedades} y \textbf{clases} de nuestras ontologías, así como \textbf{datos aleatorios}}. 
 
-Un script genera un conjunto de declaraciones para los recursos persona. Mientras, otro script genera las declaraciones para los documentos y archivos multimedia. El algoritmo \ref{alg:fsg} presenta el funcionamiento general de ambos scripts para la generación y almacenamiento de tripletas RDF.
+Un script genera un conjunto de declaraciones para los recursos persona. Mientras, otro script genera las declaraciones para los documentos y archivos multimedia. El algoritmo \ref{alg:fsg} presenta el funcionamiento general de ambos scripts para la generación y almacenamiento de tripletas RDF. En el apéndice \ref{aped:AlgDS} se presentan los algoritmos de nuestros dos scripts; un algoritmo para los datos simulados de los recursos persona y el otro para los recursos digitales.
 
 \begin{algorithm}
 \SetKwData{Sigma}{$\sigma_i$}
@@ -51,8 +52,6 @@ Guardar el \Model en un archivo con extensión ``\textit{rdf}'' y sintaxis de ser
 \caption{Funcionamiento básico de scripts para la generación de tripletas artificialmente.}
 \label{alg:fsg} 
 \end{algorithm}
-
-El apéndice \ref{aped:AlgDS} presenta los dos algoritmos con el funcionamiento detallado de los scripts. Un algoritmo para los datos simulados de los recursos persona y el otro para los recursos digitales.
 
 La finalidad del uso de \textit{información simulada} es tener rápidamente un volumen grande de datos en nuestros ABoxes. La \textit{cantidad de información} en estos ABox debe ser realista con respecto al área de Redes y Telecomunicaciones (RyT). Ya que al tener información realista, nuestra experimentación se ajusta a la cantidad de datos que esperamos manejar en la integración semántica. Otra razón del uso de información simulada es ver si Jena soporta esta escala realista de datos. Esta \textit{escala de datos} se obtiene a partir de la media de \textit{recursos digitales} que un profesor del área de RyT utiliza en un trimestre, así como el número promedio de profesores y alumnos que hay en esta área.
 
@@ -119,7 +118,7 @@ La Tabla \ref{tab:noRP} muestra el número de \textit{recursos de información} ag
 
 En esta Tabla \ref{tab:noRP}, los 73 recursos persona se clasifican en: 51 \textit{profesionistas} y 23 \textit{estudiantes}. De los 51 profesionistas, ninguno tiene la tripleta que los asigna a la clase \textit{Profesionista (sirp:Professional)}, esta asignación se hace mediante inferencia. Los 51 profesionistas están agrupados en 29 \textit{profesores} y 21 \textit{empleados}, los cuales tienen la tripleta explícita de asignación a las clases \textit{Estudiante (Student)} o \textit{Empleado (Employee)}. El otro profesionista es un estudiante que realiza actividades laborales en la UAM, y por ello este recurso pertenece a la clase Profesionista. Por otro lado, de los 23 estudiantes se tiene que 11 recursos tienen la tripleta que los asigna a la clase \textit{Estudiante} y los 12 restantes por inferencia obtienen la tripleta que los asigna a la clase \textit{Estudiante}. Existen 13 recursos persona que mediante inferencia se clasifican en la clase \textit{Investigador (sirp:Researcher)}.
 
-Mientras, los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 artículos, 366 libros, 73 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. De los 156 artículos, 89 recursos tienen la declaración explícita a la clase \textit{Artículo (sird:Paper)}, mientras los otros 67 recursos a partir de inferencia, se generan las respectivas tripleta que los asigna a la clase \textit{Artículo (sird:Paper)}. En los libros, 185 recursos tienen la declaración explícita y 181 recursos mediante inferencia tienen la declaración a la clase \textit{Libro (sird:Book)}. De la misma manera, 79 recursos tienen la declaración explícita a la clase \textit{Página Web (sird:PageWeb)} y 31 recursos a la clase \textit{Tesis (sird:Thesis)}. Mientras, 67 recursos mediante inferencia pertenecen a la clase  \textit{Página Web} y 42 a la clase \textit{Tesis}. Por último, los 1330 recursos se clasifican en 815 \textit{Documentos (sird:Document)} y 515 \textit{Multimedia (sird:Multimedia)}. Las declaraciones a estas dos clases se obtienen mediante inferencia.
+Mientras, los 1330 recursos digitales de nuestra experimentación se clasifican en: 156 artículos, 366 libros, 73 reportes técnicos, 146 páginas web, 73 tesis, 42 videos, 42 audios, 77 imágenes y 112 presentaciones. De los 156 artículos, 89 recursos tienen la declaración explícita a la clase \textit{Artículo (sird:Paper)}, mientras los otros 67 recursos a partir de inferencia, se generan las respectivas tripleta que los asigna a la clase \textit{Artículo (sird:Paper)}. En los libros, 185 recursos tienen la declaración explícita y 181 recursos mediante inferencia tienen la declaración a la clase \textit{Libro (sird:Book)}. De la misma manera, 79 recursos tienen la declaración explícita a la clase \textit{Página Web (sird:PageWeb)} y 31 recursos a la clase \textit{Tesis (sird:Thesis)}. Mientras, 67 recursos mediante inferencia pertenecen a la clase  \textit{Página Web} y 42 a la clase \textit{Tesis}. Los 1330 recursos se clasifican en 815 \textit{Documentos (sird:Document)} y 515 \textit{Multimedia (sird:Multimedia)}, las tripletas para estas dos clases se obtienen mediante inferencia.
 
 Con base en estas cantidades de \textit{recursos de información}, se construye el diagrama de Venn que muestra gráficamente las clases, subclases y recursos de nuestro modelo semántico. La Figura \ref{fig:venn} muestra este diagrama de Venn, en el cual, los círculos representan las clases y subclases, mientras los puntos representan los recurso de información. En esta Figura, las clases \textit{Estudiante}, \textit{Investigador}, \textit{Profesionista}, \textit{Artículo}, \textit{Libro}, \textit{Tesis}, \textit{Página Web} o \textit{Reporte Técnico} tienen un circulo o son un circulo en un tono amarillo. Los puntos que están en estos círculos amarillos, representan los recursos de información que mediante inferencia obtienen una tripleta de asignación a esas clases.
 
@@ -173,64 +172,64 @@ Con base en estas cantidades de \textit{recursos de información}, se construye e
 
 \section{Metodología}
 \label{sec:metoexp} 
-Esta experimentación se ha dividido en dos actividades. La primera actividad consiste en la \textit{evaluación de la calidad de los resultados} que proporciona el triplestore Jena. Mientras, la segunda actividad consiste en medir los \textit{tiempos promedios} que toma Jena para: consultar los modelos con/sin inferencia y mostrar los resultados al usuario.
+Esta experimentación se ha dividido en dos actividades. La primera actividad es la \textit{evaluación de la calidad de los resultados} del triplestore Jena. Mientras, la segunda actividad es la medición de los \textit{tiempos promedios} de Jena para consultar los modelos con/sin inferencia y mostrar los resultados al usuario.
 
-El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es \textbf{encontrar un conjunto básico de preguntas base} para interrogar nuestro modelo semántico. Esta búsqueda se hace a partir de los dos \textbf{casos de uso}: \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}.
-
-En la Sección \ref{sec:byrKrec} se hizo un análisis y búsqueda de las \textit{principales preguntas} para la integración semántica de recursos de información. Las preguntas identificadas en este análisis, son reutilizadas para nuestra experimentación.
+El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es \textbf{encontrar un conjunto básico de preguntas base} para interrogar nuestro modelo semántico. Esta búsqueda se hace a partir de los dos \textbf{casos de uso}: \textit{cartografía de competencias} y \textit{búsqueda de recursos digitales}. En la Sección \ref{sec:byrKrec} se hizo un análisis y búsqueda de las \textit{principales preguntas} para la integración semántica de recursos de información. Las preguntas identificadas en este análisis, son reutilizadas para nuestra experimentación.
 % se hizo un análisis y búsqueda de las \textit{preguntas básicas}. Estas \textit{preguntas básicas} posteriormente se transforman a consultas SPARQL, de esta manera, se obtiene nuestro conjunto básico de consultas SPARQL.
 
 %Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
-El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, realizamos una \textit{búsqueda manual} de los \textit{recursos relevantes} que responden a las \textit{consultas de experimentación}. Esta búsqueda se hace sobre los recursos de nuestra \textit{memoria corporativa} que está guiada por los \textit{casos de uso}. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
+El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, realizamos una \textit{búsqueda manual} de los \textit{recursos relevantes} que responden a las \textit{consultas de experimentación}. Esta búsqueda se hace sobre los recursos de nuestra \textit{memoria corporativa}. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
 
-La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número total de recursos que responden a ésta (total de recursos relevantes). De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas (total de recursos relevantes), para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes.
+La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número total de recursos que responden a ésta (total de recursos relevantes). De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas (total de recursos relevantes), para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes. En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a las preguntas en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
 
 \begin{table}[!hp]
-\renewcommand{\arraystretch}{1.4}
+\renewcommand{\arraystretch}{1.0}
 \centering
 \caption{Preguntas y cantidad de personas que responden a éstas.}
-\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
+\begin{tabular}{>{\centering\arraybackslash}m{0.4in} >{\arraybackslash}m{3.0in} >{\centering\arraybackslash}m{0.7in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.8in}}
 \hline 
-Id. Consulta & Pregunta & Total de Recursos Relevantes\\
+\multirow{2}{*}{\textbf{Id.}} & \multirow{2}{*}{\textbf{Pregunta}} & \multicolumn{3}{c}{\textbf{Número de Recursos Pertinentes}} \\
+\cline{3-5} 
+ & & \textbf{Total} & \textbf{Tripleta explícita} & \textbf{Tripleta inferida} \\
+\hline 
 \hline
-\hline 
-Q1.1 &  ¿Cuál es el nombre, correo, sitio web, género y edad de las personas del área de RyT? & 73 \\
+Q1.1 &  ¿Cuál es el nombre, correo, sitio web, género y edad de las personas del área de RyT? & 73 & 73 & 0 \\
 \hline
-Q1.2 & ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT? & 73\\
+Q1.2 & ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT? & 73 & 73 & 0 \\
 \hline 
-Q1.3 & ¿Quiénes son mayores de 20 años y menores de 45 años? & 50\\
+Q1.3 & ¿Quiénes son mayores de 20 años y menores de 45 años? & 50 & 0 \\
 \hline 
-Q1.4 & ¿Quiénes son profesionistas del área de RyT? & 51\\
+Q1.4 & ¿Quiénes son profesionistas del área de RyT? & 51 & 28 & 23\\
 \hline 
-Q1.5 & ¿Quiénes trabajan en Clark \& Parsia y son del sexo Masculino? & 3\\
+Q1.5 & ¿Quiénes trabajan en Clark \& Parsia y son del sexo Masculino? & 3 & 3 & 0\\
 \hline 
-Q1.6 & ¿Quiénes son estudiantes y leen en inglés? & 8\\
+Q1.6 & ¿Quiénes son estudiantes y leen en inglés? & 8 & 4 & 4\\
 \hline 
-Q1.7 & ¿Quienes hablan, leen y escriben en inglés? & 16\\
+Q1.7 & ¿Quienes hablan, leen y escriben en inglés? & 16 & 16 & 0\\
 \hline 
-Q1.8 & ¿Qué estudiantes saben algo de inglés? & 6\\
+Q1.8 & ¿Qué estudiantes saben algo de inglés? & 6 & 2 & 4\\
 \hline 
-Q1.9 & ¿Qué profesores tienen la capacidad de síntesis? & 2\\
+Q1.9 & ¿Qué profesores tienen la capacidad de síntesis? & 10 & 10 & 0\\
 \hline 
-Q1.10 & ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica? & 58\\
+Q1.10 & ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica? & 58 & 2 & 56\\
 \hline
-Q1.11 & ¿Qué profesores tienen conocimientos en Sistemas Distribuidos? & 3\\
+Q1.11 & ¿Qué profesores tienen conocimientos en Sistemas Distribuidos? & 3 & 3 & 0\\
 \hline 
-Q1.12 & ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP? & 1\\
+Q1.12 & ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP? & 1 & 1 & 0\\
 \hline 
-Q1.13 & ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos? & 33\\
+Q1.13 & ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos? & 20 & 6 & 14\\
 \hline 
-Q1.14 & ¿Quiénes trabajan en una universidad? & 24\\
+Q1.14 & ¿Quiénes trabajan en una universidad? & 24 & 16 & 8\\
 \hline 
-Q1.15 & ¿Quienes laboran en la UAM y tienen algún conocimiento en  Web Semántica? & 19\\
+Q1.15 & ¿Quienes laboran en la UAM y tienen algún conocimiento en Web Semántica? & 2 & 2 & 0\\
 \hline 
-Q1.16 & ¿Qué personas tienen como asesor a Carolina Medina? & 2\\
+Q1.16 & ¿Qué personas tienen como asesor a Carolina Medina? & 2 & 2 & 0\\
 \hline 
-Q1.17 & ¿Quiénes son los colegas de Ricardo Marcelin? & 8\\
+Q1.17 & ¿Quiénes son los colegas de Ricardo Marcelin? & 8 & 2 & 6\\
 \hline 
-Q1.18 &  ¿Quiénes conocen a Carolina Medina Ramirez? & 11\\
+Q1.18 &  ¿Quiénes conocen a Carolina Medina Ramirez? & 11 & 7 & 4\\
 \hline 
-Q1.19 & ¿Qué personas son profesores-investigadores? & 9\\
+Q1.19 & ¿Qué personas son profesores-investigadores? & 13 & 0 & 13\\
 \hline 
 \end{tabular}
 \label{tab:qrynoRP}
@@ -240,36 +239,36 @@ Q1.19 & ¿Qué personas son profesores-investigadores? & 9\\
 \renewcommand{\arraystretch}{1.4}
 \centering
 \caption{Preguntas y cantidad de recursos digitales que responden a éstas.}
-\begin{tabular}{>{\centering\arraybackslash}m{1in} >{\arraybackslash}m{3.5in} >{\centering\arraybackslash}m{1in}}
+\begin{tabular}{>{\centering\arraybackslash}m{0.4in} >{\arraybackslash}m{3.0in} >{\centering\arraybackslash}m{0.7in} >{\centering\arraybackslash}m{0.8in} >{\centering\arraybackslash}m{0.8in}}
 \hline 
-Id. Consulta & Pregunta & Total de Recursos Relevantes\\
+\multirow{2}{*}{\textbf{Id.}} & \multirow{2}{*}{\textbf{Pregunta}} & \multicolumn{3}{c}{\textbf{Número de Recursos Pertinentes}} \\
+\cline{3-5} 
+ & & \textbf{Total} & \textbf{Tripleta explícita} & \textbf{Tripleta inferida} \\
+\hline 
 \hline
-\hline 
-Q2.1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 \\
+Q2.1 & ¿Cuáles son los títulos, rutas, extensión, idioma de todos los recursos digitales de RyT? & 1330 & 1330 & 0 \\
 \hline
-Q2.2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103\\
+Q2.2 & ¿Cuáles libros tratan sobre algunos temas de Sistemas Distribuidos? & 103 & 0 & 103\\
 \hline 
-Q2.3 & ¿Qué recursos fueron publicados por la UAM? & 18\\
+Q2.3 & ¿Qué recursos fueron publicados por la UAM? & 18 & 18 & 0\\
 \hline 
-Q2.4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31\\
+Q2.4 & ¿Qué documentos son para dar un curso de Sistemas P2P? & 31 & 15 & 16\\
 \hline 
-Q2.5 & ¿Qué recursos multimedia son mayores al año 2009? & 119\\
+Q2.5 & ¿Qué recursos multimedia son mayores al año 2009? & 119 & 66 & 53\\
 \hline 
-Q2.6 & ¿Cuáles documentos tratan sobre Ontologías? & 30\\
+Q2.6 & ¿Cuáles documentos tratan sobre Ontologías? & 30 & 15 & 15\\
 \hline 
-Q2.7 & ¿Qué recursos fueron publicados en una Revista científica? & 156\\
+Q2.7 & ¿Qué recursos fueron publicados en una Revista científica? & 156 & 156 & 0\\
 \hline 
-Q2.8 & ¿Qué recursos tienen en su contenido las palabras ``linked data''? & 159\\
+Q2.8 & ¿Qué recursos tienen en su contenido las palabras ``linked data''? & 159 & 159 & 0\\
 \hline 
-Q2.9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2\\
+Q2.9 & ¿Cuáles documentos en inglés y mayores al año 2000 son de autoría de Erik Alarcón Zamora? & 2 & 0 & 2\\
 \hline 
-Q2.10 & ¿Cuál es la tesis de Samuel Hernández Maza? & 4\\
+Q2.10 & ¿Cuál es la tesis de Samuel Hernández Maza? & 4 & 3 & 1\\
 \hline 
 \end{tabular}
 \label{tab:qrynoRD}
 \end{table}
-
-En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a las preguntas en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
 
 El \textit{tercer paso} es emplear \textit{Jena} para ejecutar las \textit{consultas SPARQL} a un modelo sin inferencia y otro con inferencia. La finalidad de esto es ver la calidad de resultados y la cantidad de éstos que al emplear un modelo con inferencia y otro sin inferencia. De esta manera, podemos ver el impacto de la inferencia para la consulta de información en una ontología.
 
