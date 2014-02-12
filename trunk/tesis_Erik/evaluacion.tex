@@ -1,11 +1,11 @@
 \chapter{Evaluación del Sistema}
 \label{cap:exp}
 %%%% Observación consiste en la medida y registro de hechos observables.
-La \textit{integración semántica} de los \textit{recursos de información} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}; las razones de la elección de Jena son presentadas en la Sección \ref{sec:eoats}.
+La \textit{integración semántica} de los \textit{recursos de información} es el proceso de búsqueda y recuperación de información en un \textit{grafo de conocimiento (ontología)}. Un \textit{motor de búsqueda de tripletas} es el mecanismo encargado de realizar la consulta de información en los grafos de conocimiento, para responder una consulta dada. Este \textit{motor de tripletas} generalmente pertenece a un triplestore. En esta tesis, se emplea el \textit{triplestore Jena}; las razones de la elección de Jena se presentan en la Sección \ref{sec:eoats}.
 %Jena proporciona dos componentes importantes: 1) \textit{un motor de búsqueda} para tripletas RDF y 2) \textit{un motor de inferencia} que soporta los axiomas en nuestras ontologías, los cuales son descritos en la Sección \ref{sec:enrKrec}.
 
 \section{Objetivo de la experimentación}
-El \textit{número de los resultados} depende del uso o no de inferencia, para nuestro modelo semántico. Si Jena no hace uso de \textit{inferencia}, como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el \textit{motor de búsqueda} puede proporcionar todos, varios o ningún resultado. Esta variedad en la recuperación de recursos, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, si Jena emplea inferencia, entonces puede entregar mejores resultados con respecto a la ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
+El número de los \textit{recursos pertinentes recuperados} por nuestro buscador en nuestro modelo semántico, depende del uso o no de inferencia. Si Jena no hace uso de \textit{inferencia}, como el ejemplo de la Figura \ref{fig:grafoSR}, entonces el \textit{motor de búsqueda} puede proporcionar todos, varios o ningún resultado. Esta variedad en la recuperación de recursos, depende de las consultas SPARQL: 1) \textit{consultas sobre las declaraciones de los recursos}, como la consulta de la Figura \ref{fig:q112rql}, 2) \textit{consultas que agrupan varios patrones para un criterio de búsqueda}, como las consultas de las Figuras \ref{fig:q2rqlSR} y \ref{fig:q2torqlSR}, y 3) \textit{consultas simplificadas}, como en las Figuras \ref{fig:q2rqlCR} y \ref{fig:q2torqlCR}. En contraste, si Jena emplea inferencia, entonces puede entregar mejores resultados con respecto a la ontología. Un ejemplo de este modelo se presenta en la Figura \ref{fig:grafoCR}.
 
 Una característica asociada al uso de inferencia, es el impacto en el \textit{tiempo de procesamiento} de \textit{Jena} para responder las consultas. Por un lado, se ha observado que el \textit{tiempo de consulta} de Jena es pequeño, menor a medio segundo, cuando usa un \textit{modelo sin inferencia}. Mientras, el \textit{tiempo de consulta} de Jena para un \textit{modelo con inferencia} es mayor en comparación con el tiempo del \textit{modelo sin inferencia}.
 
@@ -180,7 +180,9 @@ El \textit{primer paso} en la \textit{evaluación de la calidad de resultados} es
 %Estas consultas de la Sección \ref{sec:byrKrec} son reutilizadas para la primer actividad de esta experimentación.
 El \textit{segundo paso} es encontrar cuántos y cuáles recursos son relevantes para responder las consultas de nuestra experimentación. Para ello, realizamos una \textit{búsqueda manual} de los \textit{recursos relevantes} que responden a las \textit{consultas de experimentación}. Esta búsqueda se hace sobre los recursos de nuestra \textit{memoria corporativa}. Para cada consulta, se anotan los identificadores URI de los \textit{recursos relevantes} y la cantidad de éstos.
 
-La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna enuncia la pregunta y la tercer columna presenta el número total de recursos que responden a ésta (total de recursos relevantes). De la misma manera, la Tabla \ref{tab:qrynoRD} presenta un identificador, las preguntas y cantidad de recursos que responden a éstas (total de recursos relevantes), para la \textit{búsqueda de recursos digitales}. En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes. En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a las preguntas en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
+La Tabla \ref{tab:qrynoRP} muestra las preguntas base para la \textit{cartografía de competencias}. En esta Tabla, la primera columna presenta el identificador para cada una de las diecinueve preguntas, la segunda columna muestra la pregunta, la tercera columna presenta el número total de recursos pertinentes que responden a las preguntas, la cuarta columna muestra el número de recursos pertinentes que a partir de tripletas explicitas responden a las preguntas y la quinta columna presenta el número de recursos que mediante tripletas inferidas responden a las preguntas. De la misma forma, la Tabla \ref{tab:qrynoRD} presenta los identificadores, preguntas y cantidad de recursos relevantes que responden a éstas (total, tripleta explícita y tripleta inferida) para la \textit{búsqueda de recursos digitales}.
+
+En estas dos Tablas, no se presentan los identificadores URI de los recursos que responden a las preguntas, porque algunas consultas tienen muchos recursos relevantes. En el Anexo \ref{aped:TrPC}, se presentan las consultas SPARQL que están asociadas a las preguntas en las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}.
 
 \begin{table}[!hp]
 \renewcommand{\arraystretch}{1.0}
@@ -197,29 +199,29 @@ Q1.1 &  ¿Cuál es el nombre, correo, sitio web, género y edad de las personas del
 \hline
 Q1.2 & ¿Cuál es el nombre, sitio web y el lugar donde laboran las personas del RyT? & 73 & 73 & 0 \\
 \hline 
-Q1.3 & ¿Quiénes son mayores de 20 años y menores de 45 años? & 50 & 0 \\
+Q1.3 & ¿Quiénes son mayores de 20 años y menores de 45 años? & 53 & 53 & 0 \\
 \hline 
-Q1.4 & ¿Quiénes son profesionistas del área de RyT? & 51 & 28 & 23\\
+Q1.4 & ¿Quiénes son profesionistas del área de RyT? & 51 & 50 & 1\\
 \hline 
 Q1.5 & ¿Quiénes trabajan en Clark \& Parsia y son del sexo Masculino? & 3 & 3 & 0\\
 \hline 
-Q1.6 & ¿Quiénes son estudiantes y leen en inglés? & 8 & 4 & 4\\
+Q1.6 & ¿Quiénes son estudiantes y leen en inglés? & 8 & 2 & 6\\
 \hline 
-Q1.7 & ¿Quienes hablan, leen y escriben en inglés? & 16 & 16 & 0\\
+Q1.7 & ¿Quienes hablan, leen y escriben en inglés? & 22 & 22 & 0\\
 \hline 
-Q1.8 & ¿Qué estudiantes saben algo de inglés? & 6 & 2 & 4\\
+Q1.8 & ¿Qué estudiantes saben algo de inglés? & 5 & 2 & 3\\
 \hline 
-Q1.9 & ¿Qué profesores tienen la capacidad de síntesis? & 10 & 10 & 0\\
+Q1.9 & ¿Qué profesores tienen la capacidad de síntesis? & 14 & 14 & 0\\
 \hline 
-Q1.10 & ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica? & 58 & 2 & 56\\
+Q1.10 & ¿Qué profesionistas tienen conocimiento en los temas de Web Semántica? & 80 & 8 & 72\\
 \hline
-Q1.11 & ¿Qué profesores tienen conocimientos en Sistemas Distribuidos? & 3 & 3 & 0\\
+Q1.11 & ¿Qué profesores tienen conocimientos en Sistemas Distribuidos? & 1 & 1 & 0\\
 \hline 
 Q1.12 & ¿Quiénes tienen conocimiento en Java, OWL, RDF, Threads, C, OpenMP? & 1 & 1 & 0\\
 \hline 
-Q1.13 & ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos? & 20 & 6 & 14\\
+Q1.13 & ¿Qué estudiantes tienen algún conocimiento en los subtemas de Sistemas Operativos? & 18 & 8 & 10\\
 \hline 
-Q1.14 & ¿Quiénes trabajan en una universidad? & 24 & 16 & 8\\
+Q1.14 & ¿Quiénes trabajan en una universidad? & 24 & 13 & 11\\
 \hline 
 Q1.15 & ¿Quienes laboran en la UAM y tienen algún conocimiento en Web Semántica? & 2 & 2 & 0\\
 \hline 
@@ -339,9 +341,9 @@ La segunda fase, consiste en emplear dos métricas de \textit{recuperación de la 
 
 El objetivo de emplear estas dos métricas, es evaluar las capacidades de \textit{sistemas de recuperación de la información}, en particular, nosotros evaluamos al triplestores Jena. La \textit{exhaustividad} evalúa la habilidad de Jena para encontrar los recursos relevantes en una ontología, mientras la \textit{precisión} evalúa la habilidad de Jena para filtrar los recursos relevantes \cite{Cleverdon68}.
 
-En esta experimentación, la \textbf{segunda actividad} es tomar los tiempos de procesamiento para la consulta y recuperación de información en un modelo semántico a partir del uso de Jena. El objetivo de esta actividad es comparar estos tiempos de consulta para un modelo con inferencia y otro sin el uso de ésta.
+En esta experimentación, la \textbf{segunda actividad} es tomar los tiempos de procesamiento desde \textit{la consulta de información en un modelo semántico con Jena} hasta \textit{la impresión de los resultados en pantalla}. El objetivo de esta actividad es comparar estos tiempos de consulta para un modelo con inferencia y otro sin el uso de ésta.
 
-Los tiempos importantes en esta actividad son la medición desde \textit{la consulta de información en un modelo semántico con Jena} hasta \textit{la impresión de los resultados en pantalla}. Esta medición de los tiempos, se hace con base en la modificación del script del Algoritmo \ref{alg:srinf}, porque este Algoritmo \ref{alg:srinf} lleva a cabo todo el proceso de búsqueda y recuperación de la información relevante en los \textit{recursos de información}. También, este algoritmo permite elegir el modelo: si es cero, entonces no hay inferencia y si es uno, se emplea inferencia.
+Para realizar medición, se modifican los script del Algoritmo \ref{alg:srinf}, porque este Algoritmo \ref{alg:srinf} lleva a cabo todo el proceso de búsqueda y recuperación de la información relevante en los \textit{recursos de información}. También, este algoritmo permite elegir el modelo: si es cero, entonces no hay inferencia y si es uno, se emplea inferencia.
 
 El funcionamiento del \textit{script modificado} es tomar `\textbf{\textit{n}}' veces el \textit{tiempo de procesamiento} cuando se consulta un modelo semántico (con o sin inferencia). Posteriormente, este script calcula y regresa el \textit{tiempo promedio de consulta} para una \textit{consulta SPARQL} dada. El Algoritmo \ref{alg:mod} presenta el funcionamiento de este script modificado.
 
@@ -391,100 +393,103 @@ Los scripts asociados a los Algoritmos \ref{alg:srinf} y \ref{alg:mod}, se ejecu
 
 \section{Resultados}
 \label{sec:result} 
-Los resultados para la \textit{evaluación de la calidad de los resultados} se presentan en dos etapas. La primera etapa muestra el número de \textit{recursos relevantes recuperados} con el script del Algoritmo \ref{alg:srinf}, así como el total de \textit{recursos relevantes}, para las preguntas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La segunda etapa presenta los valores calculados para la exhaustividad y precisión. Este cálculo se hace para cada consulta de la experimentación.
+Los resultados para la \textit{evaluación de la calidad de los resultados} se presentan en dos etapas. La primera etapa muestra el número de \textit{recursos relevantes recuperados} con el script del Algoritmo \ref{alg:srinf}, así como el total de \textit{recursos relevantes} para las preguntas de las Tablas \ref{tab:qrynoRP} y \ref{tab:qrynoRD}. La segunda etapa presenta los valores calculados para la exhaustividad y precisión. Este cálculo se hace para cada consulta de la experimentación.
+
+En la Tabla \ref{tab:rrRP}, se presenta el número de recursos relevantes recuperados con y sin inferencia para las preguntas de la Tabla \ref{tab:qrynoRP}. La primera columna de la Tabla \ref{tab:rrRP} presenta el identificador de consulta, la segunda columna muestra el número total de recursos pertinentes que responden a las consultas, la tercera columna muestra el número de \textit{recursos pertinentes} recuperados sin inferencia y la cuarta columna presenta el número de \textit{recursos pertinentes} recuperados mediante el uso de inferencia (tripletas explícitas e inferidas). 
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{0.92}
+\renewcommand{\arraystretch}{1.0}
 \centering
-\caption{Recursos relevantes y no relevantes asociados a las preguntas de la cartografía de competencias.}
-\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
+\caption{Número de recursos pertinentes recuperados con y sin inferencia para las preguntas del caso de uso cartografía de competencias.}
+\begin{tabular}{ >{\centering\arraybackslash}m{1in}  >{\centering\arraybackslash}m{1.5in}  >{\centering\arraybackslash}m{1.5in}  >{\centering\arraybackslash}m{1.5in} }
 \hline 
-\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
+\multirow{2}{*}{\textbf{Id.}} & \multicolumn{3}{c}{\textbf{Número de Recursos Pertinentes Recuperados}} \\
+\cline{2-4} 
+ & \textbf{Total} & \textbf{Sin inferencia} & \textbf{Con inferencia} \\
 \hline 
 \hline
 Q1.1 & 73 & 73 & 73\\
 \hline
 Q1.2 & 73 & 73 & 73\\
 \hline
-Q1.3 & 50 & 50 & 50\\
+Q1.3 & 53 & 53 & 53\\
 \hline
-Q1.4 & 28 & 51 & 51\\
+Q1.4 & 51 & 50 & 51\\
 \hline
 Q1.5 & 3 & 3 & 3\\
 \hline
-Q1.6 & 4 & 8 & 8\\
+Q1.6 & 8 & 2 & 8\\
 \hline
-Q1.7 & 16 & 16 & 16\\
+Q1.7 & 22 & 22 & 22\\
 \hline
-Q1.8 & 2 & 6 & 6\\
+Q1.8 & 5 & 2 & 5\\
 \hline
-Q1.9 & 10 & 10 & 10\\
+Q1.9 & 14 & 14 & 14\\
 \hline
-Q1.10 & 2 & 58 & 58\\
+Q1.10 & 80 & 8 & 80\\
 \hline
-Q1.11 & 3 & 3 & 3\\
+Q1.11 & 1 & 1 & 1\\
 \hline
 Q1.12 & 1 & 1 & 1\\
 \hline
-Q1.13 & 6  & 20 & 20\\
+Q1.13 & 18  & 8 & 18\\
 \hline
-Q1.14 & 16 & 24 & 24\\
+Q1.14 & 24 & 13 & 24\\
 \hline
 Q1.15 & 2 & 2 & 2\\
 \hline
 Q1.16 & 2 & 2 & 2\\
 \hline
-Q1.17 & 2 & 8 & 8\\
+Q1.17 & 8 & 2 & 8\\
 \hline
-Q1.18 & 7 & 11 & 11\\
+Q1.18 & 11 & 7 & 11\\
 \hline
-Q1.19 & 0 & 13 & 13\\
+Q1.19 & 13 & 0 & 13\\
 \hline
 \end{tabular}
 \label{tab:rrRP}
 \end{table}
 
-En la Tabla \ref{tab:rrRP}, \textit{se presenta el número de recursos relevantes} recuperados y el número total de \textit{recursos relevantes}, para las preguntas de la Tabla \ref{tab:qrynoRP}. La primer columna de la Tabla \ref{tab:rrRP} presenta el identificador de consulta. La segunda columna muestra el número de \textit{recursos relevantes recuperados} cuando no se emplea inferencia. La tercera columna presenta el número de \textit{recursos relevantes recuperados} al emplear inferencia. La cuarta columna muestra el número total de recursos relevantes que responden a las consultas.
-
 De la misma manera, la Tabla \ref{tab:rrRD} presenta el número de \textit{recursos relevantes} recuperados cuando 1) \textit{no se emplea inferencia} y 2) \textit{sí se emplea inferencia}, en la ontología de \textit{recursos digitales}. En esta Tabla, las consultas están asociadas a las preguntas de la Tabla \ref{tab:qrynoRD}. La estructura de la Tabla \ref{tab:rrRD} es la misma de la Tabla \ref{tab:rrRP}.
 
 \begin{table}[!htb]
-\renewcommand{\arraystretch}{0.94}
+\renewcommand{\arraystretch}{1.2}
 \centering
-\caption{Recursos relevantes y no relevantes asociados a las preguntas de la búsqueda de recursos digitales.}
-\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1.5in} | >{\centering\arraybackslash}m{1in} |}
+\caption{Número de recursos pertinentes recuperados con y sin inferencia para las preguntas del caso de uso búsqueda de recursos digitales.}
+\begin{tabular}{ >{\centering\arraybackslash}m{1in}  >{\centering\arraybackslash}m{1.5in}  >{\centering\arraybackslash}m{1.5in}  >{\centering\arraybackslash}m{1.5in} }
 \hline 
-\hline 
-\textbf{Id. Consulta} & \textbf{Recursos relevantes recuperados sin inferencia} & \textbf{Recursos relevantes recuperados con inferencia} & \textbf{Total recursos relevantes}\\
+\multirow{2}{*}{\textbf{Id.}} & \multicolumn{3}{c}{\textbf{Número de Recursos Pertinentes Recuperados}} \\
+\cline{2-4} 
+ & \textbf{Total} & \textbf{Sin inferencia} & \textbf{Con inferencia} \\
 \hline 
 \hline
 Q2.1 & 1330 & 1330 & 1330\\
 \hline
-Q2.2 & 0 & 103 & 103\\
+Q2.2 & 103 & 0 & 103\\
 \hline
 Q2.3 & 18 & 18 & 18\\
 \hline
-Q2.4 & 15 & 31 & 31\\
+Q2.4 & 31 & 15 & 31\\
 \hline
-Q2.5 & 66 & 119 & 119\\
+Q2.5 & 119 & 66 & 119\\
 \hline
-Q2.6 & 15 & 30 & 30\\
+Q2.6 & 30 & 15 & 30\\
 \hline
 Q2.7 & 156 & 156 & 156\\
 \hline
 Q2.8 & 159 & 159 & 159\\
 \hline
-Q2.9 & 0 & 2 & 2\\
+Q2.9 & 2 & 0 & 2\\
 \hline
-Q2.10 & 3 & 4 & 4\\
+Q2.10 & 4 & 3 & 4\\
 \hline
 \end{tabular}
 \label{tab:rrRD}
 \end{table}
 
-Los resultados en la segunda etapa de la \textit{evaluación de la calidad de resultados}, son los valores que son calculados para la exhaustividad (Ecuación \ref{ec:exa}) y precisión (Ecuaciones \ref{ec:pre}) de Jena con nuestras ontologías. El objetivo de esta \textit{segunda etapa} es comparar estas dos métricas de \textit{recuperación de la información} para un modelo con inferencia y otro que no usa ésta, donde estos modelos son procesados por Jena.
+Los resultados en esta segunda etapa son los valores que son calculados para la exhaustividad (Ecuación \ref{ec:exa}) y precisión (Ecuaciones \ref{ec:pre}) de Jena con nuestras ontologías. El objetivo de esta \textit{segunda etapa} es comparar estas dos métricas de \textit{recuperación de la información} para un modelo con inferencia y otro que no usa ésta, donde estos modelos son procesados por Jena.
 
-La Tabla \ref{tab:exprRP} muestra los valores de exhaustividad y precisión para las consultas en la Tabla \ref{tab:qrynoRP}. En la Tabla \ref{tab:exprRP}, la primer columna muestra el identificador de la consulta. La segunda y tercera columna muestran los valores de exhaustividad y precisión para un modelo sin inferencia. La cuarta y quinta columna presentan los valores de las mismas métricas para un modelo con inferencia.
+La Tabla \ref{tab:exprRP} muestra los valores de exhaustividad y precisión para las consultas en la Tabla \ref{tab:qrynoRP}. En la Tabla \ref{tab:exprRP}, la primera columna muestra el identificador de la consulta. La segunda y tercera columna muestran los valores de exhaustividad y precisión para un modelo sin inferencia. La cuarta y quinta columna presentan los valores de las mismas métricas para un modelo con inferencia. De la misma manera, la Tabla \ref{tab:exprRD} presenta los valores de exhaustividad y precisión para las preguntas de la Tabla \ref{tab:qrynoRD} que están asociadas a la \textit{búsqueda de recursos digitales}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.92}
@@ -507,23 +512,23 @@ Q1.4 & 0.549 & 1 & 1 & 1\\
 \hline 
 Q1.5 & 1 & 1 & 1 & 1\\
 \hline 
-Q1.6 & 0.5 & 1 & 1 & 1\\
+Q1.6 & 0.25 & 1 & 1 & 1\\
 \hline 
 Q1.7 & 1 & 1 & 1 & 1\\
 \hline 
-Q1.8 & 0.333 & 1 & 1 & 1\\
+Q1.8 & 0.4 & 1 & 1 & 1\\
 \hline 
 Q1.9 & 1 & 1 & 1 & 1\\
 \hline 
-Q1.10 & 0.034 & 1 & 1 & 1\\
+Q1.10 & 0.1 & 1 & 1 & 1\\
 \hline 
 Q1.11 & 1 & 1 & 1 & 1\\
 \hline 
 Q1.12 & 1 & 1 & 1 & 1\\
 \hline 
-Q1.13 & 0.3 & 1 & 1 & 1\\
+Q1.13 & 0.444 & 1 & 1 & 1\\
 \hline 
-Q1.14 & 0.666 & 1 & 1 & 1\\
+Q1.14 & 0.541 & 1 & 1 & 1\\
 \hline 
 Q1.15 & 1 & 1 & 1 & 1\\
 \hline 
@@ -538,8 +543,6 @@ Q1.19 & 0 & - & 1 & 1\\
 \end{tabular}
 \label{tab:exprRP}
 \end{table}
-
-De la misma manera, la Tabla \ref{tab:exprRD} presenta los valores de estas dos métricas de RI, para las preguntas de la Tabla \ref{tab:qrynoRD}. Estos valores están asociados al modelo de \textit{búsqueda de recursos digitales}. La estructura de esta Tabla \ref{tab:exprRD} es la misma de la Tabla \ref{tab:exprRP}.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.92}
@@ -576,9 +579,9 @@ Q2.10 & 0.75 & 1 & 1 & 1\\
 \label{tab:exprRD}
 \end{table}
 
-Las Tablas \ref{tab:tiempRP} y \ref{tab:tiempRD} presentan los resultados de \textit{evaluar los tiempos promedio de procesamiento}. La Tabla \ref{tab:tiempRP} muestra los tiempos promedio de consulta para las preguntas pertenecientes a la Tabla \ref{tab:qrynoRP}. De la misma manera, la Tabla \ref{tab:tiempRD} muestra los tiempos para las preguntas en la Tabla \ref{tab:qrynoRD}. El objetivo de esta evaluación es comparar los tiempos al consultar un modelo sin inferencia y otro con inferencia.
+Las Tablas \ref{tab:tiempRP} y \ref{tab:tiempRD} presentan los resultados de la \textit{evaluación de los tiempos promedio de procesamiento}. La Tabla \ref{tab:tiempRP} muestra los tiempos promedio de consulta para las preguntas pertenecientes a la Tabla \ref{tab:qrynoRP}. De la misma manera, la Tabla \ref{tab:tiempRD} muestra los tiempos para las preguntas en la Tabla \ref{tab:qrynoRD}. El objetivo de esta evaluación es comparar los tiempos al consultar un modelo sin inferencia y otro con inferencia.
 
-La estructura es la misma para las Tablas \ref{tab:tiempRP} y \ref{tab:tiempRD}. Ésta es la estructura de estas Tablas: la primer columna muestra el identificador de la consulta, la segunda el tiempo promedio al consultar un modelo sin inferencia y la tercer columna el tiempo promedio de consulta en un modelo obtenido por inferencia.
+La estructura de las Tablas \ref{tab:tiempRP} y \ref{tab:tiempRD} es: la primera columna muestra el identificador de la consulta, la segunda columna muestra el tiempo promedio de consulta cuando no hay inferencia y la tercera columna presenta el tiempo promedio de consulta cuando hay inferencia.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{0.92}
