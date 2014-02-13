@@ -81,7 +81,7 @@ referencia & \url{http://www.mi-ejemplo.com/refiere-a}\\
 \label{tab:prop}
 \end{table}
 
-Los identificadores URI de los recursos y propiedades son cadenas con una longitud larga. Para abreviar estas cadenas se emplea un \textit{prefijo}. Un prefijo sustituye la secuencia de caracteres desde \textit{\url{http://}} hasta el comienzo del \textit{nombre del recurso o propiedad}, por una abreviación. Por ejemplo, el prefijo ``\textit{exp}'' es la abreviación de esta URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades \textit{Juan Lopez, Mamífero, nombre y conocido} de las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente manera.
+Los identificadores URI de los recursos y propiedades son cadenas con una longitud larga. Para abreviar estas cadenas se emplea un \textit{prefijo}. Un prefijo sustituye la secuencia de caracteres desde \textit{\url{http://}} hasta el comienzo del \textit{nombre del recurso o propiedad}, por una abreviación. Por ejemplo, el prefijo ``\textit{exp}'' es la abreviación de esta URI: \url{http://www.mi-ejemplo.com/}. De esta manera, los recursos y propiedades \textit{Juan López, Mamífero, nombre y conocido} de las Tablas \ref{tab:rec} y \ref{tab:prop} se escriben de la siguiente manera.
 
 \begin{itemize}
 \item exp:Juan\_Lopez
@@ -226,7 +226,7 @@ Una ontología tiene dos componentes \cite{Magdalena}:
 
 Los axiomas \cite{Gruber} son expresiones para enriquecer el conocimiento explícito en el grafo RDF. Estos axiomas tienen diferentes propósitos \cite{Magdalena}, como son: describir relaciones entre clases, definir propiedades en términos de otras, definir relaciones entre conceptos, definir restricciones de cómo las propiedades se relacionan, por mencionar algunos.
 
-Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} \cite{RDFS10} (\textit{RDF Schema} RDF(S)\label{sym:rdfs}) y el \textit{Lenguaje de Ontologias Web} \cite{OWL2} (\textit{Web Ontology Language} OWL\label{sym:owl}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
+Los axiomas deben serializarse en varias tripletas y los vocabularios para escribirlas, son el \textit{esquema RDF} \cite{RDFS10} (\textit{RDF Schema} RDF(S)\label{sym:rdfs}) y el \textit{Lenguaje de Ontologías Web} \cite{OWL2} (\textit{Web Ontology Language} OWL\label{sym:owl}). Estos dos vocabularios son los estándares propuestos por las tecnologías semánticas. En una ontología el prefijo ``\textit{owl}'' abrevia el siguiente URI ``\textit{\url{http://www.w3.org/2002/07/owl}\#}'' , mientras el prefijo ``rdfs'' abrevia al URI ``\textit{\url{http://www.w3.org/2000/01/rdf-schema}\#}''.
 
 Las funcionalidades de los axiomas para \textit{relacionar clases en términos de otras}, se listan a continuación. Estos axiomas son los que generalmente se emplean en la construcción y mantenimiento de ontologías \cite{YunLin}, \cite{protegeManual}.
 
@@ -247,7 +247,7 @@ Las funcionalidades de los axiomas \textit{para definir propiedades en términos 
 \item \textbf{Propiedad reflexiva} (\textit{owl:ReflexiveProperty}) afirma la \textit{propiedad X} relaciona al \textit{individuo A} consigo mismo. Por ejemplo, Juan se conoce a sí mismo.
 \end{itemize}
 
-Las funcionalidades de los axiomas \textit{para asociar restricciones a las propiedades}, se listan a continuación.
+Las funcionalidades de los axiomas \textit{para establecer restricciones a las propiedades}, se listan a continuación.
 
 \begin{itemize}
 \item \textbf{Dominio} (\textit{rdfs:domain}) especifica qué clase se aplica a una propiedad. Por ejemplo, \textit{todo individuo que emplea la propiedad \textbf{es madre}, debe ser una \textbf{Mujer}, por ello, si Rocío es madre de Arturo, entonces Rocío es una instancia de la clase \textbf{Mujer}}.
@@ -341,7 +341,7 @@ La interoperabilidad promueve la realización de diversas actividades para mejora
 \item Realizar tareas de inferencia a partir de los vocabularios OWL y RDF(S).
 \item Recuperar información o construir subgrafos mediante consultas en una ontología.
 \item Liberar a las organizaciones del uso de formatos propietarios que tienen un costo económico o de propiedad intelectual. 
-\item Producir ontologías genéricas para dominios particulares, como: Biomédica, Economía, Matemáticas, Ciencias de la Computación, Física, etc.
+\item Producir ontologías genéricas para dominios particulares como: Biomédica, Economía, Matemáticas, Ciencias de la Computación, Física, etc.
 \item Construir rápidamente modelos de conocimiento a partir de ontologías básicas.
 \item Mezclar ontologías y construir modelos de conocimiento complejos.
 \end{itemize}
