@@ -2,7 +2,7 @@
 \label{cap:piu}
 La finalidad de la \textit{integración semántica de recursos} es la \textit{búsqueda y recuperación de información} en un modelo semántico, para responder las consultas de los usuarios del área de redes y telecomunicaciones. 
 
-La \textit{búsqueda y recuperación} en este modelo no son sencillas, porque se requiere que un usuario tenga un grado especializado de conocimientos en el uso de las \textbf{tecnologías semánticas} y los \textbf{vocabularios en las ontologías}. Dicho lo anterior, se busca que los \textit{profesores-investigadores} y \textit{estudiantes}, pueda consultar un modelo semántico.
+La \textit{búsqueda y recuperación} en este modelo no son sencillas, porque se requiere que un usuario tenga un grado especializado de conocimientos en el uso de las \textbf{tecnologías semánticas} y los \textbf{vocabularios en las ontologías}. Dicho lo anterior, se busca que los \textit{profesores-investigadores} y \textit{estudiantes} puedan consultar un modelo semántico.
 
 %Aunque, un aspecto importante en esta  es éste: \textit{un usuario puede consultar información en un modelo, si éste tiene conocimientos en }. En concreto, él debe tener estas nociones:
 %
@@ -34,7 +34,7 @@ Nosotros para alcanzar estos objetivos, construimos este prototipo como un aplic
 
 Este prototipo está constituido por un conjunto de servlets y páginas dinámicas. Las páginas estáticas son formularios que permiten estructurar las consultas de los usuarios. Estos formularios reciben la información de los usuarios y la proporcionan a los servlets. Mientras, los servlets son los encargados de: recopilar la información para la consulta, así como procesar y ejecutar la consulta en el modelo semántico, recuperar la información de ésta, publicar la información en el navegador del usuario.
 
-En este prototipo, los formaularios proporcionan al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
+En este prototipo, los formularios proporcionan al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
 
 La interfaz Web al implementarse a partir del uso de servlets y páginas estáticas, requiere un servidor apropiado que soporte estos dos elementos. Apache Tomcat \cite{Tomcat} es una servidor que soporta el uso de servlets Java y páginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras páginas estáticas y dinámicas. Otra razón del uso de Tomcat, éste es un software open source e implementado bajo la licencia ``Apache License version 2''.
 
