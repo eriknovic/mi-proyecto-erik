@@ -6,9 +6,9 @@
 \contentsline {section}{\numberline {1.1}Introducci\'on}{1}
 \contentsline {section}{\numberline {1.2}Descripci\'on del problema}{4}
 \contentsline {subsection}{\numberline {1.2.1}Memoria corporativa}{6}
-\contentsline {subsubsection}{Administraci\'on de una Memoria Corporativa}{7}
-\contentsline {subsubsection}{Naturaleza de una Memoria Corporativa}{9}
-\contentsline {subsubsection}{Integraci\'on del Conocimiento}{10}
+\contentsline {subsubsection}{Administraci\'on de una memoria corporativa}{7}
+\contentsline {subsubsection}{Naturaleza de una memoria corporativa}{8}
+\contentsline {subsubsection}{Integraci\'on del conocimiento}{10}
 \contentsline {subsection}{\numberline {1.2.2}Casos de uso}{10}
 \contentsline {subsubsection}{Cartograf\IeC {\'\i }a de Competencias}{11}
 \contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{12}
@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {2.4}Reglas de inferencia (RDF(S)/OWL) y razonadores}{21}
 \contentsline {section}{\numberline {2.5}Ventajas de las tecnolog\IeC {\'\i }as sem\'anticas}{26}
 \contentsline {chapter}{\numberline {3}Estado del Arte}{31}
-\contentsline {section}{\numberline {3.1}Integraci\'on Sem\'antica de recursos de informaci\'on}{31}
+\contentsline {section}{\numberline {3.1}Integraci\'on sem\'antica de recursos de informaci\'on}{31}
 \contentsline {section}{\numberline {3.2}Herramientas para la integraci\'on sem\'antica de recursos de informaci\'on}{35}
 \contentsline {section}{\numberline {3.3}Resumen y discusi\'on}{37}
 \contentsline {chapter}{\numberline {4}Integraci\'on sem\'antica de recursos de informaci\'on en una memoria corporativa}{43}
@@ -37,7 +37,7 @@
 \contentsline {subsection}{\numberline {4.2.4}Simetr\IeC {\'\i }a en las propiedades}{67}
 \contentsline {section}{\numberline {4.3}B\'usqueda y recuperaci\'on de informaci\'on en el modelo}{70}
 \contentsline {chapter}{\numberline {5}Prototipo}{85}
-\contentsline {chapter}{\numberline {6}Evaluaci\'on del Sistema}{111}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on del sistema}{111}
 \contentsline {section}{\numberline {6.1}Objetivo de la experimentaci\'on}{111}
 \contentsline {section}{\numberline {6.2}Hip\'otesis}{111}
 \contentsline {section}{\numberline {6.3}Experimentaci\'on}{112}
