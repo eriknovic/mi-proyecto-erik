@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  30 MAR 2014 20:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  31 MAR 2014 20:48
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -568,14 +568,13 @@ Overfull \hbox (6.78746pt too wide) in paragraph at lines 365--366
  [][] 
  []
 
-[28] <SparqlExmpReaz.pdf, id=238, 401.5pt x 145.54375pt>
+<SparqlExmpReaz.pdf, id=235, 401.5pt x 145.54375pt>
 File: SparqlExmpReaz.pdf Graphic file (type pdf)
-
-<use SparqlExmpReaz.pdf>
+ <use SparqlExmpReaz.pdf>
 Package pdftex.def Info: SparqlExmpReaz.pdf used on input line 374.
 (pdftex.def)             Requested size: 259.6186pt x 94.11816pt.
 
-<TripletasInferidas.pdf, id=239, 1163.34625pt x 336.25626pt>
+<TripletasInferidas.pdf, id=236, 1163.34625pt x 336.25626pt>
 File: TripletasInferidas.pdf Graphic file (type pdf)
 
 <use TripletasInferidas.pdf>
@@ -586,8 +585,8 @@ Overfull \hbox (6.80898pt too wide) in paragraph at lines 381--382
  [][] 
  []
 
-[29 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Users/G
-atito/Desktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf
+[28] [29 <C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/OntoexmpReaz.pdf> <C:/Us
+ers/Gatito/Desktop/GoogleSVN/tesis_Erik/SparqlExmpReaz.pdf
 
 pdfTeX warning: pdflatex (file C:/Users/Gatito/Desktop/GoogleSVN/tesis_Erik/Spa
 rqlExmpReaz.pdf): PDF inclusion: multiple pdfs with page group included in a si
@@ -1501,7 +1500,7 @@ iKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9
 pe1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (180 pages, 5051366 bytes).
+Output written on tesis_Erik.pdf (180 pages, 5050946 bytes).
 PDF statistics:
  1442 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
