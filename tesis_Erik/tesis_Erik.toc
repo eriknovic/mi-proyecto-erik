@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{B\'usqueda de Recursos Digitales}{12}
 \contentsline {subsection}{\numberline {1.2.3}Pregunta de investigaci\'on}{12}
 \contentsline {subsection}{\numberline {1.2.4}Justificaci\'on}{13}
-\contentsline {subsection}{\numberline {1.2.5}Objetivos}{14}
+\contentsline {subsection}{\numberline {1.2.5}Objetivos}{13}
 \contentsline {subsection}{\numberline {1.2.6}Hip\'otesis}{14}
 \contentsline {subsection}{\numberline {1.2.7}Metodolog\IeC {\'\i }a}{14}
 \contentsline {subsection}{\numberline {1.2.8}Aportaciones}{16}
