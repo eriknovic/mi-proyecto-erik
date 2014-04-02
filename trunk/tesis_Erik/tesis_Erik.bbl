@@ -5,8 +5,8 @@
 S.~Alfred, A.~Arpah, L.~H~S Lim, and K.~K~S Sarinder.
 \newblock Semantic technology: An efficient approach to monogenean information
   retrieval.
-\newblock In {\em Computer and Network Technology (ICCNT), 2010 Second
-  International Conference on}, pages 591--594, 2010.
+\newblock In {\em 2010 Second International Conference on Computer and Network
+  Technology (ICCNT)}, pages 591--594, 2010.
 
 \bibitem[Adu]{Aduna}
 Aduna.
@@ -17,14 +17,15 @@ Aduna.
 A.Q. Al-Namiy and F.S. Majeed.
 \newblock Towards automatic extracted semantic annotation (esa) for web
   documents.
-\newblock In {\em Information Processing, Asia-Pacific Conference on},
-  volume~2, pages 614--617. IEEE Computer Society, 2009.
+\newblock In {\em Proceedings of the 2009 Asia-Pacific Conference on
+  Information Processing}, volume~2, pages 614--617. IEEE Computer Society,
+  2009.
 
 \bibitem[ASB11]{SurvOnto}
 T.~Aruna, K.~Saranya, and C.~Bhandari.
 \newblock A survey on ontology evaluation tools.
-\newblock In {\em Process Automation, Control and Computing (PACC), 2011
-  International Conference on}, pages 1--5, 2011.
+\newblock In {\em 2011 International Conference on Process Automation, Control
+  and Computing (PACC)}, pages 1--5, 2011.
 
 \bibitem[Aue]{Auer}
 S\"{o}ren Auer.
@@ -42,9 +43,8 @@ S{\"o}ren Auer.
 S.~Bouzid, C.~Cauvet, and J.~Pinaton.
 \newblock A survey of semantic web standards to representing knowledge in
   problem solving situations.
-\newblock In {\em Information Retrieval Knowledge Management, 2012
-  International Conference on Information Retrieval {\&} Knowledge Management},
-  pages 121--125, 2012.
+\newblock In {\em 2012 International Conference on Information Retrieval
+  Knowledge Management (CAMP)}, pages 121--125, March 2012.
 
 \bibitem[Bea10]{RecYPres}
 J.~Beall.
@@ -76,20 +76,16 @@ Karlis Cerans, Guntis Barzdins, Renars Liepins, Julija Ovcinnikova, Sergejs
   Rikacovs, and Arturs Sprogis.
 \newblock Graphical schema editing for stardog owl/rdf databases using
   owlgred/s.
-\newblock In Pavel Klinov and Matthew Horridge, editors, {\em OWLED}, volume
-  849 of {\em CEUR Workshop Proceedings}. CEUR-WS.org, 2012.
+\newblock In {\em Proceedings of OWL: Experiences and Directions Workshop
+  2012}, volume 849. Sun SITE Central Europe Workshop Proceedings
+  (CEUR-WS.org), 2012.
 
 \bibitem[CBM11]{Behja}
 R.~Chakhmoune, H.~Behja, and A.~Marzak.
 \newblock Building corporate memories in collaborative way using ontologies:
   Case study of a ssii.
-\newblock In {\em Next Generation Networks and Services (NGNS), 2011 3rd
-  International Conference on}, pages 23--28, 2011.
-
-\bibitem[CK68]{Cleverdon68}
-Cyril Cleverdon and Michael Keen.
-\newblock {Methods and Tools for Corporate Knowledge Management}.
-\newblock Technical report, 1968.
+\newblock In {\em 3rd International Conference on Next Generation Networks and
+  Services (NGNS)}, pages 23--28, 2011.
 
 \bibitem[CLC]{Aktive}
 A.~Chakravarthy, V.~Lanfranchi, and F.~Ciravegna.
@@ -108,14 +104,15 @@ Hamish Cunningham, Diana Maynard, Kalina Bontcheva, Valentin Tablan, Niraj
 Oscar Corcho.
 \newblock {Ontology based document annotation: trends and open research
   problems}.
-\newblock {\em Int. J. Metadata Semant. Ontologies}, 1(1):47--57, 2006.
+\newblock {\em International Journal of Metadata, Semantics and Ontologies},
+  1(1):47--57, 2006.
 
 \bibitem[CPN11]{Tuan-Dung2011}
 Tuan-Dung Cao, Thanh-Hien Phan, and Anh-Duc Nguyen.
 \newblock An ontology based approach to data representation and information
   search in smart tourist guide system.
-\newblock In {\em Knowledge and Systems Engineering, 2011 Third International
-  Conference on}, pages 171--175, 2011.
+\newblock In {\em 2011 Third International Conference on Knowledge and Systems
+  Engineering}, pages 171--175, 2011.
 
 \bibitem[Daf07]{TeoOrg-Richard}
 Richard~L. Daft.
@@ -130,9 +127,8 @@ Rose Dieng, Olivier Corby, Alain Giboin, and Myriam Ribi{\`e}re.
 \bibitem[DKDA07]{LiDing}
 Li~Ding, Pranam Kolari, Zhongli Ding, and Sasikanth Avancha.
 \newblock Using ontologies in the semantic web: A survey.
-\newblock In Raj Sharman, Rajiv Kishore, and Ram Ramesh, editors, {\em
-  Ontologies}, volume~14 of {\em Integrated Series in Information Systems},
-  pages 79--113. Springer US, 2007.
+\newblock In {\em Ontologies of Integrated Series in Information Systems},
+  volume~14, pages 79--113. Springer US, 2007.
 
 \bibitem[fBIR]{StanfordCenter}
 Stanford~Center for Biomedical Informatics~Research.
@@ -149,8 +145,8 @@ Lee Feigenbaum.
 T.~Fujino and N.~Fukuta.
 \newblock A sparql query rewriting approach on heterogeneous ontologies with
   mapping reliability.
-\newblock In {\em Advanced Applied Informatics (IIAIAAI), 2012 IIAI
-  International Conference on}, pages 230--235, 2012.
+\newblock In {\em 2012 IIAI International Conference on Advanced Applied
+  Informatics (IIAIAAI)}, pages 230--235, 2012.
 
 \bibitem[Foua]{Lucene}
 The Apache~Software Foundation.
@@ -241,8 +237,8 @@ Matthew Horridge, Holger Knublauch, Alan Rector, Robert Stevens, and Chris
 \bibitem[HOJ11]{Inay2011}
 Inay Ha, Kyeong-Jin Oh, and Geun-Sik Jo.
 \newblock Ontology-driven visualization system for semantic search.
-\newblock In {\em Information Science and Applications (ICISA), 2011
-  International Conference on}, pages 1--6, 2011.
+\newblock In {\em 2011 International Conference on Information Science and
+  Applications (ICISA)}, pages 1--6, 2011.
 
 \bibitem[Inc]{TopQuadrant}
 TopQuadrant Inc.
@@ -257,22 +253,20 @@ Dublin Core~Semantic Initiative.
 \bibitem[ISS10]{Tode}
 N.~Islam, M.S. Siddiqui, and Z.A. Shaikh.
 \newblock Tode : A dot net based tool for ontology development and editing.
-\newblock In {\em Computer Engineering and Technology, 2010 2nd International
-  Conference on}, volume~6, pages V6--229--V6--233, 2010.
+\newblock In {\em 2010 2nd International Conference on Computer Engineering and
+  Technology}, volume~6, pages V6--229--V6--233, 2010.
 
 \bibitem[JRB01]{UML}
 Ivar Jacobson, James Rumbaugh, and Grady Booch.
 \newblock {\em El Lenguaje Unificado de Modelado (Segunda Edición)}.
-\newblock ADDISON-WESLEY, 2001.
+\newblock addison-wesley, 2001.
 
 \bibitem[KFNM04]{protege}
-Holger Knublauch, Ray~W. Fergerson, Natalya~F. Noy, and Mark~A. Musen.
-\newblock {The Prot\'{e}g\'{e} OWL Plugin: An Open Development Environment for
-  Semantic Web Applications}.
-\newblock In Sheila~.. McIlraith, Dimitris Plexousakis, and r.~a. n.~k. van,
-  Harmelen, editors, {\em The Semantic Web - ISWC 2004}, volume 3298 of {\em
-  Lecture Notes in Computer Science}, chapter~17, pages 229--243. Springer
-  Berlin / Heidelberg, Berlin, Heidelberg, 2004.
+Holger Knublauch, RayW. Fergerson, NatalyaF. Noy, and MarkA. Musen.
+\newblock The protégé owl plugin: An open development environment for semantic
+  web applications.
+\newblock In {\em The Semantic Web - ISWC 2004}, volume 3298 of {\em Lecture
+  Notes in Computer Science}, pages 229--243. Springer Berlin Heidelberg, 2004.
 
 \bibitem[KPS{\etalchar{+}}06]{swoop}
 Aditya Kalyanpur, Bijan Parsia, Evren Sirin, Bernardo~Cuenca Grau, and James
@@ -330,8 +324,9 @@ David Moner, J.A. Maldonado, D.~Bosca, J.T. Fernandez, C.~Angulo, P.~Crespo,
   P.J. Vivancos, and M.~Robles.
 \newblock Archetype-based semantic integration and standardization of clinical
   data.
-\newblock In {\em Engineering in Medicine and Biology Society, 2006. EMBS '06.
-  28th Annual International Conference of the IEEE}, pages 5141--5144, 2006.
+\newblock In {\em 28th Annual International Conference of the IEEE on
+  Engineering in Medicine and Biology Society (EMBS '06)}, pages 5141--5144,
+  2006.
 
 \bibitem[Moz]{Mozilla}
 Mozilla.
@@ -347,15 +342,15 @@ James~G. March, Herbert~A. Simon, and Harold~S. Guetzkow.
 A.~Norta, R.~Yangarber, and L.~Carlson.
 \newblock Utility evaluation of tools for collaborative development and
   maintenance of ontologies.
-\newblock In {\em Enterprise Distributed Object Computing Conference Workshops
-  (EDOCW), 2010 14th IEEE International}, pages 207--214, 2010.
+\newblock In {\em 2010 14th IEEE International on Enterprise Distributed Object
+  Computing Conference Workshops (EDOCW)}, pages 207--214, 2010.
 
 \bibitem[NZ10]{Nasraoui}
 O.~Nasraoui and L.~Zhuhadar.
 \newblock Improving recall and precision of a personalized semantic search
   engine for e-learning.
-\newblock In {\em Digital Society, 2010. '10. Fourth International Conference
-  on}, pages 216--221, 2010.
+\newblock In {\em Fourth International Conference on Digital Society, 2010.
+  '10}, pages 216--221, 2010.
 
 \bibitem[oM]{Maryland}
 University of~Maryland.
@@ -393,14 +388,14 @@ Ana~B. Rios-Alvarado, R.~Carolina~Medina Ram\'{\i}rez, and Ricardo
 \bibitem[RC04]{SGBDDIA}
 Peter Rob and Carlos Coronel.
 \newblock {\em Sistemas de bases de datos: dise\~{n}o, implementaci\'{o}n y
-  administraci\'{o}n}.
-\newblock Thomson, 05 edition, 2004.
+  administraci\'{o}n, 5a edici\'{o}n}.
+\newblock Thomson, 2004.
 
 \bibitem[Sal13]{Salam2013}
 F.~Salam.
 \newblock New semantic indexing and search system based on ontology.
-\newblock In {\em Emerging Intelligent Data and Web Technologies (EIDWT), 2013
-  Fourth International Conference on}, pages 313--318, 2013.
+\newblock In {\em 2013 Fourth International Conference on Emerging Intelligent
+  Data and Web Technologies (EIDWT)}, pages 313--318, 2013.
 
 \bibitem[SBLH06]{SemWebTim}
 Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
@@ -410,8 +405,8 @@ Nigel Shadbolt, Tim Berners-Lee, and Wendy Hall.
 \bibitem[SCO{\etalchar{+}}10]{Fstore}
 M.~Salvadores, G.~Correndo, T.~Omitola, N.~Gibbins, S.~Harris, and N.~Shadbolt.
 \newblock 4s-reasoner: Rdfs backward chained reasoning support in 4store.
-\newblock In {\em Web Intelligence and Intelligent Agent Technology, 2010
-  International Conference on}, volume~3, pages 261--264, 2010.
+\newblock In {\em 2010 International Conference on Web Intelligence and
+  Intelligent Agent Technology}, volume~3, pages 261--264, 2010.
 
 \bibitem[Sil02]{TeoAdmon-Reinaldo}
 Reinaldo~O. Silva.
@@ -432,8 +427,8 @@ SpryMedia.
 R.~Suganyakala and R.R. Rajalaxmi.
 \newblock Movie related information retrieval using ontology based semantic
   search.
-\newblock In {\em Information Communication and Embedded Systems (ICICES), 2013
-  International Conference on}, pages 421--424, 2013.
+\newblock In {\em 2013 International Conference on Information Communication
+  and Embedded Systems (ICICES)}, pages 421--424, 2013.
 
 \bibitem[TH]{Fact}
 Dmitry Tsarkov and Ian Horrocks.
@@ -534,29 +529,28 @@ W3C.
 \bibitem[WWH08]{OntologyManagement}
 Walter Waterfeld, Moritz Weiten, and Peter Haase.
 \newblock Ontology management infrastructures.
-\newblock In Martin Hepp, Pieter Leenheer, Aldo Moor, and York Sure, editors,
-  {\em Ontology Management}, volume~7 of {\em Computing for Human Experience},
-  pages 59--87. Springer US, 2008.
+\newblock In {\em Ontology Management}, volume~7 of {\em Computing for Human
+  Experience}, pages 59--87. Springer US, 2008.
 
 \bibitem[XG01]{WangXin}
 Wang Xin and Xiong Guangleng.
 \newblock Design rationale as part of corporate technical memory.
-\newblock In {\em Systems, Man, and Cybernetics, 2001 IEEE International
-  Conference on}, volume~3, pages 1904--1908 vol.3, 2001.
+\newblock In {\em 2001 IEEE International Conference on Systems, Man, and
+  Cybernetics}, volume~3, pages 1904--1908 vol.3, 2001.
 
 \bibitem[YS11]{Accommodation}
 Kai Yang and R.~Steele.
 \newblock A semantic integration solution for online accommodation information
   integration.
-\newblock In {\em Industrial Electronics and Applications (ICIEA), 2011 6th
-  IEEE Conference on}, pages 1105--1110, 2011.
+\newblock In {\em 2011 6th IEEE Conference on Industrial Electronics and
+  Applications (ICIEA)}, pages 1105--1110, 2011.
 
 \bibitem[ZLW08]{JunZhai}
 Jun Zhai, Jianfeng Li, and Qinglian Wang.
 \newblock Using ontology and xml for semantic integration of electricity
   information systems.
-\newblock In {\em Electric Utility Deregulation and Restructuring and Power
-  Technologies, 2008. Third International Conference on}, pages 2197--2201,
+\newblock In {\em Third International Conference on Electric Utility
+  Deregulation and Restructuring and Power Technologies}, pages 2197--2201,
   2008.
 
 \end{thebibliography}

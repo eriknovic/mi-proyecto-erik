@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  2 APR 2014 03:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.31)  2 APR 2014 17:17
 entering extended mode
 **tesis_Erik.tex
 (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.tex
@@ -1410,69 +1410,69 @@ Ap\'endice C.
 [152] [153] [154] [155] [156
 
 ] [157] [158]
-Underfull \hbox (badness 10000) in paragraph at lines 143--147
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 []\T1/cmr/m/n/12 Lee Fei-gen-baum.  Se-man-tic web vs. se-man-tic tech-no-lo-gi
 es.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--147
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 $\T1/cmtt/m/n/12 http : / / www . cambridgesemantics . com / semantic-[]univers
 ity /$
  []
 
 [159]
-Underfull \hbox (badness 1005) in paragraph at lines 248--251
+Underfull \hbox (badness 1005) in paragraph at lines 244--247
 []\T1/cmr/m/n/12 TopQuadrant Inc.  Top-braid com-po-ser.  $\T1/cmtt/m/n/12 http
  : / / www . topquadrant . com /$
  []
 
 [160]
-Underfull \hbox (badness 1412) in paragraph at lines 361--364
+Underfull \hbox (badness 1412) in paragraph at lines 356--359
 []\T1/cmr/m/n/12 University of Mary-land.  Swoop.  $\T1/cmtt/m/n/12 https : / /
  code . google . com / p / swoop /$
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 376--379
+Underfull \hbox (badness 1584) in paragraph at lines 371--374
 []\T1/cmr/m/n/12 FOAF pro-ject.  The friend of a friend (foaf) pro-ject.  $\T1/
 cmtt/m/n/12 http : / / www .$
  []
 
 [161]
-Underfull \hbox (badness 1087) in paragraph at lines 439--442
+Underfull \hbox (badness 1087) in paragraph at lines 434--437
 []\T1/cmr/m/n/12 Dmitry Tsar-kov and Ian Ho-rrocks.  Fact++.  $\T1/cmtt/m/n/12 
 http : / / owl . man . ac . uk /$
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 462--467
+Underfull \hbox (badness 1354) in paragraph at lines 457--462
 []\T1/cmr/m/n/12 L. Vic-to-rino and G. Me-di-na.  Edu-ca-ción bas-da en com-pe-
 ten-cias y el
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--467
+Underfull \hbox (badness 10000) in paragraph at lines 457--462
 $\T1/cmtt/m/n/12 org / colaboraciones / 2007 / TuningEuropayAL-[]LiberoVictorio
 noRamirez %$
  []
 
 [162]
-Underfull \hbox (badness 10000) in paragraph at lines 515--518
+Underfull \hbox (badness 10000) in paragraph at lines 510--513
 []\T1/cmr/m/n/12 W3C.  Rdf/xml syn-tax spe-ci-fi-ca-tion.  $\T1/cmtt/m/n/12 htt
 p : / / www . w3 . org / TR /$
  []
 
-[163]) [164] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
+) [163] [164] (C:\Users\Gatito\Desktop\GoogleSVN\tesis_Erik\tesis_Erik.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6885 strings out of 493944
- 94709 string characters out of 3148281
- 198183 words of memory out of 3000000
- 9897 multiletter control sequences out of 15000+200000
+ 6879 strings out of 493944
+ 94623 string characters out of 3148281
+ 198177 words of memory out of 3000000
+ 9891 multiletter control sequences out of 15000+200000
  23371 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,15n,43p,3008b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1499,7 +1499,7 @@ iKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9
 pe1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sftt1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfxc1200.pfb>
-Output written on tesis_Erik.pdf (180 pages, 5050824 bytes).
+Output written on tesis_Erik.pdf (180 pages, 5050167 bytes).
 PDF statistics:
  1442 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
