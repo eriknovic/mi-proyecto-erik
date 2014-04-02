@@ -2,12 +2,11 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: tesis_Erik.aux
 The style file: alpha.bst
 Database file #1: bibliografia.bib
 Warning--string name "june" is undefined
---line 545 of file bibliografia.bib
+--line 535 of file bibliografia.bib
 A bad cross reference---entry "stardog"
-refers to entry "conf/owled/2012", which doesn't exist
-Warning--I didn't find a database entry for "conf/owled/2012"
+refers to entry "DBLP:conf/owled/2012", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/owled/2012"
 Warning--can't use both volume and number fields in RecYPres
-Warning--empty institution in Cleverdon68
 Warning--empty publisher in Cunningham2011a
 Warning--empty journal in protegeManual
 (There was 1 error message)
