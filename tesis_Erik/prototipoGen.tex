@@ -16,7 +16,7 @@ La \textit{búsqueda y recuperación} en este modelo no son sencillas, porque se r
 
 Para ello, se propone una \textit{interfaz gráfica} entre el usuario y el modelo, con la finalidad de proporcionar una manera fácil, sencilla y amigable de interacción entre un usuario y la \textit{integración semántica de los recursos}. De esta forma, un usuario puede consultar y visualizar la información que responde a su consulta, sin que éste tenga conocimientos en las tecnologías semántica o los modelos.
 
-\textit{Nuestro \textbf{prototipo} es una \textbf{aplicación Web} para \textbf{consultar} y \textbf{visualizar información} de los recursos de información}. Estos \textit{recursos} pertenecen a nuestros dos \textit{casos de uso}: cartografía de competencias y búsqueda de recursos digitales.
+\textit{Nuestro \textbf{prototipo} es una \textbf{aplicación web} para \textbf{consultar} y \textbf{visualizar información} de los recursos de información}. Estos \textit{recursos} pertenecen a nuestros dos \textit{casos de uso}: cartografía de competencias y búsqueda de recursos digitales.
 
 El diseño del prototipo es una interfaz web, para facilitar el acceso de cualquier usuario a la información que proviene de los modelos semánticos. De esta manera, un usuario mediante un navegador puede acceder al prototipo y hacer consultas. Además. esta interfaz no requiere que el usuario instale alguna aplicación, porque todo el proceso de integración semántica se hace del lado de un servidor. Con el objetivo de utilizar este prototipo en cualquier plataforma (Windows, Linux, Mac).
 
@@ -30,11 +30,11 @@ Los objetivos funcionales de nuestra \textit{interfaz de usuario} son:
 \item Proporcionar un servicio transparente con respecto al uso de tecnologías semánticas.
 \end{itemize}
 
-Nosotros para alcanzar estos objetivos, construimos este prototipo como un aplicación Web dinámica, porque para cada pregunta de los usuarios se tienen distintos listados de resultados. Además, el contenido de una ontología puede cambiar (aumentar, disminuir o modificar) con el tiempo, de esta manera, los resultados se mantendrán actualizados.
+Nosotros para alcanzar estos objetivos, construimos este prototipo como un aplicación web dinámica, porque para cada pregunta de los usuarios se tienen distintos listados de resultados. Además, el contenido de una ontología puede cambiar (aumentar, disminuir o modificar) con el tiempo, de esta manera, los resultados se mantendrán actualizados.
 
-Este prototipo está constituido por un conjunto de servlets y páginas dinámicas. Las páginas estáticas son formularios que permiten estructurar las consultas de los usuarios. Estos formularios reciben la información de los usuarios y la proporcionan a los servlets. Mientras, los servlets son los encargados de: recopilar la información para la consulta, así como procesar y ejecutar la consulta en el modelo semántico, recuperar la información de ésta, publicar la información en el navegador del usuario.
+Este prototipo está constituido por un conjunto de servlets y páginas dinámicas. Las páginas estáticas son formularios que permiten estructurar las consultas de los usuario. Las funciones de estos formularios son: primero, recoger la información de la consulta del usuario y segundo, enviar esta información a los servlets. Mientras, los servlets son los encargados de recopilar la información para la consulta, así como procesar y ejecutar la consulta en el modelo semántico, recuperar la información de ésta, publicar la información en el navegador del usuario.
 
-En este prototipo, los formularios proporcionan al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
+Estos formularios proporcionan al usuario un medio amigable para escribir los valores de su consulta. Mientras, los servlets proporcionan la generación dinámica de contenidos Web. Los servlets se programan en Java y el triplestore Jena es una librería para Java. Por esta razón, es fácil la interacción de estos dos elementos. En concreto, los servlets permiten utilizar el triplestore Jena para: cargar un modelo semántico, inferir en un modelo, aplicar una consulta SPARQL, consultar un modelo semántico, así como publicar ésta en lenguaje HTML\label{sym:html}.
 
 La interfaz Web al implementarse a partir del uso de servlets y páginas estáticas, requiere un servidor apropiado que soporte estos dos elementos. Apache Tomcat \cite{Tomcat} es una servidor que soporta el uso de servlets Java y páginas basadas en Java. Por ello, se utiliza Tomcat como servidor para nuestras páginas estáticas y dinámicas. Otra razón del uso de Tomcat, éste es un software open source e implementado bajo la licencia ``Apache License version 2''.
 
@@ -59,7 +59,7 @@ Este prototipo se centra en tres operaciones, destinadas para los usuarios. En e
 \item Opción para mostrar todos los detalles de un \textit{recurso de información}. El objetivo de esta opción es mostrar a los usuarios con toda la información descriptiva que posee un recurso. La analogía de esta opción es la \textit{ficha descriptiva} de un libro en una biblioteca.
 \end{itemize}
 
-Nuestro prototipo proporciona estas interfaces Web para los usuarios:
+Nuestro prototipo proporciona estas interfaces web para los usuarios:
 \begin{enumerate}
 \item Validación de Usuario.
 \item Navegación entre Personas. \label{itm:np}
@@ -78,7 +78,7 @@ Nuestro prototipo proporciona estas interfaces Web para los usuarios:
 \item Más detalles del Recurso de Información. \label{itm:detri}
 \end{enumerate}
 
-Las especificaciones de estas interfaces son descritas en las siguientes secciones de este Capítulo \ref{cap:piu}. Las interfaces asociadas a las \textit{navegaciones} (ítem \ref{itm:np}, \ref{itm:nd} \ref{itm:nm} del listado de interfaces), se unieron en una sola especificación, porque el funcionamiento es similar entre estas tres navegaciones. Las diferencias son: la elección de los \textit{recursos de información} (persona, documento, multimedia) y la \textit{recuperación de información} para estos recursos.
+Las especificaciones de estas interfaces son descritas en las secciones de este Capítulo \ref{cap:piu}. Las interfaces asociadas a las \textit{navegaciones} (ítem \ref{itm:np}, \ref{itm:nd} \ref{itm:nm} del listado de interfaces), se unieron en una sola especificación, porque el funcionamiento es similar entre estas tres navegaciones. Las diferencias son: la elección de los \textit{recursos de información} (persona, documento, multimedia) y la \textit{recuperación de información} para estos recursos.
 
 De la misma manera, las especificaciones de las interfaces \textit{Filtrar por subclases de Persona} (ítem \ref{itm:fp}), \textit{Documento} (ítem \ref{itm:fd}) y \textit{Multimedia} (ítem \ref{itm:fm}) se unieron en una especificación. Esta misma situación sucede para las interfaces de \textit{Más detalles del Recurso de Información} (ítem \ref{itm:detp}), \textit{Persona}, \textit{Documento} (ítem \ref{itm:detd}) y \textit{Multimedia} (ítem \ref{itm:detm}).
 
@@ -95,25 +95,25 @@ De la misma manera, las especificaciones de las interfaces \textit{Filtrar por s
 
 \section*{Especificación para validar a un usuario}
 
-\textbf{Objetivo:} Validar a un usuario para el uso de la interfaz Web de la integración semántica de recursos.
+\textbf{Objetivo:} Validar a un usuario para el uso de la interfaz web de la integración semántica de recursos.
 
 \textbf{Actor:} Usuario.
 
 \textbf{Pre-condición:} El usuario debe estar registrado en el prototipo.
 
-\textbf{Post-condición:} El usuario es válido y la interfaz Web presenta la página Web principal.\\
+\textbf{Post-condición:} El usuario es válido y la interfaz web presenta la página web principal.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario introduce el URL del Login en su navegador, por ejemplo: \url{http://localhost:8080/appsir/login.html}.
-\item El usuario escribe su \textit{nombre de usuario} y \textit{contraseña}, después da clic en Enviar (Send).
-\item La interfaz Web cambia la página Web Login a la página principal que se denomina Home.
+\item El usuario escribe su \textit{nombre de usuario} y \textit{contraseña}, después da clic en Enviar (\textit{Send}).
+\item La interfaz web cambia la página web Login a la página principal que se denomina Home.
 \end{enumerate}
 
 \textbf{Flujos secundarios:}
 \begin{itemize}
 \item[$3'.$] El usuario escribe erróneamente su \textit{nombre de usuario} o \textit{contraseña}, después da clic en Enviar (Send).
-\item[$4'.$] La interfaz Web recarga la página Web \textit{Login} y borra los datos de los campos \textit{nombre de usuario} y \textit{contraseña}.
+\item[$4'.$] La interfaz web recarga la página web \textit{Login} y borra los datos de los campos \textit{nombre de usuario} y \textit{contraseña}.
 \end{itemize}
 
 La Figura \ref{fig:iwbxt} muestra dos interfaces del prototipo de integración semántica. La interfaz \ref{fig:iwfl} presenta el \textit{Login} para que un usuario escriba su nombre y contraseña. Mientras, la interfaz \ref{fig:iwwh0} muestra la página Home, como interfaz de presentación para el usuario válido.
@@ -133,19 +133,19 @@ La Figura \ref{fig:iwbxt} muestra dos interfaces del prototipo de integración se
 \label{fig:iwbxt}
 \end{figure}
 
-\section*{Especificación para la navegación entre personas, socumentos o multimedia}
+\section*{Especificación para la navegación entre personas, documentos o multimedia}
 \textbf{Objetivo:} Desplazarse y visualizar las \textit{características significativas} de las \textit{personas}, \textit{documentos} o \textit{recursos multimedia} del área de Redes y Telecomunicaciones.
 
 \textbf{Actor:} Usuario.
 
 \textbf{Pre-condición:} El usuario está en la página \textit{Home}.
 
-\textbf{Post-condición:} La interfaz Web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos. También, dependiendo de la clase Persona, Documento o Multimedia, la \textit{interfaz Web} muestra un botón de \textit{búsqueda avanzada por clase (Advanced Search Person, Document, Multimedia)}, y para cada \textit{recurso de información} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condición:} La interfaz web muestra una sección para filtrar los recursos Persona, Documento o Multimedia a partir de las subclases de éstos. También, dependiendo de la clase Persona, Documento o Multimedia, la \textit{interfaz web} muestra un botón de \textit{búsqueda avanzada por clase (Advanced Search Person, Document, Multimedia)}, y para cada \textit{recurso de información} se muestra un botón de \textit{más detalles} \textit{(More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario selecciona una de estas tres opciones: \textit{Personas (Persons)}, \textit{Documentos (Documents)}, \textit{Multimedia (Multimedia)}.
-\item La interfaz Web muestra algunas características significativas que dependen del tipo de \textit{recursos de información}.
+\item La interfaz web muestra algunas características significativas que dependen del tipo de \textit{recursos de información}.
 	\begin{enumerate}
 	\item Si la opción es \textbf{Persona}, entonces son mostrados el \textit{nombre(s) (Name)}, \textit{edad (Age)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para todas las \textit{personas} en la \textit{memoria corporativa} del área RyT.
 	\item Si la opción es \textbf{Documento}, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para todos los \textit{documentos} en la \textit{memoria corporativa} del área RyT.
@@ -184,11 +184,11 @@ La Figura \ref{fig:iwnav} muestra las tres interfaces para la navegación entre l
 
 \textbf{Post-condiciones:}
 
-Si los recursos son persona, entonces la interfaz Web muestra la sección para filtrar los recursos persona, también la interfaz muestra un botón de \textit{búsqueda avanzada de personas (Advanced Search Person)}.
+Si los recursos son persona, entonces la interfaz web muestra la sección para filtrar los recursos persona, también la interfaz muestra un botón de \textit{búsqueda avanzada de personas (Advanced Search Person)}.
 
-Si los recursos son documentos, entonces la interfaz Web muestra la sección para filtrar los recursos documento, también la interfaz muestra muestra un botón de \textit{búsqueda avanzada de documentos (Advanced Search Document)}.
+Si los recursos son documentos, entonces la interfaz web muestra la sección para filtrar los recursos documento, también la interfaz muestra un botón de \textit{búsqueda avanzada de documentos (Advanced Search Document)}.
 
-Si los recursos son documentos, entonces la interfaz Web muestra la sección para filtrar los recursos multimedia, también la interfaz muestra muestra un botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)}
+Si los recursos son documentos, entonces la interfaz web muestra la sección para filtrar los recursos multimedia, también la interfaz muestra un botón de \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)}
 
 Además, la interfaz muestra para cada \textit{recurso respuesta} un botón de \textit{más detalles} \textit{(More Details)}.\\
 
@@ -200,7 +200,7 @@ Además, la interfaz muestra para cada \textit{recurso respuesta} un botón de \te
 	\item Si la navegación es entre documentos, entonces el usuario puede elegir las opciones: \textit{libro (Book)}, \textit{artículo (Paper)}, \textit{tesis (Thesis)}, \textit{reporte técnico (TechnicalReport)} e \textit{página web (Webpage)}.
 	\item Si la navegación es entre multimedia, entonces el usuario puede elegir las opciones: \textit{audio (Audio)}, \textit{imagen (Image)}, \textit{presentación (Presentation)} y \textit{vídeo (Video)}.
 	\end{enumerate}
-\item La interfaz Web muestra algunas \textit{características significativas} de los \textit{recursos resultantes}.
+\item La interfaz web muestra algunas \textit{características significativas} de los \textit{recursos resultantes}.
 	\begin{enumerate}
 	\item Si son personas, entonces son mostrados el \textit{nombre(s) (Name)}, \textit{edad (Age)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)} para los \textit{recursos persona} que pertenecen a la subclase electa.
 	\item Si son documentos, entonces son mostrados el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)} para los \textit{recursos documento} que pertenecen a la subclase electa.
@@ -209,7 +209,7 @@ Además, la interfaz muestra para cada \textit{recurso respuesta} un botón de \te
 \end{enumerate}
 
 %%%Figura filtrar recursos de información%%%
-En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \textit{recursos de información} a partir de las subclases de Persona, Documento y Multimedia. La interfaz \ref{fig:iwfilrp} presenta las \textit{fichas descriptivas} de los \textit{recursos persona} que pertenecen a la clase \textit{Estudiante (Student)}. La interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos documentos} que pertenecen a la clase \textit{Artículo (Paper)}. De la misma manera, la interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos multimedia} que son Vídeos.
+En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \textit{recursos de información} a partir de las subclases de Persona, Documento y Multimedia. La interfaz \ref{fig:iwfilrp} presenta las \textit{fichas descriptivas} de los \textit{recursos persona} que pertenecen a la clase \textit{Estudiante (Student)}. La interfaz \ref{fig:iwfilrp} muestra las fichas de los \textit{recursos documentos} que pertenecen a la clase \textit{Artículo (Paper)}. De la misma manera, la interfaz \ref{fig:iwfilrp} muestra las fichas de los recursos que son Vídeos.
 
 \begin{figure}[hp]
 \centering
@@ -237,13 +237,13 @@ En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \text
 
 \textbf{Pre-condición:} El usuario está en la página de \textit{navegación entre personas}.
 
-\textbf{Post-condiciones:} La interfaz Web muestra un conjunto de \textit{fichas descriptivas de personas} que responden la consulta de un usuario. También, la interfaz Web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condiciones:} La interfaz web muestra un conjunto de \textit{fichas descriptivas de personas} que responden la consulta de un usuario. También, la interfaz web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles} \textit{(More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario da clic en el botón \textit{búsqueda avanzada de personas (Advanced Search Person)}.
-\item La interfaz Web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos persona}.
-\item El usuario establece como criterio de búsqueda: \textbf{\textit{los conocimientos en los tópicos de Redes y Telecomunicaciones}}.
+\item La interfaz web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos persona}.
+\item El usuario establece como criterio de búsqueda: \textbf{\textit{los conocimientos en los tópicos de redes y telecomunicaciones}}.
 	\begin{enumerate}
 	\item El usuario selecciona el \textit{check box} \textit{Tópicos (Topics)}.
 	\item El usuario escribe los tópicos de RyT, separando cada uno de éstos con una coma.
@@ -280,12 +280,12 @@ En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \text
 	\item El usuario escribe la edad mínima (número).
 	\item El usuario escribe la edad máxima (número).
 	\end{enumerate}
-\item El usuario establece como criterio de búsqueda: \textbf{\textit{las competencias profesionales}}.
+\item El usuario establece como criterio de búsqueda: \textbf{\textit{las competencias profesionales (laborales)}}.
 	\begin{enumerate}
 	\item El usuario selecciona el \textit{check box} \textit{competencias (Competences)}.
 	\item Si se quiere una habilidad profesional, entonces el usuario selecciona la habilidad del primer \textit{combo box}.
-	\item Si se quieren dos habilidades profesional, entonces el usuario selecciona dos habilidades del primer y segundo \textit{combo box}.
-	\item Si se quieren tres habilidades profesional, entonces el usuario selecciona tres habilidades del primer, segundo y tercer \textit{combo box}.
+	\item Si se quieren dos habilidades profesionales, entonces el usuario selecciona dos habilidades del primer y segundo \textit{combo box}.
+	\item Si se quieren tres habilidades profesionales, entonces el usuario selecciona tres habilidades del primer, segundo y tercer \textit{combo box}.
 	\end{enumerate}
 \item El usuario elige una opción (en el \textit{combo box}) para ordenar los resultados de la búsqueda.
 \item El usuario establece la cantidad de resultados a mostrar
@@ -293,12 +293,12 @@ En la Figura \ref{fig:iwfil} se presentan tres interfaces para filtrar los \text
 	\item  El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.
 	\item El usuario escribe el número de recursos a recuperar.
 	\end{enumerate}
-\item El usuario da clic en Enviar (Send).
-\item La interfaz Web muestra el \textit{nombre(s) (Name)}, \textit{edad (Age)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)}, para cada \textit{recurso persona} resultante de esta búsqueda.
+\item El usuario da clic en Enviar (\textit{Send}).
+\item La interfaz web muestra el \textit{nombre(s) (Name)}, \textit{edad (Age)}, \textit{ocupación (Occupation)}, \textit{género (Gender)}, \textit{email (Email)} y \textit{página personal (WebSite)}, para cada \textit{recurso persona} resultante de esta búsqueda.
 \end{enumerate}
 
 %%% Figura con las interfaces de la busqueda avanzada de personas %%%%
-La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos persona}. Mientras, la Figura \ref{fig:iwresbap} muestra las \textit{fichas descriptivas} de los \textit{recursos persona} que responden esta búsqueda, los cuales se obtienen de la ontología \textit{cartografía de competencias}.
+La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos persona}. Mientras, la Figura \ref{fig:iwresbap} muestra las \textit{fichas descriptivas} de los \textit{recursos persona} que responden a esta búsqueda, los cuales se obtienen de la ontología \textit{cartografía de competencias}.
 
 \begin{figure}[hp]
 \centering
@@ -322,12 +322,12 @@ La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un
 
 \textbf{Pre-condición:} El usuario está en la página de \textit{navegación entre documentos}.
 
-\textbf{Post-condiciones:} La interfaz Web muestra un conjunto de \textit{fichas descriptivas de documentos} que responden la consulta de un usuario. También, la interfaz Web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles (More Details)}.\\
+\textbf{Post-condiciones:} La interfaz web muestra un conjunto de \textit{fichas descriptivas de documentos} que responden la consulta de un usuario. También, la interfaz web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles (More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario da clic en el botón \textit{búsqueda avanzada de documentos (Advanced Search Document)}.
-\item La interfaz Web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos documento}.
+\item La interfaz web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos documento}.
 \item El usuario establece como criterio de búsqueda: \textbf{\textit{los tópicos de Redes y Telecomunicaciones}}.
 	\begin{enumerate}
 	\item El usuario selecciona el \textit{check box} \textit{Tópicos (Topics)}.
@@ -335,7 +335,7 @@ La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un
 	\item El usuario selecciona el operador \textit{y (and)} u \textit{o (or)} para comparar los tópicos de RyT.
 	\item El usuario selecciona una opción de dos; \textit{exactamente estos tópicos escritos} o \textit{tópicos asociados con los tópicos escritos}.
 	\end{enumerate}
-\item El usuario selecciona la clase o subclases del tipo documento: \textit{Documento (Document)}, \textit{Libro (Book)}, \textit{Artículo (Paper)}, \textit{Página Web (Webpage)}, \textit{Tesis (Thesis)} y \textit{Reporte Técnico (Technical-Report)}.
+\item El usuario selecciona la clase o subclases del tipo documento: \textit{Documento (Document)}, \textit{Libro (Book)}, \textit{Artículo (Paper)}, \textit{Página web (Webpage)}, \textit{Tesis (Thesis)} y \textit{Reporte Técnico (Technical-Report)}.
 \item El usuario establece como criterio de búsqueda: \textbf{\textit{el idioma o lenguaje del documento}}.
 	\begin{enumerate}
 	\item El usuario selecciona el \textit{check box} \textit{lenguaje (Language)}.
@@ -374,12 +374,12 @@ La Figura \ref{fig:iwforbap} muestra los distintos parámetros de búsqueda que un
 	\item  El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.
 	\item El usuario escribe el número de recursos a recuperar.
 	\end{enumerate}
-\item El usuario da clic da en \textit{Enviar (Send)}.
-\item La interfaz Web muestra el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)}, para cada documento resultante de esta búsqueda.
+\item El usuario da clic da en Enviar (\textit{Send}).
+\item La interfaz web muestra el \textit{título (Title)}, \textit{idioma (Language)}, \textit{año (Year)} y \textit{ruta (Path)}, para cada recurso resultante de esta búsqueda.
 \end{enumerate}
 
 %%% Figura con las interfaces de la busqueda avanzada de documentos %%%%
-La Figura \ref{fig:iwforbad} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos documento}. Mientras, la Figura \ref{fig:iwresbad} muestra la \textit{fichas descriptivas} de los \textit{documentos} que responden esta búsqueda, los cuales se obtienen de la ontología \textit{búsqueda de recursos digitales}.
+La Figura \ref{fig:iwforbad} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos documento}. Mientras, la Figura \ref{fig:iwresbad} muestra la \textit{ficha descriptiva} de los \textit{documentos} que responden esta búsqueda, los cuales se obtienen de la ontología \textit{búsqueda de recursos digitales}.
 
 \begin{figure}[hp]
 \centering
@@ -403,12 +403,12 @@ La Figura \ref{fig:iwforbad} muestra los distintos parámetros de búsqueda que un
 
 \textbf{Pre-condición:} El usuario está en la página de \textit{navegación entre multimedia}.
 
-\textbf{Post-condiciones:} La interfaz Web muestra un conjunto de \textit{fichas descriptivas de recursos multimedia} que responden la consulta de un usuario. También, la interfaz Web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condiciones:} La interfaz web muestra un conjunto de \textit{fichas descriptivas de recursos multimedia} que responden la consulta de un usuario. También, la interfaz web muestra para cada \textit{ficha descriptiva} el botón de \textit{más detalles} \textit{(More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario da clic en el botón \textit{búsqueda avanzada de multimedia (Advanced Search Multimedia)}.
-\item La interfaz Web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos multimedia}.
+\item La interfaz web muestra un formulario para estructurar la pregunta asociada a los \textit{recursos multimedia}.
 \item El usuario establece como criterio de búsqueda: \textbf{\textit{los tópicos de Redes y Telecomunicaciones}}.
 	\begin{enumerate}
 	\item El usuario selecciona el \textit{check box} \textit{Tópicos (Topics)}.
@@ -443,12 +443,12 @@ La Figura \ref{fig:iwforbad} muestra los distintos parámetros de búsqueda que un
 	\item  El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.
 	\item El usuario escribe el número de recursos a recuperar.
 	\end{enumerate}
-\item El usuario da clic da en \textit{Enviar (Send)}.
-\item La interfaz Web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)}, para cada recurso multimedia resultante de esta búsqueda.
+\item El usuario da clic en Enviar (\textit{Send}).
+\item La interfaz web muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{Año (Year)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)} y \textit{ruta (Path)}, para cada recurso multimedia resultante de esta búsqueda.
 \end{enumerate}
 
 %%% Figura con las interfaces de la busqueda avanzada de multimedia %%%%
-La Figura \ref{fig:iwforbam} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos multimedia}. Mientras, la Figura \ref{fig:iwresbam} muestra la \textit{fichas descriptivas} de los \textit{recursos multimedia} que responden esta búsqueda, los cuales se obtienen de la ontología \textit{búsqueda de recursos digitales}.
+La Figura \ref{fig:iwforbam} muestra los distintos parámetros de búsqueda que un usuario puede elegir y escribir, para estructurar su consulta de \textit{recursos multimedia}. Mientras, la Figura \ref{fig:iwresbam} muestra la \textit{ficha descriptiva} de los \textit{recursos multimedia} que responden esta búsqueda, los cuales se obtienen de la ontología \textit{búsqueda de recursos digitales}.
 
 \begin{figure}[hp]
 \centering
@@ -472,12 +472,12 @@ La Figura \ref{fig:iwforbam} muestra los distintos parámetros de búsqueda que un
 
 \textbf{Pre-condición:} El usuario está en la página \textit{Home}.
 
-\textbf{Post-condición:} La interfaz Web muestra la \textit{fichas descriptivas} de los recursos de información que responden la consulta de un usuario. También, la interfaz Web muestra para cada recurso el botón de \textit{más detalles} \textit{(More Details)}.\\
+\textbf{Post-condición:} La interfaz web muestra la \textit{fichas descriptivas} de los recursos de información que responden la consulta de un usuario. También, la interfaz web muestra para cada recurso el botón de \textit{más detalles} \textit{(More Details)}.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario selecciona la opción \textit{Tópicos de redes (Topics RyT)}.
-\item La interfaz Web muestra un formulario para estructurar la pregunta asociada a cualquier \textit{recurso de información} (Persona, Documento, Multimedia).
+\item La interfaz web muestra un formulario para estructurar la pregunta asociada a cualquier \textit{recurso de información} (Persona, Documento, Multimedia).
 \item El usuario escribe los tópicos de RyT, separando cada uno de éstos con una coma.
 \item El usuario selecciona el operador \textit{y (and)} u \textit{o (or)} para comparar los tópicos de RyT.
 \item El usuario selecciona una opción de dos; \textit{exactamente estos tópicos escritos} o \textit{tópicos asociados con los tópicos escritos}.
@@ -493,8 +493,8 @@ La Figura \ref{fig:iwforbam} muestra los distintos parámetros de búsqueda que un
 	\item El usuario selecciona el \textit{check box} \textit{número de resultados (Number of results)}.
 	\item El usuario escribe el número de resultados a recuperar.
 	\end{enumerate}
-\item El usuario da clic da en \textit{Enviar (Send)}.
-\item La interfaz Web muestra el \textit{nombre(s) (Name)}, \textit{tipo de recurso (Resource Type)}, \textit{ruta o página web (URL)} y \textit{tópicos de redes (Topics RyT)}, para cada recurso resultante.
+\item El usuario da clic da en Enviar (\textit{Send}).
+\item La interfaz web muestra el \textit{nombre(s) (Name)}, \textit{tipo de recurso (Resource Type)}, \textit{ruta o página web (URL)} y \textit{tópicos de redes (Topics RyT)}, para cada recurso resultante.
 \end{enumerate}
 
 %%%%%Figura pantalla búsqueda por topicos
@@ -528,12 +528,12 @@ Si se buscan detalles de un \textit{recurso documento}, entonces, el usuario est
 
 Si se buscan detalles de un \textit{recurso multimedia}, entonces, el usuario está en una de estas páginas: 1) Navegación entre multimedia, 2) Resultados de Filtrar los recursos por subclases de Multimedia, 3) Resultados de Búsqueda Avanzada de Multimedia y 4) Resultados de Búsqueda por tópico(s) de redes y telecomunicaciones.
 
-\textbf{Post-condición:} La interfaz Web muestra toda la información descriptiva del recurso (persona, documento o multimedia) que eligió el usuario.\\
+\textbf{Post-condición:} La interfaz web muestra toda la información descriptiva del recurso (persona, documento o multimedia) que eligió el usuario.\\
 
 \textbf{Flujo principal:}
 \begin{enumerate}
 \item El usuario da clic en el botón \textit{más detalles (More Details)}.
-\item La interfaz Web muestra todas \textit{características significativas} del \textit{recursos electo}.
+\item La interfaz web muestra todas \textit{características significativas} del \textit{recursos electo}.
 	\begin{enumerate}
 	\item Si es un \textit{recurso persona}, entonces, el sistema muestra el \textit{nombre(s) (Name)}, \textit{edad (Age)}, \textit{género (Gender)}, \textit{ocupación (Occupation)}, \textit{email (Email)}, \textit{página personal (WebSite)}, \textit{lugar de trabajo (Place of work)}, \textit{temas de investigación (Research on)}, \textit{idiomas de escritura (writes)}, \textit{idiomas de lectura (reads)}, \textit{idiomas de habla (speaks)}, \textit{relaciones profesionales (Knows)}, \textit{conocimientos en tópicos de RyT (Expertise)} y \textit{competencias profesionales (Competent)}, para la \textit{persona electa}.	
 	\item Si es un \textit{recurso documento}, entonces, el sistema muestra el \textit{título (Title)}, \textit{autores (Authors)}, \textit{tipo recurso (Resource Type)}, \textit{idioma (Language)}, \textit{Año (Year)}, \textit{formato o extensión (Format)}, \textit{ruta (Path)}, \textit{número de páginas (Number of Pages)}, \textit{edición (Edition)}, \textit{organización que lo publicó (Published In)}, \textit{los tópicos de RyT (Topcis RyT)} y el \textit{resumen (Abstract)}, para el documento electo.
@@ -541,7 +541,7 @@ Si se buscan detalles de un \textit{recurso multimedia}, entonces, el usuario es
 	\end{enumerate}
 \end{enumerate}
 
-La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \textit{fichas descriptivas completas} para una persona, un documento y un recurso multimedia. La interfaz \ref{fig:iwfdetp} presenta toda la información descriptiva de la profesora ``\textit{Amelia Alles Estrada}'' que es un recurso del tipo persona. La interfaz \ref{fig:iwfdetd} muestra la \textit{información descriptiva} de libro ``Using Ontologies in the Semantic Web: A Survey''. Mientras, la interfaz \ref{fig:iwfdetm} muestra toda la información descriptiva del vídeo ``The Semantic Web - An Overview''.
+La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \textit{fichas descriptivas completas} para una persona, un documento y un recurso multimedia. La interfaz \ref{fig:iwfdetp} presenta toda la información descriptiva de la profesora ``\textit{Amelia Alles Estrada}'' que es un recurso del tipo persona. La interfaz \ref{fig:iwfdetd} muestra la \textit{información descriptiva} de libro ``Using Ontologies in the Semantic web: A Survey''. Mientras, la interfaz \ref{fig:iwfdetm} muestra toda la información descriptiva del vídeo ``The Semantic web - An Overview''.
 
 \begin{figure}[hp]
 \centering
@@ -549,11 +549,11 @@ La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \t
 \includegraphics[totalheight=0.28\textheight]{IntWebDetPer}
 \label{fig:iwfdetp} 
 }
-\subfigure[Interfaz web: mostrar detalles del libro Using \textit{Ontologies in the Semantic Web: A Survey}]{
+\subfigure[Interfaz web: mostrar detalles del libro Using \textit{Ontologies in the Semantic web: A Survey}]{
 \includegraphics[totalheight=0.28\textheight]{IntWebDetDoc} 
 \label{fig:iwfdetd} 
 }
-\subfigure[Interfaz web: mostrar detalles del vídeo \textit{The Semantic Web - An Overview}]{
+\subfigure[Interfaz web: mostrar detalles del vídeo \textit{The Semantic web - An Overview}]{
 \includegraphics[totalheight=0.28\textheight]{IntWebDetMult} 
 \label{fig:iwfdetm} 
 }
@@ -561,12 +561,12 @@ La Figura \ref{fig:iwfdet} presenta \textit{tres interfaces} que muestran las \t
 \label{fig:iwfdet}
 \end{figure}
 
-Nuestra interfaz Web es un prototipo y como tal requiere varios aspectos que se deben hacer y mejorar en ésta. Estas son las actividades por hacer en nuestra interfaz:
+Nuestra interfaz web es un prototipo y como tal requiere varios aspectos que se deben hacer y mejorar en ésta. Estas son las actividades por hacer en nuestra interfaz:
 
 \begin{itemize}
-\item Mejorar la seguridad en la interfaz Web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro \cite{Shiro}.
+\item Mejorar la seguridad en la interfaz web: autenticación, autorización y administración de sesiones, mediante el uso del marco de seguridad Apache Shiro \cite{Shiro}.
 \item Mejorar la manera en que se muestra la información de los recursos respuesta para una pregunta dada, mediante el uso del plug-in DataTables \cite{DataTables}.
-\item Agregar un recuadro en las \textit{páginas Web} para que los usuarios puedan hacer búsquedas basadas en \textit{palabras clave}, donde estas \textit{búsquedas de texto} se hacen dentro de consultas SPARQL. Esta búsqueda se hace mediante el uso de Lucene Index \cite{Lucene}.
+\item Agregar un recuadro en las \textit{páginas web} para que los usuarios puedan hacer búsquedas basadas en \textit{palabras clave}, donde estas \textit{búsquedas de texto} se hacen dentro de consultas SPARQL. Esta búsqueda se hace mediante el uso de Lucene Index \cite{Lucene}.
 \end{itemize}
 
 %%%%--------------------------> Reviza aquí
